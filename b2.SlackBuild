@@ -68,8 +68,9 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION $TARBALL
 
-tar xvfz $CWD/$TARBALL.tar.gz
-tar xvfz $TARBALL/b2-$VERSION.tar.gz
+#tar xvfz $CWD/$TARBALL.tar.gz
+#tar xvfz $TARBALL/b2-$VERSION.tar.gz
+tar xvfz $CWD/b2-$VERSION.tar.gz
 
 cd $PRGNAM-$VERSION
 chown -R root:root .
