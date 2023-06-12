@@ -29,7 +29,6 @@ VERSION=${VERSION:-20230115-000739-a0a2fe9}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=${TARBALL:-b2_slackbuild-248b522db12ec87549fa7b7a0167dd0db5601ec9}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -66,11 +65,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION $TARBALL
+rm -rf $PRGNAM-$VERSION
 
-#tar xvfz $CWD/$TARBALL.tar.gz
-#tar xvfz $TARBALL/b2-$VERSION.tar.gz
-tar xvfz $CWD/b2-$VERSION.tar.gz
+tar xvfz $CWD/$PRGNAM-$VERSION.tar.gz
 
 cd $PRGNAM-$VERSION
 chown -R root:root .
