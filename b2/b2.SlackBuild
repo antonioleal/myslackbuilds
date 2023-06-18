@@ -25,10 +25,11 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=b2
-VERSION=${VERSION:-20230115-000739-a0a2fe9}
+VERSION=${VERSION:-20230115_000739_a0a2fe9}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
+TARBALL=${TARBALL:-b2-20230115-000739-a0a2fe9}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -64,12 +65,12 @@ fi
 set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
+
 cd $TMP
-rm -rf $PRGNAM-$VERSION
+rm -rf $TARBALL
+tar xvfz $CWD/$TARBALL.tar.gz
+cd $TARBALL
 
-tar xvfz $CWD/$PRGNAM-$VERSION.tar.gz
-
-cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
