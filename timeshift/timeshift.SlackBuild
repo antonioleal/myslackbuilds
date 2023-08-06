@@ -86,7 +86,7 @@ meson compile
 DESTDIR=$PKG meson install
 cd ..
 
-# slackware frindly launcher
+# slackware friendly launcher requiring gksu
 cp $CWD/timeshift-launcher $PKG/usr/bin/
 
 mv $PKG/usr/share/man $PKG/usr/
