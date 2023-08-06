@@ -76,19 +76,20 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-meson build
+
+# do not support xapp at this time
+cp $CWD/meson_options.txt .
+
+meson build --prefix=/usr
 cd build
 meson compile
 DESTDIR=$PKG meson install
 cd ..
 
-# reorganize files slackware pkg
-mv $PKG/usr/local/bin $PKG/usr/
+# slackware frindly launcher
 cp $CWD/timeshift-launcher $PKG/usr/bin/
-mv $PKG/usr/local/etc $PKG/
-mv $PKG/usr/local/share/man $PKG/usr/
-mv $PKG/usr/local/share $PKG/usr/
-rmdir $PKG/usr/local
+
+mv $PKG/usr/share/man $PKG/usr/
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
