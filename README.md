@@ -39,9 +39,21 @@ MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and also many other machines.
 Code::Blocks is a free C, C++ and Fortran IDE built to meet the most
 demanding needs of its users.
 
+# fpc
+Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
+compiler.
+
 # google-chrome-the-latest
 Installing *and* Maintaining an updated chrome browser on Slackware
 is now made easier with this small program, "google-chrome-the-latest".
+
+# lazarus
+Lazarus is a Rapid Application Development Tool for FreePascal. It
+comes with the LCL - Lazarus Component Library, which contains platform
+independent visual components like buttons, windows, checkbox, treeview
+and many, many more. The LCL is platform independent, so you can write
+an application once and then compile for various platforms without
+changing code.
 
 # Notepadqq
 Notepadqq is a Notepad++-like editor for the Linux desktop.
@@ -78,4 +90,11 @@ NEW in yaze-ag version 2.xx is the support of an emulated Memory
 Management Unit (MMU) and the BIOS which supports CP/M 3.1.
 Inside the Emulator runs an original CP/M or a replacement of CP/M.
 
+# xapp
+xapp (library to provide applications to users in multiple DEs)
+This project gathers the components which are common to multiple GTK
+desktop environments (Cinnamon, MATE and Xfce) and required to
+implement cross-DE solutions.
+Is an optional dependecy for timeshift but is Notepad
+yet in SlackBuilds.org
 
