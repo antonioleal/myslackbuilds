@@ -1,4 +1,3 @@
-
 This repo contains my slackbuild scripts that are also published to Slackbuilds.org
 -----------------------------------------------------------------------------------
 
@@ -95,6 +94,5 @@ xapp (library to provide applications to users in multiple DEs)
 This project gathers the components which are common to multiple GTK
 desktop environments (Cinnamon, MATE and Xfce) and required to
 implement cross-DE solutions.
-Is an optional dependecy for timeshift but is Notepad
-yet in SlackBuilds.org
-
+Is an optional dependecy for timeshift but is not yet
+published to SlackBuilds.org
