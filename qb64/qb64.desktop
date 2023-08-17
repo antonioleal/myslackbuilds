@@ -6,5 +6,4 @@ Icon=qb64.png
 Terminal=false
 Type=Application
 Categories=Development;IDE;
-#Path=~/qb64-2.1
 StartupNotify=false
