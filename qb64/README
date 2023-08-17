@@ -16,4 +16,5 @@ adds a number of extensions, such as OpenGL and other modern
 features, providing the perfect blend of classic and modern
 program development.
 
-This package installs to /opt/
+This package installs to /opt/ but a user directory is
+required in $HOME in order to run the program and its data.

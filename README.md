@@ -26,6 +26,11 @@ kForth is an implementation of the Forth programming language and environment.
 Plug is a Software to control Fender Mustang Amps, a linux replacement for 
 the now discontinued Fender Fuse.
 
+# qb64
+QB64 is a modern extended BASIC programming language that retains
+QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
+Windows, Linux, and macOS.
+
 # SQLiteStudio
 SQLiteStudio is a free, open source, multi-platform SQLite database
 manager writtenin C++, with use of Qt framework.
