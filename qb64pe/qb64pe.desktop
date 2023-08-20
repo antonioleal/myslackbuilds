@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=QB64-PE Programming IDE
+GenericName=QB64-PE Programming IDE
+Exec=set_qb64pe.sh
+Icon=qb64pe.png
+Terminal=false
+Type=Application
+Categories=Development;IDE;
+StartupNotify=false
