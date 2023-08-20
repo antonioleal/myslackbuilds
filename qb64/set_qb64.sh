@@ -23,6 +23,8 @@ then
     pushd internal/c >/dev/null
     g++ -no-pie -w qbx.cpp libqb/os/lnx/libqb_setup.o parts/video/font/ttf/os/lnx/src.o parts/core/os/lnx/src.a -lGL -lGLU -lX11 -lpthread -ldl -lrt -D FREEGLUT_STATIC -o ../../qb64
     popd
+    rm -rf run_qb64.sh
+    ln -s /usr/bin/set_qb64.sh run_qb64.sh
     fi
 cd $DEST
 ./qb64 &
