@@ -31,6 +31,11 @@ QB64 is a modern extended BASIC programming language that retains
 QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
 Windows, Linux, and macOS.
 
+# qb64pe
+QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
+additional features and enhancements, maintained by a
+group of original developers of QB64.com.
+
 # SQLiteStudio
 SQLiteStudio is a free, open source, multi-platform SQLite database
 manager writtenin C++, with use of Qt framework.
