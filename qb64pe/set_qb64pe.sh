@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DEST="$HOME/qb64pe-3.8.0"
+DEST="$HOME/.config/qb64pe-3.8.0"
 if [ ! -d $DEST ]
 then
     notify-send "Setting up $DEST workspace for first run, please be patient..."
