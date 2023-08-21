@@ -19,6 +19,14 @@ slackbuild.org rules.
 
 Tested with Slackware64 15.0
 
+# bbcsdl
+BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
+cross-platform implementation of BBC BASIC for Windows, MacOS,
+Linux (x86 CPU only), Raspberry  Pi OS (RPi3 or later), Android,
+iOS or for running in a browser.
+
+BBC BASIC is very well documented.
+
 # kForth-32 and kForth-64
 kForth is an implementation of the Forth programming language and environment.
 
