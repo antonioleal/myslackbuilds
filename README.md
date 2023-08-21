@@ -91,6 +91,14 @@ Postgre and SQLite databases for free on 32/64 bit Slackware Linux.
 # wxFormBuilder
 wxFormBuilder is a GUI builder for the wxWidgets framework.
 
+# yabasic
+yabasic is a traditional basic interpreter. It understands most of
+the typical basic-constructs, like goto, gosub, line numbers, read,
+data or string-variables with a trailing '$'. But on the other hand,
+yabasic implements some more advanced programming-constructs like
+subroutines or libraries (but not objects). yabasic works much the
+same under Unix and Windows.
+
 # yaze-ag
 yaze-ag is designed to provide an exact simulation of the Z80
 microprocessor. It is fast, emulates undocumented opcodes, and
