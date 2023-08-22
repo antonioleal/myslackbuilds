@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=QB64 Programming IDE
 GenericName=QB64 Programming IDE
-Exec=set_qb64.sh
+Exec=set_qb64.sh "$@"
 Icon=qb64.png
 Terminal=false
 Type=Application

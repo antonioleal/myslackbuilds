@@ -4,6 +4,7 @@ DEST="$HOME/.config/qb64-2.1"
 if [ ! -d $DEST ]
 then
     notify-send "Setting up $DEST workspace for first run, please be patient..."
+    CWD=`pwd`
     mkdir -p $DEST
     cd $DEST
     tar xvfz /usr/src/qb64-2.1/qb64-2.1.tar.gz --strip-components=1
@@ -25,6 +26,6 @@ then
     popd
     rm -rf run_qb64.sh
     ln -s /usr/bin/set_qb64.sh run_qb64.sh
-    fi
-cd $DEST
-./qb64 &
+    cd $CWD
+fi
+$DEST/qb64 "$@" &
