@@ -16,7 +16,6 @@ then
     rm -rf .github
     rm -rf .gitignore
     rm -rf .clang-format
-    rm -rf Makefile
     rm -rf setup_*
     rm -rf qb64pe.1
     cd $CWD
