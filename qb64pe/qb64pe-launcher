@@ -11,7 +11,14 @@ then
     make clean OS=lnx
     make OS=lnx BUILD_QB64=y -j1
     rm -rf run_qb64pe.sh
-    ln -s /usr/bin/set_qb64pe.sh run_qb64pe.sh
+    ln -s /usr/bin/qb64pe-launcher run_qb64pe.sh
+    rm -rf .ci
+    rm -rf .github
+    rm -rf .gitignore
+    rm -rf .clang-format
+    rm -rf Makefile
+    rm -rf setup_*
+    rm -rf qb64pe.1
     cd $CWD
 fi
 $DEST/qb64pe "$@" &

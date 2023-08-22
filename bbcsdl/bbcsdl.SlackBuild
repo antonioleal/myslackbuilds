@@ -85,6 +85,8 @@ mv bbc256x.png $PKG/usr/share/pixmaps
 mv * $PKG/opt/$PRGNAM
 cp $CWD/bbcsdl.desktop $PKG/usr/share/applications
 cp $CWD/bbcsdl-launcher $PKG/usr/bin
+( cd $PKG/usr/bin ; rm -rf bbcsdl )
+( cd $PKG/usr/bin ; ln -s bbcsdl-launcher bbcsdl )
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

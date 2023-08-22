@@ -79,11 +79,11 @@ find -L . \
 mkdir -p $PKG/usr/bin $PKG/usr/src/$PRGNAM-$VERSION $PKG/usr/share/pixmaps $PKG/usr/share/applications $PKG/usr/man/man1
 cp $CWD/$PRGNAM-$VERSION.tar.gz $PKG/usr/src/$PRGNAM-$VERSION
 cat $CWD/qb64.1 | gzip -c -f > $PKG/usr/man/man1/qb64.1.gz
-cp $CWD/set_qb64.sh $PKG/usr/bin
+cp $CWD/qb64-launcher $PKG/usr/bin
 cp $CWD/qb64.desktop $PKG/usr/share/applications
 cp $CWD/qb64.png $PKG/usr/share/pixmaps
 ( cd $PKG/usr/bin ; rm -rf qb64 )
-( cd $PKG/usr/bin ; ln -s set_qb64.sh qb64 )
+( cd $PKG/usr/bin ; ln -s qb64-launcher qb64 )
 
 #find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
 #  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

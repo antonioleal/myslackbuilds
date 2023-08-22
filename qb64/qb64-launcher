@@ -24,8 +24,17 @@ then
     pushd internal/c >/dev/null
     g++ -no-pie -w qbx.cpp libqb/os/lnx/libqb_setup.o parts/video/font/ttf/os/lnx/src.o parts/core/os/lnx/src.a -lGL -lGLU -lX11 -lpthread -ldl -lrt -D FREEGLUT_STATIC -o ../../qb64
     popd
+    rm -rf .ci
+    rm -rf .github
+    rm -rf .gitignore
+    rm -rf .vscode/
+    rm -rf build.bat
+    rm -rf reset.cmd
+    rm -rf setup_*
+    rm -rf findcurl.cmd
+    rm -rf qb64.1
     rm -rf run_qb64.sh
-    ln -s /usr/bin/set_qb64.sh run_qb64.sh
+    ln -s /usr/bin/qb64-launcher run_qb64.sh
     cd $CWD
 fi
 $DEST/qb64 "$@" &
