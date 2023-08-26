@@ -76,23 +76,23 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-
 # do not support xapp at this time
-patch meson_options.txt $CWD/meson_options.txt.patch
-
-meson build --prefix=/usr
+meson build --prefix=/usr -Dxapp=false
 cd build
 meson compile
 DESTDIR=$PKG meson install
 cd ..
 
 # slackware friendly launcher requiring gksu
-cp $CWD/timeshift-launcher $PKG/usr/bin/
+install -D -m0755 $CWD/timeshift-launcher $PKG/usr/bin/timeshift-launcher
 
 mv $PKG/usr/share/man $PKG/usr/
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
