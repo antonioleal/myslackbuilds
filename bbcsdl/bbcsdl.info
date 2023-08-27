@@ -1,8 +1,10 @@
 PRGNAM="bbcsdl"
 VERSION="1.36a"
 HOMEPAGE="https://www.bbcbasic.co.uk/bbcsdl"
-DOWNLOAD=""https://github.com/rtrussell/BBCSDL/archive/abc1ca7/BBCSDL-abc1ca7597e813d8bfbc95c03e769725a17805bb.tar.gz"
-MD5SUM="ca6cba2e4d1618e6de68943f43ccf966"
+DOWNLOAD="https://github.com/rtrussell/BBCSDL/archive/abc1ca7/BBCSDL-abc1ca7597e813d8bfbc95c03e769725a17805bb.tar.gz \
+          https://github.com/antonioleal/slackbuilds/raw/main/bbcsdl/Box2D231.tar.gz"
+MD5SUM="ca6cba2e4d1618e6de68943f43ccf966 \
+        3d6e27b4b1214432a43244a7bc3e615b"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
