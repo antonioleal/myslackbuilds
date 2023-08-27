@@ -2,10 +2,9 @@
 Name=BBC BASIC
 GenericName=BBC BASIC
 Comment=BBC BASIC for Linux
-Icon=bbc256x.png
-Exec=bbcsdl "$@"
+Icon=bbc256x
+Exec=bbcsdl
 Type=Application
-Encoding=UTF-8
 Terminal=false
 Categories=Development
 StartupNotify=false

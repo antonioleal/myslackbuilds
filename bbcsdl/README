@@ -12,6 +12,11 @@ Built-in diagnostic aids such as run-time trace, listing of
 variables, single-step execution and a profiler make debugging
 even the most complex programs straightforward.
 
-This package installs to /opt/bbcsdl and is a repacking
-for Slackware of the original R.T.Russell binary package.
-Sources are available at https://github.com/rtrussell/BBCSDL
+This package installs to /opt/bbcsdl and is a rebuild of the open
+sources available at https://github.com/rtrussell/BBCSDL
+
+The  Box2D321.so library is bundled with the original release
+by R.T.Russell (md5 215bbda5d9a92a5cc99534de4e1235aa) in
+https://www.bbcbasic.co.uk/bbcsdl/bbclinux.zip
+This SlackBuild includes it as a separate download from the
+package maintainer github account.

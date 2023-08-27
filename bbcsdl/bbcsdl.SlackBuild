@@ -30,7 +30,7 @@ VERSION=${VERSION:-1.36a}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=${TARBALL:-bbclinux.zip}
+TARBALL=${TARBALL:-BBCSDL-abc1ca7597e813d8bfbc95c03e769725a17805bb}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -68,9 +68,11 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-mkdir -p $PRGNAM-$VERSION
+tar xvfz $CWD/$TARBALL.tar.gz
+mv $TARBALL $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
-unzip $CWD/$TARBALL
+tar xvfz $CWD/Box2D231.tar.gz
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -78,12 +80,23 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+cd bin/linux
+make
+cd ../..
+
 mkdir -p $PKG/usr/bin $PKG/opt/$PRGNAM $PKG/usr/share/pixmaps $PKG/usr/share/applications
-rm mkicon.sh
-rm install64.txt
-mv bbc256x.png $PKG/usr/share/pixmaps
-mv * $PKG/opt/$PRGNAM
+
+install -D -m0755 bbcsdl $PKG/opt/$PRGNAM/bbcsdl
+install -D -m0755 libstb.so $PKG/opt/$PRGNAM/libstb.so
+install -D -m0755 Box2D231.so $PKG/opt/$PRGNAM/Box2D231.so
+cp bbcsdl.bbc $PKG/opt/$PRGNAM/
+
+cp -avxu lib $PKG/opt/$PRGNAM/
+cp -avxu examples $PKG/opt/$PRGNAM/
+
+mv $CWD/bbc256x.png $PKG/usr/share/pixmaps
 cp $CWD/bbcsdl.desktop $PKG/usr/share/applications
+
 ( cd $PKG/usr/bin ; rm -rf bbcsdl )
 ( cd $PKG/usr/bin ; ln -s /opt/bbcsdl/bbcsdl bbcsdl )
 
@@ -92,6 +105,8 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+cp license.txt $PKG/usr/doc/$PRGNAM-$VERSION
+cp README.md $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
