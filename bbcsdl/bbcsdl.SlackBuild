@@ -30,7 +30,7 @@ VERSION=${VERSION:-1.36a}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=${TARBALL:-BBCSDL-abc1ca7597e813d8bfbc95c03e769725a17805bb}
+TARBALL=${TARBALL:-BBCSDL-ae588d80bc303897b5da5e108863e0c07fdb30d8}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -94,7 +94,7 @@ cp bbcsdl.bbc $PKG/opt/$PRGNAM/
 cp -avxu lib $PKG/opt/$PRGNAM/
 cp -avxu examples $PKG/opt/$PRGNAM/
 
-mv $CWD/bbc256x.png $PKG/usr/share/pixmaps
+cp $CWD/bbc256x.png $PKG/usr/share/pixmaps
 cp $CWD/bbcsdl.desktop $PKG/usr/share/applications
 
 ( cd $PKG/usr/bin ; rm -rf bbcsdl )
@@ -105,7 +105,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-cp license.txt $PKG/usr/doc/$PRGNAM-$VERSION
+cp licence.txt $PKG/usr/doc/$PRGNAM-$VERSION
 cp README.md $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install
