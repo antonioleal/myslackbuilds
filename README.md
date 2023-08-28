@@ -27,6 +27,14 @@ iOS or for running in a browser.
 
 BBC BASIC is very well documented.
 
+# FreeFileSync
+FreeFileSync is a folder comparison and synchronization software that
+creates and manages backup copies of all your important files.
+Instead of copying every file every time, FreeFileSync determines the
+differences between a source and a target folder and transfers only
+the minimum amount of data needed. FreeFileSync is Open Source
+software,available for Windows, Linux and macOS.
+
 # kForth-32 and kForth-64
 kForth is an implementation of the Forth programming language and environment.
 
