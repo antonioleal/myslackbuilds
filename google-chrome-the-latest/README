@@ -1,15 +1,13 @@
-Installing *and* Maintaining an updated chrome browser on Slackware
-is now made easier with this small program, "google-chrome-the-latest".
+﻿Maintaining an updated chrome browser on Slackware is now made
+easier with this small program, "google-chrome-the-latest".
 It is a simple python script that checks what is the latest
-version available and updates it on your Slackware box directly
-from Google.
+version available and updates it on your Slackware box.
 
-It does this by parsing the web-page at
+It identifies a new version by parsing the web-page at
 https://www.whatismybrowser.com/guides/the-latest-version/chrome
 and comparing with the chrome version currently installed.
-
-Chrome is downloaded directly from Google and converted to txz
-using the standard rpm2txz command.
+Chrome is then downloaded directly from Google and converted to
+txz using the standard rpm2txz command.
 
 You can run this script manually or automatically with the
 provided cron.hourly script.
@@ -33,5 +31,3 @@ simply by running:
 At any time you can force a download from Google site and upgrade
 without any pop-up window with:
 /opt/google-chrome-the-latest/google-chrome-the-latest.py silent upgrade
-
-This package installs to /opt/google-chrome-the-latest
