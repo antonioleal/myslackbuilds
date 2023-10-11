@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=qb64pe
 VERSION=${VERSION:-3.9.1}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 TARBALL=${TARBALL:-QB64pe}
@@ -85,6 +85,7 @@ else
 fi
 cat $CWD/qb64pe.1 | gzip -c -f > $PKG/usr/man/man1/qb64pe.1.gz
 cp $CWD/qb64pe-launcher $PKG/usr/bin
+chmod 755 $PKG/usr/bin/qb64pe-launcher
 cp $CWD/qb64pe.desktop $PKG/usr/share/applications
 cp $CWD/qb64pe.png $PKG/usr/share/pixmaps/qb64pe.png
 ( cd $PKG/usr/bin ; rm -rf qb64pe )
