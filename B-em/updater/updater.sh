@@ -74,7 +74,7 @@ mv *.tar.gz ..
 # write templates              #
 ################################
 MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_commit_}/$COMMIT/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_commit_}/$COMMIT/" -e "s/\${_commit_}/$COMMIT/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_commit_}/$COMMIT/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
 chmod +x ../${PRGNAM}.SlackBuild
 

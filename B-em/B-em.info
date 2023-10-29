@@ -1,7 +1,7 @@
 PRGNAM="B-em"
 VERSION="ac1baae"
 HOMEPAGE="https://github.com/stardot/b-em"
-DOWNLOAD="https://github.com/stardot/b-em/archive/ac1baae4c1113707a43ce63ac912787a4054a7cb/b-em-${_commit_}.tar.gz"
+DOWNLOAD="https://github.com/stardot/b-em/archive/ac1baae4c1113707a43ce63ac912787a4054a7cb/b-em-ac1baae4c1113707a43ce63ac912787a4054a7cb.tar.gz"
 MD5SUM="cfc42b51ecdf454ee5e1a97d5e170995"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
