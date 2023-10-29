@@ -98,10 +98,9 @@ rm -rf $SCRIPT_DIR/slackbuild/*
 tar -z -v -c -f $SCRIPT_DIR/slackbuild/${PRGNAM}.tar.gz --exclude='tar.sh' --exclude='*.tar.gz' --exclude='updater' * # ${PRGNAM}
 
 ################################
-# cleanup                      #
+# sbopkglint                   #
 ################################
-#rm ${PRGNAM}/$TARBALL
-#rm $SCRIPT_DIR/new_version
+sbopkglint /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz
 
 ################################
 # make slackbuild tar.gz       #
