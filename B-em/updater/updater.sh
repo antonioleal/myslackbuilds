@@ -93,9 +93,9 @@ fi
 # make slackbuild tar.gz       #
 ################################
 echo "Compressing SlackBuild release in slackbuild folder '${PRGNAM}'"
-cd $SCRIPT_DIR/..
+cd $SCRIPT_DIR/../..
 rm -rf $SCRIPT_DIR/slackbuild/*
-tar -z -v -c -f $SCRIPT_DIR/slackbuild/${PRGNAM}.tar.gz --exclude='tar.sh' --exclude='*.tar.gz' --exclude='updater' * # ${PRGNAM}
+tar -z -v -c -f $SCRIPT_DIR/slackbuild/${PRGNAM}.tar.gz --exclude='*.tar.gz' --exclude='updater' ${PRGNAM}
 
 ################################
 # sbopkglint                   #
