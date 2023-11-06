@@ -94,6 +94,16 @@ SimH (History Simulator) is a collection of simulators for
 historically significant or just plain interesting computer hardware
 and software from the past.
 
+# smoffice2024
+SoftMaker Office 2024 is an office suite, it includes
+
+ * TextMaker 2024, a word processor
+ * PlanMaker 2024, a spreadsheet program
+ * Presentations 2024, a presentation software
+
+The main feature of SoftMaker Office 2024 is the extremely high
+compatibility with the MS Office file formats.
+
 # timeshift
 Timeshift for Linux is an application that provides functionality
 similar to the System Restore feature in Windows and the Time Machine
