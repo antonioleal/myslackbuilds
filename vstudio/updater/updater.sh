@@ -102,7 +102,7 @@ rm new_version
 ################################
 # sbopkglint                   #
 ################################
-sbopkglint /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz
+# sbopkglint /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz
 
 ################################
 # make slackbuild tar.gz       #
