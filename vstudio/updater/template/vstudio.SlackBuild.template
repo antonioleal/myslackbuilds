@@ -67,10 +67,6 @@ find -L . \
 # Make sure top-level perms are correct:
 chmod 0755 .
 
-chmod -R +x $PKG/opt/VStudio/lib/*
-chmod -R +x $PKG/opt/VStudio/Plugins/*
-chmod -R +x $PKG/opt/VStudio/qt/*
-
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $PKG/usr/share/doc/vstudio/* $PKG/usr/doc/$PRGNAM-$VERSION
 rm -rf $PKG/usr/share/doc
