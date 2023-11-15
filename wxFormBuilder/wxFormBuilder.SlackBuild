@@ -80,7 +80,7 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 cmake -S . -B _build -G "Unix Makefiles" --install-prefix "$PKG/opt/wxFormBuilder" -DCMAKE_BUILD_TYPE=Release
-cmake --build _build --config Release -j `nproc`
+cmake --build _build --config Release
 cmake --install _build --config Release
 
 #remove zero length files
