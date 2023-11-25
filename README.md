@@ -94,6 +94,16 @@ SimH (History Simulator) is a collection of simulators for
 historically significant or just plain interesting computer hardware
 and software from the past.
 
+# smoffice2021
+SoftMaker Office 2021 is an office suite, it includes
+
+ * TextMaker 2021, a word processor
+ * PlanMaker 2021, a spreadsheet program
+ * Presentations 2021, a presentation software
+
+The main feature of SoftMaker Office 2021 is the extremely high
+compatibility with the MS Office file formats.
+
 # smoffice2024
 SoftMaker Office 2024 is an office suite, it includes
 
