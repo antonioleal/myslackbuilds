@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Slackware build script for kForth-32
+# Slackware build script for kForth-32 branch 1.x.x
 
 # Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Modified by SlackBuilds.org on 2022/03/18
+# Copyright 2022 G. Schoenmakers <gschoen@iinet.net.au>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,11 +26,12 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PRGNAM=kForth-32
-VERSION=${VERSION:-2.4.3}
+PRGNAM=kforth
+VERSION=${VERSION:-1.8.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
+TARBALL=${TARBALL:-kForth-32-$VERSION}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -67,8 +70,10 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.?z
+tar xvf $CWD/$TARBALL.tar.gz
+mv $TARBALL $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -82,12 +87,12 @@ make
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
 mkdir -p $PKG/usr/bin
-install -Dsv -m 0755 kforth32 $PKG/usr/bin/kforth32
-install -Dsv -m 0755 kforth32-fast $PKG/usr/bin/kforth32-fast
+install -Dsv -m 0755 kforth32 $PKG/usr/bin/kforth
+install -Dsv -m 0755 kforth32-fast $PKG/usr/bin/kforth-fast
 
-mkdir -p $PKG/usr/share/kForth-32
+mkdir -p $PKG/usr/share/kforth
 cd ../forth-src
-cp -avxu * $PKG/usr/share/kForth-32
+cp -avxu * $PKG/usr/share/kforth
 
 cd ../doc
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
@@ -95,17 +100,17 @@ cp *.* $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/etc/profile.d
-cat <<EOF >$PKG/etc/profile.d/kForth-32.sh
+cat <<EOF >$PKG/etc/profile.d/kforth.sh
 #!/bin/sh
-export KFORTH_DIR=/usr/share/kForth-32
+export KFORTH_DIR=/usr/share/kforth
 EOF
-chmod 0755 $PKG/etc/profile.d/kForth-32.sh
+chmod 0755 $PKG/etc/profile.d/kforth.sh
 
 mkdir -p $PKG/usr/share/pixmaps
 cp $TMP/$PRGNAM-$VERSION/kforth.xpm $PKG/usr/share/pixmaps
 
 mkdir -p $PKG/usr/share/applications
-cp $CWD/kForth-32.desktop $PKG/usr/share/applications
+cp $CWD/kforth.desktop $PKG/usr/share/applications
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
