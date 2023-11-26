@@ -35,7 +35,7 @@ differences between a source and a target folder and transfers only
 the minimum amount of data needed. FreeFileSync is Open Source
 software,available for Windows, Linux and macOS.
 
-# kForth-32 and kForth-64
+# kforth, kForth-32 and kForth-64
 kForth is an implementation of the Forth programming language and environment.
 
 # plug
