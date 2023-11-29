@@ -97,6 +97,7 @@ cp -avxu * $PKG/usr/share/kforth
 cd ../doc
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp *.* $PKG/usr/doc/$PRGNAM-$VERSION
+cp $CWD/dpans94.pdf $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/etc/profile.d
