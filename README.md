@@ -27,6 +27,12 @@ iOS or for running in a browser.
 
 BBC BASIC is very well documented.
 
+# bwbasic
+The Bywater BASIC Interpreter (bwBASIC) implements a large superset
+of the ANSI Standard for Minimal BASIC (X3.60-1978) and a significant
+subset of the ANSI Standard for Full BASIC (X3.113-1987), and many
+classic BASIC dialects in C.
+
 # FreeFileSync
 FreeFileSync is a folder comparison and synchronization software that
 creates and manages backup copies of all your important files.
