@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=google-chrome-the-latest
+PRGNAM=firefox-standard-the-latest
 CATEGORY=system
 
 cd ~/slackware-builds/git.slackbuilds.org/slackbuilds
