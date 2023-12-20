@@ -84,6 +84,7 @@ cp *.glade $PKG/opt/firefox-standard-the-latest
 cp firefox-standard-the-latest.png $PKG/opt/firefox-standard-the-latest
 cp firefox-standard-the-latest.desktop $PKG/opt/firefox-standard-the-latest
 cp -r pkg $PKG/opt/firefox-standard-the-latest
+mkdir -p $PKG/opt/firefox-standard-the-latest/pkg/opt
 
 rm -rf $PKG/etc/cron.hourly $PKG/usr/share/pixmaps $PKG/usr/share/applications
 mkdir -p $PKG/etc/cron.hourly $PKG/usr/share/pixmaps $PKG/usr/share/applications
