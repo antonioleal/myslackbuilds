@@ -74,6 +74,11 @@ demanding needs of its users.
 Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
 compiler.
 
+# firefox-standard-the-latest
+Installing *and* Maintaining an updated Firefox Standard Release
+web browser on Slackware is now made easier with this small
+program, "google-chrome-the-latest".
+
 # google-chrome-the-latest
 Installing *and* Maintaining an updated chrome browser on Slackware
 is now made easier with this small program, "google-chrome-the-latest".
