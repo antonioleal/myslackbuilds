@@ -9,10 +9,10 @@
 firefox-standard-the-latest: firefox-standard-the-latest (Firefox Standard Updater Script)
 firefox-standard-the-latest:
 firefox-standard-the-latest: Maintaining an updated Firefox Standard Rel. on Slackware is now made
-firefox-standard-the-latest: easier with this small program, "firefox-standard-the-latest", a simple
-firefox-standard-the-latest: python script that will install and keep checking afterwards what is
-firefox-standard-the-latest: the latest version available so your Slackware box is kept safer.
-firefox-standard-the-latest:
+firefox-standard-the-latest: easier with this small program, "firefox-standard-the-latest", a
+firefox-standard-the-latest: simple python script that will install and keep checking afterwards
+firefox-standard-the-latest: what is the latest version available so your Slackware box is kept
+firefox-standard-the-latest: safer.
 firefox-standard-the-latest:
 firefox-standard-the-latest:
 firefox-standard-the-latest:
