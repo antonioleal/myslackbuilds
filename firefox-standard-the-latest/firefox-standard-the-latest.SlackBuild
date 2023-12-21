@@ -67,6 +67,7 @@ mkdir -p $PKG/opt/firefox-standard-the-latest
 cp firefox-standard-the-latest.py $PKG/opt/firefox-standard-the-latest
 chmod +x $PKG/opt/firefox-standard-the-latest/firefox-standard-the-latest.py
 cp *.glade $PKG/opt/firefox-standard-the-latest
+cp policies.json $PKG/opt/firefox-standard-the-latest
 cp firefox-standard-the-latest.png $PKG/opt/firefox-standard-the-latest
 cp firefox-standard-the-latest.desktop $PKG/opt/firefox-standard-the-latest
 cp -r pkg $PKG/opt/firefox-standard-the-latest
