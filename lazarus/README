@@ -6,3 +6,8 @@ independent visual components like buttons, windows, checkbox, treeview
 and many, many more. The LCL is platform independent, so you can write
 an application once and then compile for various platforms without
 changing code.
+
+Note: before installing lazarus 3.0 make sure to remove any previous
+lazarus installation and first upgrading the free pascal compile to
+version 3.2.2 build 3 as the fpc-sources are now included in this
+build.
