@@ -23,6 +23,9 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# 20231229 ALe: Upgrade to Lazarus 3.0
+# Moved fpc source to fpc package with option to exclude it.
+
 # 20220414 bkw: BUILD=2
 # - fix PRINT_PACKAGE_NAME when ARCH not set in environment.
 # - add gtk-update-icon-cache to doinst.sh.
@@ -42,7 +45,6 @@ BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 
-FPCVER=${FPCVER:-3.2.2}
 LCL=${LCL:-gtk2}
 OPT=${OPT:--v000}
 
@@ -108,15 +110,6 @@ find $PKG -print0 -type f -a -perm /111 | \
      grep ELF | \
      cut -f 1 -d : | \
      xargs strip --strip-unneeded 2> /dev/null || true
-
-# 20210905 bkw: Nothing used fpc-source but lazarus, so just include
-# the source here.
-mkdir -p $PKG/usr/src
-( cd $PKG/usr/src
-  tar xvf $CWD/fpc-$FPCVER.source.tar.gz
-  fixperms
-  ln -s fpc-$FPCVER fpc
-)
 
 # Install desktop file, icon, and mime entry
 mkdir -p $PKG/usr/share/{applications,pixmaps,mime/packages}
