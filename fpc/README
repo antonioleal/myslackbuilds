@@ -11,3 +11,7 @@ The fpc source code is included by default. It is needed by
 some applications (e.g Lazarus IDE) but it can be excluded with:
 
     SRC=no ./fpc.Slackbuild
+
+Note: if you plan to use lazarus 3.0 make sure first to remove
+any previous lazarus installation, then upgrade fpc to
+version 3.2.2 build 3, and only then install lazarus 3.0

@@ -7,6 +7,16 @@ and many, many more. The LCL is platform independent, so you can write
 an application once and then compile for various platforms without
 changing code.
 
+This package builds lazarus with "gtk2".
+You can build lazarus with "qt5" by following these steps:
+
+1. install the package libqtpas available at SlackBuilds.org
+2. modify the lazarus.SlackBuild file line
+        LCL=${LCL:-gtk2}
+   to
+        LCL=${LCL:-qt5}
+3. build lazarus with this modified slackbuild
+
 Note: before installing lazarus 3.0 make sure first to remove any
-previous lazarus installation and upgrading fpc to version 3.2.2
-build 3 as the fpc-sources are now included in this build.
+previous lazarus installation, then upgrading fpc to version 3.2.2
+build 3 as the fpc sources are now included in fpc package.
