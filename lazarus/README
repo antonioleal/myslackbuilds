@@ -11,11 +11,9 @@ This package builds lazarus with "gtk2".
 You can build lazarus with "qt5" by following these steps:
 
 1. install the package libqtpas available at SlackBuilds.org
-2. modify the lazarus.SlackBuild file line
-        LCL=${LCL:-gtk2}
-   to
-        LCL=${LCL:-qt5}
-3. build lazarus with this modified slackbuild
+2. build the package with the command:
+
+      LCL=qt5 ./lazarus.SlackBuild
 
 Note: before installing lazarus 3.0 make sure first to remove any
 previous lazarus installation, then upgrading fpc to version 3.2.2

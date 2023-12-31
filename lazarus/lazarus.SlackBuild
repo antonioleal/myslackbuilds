@@ -46,6 +46,9 @@ TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 
 LCL=${LCL:-gtk2}
+if [ "${LCL:-qt5}" = "qt5" ]; then
+    LCL=${LCL:-qt5}
+fi
 OPT=${OPT:--v000}
 
 if [ -z "$ARCH" ]; then
