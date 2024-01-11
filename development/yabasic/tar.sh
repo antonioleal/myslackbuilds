@@ -1,4 +1,8 @@
 #!/bin/bash
 
 cd ..
-tar -z -c -f yabasic.tar.gz -v --exclude='tar.sh' --exclude='*.tar.gz'  yabasic
+sboname=${PWD##*/}
+echo $sboname
+cd updater/slackbuild
+
+tar -z -c -f $sboname.tar.gz -v --exclude='updater' --exclude='*.tar.gz' --exclude='*.tar' --exclude='*.zip'  ../../../$sboname

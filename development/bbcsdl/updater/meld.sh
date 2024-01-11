@@ -25,9 +25,6 @@
 PRGNAM=bbcsdl
 CATEGORY=development
 
-cd ~/slackware-builds/git.slackbuilds.org/slackbuilds
-git reset --hard
-git pull --rebase
 
-meld ~/slackware-builds/antonioleal/myslackbuilds/${CATEGORY}/${PRGNAM}/ ~/slackware-builds/antonioleal/slackbuilds/${CATEGORY}/${PRGNAM}/
+meld ~/slackware-builds/antonioleal/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/antonioleal/slackbuilds/${CATEGORY}/${PRGNAM}/
 

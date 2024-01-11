@@ -25,9 +25,5 @@
 PRGNAM=vstudio
 CATEGORY=development
 
-cd ~/slackware-builds/git.slackbuilds.org/slackbuilds
-git reset --hard
-git pull --rebase
-
-meld ~/slackware-builds/antonioleal/slackbuilds/${PRGNAM}/ ~/slackware-builds/git.slackbuilds.org/slackbuilds/${CATEGORY}/${PRGNAM}/
+meld ~/slackware-builds/antonioleal/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/antonioleal/slackbuilds/${CATEGORY}/${PRGNAM}/
 

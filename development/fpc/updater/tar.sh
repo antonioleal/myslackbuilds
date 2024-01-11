@@ -1,6 +1,8 @@
 #!/bin/bash
 
-PRGNAM=fpc
+cd ..
+sboname=${PWD##*/}
+echo $sboname
+cd updater/slackbuild
 
-cd slackbuild
-tar -z -c -f ${PRGNAM}.tar.gz -v --exclude='updater' --exclude='*.tar.gz' --exclude='*.tar'  ../../../${PRGNAM}
+tar -z -c -f $sboname.tar.gz -v --exclude='updater' --exclude='*.tar.gz' --exclude='*.tar' --exclude='*.zip'  ../../../$sboname

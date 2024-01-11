@@ -1,4 +1,8 @@
 #!/bin/bash
 
-cd slackbuild
-tar -z -c -f kforth.tar.gz -v --exclude='updater' --exclude='*.tar.gz' --exclude='dpans94.pdf' ../../../kforth
+cd ..
+sboname=${PWD##*/}
+echo $sboname
+cd updater/slackbuild
+
+tar -z -c -f $sboname.tar.gz -v --exclude='updater' --exclude='*.tar.gz' --exclude='*.tar' --exclude='*.zip'  ../../../$sboname
