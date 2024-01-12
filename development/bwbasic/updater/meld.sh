@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware bwbasic comparer
+# Slackware meld comparer
 
 # Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,8 +22,15 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=bwbasic
-CATEGORY=development
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+cd $SCRIPT_DIR
+
+cd ..
+PRGNAM=${PWD##*/}
+echo "Program: " $PRGNAM
+cd ..
+CATEGORY=${PWD##*/}
+echo "Category: " $CATEGORY
 
 meld ~/slackware-builds/antonioleal/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/antonioleal/slackbuilds/${CATEGORY}/${PRGNAM}/
 
