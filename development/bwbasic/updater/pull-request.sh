@@ -15,8 +15,8 @@ read -p "Commit message: " MSG
 cd ~/slackware-builds/antonioleal/slackbuilds/$CATEGORY/
 git checkout -B $PKGNAME
 tar xvfz ~/slackware-builds/antonioleal/myslackbuilds/$CATEGORY/$PKGNAME/updater/slackbuild/$PKGNAME.tar.gz
-echo git commit -a -m $MSG
-echo git push -f origin $PKGNAME
+git commit -a -m $MSG
+git push -f origin $PKGNAME
 git checkout master
 git branch -D $PKG
 
