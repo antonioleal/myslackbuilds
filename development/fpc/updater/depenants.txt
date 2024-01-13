@@ -1,0 +1,13 @@
+fpc
+├ deskew  (Alexander Verbovetsky <alik@ejik.org>)
+├ hedgewars  (B. Watson <urchlay@slackware.uk>)                 -> physfs
+├ lazarus  (Antonio Leal <antonioleal@yahoo.com>)
+│ ├ cqrlog  (Gustavo Conrad <gus3963 gmail>)                    -> tqsl xplanet hamlib wxGTK3
+│ ├ ddrescueview  (Jeremy Hansen <jebrhansen+SBo@gmail.com>)
+│ ├ doublecmd-qt5  (Hao Chi Kiang <no@no.noooo.ooo>)
+│ ├ easymp3gain  (Chernov V. V. <manbornofwoman@gmail.com>)     -> aacgain mp3gain vorbisgain
+│ ├ transgui  (Jeremy Hansen <jebrhansen+SBo@gmail.com>)
+│ └ winff  (Vijay Marcel <vijaymarcel@outlook.com>)             -> libqtpas
+├ mads  (B. Watson <urchlay@slackware.uk>)
+├ pasdoc  (Yann Mérignac <yann.merignac@laposte.net>)
+└ xidel  (B. Watson <urchlay@slackware.uk>)
