@@ -15,31 +15,39 @@ fpc
 
 
 full sbopkg queue file to save as /var/lib/sbopkg/queues/my-fpc-lazarus.sqf
-----------------------------
-fpc
+-----------------------------------------------------------------------------
+
+# This is my fpc and lazarus testing sbopkg queue file
+
+# Free Pascal Dependents:
+-fpc
 deskew
  physfs
  lua
- ghc
+ # ghc is used only on 32bits slackware (it takes ages to build)
+ -ghc
 hedgewars
 mads
 pasdoc
 xidel
 
-lazarus
+# Lazarus Dependents:
+-lazarus
  wxGTK3
  tqsl
  xplanet
  hamlib
 cqrlog
 ddrescueview
-doublecmd-qt5
+# doublecmd-qt5 needs to be updated to version 1.1.8+
+-doublecmd-qt5
  aacgain
  mp3gain
  vorbisgain
 easymp3gain
 transgui
- libqtpas
+ # libqtpas needs to use Lazarus 3.0
+ -libqtpas
 winff
 
 
