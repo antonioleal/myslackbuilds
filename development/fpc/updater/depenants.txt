@@ -11,3 +11,24 @@ fpc
 ├ mads  (B. Watson <urchlay@slackware.uk>)
 ├ pasdoc  (Yann Mérignac <yann.merignac@laposte.net>)
 └ xidel  (B. Watson <urchlay@slackware.uk>)
+
+
+
+full sbopkg queue file:
+----------------------------
+fpc
+deskew
+physfs hedgewars
+mads
+pasdoc
+xidel
+lazarus
+wxGTK3 tqsl xplanet hamlib cqrlog
+ddrescueview
+doublecmd-qt5
+aacgain mp3gain vorbisgain easymp3gain
+transgui
+libqtpas winff
+
+
+
