@@ -14,21 +14,33 @@ fpc
 
 
 
-full sbopkg queue file:
+full sbopkg queue file to save as /var/lib/sbopkg/queues/my-fpc-lazarus.sqf
 ----------------------------
 fpc
 deskew
-physfs hedgewars
+ physfs
+ lua
+ ghc
+hedgewars
 mads
 pasdoc
 xidel
+
 lazarus
-wxGTK3 tqsl xplanet hamlib cqrlog
+ wxGTK3
+ tqsl
+ xplanet
+ hamlib
+cqrlog
 ddrescueview
 doublecmd-qt5
-aacgain mp3gain vorbisgain easymp3gain
+ aacgain
+ mp3gain
+ vorbisgain
+easymp3gain
 transgui
-libqtpas winff
+ libqtpas
+winff
 
 
 
