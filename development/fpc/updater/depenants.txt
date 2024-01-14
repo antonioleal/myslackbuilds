@@ -17,15 +17,17 @@ fpc
 full sbopkg queue file to save as /var/lib/sbopkg/queues/my-fpc-lazarus.sqf
 -----------------------------------------------------------------------------
 
-# This is my fpc and lazarus testing sbopkg queue file
+# This is my fpc and lazarus testing sbopkg queue file.
+# Identation means a package needed as dependency
+# A "-" (minus) means disabled by default
 
 # Free Pascal Dependents:
 -fpc
 deskew
- physfs
- lua
- # ghc is used only on 32bits slackware (it takes ages to build)
- -ghc
+    physfs
+    lua
+    # ghc is needed for 32bits hedgewars (it takes ages to build)
+    -ghc
 hedgewars
 mads
 pasdoc
@@ -33,21 +35,21 @@ xidel
 
 # Lazarus Dependents:
 -lazarus
- wxGTK3
- tqsl
- xplanet
- hamlib
-cqrlog
+    wxGTK3
+    tqsl
+    xplanet
+    hamlib
+    cqrlog
 ddrescueview
 # doublecmd-qt5 needs to be updated to version 1.1.8+
 -doublecmd-qt5
- aacgain
- mp3gain
- vorbisgain
+    aacgain
+    mp3gain
+    vorbisgain
 easymp3gain
 transgui
- # libqtpas needs to use Lazarus 3.0
- -libqtpas
+    # libqtpas needs to use Lazarus 3.0
+    -libqtpas
 winff
 
 
