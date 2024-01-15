@@ -1,0 +1,12 @@
+
+
+Possible upgrade to Lazarus 3.0 - study:
+
+lazarus
+├ cqrlog  (Gustavo Conrad <gus3963 gmail>)                          --> builds ok and starts
+├ ddrescueview  (Jeremy Hansen <jebrhansen+SBo@gmail.com>)          --> builds ok and starts
+├ doublecmd-qt5  (Hao Chi Kiang <no@no.noooo.ooo>)                  --> LazUTF8Classes were deprecated and now are removed from Lazarus 3.0. This breaks doublecmd-qt5 slackbuild
+├ easymp3gain  (Chernov V. V. <manbornofwoman@gmail.com>)           --> builds ok and starts
+├ transgui  (Jeremy Hansen <jebrhansen+SBo@gmail.com>)              --> builds ok and starts
+└ winff  (Vijay Marcel <vijaymarcel@outlook.com>)                   --> fails in link
+
