@@ -95,25 +95,29 @@ lcl=qt5 CPU_TARGET=$ARCH ./build.sh plugins
     --bm="NoDebug Full Optimizations" \
     --widgetset=qt5
 
-# Strip everything.
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
-
 # Install it into the package
 chmod +x ./install/linux/install.sh
 sed -i "s|share/doublecmd/doc|doc/${PRGNAM}-${VERSION}|g" ./install/linux/install.sh
 sed -i "s|share/man|man|g" ./install/linux/install.sh
 ./install/linux/install.sh --install-prefix="$PKG"
 
+# make plugins executable:
+chmod -R +x $PKG/usr/lib/doublecmd/plugins/*
+
+# Strip everything.
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+
 # Gzip man page
 gzip $PKG/usr/man/man1/doublecmd.1
-
 
 # Make package.
 mkdir -p $PKG/install
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat "$CWD"/slack-desc > $PKG/install/slack-desc
-cat "$CWD"/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
