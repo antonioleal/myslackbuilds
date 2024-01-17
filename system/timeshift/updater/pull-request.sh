@@ -23,5 +23,5 @@ sleep 2
 echo git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
 echo git push -f origin $PKGNAME
 echo git checkout master
-#git branch -D $PKG
+echo git branch -D $PKG
 
