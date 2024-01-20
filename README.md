@@ -1,4 +1,4 @@
-This repo contains my slackbuild scripts, some of which also published to Slackbuilds.org
+This repo contains my slackbuild scripts, some of which also published to SlackBuilds.org
 -----------------------------------------------------------------------------------------
 
 # audio/plug
