@@ -1,0 +1,12 @@
+
+from: https://freefilesync.org/forum/viewtopic.php?t=10358
+
+
+https://github.com/hkneptune/FreeFileSync
+https://gitlab.com/opensource-tracking/FreeFileSync/
+
+
+
+https://github.com/pmkees/build-FreeFileSync-on-raspberry-pi
+
+
