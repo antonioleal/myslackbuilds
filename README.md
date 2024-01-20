@@ -1,5 +1,5 @@
-This repo contains my slackbuild scripts that are also published to Slackbuilds.org
------------------------------------------------------------------------------------
+This repo contains my slackbuild scripts, some of which also published to Slackbuilds.org
+-----------------------------------------------------------------------------------------
 
 # audio/plug
 Plug is a Software to control Fender Mustang Amps, a linux replacement for
