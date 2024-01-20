@@ -33,6 +33,16 @@ echo
 pwd
 git status
 
+# git add all
+echo
+echo git add --all
+read -p "Issue command above? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+    git add --all
+    echo
+    git status
+fi
+
 # git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
 echo
 echo git commit -a -m "\"$CATEGORY/$PKGNAME: $MSG\""
@@ -49,7 +59,7 @@ if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git push -f origin $PKGNAME
 fi
 
-#   or delete all branches
+# delete all branches
 echo
 echo 'git branch | grep -v "master" | xargs git branch -D'
 read -p "Issue command above? (y/n) " op
