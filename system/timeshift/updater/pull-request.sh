@@ -4,6 +4,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
 
 set -e
+clear
 
 cd ..
 PKGNAME=${PWD##*/}
@@ -37,17 +38,23 @@ echo
 echo git commit -a -m "\"$CATEGORY/$PKGNAME: $MSG\""
 read -p "Issue command above? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    echo "BOMBA"
-    #git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
+    git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
 fi
 
+# git push -f origin $PKGNAME
+echo
 echo git push -f origin $PKGNAME
-echo git checkout master
+read -p "Issue command above? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+    git push -f origin $PKGNAME
+fi
 
-#echo git branch -D $PKG
-# delete all branches
-#git branch | grep -v "master" | xargs git branch -D
+#   or delete all branches
+echo
 echo 'git branch | grep -v "master" | xargs git branch -D'
-
-
-# manual clean-up: git checkout master && git branch -D timeshift && git reset --hard && git branch && git status
+read -p "Issue command above? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+    git checkout master
+    #git branch -D $PKG
+    git branch | grep -v "master" | xargs git branch -D
+fi
