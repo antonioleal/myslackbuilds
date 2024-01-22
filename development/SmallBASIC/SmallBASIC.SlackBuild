@@ -83,7 +83,7 @@ fixperms() {
     -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 }
 
-#Build a temporary FLTK
+# FLTK is teporarily needed for the build
 # (
 #     cd $FLTKTARBALL
 #     fixperms
@@ -93,41 +93,39 @@ fixperms() {
 #     make install
 # )
 
-# Build SmallBASIC FLTK Version
-cd ${PRGNAM,,}-$VERSION
-fixperms
-export PATH=/tmp/$FLTKTARBALL/bin:$PATH
-CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --prefix=/opt/smallbasic --enable-fltk
+# Build SmallBASIC Console Version
+make clean
+#./configure --prefix=/opt/smallbasic
+./configure
 make
 make install DESTDIR=$PKG
 
 # Build SmallBASIC SDL Version
 make clean
-./configure --prefix=/opt/smallbasic --enable-sdl
+#./configure --prefix=/opt/smallbasic --enable-sdl
+./configure --enable-sdl
 make
 make install DESTDIR=$PKG
 
-# Build SmallBASIC Console Version
-make clean
-./configure --prefix=/opt/smallbasic
+# Build SmallBASIC FLTK Version
+cd ${PRGNAM,,}-$VERSION
+fixperms
+export PATH=/tmp/$FLTKTARBALL/bin:$PATH
+#CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --prefix=/opt/smallbasic --enable-fltk
+CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --enable-fltk
 make
 make install DESTDIR=$PKG
 
-# Link this stuff in /usr/bin
-( cd $PKG/usr/bin ; rm -rf sbasici )
-( cd $PKG/usr/bin ; ln -s /opt/smallbasic/bin/sbasici sbasici )
-( cd $PKG/usr/bin ; rm -rf sbasicg )
-( cd $PKG/usr/bin ; ln -s /opt/smallbasic/bin/sbasici sbasicg )
-( cd $PKG/usr/bin ; rm -rf sbasic )
-( cd $PKG/usr/bin ; ln -s /opt/smallbasic/bin/sbasici sbasic )
 
 #clean-up
 #rm -rf /tmp/$FLTKTARBALL
 
-mkdir -p $PKG/usr/share/pixmaps $PKG/usr/share/applications
-mv $PKG/opt/smallbasic/share/icons/hicolor/128x128/apps/sb-desktop-128x128.png $PKG/usr/share/pixmaps
-rm -rf $PKG/opt/smallbasic/share/icons/hicolor/128x128/apps/
-mv $PKG/opt/smallbasic/share/applications/io.github.smallbasic.desktop $PKG/usr/share/applications
+# Place files at the correct locations
+mkdir -p $PKG/usr/bin -p $PKG/usr/share/pixmaps $PKG/usr/share/applications
+mv $PKG/usr/local/bin/* $PKG/usr/bin
+mv $PKG/usr/local/share/icons/hicolor/128x128/apps/sb-desktop-128x128.png $PKG/usr/share/pixmaps
+mv $PKG/usr/local/share/applications/io.github.smallbasic.desktop $PKG/usr/share/applications
+rm -rf $PKG/usr/local
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
