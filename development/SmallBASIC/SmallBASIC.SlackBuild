@@ -68,7 +68,7 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-#rm -rf /tmp/$FLTKTARBALL
+rm -rf /tmp/$FLTKTARBALL
 rm -rf $FLTKTARBALL $PRGNAM-$VERSION
 
 tar xvfz $CWD/$FLTKTARBALL.tar.gz
@@ -84,41 +84,38 @@ fixperms() {
 }
 
 # FLTK is teporarily needed for the build
-# (
-#     cd $FLTKTARBALL
-#     fixperms
-#     ./autogen.sh
-#     ./configure --prefix=/tmp/$FLTKTARBALL
-#     make
-#     make install
-# )
+(
+    cd $FLTKTARBALL
+    fixperms
+    ./autogen.sh
+    ./configure --prefix=/tmp/$FLTKTARBALL
+    make
+    make install
+)
+
+cd ${PRGNAM,,}-$VERSION
+fixperms
 
 # Build SmallBASIC Console Version
 make clean
-#./configure --prefix=/opt/smallbasic
 ./configure
 make
 make install DESTDIR=$PKG
 
 # Build SmallBASIC SDL Version
 make clean
-#./configure --prefix=/opt/smallbasic --enable-sdl
 ./configure --enable-sdl
 make
 make install DESTDIR=$PKG
 
 # Build SmallBASIC FLTK Version
-cd ${PRGNAM,,}-$VERSION
-fixperms
 export PATH=/tmp/$FLTKTARBALL/bin:$PATH
-#CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --prefix=/opt/smallbasic --enable-fltk
 CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --enable-fltk
 make
 make install DESTDIR=$PKG
 
-
-#clean-up
-#rm -rf /tmp/$FLTKTARBALL
+# Clean-up
+rm -rf /tmp/$FLTKTARBALL
 
 # Place files at the correct locations
 mkdir -p $PKG/usr/bin -p $PKG/usr/share/pixmaps $PKG/usr/share/applications
