@@ -97,7 +97,6 @@ cd ${PRGNAM,,}-$VERSION
 fixperms
 
 # Build SmallBASIC Console Version
-make clean
 ./configure
 make
 make install DESTDIR=$PKG
@@ -109,6 +108,7 @@ make
 make install DESTDIR=$PKG
 
 # Build SmallBASIC FLTK Version
+make clean
 export PATH=/tmp/$FLTKTARBALL/bin:$PATH
 CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --enable-fltk
 make
