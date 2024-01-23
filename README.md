@@ -56,6 +56,14 @@ QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
 additional features and enhancements, maintained by a
 group of original developers of QB64.com.
 
+# development/SmallBasic
+SmallBASIC is a fast and easy to learn BASIC language interpreter
+ideal for everyday calculations, scripts and prototypes.
+SmallBASIC includes trigonometric, matrices and algebra functions,
+a built in IDE, a powerful string library, system, sound, graphic
+commands and communication via serial or sockets along with
+structured programming syntax.
+
 # development/SQLiteStudio
 SQLiteStudio is a free, open source, multi-platform SQLite database
 manager writtenin C++, with use of Qt framework.
