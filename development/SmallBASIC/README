@@ -5,15 +5,6 @@ IDE, a powerful string library, system, sound, graphic commands and
 communication via serial or sockets along with structured
 programming syntax.
 
-' Example for using functions in SmallBASIC
-
-s = AddStrings("My", "String")
-print s
-
-func AddStrings(a, b)
-    return a + b
-end
-
 SmallBASIC is available for various operating systems, including
 Windows, Linux, and Android. You can even build it from source to
 run on many other POSIX-compliant systems, such as Raspberry Pi OS
@@ -33,3 +24,12 @@ about distributing your program on our (Distribution) page.
 If you prefer an online experience, you can start programming
 with the web-based version of SmallBASIC in your browser right now.
 Just click on Start online to begin coding.
+
+This Slackware package produces 3 executables:
+ - sbasici - Using FLTK graphics
+ - sbasicg - Using SDL graphics
+ - sbasic - the Console (text only)
+
+See the online samples from the run menu or the provided
+examples at /usr/share/SmallBASIC
+(some run only on the SDL version)

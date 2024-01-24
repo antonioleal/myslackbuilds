@@ -70,9 +70,11 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf /tmp/$FLTKTARBALL
 rm -rf $FLTKTARBALL $PRGNAM-$VERSION
+rm -rf $TMP/${VERSION/./_}
 
 tar xvfz $CWD/$FLTKTARBALL.tar.gz
 tar xvfz $CWD/${PRGNAM,,}-$VERSION.tar.gz
+unzip $CWD/${PRGNAM,,}_$VERSION.zip "${VERSION/./_}/examples/*"
 
 fixperms() {
     chown -R root:root .
@@ -83,7 +85,7 @@ fixperms() {
     -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 }
 
-# FLTK is teporarily needed for the build
+# Build statical FLTK libraries
 (
     cd $FLTKTARBALL
     fixperms
@@ -96,33 +98,39 @@ fixperms() {
 cd ${PRGNAM,,}-$VERSION
 fixperms
 
-# Build SmallBASIC Console Version
+# Build Console Version
 ./configure
 make
 make install DESTDIR=$PKG
 
-# Build SmallBASIC SDL Version
+# Build SDL Version
 make clean
 ./configure --enable-sdl
 make
 make install DESTDIR=$PKG
+mv $PKG/usr/local/share/applications/io.github.smallbasic.desktop $PKG/usr/local/share/applications/smallbasic-sdl.desktop
+sed -i -e "s/SmallBASIC/SmallBASIC (SDL)/" $PKG/usr/local/share/applications/smallbasic-sdl.desktop
 
-# Build SmallBASIC FLTK Version
+# Build FLTK Version
 make clean
 export PATH=/tmp/$FLTKTARBALL/bin:$PATH
 CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --enable-fltk
 make
 make install DESTDIR=$PKG
-
-# Clean-up
-rm -rf /tmp/$FLTKTARBALL
+mv $PKG/usr/local/share/applications/io.github.smallbasic.desktop $PKG/usr/local/share/applications/smallbasic-fltk.desktop
+sed -i -e "s/SmallBASIC/SmallBASIC (FLTK)/" $PKG/usr/local/share/applications/smallbasic-fltk.desktop
 
 # Place files at the correct locations
-mkdir -p $PKG/usr/bin -p $PKG/usr/share/pixmaps $PKG/usr/share/applications
+mkdir -p $PKG/usr/bin -p $PKG/usr/share/pixmaps $PKG/usr/share/applications $PKG/usr/share/$PRGNAM
 mv $PKG/usr/local/bin/* $PKG/usr/bin
 mv $PKG/usr/local/share/icons/hicolor/128x128/apps/sb-desktop-128x128.png $PKG/usr/share/pixmaps
-mv $PKG/usr/local/share/applications/io.github.smallbasic.desktop $PKG/usr/share/applications
+mv $PKG/usr/local/share/applications/* $PKG/usr/share/applications
+mv $TMP/${VERSION/./_}/examples $PKG/usr/share/$PRGNAM
+
+# Clean-up
 rm -rf $PKG/usr/local
+rm -rf /tmp/$FLTKTARBALL
+rm -rf $TMP/${VERSION/./_}
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
