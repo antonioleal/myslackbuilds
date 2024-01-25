@@ -26,10 +26,12 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=notepadqq
-VERSION=${VERSION:-1.4.0}
+VERSION=${VERSION:-b426303}
 BUILD=${BUILD:-3}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
+TARBALL=${TARBALL:-b426303b5df28b63b6316308927f62db072c27e6}
+
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -66,9 +68,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
-cd $PRGNAM-$VERSION
+rm -rf $PRGNAM-$TARBALL
+tar xvf $CWD/$PRGNAM-$TARBALL.tar.gz
+cd $PRGNAM-$TARBALL
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -85,7 +87,7 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG INSTALL_ROOT=$PKG
 
-patch $PKG/usr/share/applications/notepadqq.desktop $CWD/notepadqq.desktop.patch
+#patch $PKG/usr/share/applications/notepadqq.desktop $CWD/notepadqq.desktop.patch
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
