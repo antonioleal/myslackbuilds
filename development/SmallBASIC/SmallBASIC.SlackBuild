@@ -91,7 +91,7 @@ fixperms() {
     fixperms
     ./autogen.sh
     ./configure --prefix=/tmp/$FLTKTARBALL
-    make
+    make -j1
     make install
 )
 
@@ -100,13 +100,13 @@ fixperms
 
 # Build Console Version
 ./configure
-make
+make -j1
 make install DESTDIR=$PKG
 
 # Build SDL Version
 make clean
 ./configure --enable-sdl
-make
+make -j1
 make install DESTDIR=$PKG
 mv $PKG/usr/local/share/applications/io.github.smallbasic.desktop $PKG/usr/local/share/applications/smallbasic-sdl.desktop
 sed -i -e "s/SmallBASIC/SmallBASIC (SDL)/" $PKG/usr/local/share/applications/smallbasic-sdl.desktop
