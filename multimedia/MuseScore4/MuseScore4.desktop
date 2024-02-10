@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Musescore4
+GenericName=Music notation
+GenericName[fr]=Notation musicale
+Comment=Create, play and print beautiful sheet music
+Comment[fr]=Gravure de partitions musicales
+Exec=mscore4
+Icon=mscore
+Terminal=false
+StartupNotify=true
+NoDisplay=false
+MimeType=application/x-musescore;application/x-musescore+xml;x-scheme-handler/musescore;application/vnd.recordare.musicxml;application/vnd.recordare.musicxml+xml;audio/midi;application/x-bww;application/x-biab;application/x-capella;audio/x-gtp;application/x-musedata;application/x-overture;audio/x-ptb;application/x-sf2;application/x-sf3;
+Categories=AudioVideo;Audio;Graphics;2DGraphics;VectorGraphics;RasterGraphics;Publishing;Midi;Mixer;Sequencer;Music;Qt;
+Keywords=music;notation;composition;composing;arranging;making;sheet music;music notation software;lead sheet;leadsheet;score;full score;scorewriter;MIDI;musicxml;playback;instrument;
+
