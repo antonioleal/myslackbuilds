@@ -80,7 +80,11 @@ find -L . \
 
 mkdir b
 cd b
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/opt/MuseScore4
+cmake .. \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DQMAKE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake \
+    -DQT_QMAKE_EXECUTABLE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake \
+    -DCMAKE_INSTALL_PREFIX=/opt/MuseScore4
 cmake --build .
 
 make install \
