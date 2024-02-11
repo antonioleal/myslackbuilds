@@ -81,11 +81,13 @@ find -L . \
 mkdir b
 cd b
 cmake .. \
+    -DCMAKE_INSTALL_PREFIX=/opt/MuseScore4 \
+    -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
+    -DCMAKE_CXX_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_MODULE_LINKER_FLAGS_RELEASE="-pthread" \
     -DQMAKE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake \
-    -DQT_QMAKE_EXECUTABLE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake \
-    -DCMAKE_INSTALL_PREFIX=/opt/MuseScore4
-cmake --build .
+    -DQT_QMAKE_EXECUTABLE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake
 
 make install \
   DESTDIR=$PKG \
