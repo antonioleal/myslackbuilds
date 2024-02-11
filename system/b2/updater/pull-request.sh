@@ -62,9 +62,11 @@ fi
 # delete all branches
 echo
 echo 'git branch | grep -v "master" | xargs git branch -D'
-read -p "Issue command above? (y/n) " op
+echo "git push origin -d $PKGNAME"
+read -p "Issue commands above? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git checkout master
     #git branch -D $PKG
     git branch | grep -v "master" | xargs git branch -D
+    git push origin -d $PKGNAME
 fi
