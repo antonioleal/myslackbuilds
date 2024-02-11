@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=MuseScore4
+Name=MuseScore 4
 GenericName=Music notation
 Comment=Create, play and print beautiful sheet music
 Exec=mscore4
