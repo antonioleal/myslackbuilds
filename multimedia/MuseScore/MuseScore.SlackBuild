@@ -103,10 +103,23 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
 
-mkdir -p $PKG/usr/share/icons $PKG/usr/share/applications $PKG/usr/bin
-cp -avxu $PKG/opt/MuseScore/share/icons/* $PKG/usr/share/icons/
-rm -rf $PKG/opt/MuseScore/share/applications
+mkdir -p $PKG/usr/share/icons
+mv -avxu $PKG/opt/MuseScore/share/icons/hicolor $PKG/usr/share/icons/
+rm -rf $PKG/opt/MuseScore/share/icons
+
+mkdir -p $PKG/usr/share/applications
 cp $CWD/MuseScore.desktop $PKG/usr/share/applications/
+rm -rf $PKG/opt/MuseScore/share/applications
+
+mkdir -p $PKG/usr/share/man/man1
+mv $PKG/opt/MuseScore/share/man/man1/mscore.1.gz $PKG/usr/share/man/man1/
+rm -rf $PKG/opt/MuseScore/share/man
+
+mv $PKG/opt/MuseScore/share/metainfo $PKG/usr/share/
+
+mv $PKG/opt/MuseScore/share/mime $PKG/usr/share/
+
+mkdir -p $PKG/usr/bin
 ( cd $PKG/usr/bin ; rm -rf mscore )
 ( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore/bin/mscore mscore )
 ( cd $PKG/usr/bin ; rm -rf MuseScore )
