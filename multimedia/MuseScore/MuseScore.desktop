@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=MuseScore 4
+Name=MuseScore
 GenericName=Music notation
 Comment=Create, play and print beautiful sheet music
-Exec=mscore4
+Exec=mscore
 Icon=mscore
 Terminal=false
 StartupNotify=true

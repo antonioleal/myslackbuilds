@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware build script for MuseScore4
+# Slackware build script for MuseScore
 
 # Copyright 2024 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -66,11 +66,10 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-rm -rf ${PRGNAM::-1}-$VERSION
 
-tar xvfz $CWD/${PRGNAM::-1}-$VERSION.tar.gz
+tar xvfz $CWD/$PRGNAM-$VERSION.tar.gz
 
-cd ${PRGNAM::-1}-$VERSION
+cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -81,7 +80,7 @@ find -L . \
 mkdir b
 cd b
 cmake .. \
-    -DCMAKE_INSTALL_PREFIX=/opt/MuseScore4 \
+    -DCMAKE_INSTALL_PREFIX=/opt/MuseScore \
     -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_BUILD_TYPE=Release \
@@ -103,13 +102,13 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
 
 mkdir -p $PKG/usr/share/icons $PKG/usr/share/applications $PKG/usr/bin
-cp -avxu $PKG/opt/MuseScore4/share/icons/* $PKG/usr/share/icons/
-rm -rf $PKG/opt/MuseScore4/share/applications
-cp $CWD/MuseScore4.desktop $PKG/usr/share/applications/
-( cd $PKG/usr/bin ; rm -rf mscore4 )
-( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore4/bin/mscore mscore4 )
-( cd $PKG/usr/bin ; rm -rf MuseScore4 )
-( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore4/bin/mscore MuseScore4 )
+cp -avxu $PKG/opt/MuseScore/share/icons/* $PKG/usr/share/icons/
+rm -rf $PKG/opt/MuseScore/share/applications
+cp $CWD/MuseScore.desktop $PKG/usr/share/applications/
+( cd $PKG/usr/bin ; rm -rf mscore )
+( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore/bin/mscore mscore )
+( cd $PKG/usr/bin ; rm -rf MuseScore )
+( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore/bin/mscore MuseScore )
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
