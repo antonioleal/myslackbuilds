@@ -106,7 +106,7 @@ cmake \
   -DQT_QMAKE_EXECUTABLE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake \
   ..
 
-make -j4 install \
+make -j5 install \
   DESTDIR=$PKG \
   UPDATE_CACHE=FALSE
 
