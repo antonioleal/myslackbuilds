@@ -67,11 +67,11 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
+rm -rf ${PRGNAM::-7}-$VERSION
 
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/${PRGNAM::-7}-$VERSION.tar.gz
 
-cd $PRGNAM-$VERSION
+cd ${PRGNAM::-7}-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -106,7 +106,7 @@ cmake \
   -DQT_QMAKE_EXECUTABLE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake \
   ..
 
-make install \
+make -j4 install \
   DESTDIR=$PKG \
   UPDATE_CACHE=FALSE
 
@@ -119,32 +119,23 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
 
-#find $PKG/usr/man -type f -exec gzip -9 {} \;
-
-mkdir -p $PKG/usr/share/icons
-mv -avxu $PKG/opt/MuseScore/share/icons/hicolor $PKG/usr/share/icons/
-rm -rf $PKG/opt/MuseScore/share/icons
+mkdir -p $PKG/usr/share/pixmaps
+mv $PKG/opt/MuseScore-Legacy/share/icons/hicolor/128x128/apps/mscore.png $PKG/usr/share/pixmaps/mscore-legacy.png
+rm -rf $PKG/opt/MuseScore-Legacy/share/icons
 
 mkdir -p $PKG/usr/share/applications
-cp $CWD/MuseScore.desktop $PKG/usr/share/applications/
-rm -rf $PKG/opt/MuseScore/share/applications
+mv $PKG/opt/MuseScore-Legacy/share/applications/mscore.desktop $PKG/usr/share/applications/mscore-legacy.desktop
+rm -rf $PKG/opt/MuseScore-Legacy/share/applications
+sed -i 's|Exec=mscore %F|Exec=mscore-legacy %F|' $PKG/usr/share/applications/mscore-legacy.desktop
+sed -i 's|Icon=mscore|Icon=mscore-legacy|' $PKG/usr/share/applications/mscore-legacy.desktop
 
-mkdir -p $PKG/usr/share/man/man1
-mv $PKG/opt/MuseScore/share/man/man1/mscore.1.gz $PKG/usr/share/man/man1/
-rm -rf $PKG/opt/MuseScore/share/man
-
-mv $PKG/opt/MuseScore/share/metainfo $PKG/usr/share/
-
-mv $PKG/opt/MuseScore/share/mime $PKG/usr/share/
-
+mkdir -p $PKG/usr/man/man1
+mv $PKG/opt/MuseScore-Legacy/man/man1/mscore.1.gz $PKG/usr/man/man1/mscore-legacy.1.gz
+rm -rf $PKG/opt/MuseScore-Legacy/man
 
 mkdir -p $PKG/usr/bin
 ( cd $PKG/usr/bin ; rm -rf mscore-legacy )
 ( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore-Legacy/bin/mscore mscore-legacy )
-( cd $PKG/usr/bin ; rm -rf mscore3 )
-( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore-Legacy/bin/mscore mscore3 )
-( cd $PKG/usr/bin ; rm -rf MuseScore3 )
-( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore-Legacy/bin/mscore MuseScore3 )
 ( cd $PKG/usr/bin ; rm -rf MuseScore-Legacy )
 ( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore-Legacy/bin/mscore MuseScore-Legacy )
 
