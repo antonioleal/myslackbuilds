@@ -104,15 +104,16 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
 
 mkdir -p $PKG/usr/share/icons
-mv -avxu $PKG/opt/MuseScore/share/icons/hicolor $PKG/usr/share/icons/
+mv $PKG/opt/MuseScore/share/icons/hicolor $PKG/usr/share/icons/
 rm -rf $PKG/opt/MuseScore/share/icons
 
 mkdir -p $PKG/usr/share/applications
 cp $CWD/MuseScore.desktop $PKG/usr/share/applications/
 rm -rf $PKG/opt/MuseScore/share/applications
 
-mkdir -p $PKG/usr/share/man/man1
-mv $PKG/opt/MuseScore/share/man/man1/mscore.1.gz $PKG/usr/share/man/man1/
+mkdir -p $PKG/usr/man/man1
+mv $PKG/opt/MuseScore/share/man/man1/mscore.1.gz $PKG/usr/man/man1/
+find $PKG/usr/man -type f -exec gzip -9 {} \;
 rm -rf $PKG/opt/MuseScore/share/man
 
 mv $PKG/opt/MuseScore/share/metainfo $PKG/usr/share/
