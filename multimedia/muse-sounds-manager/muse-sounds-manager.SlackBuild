@@ -57,8 +57,19 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+# Fix launcher
+sed -i 's|Encoding=UTF-8||' $PKG/usr/share/applications/muse-sounds-manager.desktop
+sed -i 's|Categories=GNOME;Application;Network|Categories=AudioVideo|' $PKG/usr/share/applications/muse-sounds-manager.desktop
+
 # Make sure top-level perms are correct:
 chmod 0755 .
+chmod +x $PKG/opt/$PRGNAM/*.so
+chmod +x $PKG/opt/$PRGNAM/Muse.Client.Linux
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
