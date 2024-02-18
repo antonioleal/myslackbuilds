@@ -99,9 +99,17 @@ SimH (History Simulator) is a collection of simulators for
 historically significant or just plain interesting computer hardware
 and software from the past.
 
-# multimedia/MuseScore4
+# multimedia/muse-sounds-manager
+Free sound samples for MuseScore
+
+# multimedia/MuseScore
 MuseScore is a free cross platform WYSIWYG music notation program,
 licenced under GNU GPL.
+
+# multimedia/MuseScore-Legacy
+MuseScore is a free cross platform WYSIWYG music notation program,
+licenced under GNU GPL.
+This builds MuseScore 3.6.2 the last from the 3.x branch.
 
 # office/smoffice2021
 SoftMaker Office 2021 is an office suite, it includes
