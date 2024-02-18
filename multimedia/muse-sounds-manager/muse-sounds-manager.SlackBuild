@@ -59,11 +59,14 @@ find -L . \
 
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+# find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+#   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+strip --strip-unneeded $PKG/opt/muse-sounds-manager/libServiceCore.so
 
 # Fix launcher
-sed -i 's|Encoding=UTF-8||' $PKG/usr/share/applications/muse-sounds-manager.desktop
+sed -i '2d' $PKG/usr/share/applications/muse-sounds-manager.desktop
+sed -i '4i GenericName=Additional Sound Samples' $PKG/usr/share/applications/muse-sounds-manager.desktop
+sed -i '4i Comment=Create, play and print beautiful sheet music' $PKG/usr/share/applications/muse-sounds-manager.desktop
 sed -i 's|Categories=GNOME;Application;Network|Categories=AudioVideo|' $PKG/usr/share/applications/muse-sounds-manager.desktop
 
 # Make sure top-level perms are correct:
