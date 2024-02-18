@@ -90,7 +90,8 @@ cmake .. \
     -DQMAKE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake \
     -DQT_QMAKE_EXECUTABLE=/usr/lib"${LIBDIRSUFFIX}"/qt5/bin/qmake
 
-make install \
+CPU=$(($(grep -c processor /proc/cpuinfo)/2))
+make -j$CPU install \
   DESTDIR=$PKG \
   UPDATE_CACHE=FALSE
 

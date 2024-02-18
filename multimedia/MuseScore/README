@@ -2,7 +2,8 @@ MuseScore is a free cross platform WYSIWYG music notation
 program, licenced under GNU GPL. Features:
 
  - WYSIWYG design, notes are entered on a "virtual notepaper"
- - TrueType font(s) for printing & display allows for high quality scaling to all sizes
+ - TrueType font(s) for printing & display allows for high quality
+   scaling to all sizes
  - Easy & fast note entry
  - Many editing functions
  - MusicXML import/export
