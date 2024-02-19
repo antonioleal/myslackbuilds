@@ -1,3 +1,9 @@
+*This repo contains my slackbuild scripts, some of which also published to SlackBuilds.org*
+
+---
+
+  
+
 ## libcutefish (System libraries for Cutefish applications)
  System libraries for Cutefish applications
  https://github.com/cutefishos/libcutefish

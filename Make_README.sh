@@ -5,6 +5,12 @@ cd $SCRIPT_DIR
 README=README.md
 
 rm -rf $README
+
+echo -e "*This repo contains my slackbuild scripts, some of which also published to SlackBuilds.org*\n" >> $README
+#echo -e "------------------------------------------------------------------------------------------\n" >> $README
+echo -e "---\n" >> $README
+echo -e "  \n" >> $README
+
 for fich in `find . -name "*-desc" -print`;
 do
     DIR="$(dirname "${fich}")"
