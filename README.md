@@ -60,6 +60,11 @@
  Homepage: http://www.musescore.org/
   
 
+## whalebird (Mastondon, Pleroma and Misskey client)
+
+ Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
+  
+
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
 
  Maintaining an updated Firefox Standard Rel. on Slackware is now made
@@ -92,6 +97,12 @@
  or macOS computer to play your old BBC games or develop new BBC
  software.
  more info at https://github.com/tom-seddon/b2
+  
+
+## arqiver (Simple Qt archive manager)
+
+ arqiver is a simple Qt archive manager. It serves as a front-end for
+ libarchive (bsdtar), gzip and 7z. 
   
 
 ## yaze-ag (yet another z80 emulator )
