@@ -11,7 +11,7 @@
  for more info visit: https://github.com/cutefishos/kwin-plugins
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## fishui (base library for cutefish DE)
@@ -20,7 +20,7 @@
  https://github.com/cutefishos/fishui
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## cutefish-qt-plugins (Cutefish Qt integration library)
@@ -28,7 +28,7 @@
  https://github.com/cutefishos/qt-plugins
   
 
-==Version 0.5==
+*Version 0.5*
   
 
 ## smoffice2024 (office suite)
@@ -41,7 +41,7 @@
  Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
-==Version 2024_1208==
+*Version 2024_1208*
   
 
 ## smoffice2021 (office suite)
@@ -54,7 +54,7 @@
  Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
-==Version 2021_1068==
+*Version 2021_1068*
   
 
 ## plug ( Fender Mustang Amps Controller )
@@ -69,7 +69,7 @@
  This program also requires the gtest package.
   
 
-==Version 1.4.5==
+*Version 1.4.5*
   
 
 ## MuseScore (WYSIWYG Music Score Typesetter)
@@ -78,7 +78,7 @@
  Homepage: http://www.musescore.org/
   
 
-==Version 4.2.1==
+*Version 4.2.1*
   
 
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
@@ -91,7 +91,7 @@
  Homepage: https://www.musehub.com
   
 
-==Version 1.1.0.587==
+*Version 1.1.0.587*
   
 
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
@@ -102,14 +102,14 @@
  Homepage: http://www.musescore.org/
   
 
-==Version 3.6.2==
+*Version 3.6.2*
   
 
 ## whalebird (Mastondon, Pleroma and Misskey client)
  Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
   
 
-==Version 6.0.1==
+*Version 6.0.1*
   
 
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
@@ -120,7 +120,7 @@
  safer.
   
 
-==Version 1.1==
+*Version 1.1*
   
 
 ## xapp (library to provide applications to users in multiple DEs)
@@ -129,7 +129,7 @@
  implement cross-DE solutions.
   
 
-==Version 2.6.1==
+*Version 2.6.1*
   
 
 ## FreeFileSync (Cross-platform file sync utility with GUI)
@@ -141,7 +141,7 @@
  Source software, available for Windows, Linux and macOS.
   
 
-==Version 13.3==
+*Version 13.3*
   
 
 ## b2 (BBC Microcomputer Emulator)
@@ -151,7 +151,7 @@
  more info at https://github.com/tom-seddon/b2
   
 
-==Version 20231011_172305_4bd1939==
+*Version 20231011_172305_4bd1939*
   
 
 ## arqiver (Simple Qt archive manager)
@@ -159,7 +159,7 @@
  libarchive (bsdtar), gzip and 7z. 
   
 
-==Version 0.12.0==
+*Version 0.12.0*
   
 
 ## yaze-ag (yet another z80 emulator )
@@ -173,7 +173,7 @@
  Please visit homepage for further reading on this excelent emulator.
   
 
-==Version 2.51.3==
+*Version 2.51.3*
   
 
 ## timeshift (incremental system snapshots, backup and restore)
@@ -184,7 +184,7 @@
  can be restored at a later date to undo all changes to the system.
   
 
-==Version 24.01.1==
+*Version 24.01.1*
   
 
 ## B-em (BBC Microcomputer Emulator)
@@ -194,7 +194,7 @@
  B-em is licensed under the GPL, see COPYING for more details.
   
 
-==Version 388e1d8==
+*Version 388e1d8*
   
 
 ## doublecmd-qt5 (Double-panel File Manager)
@@ -205,7 +205,7 @@
  be installed before building.
   
 
-==Version 1.1.9==
+*Version 1.1.9*
   
 
 ## google-chrome-the-latest (Google Chrome Updater Script)
@@ -215,7 +215,7 @@
  the latest version available so your Slackware box is kept safer.
   
 
-==Version 3.1==
+*Version 3.1*
   
 
 ## ZEsarUX (retro machines emulator)
@@ -228,7 +228,7 @@
  games NOT covered by the GNU GPL license.
   
 
-==Version 10.10==
+*Version 10.10*
   
 
 ## open-simh (Historical Computer Simulation)
@@ -242,7 +242,7 @@
  Homepage:  https://github.com/open-simh/simh
   
 
-==Version 1a1396d==
+*Version 1a1396d*
   
 
 ## simh-classic (3.X Classic Version)
@@ -255,7 +255,7 @@
  Homepage: http://simh.trailing-edge.com/
   
 
-==Version 3.12_4==
+*Version 3.12_4*
   
 
 ## bbcsdl (BBC BASIC for linux)
@@ -266,7 +266,7 @@
  BBC BASIC is very well documented.
   
 
-==Version 1.38a==
+*Version 1.38a*
   
 
 ## kforth (A Forth programming language and environment)
@@ -279,7 +279,7 @@
  This package contains the branch 1.x of kforth for legacy systems.
   
 
-==Version 1.8.0==
+*Version 1.8.0*
   
 
 ## kForth-32 (32-bit Forth System for x86-GNU/Linux)
@@ -292,7 +292,7 @@
  https://github.com/mynenik/kForth-32
   
 
-==Version 2.4.3==
+*Version 2.4.3*
   
 
 ## wxFormBuilder ( wxWidgets RAD tool )
@@ -302,7 +302,7 @@
  To support additional widgets, custom plugins can be used.
   
 
-==Version 4.0.0==
+*Version 4.0.0*
   
 
 ## SQLiteStudio (SQLite database manager written in C++ using Qt)
@@ -314,7 +314,7 @@
  Homepage: https://sqlitestudio.pl/
   
 
-==Version 3.4.4==
+*Version 3.4.4*
   
 
 ## lazarus (rapid application development tool for freepascal)
@@ -327,7 +327,7 @@
  Homepage: http://lazarus.freepascal.org
   
 
-==Version 3.0==
+*Version 3.0*
   
 
 ## vstudio (Valentina Studio DB Management)
@@ -338,7 +338,7 @@
  Homepage:  http://www.valentina-db.com
   
 
-==Version 13.7==
+*Version 13.7*
   
 
 ## yabasic (basic-interpreter)
@@ -351,7 +351,7 @@
  Yabasic is very well documented.
   
 
-==Version 2.90.4==
+*Version 2.90.4*
   
 
 ## notepadqq (Notepad++-like editor for the Linux desktop)
@@ -365,7 +365,7 @@
  in no time.
   
 
-==Version b426303==
+*Version b426303*
   
 
 ## fpc (free pascal compiler)
@@ -378,7 +378,7 @@
  Homepage: http://www.freepascal.org/
   
 
-==Version 3.2.2==
+*Version 3.2.2*
   
 
 ## SmallBASIC (basic-interpreter)
@@ -391,7 +391,7 @@
  SmallBASIC includes online examples ready to run.
   
 
-==Version 12.26==
+*Version 12.26*
   
 
 ## qb64 (Modern QuickBASIC compiler)
@@ -400,7 +400,7 @@
  Windows, Linux, and macOS.
   
 
-==Version 2.1==
+*Version 2.1*
   
 
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
@@ -413,7 +413,7 @@
  https://github.com/mynenik/kForth-64
   
 
-==Version 0.4.3==
+*Version 0.4.3*
   
 
 ## bwbasic (basic interpreter)
@@ -423,7 +423,7 @@
  https://sourceforge.net/projects/bwbasic/
   
 
-==Version 3.20==
+*Version 3.20*
   
 
 ## qb64pe (Modern QuickBASIC compiler)
@@ -436,7 +436,7 @@
  Linux and macOS.
   
 
-==Version 3.10.0==
+*Version 3.10.0*
   
 
 ## MinForth (A Forth System that can transpile Forth to C)
@@ -448,7 +448,7 @@
  Current sources are for Windows and Linux (32-bit or 64-bit).
   
 
-==Version 3.4.8==
+*Version 3.4.8*
   
 
 ## codeblocks (a free C++ and Fortran IDE)
@@ -458,7 +458,7 @@
  Homepage: http://www.codeblocks.org/
   
 
-==Version 20.03==
+*Version 20.03*
   
 
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
@@ -472,7 +472,7 @@
  of functions.
   
 
-==Version 1.1.4==
+*Version 1.1.4*
   
 
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
@@ -480,14 +480,14 @@
  For more information see: https://github.com/cutefishos/wallpapers
   
 
-==Version 1.0==
+*Version 1.0*
   
 
 ## cutefish-terminal (A terminal emulator for Cutefish)
  https://github.com/cutefishos/terminal
   
 
-==Version 0.7==
+*Version 0.7*
   
 
 ## cutefish-settings (CutefishOS settings application)
@@ -495,7 +495,7 @@
  For more information see: https://github.com/cutefishos/settings
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## cutefish-calculator (desktop calculator for cutefish)
@@ -504,7 +504,7 @@
  https://github.com/cutefishos/calculator
   
 
-==Version 0.4==
+*Version 0.4*
   
 
 ## cutefish-screenlocker (CutefishOS screen locker)
@@ -512,7 +512,7 @@
  For more information see: https://github.com/cutefishos/screenlocker
   
 
-==Version 0.5==
+*Version 0.5*
   
 
 ## cutefish-icons (icons for cutefish DE)
@@ -520,7 +520,7 @@
  https://github.com/cutefishos/icons
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## cutefish-statusbar (CutefishOS statusbar application)
@@ -529,7 +529,7 @@
  For more information see: https://github.com/cutefishos/statusbar
   
 
-==Version 0.7==
+*Version 0.7*
   
 
 ## cutefish-launcher (CutefishOS launcher)
@@ -537,7 +537,7 @@
  For more information see: https://github.com/cutefishos/launcher
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## cutefish-core (CutefishOS backend)
@@ -545,7 +545,7 @@
  For more information see: https://github.com/cutefishos/core
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## cutefish-dock (Cutefish application dock)
@@ -553,7 +553,7 @@
  For more information see: https://github.com/cutefishos/dock
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## cutefish-filemanager (filemanager for CutefishOS)
@@ -562,7 +562,7 @@
  https://github.com/cutefishos/filemanager
   
 
-==Version 0.8==
+*Version 0.8*
   
 
 ## cutefish-gtk-themes (Cutefish GTK+ themes)
@@ -570,6 +570,6 @@
  For more information see: https://github.com/cutefishos/gtk-themes
   
 
-==Version 0.7==
+*Version 0.7*
   
 
