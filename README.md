@@ -1,3 +1,28 @@
+## libcutefish (System libraries for Cutefish applications)
+
+ System libraries for Cutefish applications
+ https://github.com/cutefishos/libcutefish
+  
+
+## cutefish-kwin-plugins (cutefish plugins for KWin)
+
+ Kwin plugins and configurations for cutefish DE
+ for more info visit: https://github.com/cutefishos/kwin-plugins
+  
+
+## fishui (base library for cutefish DE)
+
+ FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every
+ Cutefish application uses it.
+ https://github.com/cutefishos/fishui
+  
+
+## cutefish-qt-plugins (Cutefish Qt integration library)
+
+ Unify Qt application style of CutefishOS
+ https://github.com/cutefishos/qt-plugins
+  
+
 ## smoffice2024 (office suite)
 
  SoftMaker Office 2024 includes
@@ -364,5 +389,79 @@
  Algebraic Expressions; attached Units and unit conversions;
  Directories; TVM and amortization tables; and two-dimensional Plotting
  of functions.
+  
+
+## cutefish-wallpapers (Wallpapers from CutefishOS)
+
+ Ten official wallpapers from the CutefishOS project.
+ For more information see: https://github.com/cutefishos/wallpapers
+  
+
+## cutefish-terminal (A terminal emulator for Cutefish)
+
+ https://github.com/cutefishos/terminal
+  
+
+## cutefish-settings (CutefishOS settings application)
+
+ System settings for Cutefish
+ For more information see: https://github.com/cutefishos/settings
+  
+
+## cutefish-calculator (desktop calculator for cutefish)
+
+ cutefish-calculator is a simple calculator originally written for
+ CutefishOS
+ https://github.com/cutefishos/calculator
+  
+
+## cutefish-screenlocker (CutefishOS screen locker)
+
+ Screen locker application for Cutefish Desktop Environment
+ For more information see: https://github.com/cutefishos/screenlocker
+  
+
+## cutefish-icons (icons for cutefish DE)
+
+ Cutefish default icon themes, Crule and Crule-dark.
+ https://github.com/cutefishos/icons
+  
+
+## cutefish-statusbar (CutefishOS statusbar application)
+
+ The status bar at the top that displays the current status of the
+ system, such as time, system tray, etc.
+ For more information see: https://github.com/cutefishos/statusbar
+  
+
+## cutefish-launcher (CutefishOS launcher)
+
+ Launcher application from CutefishOS.
+ For more information see: https://github.com/cutefishos/launcher
+  
+
+## cutefish-core (CutefishOS backend)
+
+ Main component of the Cutefish Desktop Environment.
+ For more information see: https://github.com/cutefishos/core
+  
+
+## cutefish-dock (Cutefish application dock)
+
+ Dock application originally developed for CutefishOS.
+ For more information see: https://github.com/cutefishos/dock
+  
+
+## cutefish-filemanager (filemanager for CutefishOS)
+
+ cutefish-filemanager is a simple to use, classic PC style filemanager
+ originally written for CutefishOS.
+ https://github.com/cutefishos/filemanager
+  
+
+## cutefish-gtk-themes (Cutefish GTK+ themes)
+
+ GTK+ theme pack developed for CutefishOS.
+ For more information see: https://github.com/cutefishos/gtk-themes
   
 
