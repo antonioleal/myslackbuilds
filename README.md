@@ -86,7 +86,7 @@
  Homepage https://qb64phoenix.com/
   
 
-*Version 3.10.0*
+*Version 3.11.0*
   
 
 ## MinForth (A Forth System that can transpile Forth to C)
