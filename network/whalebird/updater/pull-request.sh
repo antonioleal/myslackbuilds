@@ -58,14 +58,3 @@ read -p "Issue command above? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git push -f origin $PKGNAME
 fi
-
-# delete all branches
-echo
-echo 'git branch | grep -v "master" | xargs git branch -D'
-read -p "Issue commands above? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    git checkout master
-    #git branch -D $PKG
-    git branch | grep -v "master" | xargs git branch -D
-    echo "hint: later delete remote branch with the command: git push origin -d $PKGNAME"
-fi
