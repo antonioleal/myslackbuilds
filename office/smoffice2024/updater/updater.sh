@@ -40,15 +40,14 @@ echo "Old version is $OLDVERSION"
 curl -s -o index.html https://www.softmaker.de/support/installation/linux/office-2024
 #NEWVERSION=`lynx -dump index.html | tail -1 | cut -d "/" -f 14`
 NEWVERSION=`lynx -dump index.html  | grep "2024.*amd64.tgz" | cut -d "-" -f4 | tail -n1`
-
-
+rm index.html
 echo "New version is $NEWVERSION"
-echo $NEWVERSION > new_version
 
 if [ "$OLDVERSION" = "$NEWVERSION" ]; then
     echo "No new version detected..."
     exit
 fi
+echo $NEWVERSION > old_version
 
 ################################
 # download tarball             #
@@ -72,47 +71,5 @@ MD5=`md5sum $TARBALL | cut -d " " -f 1`
 sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ${PRGNAM}.info
 sed -e "s/\${_version_}/$NEWVERSION/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ${PRGNAM}.SlackBuild
 chmod +x ${PRGNAM}.SlackBuild
-
-################################
-# build                        #
-################################
-set -e
-sudo ./${PRGNAM}.SlackBuild
-if [ ! -f /tmp/${PRGNAM}-2024_$NEWVERSION-x86_64-1_SBo.tgz ]
-then
-    echo "Build process not successfull, aborting..."
-    exit 1
-fi
-
-################################
-# make slackbuild tar.gz       #
-################################
-echo "Compressing SlackBuild release in slackbuild folder"
-cd $SCRIPT_DIR/../..
-rm -rf $SCRIPT_DIR/slackbuild/*
-tar -z -v -c -f $SCRIPT_DIR/slackbuild/${PRGNAM}.tar.gz --exclude='*.tgz' --exclude='updater' ${PRGNAM}
-
-################################
-# cleanup                      #
-################################
-cd $SCRIPT_DIR
-rm index.html
-rm new_version
-
-################################
-# sbopkglint                   #
-################################
-sbopkglint /tmp/${PRGNAM}-2024_$NEWVERSION-x86_64-1_SBo.tgz
-
-################################
-# make slackbuild tar.gz       #
-################################
-read -p "Proceed with install of /tmp/${PRGNAM}-2024_$NEWVERSION-x86_64-1_SBo.tgz ? (y/n) " RESP
-if [ ! "$RESP" = "y" ]; then
-    echo "bye"
-    exit
-fi
-sudo /sbin/upgradepkg --install-new /tmp/${PRGNAM}-2024_$NEWVERSION-x86_64-1_SBo.tgz
-echo $NEWVERSION > $SCRIPT_DIR/old_version
 echo
-echo "/tmp/${PRGNAM}-2024_$NEWVERSION-x86_64-1_SBo.tgz installed."
+echo "SlackBuild has been updated!"
