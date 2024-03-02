@@ -7,9 +7,21 @@ set -e
 clear
 cd ..
 PKGNAME=${PWD##*/}
-echo "Building Package: " $PKGNAME
+
+
+echo "--------------------------------------------------------------------------------"
 echo
-sudo sh ./$PKGNAME.SlackBuild
+read -p "Run sbolint? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+    sbolint .
+fi
+
+echo "--------------------------------------------------------------------------------"
+echo
+read -p "Building Package $PKGNAME? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+    sudo sh ./$PKGNAME.SlackBuild
+fi
 
 echo "--------------------------------------------------------------------------------"
 echo
@@ -18,12 +30,6 @@ echo "Tarballs available at /tmp:"
 ls /tmp/$PKGNAME-$VERSION* -lasth
 TARBALL=`ls /tmp/$PKGNAME-$VERSION* -1t | head -n1`
 
-echo "--------------------------------------------------------------------------------"
-echo
-read -p "Run sbolint? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    sbolint .
-fi
 
 echo "--------------------------------------------------------------------------------"
 echo
