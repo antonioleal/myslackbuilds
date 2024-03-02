@@ -34,17 +34,17 @@ git status
 
 # git add all
 echo
-echo git add --all
+echo
+echo Adding all files: git add --all
 read -p "Issue command above? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git add --all
-    echo
-    git status
 fi
 
 # git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
 echo
-echo git commit -a -m "\"$CATEGORY/$PKGNAME: $MSG\""
+echo
+echo Commit all files: git commit -a -m "\"$CATEGORY/$PKGNAME: $MSG\""
 read -p "Issue command above? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
@@ -52,8 +52,17 @@ fi
 
 # git push -f origin $PKGNAME
 echo
-echo git push -f origin $PKGNAME
+echo
+echo Pushing to upstream master with: git push -f origin $PKGNAME
 read -p "Issue command above? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git push -f origin $PKGNAME
 fi
+
+# return to master branch
+echo
+echo
+echo Returning to master branch with: git checkout master
+git checkout master
+echo
+echo Done.
