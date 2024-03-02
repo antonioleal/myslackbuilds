@@ -11,6 +11,8 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='updater'     \
     --exclude='*.tar.gz'    \
     --exclude='*.tar'       \
+    --exclude='*.tgz'       \
+    --exclude='*.txz'       \
     --exclude='*.zip'       \
     --exclude='*.md'        \
     --exclude='*.sf3'       \

@@ -7,7 +7,8 @@ set -e
 clear
 cd ..
 PKGNAME=${PWD##*/}
-
+echo "Building Package $PKGNAME:"
+echo
 
 echo "--------------------------------------------------------------------------------"
 echo
@@ -18,7 +19,7 @@ fi
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Building Package $PKGNAME? (y/n) " op
+read -p "Run SlackBuild for Package $PKGNAME? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     sudo sh ./$PKGNAME.SlackBuild
 fi
