@@ -344,7 +344,7 @@
  Homepage: http://lazarus.freepascal.org
   
 
-*Version 3.0*
+*Version 3.2*
   
 
 ## vstudio (Valentina Studio DB Management)
