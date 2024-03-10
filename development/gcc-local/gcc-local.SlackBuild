@@ -79,14 +79,13 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
-
 source ./contrib/download_prerequisites
 
 mkdir b
 cd b
 ../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++,fortran,go
-#make -j7
-#make install DESTDIR=$PKG
+make -j7
+make install DESTDIR=$PKG
 
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \

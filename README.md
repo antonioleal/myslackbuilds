@@ -386,6 +386,18 @@
 *Version b426303*
   
 
+## gcc-local (Base GCC package with C support)
+ GCC is the GNU Compiler Collection.
+ This package contains those parts of the compiler collection needed
+ to compile C code. Other packages add Ada, C++, D, Fortran, Go,
+ Objective-C, and BRIG support to the compiler core.
+ This package installs to /opt
+ homepage at https://github.com/gcc-mirror/gcc
+  
+
+*Version 13.2.0*
+  
+
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
