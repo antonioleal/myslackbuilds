@@ -83,6 +83,8 @@ source ./contrib/download_prerequisites
 
 mkdir b
 cd b
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
 ../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++,fortran,go
 make -j7
 make install DESTDIR=$PKG
