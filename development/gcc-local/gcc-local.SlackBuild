@@ -71,35 +71,36 @@ tar xvf $CWD/$TARBALL-$VERSION.tar.gz
 mv gcc-releases-gcc-$VERSION $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 
-chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \+ -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
+# chown -R root:root .
+# find -L . \
+#  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+#   -o -perm 511 \) -exec chmod 755 {} \+ -o \
+#  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+#   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
 source ./contrib/download_prerequisites
 
 mkdir b
 cd b
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
-../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++,fortran,go
+# CFLAGS="$SLKCFLAGS" \
+# CXXFLAGS="$SLKCFLAGS" \
+# ../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++,fortran,go
+../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++
 make -j7
 make install DESTDIR=$PKG
 
 chmod +x $PKG/opt/$PRGNAM-$VERSION/lib64/libgcc_s.so.1
 
-rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+# rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
+# find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+#   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # Install the loader
 cp $CWD/load-gcc-13.2.0.sh $PKG/opt/$PRGNAM-$VERSION
 chmod +x $PKG/opt/$PRGNAM-$VERSION/load-gcc-13.2.0.sh
-mkdir -p $PKG/usr/bin
-( cd $PKG/usr/bin ; rm -rf load-gcc-13.2.0 )
-( cd $PKG/usr/bin ; ln -s ../../opt/$PRGNAM-$VERSION/load-gcc-13.2.0.sh load-gcc-13.2.0 )
+# mkdir -p $PKG/usr/bin
+# ( cd $PKG/usr/bin ; rm -rf load-gcc-13.2.0 )
+# ( cd $PKG/usr/bin ; ln -s ../../opt/$PRGNAM-$VERSION/load-gcc-13.2.0.sh load-gcc-13.2.0 )
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
