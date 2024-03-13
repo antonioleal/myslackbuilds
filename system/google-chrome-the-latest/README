@@ -44,4 +44,5 @@ Workflows:
 
 4. From the command line, you can force a Chrome download and
    upgrade if required, without any pop-up window, with:
-   /opt/google-chrome-the-latest/google-chrome-the-latest.py silent upgrade
+   /opt/google-chrome-the-latest/google-chrome-the-latest.py \
+     silent upgrade
