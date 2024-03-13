@@ -11,6 +11,7 @@ do
     echo "deleting $b"
     git branch -D $b
     git push origin -d $b
+    git fetch --prune
     echo
 done
 
