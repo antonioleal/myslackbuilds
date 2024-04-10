@@ -483,7 +483,7 @@
  Homepage at http://doublecmd.sourceforge.net
   
 
-*Version 1.1.9*
+*Version 1.1.12*
   
 
 ## arqiver (Simple Qt archive manager)
