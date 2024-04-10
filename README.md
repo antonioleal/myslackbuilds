@@ -238,7 +238,7 @@
  of functions. Homepage at https://www.thomasokken.com/plus42
   
 
-*Version 1.1.8*
+*Version 1.1.9*
   
 
 ## open-simh (Historical Computer Simulation)
@@ -571,7 +571,7 @@
  Homepage https://whalebird.social
   
 
-*Version 6.0.2*
+*Version 6.1.0*
   
 
 ## fishui (base library for cutefish DE)
