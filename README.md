@@ -98,7 +98,7 @@
  Homepage https://qb64phoenix.com/
   
 
-*Version 3.12.0*
+*Version 3.13.0*
   
 
 ## MinForth (A Forth System that can transpile Forth to C)
@@ -238,7 +238,7 @@
  of functions. Homepage at https://www.thomasokken.com/plus42
   
 
-*Version 1.1.9*
+*Version 1.1.10*
   
 
 ## open-simh (Historical Computer Simulation)
@@ -252,7 +252,7 @@
  Homepage:  https://github.com/open-simh/simh
   
 
-*Version a588496*
+*Version 20240315_ffe537a*
   
 
 ## simh-classic (3.X Classic Version)
