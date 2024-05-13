@@ -1,5 +1,5 @@
 PRGNAM="open-simh"
-VERSION="${_version_}"
+VERSION="${_fullversion_}"
 HOMEPAGE="https://opensimh.org"
 DOWNLOAD="https://github.com/open-simh/simh/archive/${_version_}/simh-${_commit_}.tar.gz"
 MD5SUM="${_md5_}"
