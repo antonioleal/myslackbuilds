@@ -46,7 +46,7 @@
  Homepage at https://github.com/wxFormBuilder/wxFormBuilder
   
 
-*Version 4.1.0*
+*Version 4.2.1*
   
 
 ## SmallBASIC (basic-interpreter)
@@ -98,7 +98,7 @@
  Homepage https://qb64phoenix.com/
   
 
-*Version 3.13.0*
+*Version 3.13.1*
   
 
 ## MinForth (A Forth System that can transpile Forth to C)
@@ -124,7 +124,7 @@
  Homepage: http://lazarus.freepascal.org
   
 
-*Version 3.2*
+*Version 3.4*
   
 
 ## kforth (A Forth programming language and environment)
@@ -238,7 +238,7 @@
  of functions. Homepage at https://www.thomasokken.com/plus42
   
 
-*Version 1.1.10*
+*Version 1.1.12*
   
 
 ## open-simh (Historical Computer Simulation)
@@ -396,7 +396,7 @@
  Homepage: http://www.musescore.org/
   
 
-*Version 4.3.0*
+*Version 4.3.1*
   
 
 ## smoffice2024 (office suite)
