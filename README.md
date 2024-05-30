@@ -409,7 +409,7 @@
  Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
-*Version 2024_1211*
+*Version 2024_1214*
   
 
 ## smoffice2021 (office suite)
@@ -483,7 +483,7 @@
  Homepage at http://doublecmd.sourceforge.net
   
 
-*Version 1.1.12*
+*Version 1.1.14*
   
 
 ## arqiver (Simple Qt archive manager)
@@ -581,7 +581,7 @@
  Homepage https://whalebird.social
   
 
-*Version 6.1.0*
+*Version 6.1.1*
   
 
 ## fishui (base library for cutefish DE)
