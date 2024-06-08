@@ -35,7 +35,7 @@
  homepage at https://github.com/gcc-mirror/gcc
   
 
-*Version 13.2.0*
+*Version 13.3.0*
   
 
 ## wxFormBuilder ( wxWidgets RAD tool )
@@ -558,7 +558,7 @@
  Homepage at https://github.com/chernandezba/zesarux
   
 
-*Version 10.10*
+*Version 11.0*
   
 
 ## plug ( Fender Mustang Amps Controller )
