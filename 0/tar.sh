@@ -5,10 +5,10 @@ cd $SCRIPT_DIR/..
 
 sboname=${PWD##*/}
 echo $sboname
-cd updater/slackbuild
+cd 0/slackbuild
 
 tar -z -c -f $sboname.tar.gz -v \
-    --exclude='updater'     \
+    --exclude='0'           \
     --exclude='*.tar.gz'    \
     --exclude='*.tar'       \
     --exclude='*.tgz'       \

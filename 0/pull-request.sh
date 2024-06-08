@@ -26,7 +26,7 @@ cd ~/slackware-builds/antonioleal/slackbuilds/$CATEGORY/
 echo
 echo
 
-tar xvfz ~/slackware-builds/antonioleal/myslackbuilds/$CATEGORY/$PKGNAME/updater/slackbuild/$PKGNAME.tar.gz
+tar xvfz ~/slackware-builds/antonioleal/myslackbuilds/$CATEGORY/$PKGNAME/0/slackbuild/$PKGNAME.tar.gz
 echo
 echo
 pwd

@@ -51,5 +51,5 @@ echo "--------------------------------------------------------------------------
 echo
 read -p "Create SlackBuild package by running tar.sh? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    ./updater/tar.sh
+    ./0/tar.sh
 fi
