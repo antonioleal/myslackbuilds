@@ -45,16 +45,6 @@ NEWVERSION=${COMMIT:0:7}
 # NEWVERSION=${COMMIT:0:7}
 # cd ../..
 
-echo
-echo "Old version is $OLDVERSION"
-echo "New version is $NEWVERSION"
-#echo $NEWVERSION > new_version
-
-if [ "$OLDVERSION" = "$NEWVERSION" ]; then
-    echo "No new version detected..."
-    exit
-fi
-
 ################################
 # download tarball             #
 ################################
@@ -67,8 +57,10 @@ then
 fi
 
 # delete old tarball and place new one
+set +e
 rm -i ../*.tar.gz
 mv *.tar.gz ..
+set -e
 
 ################################
 # write templates              #
@@ -76,41 +68,5 @@ mv *.tar.gz ..
 MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
 sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_commit_}/$COMMIT/" -e "s/\${_commit_}/$COMMIT/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_commit_}/$COMMIT/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-chmod +x ../${PRGNAM}.SlackBuild
+chmod -x ../${PRGNAM}.SlackBuild
 
-################################
-# build                        #
-################################
-cd $SCRIPT_DIR/..
-sudo ./${PRGNAM}.SlackBuild
-if [ ! -f /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz ]
-then
-    echo "Build process not successfull, aborting..."
-    exit
-fi
-
-################################
-# make slackbuild tar.gz       #
-################################
-echo "Compressing SlackBuild release in slackbuild folder '${PRGNAM}'"
-cd $SCRIPT_DIR/../..
-rm -rf $SCRIPT_DIR/slackbuild/*
-tar -z -v -c -f $SCRIPT_DIR/slackbuild/${PRGNAM}.tar.gz --exclude='*.tar.gz' --exclude='updater' ${PRGNAM}
-
-################################
-# sbopkglint                   #
-################################
-sbopkglint /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz
-
-################################
-# make slackbuild tar.gz       #
-################################
-read -p "Proceed with install of /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz ? (y/n) " RESP
-if [ ! "$RESP" = "y" ]; then
-    echo "bye"
-    exit
-fi
-sudo /sbin/upgradepkg --install-new /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz
-echo $NEWVERSION > $SCRIPT_DIR/old_version
-echo
-echo "/tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz installed."
