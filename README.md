@@ -206,7 +206,7 @@
  Homepage at https://github.com/stardot/b-em
   
 
-*Version 5557a36*
+*Version 20240528_85ddf1b*
   
 
 ## doublecmd-qt5 (Double-panel File Manager)
@@ -218,7 +218,7 @@
  Homepage at http://doublecmd.sourceforge.net
   
 
-*Version 1.1.15*
+*Version 1.1.16*
   
 
 ## google-chrome-the-latest (Google Chrome Updater Script)
@@ -266,7 +266,7 @@
  Homepage:  https://github.com/open-simh/simh
   
 
-*Version 20240315_ffe537a*
+*Version 20240618_a944a4b*
   
 
 ## simh-classic (3.X Classic Version)
