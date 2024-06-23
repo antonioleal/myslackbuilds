@@ -28,22 +28,12 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
 
 ################################
-# check versions               #
+# get versions tarball         #
 ################################
-
-touch old_version
-OLDVERSION=`cat old_version`
 
 NEWVERSION=`curl -s https://freefilesync.org/archive.php | head -n 20 | grep "Download FreeFileSync" | cut -d " " -f 5 | rev | cut -c2- | rev`
 TARBALL=FreeFileSync_${NEWVERSION}_Linux.tar.gz
 
-echo "Old version is $OLDVERSION"
-echo "New version is $NEWVERSION"
-
-if [ "$OLDVERSION" = "$NEWVERSION" ]; then
-    echo "No new version detected..."
-    exit
-fi
 
 ################################
 # download tarball             #
@@ -58,8 +48,10 @@ then
 fi
 
 # delete old tarball and place new one
+set +e
 rm -i ../*.tar.gz
 mv *.tar.gz ..
+set -e
 
 ################################
 # write templates              #
@@ -67,48 +59,6 @@ mv *.tar.gz ..
 MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
 sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_file_}/$TARBALL/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 sed -e "s/\${_version_}/$NEWVERSION/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-chmod +x ../${PRGNAM}.SlackBuild
+chmod -x ../${PRGNAM}.SlackBuild
 
-################################
-# build                        #
-################################
-cd $SCRIPT_DIR/..
-sudo ./${PRGNAM}.SlackBuild
-if [ ! -f /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz ]
-then
-    echo "Build process not successfull, aborting..."
-    exit
-fi
-
-################################
-# make slackbuild tar.gz       #
-################################
-echo "Compressing SlackBuild release in slackbuild folder '${SCRIPT_DIR}/slackbuild'"
-cd $SCRIPT_DIR/../..
-rm -rf $SCRIPT_DIR/slackbuild/*
-tar -z -v -c -f $SCRIPT_DIR/slackbuild/${PRGNAM}.tar.gz --exclude='*.tar.gz' --exclude='updater' ${PRGNAM}
-
-################################
-# cleanup                      #
-################################
-#cd $SCRIPT_DIR
-#rm new_version
-
-################################
-# sbopkglint                   #
-################################
-sbopkglint /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz
-
-################################
-# make slackbuild tar.gz       #
-################################
-read -p "Proceed with install of /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz ? (y/n) " RESP
-if [ ! "$RESP" = "y" ]; then
-    echo "bye"
-    exit
-fi
-sudo /sbin/upgradepkg --install-new /tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz
-echo $NEWVERSION > $SCRIPT_DIR/old_version
-echo
-echo "/tmp/${PRGNAM}-$NEWVERSION-x86_64-1_SBo.tgz installed."
 
