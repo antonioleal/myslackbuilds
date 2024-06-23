@@ -58,7 +58,7 @@ fi
 
 # delete old tarball and place new one
 set +e
-rm -i ../*.tar.gz
+rm -i ../*.tar.gz 2> /dev/null
 mv *.tar.gz ..
 set -e
 
@@ -66,7 +66,8 @@ set -e
 # write templates              #
 ################################
 MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_commit_}/$COMMIT/" -e "s/\${_commit_}/$COMMIT/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_commit_}/$COMMIT/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+sed -e "s/\${_version_}/${NEWVERSION}/" -e "s/\${_fullversion_}/${DATEVERSION}_${NEWVERSION}/" -e "s/\${_commit_}/$COMMIT/g" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+sed -e "s/\${_version_}/${NEWVERSION}/" -e "s/\${_fullversion_}/${DATEVERSION}_${NEWVERSION}/" -e "s/\${_commit_}/$COMMIT/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
 chmod -x ../${PRGNAM}.SlackBuild
 

@@ -1,5 +1,5 @@
 PRGNAM="B-em"
-VERSION="${_version_}"
+VERSION="${_fullversion_}"
 HOMEPAGE="https://github.com/stardot/b-em"
 DOWNLOAD="https://github.com/stardot/b-em/archive/${_commit_}/b-em-${_commit_}.tar.gz"
 MD5SUM="${_md5_}"
