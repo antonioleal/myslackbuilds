@@ -150,7 +150,7 @@
  Homepage https://freefilesync.org
   
 
-*Version 13.6*
+*Version 13.7*
   
 
 ## b2 (BBC Microcomputer Emulator)
