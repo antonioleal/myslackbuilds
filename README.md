@@ -116,7 +116,7 @@
  Homepage https://whalebird.social
   
 
-*Version 6.1.1*
+*Version 6.1.2*
   
 
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
@@ -206,7 +206,7 @@
  Homepage at https://github.com/stardot/b-em
   
 
-*Version 20240528_85ddf1b*
+*Version 20240703_756742d*
   
 
 ## doublecmd-qt5 (Double-panel File Manager)
@@ -252,7 +252,7 @@
  Homepage at https://github.com/pcrow/atari_8bit_utils
   
 
-*Version 20240328_58d9431*
+*Version 20240721_e483db6*
   
 
 ## open-simh (Historical Computer Simulation)
