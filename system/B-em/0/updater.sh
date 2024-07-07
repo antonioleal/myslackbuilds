@@ -31,8 +31,8 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 # OLDVERSION
-touch old_version
-OLDVERSION=`cat old_version`
+# touch old_version
+# OLDVERSION=`cat old_version`
 
 # NEWVERSION
 COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
