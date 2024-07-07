@@ -266,7 +266,7 @@
  Homepage:  https://github.com/open-simh/simh
   
 
-*Version 20240618_a944a4b*
+*Version 20240703_e7b2431*
   
 
 ## simh-classic (3.X Classic Version)
@@ -291,7 +291,7 @@
  Homepage at https://www.bbcbasic.co.uk/bbcsdl
   
 
-*Version 1.39a*
+*Version 1.40a*
   
 
 ## kforth (A Forth programming language and environment)
