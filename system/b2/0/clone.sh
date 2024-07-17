@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TAG=b2-20231011-172305-4bd1939
+TAG=b2-20240710-232859-844adac
 
 git clone --recursive --branch $TAG https://github.com/tom-seddon/b2.git
 rm -rf b2/.git
