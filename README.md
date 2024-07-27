@@ -116,7 +116,7 @@
  Homepage https://whalebird.social
   
 
-*Version 6.1.2*
+*Version 6.1.3*
   
 
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
