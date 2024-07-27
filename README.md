@@ -195,7 +195,7 @@
  Homepage https://github.com/linuxmint/timeshift
   
 
-*Version 24.01.1*
+*Version 24.06.3*
   
 
 ## B-em (BBC Microcomputer Emulator)
@@ -252,7 +252,7 @@
  Homepage at https://github.com/pcrow/atari_8bit_utils
   
 
-*Version 20240721_e483db6*
+*Version 20240722_b2a017b*
   
 
 ## open-simh (Historical Computer Simulation)
