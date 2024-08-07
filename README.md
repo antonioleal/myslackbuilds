@@ -279,7 +279,7 @@
  Homepage: http://simh.trailing-edge.com/
   
 
-*Version 3.12_4*
+*Version 3.12_5*
   
 
 ## bbcsdl (BBC BASIC for linux)
