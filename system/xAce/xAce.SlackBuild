@@ -75,7 +75,6 @@ find -L . \
 
 # Apply Slackware mods
 if [ "${SLACKMODS:-yes}" = "yes" ]; then
-    echo "** APPLYING SLACKMODS **"
     patch CMakeLists.txt $CWD/patches/CMakeLists.txt.patch
     patch src/CMakeLists.txt $CWD/patches/srcCMakeLists.txt.patch
     patch src/tape.c $CWD/patches/tape.c.patch
