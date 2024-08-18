@@ -82,7 +82,7 @@ if [ "${SLACKMODS:-yes}" = "yes" ]; then
 fi
 
 # Build executable
-cmake .
+cmake -DCMAKE_C_FLAGS="$SLKCFLAGS" .
 make
 
 # Setup package files
