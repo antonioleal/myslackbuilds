@@ -527,6 +527,17 @@
 *Version 1.1*
   
 
+## xAce (A Jupiter Ace emulator for Linux)
+ xAce is an emulator for the Jupiter Ace that runs under most flavours
+ of Unix. It was written by Edward Patel and based on a ZX81 emulator
+ called xz81 written by Russell Marks, which was in turn based on
+ Ian Collier's xz80, a ZX Spectrum emulator for X.
+ Homepage at https://lawrencewoodman.github.io/xAce/
+  
+
+*Version 0.5*
+  
+
 ## b2 (BBC Microcomputer Emulator)
  b2 is a cross-platform BBC Micro emulator. Use your Windows/Linux PC
  or macOS computer to play your old BBC games or develop new BBC
