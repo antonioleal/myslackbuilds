@@ -425,6 +425,26 @@
 *Version 2021_1068*
   
 
+## wps-office (an office productivity suite for Linux)
+ WPS Office, including Writer, Presentation and spreadsheets, is a
+ powerful office suite. It is deeply compatible with all of the
+ latest Microsoft Office file formats. It can easily open and read
+ the documents created with Microsoft Office.
+ Homepage: https://linux.wps.com/
+  
+
+*Version 11.1.0.11723.XA*
+  
+
+## wps-office-dicts (Spell check dictionaries for WPS Office)
+ Spell check dictionaries for WPS Office. The language files are
+ adapted from the LibreOffice Dictionaries project.
+ https://github.com/LibreOffice/dictionaries/
+  
+
+*Version 24.2.6.1*
+  
+
 ## FreeFileSync (Cross-platform file sync utility with GUI)
  FreeFileSync is a folder comparison and synchronization software
  that creates and manages backup copies of all your important files.
