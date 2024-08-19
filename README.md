@@ -515,6 +515,15 @@
 *Version 0.12.0*
   
 
+## clamtk (A frontend for ClamAV)
+ ClamTk is a frontend for ClamAV using perl-Gtk3.
+ It is intended to be an easy to use, light-weight,
+ on-demand scanner for Linux systems.
+  
+
+*Version 6.18*
+  
+
 ## B-em (BBC Microcomputer Emulator)
  B-em is an emulator for various models of BBC Microcomputer as
  made by Acorn Computers in the 1980s along with a selection of
