@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
           |-----handy-ruler------------------------------------------------------|
-ClamAV-GUI: ClamAV-GUI (A clamtk plugin for Thunar)
+ClamAV-GUI: ClamAV-GUI (A Qt GUI for clamav)
 ClamAV-GUI:
 ClamAV-GUI: This application provides a graphical user interface for clamav and
 ClamAV-GUI: freshclam with an integrated service menu for Konqueror/Dolphin
