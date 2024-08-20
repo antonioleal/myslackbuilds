@@ -315,6 +315,13 @@
 *Version 0.7*
   
 
+## thunar-sendto-clamtk (A clamtk plugin for Thunar)
+ A simple plugin to allow right-click scanning in Thunar.
+  
+
+*Version 0.08*
+  
+
 ## cutefish-core (CutefishOS backend)
  Main component of the Cutefish Desktop Environment.
  For more information see: https://github.com/cutefishos/core
