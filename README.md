@@ -355,6 +355,16 @@
 *Version 0.8*
   
 
+## ClamAV-GUI (A clamtk plugin for Thunar)
+ This application provides a graphical user interface for clamav and
+ freshclam with an integrated service menu for Konqueror/Dolphin
+ to scan files directly from your file manager.
+ Homepage at https://github.com/wusel1007/ClamAV-GUI
+  
+
+*Version 20240808_6b6e0f8*
+  
+
 ## cutefish-statusbar (CutefishOS statusbar application)
  The status bar at the top that displays the current status of the
  system, such as time, system tray, etc.
