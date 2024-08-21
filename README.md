@@ -355,7 +355,7 @@
 *Version 0.8*
   
 
-## ClamAV-GUI (A clamtk plugin for Thunar)
+## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
  to scan files directly from your file manager.
@@ -571,6 +571,15 @@
   
 
 *Version 1.1*
+  
+
+## CanAce (A Jupiter Ace emulator for Linux)
+ CanAce is a fork by Lawrence Woodman of xAce featuring a
+ tcl frontend and some fixes to the original source.
+ Homepage at https://github.com/lawrencewoodman/CanAce/
+  
+
+*Version 20130224_c135151*
   
 
 ## xAce (A Jupiter Ace emulator for Linux)
