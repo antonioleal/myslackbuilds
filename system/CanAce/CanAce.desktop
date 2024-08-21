@@ -4,6 +4,6 @@ Comment=Jupiter Ace Emulation
 Exec=canace
 Icon=CanAce
 StartupNotify=false
-Terminal=true
+Terminal=false
 Type=Application
 Categories=System;Emulator;
