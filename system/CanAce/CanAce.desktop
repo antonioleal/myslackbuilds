@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=xAce
+Name=CanAce
 Comment=Jupiter Ace Emulation
-Exec=xace-launcher
-Icon=xAce
+Exec=canace
+Icon=CanAce
 StartupNotify=false
 Terminal=true
 Type=Application
