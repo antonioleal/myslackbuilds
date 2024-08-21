@@ -80,6 +80,8 @@ find -L . \
 if [ "${SLACKMODS:-yes}" = "yes" ]; then
     patch CMakeLists.txt $CWD/patches/CMakeLists.txt.patch
     patch src/CMakeLists.txt $CWD/patches/srcCMakeLists.txt.patch
+    patch src/canace.tcl $CWD/patches/canace.tcl.patch
+    patch src/tkwin.c $CWD/patches/tkwin.c.patch
 fi
 
 # Build executable

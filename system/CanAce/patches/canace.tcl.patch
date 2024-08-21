@@ -1,0 +1,12 @@
+--- CanAce-c13515135345daf50bc8f6e4c3ddc4d6bcd01443-vanilla/src/canace.tcl	2013-02-24 06:53:19.000000000 +0000
++++ CanAce-c13515135345daf50bc8f6e4c3ddc4d6bcd01443/src/canace.tcl	2024-08-21 15:23:32.141437985 +0100
+@@ -20,6 +20,9 @@
+ 
+ proc HandleEmuKey {key} {
+   switch -- $key {
++    F2 {
++      ToggleWarpMode
++    }
+     F12 {
+       ResetAce
+       ClearStatusBar
