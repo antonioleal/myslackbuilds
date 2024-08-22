@@ -20,13 +20,13 @@ read -p "Commit message: " MSG
 echo
 echo
 
-cd ~/slackware-builds/antonioleal/slackbuilds
+cd ~/slackware-builds/slackbuilds
 git checkout -B $PKGNAME
-cd ~/slackware-builds/antonioleal/slackbuilds/$CATEGORY/
+cd ~/slackware-builds/slackbuilds/$CATEGORY/
 echo
 echo
 
-tar xvfz ~/slackware-builds/antonioleal/myslackbuilds/$CATEGORY/$PKGNAME/0/slackbuild/$PKGNAME.tar.gz
+tar xvfz ~/slackware-builds/myslackbuilds/$CATEGORY/$PKGNAME/0/slackbuild/$PKGNAME.tar.gz
 echo
 echo
 pwd

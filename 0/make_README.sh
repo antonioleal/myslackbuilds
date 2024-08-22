@@ -2,7 +2,7 @@
 
 #SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 #cd $SCRIPT_DIR
-cd ~/slackware-builds/antonioleal/myslackbuilds
+cd ~/slackware-builds/myslackbuilds
 README=README.md
 
 rm -rf $README

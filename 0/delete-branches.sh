@@ -3,7 +3,7 @@
 set -e
 clear
 
-cd ~/slackware-builds/antonioleal/slackbuilds
+cd ~/slackware-builds/slackbuilds
 git checkout master
 echo
 for b in `git branch | grep -v "master"`

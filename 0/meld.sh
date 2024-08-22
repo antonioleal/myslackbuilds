@@ -32,5 +32,5 @@ cd ..
 CATEGORY=${PWD##*/}
 echo "Category: " $CATEGORY
 
-meld ~/slackware-builds/antonioleal/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/antonioleal/slackbuilds/${CATEGORY}/${PRGNAM}/
+meld ~/slackware-builds/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/slackbuilds/${CATEGORY}/${PRGNAM}/
 
