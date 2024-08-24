@@ -1,0 +1,14 @@
+PRGNAM="notepad++"
+VERSION="8.6.9"
+HOMEPAGE="https://notepad-plus-plus.org/"
+DOWNLOAD="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.6.9/npp.8.6.9.Installer.x64.exe \
+          https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage \
+          https://github.com/mmtrt/WINE_AppImage/releases/download/continuous-stable/wine-stable_9.0-x86_64.AppImage"
+MD5SUM="594119e87364a0668899bbfc0df56b87 \
+        7c8158dd43bf24b1a30b8774f71a8d38 \
+        2419b00f316da62f028d8ad19a3d5be1"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"
