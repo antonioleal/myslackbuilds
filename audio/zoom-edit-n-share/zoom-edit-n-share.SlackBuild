@@ -103,8 +103,8 @@ mkdir -p $PKG/usr/share/applications
 cp $CWD/zoom-edit-n-share.desktop $PKG/usr/share/applications
 
 # Symlink on /usr/bin
-( cd $PKG/usr/bin ; rm -rf "ZOOM Edit&Share" )
-(cd $PKG/usr/bin; ln -s zoom-edit-n-share "ZOOM Edit&Share")
+( cd $PKG/usr/bin ; rm -rf "ZOOM_Edit&Share" )
+(cd $PKG/usr/bin; ln -s zoom-edit-n-share "ZOOM_Edit&Share")
 
 # These cause problems with AppImages
 #find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
