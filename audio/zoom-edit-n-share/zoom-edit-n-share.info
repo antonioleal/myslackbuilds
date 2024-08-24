@@ -1,0 +1,14 @@
+PRGNAM="zoom-edit-n-share"
+VERSION="5.0.0.0"
+HOMEPAGE="https://zoomcorp.com/en/jp/"
+DOWNLOAD="https://zoomcorp.com/documents/407/E_Edit_Share_Win_v5_3_0.zip \
+          https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage \
+          https://github.com/mmtrt/WINE_AppImage/releases/download/continuous-stable/wine-stable_9.0-x86_64.AppImage"
+MD5SUM="ee06ca133b0bf2e99df4f118ff084b1f \
+        7c8158dd43bf24b1a30b8774f71a8d38 \
+        2419b00f316da62f028d8ad19a3d5be1"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"
