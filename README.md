@@ -654,6 +654,19 @@
 *Version 1.4.5*
   
 
+## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
+ The Edit&Share application is used to control Zoom G3/B3 pedals from
+ your favourite Slackware box.
+ The Zoom G3/B3 guitar pedals opens the door to a new level of
+ creativity. It offers a number of effects, along with amp and cabinet
+ models, and allows you to chain them together for full multi-effect
+ complexity.
+ Homepage at https://zoomcorp.com/en/jp/
+  
+
+*Version 5.0.0.0*
+  
+
 ## whalebird (Mastondon, Pleroma and Misskey client)
  Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
  Homepage https://whalebird.social
