@@ -179,6 +179,18 @@
 *Version 2.4.3*
   
 
+## notepad++ (A powerful text editor from the Windows universe)
+ Notepad++ is a free (as in "free speech" and also as in "free beer")
+ source code editor and Notepad replacement that supports several
+ languages.
+ Running in the MS Windows environment, its use is governed by
+ GNU General Public License.
+ Homepage at https://notepad-plus-plus.org/
+  
+
+*Version 8.6.9*
+  
+
 ## bwbasic (basic interpreter)
  The Bywater BASIC Interpreter (bwBASIC) implements a large superset
  of the ANSI Standard for Minimal BASIC (X3.60-1978) and a significant
@@ -549,7 +561,7 @@
  Homepage at https://github.com/stardot/b-em
   
 
-*Version 20240703_756742d*
+*Version 20240818_c94008d*
   
 
 ## google-chrome-the-latest (Google Chrome Updater Script)
