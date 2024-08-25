@@ -403,7 +403,7 @@
  revolutionary playback engine that powers these applications,
  they are capable of rendering incredibly lifelike results which
  breathe realism and emotion into your compositions.
- Homepage: https://www.musehub.com
+ Homepage: https://musescore.org/
   
 
 *Version 1.1.0.587*
