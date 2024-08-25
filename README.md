@@ -329,6 +329,7 @@
 
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
  A simple plugin to allow right-click scanning in Thunar.
+ Homepage at https://github.com/dave-theunsub/thunar-sendto-clamtk
   
 
 *Version 0.08*
