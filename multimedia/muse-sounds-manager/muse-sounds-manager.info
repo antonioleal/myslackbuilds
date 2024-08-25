@@ -1,6 +1,6 @@
 PRGNAM="muse-sounds-manager"
 VERSION="1.1.0.587"
-HOMEPAGE="https://www.musehub.com/"
+HOMEPAGE="https://musescore.org/"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://muse-cdn.com/Muse_Sounds_Manager_Beta.deb"
