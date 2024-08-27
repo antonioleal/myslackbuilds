@@ -9,6 +9,7 @@ then
     mkdir -p $DEST
     cd $DEST
     tar xvfz /usr/src/qb64pe-$VERSION/QB64pe-$VERSION.tar.gz --strip-components=1
+    echo "-Slackware" > $DEST/internal/version.txt
     make clean OS=lnx
     make OS=lnx BUILD_QB64=y -j1
     rm -rf run_qb64pe.sh
