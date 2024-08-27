@@ -533,7 +533,7 @@
  Homepage at http://doublecmd.sourceforge.net
   
 
-*Version 1.1.16*
+*Version 1.1.17*
   
 
 ## arqiver (Simple Qt archive manager)
