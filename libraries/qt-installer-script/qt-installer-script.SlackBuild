@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# Slackware build script for MuseScore
+# Slackware script for installing Qt libraries
 
 # Copyright 2024 Antonio Leal, Porto Salvo, Oeiras, Portugal
-# Copyright 2022-2023 Klaatu <klaatu@member.fsf.org> | Lawrence NZ
-# Thanks to Tim Dickson
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,8 +24,8 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PRGNAM=MuseScore
-VERSION=${VERSION:-4.4.1}
+PRGNAM=qt-installer-script
+VERSION=${VERSION:-1.0.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -51,90 +49,43 @@ OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
-  LIBDIRSUFFIX=""
 elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
-  LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
-  LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
-  LIBDIRSUFFIX=""
 fi
 
 set -e
+
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-
-tar xvfz $CWD/$PRGNAM-$VERSION.tar.gz
-
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \+ -o \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-mkdir b
-cmake -S . -B b \
-    -DCMAKE_PREFIX_PATH="/opt/Qt/6.2.4/gcc_64/lib/cmake" \
-    -DCMAKE_INSTALL_PREFIX=/opt/MuseScore \
-    -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
-    -DCMAKE_CXX_FLAGS_RELEASE="$SLKCFLAGS" \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_MODULE_LINKER_FLAGS_RELEASE="-pthread" \
-    -DQMAKE=/opt/Qt/6.2.4/gcc_64/bin/qmake \
-    -DQT_QMAKE_EXECUTABLE=/opt/Qt/6.2.4/gcc_64/bin/qmake
+mkdir -p $PKG/opt/$PRGNAM
+install -D -m0755 $PRGNAM.sh $PKG/opt/$PRGNAM/$PRGNAM.sh
+install -D -m0755 qt-clean-root-data.sh $PKG/opt/$PRGNAM/qt-clean-root-data.sh
+install -D -m0755 qt-6.2.4-libraries-for-musescore.sh $PKG/opt/$PRGNAM/qt-6.2.4-libraries-for-musescore.sh
 
-cmake --build b -j 10
-cd b
-make install \
-  DESTDIR=$PKG \
-  UPDATE_CACHE=FALSE
-cd ..
-
-rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
+mkdir -p $PKG/usr/bin
+(cd $PKG/usr/bin; rm -rf $PRGNAM)
+(cd $PKG/usr/bin; ln -s ../../opt/$PRGNAM/$PRGNAM.sh $PRGNAM)
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
-
-mkdir -p $PKG/usr/share/icons
-mv $PKG/opt/MuseScore/share/icons/hicolor $PKG/usr/share/icons/
-rm -rf $PKG/opt/MuseScore/share/icons
-
-mkdir -p $PKG/usr/share/applications
-cp $CWD/MuseScore.desktop $PKG/usr/share/applications/
-rm -rf $PKG/opt/MuseScore/share/applications
-
-mkdir -p $PKG/usr/man/man1
-mv $PKG/opt/MuseScore/share/man/man1/mscore.1.gz $PKG/usr/man/man1/
-find $PKG/usr/man -type f -exec gzip -9 {} \;
-rm -rf $PKG/opt/MuseScore/share/man
-
-mv $PKG/opt/MuseScore/share/metainfo $PKG/usr/share/
-
-mv $PKG/opt/MuseScore/share/mime $PKG/usr/share/
-
-mkdir -p $PKG/opt/MuseScore/share/demos
-cp -avxu demos/*.msc? $PKG/opt/MuseScore/share/demos
-
-mkdir -p $PKG/usr/bin
-( cd $PKG/usr/bin ; rm -rf mscore )
-( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore/bin/mscore mscore )
-( cd $PKG/usr/bin ; rm -rf MuseScore )
-( cd $PKG/usr/bin ; ln -sf ../../opt/MuseScore/bin/mscore MuseScore )
-
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp doc/* $PKG/usr/doc/$PRGNAM-$VERSION
-cp LICENSE.txt $PKG/usr/doc/$PRGNAM-$VERSION
-cp README.md $PKG/usr/doc/$PRGNAM-$VERSION
-cp CONTRIBUTING.md $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

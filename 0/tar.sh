@@ -18,6 +18,7 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='*.sf3'       \
     --exclude='*.deb'       \
     --exclude='*.rpm'       \
+    --exclude='*.run'       \
     --exclude='*.exe'       \
     --exclude='*.AppImage'  \
     ../../../$sboname
