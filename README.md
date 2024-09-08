@@ -55,19 +55,6 @@
 *Version 0.8*
   
 
-## qt-installer-script (Deploy Qt Libraries in Slackware)
- qt-installer-script is an umbrella script to the standard Qt
- installer to simplify the installation of Qt Libraries in your
- Slackware system.
- It is provided to perform and unattended install, define a
- location (/opt/Qt) and setup a basic skeleton so you can add
- several Qt library versions in parallel.
- Homepage at https://github.com/antonioleal/qt-installer-script
-  
-
-*Version 1.0.0*
-  
-
 ## cutefish-qt-plugins (Cutefish Qt integration library)
  Unify Qt application style of CutefishOS
  https://github.com/cutefishos/qt-plugins
