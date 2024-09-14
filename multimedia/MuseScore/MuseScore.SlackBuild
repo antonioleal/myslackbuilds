@@ -90,7 +90,7 @@ cmake -S . -B b \
     -DQMAKE=/opt/Qt/6.2.4/gcc_64/bin/qmake \
     -DQT_QMAKE_EXECUTABLE=/opt/Qt/6.2.4/gcc_64/bin/qmake
 
-cmake --build b -j 10
+cmake --build b -j 4
 cd b
 make install \
   DESTDIR=$PKG \
