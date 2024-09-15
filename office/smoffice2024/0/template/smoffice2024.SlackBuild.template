@@ -85,6 +85,9 @@ for s in 16 24 32 48 64 128 256 512 1024; do
   done
 done
 
+# sbopkglint complains
+chmod +x $PKG/opt/smoffice2024/smserver
+
 mkdir -p usr/share/applications
 cp -a $CWD/planmaker-2024.desktop usr/share/applications/
 cp -a $CWD/presentations-2024.desktop usr/share/applications/
