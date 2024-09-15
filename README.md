@@ -73,7 +73,7 @@
  Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
-*Version 2024_1214*
+*Version 2024_1218*
   
 
 ## wps-office-dicts (Spell check dictionaries for WPS Office)
@@ -295,7 +295,7 @@
  Homepage at https://github.com/stardot/b-em
   
 
-*Version 20240818_c94008d*
+*Version 20240820_5ce9c1b*
   
 
 ## doublecmd-qt5 (Double-panel File Manager)
