@@ -355,7 +355,7 @@
  Homepage:  https://github.com/open-simh/simh
   
 
-*Version 20240703_e7b2431*
+*Version 20240905_2437b13*
   
 
 ## simh-classic (3.X Classic Version)
