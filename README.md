@@ -162,7 +162,7 @@
  Homepage https://whalebird.social
   
 
-*Version 6.1.5*
+*Version 6.1.6*
   
 
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
@@ -294,7 +294,7 @@
  Homepage at http://doublecmd.sourceforge.net
   
 
-*Version 1.1.17*
+*Version 1.1.18*
   
 
 ## google-chrome-the-latest (Google Chrome Updater Script)
