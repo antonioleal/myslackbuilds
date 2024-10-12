@@ -5,6 +5,6 @@ DOWNLOAD="https://github.com/musescore/MuseScore/archive/v4.4.2/MuseScore-4.4.2.
 MD5SUM="0464fd4d47497f5c0d68ba55be04f648"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="qt-6.2.4-libraries-for-musescore"
+REQUIRES="qt-installer-script"
 MAINTAINER="Antonio Leal"
 EMAIL="antonioleal@yahoo.com"
