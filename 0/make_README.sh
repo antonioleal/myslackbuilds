@@ -17,8 +17,9 @@ do
     DIR="$(dirname "${fich}")"
     echo $DIR
 
+    CATEGORY=`echo $fich | cut -d "/" -f 2`
     AUX=`cat $fich | grep "^[a-zA-Z0-9].*:.*" | cut -d ":" -f 2-10 | head -n2`
-    echo "##$AUX" >> $README
+    echo "##$AUX  [$CATEGORY]" >> $README
     AUX=`cat $fich | grep "^[a-zA-Z0-9].*:.*" | cut -d ":" -f 2-10 | tail -n10 | grep -v '^[[:space:]]*$'`
     echo "$AUX" >> $README
     echo -e "  \n" >> $README
