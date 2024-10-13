@@ -30,7 +30,7 @@
  Homepage at https://github.com/antonioleal/qt-installer-script
   
 
-*Version 1.0.0* [*libraries*]
+*Version 4.8.1* [*libraries*]
   
 
 ## fishui (base library for cutefish DE)
