@@ -566,7 +566,7 @@
  https://github.com/mynenik/kForth-64
   
 
-*Version 0.4.3* [*development*]
+*Version 0.5.0* [*development*]
   
 
 ## bwbasic (basic interpreter)
