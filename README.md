@@ -417,7 +417,7 @@
  https://github.com/mynenik/kForth-32
   
 
-*Version 2.4.3* [*development*]
+*Version 2.5.0* [*development*]
   
 
 ## wxFormBuilder ( wxWidgets RAD tool )
