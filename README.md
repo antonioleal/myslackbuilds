@@ -129,6 +129,20 @@
 *Version 11.1.0.11723.XA* [*office*]
   
 
+## bitwig-studio (Digital audio workstation for music production)
+ Bitwig is designed to be an instrument for live performances as well
+ as a tool for composing, recording, arranging, mixing, and mastering.
+ It offers a suite of controls for beatmatching, crossfading, and other
+ effects used by turntablists. Bitwig supports both traditional linear
+ music arrangement and non-linear (clip-based) production. It has
+ multi-monitor and touch screen support. Bitwig is notable for its
+ strong modulation and automation capabilities.
+ Homepage at https://www.bitwig.com/
+  
+
+*Version 5.1.9* [*audio*]
+  
+
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
@@ -142,6 +156,15 @@
   
 
 *Version 1.4.5* [*audio*]
+  
+
+## tuxguitar (A Multitrack tablature editor and player)
+ TuxGuitar is a multitrack guitar tablature editor and player
+ written in Java-SWT. It can open GuitarPro, PowerTab, and
+ TablEdit files.
+  
+
+*Version 1.6.4* [*audio*]
   
 
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
