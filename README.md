@@ -186,7 +186,7 @@
  Homepage: http://www.musescore.org/
   
 
-*Version 4.4.2* [*multimedia*]
+*Version 4.4.3* [*multimedia*]
   
 
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
