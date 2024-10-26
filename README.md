@@ -92,7 +92,7 @@
  Code repository: https://github.com/ONLYOFFICE/DesktopEditors
   
 
-*Version 8.1.1* [*office*]
+*Version 8.2.0* [*office*]
   
 
 ## smoffice2021 (office suite)
