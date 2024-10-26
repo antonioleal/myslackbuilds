@@ -14,16 +14,6 @@
 *Version 2.8.5* [*libraries*]
   
 
-## xapp (library to provide applications to users in multiple DEs)
- This project gathers the components which are common to multiple GTK 
- desktop environments (Cinnamon, MATE and Xfce) and required to
- implement cross-DE solutions.
- Homepage https://github.com/linuxmint/xapp
-  
-
-*Version * [*libraries*]
-  
-
 ## libcutefish (System libraries for Cutefish applications)
  System libraries for Cutefish applications
  https://github.com/cutefishos/libcutefish

@@ -15,7 +15,8 @@ echo
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "WGET DOWNLOAD_x86_64? (y/n) " op
+#read -p "WGET DOWNLOAD_x86_64? (y/n) " op
+op="y"
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     for s in $DOWNLOAD_x86_64
     do
@@ -30,7 +31,7 @@ echo
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "WGET DOWNLOAD? (y/n) " op
+#read -p "WGET DOWNLOAD? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     for s in $DOWNLOAD
     do
