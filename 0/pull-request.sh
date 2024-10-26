@@ -36,7 +36,8 @@ git status
 echo
 echo
 echo Adding all files: git add --all
-read -p "Issue command above? (y/n) " op
+#read -p "Issue command above? (y/n) " op
+op="y"
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git add --all
 fi
@@ -45,7 +46,8 @@ fi
 echo
 echo
 echo Commit all files: git commit -a -m "\"$CATEGORY/$PKGNAME: $MSG\""
-read -p "Issue command above? (y/n) " op
+#read -p "Issue command above? (y/n) " op
+sleep 2
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
 fi
@@ -54,7 +56,8 @@ fi
 echo
 echo
 echo Pushing to upstream master with: git push -f origin $PKGNAME
-read -p "Issue command above? (y/n) " op
+#read -p "Issue command above? (y/n) " op
+sleep 2
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git push -f origin $PKGNAME
 fi

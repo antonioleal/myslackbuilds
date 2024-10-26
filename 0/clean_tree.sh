@@ -6,4 +6,9 @@ cd ~/slackware-builds/myslackbuilds
 
 git clean -f
 
+echo "********************* status *********************"
+echo
+
+git status
+
 

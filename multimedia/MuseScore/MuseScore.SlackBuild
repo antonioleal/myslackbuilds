@@ -86,6 +86,7 @@ cmake -S . -B b \
     -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_BUILD_TYPE=Release \
+    -DMUSE_APP_BUILD_MODE=RELEASE \
     -DCMAKE_MODULE_LINKER_FLAGS_RELEASE="-pthread" \
     -DQMAKE=/opt/Qt/6.2.4/gcc_64/bin/qmake \
     -DQT_QMAKE_EXECUTABLE=/opt/Qt/6.2.4/gcc_64/bin/qmake
