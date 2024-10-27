@@ -319,7 +319,7 @@
  Homepage at https://github.com/stardot/b-em
   
 
-*Version 20240820_5ce9c1b* [*system*]
+*Version 20241016_3925976* [*system*]
   
 
 ## doublecmd-qt5 (Double-panel File Manager)
@@ -365,7 +365,7 @@
  Homepage at https://github.com/pcrow/atari_8bit_utils
   
 
-*Version 20240929_e4e3deb* [*games*]
+*Version 20241017_6da5fcf* [*games*]
   
 
 ## open-simh (Historical Computer Simulation)
