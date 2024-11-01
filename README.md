@@ -641,7 +641,7 @@
  of functions. Homepage at https://www.thomasokken.com/plus42
   
 
-*Version 1.1.12* [*academic*]
+*Version 1.1.13* [*academic*]
   
 
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
