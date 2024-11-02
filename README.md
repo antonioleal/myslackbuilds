@@ -60,6 +60,14 @@
 *Version 0.5* [*libraries*]
   
 
+## vst3sdk (Software development kit for VST3 plug-ins)
+ This allows plug-in developers to create plug-ins in VST 3 format and
+ host developers to load VST 3 plug-ins into a DAW or audio editor. 
+  
+
+*Version 3.7.12* [*libraries*]
+  
+
 ## smoffice2024 (office suite)
  SoftMaker Office 2024 includes
   * TextMaker 2024, a word processor
