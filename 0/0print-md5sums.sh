@@ -33,25 +33,25 @@ ident="                       "
 calcula()
 {
     MD5SUM=(  )  #array to populate with the ms5sums
-    i=0
+    pass=0
     echo -n "$2\""
-    for f in $1
+    for i in $1
     do
-        source=`echo $f| rev | cut -d "/" -f1 | rev`
-        if [[ $i -eq 0 ]]
+        source=`echo $i| rev | cut -d "/" -f1 | rev`
+        if [[ $pass -eq 0 ]]
         then
-            i=1
-            echo -n "$f"
+            pass=1
+            echo -n "$i"
         else
             echo " \\"
             len=${#2}+1
-            echo -n "${ident:0:$len}$f"
+            echo -n "${ident:0:$len}$i"
         fi
         MD5SUM+=( "$source" )
     done
     echo -n "\""
-
     echo
+
     echo -n "$3\""
     for i in ${!MD5SUM[@]}
     do
