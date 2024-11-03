@@ -9,8 +9,8 @@ In order to use these scripts the following setup is required:
 
 * install the package `sbo-maintainer-tools` available from SlackBuilds.org
 
-* you must setup a *wokspace* folder where your slackbuilds will be stored. inside there should be a folder called "myslackbuilds". Inside it you must follow strictly the organization of categories from SlackBuilds.org.
-For example: `plus42.SlackBuild` is stored at `academic/plus42`, so your setup for this SlackBuild could look like:
+* you must setup a *wokspace* folder where your slackbuilds will be stored whera a folder called "myslackbuilds" should exist. Inside it you must follow strictly the organization of categories from SlackBuilds.org.
+>For example: The **plus42.SlackBuild** and all associated files, *.info, desc, etc.. are stored at `academic/plus42`, so your folder for this SlackBuild should be:
 > `/home/{username}/slackware-builds/myslackbuilds/academic/plus42`
 
 * If you placed your *worspace* in a different folder you must make a symlink called "slackware-builds" pointing at your *workspace*
