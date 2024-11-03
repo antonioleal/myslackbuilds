@@ -1,4 +1,4 @@
-﻿## The Zero Scripts Setup
+## The Zero Scripts Setup
 
 *This folder contains a simple set of Slackware auxiliary scripts, so called zero ("0") scripts, it presents, in fact, one possible setup for you to collaborate with SlackBuilds.org*
 
@@ -167,6 +167,9 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
     * Go to the github.com/SlackBuildsOrg/slackbuilds and confirm the PR.
 
     Otherwise, for first submissions, (totally new SlackBuild scripts) you have to use the SlackBuilds.org site and manually upload your work.
+
+8. Periodically check github.com/SlackBuildsOrg/slackbuilds to see if you work has been approved, or rejected by some reason.
+    * Its is a very good idea to subscribe to the `slackbuilds-users` and `slackbuilds-devel` mailling lists so you are aware of what other people are doing. You can also ask for specific help regarding your scripts or get the "maintener" status for new ones.
 
 ##### "Saturday afternoon":
 1. Once your scripts are released to the public go to `https://github.com/{your account}/slackbuilds` and synchronize your fork with the upstream master.
