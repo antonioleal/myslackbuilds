@@ -94,7 +94,8 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Effect: Starts the build process.
 
     Script: 0tar.sh
-    Effect: creates a "slackbuild".tar.gz ready to be submitted.
+    Effect: creates a "slackbuild".tar.gz pack ready to be submitted on the
+            folder 0/slackbuild under the SlackBuild you are working.
     
     Script: 0pull-request.sh
     Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds. Please visit
