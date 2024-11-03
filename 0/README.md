@@ -1,19 +1,24 @@
-## Zero Scripts Setup
+## The Zero Scripts Setup
 
 *This folder contains a simple set of Slackware auxiliary scripts, so called zero ("0") scripts, it presents, in fact, one possible setup for you to collaborate with SlackBuilds.org*
+
+
+Why the "0"? Because it is very useful when you type 0 and press TAB to see what operations you can make in this environment *and* does not interfere with any other program in your Slackware box. Nice and tidy..
 
 ---
 
 ### Setup
-In order to use these scripts the following setup is required:
+In order to use these environment the following setup is required:
 
 * Install the package `sbo-maintainer-tools` available from SlackBuilds.org
 
-* You must setup a *wokspace* folder where your slackbuilds will be stored whera a folder called "myslackbuilds" should exist. Inside it you must follow strictly the organization of categories from SlackBuilds.org.
+* Install the package `meld` available from SlackBuilds.org
+
+* You must setup a *wokspace* folder where your slackbuilds will be stored, where a sub-folder called "myslackbuilds" should exist. Inside it, you must follow strictly the organization of categories from SlackBuilds.org.
 >For example: The **plus42.SlackBuild** and all associated files, *.info, desc, etc.. are stored at `academic/plus42`, so your folder for this SlackBuild should be:
 > `/home/{username}/slackware-builds/myslackbuilds/academic/plus42`
 
-* If you placed your *worspace* in a different folder you must make a symlink called "slackware-builds" pointing at your *workspace*
+* If you placed your *worspace* in a different folder you must make a symlink called "slackware-builds" in your home dir pointing at your *workspace*
 
 * The zero ("0") scripts are placed in your PATH, in my case for example I add to my .bahsrc the line (*1):
 > `export PATH=$PATH:/home/antonio/slackware-builds/myslackbuilds/0`
@@ -21,7 +26,7 @@ In order to use these scripts the following setup is required:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 (**1) notice a folder also called "0" actually holding the scripts is placed inside myslackbuilds*
 
-* you should also clone SlackBuilds.org with the commands:
+* You must clone SlackBuilds.org with the commands:
 > `cd ~/slackware-builds`
 
 > `git clone https://github.com/SlackBuildsOrg/slackbuilds`
@@ -30,10 +35,10 @@ In order to use these scripts the following setup is required:
 so you end-up with all published slackbuilds in the following structure:
 > `/home/{username}/slackware-builds/slackbuilds/(...)`
 
-You are ready to go!
+... and you are ready to go!
 
 ### The scripts
-The zero ("0") scripts are meant to be started from the slackbuild directory **and only from there**! Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild.
+The zero ("0") scripts are meant to be started from the slackbuild directory **and only from there**! Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild. Have a look at my own setup.
 
 Example:
 > `cd ~/slackware-builds/myslackbuilds/academic/plus42`
