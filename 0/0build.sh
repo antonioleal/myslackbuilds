@@ -32,6 +32,10 @@ echo "--------------------------------------------------------------------------
 echo
 read -p "Run sbolint? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+    if ! [ -f 0/slackbuild/$PKGNAME.tar.gz ]; then
+        mkdir -p 0/slackbuild
+        echo "Dummy temporary file to trick sbolint." > 0/slackbuild/$PKGNAME.tar.gz
+    fi
     sbolint .
 fi
 
@@ -67,7 +71,7 @@ fi
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Create SlackBuild package by running tar.sh? (y/n) " op
+read -p "Create SlackBuild package by running 0tar.sh? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    ./0/tar.sh
+    0tar.sh
 fi
