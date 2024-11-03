@@ -7,9 +7,9 @@
 ### Setup
 In order to use these scripts the following setup is required:
 
-* install the package `sbo-maintainer-tools` available from SlackBuilds.org
+* Install the package `sbo-maintainer-tools` available from SlackBuilds.org
 
-* you must setup a *wokspace* folder where your slackbuilds will be stored whera a folder called "myslackbuilds" should exist. Inside it you must follow strictly the organization of categories from SlackBuilds.org.
+* You must setup a *wokspace* folder where your slackbuilds will be stored whera a folder called "myslackbuilds" should exist. Inside it you must follow strictly the organization of categories from SlackBuilds.org.
 >For example: The **plus42.SlackBuild** and all associated files, *.info, desc, etc.. are stored at `academic/plus42`, so your folder for this SlackBuild should be:
 > `/home/{username}/slackware-builds/myslackbuilds/academic/plus42`
 
@@ -36,39 +36,41 @@ You are ready to go!
 The zero ("0") scripts are meant to be started from the slackbuild directory **and only from there**! Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild.
 
 Example:
-> `cd ~/slackware-builds/academic/plus42
+> `cd ~/slackware-builds/academic/plus42`
 
-> 0pull-request.sh`
+> `0pull-request.sh`
 
 will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds` 
 
 #### Current scripts
 
     Script: 0download-source-tarballs.sh
-    Effect: Downloads the sources referred in the *.info file
+    Effect: Downloads the sources referred in the *.info file.
 
     Script: 0meld.sh
     Effect: Compares what is currently published in slackbuilds.org (your local folder!)
-            with your current script
+            with your current script.
 
     Script: 0build.sh
-    Effect: Starts the build process
+    Effect: Starts the build process.
 
     Script: 0tar.sh
-    Effect: creates a "slackbuild".tar.gz ready to be submitted
+    Effect: creates a "slackbuild".tar.gz ready to be submitted.
     
     Script: 0pull-request.sh
-    Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds
+    Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds. Please visit
+            the github site in order to conclude the PR. Normally a link is 
+            displayed for you to copy-paste in your browser.
 
     Script: 0delete-branches.sh
     Effect: Each Saturday afternoon, you can run this to delete all braches you
-            created with the script 0pull-request.sh
+            created with the script 0pull-request.sh.
 
-    Script: 0clean_tree.sh
+    Script: 0clean-tree.sh
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this deletes all non-git controlled files.
 
-    Script: 0make_README.sh
+    Script: 0make_readme.sh
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this automatically generates a README.md for github.
 
