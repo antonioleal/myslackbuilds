@@ -33,7 +33,7 @@ echo "$msg" > $fich
 IFS=$'\n' # set the Internal Field Separator to newline
 for lib in $(cat "$aux")
 do
-        pkg="`0whichpkg $lib`"
+        pkg="`0whichpkg.sh $lib`"
         echo "$pkg"
         echo "$pkg" >> $fich
 done
