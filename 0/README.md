@@ -33,7 +33,7 @@ In order to use these environment the following setup is required:
 * Now clone your fork of SlackBuilds.org with the commands:
 > `cd ~/slackware-builds`
 
-> `git clone https://@github.com/{your account}/slackbuilds`
+> `git clone https://github.com/{your account}/slackbuilds`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 so you end-up with all published slackbuilds in the following structure:
@@ -84,7 +84,12 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
 #### Current scripts
 
     Script: 0download-source-tarballs.sh
-    Effect: Downloads the sources referred in the *.info file.
+    Effect: Downloads the sources referred in the *.info file. It also
+            checks if MD5SUM(s) are correct in the infor file, use together
+            with 0print-tarball-md5sums.sh to prepare a new *.info file.
+
+    Script: 0print-tarball-md5sums.sh
+    Effect: Reads the source(s) in *.info file and print new MD5SUM(s).
 
     Script: 0meld.sh
     Effect: Compares what is currently published in slackbuilds.org (your local folder!)
@@ -132,6 +137,41 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Effect: Inspect a binary file and check discover its package dependencies.
 
 
+
+### Workflows
+
+If you are in Europe SlackBuilds.org commits occur during the morning of each Saturday. So your workflow would be something like the one described here.
+
+##### "During the week":
+1. Check if new sources are available upstream for each of your packages.
+    * Better still: subscribe to be notified when this occurs!
+
+2. Check if any slackbuild maintainer has modified your script. Sometimes they do! Use **0meld.sh** to compare your current script with the published one.
+
+3. Once a new source is available update the *.info file and point to it.
+   * **0download-source-tarballs.sh** and **0print-tarball-md5sums.sh** are your friends.
+
+4. Update your *.SlackBuild script
+
+5. Build the source with **0build.sh** saying 'yes' to all the steps.
+    * The build package will be in /tmp as usual
+    * An new compressed 'slackbuild'.tar.gz will be created at 0/slackbuild folder of your. You can also use **0tar.sh** for this.
+
+6. If this is a second submission of an existing SlackBuild you can create a Pull Request (PR) with **0pull-request.sh**
+    * Go to the github.com/SlackBuildsOrg/slackbuilds and confirm the PR
+
+    Otherwise, for first submissions, (totally new SlackBuild scripts) you have to use the SlackBuilds.org site and manually upload your work.
+
+##### "Saturday afternoon":
+1. Once your scripts are released to the public go to `https://github.com/{your account}/slackbuilds` and synchronize your fork with the upstream master.
+
+2. Run `git pull --rebase` on your ~/slackware-builds/slackbuilds folder
+
+3. Delete all accessory branches by running **0delete-branches.sh**
+
+4. Run **0clean-tree.sh** to get rid of unneeded tarballs.
+
+5. That's it. Now you are ready to restart the workflow.
 
 #### Happy Slacking!
 António Leal
