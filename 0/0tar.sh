@@ -5,6 +5,7 @@
 
 sboname=${PWD##*/}
 echo $sboname
+mkdir -p 0/slackbuild
 cd 0/slackbuild
 
 tar -z -c -f $sboname.tar.gz -v \

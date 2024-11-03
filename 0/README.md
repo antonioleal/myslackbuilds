@@ -1,0 +1,74 @@
+## Zero Scripts Setup
+
+*This folder contains a simple set of Slackware auxiliary scripts, so called zero ("0") scripts, it presents, in fact, one possible setup for you to collaborate with SlackBuilds.org*
+
+---
+
+### Setup
+In order to use these scripts the following setup is required:
+
+* install the package `sbo-maintainer-tools` available from SlackBuilds.org
+
+* you must setup a *wokspace* folder where your slackbuilds will be stored. inside there should be a folder called "myslackbuilds". Inside it you must follow strictly the organization of categories from SlackBuilds.org.
+For example: `plus42.SlackBuild` is stored at `academic/plus42`, so your setup for this SlackBuild could look like:
+> `/home/{username}/slackware-builds/myslackbuilds/academic/plus42`
+
+* If you placed your *worspace* in a different folder you must make a symlink called "slackware-builds" pointing at your *workspace*
+
+* The zero ("0") scripts are placed in your PATH, in my case for example I add to my .bahsrc the line (*1):
+> `export PATH=$PATH:/home/antonio/slackware-builds/myslackbuilds/0`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(**1) notice a folder also called "0" actually holding the scripts is placed inside myslackbuilds*
+
+* you should also clone SlackBuilds.org with the commands:
+> `cd ~/slackware-builds`
+
+> `git clone https://github.com/SlackBuildsOrg/slackbuilds`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+so you end-up with all published slackbuilds in the following structure:
+> `/home/{username}/slackware-builds/slackbuilds/(...)`
+
+You are ready to go!
+
+### The scripts
+The zero ("0") scripts are meant to be started from the slackbuild directory **and only from there**! Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild.
+
+Example:
+> `cd ~/slackware-builds/academic/plus42
+
+> 0pull-request.sh`
+
+will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds` 
+
+#### Current scripts
+
+    Script: 0download-source-tarballs.sh
+    Effect: Downloads the sources referred in the *.info file
+
+    Script: 0meld.sh
+    Effect: Compares what is currently published in slackbuilds.org (your local folder!)
+            with your current script
+
+    Script: 0build.sh
+    Effect: Starts the build process
+
+    Script: 0tar.sh
+    Effect: creates a "slackbuild".tar.gz ready to be submitted
+    
+    Script: 0pull-request.sh
+    Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds
+
+    Script: 0delete-branches.sh
+    Effect: Each Saturday afternoon, you can run this to delete all braches you
+            created with the script 0pull-request.sh
+
+    Script: 0clean_tree.sh
+    Effect: if you also placed myslackbuilds directory in github (like me!)
+            then this deletes all non-git controlled files.
+
+    Script: 0make_README.sh
+    Effect: if you also placed myslackbuilds directory in github (like me!)
+            then this automatically generates a README.md for github.
+
