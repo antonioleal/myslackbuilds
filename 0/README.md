@@ -1,4 +1,4 @@
-## The Zero Scripts Setup
+﻿## The Zero Scripts Setup
 
 *This folder contains a simple set of Slackware auxiliary scripts, so called zero ("0") scripts, it presents, in fact, one possible setup for you to collaborate with SlackBuilds.org*
 
@@ -148,17 +148,23 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 
 2. Check if any slackbuild maintainer has modified your script. Sometimes they do! Use **0meld.sh** to compare your current script with the published one.
 
-3. Once a new source is available update the *.info file and point to it.
-   * **0download-source-tarballs.sh** and **0print-tarball-md5sums.sh** are your friends.
+3. Once a new source is available update the *.info file and point DOWNLOAD and DOWNLOAD_x86_64 to the new source tarballs on the web.
+   * Afterwards **0download-source-tarballs.sh** and **0print-tarball-md5sums.sh** are your friends. Some copy-paste is needed.
 
 4. Update your *.SlackBuild script
+    * Sometimes is just a matter of upgrading the version number, but upstream developers sometimes change formats.
+    * If you patched the original sources make sure these mods are still applicable.
 
 5. Build the source with **0build.sh** saying 'yes' to all the steps.
-    * The build package will be in /tmp as usual
-    * An new compressed 'slackbuild'.tar.gz will be created at 0/slackbuild folder of your. You can also use **0tar.sh** for this.
+    * The build package will be in /tmp as usual.
+    * A new compressed `'package'.tar.gz` will be created in 0/slackbuild sub-folders of your SlackBuild. You can also use **0tar.sh** for this.
 
-6. If this is a second submission of an existing SlackBuild you can create a Pull Request (PR) with **0pull-request.sh**
-    * Go to the github.com/SlackBuildsOrg/slackbuilds and confirm the PR
+6. Test you new build.
+    * It is a good idea to install your new software in a "clean" setup. If possible use a virtual machine.
+    * If your tests are successful then you are ready to publish your work.
+
+7. If this is a second submission of an existing SlackBuild you can create a Pull Request (PR) with **0pull-request.sh**
+    * Go to the github.com/SlackBuildsOrg/slackbuilds and confirm the PR.
 
     Otherwise, for first submissions, (totally new SlackBuild scripts) you have to use the SlackBuilds.org site and manually upload your work.
 
