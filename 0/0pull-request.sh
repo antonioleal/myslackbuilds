@@ -26,6 +26,10 @@ set -e
 clear
 PKGNAME=${PWD##*/}
 echo "Package: " $PKGNAME
+if ! [ -f 0/slackbuild/$PKGNAME.tar.gz ]; then
+    echo "0/slackbuild/$PKGNAME.tar.gz is non-existing. Are you at the correct folder?"
+    exit
+fi
 cd ..
 CATEGORY=${PWD##*/}
 echo "Category: " $CATEGORY
