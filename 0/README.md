@@ -26,10 +26,12 @@ In order to use these environment the following setup is required:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 (**1) notice a folder also called "0" actually holding the scripts is placed inside myslackbuilds*
 
-* You must clone SlackBuilds.org with the commands:
+* You must fork https://github.com/SlackBuildsOrg/slackbuilds
+
+* now clone your fork of SlackBuilds.org with the commands:
 > `cd ~/slackware-builds`
 
-> `git clone https://github.com/SlackBuildsOrg/slackbuilds`
+> `git clone https://@github.com/{your account}/slackbuilds`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 so you end-up with all published slackbuilds in the following structure:
