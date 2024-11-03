@@ -18,9 +18,9 @@ In order to use these environment the following setup is required:
 >For example: The **plus42.SlackBuild** and all associated files, *.info, desc, etc.. are stored at `academic/plus42`, so your folder for this SlackBuild should be:
 > `/home/{username}/slackware-builds/myslackbuilds/academic/plus42`
 
-* If you placed your *worspace* in a different folder you must make a symlink called "slackware-builds" in your home dir pointing at your *workspace*
+* If you placed your *workspace* in a different folder you must make a symlink called "slackware-builds" in your home directory pointing at your *workspace*
 
-* The zero ("0") scripts are placed in your PATH, in my case for example I add to my .bahsrc the line (*1):
+* The zero ("0") scripts are placed in your PATH, in my case for example I add to my `.bahsrc` the line (*1):
 > `export PATH=$PATH:/home/antonio/slackware-builds/myslackbuilds/0`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,7 +40,7 @@ so you end-up with all published slackbuilds in the following structure:
 > `/home/{username}/slackware-builds/slackbuilds/(...)`
 
 
-In the end you work environment should look like this:
+In the end your work environment should look like this:
 
         ~/slackware-builds/
         
@@ -129,3 +129,8 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
 
     Script: 0slackware-package-dependencies.sh
     Effect: Inspect a binary file and check discover its package dependencies.
+
+
+
+#### Happy Slacking!
+António Leal
