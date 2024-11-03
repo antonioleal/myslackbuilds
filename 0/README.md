@@ -26,9 +26,11 @@ In order to use these environment the following setup is required:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 (**1) notice a folder also called "0" actually holding the scripts is placed inside myslackbuilds*
 
-* You must fork https://github.com/SlackBuildsOrg/slackbuilds
+* Create a github repository called 'myslackbuilds'. Check github policy (account key, etc..) so you are able to commit to your own repository. Now push all your own scripts to it, including (eventually) also the myslackbuilds/0 directory. Your 'myslackbuilds' should have a similar structure to 'slackbuilds' but naturally with much less SlackBuilds, or none at all if you are just starting.
 
-* now clone your fork of SlackBuilds.org with the commands:
+* Next you must fork https://github.com/SlackBuildsOrg/slackbuilds you can do it directly from github site with the click of a button.
+
+* Now clone your fork of SlackBuilds.org with the commands:
 > `cd ~/slackware-builds`
 
 > `git clone https://@github.com/{your account}/slackbuilds`
@@ -36,6 +38,36 @@ In order to use these environment the following setup is required:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 so you end-up with all published slackbuilds in the following structure:
 > `/home/{username}/slackware-builds/slackbuilds/(...)`
+
+
+In the end you work environment should look like this:
+
+        ~/slackware-builds/
+        
+            /myslackbuilds/
+                .git
+                /0/                     <- your auxiliary scripts go here
+                /academic/plus42/       <- your plus42 scripts go here
+                /academic/plus42/0/     <- place whatever you want here
+                (...etc...)
+                /desktop/my_great_desktop_script
+                (...etc...)
+                
+            /slackbuilds
+                .git
+                /academic/3D-ICE/
+                (...etc...)
+                /academic/celestia/
+                /academic/plus42/
+                (...etc...)
+                /desktop/thunar-sendto-clamtk
+                (...etc...)
+        
+            /otherbuilds
+                /academic/some_test_or_scripts_from_others/
+                (...etc...)
+    
+
 
 ... and you are ready to go!
 
