@@ -36,7 +36,7 @@ You are ready to go!
 The zero ("0") scripts are meant to be started from the slackbuild directory **and only from there**! Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild.
 
 Example:
-> `cd ~/slackware-builds/academic/plus42`
+> `cd ~/slackware-builds/myslackbuilds/academic/plus42`
 
 > `0pull-request.sh`
 
@@ -74,3 +74,19 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this automatically generates a README.md for github.
 
+    Script: 0lspkg.sh
+    Effect: A Slackware tool which simply lists the currently installed
+            packages.
+            see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
+
+    Script: 0pkginfo.sh
+    Effect: A Slackware tool to find the inforamtion about any installed 
+            package
+            see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
+
+    Script: 0whichpkg.sh
+    Effect: A Slackware tool to find which package a file comes from.
+            see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
+
+    Script: 0slackware-package-dependencies.sh
+    Effect: Inspect a binary file and check discover its package dependencies.
