@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware meld comparer
+# Slackware meld comparer for 0scripts
 
 # Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,13 +22,13 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-#cd $SCRIPT_DIR
-
 PRGNAM=${PWD##*/}
 echo "Program: " $PRGNAM
 cd ..
 CATEGORY=${PWD##*/}
 echo "Category: " $CATEGORY
 
-meld ~/slackware-builds/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/slackbuilds/${CATEGORY}/${PRGNAM}/
+cd $PRGNAM
+
+#meld ~/slackware-builds/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/slackbuilds/${CATEGORY}/${PRGNAM}/
+meld .  ~/slackware-builds/slackbuilds/${CATEGORY}/${PRGNAM}/

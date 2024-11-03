@@ -49,7 +49,7 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
 
     Script: 0meld.sh
     Effect: Compares what is currently published in slackbuilds.org (your local folder!)
-            with your current script.
+            with your current script. You need the meld program.
 
     Script: 0build.sh
     Effect: Starts the build process.
