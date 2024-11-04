@@ -29,6 +29,10 @@ echo "--------------------------------------------------------------------------
 echo
 source $1
 
+echo "PRGNAM=\"${PRGNAM}\""
+echo "VERSION=\"${VERSION}\""
+echo "HOMEPAGE=\"${HOMEPAGE}\""
+
 ident="                       "
 calcula()
 {
@@ -72,8 +76,11 @@ calcula()
 calcula "$DOWNLOAD" "DOWNLOAD=" "MD5SUM="
 calcula "$DOWNLOAD_x86_64" "DOWNLOAD_x86_64=" "MD5SUM_x86_64="
 
+echo "REQUIRES=\"${REQUIRES}\""
+echo "MAINTAINER=\"${MAINTAINER}\""
+echo "EMAIL=\"${EMAIL}\""
+
 #  ---------------------------------------------------------------
-echo
 echo
 echo "----------------"
 echo "Done."
