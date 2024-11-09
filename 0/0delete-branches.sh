@@ -22,13 +22,13 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-set -e
+#set -e
 clear
 
 cd ~/slackware-builds/slackbuilds
 git checkout master
 echo
-for b in `git branch | grep -v "master"`
+for b in `git branch -a | grep -v "master"`
 do
     echo "deleting $b"
     git branch -D $b
