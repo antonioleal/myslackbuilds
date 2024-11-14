@@ -100,7 +100,7 @@
  Code repository: https://github.com/ONLYOFFICE/DesktopEditors
   
 
-*Version 8.2.0* [*office*]
+*Version 8.2.1* [*office*]
   
 
 ## smoffice2021 (office suite)
@@ -241,7 +241,7 @@
  Homepage https://freefilesync.org
   
 
-*Version 13.7* [*system*]
+*Version 13.8* [*system*]
   
 
 ## clamtk (A frontend for ClamAV)
