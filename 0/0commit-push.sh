@@ -24,7 +24,7 @@
 
 set -e
 clear
-
+git status
 read -p "Commit message: " MSG
 0make-readme.sh
 echo
