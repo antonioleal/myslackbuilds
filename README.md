@@ -601,7 +601,7 @@
  https://sourceforge.net/projects/bwbasic/
   
 
-*Version 3.20* [*development*]
+*Version 3.30* [*development*]
   
 
 ## qb64pe (Modern QuickBASIC compiler)
