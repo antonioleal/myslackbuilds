@@ -342,7 +342,7 @@
  Homepage at http://doublecmd.sourceforge.net
   
 
-*Version 1.1.19* [*system*]
+*Version 1.1.20* [*system*]
   
 
 ## google-chrome-the-latest (Google Chrome Updater Script)
