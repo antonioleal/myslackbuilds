@@ -47,7 +47,7 @@ calcula()
     MD5SUM=(  )  #array to populate with the ms5sums
     pass=0
     echo -n "$2\""
-    for i in $INFOFILE
+    for i in $1
     do
         source=`echo $i| rev | cut -d "/" -f1 | rev`
         if [[ $pass -eq 0 ]]
