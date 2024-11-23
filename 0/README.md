@@ -88,9 +88,10 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
             checks if MD5SUM(s) are correct in the infor file, use together
             with 0print-tarball-md5sums.sh to prepare a new *.info file.
 
-    Script: 0print-tarball-md5sums.sh
-    Effect: Reads the source(s) in *.info file and print new MD5SUM(s).
-
+    Script: 0update-info.sh
+    Effect: Reads the source(s) in *.info file, calculates new MD5SUM(s) and   
+            produces a new *.info file.
+            
     Script: 0meld.sh
     Effect: Compares what is currently published in slackbuilds.org (your local folder!)
             with your current script. You need the meld program.
@@ -149,7 +150,7 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 2. Check if any slackbuild maintainer has modified your script. Sometimes they do! Use **0meld.sh** to compare your current script with the published one.
 
 3. Once a new source is available update the *.info file and point DOWNLOAD and DOWNLOAD_x86_64 to the new source tarballs on the web.
-   * Afterwards **0download-source-tarballs.sh** and **0print-tarball-md5sums.sh** are your friends. Some copy-paste is needed.
+   * Afterwards **0download-source-tarballs.sh** and **0update-info.sh** are your friends.
 
 4. Update your *.SlackBuild script
     * Sometimes is just a matter of upgrading the version number, but upstream developers sometimes change formats.
