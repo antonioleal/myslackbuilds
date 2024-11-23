@@ -735,7 +735,7 @@
  Homepage at https://github.com/wusel1007/ClamAV-GUI
   
 
-*Version 20240808_6b6e0f8* [*desktop*]
+*Version 20241118_646660d* [*desktop*]
   
 
 ## cutefish-core (CutefishOS backend)
