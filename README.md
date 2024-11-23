@@ -465,7 +465,7 @@
  Homepage: https://sqlitestudio.pl/
   
 
-*Version 3.4.4* [*development*]
+*Version 3.4.6* [*development*]
   
 
 ## lazarus (rapid application development tool for freepascal)
