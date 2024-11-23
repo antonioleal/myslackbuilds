@@ -64,6 +64,8 @@
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
  Home page at https://www.steinberg.net/developers/
+ and
+ GitHub page at https://github.com/steinbergmedia/vst3sdk
   
 
 *Version 3.7.12* [*libraries*]
