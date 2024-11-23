@@ -36,10 +36,16 @@ echo "Calculated md5sums for the downloaded tarballs already declared in $INFOFI
 echo "-------------------------------------------------------------------------------------------------------"
 echo
 source $INFOFILE
+cp $INFOFILE $INFOFILE.new
 
 echo "PRGNAM=\"${PRGNAM}\""
+echo "PRGNAM=\"${PRGNAM}\"" > $INFOFILE.new
+
 echo "VERSION=\"${VERSION}\""
+echo "VERSION=\"${VERSION}\"" >> $INFOFILE.new
+
 echo "HOMEPAGE=\"${HOMEPAGE}\""
+echo "HOMEPAGE=\"${HOMEPAGE}\"" >> $INFOFILE.new
 
 ident="                       "
 calcula()
@@ -47,6 +53,7 @@ calcula()
     MD5SUM=(  )  #array to populate with the ms5sums
     pass=0
     echo -n "$2\""
+    echo -n "$2\"" >> $INFOFILE.new
     for i in $1
     do
         source=`echo $i| rev | cut -d "/" -f1 | rev`
@@ -54,39 +61,69 @@ calcula()
         then
             pass=1
             echo -n "$i"
+            echo -n "$i" >> $INFOFILE.new
         else
             echo " \\"
+            echo " \\" >> $INFOFILE.new
             len=${#2}+1
             echo -n "${ident:0:$len}$i"
+            echo -n "${ident:0:$len}$i" >> $INFOFILE.new
         fi
         MD5SUM+=( "$source" )
     done
     echo -n "\""
+    echo -n "\"" >> $INFOFILE.new
     echo
+    echo >> $INFOFILE.new
 
     echo -n "$3\""
+    echo -n "$3\"" >> $INFOFILE.new
     for i in ${!MD5SUM[@]}
     do
         aux=`md5sum ${MD5SUM[$i]} | cut -d" " -f1`
         if [[ $i -eq 0 ]]
         then
             echo -n "$aux"
+            echo -n "$aux" >> $INFOFILE.new
         else
             echo " \\"
+            echo " \\" >> $INFOFILE.new
             len=${#3}+1
             echo -n "${ident:0:$len}$aux"
+            echo -n "${ident:0:$len}$aux" >> $INFOFILE.new
         fi
     done
     echo -n "\""
+    echo -n "\"" >> $INFOFILE.new
     echo
+    echo >> $INFOFILE.new
 }
 
 calcula "$DOWNLOAD" "DOWNLOAD=" "MD5SUM="
 calcula "$DOWNLOAD_x86_64" "DOWNLOAD_x86_64=" "MD5SUM_x86_64="
 
 echo "REQUIRES=\"${REQUIRES}\""
+echo "REQUIRES=\"${REQUIRES}\"" >> $INFOFILE.new
+
 echo "MAINTAINER=\"${MAINTAINER}\""
+echo "MAINTAINER=\"${MAINTAINER}\"" >> $INFOFILE.new
+
 echo "EMAIL=\"${EMAIL}\""
+echo "EMAIL=\"${EMAIL}\"" >> $INFOFILE.new
+
+#  ---------------------------------------------------------------
+echo
+echo "-------------------------------------------------------------------------------------------------------"
+echo "- THE DIFFERENCES ARE:"
+echo "-------------------------------------------------------------------------------------------------------"
+echo
+diff $INFOFILE $INFOFILE.new
+echo "-------------------------------------------------------------------------------------------------------"
+read -p "Replace $INFOFILE? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]
+then
+    mv $INFOFILE.new $INFOFILE
+fi
 
 #  ---------------------------------------------------------------
 echo
