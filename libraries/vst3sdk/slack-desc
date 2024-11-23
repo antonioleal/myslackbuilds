@@ -11,7 +11,7 @@ vst3sdk:
 vst3sdk: This allows plug-in developers to create plug-ins in VST 3 format and
 vst3sdk: host developers to load VST 3 plug-ins into a DAW or audio editor. 
 vst3sdk:
-vst3sdk:
+vst3sdk: Home page at https://www.steinberg.net/developers/
 vst3sdk:
 vst3sdk:
 vst3sdk:
