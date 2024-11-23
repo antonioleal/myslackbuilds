@@ -24,10 +24,18 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 clear
-echo "Calculated md5sums for the downloaded tarballs already declared in $1"
+
+if [[ $1 == "" ]]
+then
+    INFOFILE="`ls -1 *.info | head -n1`"
+else
+    INFOFILE=$1
+fi
+
+echo "Calculated md5sums for the downloaded tarballs already declared in $INFOFILE"
 echo "-------------------------------------------------------------------------------------------------------"
 echo
-source $1
+source $INFOFILE
 
 echo "PRGNAM=\"${PRGNAM}\""
 echo "VERSION=\"${VERSION}\""
@@ -39,7 +47,7 @@ calcula()
     MD5SUM=(  )  #array to populate with the ms5sums
     pass=0
     echo -n "$2\""
-    for i in $1
+    for i in $INFOFILE
     do
         source=`echo $i| rev | cut -d "/" -f1 | rev`
         if [[ $pass -eq 0 ]]
