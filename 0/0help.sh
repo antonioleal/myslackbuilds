@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-clear
+#clear
 
 echo "--------------------------------------------------------------------------------------------------------------"
 echo " WORKFLOW HELP:"
@@ -30,7 +30,7 @@ echo "--------------------------------------------------------------------------
 echo
 echo " 1. 0delete-branches.sh                       -> delete branches from last week updates"
 echo
-echo " 2. sed -iE \"s/old ver/new ver/g\" infofile    -> update the info version number, probably needs editing too"
+echo " 2. sed -i -E \"s/old ver/new ver/g\" infofile  -> update the info version number, probably needs editing too"
 echo
 echo " 3. 0download-source-tarballs.sh              -> get the source code"
 echo
