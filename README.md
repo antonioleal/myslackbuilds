@@ -81,7 +81,7 @@
  Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
-*Version 2024_1218* [*office*]
+*Version 2024_1220* [*office*]
   
 
 ## wps-office-dicts (Spell check dictionaries for WPS Office)
