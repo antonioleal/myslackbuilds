@@ -459,6 +459,8 @@
  Yabasic is very well documented.
   
 
+- Homepage: "http://2484.de/yabasic/"
+- Code repository: "http://2484.de/yabasic/"
 - Version: 2.90.5
 - Category: development
 ## notepadqq (Notepad++-like editor for the Linux desktop)

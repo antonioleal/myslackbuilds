@@ -48,12 +48,10 @@ do
     VERSION="${VERSION%\"}"
     VERSION="${VERSION#\"}"
     CATEGORY=`echo $fich | cut -d "/" -f 2`
+
     if [ -f $DIR/0/README.md ]; then
         cat $DIR/0/README.md >> $README
     fi
-    #echo -e "  \n" >> $README
     echo "- Version: $VERSION" >> $README
-    #echo -e "  \n" >> $README
     echo "- Category: $CATEGORY" >> $README
-    #echo -e "  \n" >> $README
 done
