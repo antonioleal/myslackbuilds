@@ -28,7 +28,7 @@ HEIGHT=24
 WIDTH=90
 CHOICE_HEIGHT=22
 BACKTITLE="Antonio Leal's \"0\" scripts SlackBuild environment at $CWD"
-TITLE="WORKFLOW"
+TITLE="$PKGNAME"
 MENU="Choose one of the following options for package: $PKGNAME"
 
 OPTIONS=(1 "less $PKGNAME.info"
