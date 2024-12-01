@@ -68,25 +68,31 @@ do
                 ;;
             4)
                 0download-source-tarballs.sh
+                read -p "Press [ENTER] to continue." op
                 ;;
             5)
                 0update-md5-info.sh
+                read -p "Press [ENTER] to continue." op
                 ;;
             6)
                 0build.sh
+                read -p "Press [ENTER] to continue." op
                 ;;
             7)
                 0make-readme.sh
                 ;;
             8)
                 0commit-push.sh
+                read -p "Press [ENTER] to continue." op
                 ;;
             9)
                 0pull-request.sh
+                read -p "Press [ENTER] to continue." op
                 ;;
 
             0)
                 0clean-tree.sh
+                read -p "Press [ENTER] to continue." op
                 ;;
 
             x)
