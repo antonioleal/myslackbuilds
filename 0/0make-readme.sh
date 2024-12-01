@@ -54,6 +54,6 @@ do
     #echo -e "  \n" >> $README
     echo "- Version: $VERSION" >> $README
     #echo -e "  \n" >> $README
-    echo "- Category: $CATEGORY*" >> $README
+    echo "- Category: $CATEGORY" >> $README
     #echo -e "  \n" >> $README
 done
