@@ -503,7 +503,7 @@
  Homepage at http://2484.de/yabasic/
   
 
-*Version 2.90.4* [*development*]
+*Version 2.90.5* [*development*]
   
 
 ## notepadqq (Notepad++-like editor for the Linux desktop)
