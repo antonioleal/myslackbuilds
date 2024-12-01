@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware 0script to make commit and push to github
+# Slackware 0script to modifiy SlackBuild files using sed
 
 # Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,17 +22,27 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
 set -e
 clear
+PKGNAME=${PWD##*/}
+echo "Modifying files in folder $(pwd) with sed"
+echo
 cat *.info
 echo
 echo "--------------------------------------------------------------------------------"
-git status
+echo
+read -p "Existing string to replace: " OLDSTRING
+grep -F "${OLDSTRING}" *.*
+echo
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Commit message: " MSG
-0make-readme.sh
+read -p "New string: " NEWSTRING
+sed -i -E "s/${OLDSTRING}/${NEWSTRING}/g" *.*
 echo
+echo "--------------------------------------------------------------------------------"
 echo
-git commit -a -m "$MSG"
-git push --all
+git diff
+echo
+echo "--------------------------------------------------------------------------------"
+echo
