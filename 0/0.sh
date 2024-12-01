@@ -24,9 +24,9 @@
 
 
 PKGNAME=${PWD##*/}
-HEIGHT=18
+HEIGHT=22
 WIDTH=88
-CHOICE_HEIGHT=18
+CHOICE_HEIGHT=20
 BACKTITLE="Antonio Leal's \"0\" scripts SlackBuild environment: $PKGNAME"
 TITLE="WORKFLOW"
 MENU="Choose one of the following options for $PKGNAME:"
@@ -37,11 +37,14 @@ OPTIONS=(1 "less $PKGNAME.info"
          4 "0download-source-tarballs.sh    # get the source code"
          5 "0update-md5-info.sh             # recalculates md5 and updates info file"
          6 "0build.sh                       # builds the package"
-         7 "0make-readme.sh"
-         8 "0commit-push.sh"
-         9 "0pull-request.sh"
-         0 "0clean-tree.sh"
-         x "exit"
+         7 "0make-readme.sh                 # updated README.md"
+         8 "0commit-push.sh                 # push changes - local commit"
+         9 "0pull-request.sh                # generates a PR on SLackBuilds GitHub site"
+         0 "0clean-tree.sh                  # runs git clean -f"
+         b "less $PKGNAME.SlackBUild"
+         d "git diff"
+         s "git status"
+         q "quit to dos ;-)"
          )
 
 while (true)
@@ -89,13 +92,22 @@ do
                 0pull-request.sh
                 read -p "Press [ENTER] to continue." op
                 ;;
-
             0)
                 0clean-tree.sh
                 read -p "Press [ENTER] to continue." op
                 ;;
-
-            x)
+            b)
+                less $PKGNAME.SlackBuild
+                ;;
+            d)
+                git diff
+                read -p "Press [ENTER] to continue." op
+                ;;
+            s)
+                git status
+                read -p "Press [ENTER] to continue." op
+                ;;
+            q)
                 exit 0
                 ;;
     esac
