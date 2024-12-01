@@ -92,8 +92,8 @@
  HTML, EPUB, XPS, DjVu, XLS, ODS, CSV, PPT, ODP.
   
 
-- Homepage: https://www.onlyoffice.com/apps.aspx
-- Code repository: https://github.com/ONLYOFFICE/DesktopEditors
+ - Homepage: https://www.onlyoffice.com/apps.aspx
+ - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
 - Version: 8.2.2
 - Category: office*
 ## smoffice2021 (office suite)
@@ -593,11 +593,9 @@
  columns (131x64 pixels) by default, which the user may resize at will;
  Algebraic Expressions; attached Units and unit conversions;
  Directories; TVM and amortization tables; and two-dimensional Plotting
- of functions.
+ of functions. Homepage at https://www.thomasokken.com/plus42
   
 
-- Homepage: Homepage at https://www.thomasokken.com/plus42
-- Code repository: https://github.com/thomasokken/plus42desktop
 - Version: 1.1.14
 - Category: academic*
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
