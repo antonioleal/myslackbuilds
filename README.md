@@ -376,9 +376,10 @@
  Linux (x86 CPU only), Raspberry  Pi OS (RPi3 or later), Android,
  iOS or for running in a browser.
  BBC BASIC is very well documented.
- Homepage at https://www.bbcbasic.co.uk/bbcsdl
   
 
+- Homepage: https://www.bbcbasic.co.uk/bbcsdl
+- Code repository: https://github.com/rtrussell/BBCSDL
 - Version: 1.40a
 - Category: development
 ## kforth (A Forth programming language and environment)
@@ -598,7 +599,7 @@
  of functions.
   
 
-- Homepage: Homepage at https://www.thomasokken.com/plus42
+- Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
 - Version: 1.1.14
 - Category: academic
