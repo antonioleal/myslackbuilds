@@ -28,14 +28,15 @@ README=README.md
 rm -rf $README
 
 echo -e "*This repo contains my slackbuild scripts, some of which also published to SlackBuilds.org*\n" >> $README
-#echo -e "------------------------------------------------------------------------------------------\n" >> $README
 echo -e "---\n" >> $README
 echo -e "  \n" >> $README
 
 for fich in `find . -name "*-desc" -print`;
 do
     DIR="$(dirname "${fich}")"
-    echo $DIR
+    PKGNAME=${DIR##*/}
+    source $DIR/$PKGNAME.info
+    echo "$DIR"
 
     AUX=`cat $fich | grep "^[a-zA-Z0-9].*:.*" | cut -d ":" -f 2-10 | head -n2`
     echo "##$AUX" >> $README
@@ -48,5 +49,7 @@ do
     VERSION="${VERSION#\"}"
     CATEGORY=`echo $fich | cut -d "/" -f 2`
     echo "*Version $VERSION* [*$CATEGORY*]" >> $README
+    echo -e "  \n" >> $README
+    echo "HOMEPAGE $HOMEPAGE" >> $README
     echo -e "  \n" >> $README
 done
