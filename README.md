@@ -500,7 +500,6 @@
  Yabasic runs under Unix and Windows and has a comprehensive
  documentation; it is small, simple, open-source and free.
  Yabasic is very well documented.
- Homepage at http://2484.de/yabasic/
   
 
 *Version 2.90.5* [*development*]

@@ -22,25 +22,28 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
+CWD="$(echo `pwd`)"
 PKGNAME=${PWD##*/}
-HEIGHT=22
-WIDTH=88
-CHOICE_HEIGHT=20
-BACKTITLE="Antonio Leal's \"0\" scripts SlackBuild environment: $PKGNAME"
+HEIGHT=24
+WIDTH=90
+CHOICE_HEIGHT=22
+BACKTITLE="Antonio Leal's \"0\" scripts SlackBuild environment at $CWD"
 TITLE="WORKFLOW"
-MENU="Choose one of the following options for $PKGNAME:"
+MENU="Choose one of the following options for package: $PKGNAME"
 
 OPTIONS=(1 "less $PKGNAME.info"
-         2 "0meld.sh                        # check if SlackBuilds.org changed the script"
-         3 "0replace-string.sh              # changes a string in *.* using sed"
-         4 "0download-source-tarballs.sh    # get the source code"
-         5 "0update-md5-info.sh             # recalculates md5 and updates info file"
-         6 "0build.sh                       # builds the package"
-         7 "0make-readme.sh                 # updated README.md"
-         8 "0commit-push.sh                 # push changes - local commit"
-         9 "0pull-request.sh                # generates a PR on SLackBuilds GitHub site"
-         0 "0clean-tree.sh                  # runs git clean -f"
+         2 "Compare with slackbuilds        # check if SlackBuilds.org changed the script"
+         3 "Replace strings in *.*          # changes a string in *.* using sed"
+         4 "Download sources                # get the source code"
+         5 "Update md5 in info              # recalculates md5 and updates info file"
+         "" "----------------------------------------------------------------------------"
+         6 "Build                           # builds the package"
+         "" "----------------------------------------------------------------------------"
+         7 "Make README.md                  # updated README.md"
+         8 "Commit & Push                   # push changes - local commit"
+         9 "Pull Request SlackBuilds.org    # generates a PR on SlackBuilds GitHub site"
+         0 "Clean tree                      # runs git clean -f"
+         "" "----------------------------------------------------------------------------"
          b "less $PKGNAME.SlackBUild"
          d "git diff"
          s "git status"
