@@ -281,10 +281,11 @@
  tool in Mac OS. Timeshift protects your system by taking incremental
  snapshots of the file system at regular intervals. These snapshots
  can be restored at a later date to undo all changes to the system.
- Homepage https://github.com/linuxmint/timeshift
   
 
-- Version: 24.06.3
+- Homepage: https://github.com/linuxmint/timeshift
+- Code repository: https://github.com/linuxmint/timeshift
+- Version: 24.06.5
 - Category: system
 ## xAce (A Jupiter Ace emulator for Linux)
  xAce is an emulator for the Jupiter Ace that runs under most flavours

@@ -24,13 +24,24 @@
 
 set -e
 clear
-cat *.info
+PKGNAME=${PWD##*/}
+source $PKGNAME.info
+cat $PKGNAME.info
 echo
 echo "--------------------------------------------------------------------------------"
 git status
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Commit message: " MSG
+
+MSG="$PKGNAME updated for version $VERSION"
+echo "Commit message: " $MSG
+
+read -p "change? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]
+then
+    read -p "Commit message: " MSG
+fi
+
 0make-readme.sh
 echo
 echo
