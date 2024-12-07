@@ -1,0 +1,2 @@
+- Homepage: https://freefilesync.org/
+- Code repository: https://freefilesync.org/

@@ -223,7 +223,9 @@
  Homepage https://freefilesync.org
   
 
-- Version: 13.8
+- Homepage: https://freefilesync.org/
+- Code repository: https://freefilesync.org/
+- Version: 13.9
 - Category: system
 ## clamtk (A frontend for ClamAV)
  ClamTk is a frontend for ClamAV using perl-Gtk3.
