@@ -220,7 +220,6 @@
  the differences between a source and a target folder and transfers
  only the minimum amount of data needed. FreeFileSync is Open
  Source software, available for Windows, Linux and macOS.
- Homepage https://freefilesync.org
   
 
 - Homepage: https://freefilesync.org/
