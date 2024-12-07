@@ -58,7 +58,7 @@ OPTIONS+=(1 "less $PKGNAME.info"
          b "less $PKGNAME.SlackBuild"
          d "git diff"
          s "git status"
-         q "quit to dos ;-)"
+         q "quit to dos :)"
          )
 
 while (true)

@@ -25,6 +25,7 @@
 set -e
 clear
 PKGNAME=${PWD##*/}
+source $PKGNAME.info
 echo "Package: " $PKGNAME
 if ! [ -f 0/slackbuild/$PKGNAME.tar.gz ]; then
     echo "0/slackbuild/$PKGNAME.tar.gz is non-existing. Are you at the correct folder?"
@@ -34,7 +35,14 @@ cd ..
 CATEGORY=${PWD##*/}
 echo "Category: " $CATEGORY
 
-read -p "Commit message: " MSG
+
+MSG="$CATEGORY/$PKGNAME: Updated for version $VERSION"
+echo "Commit message: " $MSG
+read -p "change? (y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ]
+then
+    read -p "Commit message: " MSG
+fi
 echo
 echo
 
@@ -60,14 +68,14 @@ if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     git add --all
 fi
 
-# git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
+# git commit -a -m "$MSG"
 echo
 echo
-echo Commit all files: git commit -a -m "\"$CATEGORY/$PKGNAME: $MSG\""
+echo Commit all files: git commit -a -m "\"$MSG\""
 #read -p "Issue command above? (y/n) " op
 sleep 2
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    git commit -a -m "$CATEGORY/$PKGNAME: $MSG"
+    git commit -a -m "$MSG"
 fi
 
 # git push -f origin $PKGNAME
