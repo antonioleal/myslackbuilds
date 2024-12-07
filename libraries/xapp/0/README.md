@@ -1,0 +1,2 @@
+- Homepage: https://github.com/linuxmint/xapp
+- Code repository: https://github.com/linuxmint/xapp

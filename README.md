@@ -8,10 +8,11 @@
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
  implement cross-DE solutions.
- Homepage https://github.com/linuxmint/xapp
   
 
-- Version: 2.8.6
+- Homepage: https://github.com/linuxmint/xapp
+- Code repository: https://github.com/linuxmint/xapp
+- Version: 2.8.7
 - Category: libraries
 ## libcutefish (System libraries for Cutefish applications)
  System libraries for Cutefish applications
