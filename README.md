@@ -72,10 +72,11 @@
   * Presentations 2024, a presentation software
  The main feature of SoftMaker Office 2024 is the extremely high
  compatibility with the MS Office file formats.
- Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
-- Version: 2024_1220
+- Homepage: https://www.softmaker.com/en/softmaker-office-linux
+- Code repository: https://www.softmaker.com/en/softmaker-office-linux
+- Version: 2024_1222
 - Category: office
 ## wps-office-dicts (Spell check dictionaries for WPS Office)
  Spell check dictionaries for WPS Office. The language files are

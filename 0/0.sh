@@ -31,7 +31,18 @@ BACKTITLE="Antonio Leal's \"0\" scripts SlackBuild environment at $CWD"
 TITLE="$PKGNAME"
 MENU="Choose one of the following options for package: $PKGNAME"
 
-OPTIONS=(1 "less $PKGNAME.info"
+if ! [ -f $PKGNAME.info ]; then
+  echo "You must run this script from within a SlackBuild folder."
+  exit 0
+fi
+
+OPTIONS=()
+if [ -f 0/updater.sh ]; then
+OPTIONS+=(0 "** Run updater.sh for this SlackBuild **"
+         "" "----------------------------------------------------------------------------"
+         )
+fi
+OPTIONS+=(1 "less $PKGNAME.info"
          2 "Compare with slackbuilds        # check if SlackBuilds.org changed the script"
          3 "Replace strings in *.*          # changes a string in *.* using sed"
          4 "Download sources                # get the source code"
@@ -42,9 +53,9 @@ OPTIONS=(1 "less $PKGNAME.info"
          7 "Make README.md                  # updated README.md"
          8 "Commit & Push                   # push changes - local commit"
          9 "Pull Request SlackBuilds.org    # generates a PR on SlackBuilds GitHub site"
-         0 "Clean tree                      # runs git clean -f"
          "" "----------------------------------------------------------------------------"
-         b "less $PKGNAME.SlackBUild"
+         c "Clean tree                      # runs git clean -f"
+         b "less $PKGNAME.SlackBuild"
          d "git diff"
          s "git status"
          q "quit to dos ;-)"
@@ -62,6 +73,13 @@ do
 
     clear
     case $CHOICE in
+            0)
+                if [ -f 0/updater.sh ]; then
+                    cd 0
+                    source updater.sh
+                    cd $CWD
+                fi
+                ;;
             1)
                 less $PKGNAME.info
                 ;;
@@ -95,7 +113,7 @@ do
                 0pull-request.sh
                 read -p "Press [ENTER] to continue." op
                 ;;
-            0)
+            c)
                 0clean-tree.sh
                 read -p "Press [ENTER] to continue." op
                 ;;
@@ -115,4 +133,3 @@ do
                 ;;
     esac
 done
-
