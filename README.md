@@ -38,6 +38,8 @@
  Homepage at https://github.com/antonioleal/qt-installer-script
   
 
+- Homepage: https://github.com/antonioleal/qt-installer-script
+- Code repository:
 - Version: 4.8.1
 - Category: libraries
 ## fishui (base library for cutefish DE)
@@ -63,6 +65,8 @@
  GitHub page at https://github.com/steinbergmedia/vst3sdk
   
 
+- Homepage: https://www.steinberg.net/developers/
+- Code repository:
 - Version: 3.7.12
 - Category: libraries
 ## smoffice2024 (office suite)
@@ -84,6 +88,8 @@
  https://github.com/LibreOffice/dictionaries/
   
 
+- Homepage: https://github.com/LibreOffice/dictionaries/
+- Code repository:
 - Version: 24.2.6.1
 - Category: office
 ## onlyoffice-desktopeditors (office suite)
@@ -118,6 +124,8 @@
  Homepage: https://linux.wps.com/
   
 
+- Homepage: https://linux.wps.com/
+- Code repository:
 - Version: 11.1.0.11723.XA
 - Category: office
 ## bitwig-studio (Digital audio workstation for music production)
@@ -131,6 +139,8 @@
  Homepage at https://www.bitwig.com/
   
 
+- Homepage: https://www.bitwig.com/
+- Code repository:
 - Version: 5.1.9
 - Category: audio
 ## plug ( Fender Mustang Amps Controller )
@@ -154,6 +164,8 @@
  Homepage at: https://github.com/helge17/tuxguitar
   
 
+- Homepage: https://www.tuxguitar.app/
+- Code repository:
 - Version: 1.6.4
 - Category: audio
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
@@ -166,6 +178,8 @@
  Homepage at https://zoomcorp.com/en/jp/
   
 
+- Homepage: https://zoomcorp.com/en/jp/
+- Code repository:
 - Version: 5.0.0.0
 - Category: audio
 ## MuseScore (WYSIWYG Music Score Typesetter)
@@ -174,6 +188,8 @@
  Homepage: http://www.musescore.org/
   
 
+- Homepage: https://github.com/musescore/MuseScore
+- Code repository:
 - Version: 4.4.3
 - Category: multimedia
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
@@ -203,6 +219,8 @@
  Homepage https://whalebird.social
   
 
+- Homepage: https://whalebird.social
+- Code repository:
 - Version: 6.1.7
 - Category: network
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
@@ -235,6 +253,8 @@
  Homepage at https://github.com/dave-theunsub/clamtk
   
 
+- Homepage: https://github.com/dave-theunsub/clamtk
+- Code repository:
 - Version: 6.18
 - Category: system
 ## CanAce (A Jupiter Ace emulator for Linux)
@@ -243,6 +263,8 @@
  Homepage at https://github.com/lawrencewoodman/CanAce/
   
 
+- Homepage: https://github.com/LawrenceWoodman/CanAce
+- Code repository:
 - Version: 20130224_c135151
 - Category: system
 ## b2 (BBC Microcomputer Emulator)
@@ -252,6 +274,8 @@
  more info at https://github.com/tom-seddon/b2
   
 
+- Homepage: https://github.com/tom-seddon/b2
+- Code repository:
 - Version: 20241028_215441_a8b4f2a
 - Category: system
 ## arqiver (Simple Qt archive manager)
@@ -295,6 +319,8 @@
  Homepage at https://lawrencewoodman.github.io/xAce/
   
 
+- Homepage: https://lawrencewoodman.github.io/xAce/
+- Code repository:
 - Version: 0.5
 - Category: system
 ## B-em (BBC Microcomputer Emulator)
@@ -327,6 +353,8 @@
  the latest version available so your Slackware box is kept safer.
   
 
+- Homepage: https://github.com/antonioleal/google-chrome-the-latest
+- Code repository:
 - Version: 3.3
 - Category: system
 ## ZEsarUX (retro machines emulator)
@@ -349,6 +377,8 @@
  Homepage at https://github.com/pcrow/atari_8bit_utils
   
 
+- Homepage: https://github.com/pcrow/atari_8bit_utils
+- Code repository:
 - Version: 20241017_6da5fcf
 - Category: games
 ## open-simh (Historical Computer Simulation)
@@ -362,6 +392,8 @@
  Homepage:  https://github.com/open-simh/simh
   
 
+- Homepage: https://opensimh.org
+- Code repository:
 - Version: 20240905_2437b13
 - Category: misc
 ## simh-classic (3.X Classic Version)
@@ -374,6 +406,8 @@
  Homepage: http://simh.trailing-edge.com/
   
 
+- Homepage: http://simh.trailing-edge.com/
+- Code repository:
 - Version: 3.12_5
 - Category: misc
 ## bbcsdl (BBC BASIC for linux)
@@ -411,6 +445,8 @@
  https://github.com/mynenik/kForth-32
   
 
+- Homepage: https://github.com/mynenik/kForth-32
+- Code repository:
 - Version: 2.5.0
 - Category: development
 ## wxFormBuilder ( wxWidgets RAD tool )
@@ -432,6 +468,8 @@
  Homepage: https://sqlitestudio.pl/
   
 
+- Homepage: https://sqlitestudio.pl/
+- Code repository:
 - Version: 3.4.6
 - Category: development
 ## lazarus (rapid application development tool for freepascal)
@@ -444,6 +482,8 @@
  Homepage: http://lazarus.freepascal.org
   
 
+- Homepage: http://www.lazarus.freepascal.org/
+- Code repository:
 - Version: 3.6
 - Category: development
 ## vstudio (Valentina Studio DB Management)
@@ -528,6 +568,8 @@
  Homepage at https://notepad-plus-plus.org/
   
 
+- Homepage: https://notepad-plus-plus.org/
+- Code repository:
 - Version: 8.6.9
 - Category: development
 ## qb64 (Modern QuickBASIC compiler)
@@ -549,6 +591,8 @@
  https://github.com/mynenik/kForth-64
   
 
+- Homepage: https://github.com/mynenik/kForth-64
+- Code repository:
 - Version: 0.5.0
 - Category: development
 ## bwbasic (basic interpreter)
@@ -572,6 +616,8 @@
  Homepage https://qb64phoenix.com/
   
 
+- Homepage: https://qb64phoenix.com/
+- Code repository:
 - Version: 3.14.1
 - Category: development
 ## MinForth (A Forth System that can transpile Forth to C)
@@ -628,6 +674,8 @@
  Homepage at https://github.com/dave-theunsub/thunar-sendto-clamtk
   
 
+- Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
+- Code repository:
 - Version: 0.08
 - Category: desktop
 ## cutefish-settings (CutefishOS settings application)
@@ -681,6 +729,8 @@
  Homepage at https://github.com/wusel1007/ClamAV-GUI
   
 
+- Homepage: https://github.com/wusel1007/ClamAV-GUI
+- Code repository:
 - Version: 20241118_646660d
 - Category: desktop
 ## cutefish-core (CutefishOS backend)
