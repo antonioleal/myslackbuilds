@@ -135,13 +135,11 @@ do
                 read -p "Press [ENTER] to continue." op
                 ;;
             e)
-                chr=97
                 flist=()
                 for f in $(ls -I0 -1)
                 do
                     echo $f
                     flist+=( "$f" "" )
-                    chr=$(( $chr + 1 ))
                 done
                 echo $flist
                 CHOICE=$(dialog --clear \
