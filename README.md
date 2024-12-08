@@ -141,6 +141,7 @@
 - Version: 5.1.9
 - Homepage: https://www.bitwig.com/
 - Code repository:
+No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
@@ -188,6 +189,7 @@
 - Version: 4.4.3
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
+No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
@@ -283,6 +285,7 @@
 - Version: 0.12.0
 - Homepage: https://github.com/tsujan/Arqiver
 - Code repository:
+No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.
 ## yaze-ag (yet another z80 emulator )
  is designed to provide an exact simulation of the Z80 microprocessor.
  It is fast, emulates undocumented opcodes, and passes instruction
@@ -468,6 +471,7 @@
 - Version: 3.4.6
 - Homepage: https://sqlitestudio.pl/
 - Code repository:
+No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -492,6 +496,7 @@
 - Version: 13.7
 - Homepage: http://www.valentina-db.com/
 - Code repository:
+No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.
 ## yabasic (basic-interpreter)
  Yabasic is a traditional basic-interpreter. It comes with goto and
  various loops and allows to define subroutines and libraries.
