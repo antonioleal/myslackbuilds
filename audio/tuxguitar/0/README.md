@@ -1,2 +1,2 @@
 - Homepage: https://www.tuxguitar.app/
-- Code repository:
+- Code repository: https://github.com/helge17/tuxguitar

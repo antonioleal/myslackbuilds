@@ -1,2 +1,2 @@
 - Homepage: https://qb64.com
-- Code repository:
+- Code repository: https://github.com/QB64Official/qb64

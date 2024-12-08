@@ -15,5 +15,5 @@ kForth-32: define variables and define and execute individual words.
 kForth-32: kForth-32 provides a large subset of the Forth-2012 specification
 kForth-32: and includes some useful extensions.
 kForth-32:
-kForth-32: https://github.com/mynenik/kForth-32
+kForth-32:
 kForth-32:

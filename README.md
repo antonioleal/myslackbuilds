@@ -16,7 +16,6 @@
 - Category: libraries
 ## libcutefish (System libraries for Cutefish applications)
  System libraries for Cutefish applications
- https://github.com/cutefishos/libcutefish
   
 
 - Homepage: https://github.com/cutefishos/libcutefish
@@ -25,7 +24,6 @@
 - Category: libraries
 ## cutefish-kwin-plugins (cutefish plugins for KWin)
  Kwin plugins and configurations for cutefish DE
- for more info visit: https://github.com/cutefishos/kwin-plugins
   
 
 - Homepage: https://github.com/cutefishos/kwin-plugins
@@ -39,7 +37,6 @@
  It is provided to perform and unattended install, define a
  location (/opt/Qt) and setup a basic skeleton so you can add
  several Qt library versions in parallel.
- Homepage at https://github.com/antonioleal/qt-installer-script
   
 
 - Homepage: https://github.com/antonioleal/qt-installer-script
@@ -49,7 +46,6 @@
 ## fishui (base library for cutefish DE)
  FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every
  Cutefish application uses it.
- https://github.com/cutefishos/fishui
   
 
 - Homepage: https://github.com/cutefishos/fishui
@@ -58,7 +54,6 @@
 - Category: libraries
 ## cutefish-qt-plugins (Cutefish Qt integration library)
  Unify Qt application style of CutefishOS
- https://github.com/cutefishos/qt-plugins
   
 
 - Homepage: https://github.com/cutefishos/qt-plugins
@@ -68,13 +63,10 @@
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
- Home page at https://www.steinberg.net/developers/
- and
- GitHub page at https://github.com/steinbergmedia/vst3sdk
   
 
 - Homepage: https://www.steinberg.net/developers/
-- Code repository:
+- Code repository: https://github.com/steinbergmedia/vst3sdk
 - Version: 3.7.12
 - Category: libraries
 ## smoffice2024 (office suite)
@@ -93,7 +85,6 @@
 ## wps-office-dicts (Spell check dictionaries for WPS Office)
  Spell check dictionaries for WPS Office. The language files are
  adapted from the LibreOffice Dictionaries project.
- https://github.com/LibreOffice/dictionaries/
   
 
 - Homepage: https://github.com/LibreOffice/dictionaries/
@@ -119,7 +110,6 @@
   * Presentations 2021, a presentation software
  The main feature of SoftMaker Office 2021 is the extremely high
  compatibility with the MS Office file formats.
- Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
@@ -131,7 +121,6 @@
  powerful office suite. It is deeply compatible with all of the
  latest Microsoft Office file formats. It can easily open and read
  the documents created with Microsoft Office.
- Homepage: https://linux.wps.com/
   
 
 - Homepage: https://linux.wps.com/
@@ -146,7 +135,6 @@
  music arrangement and non-linear (clip-based) production. It has
  multi-monitor and touch screen support. Bitwig is notable for its
  strong modulation and automation capabilities.
- Homepage at https://www.bitwig.com/
   
 
 - Homepage: https://www.bitwig.com/
@@ -162,7 +150,6 @@
  v2: Mustang I, Mustang II, Mustang III, Mustang IV and Mustang V.
  You must add your user to the plugdev group before using
  the program.
- Homepage at https://github.com/offa/plug
   
 
 - Homepage: https://github.com/offa/plug
@@ -173,11 +160,10 @@
  TuxGuitar is a multitrack guitar tablature editor and player
  written in Java-SWT. It can open GuitarPro, PowerTab, and
  TablEdit files.
- Homepage at: https://github.com/helge17/tuxguitar
   
 
 - Homepage: https://www.tuxguitar.app/
-- Code repository:
+- Code repository: https://github.com/helge17/tuxguitar
 - Version: 1.6.4
 - Category: audio
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
@@ -187,7 +173,6 @@
  creativity. It offers a number of effects, along with amp and cabinet
  models, and allows you to chain them together for full multi-effect
  complexity.
- Homepage at https://zoomcorp.com/en/jp/
   
 
 - Homepage: https://zoomcorp.com/en/jp/
@@ -197,11 +182,10 @@
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
- Homepage: http://www.musescore.org/
   
 
-- Homepage: https://github.com/musescore/MuseScore
-- Code repository:
+- Homepage: http://www.musescore.org/
+- Code repository: https://github.com/musescore/MuseScore
 - Version: 4.4.3
 - Category: multimedia
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
@@ -211,7 +195,6 @@
  revolutionary playback engine that powers these applications,
  they are capable of rendering incredibly lifelike results which
  breathe realism and emotion into your compositions.
- Homepage: https://musescore.org/
   
 
 - Homepage: https://musescore.org/
@@ -223,7 +206,6 @@
  licensed under GNU GPL.
  This package builds the legacy version 3.6.2 the last one in the 3.x
  series.
- Homepage: http://www.musescore.org/
   
 
 - Homepage: http://www.musescore.org/
@@ -232,7 +214,6 @@
 - Category: multimedia
 ## whalebird (Mastondon, Pleroma and Misskey client)
  Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
- Homepage https://whalebird.social
   
 
 - Homepage: https://whalebird.social
@@ -268,7 +249,6 @@
  ClamTk is a frontend for ClamAV using perl-Gtk3.
  It is intended to be an easy to use, light-weight,
  on-demand scanner for Linux systems.
- Homepage at https://github.com/dave-theunsub/clamtk
   
 
 - Homepage: https://github.com/dave-theunsub/clamtk
@@ -278,7 +258,6 @@
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
- Homepage at https://github.com/lawrencewoodman/CanAce/
   
 
 - Homepage: https://github.com/LawrenceWoodman/CanAce
@@ -289,7 +268,6 @@
  b2 is a cross-platform BBC Micro emulator. Use your Windows/Linux PC
  or macOS computer to play your old BBC games or develop new BBC
  software.
- more info at https://github.com/tom-seddon/b2
   
 
 - Homepage: https://github.com/tom-seddon/b2
@@ -299,7 +277,6 @@
 ## arqiver (Simple Qt archive manager)
  arqiver is a simple Qt archive manager. It serves as a front-end for
  libarchive (bsdtar), gzip and 7z. 
- Homepage https://github.com/tsujan/Arqiver
   
 
 - Homepage: https://github.com/tsujan/Arqiver
@@ -314,7 +291,6 @@
  Management Unit (MMU) and the BIOS which supports CP/M 3.1.
  YAZE-AG is a Z80-CPU-Emulator and NOT a CP/M-Emulator!
  Inside the Emulator runs an original CP/M or a replacement of CP/M.
- Homepage https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
   
 
 - Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
@@ -338,7 +314,6 @@
  of Unix. It was written by Edward Patel and based on a ZX81 emulator
  called xz81 written by Russell Marks, which was in turn based on
  Ian Collier's xz80, a ZX Spectrum emulator for X.
- Homepage at https://lawrencewoodman.github.io/xAce/
   
 
 - Homepage: https://lawrencewoodman.github.io/xAce/
@@ -387,7 +362,6 @@
  TBBlue/ZX Spectrum Next, Jupiter Ace and Amstrad CPC 464
  ZEsarUX also includes third-party roms, media, programs and
  games NOT covered by the GNU GPL license.
- Homepage at https://github.com/chernandezba/zesarux
   
 
 - Homepage: https://github.com/chernandezba/zesarux
@@ -398,7 +372,6 @@
  atari_8bit_utils contains a set of utilities by Preston Crow for
  atari 8 bit machines or emulators such atari 400/800, XL, XE.
  among others: mount atr disks, or convert atr formats..
- Homepage at https://github.com/pcrow/atari_8bit_utils
   
 
 - Homepage: https://github.com/pcrow/atari_8bit_utils
@@ -406,6 +379,7 @@
 - Version: 20241017_6da5fcf
 - Category: games
 ## open-simh (Historical Computer Simulation)
+ open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
  past.
@@ -413,11 +387,10 @@
  simulators and to publish them as freeware on the Internet,
  with freely available copies of significant or representative
  software.
- Homepage:  https://github.com/open-simh/simh
   
 
 - Homepage: https://opensimh.org
-- Code repository:
+- Code repository: https://github.com/open-simh/simh
 - Version: 20240905_2437b13
 - Category: misc
 ## simh-classic (3.X Classic Version)
@@ -427,7 +400,6 @@
  highly portable system simulators and to publish them as freeware on
  the Internet, with freely available copies of significant or
  representative software.
- Homepage: http://simh.trailing-edge.com/
   
 
 - Homepage: http://simh.trailing-edge.com/
@@ -454,7 +426,6 @@
  allowing the user to examine or define variables and execute or
  define individual words.
  This package contains the branch 1.x of kforth for legacy systems.
- Homepage at https://github.com/mynenik/kForth-32
   
 
 - Homepage: https://github.com/mynenik/kForth-32
@@ -468,7 +439,6 @@
  define variables and define and execute individual words.
  kForth-32 provides a large subset of the Forth-2012 specification
  and includes some useful extensions.
- https://github.com/mynenik/kForth-32
   
 
 - Homepage: https://github.com/mynenik/kForth-32
@@ -480,7 +450,6 @@
  Code generation is supported for C++, Python, XRC, Lua and PHP.
  Additionally, the import and export of XRC code is possible.
  To support additional widgets, custom plugins can be used.
- Homepage at https://github.com/wxFormBuilder/wxFormBuilder
   
 
 - Homepage: https://github.com/wxFormBuilder/wxFormBuilder
@@ -493,7 +462,6 @@
  SQLiteStudio is a desktop application for browsing and editing SQLite
  database files. It is aimed for people, who know what SQLite is, or
  what relational databases are in general.
- Homepage: https://sqlitestudio.pl/
   
 
 - Homepage: https://sqlitestudio.pl/
@@ -507,7 +475,6 @@
  checkbox, treeview and many, many more. The LCL is platform
  independent, so you can write an application once and then compile
  for various platforms without changing code.
- Homepage: http://lazarus.freepascal.org
   
 
 - Homepage: http://www.lazarus.freepascal.org/
@@ -519,7 +486,6 @@
  meaningful information; create, administer, query and explore
  Valentina DB, MySQL, Postgre and SQLite databases for free on
  32/64 bit Windows, Linux and Mac OS X.
- Homepage:  http://www.valentina-db.com
   
 
 - Homepage: http://www.valentina-db.com/
@@ -533,7 +499,6 @@
  libraries written in C and allows to create standalone programs.
  Yabasic runs under Unix and Windows and has a comprehensive
  documentation; it is small, simple, open-source and free.
- Yabasic is very well documented.
   
 
 - Homepage: "http://2484.de/yabasic/"
@@ -548,7 +513,7 @@
  You can search text using the power of regular expressions.
  You can organize documents side by side.
  You can use real-time highlighting to find near identifiers
- in no time. Homepage at https://notepadqq.com
+ in no time.
   
 
 - Homepage: https://notepadqq.com
@@ -561,7 +526,6 @@
  to compile C code. Other packages add Ada, C++, D, Fortran, Go,
  Objective-C, and BRIG support to the compiler core.
  This package installs to /opt
- homepage at https://github.com/gcc-mirror/gcc
   
 
 - Homepage: https://github.com/gcc-mirror/gcc
@@ -575,7 +539,6 @@
  version also supports the Motorola 680x0. The following operating
  systems are supported: Linux, FreeBSD, Mac OS X/Darwin, DOS, Win32,
  Win64, WinCE, OS/2, Netware (libc and classic) and MorphOS.
- Homepage: http://www.freepascal.org/
   
 
 - Homepage: https://www.freepascal.org/
@@ -590,7 +553,6 @@
  commands and communication via serial or sockets along with
  structured programming syntax.
  SmallBASIC includes online examples ready to run.
- Homepage at https://smallbasic.github.io
   
 
 - Homepage: https://smallbasic.github.io
@@ -603,7 +565,6 @@
  languages.
  Running in the MS Windows environment, its use is governed by
  GNU General Public License.
- Homepage at https://notepad-plus-plus.org/
   
 
 - Homepage: https://notepad-plus-plus.org/
@@ -614,11 +575,10 @@
  QB64 is a modern extended BASIC programming language that retains
  QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
  Windows, Linux, and macOS.
- Homepage at https://qb64.com
   
 
 - Homepage: https://qb64.com
-- Code repository:
+- Code repository: https://github.com/QB64Official/qb64
 - Version: 2.1
 - Category: development
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
@@ -628,7 +588,6 @@
  define variables and define and execute individual words.
  kForth-64 provides a large subset of the Forth-2012 specification
  and includes some useful extensions.
- https://github.com/mynenik/kForth-64
   
 
 - Homepage: https://github.com/mynenik/kForth-64
@@ -653,11 +612,10 @@
  OpenGL support that retains QuickBASIC 4.5 and QBasic compatibility
  and compiles native binaries for Windows (Vista and up),
  Linux and macOS.
- Homepage https://qb64phoenix.com/
   
 
 - Homepage: https://qb64phoenix.com/
-- Code repository:
+- Code repository: https://github.com/QB64-Phoenix-Edition/QB64pe
 - Version: 3.14.1
 - Category: development
 ## MinForth (A Forth System that can transpile Forth to C)
@@ -667,7 +625,6 @@
  to adapt or rebuild MinForth. A complete rebuild takes only few
  seconds.
  Current sources are for Windows and Linux (32-bit or 64-bit).
- Homepage at https://sourceforge.net/projects/minforth/
   
 
 - Homepage: https://sourceforge.net/projects/minforth/
@@ -678,7 +635,6 @@
  Code::Blocks is a free C++ and Fortran IDE built to meet the most
  demanding needs of its users. It is designed to be very extensible
  and fully configurable.
- Homepage: http://www.codeblocks.org/
   
 
 - Homepage: http://www.codeblocks.org/
@@ -702,7 +658,6 @@
 - Category: academic
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
  Ten official wallpapers from the CutefishOS project.
- For more information see: https://github.com/cutefishos/wallpapers
   
 
 - Homepage: https://github.com/cutefishos/wallpapers
@@ -710,7 +665,7 @@
 - Version: 1.0
 - Category: desktop
 ## cutefish-terminal (A terminal emulator for Cutefish)
- https://github.com/cutefishos/terminal
+
   
 
 - Homepage: https://github.com/cutefishos/terminal
@@ -719,7 +674,6 @@
 - Category: desktop
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
  A simple plugin to allow right-click scanning in Thunar.
- Homepage at https://github.com/dave-theunsub/thunar-sendto-clamtk
   
 
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
@@ -728,7 +682,6 @@
 - Category: desktop
 ## cutefish-settings (CutefishOS settings application)
  System settings for Cutefish
- For more information see: https://github.com/cutefishos/settings
   
 
 - Homepage: https://github.com/cutefishos/settings
@@ -738,7 +691,6 @@
 ## cutefish-calculator (desktop calculator for cutefish)
  cutefish-calculator is a simple calculator originally written for
  CutefishOS
- https://github.com/cutefishos/calculator
   
 
 - Homepage: https://github.com/cutefishos/calculator
@@ -747,7 +699,6 @@
 - Category: desktop
 ## cutefish-screenlocker (CutefishOS screen locker)
  Screen locker application for Cutefish Desktop Environment
- For more information see: https://github.com/cutefishos/screenlocker
   
 
 - Homepage: https://github.com/cutefishos/screenlocker
@@ -756,7 +707,6 @@
 - Category: desktop
 ## cutefish-icons (icons for cutefish DE)
  Cutefish default icon themes, Crule and Crule-dark.
- https://github.com/cutefishos/icons
   
 
 - Homepage: https://github.com/cutefishos/icons
@@ -766,7 +716,6 @@
 ## cutefish-statusbar (CutefishOS statusbar application)
  The status bar at the top that displays the current status of the
  system, such as time, system tray, etc.
- For more information see: https://github.com/cutefishos/statusbar
   
 
 - Homepage: https://github.com/cutefishos/statusbar
@@ -775,7 +724,6 @@
 - Category: desktop
 ## cutefish-launcher (CutefishOS launcher)
  Launcher application from CutefishOS.
- For more information see: https://github.com/cutefishos/launcher
   
 
 - Homepage: https://github.com/cutefishos/launcher
@@ -786,7 +734,6 @@
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
  to scan files directly from your file manager.
- Homepage at https://github.com/wusel1007/ClamAV-GUI
   
 
 - Homepage: https://github.com/wusel1007/ClamAV-GUI
@@ -795,7 +742,6 @@
 - Category: desktop
 ## cutefish-core (CutefishOS backend)
  Main component of the Cutefish Desktop Environment.
- For more information see: https://github.com/cutefishos/core
   
 
 - Homepage: https://github.com/cutefishos/core
@@ -804,7 +750,6 @@
 - Category: desktop
 ## cutefish-dock (Cutefish application dock)
  Dock application originally developed for CutefishOS.
- For more information see: https://github.com/cutefishos/dock
   
 
 - Homepage: https://github.com/cutefishos/dock
@@ -814,7 +759,6 @@
 ## cutefish-filemanager (filemanager for CutefishOS)
  cutefish-filemanager is a simple to use, classic PC style filemanager
  originally written for CutefishOS.
- https://github.com/cutefishos/filemanager
   
 
 - Homepage: https://github.com/cutefishos/filemanager
@@ -823,7 +767,6 @@
 - Category: desktop
 ## cutefish-gtk-themes (Cutefish GTK+ themes)
  GTK+ theme pack developed for CutefishOS.
- For more information see: https://github.com/cutefishos/gtk-themes
   
 
 - Homepage: https://github.com/cutefishos/gtk-themes

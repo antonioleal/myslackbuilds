@@ -1,2 +1,2 @@
 - Homepage: https://opensimh.org
-- Code repository:
+- Code repository: https://github.com/open-simh/simh

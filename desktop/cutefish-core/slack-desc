@@ -10,7 +10,7 @@ cutefish-core: cutefish-core (CutefishOS backend)
 cutefish-core:
 cutefish-core: Main component of the Cutefish Desktop Environment.
 cutefish-core:
-cutefish-core: For more information see: https://github.com/cutefishos/core
+cutefish-core:
 cutefish-core:
 cutefish-core:
 cutefish-core:
