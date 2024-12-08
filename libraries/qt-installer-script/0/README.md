@@ -1,0 +1,2 @@
+- Homepage: https://github.com/antonioleal/qt-installer-script
+- Code repository:

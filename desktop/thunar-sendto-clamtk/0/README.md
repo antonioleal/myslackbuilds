@@ -1,0 +1,2 @@
+- Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
+- Code repository:
