@@ -183,5 +183,8 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 
 5. That's it. Now you are ready to restart the workflow.
 
+### Last but not least
+A simple menu describing the complete workflow and helping with the build sequence is provided in the **0.sh** script.
+
 #### Happy Slacking!
 António Leal

@@ -44,7 +44,7 @@ OPTIONS+=(0 "** Run updater.sh for this SlackBuild **"
 fi
 OPTIONS+=(1 "Run \"less $PKGNAME.info\""
          2 "Compare with slackbuilds            # check if SlackBuilds.org changed the script"
-         3 "Replace strings in *.*              # changes a string in *.* using sed"
+         3 "Replace strings                     # Uses sed in the $PKGNAME folder"
          4 "Download sources                    # get the source code"
          5 "Update md5 in info                  # recalculates md5 and updates info file"
          "" "---------------------------------------------------------------------------------"
