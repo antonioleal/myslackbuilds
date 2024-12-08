@@ -10,26 +10,26 @@
  implement cross-DE solutions.
   
 
+- Category: libraries
+- Version: 2.8.7
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
-- Version: 2.8.7
-- Category: libraries
 ## libcutefish (System libraries for Cutefish applications)
  System libraries for Cutefish applications
   
 
+- Category: libraries
+- Version: 0.7
 - Homepage: https://github.com/cutefishos/libcutefish
 - Code repository:
-- Version: 0.7
-- Category: libraries
 ## cutefish-kwin-plugins (cutefish plugins for KWin)
  Kwin plugins and configurations for cutefish DE
   
 
+- Category: libraries
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/kwin-plugins
 - Code repository:
-- Version: 0.8
-- Category: libraries
 ## qt-installer-script (Deploy Qt Libraries in Slackware)
  qt-installer-script is an umbrella script to the standard Qt
  installer to simplify the installation of Qt Libraries in your
@@ -39,36 +39,36 @@
  several Qt library versions in parallel.
   
 
+- Category: libraries
+- Version: 4.8.1
 - Homepage: https://github.com/antonioleal/qt-installer-script
 - Code repository:
-- Version: 4.8.1
-- Category: libraries
 ## fishui (base library for cutefish DE)
  FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every
  Cutefish application uses it.
   
 
+- Category: libraries
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/fishui
 - Code repository:
-- Version: 0.8
-- Category: libraries
 ## cutefish-qt-plugins (Cutefish Qt integration library)
  Unify Qt application style of CutefishOS
   
 
+- Category: libraries
+- Version: 0.5
 - Homepage: https://github.com/cutefishos/qt-plugins
 - Code repository:
-- Version: 0.5
-- Category: libraries
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
   
 
+- Category: libraries
+- Version: 3.7.12
 - Homepage: https://www.steinberg.net/developers/
 - Code repository: https://github.com/steinbergmedia/vst3sdk
-- Version: 3.7.12
-- Category: libraries
 ## smoffice2024 (office suite)
  SoftMaker Office 2024 includes
   * TextMaker 2024, a word processor
@@ -78,19 +78,19 @@
  compatibility with the MS Office file formats.
   
 
+- Category: office
+- Version: 2024_1222
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository: https://www.softmaker.com/en/softmaker-office-linux
-- Version: 2024_1222
-- Category: office
 ## wps-office-dicts (Spell check dictionaries for WPS Office)
  Spell check dictionaries for WPS Office. The language files are
  adapted from the LibreOffice Dictionaries project.
   
 
+- Category: office
+- Version: 24.2.6.1
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
-- Version: 24.2.6.1
-- Category: office
 ## onlyoffice-desktopeditors (office suite)
  ONLYOFFICE Desktop Editors is a free AGPL v3 licensed office suite
  that combines text, spreadsheet and presentation editors. It is fully
@@ -99,10 +99,10 @@
  HTML, EPUB, XPS, DjVu, XLS, ODS, CSV, PPT, ODP.
   
 
+- Category: office
+- Version: 8.2.2
 - Homepage: https://www.onlyoffice.com/apps.aspx
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
-- Version: 8.2.2
-- Category: office
 ## smoffice2021 (office suite)
  SoftMaker Office 2021 includes
   * TextMaker 2021, a word processor
@@ -112,10 +112,10 @@
  compatibility with the MS Office file formats.
   
 
+- Category: office
+- Version: 2021_1068
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository:
-- Version: 2021_1068
-- Category: office
 ## wps-office (an office productivity suite for Linux)
  WPS Office, including Writer, Presentation and spreadsheets, is a
  powerful office suite. It is deeply compatible with all of the
@@ -123,10 +123,10 @@
  the documents created with Microsoft Office.
   
 
+- Category: office
+- Version: 11.1.0.11723.XA
 - Homepage: https://linux.wps.com/
 - Code repository:
-- Version: 11.1.0.11723.XA
-- Category: office
 ## bitwig-studio (Digital audio workstation for music production)
  Bitwig is designed to be an instrument for live performances as well
  as a tool for composing, recording, arranging, mixing, and mastering.
@@ -137,10 +137,10 @@
  strong modulation and automation capabilities.
   
 
+- Category: audio
+- Version: 5.1.9
 - Homepage: https://www.bitwig.com/
 - Code repository:
-- Version: 5.1.9
-- Category: audio
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
@@ -152,20 +152,20 @@
  the program.
   
 
+- Category: audio
+- Version: 1.4.5
 - Homepage: https://github.com/offa/plug
 - Code repository:
-- Version: 1.4.5
-- Category: audio
 ## tuxguitar (A Multitrack tablature editor and player)
  TuxGuitar is a multitrack guitar tablature editor and player
  written in Java-SWT. It can open GuitarPro, PowerTab, and
  TablEdit files.
   
 
+- Category: audio
+- Version: 1.6.4
 - Homepage: https://www.tuxguitar.app/
 - Code repository: https://github.com/helge17/tuxguitar
-- Version: 1.6.4
-- Category: audio
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.
@@ -175,19 +175,19 @@
  complexity.
   
 
+- Category: audio
+- Version: 5.0.0.0
 - Homepage: https://zoomcorp.com/en/jp/
 - Code repository:
-- Version: 5.0.0.0
-- Category: audio
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
   
 
+- Category: multimedia
+- Version: 4.4.3
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
-- Version: 4.4.3
-- Category: multimedia
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
@@ -197,10 +197,10 @@
  breathe realism and emotion into your compositions.
   
 
+- Category: multimedia
+- Version: 1.1.0.587
 - Homepage: https://musescore.org/
 - Code repository:
-- Version: 1.1.0.587
-- Category: multimedia
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
  MuseScore is a free cross platform WYSIWYG music notation program,
  licensed under GNU GPL.
@@ -208,18 +208,18 @@
  series.
   
 
+- Category: multimedia
+- Version: 3.6.2
 - Homepage: http://www.musescore.org/
 - Code repository:
-- Version: 3.6.2
-- Category: multimedia
 ## whalebird (Mastondon, Pleroma and Misskey client)
  Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
   
 
+- Category: network
+- Version: 6.1.7
 - Homepage: https://whalebird.social
 - Code repository:
-- Version: 6.1.7
-- Category: network
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
  Maintaining an updated Firefox Standard Rel. on Slackware is now made
  easier with this small program, "firefox-standard-the-latest", a
@@ -228,10 +228,10 @@
  safer.
   
 
+- Category: system
+- Version: 1.1
 - Homepage: https://github.com/antonioleal/firefox-standard-the-latest
 - Code repository:
-- Version: 1.1
-- Category: system
 ## FreeFileSync (Cross-platform file sync utility with GUI)
  FreeFileSync is a folder comparison and synchronization software
  that creates and manages backup copies of all your important files.
@@ -241,48 +241,48 @@
  Source software, available for Windows, Linux and macOS.
   
 
+- Category: system
+- Version: 13.9
 - Homepage: https://freefilesync.org/
 - Code repository: https://freefilesync.org/
-- Version: 13.9
-- Category: system
 ## clamtk (A frontend for ClamAV)
  ClamTk is a frontend for ClamAV using perl-Gtk3.
  It is intended to be an easy to use, light-weight,
  on-demand scanner for Linux systems.
   
 
+- Category: system
+- Version: 6.18
 - Homepage: https://github.com/dave-theunsub/clamtk
 - Code repository:
-- Version: 6.18
-- Category: system
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
   
 
+- Category: system
+- Version: 20130224_c135151
 - Homepage: https://github.com/LawrenceWoodman/CanAce
 - Code repository:
-- Version: 20130224_c135151
-- Category: system
 ## b2 (BBC Microcomputer Emulator)
  b2 is a cross-platform BBC Micro emulator. Use your Windows/Linux PC
  or macOS computer to play your old BBC games or develop new BBC
  software.
   
 
+- Category: system
+- Version: 20241028_215441_a8b4f2a
 - Homepage: https://github.com/tom-seddon/b2
 - Code repository:
-- Version: 20241028_215441_a8b4f2a
-- Category: system
 ## arqiver (Simple Qt archive manager)
  arqiver is a simple Qt archive manager. It serves as a front-end for
  libarchive (bsdtar), gzip and 7z. 
   
 
+- Category: system
+- Version: 0.12.0
 - Homepage: https://github.com/tsujan/Arqiver
 - Code repository:
-- Version: 0.12.0
-- Category: system
 ## yaze-ag (yet another z80 emulator )
  is designed to provide an exact simulation of the Z80 microprocessor.
  It is fast, emulates undocumented opcodes, and passes instruction
@@ -293,10 +293,10 @@
  Inside the Emulator runs an original CP/M or a replacement of CP/M.
   
 
+- Category: system
+- Version: 2.51.3
 - Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
 - Code repository:
-- Version: 2.51.3
-- Category: system
 ## timeshift (incremental system snapshots, backup and restore)
  Timeshift for Linux is an application that provides functionality
  similar to the System Restore feature in Windows and the Time Machine
@@ -305,10 +305,10 @@
  can be restored at a later date to undo all changes to the system.
   
 
+- Category: system
+- Version: 24.06.5
 - Homepage: https://github.com/linuxmint/timeshift
 - Code repository: https://github.com/linuxmint/timeshift
-- Version: 24.06.5
-- Category: system
 ## xAce (A Jupiter Ace emulator for Linux)
  xAce is an emulator for the Jupiter Ace that runs under most flavours
  of Unix. It was written by Edward Patel and based on a ZX81 emulator
@@ -316,10 +316,10 @@
  Ian Collier's xz80, a ZX Spectrum emulator for X.
   
 
+- Category: system
+- Version: 0.5
 - Homepage: https://lawrencewoodman.github.io/xAce/
 - Code repository:
-- Version: 0.5
-- Category: system
 ## B-em (BBC Microcomputer Emulator)
  B-em is an emulator for various models of BBC Microcomputer as
  made by Acorn Computers in the 1980s along with a selection of
@@ -327,10 +327,10 @@
  B-em is licensed under the GPL, see COPYING for more details.
   
 
+- Category: system
+- Version: 20241202_4036483
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
-- Version: 20241202_4036483
-- Category: system
 ## doublecmd-qt5 (Double-panel File Manager)
  Double Commander is a free cross-platform open source file manager
  with two panels side by side (or one above the other). This is the Qt
@@ -339,10 +339,10 @@
  be installed before building.
   
 
+- Category: system
+- Version: 1.1.21
 - Homepage:  http://doublecmd.sourceforge.net
 - Code repository: http://doublecmd.sourceforge.net
-- Version: 1.1.21
-- Category: system
 ## google-chrome-the-latest (Google Chrome Updater Script)
  Maintaining an updated Chrome Browser on Slackware is now made
  easier with this small program, "google-chrome-the-latest", a simple
@@ -350,10 +350,10 @@
  the latest version available so your Slackware box is kept safer.
   
 
+- Category: system
+- Version: 3.3
 - Homepage: https://github.com/antonioleal/google-chrome-the-latest
 - Code repository:
-- Version: 3.3
-- Category: system
 ## ZEsarUX (retro machines emulator)
  ZEsarUX is a ZX Machines Emulator for Unix, including all the
  Sinclair computers: MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and
@@ -364,20 +364,20 @@
  games NOT covered by the GNU GPL license.
   
 
+- Category: games
+- Version: 11.0
 - Homepage: https://github.com/chernandezba/zesarux
 - Code repository:
-- Version: 11.0
-- Category: games
 ## atari_8bit_utils (utilities for atari 8bit machines/emulators)
  atari_8bit_utils contains a set of utilities by Preston Crow for
  atari 8 bit machines or emulators such atari 400/800, XL, XE.
  among others: mount atr disks, or convert atr formats..
   
 
+- Category: games
+- Version: 20241017_6da5fcf
 - Homepage: https://github.com/pcrow/atari_8bit_utils
 - Code repository:
-- Version: 20241017_6da5fcf
-- Category: games
 ## open-simh (Historical Computer Simulation)
  open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
@@ -389,10 +389,10 @@
  software.
   
 
+- Category: misc
+- Version: 20240905_2437b13
 - Homepage: https://opensimh.org
 - Code repository: https://github.com/open-simh/simh
-- Version: 20240905_2437b13
-- Category: misc
 ## simh-classic (3.X Classic Version)
  SimH (History Simulator) is a collection of simulators for
  historically significant or just plain interesting computer hardware
@@ -402,10 +402,10 @@
  representative software.
   
 
+- Category: misc
+- Version: 3.12_5
 - Homepage: http://simh.trailing-edge.com/
 - Code repository:
-- Version: 3.12_5
-- Category: misc
 ## bbcsdl (BBC BASIC for linux)
  BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
  cross-platform implementation of BBC BASIC for Windows, MacOS,
@@ -414,10 +414,10 @@
  BBC BASIC is very well documented.
   
 
+- Category: development
+- Version: 1.40a
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
-- Version: 1.40a
-- Category: development
 ## kforth (A Forth programming language and environment)
  kForth is an implementation of the Forth programming language and
  environment. The user may write Forth programs with an editor,
@@ -428,10 +428,10 @@
  This package contains the branch 1.x of kforth for legacy systems.
   
 
+- Category: development
+- Version: 1.8.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
-- Version: 1.8.0
-- Category: development
 ## kForth-32 (32-bit Forth System for x86-GNU/Linux)
  kForth-32 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
@@ -441,10 +441,10 @@
  and includes some useful extensions.
   
 
+- Category: development
+- Version: 2.5.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
-- Version: 2.5.0
-- Category: development
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
@@ -452,10 +452,10 @@
  To support additional widgets, custom plugins can be used.
   
 
+- Category: development
+- Version: 4.2.1
 - Homepage: https://github.com/wxFormBuilder/wxFormBuilder
 - Code repository:
-- Version: 4.2.1
-- Category: development
 ## SQLiteStudio (SQLite database manager written in C++ using Qt)
  A free, open source, multi-platform SQLite database manager written
  in C++, with use of Qt framework.
@@ -464,10 +464,10 @@
  what relational databases are in general.
   
 
+- Category: development
+- Version: 3.4.6
 - Homepage: https://sqlitestudio.pl/
 - Code repository:
-- Version: 3.4.6
-- Category: development
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -477,10 +477,10 @@
  for various platforms without changing code.
   
 
+- Category: development
+- Version: 3.6
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
-- Version: 3.6
-- Category: development
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
@@ -488,10 +488,10 @@
  32/64 bit Windows, Linux and Mac OS X.
   
 
+- Category: development
+- Version: 13.7
 - Homepage: http://www.valentina-db.com/
 - Code repository:
-- Version: 13.7
-- Category: development
 ## yabasic (basic-interpreter)
  Yabasic is a traditional basic-interpreter. It comes with goto and
  various loops and allows to define subroutines and libraries.
@@ -501,10 +501,10 @@
  documentation; it is small, simple, open-source and free.
   
 
+- Category: development
+- Version: 2.90.5
 - Homepage: "http://2484.de/yabasic/"
 - Code repository: "http://2484.de/yabasic/"
-- Version: 2.90.5
-- Category: development
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for
@@ -516,10 +516,10 @@
  in no time.
   
 
+- Category: development
+- Version: b426303
 - Homepage: https://notepadqq.com
 - Code repository:
-- Version: b426303
-- Category: development
 ## gcc-local (Base GCC package with C support)
  GCC is the GNU Compiler Collection.
  This package contains those parts of the compiler collection needed
@@ -528,10 +528,10 @@
  This package installs to /opt
   
 
+- Category: development
+- Version: 13.3.0
 - Homepage: https://github.com/gcc-mirror/gcc
 - Code repository:
-- Version: 13.3.0
-- Category: development
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
@@ -541,10 +541,10 @@
  Win64, WinCE, OS/2, Netware (libc and classic) and MorphOS.
   
 
+- Category: development
+- Version: 3.2.2
 - Homepage: https://www.freepascal.org/
 - Code repository:
-- Version: 3.2.2
-- Category: development
 ## SmallBASIC (basic-interpreter)
  SmallBASIC is a fast and easy to learn BASIC language interpreter
  ideal for everyday calculations, scripts and prototypes.
@@ -555,10 +555,10 @@
  SmallBASIC includes online examples ready to run.
   
 
+- Category: development
+- Version: 12.26
 - Homepage: https://smallbasic.github.io
 - Code repository:
-- Version: 12.26
-- Category: development
 ## notepad++ (A powerful text editor from the Windows universe)
  Notepad++ is a free (as in "free speech" and also as in "free beer")
  source code editor and Notepad replacement that supports several
@@ -567,20 +567,20 @@
  GNU General Public License.
   
 
+- Category: development
+- Version: 8.6.9
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
-- Version: 8.6.9
-- Category: development
 ## qb64 (Modern QuickBASIC compiler)
  QB64 is a modern extended BASIC programming language that retains
  QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
  Windows, Linux, and macOS.
   
 
+- Category: development
+- Version: 2.1
 - Homepage: https://qb64.com
 - Code repository: https://github.com/QB64Official/qb64
-- Version: 2.1
-- Category: development
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
  kForth-64 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
@@ -590,20 +590,20 @@
  and includes some useful extensions.
   
 
+- Category: development
+- Version: 0.5.0
 - Homepage: https://github.com/mynenik/kForth-64
 - Code repository:
-- Version: 0.5.0
-- Category: development
 ## bwbasic (basic interpreter)
  The Bywater BASIC Interpreter (bwBASIC) implements a large superset
  of the ANSI Standard for Minimal BASIC (X3.60-1978) and a significant
  subset of the ANSI Standard for Full BASIC (X3.113-1987) in C.
   
 
+- Category: development
+- Version: 3.30
 - Homepage: https://sourceforge.net/projects/bwbasic
 - Code repository: https://sourceforge.net/projects/bwbasic
-- Version: 3.30
-- Category: development
 ## qb64pe (Modern QuickBASIC compiler)
  QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
  additional features and enhancements, maintained by a
@@ -614,10 +614,10 @@
  Linux and macOS.
   
 
+- Category: development
+- Version: 3.14.1
 - Homepage: https://qb64phoenix.com/
 - Code repository: https://github.com/QB64-Phoenix-Edition/QB64pe
-- Version: 3.14.1
-- Category: development
 ## MinForth (A Forth System that can transpile Forth to C)
  MinForth V3.4 is a classic Forth system with command-line interface.
  Development resource requirements are minimal. A source text editor
@@ -627,20 +627,20 @@
  Current sources are for Windows and Linux (32-bit or 64-bit).
   
 
+- Category: development
+- Version: 3.4.8
 - Homepage: https://sourceforge.net/projects/minforth/
 - Code repository:
-- Version: 3.4.8
-- Category: development
 ## codeblocks (a free C++ and Fortran IDE)
  Code::Blocks is a free C++ and Fortran IDE built to meet the most
  demanding needs of its users. It is designed to be very extensible
  and fully configurable.
   
 
+- Category: development
+- Version: 20.03
 - Homepage: http://www.codeblocks.org/
 - Code repository:
-- Version: 20.03
-- Category: development
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
  Plus42 is an advanced scientific programmable calculator, based on
  Free42 (a complete re-implementation of the HP-42S scientific
@@ -652,124 +652,124 @@
  of functions.
   
 
+- Category: academic
+- Version: 1.1.14
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
-- Version: 1.1.14
-- Category: academic
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
  Ten official wallpapers from the CutefishOS project.
   
 
+- Category: desktop
+- Version: 1.0
 - Homepage: https://github.com/cutefishos/wallpapers
 - Code repository:
-- Version: 1.0
-- Category: desktop
 ## cutefish-terminal (A terminal emulator for Cutefish)
 
   
 
+- Category: desktop
+- Version: 0.7
 - Homepage: https://github.com/cutefishos/terminal
 - Code repository:
-- Version: 0.7
-- Category: desktop
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
  A simple plugin to allow right-click scanning in Thunar.
   
 
+- Category: desktop
+- Version: 0.08
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
-- Version: 0.08
-- Category: desktop
 ## cutefish-settings (CutefishOS settings application)
  System settings for Cutefish
   
 
+- Category: desktop
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/settings
 - Code repository:
-- Version: 0.8
-- Category: desktop
 ## cutefish-calculator (desktop calculator for cutefish)
  cutefish-calculator is a simple calculator originally written for
  CutefishOS
   
 
+- Category: desktop
+- Version: 0.4
 - Homepage: https://github.com/cutefishos/calculator
 - Code repository:
-- Version: 0.4
-- Category: desktop
 ## cutefish-screenlocker (CutefishOS screen locker)
  Screen locker application for Cutefish Desktop Environment
   
 
+- Category: desktop
+- Version: 0.5
 - Homepage: https://github.com/cutefishos/screenlocker
 - Code repository:
-- Version: 0.5
-- Category: desktop
 ## cutefish-icons (icons for cutefish DE)
  Cutefish default icon themes, Crule and Crule-dark.
   
 
+- Category: desktop
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/icons
 - Code repository:
-- Version: 0.8
-- Category: desktop
 ## cutefish-statusbar (CutefishOS statusbar application)
  The status bar at the top that displays the current status of the
  system, such as time, system tray, etc.
   
 
+- Category: desktop
+- Version: 0.7
 - Homepage: https://github.com/cutefishos/statusbar
 - Code repository:
-- Version: 0.7
-- Category: desktop
 ## cutefish-launcher (CutefishOS launcher)
  Launcher application from CutefishOS.
   
 
+- Category: desktop
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/launcher
 - Code repository:
-- Version: 0.8
-- Category: desktop
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
  to scan files directly from your file manager.
   
 
+- Category: desktop
+- Version: 20241118_646660d
 - Homepage: https://github.com/wusel1007/ClamAV-GUI
 - Code repository:
-- Version: 20241118_646660d
-- Category: desktop
 ## cutefish-core (CutefishOS backend)
  Main component of the Cutefish Desktop Environment.
   
 
+- Category: desktop
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/core
 - Code repository:
-- Version: 0.8
-- Category: desktop
 ## cutefish-dock (Cutefish application dock)
  Dock application originally developed for CutefishOS.
   
 
+- Category: desktop
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/dock
 - Code repository:
-- Version: 0.8
-- Category: desktop
 ## cutefish-filemanager (filemanager for CutefishOS)
  cutefish-filemanager is a simple to use, classic PC style filemanager
  originally written for CutefishOS.
   
 
+- Category: desktop
+- Version: 0.8
 - Homepage: https://github.com/cutefishos/filemanager
 - Code repository:
-- Version: 0.8
-- Category: desktop
 ## cutefish-gtk-themes (Cutefish GTK+ themes)
  GTK+ theme pack developed for CutefishOS.
   
 
+- Category: desktop
+- Version: 0.7
 - Homepage: https://github.com/cutefishos/gtk-themes
 - Code repository:
-- Version: 0.7
-- Category: desktop
