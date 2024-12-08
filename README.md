@@ -19,6 +19,8 @@
  https://github.com/cutefishos/libcutefish
   
 
+- Homepage: https://github.com/cutefishos/libcutefish
+- Code repository:
 - Version: 0.7
 - Category: libraries
 ## cutefish-kwin-plugins (cutefish plugins for KWin)
@@ -26,6 +28,8 @@
  for more info visit: https://github.com/cutefishos/kwin-plugins
   
 
+- Homepage: https://github.com/cutefishos/kwin-plugins
+- Code repository:
 - Version: 0.8
 - Category: libraries
 ## qt-installer-script (Deploy Qt Libraries in Slackware)
@@ -48,6 +52,8 @@
  https://github.com/cutefishos/fishui
   
 
+- Homepage: https://github.com/cutefishos/fishui
+- Code repository:
 - Version: 0.8
 - Category: libraries
 ## cutefish-qt-plugins (Cutefish Qt integration library)
@@ -55,6 +61,8 @@
  https://github.com/cutefishos/qt-plugins
   
 
+- Homepage: https://github.com/cutefishos/qt-plugins
+- Code repository:
 - Version: 0.5
 - Category: libraries
 ## vst3sdk (Software development kit for VST3 plug-ins)
@@ -114,6 +122,8 @@
  Home page: https://www.softmaker.com/en/softmaker-office-linux
   
 
+- Homepage: https://www.softmaker.com/en/softmaker-office-linux
+- Code repository:
 - Version: 2021_1068
 - Category: office
 ## wps-office (an office productivity suite for Linux)
@@ -155,6 +165,8 @@
  Homepage at https://github.com/offa/plug
   
 
+- Homepage: https://github.com/offa/plug
+- Code repository:
 - Version: 1.4.5
 - Category: audio
 ## tuxguitar (A Multitrack tablature editor and player)
@@ -202,6 +214,8 @@
  Homepage: https://musescore.org/
   
 
+- Homepage: https://musescore.org/
+- Code repository:
 - Version: 1.1.0.587
 - Category: multimedia
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
@@ -212,6 +226,8 @@
  Homepage: http://www.musescore.org/
   
 
+- Homepage: http://www.musescore.org/
+- Code repository:
 - Version: 3.6.2
 - Category: multimedia
 ## whalebird (Mastondon, Pleroma and Misskey client)
@@ -231,6 +247,8 @@
  safer.
   
 
+- Homepage: https://github.com/antonioleal/firefox-standard-the-latest
+- Code repository:
 - Version: 1.1
 - Category: system
 ## FreeFileSync (Cross-platform file sync utility with GUI)
@@ -284,6 +302,8 @@
  Homepage https://github.com/tsujan/Arqiver
   
 
+- Homepage: https://github.com/tsujan/Arqiver
+- Code repository:
 - Version: 0.12.0
 - Category: system
 ## yaze-ag (yet another z80 emulator )
@@ -297,6 +317,8 @@
  Homepage https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
   
 
+- Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
+- Code repository:
 - Version: 2.51.3
 - Category: system
 ## timeshift (incremental system snapshots, backup and restore)
@@ -368,6 +390,8 @@
  Homepage at https://github.com/chernandezba/zesarux
   
 
+- Homepage: https://github.com/chernandezba/zesarux
+- Code repository:
 - Version: 11.0
 - Category: games
 ## atari_8bit_utils (utilities for atari 8bit machines/emulators)
@@ -433,6 +457,8 @@
  Homepage at https://github.com/mynenik/kForth-32
   
 
+- Homepage: https://github.com/mynenik/kForth-32
+- Code repository:
 - Version: 1.8.0
 - Category: development
 ## kForth-32 (32-bit Forth System for x86-GNU/Linux)
@@ -457,6 +483,8 @@
  Homepage at https://github.com/wxFormBuilder/wxFormBuilder
   
 
+- Homepage: https://github.com/wxFormBuilder/wxFormBuilder
+- Code repository:
 - Version: 4.2.1
 - Category: development
 ## SQLiteStudio (SQLite database manager written in C++ using Qt)
@@ -494,6 +522,8 @@
  Homepage:  http://www.valentina-db.com
   
 
+- Homepage: http://www.valentina-db.com/
+- Code repository:
 - Version: 13.7
 - Category: development
 ## yabasic (basic-interpreter)
@@ -521,6 +551,8 @@
  in no time. Homepage at https://notepadqq.com
   
 
+- Homepage: https://notepadqq.com
+- Code repository:
 - Version: b426303
 - Category: development
 ## gcc-local (Base GCC package with C support)
@@ -532,6 +564,8 @@
  homepage at https://github.com/gcc-mirror/gcc
   
 
+- Homepage: https://github.com/gcc-mirror/gcc
+- Code repository:
 - Version: 13.3.0
 - Category: development
 ## fpc (free pascal compiler)
@@ -544,6 +578,8 @@
  Homepage: http://www.freepascal.org/
   
 
+- Homepage: https://www.freepascal.org/
+- Code repository:
 - Version: 3.2.2
 - Category: development
 ## SmallBASIC (basic-interpreter)
@@ -557,6 +593,8 @@
  Homepage at https://smallbasic.github.io
   
 
+- Homepage: https://smallbasic.github.io
+- Code repository:
 - Version: 12.26
 - Category: development
 ## notepad++ (A powerful text editor from the Windows universe)
@@ -579,6 +617,8 @@
  Homepage at https://qb64.com
   
 
+- Homepage: https://qb64.com
+- Code repository:
 - Version: 2.1
 - Category: development
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
@@ -630,6 +670,8 @@
  Homepage at https://sourceforge.net/projects/minforth/
   
 
+- Homepage: https://sourceforge.net/projects/minforth/
+- Code repository:
 - Version: 3.4.8
 - Category: development
 ## codeblocks (a free C++ and Fortran IDE)
@@ -639,6 +681,8 @@
  Homepage: http://www.codeblocks.org/
   
 
+- Homepage: http://www.codeblocks.org/
+- Code repository:
 - Version: 20.03
 - Category: development
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
@@ -661,12 +705,16 @@
  For more information see: https://github.com/cutefishos/wallpapers
   
 
+- Homepage: https://github.com/cutefishos/wallpapers
+- Code repository:
 - Version: 1.0
 - Category: desktop
 ## cutefish-terminal (A terminal emulator for Cutefish)
  https://github.com/cutefishos/terminal
   
 
+- Homepage: https://github.com/cutefishos/terminal
+- Code repository:
 - Version: 0.7
 - Category: desktop
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
@@ -683,6 +731,8 @@
  For more information see: https://github.com/cutefishos/settings
   
 
+- Homepage: https://github.com/cutefishos/settings
+- Code repository:
 - Version: 0.8
 - Category: desktop
 ## cutefish-calculator (desktop calculator for cutefish)
@@ -691,6 +741,8 @@
  https://github.com/cutefishos/calculator
   
 
+- Homepage: https://github.com/cutefishos/calculator
+- Code repository:
 - Version: 0.4
 - Category: desktop
 ## cutefish-screenlocker (CutefishOS screen locker)
@@ -698,6 +750,8 @@
  For more information see: https://github.com/cutefishos/screenlocker
   
 
+- Homepage: https://github.com/cutefishos/screenlocker
+- Code repository:
 - Version: 0.5
 - Category: desktop
 ## cutefish-icons (icons for cutefish DE)
@@ -705,6 +759,8 @@
  https://github.com/cutefishos/icons
   
 
+- Homepage: https://github.com/cutefishos/icons
+- Code repository:
 - Version: 0.8
 - Category: desktop
 ## cutefish-statusbar (CutefishOS statusbar application)
@@ -713,6 +769,8 @@
  For more information see: https://github.com/cutefishos/statusbar
   
 
+- Homepage: https://github.com/cutefishos/statusbar
+- Code repository:
 - Version: 0.7
 - Category: desktop
 ## cutefish-launcher (CutefishOS launcher)
@@ -720,6 +778,8 @@
  For more information see: https://github.com/cutefishos/launcher
   
 
+- Homepage: https://github.com/cutefishos/launcher
+- Code repository:
 - Version: 0.8
 - Category: desktop
 ## ClamAV-GUI (A Qt GUI for clamav)
@@ -738,6 +798,8 @@
  For more information see: https://github.com/cutefishos/core
   
 
+- Homepage: https://github.com/cutefishos/core
+- Code repository:
 - Version: 0.8
 - Category: desktop
 ## cutefish-dock (Cutefish application dock)
@@ -745,6 +807,8 @@
  For more information see: https://github.com/cutefishos/dock
   
 
+- Homepage: https://github.com/cutefishos/dock
+- Code repository:
 - Version: 0.8
 - Category: desktop
 ## cutefish-filemanager (filemanager for CutefishOS)
@@ -753,6 +817,8 @@
  https://github.com/cutefishos/filemanager
   
 
+- Homepage: https://github.com/cutefishos/filemanager
+- Code repository:
 - Version: 0.8
 - Category: desktop
 ## cutefish-gtk-themes (Cutefish GTK+ themes)
@@ -760,5 +826,7 @@
  For more information see: https://github.com/cutefishos/gtk-themes
   
 
+- Homepage: https://github.com/cutefishos/gtk-themes
+- Code repository:
 - Version: 0.7
 - Category: desktop
