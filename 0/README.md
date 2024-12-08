@@ -10,11 +10,11 @@ Why the "0"? Because with *bash* it's very useful when you type 0 and press TAB 
 ### Setup
 In order to use these environment the following setup is required:
 
-* Install the package `sbo-maintainer-tools` available from SlackBuilds.org
+* Install the package `sbo-maintainer-tools available from SlackBuilds.org
 
 * Install the package `meld` available from SlackBuilds.org
 
-* Other useful packages are Meld and Ark
+* Other useful package is Ark, specially if you use the **0.sh** menu
 
 * You must setup a *wokspace* folder where your slackbuilds will be stored, where a sub-folder called "myslackbuilds" should exist. Inside it, you must follow strictly the organization of categories from SlackBuilds.org.
 >For example: The **plus42.SlackBuild** and all associated files, *.info, desc, etc.. are stored at `academic/plus42`, so your folder for this SlackBuild should be:
