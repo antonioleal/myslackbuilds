@@ -58,7 +58,7 @@ OPTIONS+=(1 "Run \"less $PKGNAME.info\""
          9 "Pull Request SlackBuilds.org        # generates a PR on SlackBuilds GitHub site"
          "" "---------------------------------------------------------------------------------"
          c "Clean tree                          # runs git clean -f"
-         b "Run \"less $PKGNAME.SlackBuild\""
+         e "Edit files"
          d "Run \"git diff\""
          s "Run \"git status\""
          q "Quit to DOS :)"
@@ -134,8 +134,28 @@ do
                 0clean-tree.sh
                 read -p "Press [ENTER] to continue." op
                 ;;
-            b)
-                less $PKGNAME.SlackBuild
+            e)
+                chr=97
+                flist=()
+                for f in $(ls -I0 -1)
+                do
+                    echo $f
+                    flist+=( "$f" "" )
+                    chr=$(( $chr + 1 ))
+                done
+                echo $flist
+                CHOICE=$(dialog --clear \
+                                --backtitle "$BACKTITLE" \
+                                --title "$TITLE" \
+                                --menu "Choose file to edit:" \
+                                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                                "${flist[@]}" \
+                                2>&1 >/dev/tty)
+                exit_flist=$?
+                if ! [[ "$exit_flist" == "$DIALOG_CANCEL" ]]
+                then
+                    kate $CHOICE > /dev/null 2>&1
+                fi
                 ;;
             d)
                 git diff
