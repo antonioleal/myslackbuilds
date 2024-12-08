@@ -141,7 +141,6 @@ do
                     echo $f
                     flist+=( "$f" "" )
                 done
-                echo $flist
                 CHOICE=$(dialog --clear \
                                 --backtitle "$BACKTITLE" \
                                 --title "$TITLE" \
