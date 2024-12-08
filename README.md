@@ -314,9 +314,10 @@
  version of the program.
  Since it is written in Pascal, lazarus, fpc, and qt5pas packages must
  be installed before building.
- Homepage at http://doublecmd.sourceforge.net
   
 
+- Homepage:  http://doublecmd.sourceforge.net
+- Code repository: http://doublecmd.sourceforge.net
 - Version: 1.1.21
 - Category: system
 ## google-chrome-the-latest (Google Chrome Updater Script)

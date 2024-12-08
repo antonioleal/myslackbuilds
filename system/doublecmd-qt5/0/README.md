@@ -1,0 +1,2 @@
+- Homepage:  http://doublecmd.sourceforge.net
+- Code repository: http://doublecmd.sourceforge.net
