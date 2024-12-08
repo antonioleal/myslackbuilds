@@ -24,9 +24,9 @@
 
 CWD="$(echo `pwd`)"
 PKGNAME=${PWD##*/}
-HEIGHT=24
+HEIGHT=26
 WIDTH=90
-CHOICE_HEIGHT=22
+CHOICE_HEIGHT=24
 BACKTITLE="Antonio Leal's \"0\" scripts SlackBuild environment at $CWD"
 TITLE="$PKGNAME"
 MENU="Choose one of the following options for package: $PKGNAME"
@@ -39,26 +39,26 @@ fi
 OPTIONS=()
 if [ -f 0/updater.sh ]; then
 OPTIONS+=(0 "** Run updater.sh for this SlackBuild **"
-         "" "----------------------------------------------------------------------------"
+         "" "---------------------------------------------------------------------------------"
          )
 fi
-OPTIONS+=(1 "less $PKGNAME.info"
-         2 "Compare with slackbuilds        # check if SlackBuilds.org changed the script"
-         3 "Replace strings in *.*          # changes a string in *.* using sed"
-         4 "Download sources                # get the source code"
-         5 "Update md5 in info              # recalculates md5 and updates info file"
-         "" "----------------------------------------------------------------------------"
-         6 "Build                           # builds the package"
-         "" "----------------------------------------------------------------------------"
-         7 "Make README.md                  # updated README.md"
-         8 "Commit & Push                   # push changes - local commit"
-         9 "Pull Request SlackBuilds.org    # generates a PR on SlackBuilds GitHub site"
-         "" "----------------------------------------------------------------------------"
-         c "Clean tree                      # runs git clean -f"
-         b "less $PKGNAME.SlackBuild"
-         d "git diff"
-         s "git status"
-         q "quit to dos :)"
+OPTIONS+=(1 "Run \"less $PKGNAME.info\""
+         2 "Compare with slackbuilds            # check if SlackBuilds.org changed the script"
+         3 "Replace strings in *.*              # changes a string in *.* using sed"
+         4 "Download sources                    # get the source code"
+         5 "Update md5 in info                  # recalculates md5 and updates info file"
+         "" "---------------------------------------------------------------------------------"
+         6 "Build                               # builds the package"
+         7 "Open tar.gz ready SlackBuild        # uses the ark program"
+         "" "---------------------------------------------------------------------------------"
+         8 "Commit & Push                       # local commits changes and pushes to GitHub"
+         9 "Pull Request SlackBuilds.org        # generates a PR on SlackBuilds GitHub site"
+         "" "---------------------------------------------------------------------------------"
+         c "Clean tree                          # runs git clean -f"
+         b "Run \"less $PKGNAME.SlackBuild\""
+         d "Run \"git diff\""
+         s "Run \"git status\""
+         q "Quit to DOS :)"
          )
 
 while (true)
@@ -103,7 +103,8 @@ do
                 read -p "Press [ENTER] to continue." op
                 ;;
             7)
-                0make-readme.sh
+                echo "close ark to return to main menu..."
+                ark 0/slackbuild/$PKGNAME.tar.gz
                 ;;
             8)
                 0commit-push.sh
