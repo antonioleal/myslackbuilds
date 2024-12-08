@@ -1,8 +1,9 @@
 *This repo contains my slackbuild scripts, some of which also published to SlackBuilds.org*
 
----
 
-  
+Checkout my workflow scripts and make them your own in [this](https://github.com/antonioleal/myslackbuilds/blob/main/0/README.md) Readme.
+
+---
 
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
