@@ -302,10 +302,11 @@
  made by Acorn Computers in the 1980s along with a selection of
  2nd processors.
  B-em is licensed under the GPL, see COPYING for more details.
- Homepage at https://github.com/stardot/b-em
   
 
-- Version: 20241016_3925976
+- Homepage:  https://b-em.bbcmicro.com/
+- Code repository: https://github.com/stardot/b-em
+- Version: 20241202_4036483
 - Category: system
 ## doublecmd-qt5 (Double-panel File Manager)
  Double Commander is a free cross-platform open source file manager

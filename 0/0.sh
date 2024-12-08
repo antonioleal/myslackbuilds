@@ -36,6 +36,9 @@ if ! [ -f $PKGNAME.info ]; then
   exit 0
 fi
 
+DIALOG_CANCEL=1
+DIALOG_ESC=255
+
 OPTIONS=()
 if [ -f 0/updater.sh ]; then
 OPTIONS+=(0 "** Run updater.sh for this SlackBuild **"
@@ -71,7 +74,20 @@ do
                     "${OPTIONS[@]}" \
                     2>&1 >/dev/tty)
 
+    exit_status=$?
+    exec 3>&-
     clear
+    case $exit_status in
+        $DIALOG_CANCEL)
+        echo "Program terminated."
+        exit
+        ;;
+        $DIALOG_ESC)
+        echo "Program terminated." >&2
+        exit 1
+        ;;
+    esac
+
     case $CHOICE in
             0)
                 if [ -f 0/updater.sh ]; then
