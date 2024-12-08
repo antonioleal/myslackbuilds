@@ -1,2 +1,2 @@
 - Homepage: https://www.steinberg.net/developers/
-- Code repository:
+- Code repository: https://github.com/steinbergmedia/vst3sdk

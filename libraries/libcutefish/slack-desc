@@ -9,7 +9,7 @@
 libcutefish: libcutefish (System libraries for Cutefish applications)
 libcutefish:
 libcutefish: System libraries for Cutefish applications
-libcutefish: https://github.com/cutefishos/libcutefish
+libcutefish:
 libcutefish:
 libcutefish:
 libcutefish:

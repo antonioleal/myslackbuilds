@@ -11,7 +11,7 @@ fishui:
 fishui: FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every
 fishui: Cutefish application uses it.
 fishui:
-fishui: https://github.com/cutefishos/fishui
+fishui:
 fishui:
 fishui:
 fishui:

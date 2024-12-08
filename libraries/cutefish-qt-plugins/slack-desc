@@ -9,7 +9,7 @@
 cutefish-qt-plugins: cutefish-qt-plugins (Cutefish Qt integration library)
 cutefish-qt-plugins:
 cutefish-qt-plugins: Unify Qt application style of CutefishOS
-cutefish-qt-plugins: https://github.com/cutefishos/qt-plugins
+cutefish-qt-plugins:
 cutefish-qt-plugins:
 cutefish-qt-plugins:
 cutefish-qt-plugins:
