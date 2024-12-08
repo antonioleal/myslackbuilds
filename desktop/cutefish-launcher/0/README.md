@@ -1,0 +1,2 @@
+- Homepage: https://github.com/cutefishos/launcher
+- Code repository:

@@ -1,0 +1,2 @@
+- Homepage: https://github.com/cutefishos/settings
+- Code repository:

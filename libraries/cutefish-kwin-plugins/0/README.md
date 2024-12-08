@@ -1,0 +1,2 @@
+- Homepage: https://github.com/cutefishos/kwin-plugins
+- Code repository:

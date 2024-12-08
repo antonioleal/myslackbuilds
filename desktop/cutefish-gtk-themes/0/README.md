@@ -1,0 +1,2 @@
+- Homepage: https://github.com/cutefishos/gtk-themes
+- Code repository:

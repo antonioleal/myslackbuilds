@@ -1,0 +1,2 @@
+- Homepage: https://github.com/cutefishos/core
+- Code repository:

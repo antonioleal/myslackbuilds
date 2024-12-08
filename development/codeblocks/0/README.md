@@ -1,0 +1,2 @@
+- Homepage: http://www.codeblocks.org/
+- Code repository:
