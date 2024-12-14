@@ -33,12 +33,13 @@ echo
 echo "--------------------------------------------------------------------------------"
 echo
 read -p "Existing string to replace: " OLDSTRING
-grep -F "${OLDSTRING}" *.*
+grep -F --exclude-dir=0 "${OLDSTRING}" *
 echo
 echo "--------------------------------------------------------------------------------"
 echo
 read -p "New string: " NEWSTRING
-sed -i -E "s/${OLDSTRING}/${NEWSTRING}/g" *.*
+#sed -i -E "s/${OLDSTRING}/${NEWSTRING}/g" *.*
+find . -type f -exec sed -i -E "s/${OLDSTRING}/${NEWSTRING}/g" {} ';'
 echo
 echo "--------------------------------------------------------------------------------"
 echo
