@@ -85,8 +85,7 @@ echo Pushing to upstream master with: git push -f origin $PKGNAME
 #read -p "Issue command above? (y/n) " op
 sleep 2
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    #git push -f origin $PKGNAME
-    gh pr create -w  # using github-cli program
+    git push -f origin $PKGNAME
 fi
 
 # return to master branch
