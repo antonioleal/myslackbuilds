@@ -165,7 +165,7 @@
   
 
 - Category: audio
-- Version: 1.6.4
+- Version: 1.6.5
 - Homepage: https://www.tuxguitar.app/
 - Code repository: https://github.com/helge17/tuxguitar
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
