@@ -187,7 +187,7 @@
   
 
 - Category: multimedia
-- Version: 4.4.3
+- Version: 4.4.4
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
 
