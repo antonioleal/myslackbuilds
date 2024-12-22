@@ -663,7 +663,7 @@
   
 
 - Category: academic
-- Version: 1.1.15
+- Version: 1.1.16
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
