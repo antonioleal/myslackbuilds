@@ -25,7 +25,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=gcc-local
-VERSION=${VERSION:-13.3.0}
+VERSION=${VERSION:-14.2.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -86,7 +86,7 @@ cd b
 # CXXFLAGS="$SLKCFLAGS" \
 # ../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++,fortran,go
 ../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++
-make -j7
+make -j10
 make install DESTDIR=$PKG
 
 chmod +x $PKG/opt/$PRGNAM-$VERSION/lib64/libgcc_s.so.1
