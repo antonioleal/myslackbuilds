@@ -22,6 +22,9 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# make sure your looking at correct branch
+( cd ~/slackware-builds/slackbuilds && git checkout master && git reset --hard && git pull --rebase )
+
 PRGNAM=${PWD##*/}
 echo "Program: " $PRGNAM
 cd ..
@@ -29,6 +32,4 @@ CATEGORY=${PWD##*/}
 echo "Category: " $CATEGORY
 
 cd $PRGNAM
-
-#meld ~/slackware-builds/myslackbuilds/${CATEGORY}/${PRGNAM}/  ~/slackware-builds/slackbuilds/${CATEGORY}/${PRGNAM}/
 meld .  ~/slackware-builds/slackbuilds/${CATEGORY}/${PRGNAM}/
