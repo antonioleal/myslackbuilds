@@ -60,6 +60,15 @@
 - Version: 0.5
 - Homepage: https://github.com/cutefishos/qt-plugins
 - Code repository:
+## glibc-local (GNU C library, installs to /opt)
+ The GNU C Library project provides the core libraries for the
+ GNU system and GNU/Linux systems, as well as many other systems
+ that use Linux as the kernel. These libraries provide critical APIs
+ including ISO C11, POSIX.1-2008, BSD, OS-specific APIs and more.
+  
+
+- Category: libraries
+- Version: 2.40
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
@@ -497,7 +506,7 @@
   
 
 - Category: development
-- Version: 13.7
+- Version: 14.6.3
 - Homepage: http://www.valentina-db.com/
 - Code repository:
 
