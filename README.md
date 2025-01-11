@@ -11,7 +11,7 @@
   
 
 - Category: libraries
-- Version: 2.8.7
+- Version: 2.8.8
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
 ## libcutefish (System libraries for Cutefish applications)
