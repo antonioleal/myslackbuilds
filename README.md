@@ -520,7 +520,7 @@
   
 
 - Category: development
-- Version: 2.90.5
+- Version: 2.91.0
 - Homepage: "http://2484.de/yabasic/"
 - Code repository: "http://2484.de/yabasic/"
 ## notepadqq (Notepad++-like editor for the Linux desktop)
