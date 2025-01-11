@@ -230,7 +230,7 @@
   
 
 - Category: network
-- Version: 6.1.8
+- Version: 6.2.0
 - Homepage: https://whalebird.social
 - Code repository:
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
