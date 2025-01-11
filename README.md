@@ -321,7 +321,7 @@
   
 
 - Category: system
-- Version: 24.06.5
+- Version: 24.06.6
 - Homepage: https://github.com/linuxmint/timeshift
 - Code repository: https://github.com/linuxmint/timeshift
 ## xAce (A Jupiter Ace emulator for Linux)
