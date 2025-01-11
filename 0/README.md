@@ -10,11 +10,13 @@ Why the "0"? Because with *bash* it's very useful when you type 0 and press TAB 
 ### Setup
 In order to use these environment the following setup is required:
 
-* Install the package `sbo-maintainer-tools available from SlackBuilds.org
+* Install the package `sbo-maintainer-tools` available from SlackBuilds.org
+
+* Install the package `github-cli` available from SlackBuilds.org
 
 * Install the package `meld` available from SlackBuilds.org
 
-* Other useful package is Ark, specially if you use the **0.sh** menu
+* Other useful package is KDE's `Ark`, specially if you use the **0.sh** menu
 
 * You must setup a *wokspace* folder where your slackbuilds will be stored, where a sub-folder called "myslackbuilds" should exist. Inside it, you must follow strictly the organization of categories from SlackBuilds.org.
 >For example: The **plus42.SlackBuild** and all associated files, *.info, desc, etc.. are stored at `academic/plus42`, so your folder for this SlackBuild should be:
@@ -48,7 +50,7 @@ In the end your work environment should look like this:
         
             /myslackbuilds/
                 .git
-                /0/                     <- your auxiliary scripts go here
+                /0/                     <- the "0" main scripts live here
                 /academic/plus42/       <- your plus42 scripts go here
                 /academic/plus42/0/     <- place whatever you want here
                 (...etc...)
@@ -57,10 +59,8 @@ In the end your work environment should look like this:
             /slackbuilds                <- your fork of slackbuilds
                 .git
                 /academic/3D-ICE/
-                (...etc...)
                 /academic/celestia/
                 /academic/plus42/
-                (...etc...)
                 /desktop/thunar-sendto-clamtk
                 (...etc...)
         
@@ -73,7 +73,7 @@ In the end your work environment should look like this:
 ... and you are ready to go!
 
 ### The scripts
-The zero ("0") scripts are meant to be started from the slackbuild directory **and only from there**! Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild. Have a look at my own setup.
+With a few exceptions the zero ("0") scripts are meant to be started from the slackbuild directory. Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild. Have a look at my own setup.
 
 Example:
 > `cd ~/slackware-builds/myslackbuilds/academic/plus42`
@@ -89,7 +89,7 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
             checks if MD5SUM(s) are correct in the infor file, use together
             with 0print-tarball-md5sums.sh to prepare a new *.info file.
 
-    Script: 0update-info.sh
+    Script: 0update-md5-info.sh
     Effect: Reads the source(s) in *.info file, calculates new MD5SUM(s) and   
             produces a new *.info file.
             
@@ -104,10 +104,11 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Effect: creates a "slackbuild".tar.gz pack ready to be submitted on the
             folder 0/slackbuild under the SlackBuild you are working.
     
+    Script: 0commit-push.sh
+    Effect: Runs 0make-readme.sh, commits and pushes your changes to your github repo.
+
     Script: 0pull-request.sh
-    Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds. Please visit
-            the github site in order to conclude the PR. Normally a link is 
-            displayed for you to copy-paste in your browser.
+    Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds.
 
     Script: 0delete-branches.sh
     Effect: Each Saturday afternoon, you can run this to delete all braches you
@@ -117,7 +118,7 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this deletes all non-git controlled files.
 
-    Script: 0make_readme.sh
+    Script: 0make-readme.sh
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this automatically generates a README.md for github.
 
