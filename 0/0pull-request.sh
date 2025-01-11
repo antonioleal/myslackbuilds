@@ -2,7 +2,7 @@
 
 # Slackware 0script to make a PR to https://github.com/SlackBuildsOrg/slackbuilds
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -51,40 +51,16 @@ git checkout -B $PKGNAME
 cd ~/slackware-builds/slackbuilds/$CATEGORY/
 echo
 echo
-
 tar xvfz ~/slackware-builds/myslackbuilds/$CATEGORY/$PKGNAME/0/slackbuild/$PKGNAME.tar.gz
-echo
-echo
-pwd
-git status
-
-# git add all
-echo
-echo
-echo Adding all files: git add --all
-#read -p "Issue command above? (y/n) " op
-op="y"
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    git add --all
-fi
-
-# git commit -a -m "$MSG"
-echo
-echo
-echo Commit all files: git commit -a -m "\"$MSG\""
-#read -p "Issue command above? (y/n) " op
+git add --all
 sleep 2
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    git commit -a -m "$MSG"
-fi
+git commit -a -m "$MSG"
+sleep 2
 
 # git push -f origin $PKGNAME
 echo
 echo
-#echo Pushing to upstream master with: git push -f origin $PKGNAME
-echo Pushing to upstream master with: gh pr create --title "$MSG"
-#read -p "Issue command above? (y/n) " op
-sleep 2
+read -p "Issue: gh pr create --title "$MSG" ? (y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     #git push -f origin $PKGNAME
     gh pr create --title "$MSG"
@@ -94,7 +70,6 @@ fi
 # return to master branch
 echo
 echo
-echo Returning to master branch with: git checkout master
 git checkout master
 echo
 echo Done.
