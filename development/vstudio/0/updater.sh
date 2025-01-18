@@ -31,8 +31,8 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 # OLDVERSION
-touch old_version
-OLDVERSION=`cat old_version`
+touch version
+OLDVERSION=`cat version`
 echo "Old version is $OLDVERSION"
 
 # NEWVERSION
@@ -56,7 +56,7 @@ echo
 # download tarball             #
 ################################
 cd ..
-rm *.deb
+rm -f *.deb
 wget http://valentina-db.com/download/prev_releases/$NEWVERSION/lin_64/$DEBFILE
 if [ ! -f ./$DEBFILE ]
 then
@@ -69,6 +69,11 @@ fi
 ################################
 MD5=`md5sum $DEBFILE | cut -d " " -f 1`
 sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_major_}/$MAJOR/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ${PRGNAM}.info
-sed -e "s/\${_version_}/$NEWVERSION/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ${PRGNAM}.SlackBuild
+sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_major_}/$MAJOR/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ${PRGNAM}.SlackBuild
 chmod 644 ${PRGNAM}.SlackBuild
+
+################################
+# finish                       #
+################################
+echo $NEWVERSION > $SCRIPT_DIR/version
 

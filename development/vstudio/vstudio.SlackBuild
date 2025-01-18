@@ -31,7 +31,7 @@ TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 
 case "$( uname -m )" in
-  x86_64) ARCH=x86_64 ; BASENAME=${BASENAME:-vstudio_x64_13_lin} ;;
+  x86_64) ARCH=x86_64 ;;
   *) echo "Package for $(uname -m) architecture is not available." ; exit 1 ;;
 esac
 
@@ -51,11 +51,7 @@ OUTPUT=${OUTPUT:-/tmp}
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $PKG
-if [ -e $CWD/$BASENAME.deb ]; then
-  ar p $CWD/$BASENAME.deb data.tar.xz | tar xvJ
-else
-  ar p $CWD/vstudio_x64_14_lin.deb data.tar.xz | tar xvJ
-fi
+ar p $CWD/vstudio_x64_14_lin.deb data.tar.xz | tar xvJ
 
 chown -R root:root .
 find -L . \
