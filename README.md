@@ -380,7 +380,7 @@
   
 
 - Category: games
-- Version: 11.0
+- Version: 12.0
 - Homepage: https://github.com/chernandezba/zesarux
 - Code repository:
 ## atari_8bit_utils (utilities for atari 8bit machines/emulators)
