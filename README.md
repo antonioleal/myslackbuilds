@@ -506,7 +506,7 @@
   
 
 - Category: development
-- Version: 14.6.3
+- Version: 14.7.1
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
