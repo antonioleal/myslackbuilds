@@ -355,7 +355,7 @@
   
 
 - Category: system
-- Version: 1.1.21
+- Version: 1.1.22
 - Homepage:  http://doublecmd.sourceforge.net
 - Code repository: http://doublecmd.sourceforge.net
 ## google-chrome-the-latest (Google Chrome Updater Script)
@@ -495,7 +495,7 @@
   
 
 - Category: development
-- Version: 3.6
+- Version: 3.8
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
 ## vstudio (Valentina Studio DB Management)
