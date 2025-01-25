@@ -394,7 +394,6 @@
 - Homepage: https://github.com/pcrow/atari_8bit_utils
 - Code repository:
 ## open-simh (Historical Computer Simulation)
- open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
  past.
@@ -405,7 +404,7 @@
   
 
 - Category: misc
-- Version: 20240905_2437b13
+- Version: 20250117_feb155f
 - Homepage: https://opensimh.org
 - Code repository: https://github.com/open-simh/simh
 ## simh-classic (3.X Classic Version)
