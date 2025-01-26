@@ -549,8 +549,8 @@
 
 - Category: development
 - Version: 14.2.0
-- Homepage: https://github.com/gcc-mirror/gcc
-- Code repository:
+- Homepage: https://gcc.gnu.org/
+- Code repository: https://github.com/gcc-mirror/gcc
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
