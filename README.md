@@ -99,7 +99,7 @@
   
 
 - Category: office
-- Version: 24.2.6.1
+- Version: 25.2.0.3
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 ## onlyoffice-desktopeditors (office suite)
