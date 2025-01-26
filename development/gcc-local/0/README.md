@@ -1,2 +1,2 @@
-- Homepage: https://github.com/gcc-mirror/gcc
-- Code repository:
+- Homepage: https://gcc.gnu.org/
+- Code repository: https://github.com/gcc-mirror/gcc
