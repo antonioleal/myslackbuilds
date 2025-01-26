@@ -1,0 +1,2 @@
+- Homepage: https://www.gnu.org/software/libc/
+- Code repository: https://ftp.gnu.org/gnu/glibc/

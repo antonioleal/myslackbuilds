@@ -69,6 +69,8 @@
 
 - Category: libraries
 - Version: 2.40
+- Homepage: https://www.gnu.org/software/libc/
+- Code repository: https://ftp.gnu.org/gnu/glibc/
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
