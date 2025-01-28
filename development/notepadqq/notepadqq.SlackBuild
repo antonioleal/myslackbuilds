@@ -2,7 +2,7 @@
 
 # Slackware build script for notepadqq
 
-# Copyright 2022 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2022-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,11 +26,11 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=notepadqq
-VERSION=${VERSION:-b426303}
-BUILD=${BUILD:-3}
+VERSION=${VERSION:-20241111_632be8b}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=${TARBALL:-b426303b5df28b63b6316308927f62db072c27e6}
+TARBALL=${TARBALL:-632be8bf8a54934865dab587be761154fd59bfca}
 
 
 if [ -z "$ARCH" ]; then

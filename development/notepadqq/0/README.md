@@ -1,2 +1,2 @@
 - Homepage: https://notepadqq.com
-- Code repository:
+- Code repository: https://github.com/notepadqq/notepadqq/commits/master/
