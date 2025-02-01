@@ -644,7 +644,7 @@
   
 
 - Category: libraries
-- Version: 2.40
+- Version: 2.41
 - Homepage: https://www.gnu.org/software/libc/
 - Code repository: https://ftp.gnu.org/gnu/glibc/
 ## cutefish-qt-plugins (Cutefish Qt integration library)
