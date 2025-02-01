@@ -754,7 +754,7 @@
   
 
 - Category: academic
-- Version: 1.2b
+- Version: 1.2.2
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
