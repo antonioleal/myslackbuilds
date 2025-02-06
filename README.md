@@ -127,7 +127,7 @@
   
 
 - Category: desktop
-- Version: 20241118_646660d
+- Version: 20250206_11ba095
 - Homepage: https://github.com/wusel1007/ClamAV-GUI
 - Code repository:
 ## cutefish-launcher (CutefishOS launcher)
