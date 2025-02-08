@@ -672,7 +672,7 @@
   
 
 - Category: academic
-- Version: 1.2.2
+- Version: 1.2.3
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
