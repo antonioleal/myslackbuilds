@@ -1,2 +1,2 @@
-- Homepage: https://github.com/wusel1007/ClamAV-GUI
-- Code repository:
+- Homepage: https://www.pling.com/p/1127892/
+- Code repository:https://github.com/wusel1007/clamav-gui
