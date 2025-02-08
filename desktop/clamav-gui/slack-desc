@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
           |-----handy-ruler------------------------------------------------------|
-ClamAV-GUI: ClamAV-GUI (A Qt GUI for clamav)
-ClamAV-GUI:
-ClamAV-GUI: This application provides a graphical user interface for clamav and
-ClamAV-GUI: freshclam with an integrated service menu for Konqueror/Dolphin
-ClamAV-GUI: to scan files directly from your file manager.
-ClamAV-GUI:
-ClamAV-GUI:
-ClamAV-GUI:
-ClamAV-GUI:
-ClamAV-GUI:
-ClamAV-GUI:
+clamav-gui: clamav-gui (A Qt GUI for clamav)
+clamav-gui:
+clamav-gui: This application provides a graphical user interface for clamav and
+clamav-gui: freshclam with an integrated service menu for Konqueror/Dolphin
+clamav-gui: to scan files directly from your file manager.
+clamav-gui:
+clamav-gui:
+clamav-gui:
+clamav-gui:
+clamav-gui:
+clamav-gui:
