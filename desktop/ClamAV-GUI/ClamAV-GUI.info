@@ -1,4 +1,4 @@
-PRGNAM="clamav-gui"
+PRGNAM="ClamAV-GUI"
 VERSION="20250206_11ba095"
 HOMEPAGE="https://github.com/wusel1007/clamav-gui"
 DOWNLOAD="https://github.com/wusel1007/clamav-gui/archive/11ba095a751c709d5d41c84d1b20e8f8b4e9aae5/clamav-gui-11ba095a751c709d5d41c84d1b20e8f8b4e9aae5.tar.gz"

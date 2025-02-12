@@ -120,10 +120,11 @@
 - Version: 0.5
 - Homepage: https://github.com/cutefishos/screenlocker
 - Code repository:
-## clamav-gui (A Qt GUI for clamav)
+## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
  to scan files directly from your file manager.
+ Homepage at https://github.com/wusel1007/ClamAV-GUI
   
 
 - Category: desktop
