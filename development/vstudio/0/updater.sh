@@ -39,14 +39,14 @@ echo "Old version is $OLDVERSION"
 curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A
 NEWVERSION=`lynx -dump index.html | tail -1 | cut -d "/" -f 14`
 echo "New version is $NEWVERSION"
-echo $NEWVERSION > new_version
+echo $NEWVERSION > version
 
 if [ "$OLDVERSION" = "$NEWVERSION" ]; then
     echo "No new version detected..."
     exit
 fi
 
-MAJOR=`cut -d "." -f 1 new_version`
+MAJOR=`cut -d "." -f 1 version`
 echo "Major version number is $MAJOR"
 DEBFILE=vstudio_x64_${MAJOR}_lin.deb
 echo "Debian file is $DEBFILE"
