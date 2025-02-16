@@ -36,8 +36,8 @@ echo
 MSG="$PKGNAME updated for version $VERSION"
 echo "Commit message: " $MSG
 
-read -p "change? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]
+read -p "proceed with no change? (y/n) " op
+if [ "$op" = "n" ] || [ "$op" = "N" ]
 then
     read -p "Commit message: " MSG
 fi

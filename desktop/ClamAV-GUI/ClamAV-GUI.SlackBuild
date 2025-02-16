@@ -85,6 +85,10 @@ qmake-qt5 PREFIX=/usr
 make
 make install INSTALL_ROOT=$PKG
 
+# correct .desktop file for sbopkglint warnings
+sed -e "s/TerminalOptions=//" -i $PKG/usr/share/applications/ClamAV-GUI.desktop
+sed -e "s/Path=//" -i $PKG/usr/share/applications/ClamAV-GUI.desktop
+
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
