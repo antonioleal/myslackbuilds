@@ -128,7 +128,7 @@
   
 
 - Category: desktop
-- Version: 20250210_8762118
+- Version: 1.0.8
 - Homepage: https://www.pling.com/p/1127892/
 - Code repository:https://github.com/wusel1007/clamav-gui
 ## cutefish-launcher (CutefishOS launcher)
