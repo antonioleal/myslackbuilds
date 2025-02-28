@@ -26,7 +26,7 @@
   
 
 - Category: office
-- Version: 8.3.0
+- Version: 8.3.1
 - Homepage: https://www.onlyoffice.com/apps.aspx
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
 ## smoffice2021 (office suite)
