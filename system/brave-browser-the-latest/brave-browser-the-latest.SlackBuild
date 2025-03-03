@@ -68,7 +68,7 @@ cp brave-browser-the-latest.py $PKG/opt/brave-browser-the-latest
 chmod +x $PKG/opt/brave-browser-the-latest/brave-browser-the-latest.py
 
 mkdir -p $PKG/opt/brave-browser-the-latest/dialogs
-cp dialogs/*.glade $PKG/opt/brave-browser-the-latest/dialogs
+cp dialogs/* $PKG/opt/brave-browser-the-latest/dialogs
 
 mkdir -p $PKG/opt/brave-browser-the-latest/SlackBuild
 cp SlackBuild/* $PKG/opt/brave-browser-the-latest/SlackBuild
