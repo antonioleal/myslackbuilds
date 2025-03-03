@@ -364,6 +364,17 @@
 - Version: 20250214_c6ecdf8
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
+## brave-browser-the-latest (brave browser updater script)
+ Maintaining an updated Brave Browser on Slackware is now made
+ easier with this small program, "brave-browser-the-latest", a simple
+ python script that will install and keep checking afterwards what is
+ the latest version available so your Slackware box is kept safer.
+  
+
+- Category: system
+- Version: 1.0
+- Homepage: https://github.com/antonioleal/brave-browser-the-latest
+- Code repository: https://github.com/antonioleal/brave-browser-the-latest
 ## doublecmd-qt5 (Double-panel File Manager)
  Double Commander is a free cross-platform open source file manager
  with two panels side by side (or one above the other). This is the Qt
