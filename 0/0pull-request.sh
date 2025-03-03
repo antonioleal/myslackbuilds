@@ -60,12 +60,12 @@ sleep 2
 # git push -f origin $PKGNAME
 echo
 echo
-read -p "Issue: gh pr create --title \"$MSG\" ? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+gh pr create --title "$MSG" --body "$MSG"
+#read -p "Issue: gh pr create --title \"$MSG\" ? (y/n) " op
+#if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
     #git push -f origin $PKGNAME
-    gh pr create --title "$MSG"
-
-fi
+#    gh pr create --title "$MSG" --body "$MSG"
+#fi
 
 # return to master branch
 echo
