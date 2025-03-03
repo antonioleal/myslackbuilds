@@ -248,7 +248,7 @@
   
 
 - Category: network
-- Version: 6.2.0
+- Version: 6.2.1
 - Homepage: https://whalebird.social
 - Code repository:
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
