@@ -77,7 +77,7 @@
   
 
 - Category: libraries
-- Version: 3.7.12
+- Version: 3.7.13
 - Homepage: https://www.steinberg.net/developers/
 - Code repository: https://github.com/steinbergmedia/vst3sdk
 ## smoffice2024 (office suite)
