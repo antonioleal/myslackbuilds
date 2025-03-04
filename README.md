@@ -239,7 +239,7 @@
   
 
 - Category: network
-- Version: 6.5.4
+- Version: 6.5.5
 - Homepage: https://www.waterfox.net/
 - Code repository: https://github.com/BrowserWorks/Waterfox
 - Binary repository: https://www.waterfox.net/download/
