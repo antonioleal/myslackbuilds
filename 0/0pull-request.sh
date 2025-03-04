@@ -67,6 +67,8 @@ gh pr create --title "$MSG" --body "$MSG"
 #    gh pr create --title "$MSG" --body "$MSG"
 #fi
 
+# ver opcões: --head your-branch-name --base main --draft
+
 # return to master branch
 echo
 echo
