@@ -203,6 +203,8 @@
 - Code repository: https://github.com/musescore/MuseScore
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+
+*In order to install this package you need to first register for Qt account (free), install qt-install-script (available on this repo) and from it run qt-6.2.4-libraries-for-musescore.sh*
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
