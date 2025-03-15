@@ -460,7 +460,7 @@
   
 
 - Category: development
-- Version: 1.40a
+- Version: 1.41a
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
 ## kforth (A Forth programming language and environment)

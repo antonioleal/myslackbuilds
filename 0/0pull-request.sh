@@ -57,21 +57,21 @@ sleep 2
 git commit -a -m "$MSG"
 sleep 2
 
-# git push -f origin $PKGNAME
-echo
-echo
-gh pr create --title "$MSG" --body "$MSG"
-#read -p "Issue: gh pr create --title \"$MSG\" ? (y/n) " op
-#if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
-    #git push -f origin $PKGNAME
-#    gh pr create --title "$MSG" --body "$MSG"
-#fi
 
+echo
+echo
+# two ways to achieve a PR:
+
+# either:
+#git push -f origin $PKGNAME
+
+# or:
+gh pr create --title "$MSG" --body "$MSG"
 # ver opcões: --head your-branch-name --base main --draft
+echo
+echo
 
 # return to master branch
-echo
-echo
 git checkout master
 echo
 echo Done.
