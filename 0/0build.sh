@@ -30,8 +30,8 @@ echo
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Run sbolint? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+read -p "Run sbolint? (Y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]; then
     if ! [ -f 0/slackbuild/$PKGNAME.tar.gz ]; then
         mkdir -p 0/slackbuild
         echo "Dummy temporary file to trick sbolint." > 0/slackbuild/$PKGNAME.tar.gz
@@ -41,8 +41,8 @@ fi
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Run SlackBuild for Package $PKGNAME? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+read -p "Run SlackBuild for Package $PKGNAME? (Y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]; then
     sudo sh ./$PKGNAME.SlackBuild
 fi
 
@@ -56,22 +56,22 @@ TARBALL=`ls /tmp/$PKGNAME-$VERSION* -1t | head -n1`
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Run sbopkglint $TARBALL ? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+read -p "Run sbopkglint $TARBALL ? (Y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]; then
     sbopkglint $TARBALL
 fi
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Install $TARBALL ? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+read -p "Install $TARBALL ? (Y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]; then
     sudo /sbin/upgradepkg --install-new --reinstall $TARBALL
 fi
 
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Create SlackBuild package by running 0tar.sh? (y/n) " op
-if [ "$op" = "y" ] || [ "$op" = "Y" ]; then
+read -p "Create SlackBuild package by running 0tar.sh? (Y/n) " op
+if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]; then
     0tar.sh
 fi

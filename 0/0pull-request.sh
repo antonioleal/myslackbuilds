@@ -38,7 +38,7 @@ echo "Category: " $CATEGORY
 
 MSG="$CATEGORY/$PKGNAME: Updated for version $VERSION"
 echo "Commit message: " $MSG
-read -p "proceed with no change? (y/n) " op
+read -p "proceed with no change? (Y/n) " op
 if [ "$op" = "n" ] || [ "$op" = "N" ]
 then
     read -p "Commit message: " MSG

@@ -786,7 +786,7 @@
   
 
 - Category: desktop
-- Version: 1.0.8
+- Version: 1.0.9
 - Homepage: https://www.pling.com/p/1127892/
 - Code repository:https://github.com/wusel1007/clamav-gui
 ## cutefish-core (CutefishOS backend)

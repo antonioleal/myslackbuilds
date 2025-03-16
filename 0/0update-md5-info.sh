@@ -119,7 +119,7 @@ echo "--------------------------------------------------------------------------
 echo
 diff $INFOFILE $INFOFILE.new
 echo "-------------------------------------------------------------------------------------------------------"
-read -p "Replace $INFOFILE? (y/n) " op
+read -p "Replace $INFOFILE? (y/N) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ]
 then
     mv $INFOFILE.new $INFOFILE
