@@ -120,7 +120,7 @@ do
                 ;;
             7)
                 echo "close ark to return to main menu..."
-                ark 0/slackbuild/$PKGNAME.tar.gz
+                ark 0/slackbuild/$PKGNAME.tar.gz 2> /dev/null
                 ;;
             8)
                 0commit-push.sh
