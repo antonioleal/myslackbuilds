@@ -387,7 +387,7 @@
   
 
 - Category: development
-- Version: 15.1.1
+- Version: 15.1.2
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
