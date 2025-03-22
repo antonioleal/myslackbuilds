@@ -215,7 +215,7 @@
   
 
 - Category: multimedia
-- Version: 1.1.0.587
+- Version: 2.0.3.659
 - Homepage: https://musescore.org/
 - Code repository:
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
