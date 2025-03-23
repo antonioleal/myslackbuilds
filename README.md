@@ -374,7 +374,7 @@
   
 
 - Category: system
-- Version: 1.2
+- Version: 1.3
 - Homepage: https://github.com/antonioleal/brave-browser-the-latest
 - Code repository: https://github.com/antonioleal/brave-browser-the-latest
 ## doublecmd-qt5 (Double-panel File Manager)
