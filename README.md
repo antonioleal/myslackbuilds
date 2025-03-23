@@ -397,7 +397,7 @@
   
 
 - Category: system
-- Version: 4.0
+- Version: 4.1
 - Homepage: https://github.com/antonioleal/google-chrome-the-latest
 - Code repository:
 ## ZEsarUX (retro machines emulator)
