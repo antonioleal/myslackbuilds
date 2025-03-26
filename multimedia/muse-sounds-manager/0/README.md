@@ -1,2 +1,2 @@
 - Homepage: https://musescore.org/
-- Code repository:
+- Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz

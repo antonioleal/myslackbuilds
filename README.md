@@ -797,7 +797,7 @@
 - Category: multimedia
 - Version: 2.0.3.659
 - Homepage: https://musescore.org/
-- Code repository:
+- Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
  MuseScore is a free cross platform WYSIWYG music notation program,
  licensed under GNU GPL.
