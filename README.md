@@ -14,7 +14,7 @@
   
 
 - Category: office
-- Version: 2024_1222
+- Version: 2024_1224
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository: https://www.softmaker.com/en/softmaker-office-linux
 ## onlyoffice-desktopeditors (office suite)
