@@ -348,7 +348,7 @@
   
 
 - Category: development
-- Version: 2.91.1
+- Version: 2.91.2
 - Homepage: "http://2484.de/yabasic/"
 - Code repository: "http://2484.de/yabasic/"
 ## SmallBASIC (basic-interpreter)
