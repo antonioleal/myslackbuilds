@@ -2,7 +2,7 @@
 
 # Slackware 0script to clean PR branches
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,11 +28,17 @@ clear
 cd ~/slackware-builds/slackbuilds
 git checkout master
 echo
-for b in `git branch -a | grep -v "master"`
+for b in `git branch | grep -v "master"`
 do
     echo "deleting $b"
     git branch -D $b
-    git push origin -d $b
+    echo
+done
+for b in `git branch -r | grep -v "master"`
+do
+    echo "deleting $b"
+
+    git push origin -d $(echo $b | cut -d "/" -f3)
     echo
 done
 git fetch --prune
