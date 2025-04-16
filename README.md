@@ -377,6 +377,9 @@
 - Version: 1.3
 - Homepage: https://github.com/antonioleal/brave-browser-the-latest
 - Code repository: https://github.com/antonioleal/brave-browser-the-latest
+
+
+- Development: https://github.com/brave/brave-browser
 ## doublecmd-qt5 (Double-panel File Manager)
  Double Commander is a free cross-platform open source file manager
  with two panels side by side (or one above the other). This is the Qt
