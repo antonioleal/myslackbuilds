@@ -539,7 +539,7 @@
   
 
 - Category: development
-- Version: 15.1.2
+- Version: 15.1.5
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
