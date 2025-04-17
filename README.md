@@ -693,7 +693,9 @@
 - Homepage: http://www.codeblocks.org/
 - Code repository:
 
-*Not possible to build with Slackware 15.0 - needs newer autoconf*## plus42 (An Enhanced HP-42S Calculator Simulator)
+*Not possible to build with Slackware 15.0 - needs newer autoconf*
+
+## plus42 (An Enhanced HP-42S Calculator Simulator)
  Plus42 is an advanced scientific programmable calculator, based on
  Free42 (a complete re-implementation of the HP-42S scientific
  programmable RPN calculator)
