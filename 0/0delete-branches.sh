@@ -36,9 +36,8 @@ do
 done
 for b in `git branch -r | grep -v "master"`
 do
-    echo "deleting $b"
-
-    git push origin -d $(echo $b | cut -d "/" -f3)
+    echo "deleting remote $b"
+    git push origin -d $(echo $b | cut -d "/" -f2)
     echo
 done
 git fetch --prune
