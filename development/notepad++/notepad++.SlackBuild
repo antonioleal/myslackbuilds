@@ -74,7 +74,14 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 mkdir -p $PKG/opt/Notepad++
-cp $CWD/npp.$VERSION.Installer.x64.exe $PKG/opt/Notepad++/
+if [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
+  cp $CWD/npp.$VERSION.Installer.exe $PKG/opt/Notepad++/
+elif [ "$ARCH" = "x86_64" ]; then
+  cp $CWD/npp.$VERSION.Installer.x64.exe $PKG/opt/Notepad++/
+else
+  echo "Unsupported architecture: $ARCH"
+  exit
+fi
 install -T -m0755 $CWD/notepad++ $PKG/opt/Notepad++/$PRGNAM
 
 mkdir -p $PKG/usr/share/pixmaps
