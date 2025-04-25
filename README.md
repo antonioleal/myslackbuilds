@@ -189,7 +189,7 @@
   
 
 - Category: audio
-- Version: 5.0.0.0
+- Version: 5.3.0
 - Homepage: https://zoomcorp.com/en/jp/
 - Code repository:
 ## MuseScore (WYSIWYG Music Score Typesetter)
