@@ -29,6 +29,7 @@ if ! [ -f "${PRGNAM}" ]; then
     cd "/opt/Edit&Share/"
     wine ./Edit\&Share\ 5.0.0.0\ Setup.exe /S/v/qn
     rm -rf "$HOME/.local/share/applications/wine/Programs/ZOOM"
+    kbuildsycoca5 > /dev/null 2>&1
 fi
 cd "${FOLDER}/bin"
 wine "$PRGNAM"
