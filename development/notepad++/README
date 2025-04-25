@@ -10,5 +10,3 @@ It uses a dedicated AppImage bundled with Notepad++.
 
 You can modify the wrapper bash script to fit your needs.
 Have a look at the included wrapper.patch and the SlackBuild.
-
-Homepage at https://notepad-plus-plus.org/
