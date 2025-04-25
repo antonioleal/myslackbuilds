@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Slackware build script for appimage-notepad++
+# Slackware build script for notepad++
 
-# Copyright 2024- Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2024-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,17 +25,10 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=notepad++
-VERSION=${VERSION:-8.6.9}
+VERSION=${VERSION:-8.7.9}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-
-APPIMAGETOOL=`find $CWD -name "appimagetool*" -print`
-chmod +x $APPIMAGETOOL
-WINE=`find $CWD -name "wine*" -print`
-chmod +x $WINE
-filename=$(basename -- "$WINE")
-APPDIRNAME="${filename%.*}.dir"
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -73,11 +66,6 @@ rm -rf $PRGNAM-$VERSION
 mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 
-$WINE --appimage-extract
-mv squashfs-root $APPDIRNAME
-patch $APPDIRNAME/wrapper $CWD/wrapper.patch
-cp $CWD/npp.8.6.9.Installer.x64.exe $APPDIRNAME/winedata
-
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -85,14 +73,10 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-
-# Build executable
-$APPIMAGETOOL $APPDIRNAME $PRGNAM.AppImage
-
-
 # Setup package files
-mkdir -p $PKG/usr/bin
-install -T -m0755 $PRGNAM.AppImage $PKG/usr/bin/$PRGNAM
+mkdir -p $PKG/opt/Notepad++
+cp $CWD/npp.$VERSION.Installer.x64.exe $PKG/opt/Notepad++/
+install -T -m0755 $CWD/notepad++ $PKG/opt/Notepad++/$PRGNAM
 
 mkdir -p $PKG/usr/share/pixmaps
 cp $CWD/notepad++.png $PKG/usr/share/pixmaps/notepad++.png
@@ -104,9 +88,8 @@ cp $CWD/notepad++.desktop $PKG/usr/share/applications
 #( cd $PKG/usr/bin ; rm -rf notepad++ )
 #(cd $PKG/usr/bin; ln -s ../../opt/notepad++/notepad++ notepad++)
 
-# These cause problems with AppImages
-#find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-#  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild

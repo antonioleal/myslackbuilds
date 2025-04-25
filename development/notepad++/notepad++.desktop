@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Notepad++
 GenericName=Notepad++
-Exec=notepad++ "$@"
+Exec=/opt/Notepad++/notepad++ "\\$@"
 Icon=notepad++
 Terminal=false
 Type=Application
