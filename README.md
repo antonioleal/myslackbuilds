@@ -619,7 +619,7 @@
   
 
 - Category: development
-- Version: 8.6.9
+- Version: 8.7.9
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 ## qb64 (Modern QuickBASIC compiler)
