@@ -1,0 +1,2 @@
+- Homepage: https://sourceforge.net/projects/eightyone-sinclair-emulator/
+- Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
