@@ -33,5 +33,3 @@ if ! [ -f "${PRGNAM}" ]; then
 fi
 cd "${FOLDER}/bin"
 wine "$PRGNAM"
-
-
