@@ -355,6 +355,19 @@
 - Version: 0.5
 - Homepage: https://lawrencewoodman.github.io/xAce/
 - Code repository:
+## eightyone (emulator for the range of ZX home computers)
+ EightyOne is an emulator for the range of ZX home computers made
+ by Sinclair Research (and their clones) in the 1980s, primarily
+ the ZX80 and ZX81 but also includes the ZX Spectrum models.
+ As well as emulating the machines themselves, various add-on
+ interfaces are supported, including storage devices, hi-res
+ graphics, custom character sets, sound and colour cards.
+  
+
+- Category: system
+- Version: 1.41
+- Homepage: https://sourceforge.net/projects/eightyone-sinclair-emulator/
+- Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
 ## B-em (BBC Microcomputer Emulator)
  B-em is an emulator for various models of BBC Microcomputer as
  made by Acorn Computers in the 1980s along with a selection of
