@@ -74,8 +74,7 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 mkdir -p "$PKG/opt/EightyOne"
-mv "$CWD/EightyOne V${VERSION}.zip" "$CWD/EightyOne_V${VERSION}.zip"
-unzip $CWD/EightyOne_V${VERSION}.zip
+unzip $CWD/*.zip
 mv * "$PKG/opt/EightyOne"
 
 mkdir -p $PKG/usr/share/pixmaps
