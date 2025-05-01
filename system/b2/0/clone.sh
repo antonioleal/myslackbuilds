@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TAG=b2-20241028-215441-a8b4f2a
+TAG=b2-20250105-203025-e825ff1
 echo
 echo "cloning tag $TAG"
 echo
