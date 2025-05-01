@@ -27,7 +27,8 @@ cd ~/slackware-builds/myslackbuilds
 for updater in `find . -name "updater.sh" -print`
 do
     echo "Running $updater"
-    source $updater
+    source ~/slackware-builds/myslackbuilds/$updater
+    echo
 done
 
 echo "Done."
