@@ -376,7 +376,7 @@
   
 
 - Category: system
-- Version: 20250303_920605b
+- Version: 20250424_abcb999
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
 ## brave-browser-the-latest (brave browser updater script)
@@ -552,7 +552,7 @@
   
 
 - Category: development
-- Version: 15.1.5
+- Version: 15.2
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
