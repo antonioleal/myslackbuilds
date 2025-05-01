@@ -45,7 +45,7 @@ echo "New version is $NEWVERSION"
 
 if [ "$OLDVERSION" = "$NEWVERSION" ]; then
     echo "No new version detected..."
-    exit
+    return
 fi
 echo $NEWVERSION > old_version
 
