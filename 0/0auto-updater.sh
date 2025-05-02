@@ -32,9 +32,3 @@ do
 done
 
 echo "Done."
-
-echo "********************* status *********************"
-echo
-git diff
-
-
