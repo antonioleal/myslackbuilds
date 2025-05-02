@@ -30,50 +30,36 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-
-#tag=$(curl -s https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.tag_name')
-#echo $tag
-
-# NEWVERSION
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-# cd git/simh
-# git reset --hard
-# git pull --rebase
-# COMMIT=`git rev-parse HEAD`
-# NEWVERSION=${COMMIT:0:7}
-# cd ../..
-
-#NEWVERSION=`git ls-remote  https://github.com/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
-#TARBALL=plus42desktop-${NEWVERSION:1}.tar.gz
-
 NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
 TARBALL=doublecmd-${NEWVERSION}-src.tar.gz
+URL="https://downloads.sourceforge.net/project/doublecmd/Double%20Commander%20Source/${TARBALL}"
 
-################################
-# download tarball             #
-################################
-GETTARBALL="https://downloads.sourceforge.net/project/doublecmd/Double%20Commander%20Source/${TARBALL}"
-wget $GETTARBALL
-
-if [ ! -f ./$TARBALL ]
+VERSION=`cat version`
+if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "File $TARBALL not found, aborting..."
-    exit
+    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+else
+    ################################
+    # download tarball             #
+    ################################
+    wget $URL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+    sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+    chmod 644 ../${PRGNAM}.SlackBuild
+    echo "$NEWVERSION" > version
+    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
 fi
-
-# delete old tarball and place new one
-rm -rf ../*.tar.gz 2> /dev/null
-mv *.tar.gz ..
-
-################################
-# write templates              #
-################################
-MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-echo $MD5
-DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-
-sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-chmod -x ../${PRGNAM}.SlackBuild
