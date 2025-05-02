@@ -2,7 +2,7 @@
 
 # Slackware updater script for smoffice2024
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,46 +30,43 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-# OLDVERSION
-touch old_version
-OLDVERSION=`cat old_version`
-echo "Old version is $OLDVERSION"
-
-# NEWVERSION
 #curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A
 curl -s -o index.html https://www.softmaker.de/support/installation/linux/office-2024
 #NEWVERSION=`lynx -dump index.html | tail -1 | cut -d "/" -f 14`
 NEWVERSION=`lynx -dump index.html  | grep "2024.*amd64.tgz" | cut -d "-" -f4 | tail -n1`
-rm index.html
-echo "New version is $NEWVERSION"
+rm -rf index.html
+TARBALL=softmaker-office-2024-${NEWVERSION}-amd64.tgz
+URL="https://www.softmaker.net/down/${TARBALL}"
 
-if [ "$OLDVERSION" = "$NEWVERSION" ]; then
-    echo "No new version detected..."
-    return
-fi
-echo $NEWVERSION > old_version
 
-################################
-# download tarball             #
-################################
-cd ..
-set +e
-rm *.tgz
-set -e
-TARBALL=softmaker-office-2024-$NEWVERSION-amd64.tgz
-wget https://www.softmaker.net/down/$TARBALL
-if [ ! -f ./$TARBALL ]
+VERSION=`cat version`
+if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "File $TARBALL not found, aborting..."
-    exit 1
+    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+else
+    ################################
+    # download tarball             #
+    ################################
+    wget $URL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.tgz 2> /dev/null
+    mv *.tgz ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/${MD5}/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+    sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+    chmod 644 ../${PRGNAM}.SlackBuild
+    echo "$NEWVERSION" > version
+    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
 fi
 
-################################
-# write templates              #
-################################
-MD5=`md5sum $TARBALL | cut -d " " -f 1`
-sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ${PRGNAM}.info
-sed -e "s/\${_version_}/$NEWVERSION/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ${PRGNAM}.SlackBuild
-chmod +x ${PRGNAM}.SlackBuild
-echo
-echo "SlackBuild has been updated!"
+

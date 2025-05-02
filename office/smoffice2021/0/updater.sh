@@ -37,7 +37,6 @@ NEWVERSION=`lynx -dump index.html  | grep "2021.*amd64.tgz" | cut -d "-" -f4 | t
 rm -rf index.html
 TARBALL=softmaker-office-2021-${NEWVERSION}-amd64.tgz
 URL="https://www.softmaker.net/down/${TARBALL}"
-#URL="https://www.softmaker.net/down/softmaker-office-2021-1068-amd64.tgz"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
