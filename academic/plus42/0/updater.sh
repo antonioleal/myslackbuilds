@@ -57,7 +57,8 @@ cd $SCRIPT_DIR
 
 TAG=`git ls-remote  https://github.com/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
 NEWVERSION=${TAG:1}
-TARBALL=plus42desktop-${NEWVERSION:1}.tar.gz
+TARBALL=plus42desktop-${NEWVERSION}.tar.gz
+URL="https://github.com/thomasokken/plus42desktop/archive/${TAG}/${TARBALL}"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -67,8 +68,7 @@ else
     ################################
     # download tarball             #
     ################################
-    GETTARBALL="https://github.com/thomasokken/plus42desktop/archive/${TAG}/${TARBALL}"
-    wget $GETTARBALL
+    wget $URL
     if [ ! -f ./$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."
@@ -87,5 +87,5 @@ else
     sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
     chmod -x ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "updater.sh says $PRGNAM has a new version $VERSION"
+    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
 fi

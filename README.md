@@ -593,7 +593,7 @@
   
 
 - Category: development
-- Version: 14.2.0
+- Version: 15.1.0
 - Homepage: https://gcc.gnu.org/
 - Code repository: https://github.com/gcc-mirror/gcc
 ## fpc (free pascal compiler)
