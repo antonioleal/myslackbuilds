@@ -252,7 +252,7 @@
 - Category: network
 - Version: 6.2.1
 - Homepage: https://whalebird.social
-- Code repository:
+- Code repository: https://github.com/h3poteto/whalebird-desktop
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
  Maintaining an updated Firefox Standard Rel. on Slackware is now made
  easier with this small program, "firefox-standard-the-latest", a
