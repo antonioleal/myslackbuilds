@@ -30,50 +30,64 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-# OLDVERSION
-touch version
-OLDVERSION=`cat version`
-echo "Old version is $OLDVERSION"
+
+#tag=$(curl -s https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.tag_name')
+#echo $tag
+
+# NEWVERSION
+#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
+#NEWVERSION=${COMMIT:0:7}
+
+# cd git/simh
+# git reset --hard
+# git pull --rebase
+# COMMIT=`git rev-parse HEAD`
+# NEWVERSION=${COMMIT:0:7}
+# cd ../..
+
+#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
+#TARBALL=doublecmd-${NEWVERSION}-src.tar.gz
+
+#TAG=$(curl -s https://api.github.com/repos/wxFormBuilder/wxFormBuilder/releases/latest | jq -r '.tag_name')
+#NEWVERSION=${TAG:1}
+#TARBALL=wxFormBuilder-${NEWVERSION}-source-full.tar.gz
+
+#NEWVERSION=$(curl -s https://2484.de/yabasic/content_whatsnew.html | grep Version | head -n1 | cut -d " " -f 6 | cut -d "," -f 1)
+#TARBALL=yabasic-${NEWVERSION}.tar.gz
 
 # NEWVERSION
 curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A
 NEWVERSION=`lynx -dump index.html | tail -1 | cut -d "/" -f 14`
-echo "New version is $NEWVERSION"
-echo $NEWVERSION > version
+rm -rf index.html
 
-if [ "$OLDVERSION" = "$NEWVERSION" ]; then
-    echo "No new version detected..."
-    exit
+MAJOR=`echo $NEWVERSION | cut -d "." -f 1`
+TARBALL=vstudio_x64_${MAJOR}_lin.deb
+URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBALL}"
+
+VERSION=`cat version`
+if [ "$VERSION" = "$NEWVERSION" ]; then
+    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+else
+    ################################
+    # download tarball             #
+    ################################
+    wget $URL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.deb 2> /dev/null
+    mv *.deb ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD5=`md5sum $DEBFILE | cut -d " " -f 1`
+    sed -e "s/_version_/$NEWVERSION/g" -e "s/_major_/$MAJOR/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ${PRGNAM}.info
+    sed -e "s/_version_/$NEWVERSION/g" -e "s/_major_/$MAJOR/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ${PRGNAM}.SlackBuild
+    chmod 644 ${PRGNAM}.SlackBuild
+    echo "$NEWVERSION" > version
+    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
 fi
-
-MAJOR=`cut -d "." -f 1 version`
-echo "Major version number is $MAJOR"
-DEBFILE=vstudio_x64_${MAJOR}_lin.deb
-echo "Debian file is $DEBFILE"
-echo
-
-################################
-# download tarball             #
-################################
-cd ..
-rm -f *.deb
-wget http://valentina-db.com/download/prev_releases/$NEWVERSION/lin_64/$DEBFILE
-if [ ! -f ./$DEBFILE ]
-then
-    echo "File $DEBFILE not found, aborting..."
-    exit
-fi
-
-################################
-# write templates              #
-################################
-MD5=`md5sum $DEBFILE | cut -d " " -f 1`
-sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_major_}/$MAJOR/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ${PRGNAM}.info
-sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_major_}/$MAJOR/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ${PRGNAM}.SlackBuild
-chmod 644 ${PRGNAM}.SlackBuild
-
-################################
-# finish                       #
-################################
-echo $NEWVERSION > $SCRIPT_DIR/version
-
