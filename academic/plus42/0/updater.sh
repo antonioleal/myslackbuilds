@@ -38,12 +38,8 @@ cd $SCRIPT_DIR
 #COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
 #NEWVERSION=${COMMIT:0:7}
 
-# cd git/simh
-# git reset --hard
-# git pull --rebase
-# COMMIT=`git rev-parse HEAD`
-# NEWVERSION=${COMMIT:0:7}
-# cd ../..
+#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
+#NEWVERSION=${COMMIT:0:7}
 
 #NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
 #TARBALL=doublecmd-${NEWVERSION}-src.tar.gz

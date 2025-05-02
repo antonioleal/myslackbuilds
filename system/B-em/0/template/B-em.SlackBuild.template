@@ -25,11 +25,11 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=B-em
-VERSION=${VERSION:-${_fullversion_}}
+VERSION=${VERSION:-_fullversion_}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-COMMIT=${COMMIT:-${_commit_}}
+COMMIT=${COMMIT:-_commit_}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
