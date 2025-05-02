@@ -25,7 +25,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=gcc-local
-VERSION=${VERSION:-14.2.0}
+VERSION=${VERSION:-15.1.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -96,8 +96,8 @@ chmod +x $PKG/opt/$PRGNAM-$VERSION/lib64/libgcc_s.so.1
 #   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # Install the loader
-cp $CWD/load-gcc-$VERSION.sh $PKG/opt/$PRGNAM-$VERSION
-chmod +x $PKG/opt/$PRGNAM-$VERSION/load-gcc-$VERSION.sh
+cp $CWD/load-gcc.sh $PKG/opt/$PRGNAM-$VERSION
+chmod +x $PKG/opt/$PRGNAM-$VERSION/load-gcc.sh
 # mkdir -p $PKG/usr/bin
 # ( cd $PKG/usr/bin ; rm -rf load-gcc-13.2.0 )
 # ( cd $PKG/usr/bin ; ln -s ../../opt/$PRGNAM-$VERSION/load-gcc-13.2.0.sh load-gcc-13.2.0 )

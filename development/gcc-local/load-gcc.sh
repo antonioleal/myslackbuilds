@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=14.2.0
+VERSION=15.1.0
 
 export PATH=/opt/gcc-local-${VERSION}/bin:$PATH
 export LD_LIBRARY_PATH=/opt/gcc-local-${VERSION}/lib64:$LD_LIBRARY_PATH
