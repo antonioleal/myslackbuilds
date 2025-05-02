@@ -2,7 +2,7 @@
 
 # Slackware updater script for FreeFileSync
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,35 +30,36 @@ cd $SCRIPT_DIR
 ################################
 # get versions tarball         #
 ################################
-
 NEWVERSION=`curl -s https://freefilesync.org/archive.php | head -n 20 | grep "Download FreeFileSync" | cut -d " " -f 5 | rev | cut -c2- | rev`
-TARBALL=FreeFileSync_${NEWVERSION}_Linux.tar.gz
-
-
-################################
-# download tarball             #
-################################
-
 TARBALL=${PRGNAM}_${NEWVERSION}_Linux.tar.gz
-wget https://freefilesync.org/download/$TARBALL
-if [ ! -f ./$TARBALL ]
+URL="https://freefilesync.org/download/$TARBALL"
+
+VERSION=`cat version`
+if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "File $TARBALL not found, aborting..."
-    exit
+    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+else
+    ################################
+    # download tarball             #
+    ################################
+    wget $URL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    sed -e "s/_version_/${NEWVERSION}/" -e "s/_file_/${TARBALL}/" -e "s/_md5_/${MD5}/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+    sed -e "s/_version_/${NEWVERSION}/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+    chmod 644 ../${PRGNAM}.SlackBuild
+    echo "$NEWVERSION" > version
+    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
+    echo "Don't forget to upload $TARBALL to github"
 fi
-
-# delete old tarball and place new one
-set +e
-rm -i ../*.tar.gz
-mv *.tar.gz ..
-set -e
-
-################################
-# write templates              #
-################################
-MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-sed -e "s/\${_version_}/$NEWVERSION/" -e "s/\${_file_}/$TARBALL/" -e "s/\${_md5_}/$MD5/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-sed -e "s/\${_version_}/$NEWVERSION/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-chmod -x ../${PRGNAM}.SlackBuild
-
-
