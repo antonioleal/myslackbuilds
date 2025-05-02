@@ -45,35 +45,47 @@ cd $SCRIPT_DIR
 # NEWVERSION=${COMMIT:0:7}
 # cd ../..
 
-NEWVERSION=`git ls-remote  https://github.com/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
+#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
+#TARBALL=doublecmd-${NEWVERSION}-src.tar.gz
+
+#TAG=$(curl -s https://api.github.com/repos/wxFormBuilder/wxFormBuilder/releases/latest | jq -r '.tag_name')
+#NEWVERSION=${TAG:1}
+#TARBALL=wxFormBuilder-${NEWVERSION}-source-full.tar.gz
+
+#NEWVERSION=$(curl -s https://2484.de/yabasic/content_whatsnew.html | grep Version | head -n1 | cut -d " " -f 6 | cut -d "," -f 1)
+#TARBALL=yabasic-${NEWVERSION}.tar.gz
+
+TAG=`git ls-remote  https://github.com/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
+NEWVERSION=${TAG:1}
 TARBALL=plus42desktop-${NEWVERSION:1}.tar.gz
 
-
-################################
-# download tarball             #
-################################
-GETTARBALL="https://github.com/thomasokken/plus42desktop/archive/${NEWVERSION}/${TARBALL}"
-wget $GETTARBALL
-
-if [ ! -f ./$TARBALL ]
+VERSION=`cat version`
+if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "File $TARBALL not found, aborting..."
-    exit
+    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+else
+    ################################
+    # download tarball             #
+    ################################
+    GETTARBALL="https://github.com/thomasokken/plus42desktop/archive/${TAG}/${TARBALL}"
+    wget $GETTARBALL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+    sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+    chmod -x ../${PRGNAM}.SlackBuild
+    echo "$NEWVERSION" > version
+    echo "updater.sh says $PRGNAM has a new version $VERSION"
 fi
-
-# delete old tarball and place new one
-rm -rf ../*.tar.gz 2> /dev/null
-mv *.tar.gz ..
-
-
-################################
-# write templates              #
-################################
-MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-echo $MD5
-DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-
-sed -e "s/_version_/${NEWVERSION:1}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-sed -e "s/_version_/${NEWVERSION:1}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-chmod -x ../${PRGNAM}.SlackBuild
-
