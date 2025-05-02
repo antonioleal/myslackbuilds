@@ -51,7 +51,7 @@ OUTPUT=${OUTPUT:-/tmp}
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $PKG
-ar p $CWD/vstudio_x64_${_major_}_lin.deb data.tar.xz | tar xvJ
+ar p $CWD/vstudio_x64__major__lin.deb data.tar.xz | tar xvJ
 
 chown -R root:root .
 find -L . \
