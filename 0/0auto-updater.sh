@@ -22,6 +22,8 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Note: In order for this to work please install the jq package from SBo
+
 cd ~/slackware-builds/myslackbuilds
 
 for updater in `find . -name "updater.sh" -print`
@@ -39,5 +41,4 @@ do
         fi
     fi
 done
-
 echo "Done."

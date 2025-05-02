@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for plus42
+# Slackware updater script for eightyone
 
 # Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=plus42
+PRGNAM=eightyone
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
@@ -51,14 +51,9 @@ cd $SCRIPT_DIR
 #NEWVERSION=$(curl -s https://2484.de/yabasic/content_whatsnew.html | grep Version | head -n1 | cut -d " " -f 6 | cut -d "," -f 1)
 #TARBALL=yabasic-${NEWVERSION}.tar.gz
 
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/eightyone-sinclair-emulator/best_release.json" | jq -r ".release.filename" | cut -d " " -f 2 | awk '{ print substr($0,2,length($0)-5) }'`
-#TARBALL=EightyOne V${NEWVERSION}.zip
-#URL="https://sourceforge.net/projects/eightyone-sinclair-emulator/files/EightyOne%20V${NEWVERSION}.zip"
-
-TAG=`git ls-remote  https://github.com/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
-NEWVERSION=${TAG:1}
-TARBALL=plus42desktop-${NEWVERSION}.tar.gz
-URL="https://github.com/thomasokken/plus42desktop/archive/${TAG}/${TARBALL}"
+NEWVERSION=`curl -qsL "https://sourceforge.net/projects/eightyone-sinclair-emulator/best_release.json" | jq -r ".release.filename" | cut -d " " -f 2 | awk '{ print substr($0,2,length($0)-5) }'`
+TARBALL="EightyOne V${NEWVERSION}.zip"
+URL="https://sourceforge.net/projects/eightyone-sinclair-emulator/files/EightyOne%20V${NEWVERSION}.zip"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -70,19 +65,19 @@ else
     # download tarball             #
     ################################
     wget $URL
-    if [ ! -f ./$TARBALL ]
+    if [ ! -f "./$TARBALL" ]
     then
         echo "File $TARBALL not found, aborting..."
         exit
     fi
     # delete old tarball and place new one
-    rm -rf ../*.tar.gz 2> /dev/null
-    mv *.tar.gz ..
+    rm -rf ../*.zip 2> /dev/null
+    mv *.zip ..
 
     ################################
     # write templates              #
     ################################
-    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    MD5=`md5sum "../$TARBALL" | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
     sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
     sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
