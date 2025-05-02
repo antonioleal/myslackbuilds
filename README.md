@@ -402,7 +402,7 @@
   
 
 - Category: system
-- Version: 1.1.23
+- Version: 1.1.24
 - Homepage:  http://doublecmd.sourceforge.net
 - Code repository: http://doublecmd.sourceforge.net
 ## google-chrome-the-latest (Google Chrome Updater Script)
