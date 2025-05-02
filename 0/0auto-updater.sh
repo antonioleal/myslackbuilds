@@ -27,8 +27,17 @@ cd ~/slackware-builds/myslackbuilds
 for updater in `find . -name "updater.sh" -print`
 do
     echo "Running $updater"
+    RET0=""
     source ~/slackware-builds/myslackbuilds/$updater
     echo
+    if ! [ "$RET0" = "" ]
+    then
+        read -p "Continue (Y/n) " op
+        if [ "$op" = "n" ] || [ "$op" = "N" ]
+        then
+            exit 0
+        fi
+    fi
 done
 
 echo "Done."

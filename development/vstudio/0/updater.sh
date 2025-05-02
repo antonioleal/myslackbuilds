@@ -67,6 +67,7 @@ URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBA
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]; then
     echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+    export RET0=""
 else
     ################################
     # download tarball             #
@@ -91,4 +92,5 @@ else
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
+    export RET0=$NEWVERSION
 fi
