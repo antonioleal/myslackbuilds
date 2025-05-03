@@ -1,7 +1,7 @@
 PRGNAM="plus42"
 VERSION="_version_"
 HOMEPAGE="https://www.thomasokken.com/plus42"
-DOWNLOAD="https://github.com/thomasokken/plus42desktop/archive/_version_/plus42desktop-_version_.tar.gz"
+DOWNLOAD="https://github.com/thomasokken/plus42desktop/archive/v_version_/plus42desktop-_version_.tar.gz"
 MD5SUM="_md5_"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
