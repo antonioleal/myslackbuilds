@@ -632,7 +632,7 @@
   
 
 - Category: development
-- Version: 8.8
+- Version: 8.8.1
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 ## qb64 (Modern QuickBASIC compiler)
