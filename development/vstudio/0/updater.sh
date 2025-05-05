@@ -57,7 +57,7 @@ cd $SCRIPT_DIR
 
 # NEWVERSION
 curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A
-NEWVERSION=`lynx -dump index.html | tail -1 | cut -d "/" -f 14`
+NEWVERSION=`lynx -dump index.html | tail -1 |  awk -F "/" '{ print $(NF-1) }'`
 rm -rf index.html
 
 MAJOR=`echo $NEWVERSION | cut -d "." -f 1`
