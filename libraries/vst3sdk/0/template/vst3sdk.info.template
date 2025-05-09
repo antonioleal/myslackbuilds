@@ -1,0 +1,24 @@
+PRGNAM="vst3sdk"
+VERSION="_shortversion_"
+HOMEPAGE="https://www.steinberg.net/developers/"
+DOWNLOAD="https://github.com/steinbergmedia/vst3sdk/archive/v_fullversion_/vst3sdk-_fullversion_.tar.gz \
+          https://github.com/steinbergmedia/vst3_base/archive/_commit2_/vst3_base-_commit2_.tar.gz \
+          https://github.com/steinbergmedia/vst3_cmake/archive/_commit3_/vst3_cmake-_commit3_.tar.gz \
+          https://github.com/steinbergmedia/vst3_doc/archive/_commit4_/vst3_doc-_commit4_.tar.gz \
+          https://github.com/steinbergmedia/vst3_pluginterfaces/archive/_commit5_/vst3_pluginterfaces-_commit5_.tar.gz \
+          https://github.com/steinbergmedia/vst3_public_sdk/archive/_commit6_/vst3_public_sdk-_commit6_.tar.gz \
+          https://github.com/steinbergmedia/vst3_tutorials/archive/_commit7_/vst3_tutorials-_commit7_.tar.gz \
+          https://github.com/steinbergmedia/vstgui/archive/_commit8_/vstgui-_commit8_.tar.gz"
+MD5SUM="_md51_ \
+        _md52_ \
+        _md53_ \
+        _md54_ \
+        _md55_ \
+        _md56_ \
+        _md57_ \
+        _md58_"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"
