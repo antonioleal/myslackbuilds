@@ -35,10 +35,6 @@ NEWVERSION=`curl -s https://api.github.com/repos/steinbergmedia/vst3_base/tags |
 SHORTVERSION=`echo $NEWVERSION | cut -d "_" -f1`
 BUILD=`echo $NEWVERSION | cut -d "_" -f2-`
 
-echo $NEWVERSION
-echo $SHORTVERSION
-echo $BUILD
-
 COMMIT1=`git ls-remote https://github.com/steinbergmedia/vst3sdk/ | head -1 | cut  -f 1`
 TARBALL1=vst3sdk-${NEWVERSION}.tar.gz
 URL1="https://github.com/steinbergmedia/vst3sdk/archive/v${NEWVERSION}/${TARBALL1}"
