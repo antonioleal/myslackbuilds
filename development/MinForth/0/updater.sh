@@ -30,26 +30,30 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-rm -rf change.log*
-wget "https://sourceforge.net/projects/minforth/files/change.log"
-if [ ! -f ./change.log ]
-then
-    echo "File change.log not found, aborting..."
-    exit
-fi
-NEWVERSION=`cat change.log  | grep public | head -1 | awk '{print $NF}' | tr -d '\r'`
-
 TARBALL=$(curl -qsL "https://sourceforge.net/projects/minforth/rss?path=/" | grep "link.*_Linux_" | awk -F "/" '{print $7}')
 PREFIX=`echo $TARBALL | cut -d "_" -f1`
 URL="https://sourceforge.net/projects/minforth/files/${TARBALL}"
 
-
 VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ]
+if [ "$VERSION" = "$PREFIX" ]
 then
     echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
     export RET0=""
 else
+    ################################
+    # determine NEWVERSION         #
+    ################################
+    rm -rf change.log*
+    wget "https://sourceforge.net/projects/minforth/files/change.log"
+    if [ ! -f ./change.log ]
+    then
+        echo "File change.log not found, aborting..."
+        exit
+    fi
+    NEWVERSION=`cat change.log  | grep public | head -1 | awk '{print $NF}' | tr -d '\r'`
+    rm -rf change.log*
+
+
     ################################
     # download tarball             #
     ################################
@@ -80,7 +84,7 @@ else
         $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
 
     chmod 644 ../${PRGNAM}.SlackBuild
-    echo "$NEWVERSION" > version
+    echo "$PREFIX" > version
     echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi
