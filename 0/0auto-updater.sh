@@ -25,20 +25,29 @@
 # Note: In order for this to work please install the jq package from SBo
 
 cd ~/slackware-builds/myslackbuilds
-
-for updater in `find . -name "updater.sh" -print`
+for updaterdir in `find . -name "0" -print`
 do
-    echo "Running $updater"
-    RET0=""
-    source ~/slackware-builds/myslackbuilds/$updater
-    echo
-    if ! [ "$RET0" = "" ]
-    then
-        read -p "Continue (Y/n) " op
-        if [ "$op" = "n" ] || [ "$op" = "N" ]
+    cd ~/slackware-builds/myslackbuilds
+    if [ "$updaterdir" == "./0" ] || [ "$updaterdir" == "./0/0" ]; then
+        continue
+    elif [ -f $updaterdir/updater.sh ]; then
+        echo "Running $updaterdir/updater.sh"
+        RET0=""
+        source ~/slackware-builds/myslackbuilds/$updaterdir/updater.sh
+        echo
+        if ! [ "$RET0" = "" ]
         then
-            exit 0
+            read -p "Continue (Y/n) " op
+            if [ "$op" = "n" ] || [ "$op" = "N" ]
+            then
+                exit 0
+            fi
         fi
+    else
+        cd $updaterdir/..
+        PKGNAME=${PWD##*/}
+        echo "No updater.sh for $PKGNAME"
+        echo
     fi
 done
 echo "Done."
