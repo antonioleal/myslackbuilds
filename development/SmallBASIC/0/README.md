@@ -1,2 +1,2 @@
 - Homepage: https://smallbasic.github.io
-- Code repository:
+- Code repository: https://github.com/smallbasic/SmallBASIC

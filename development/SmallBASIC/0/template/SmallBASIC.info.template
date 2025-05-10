@@ -1,0 +1,14 @@
+PRGNAM="SmallBASIC"
+VERSION="_version_"
+HOMEPAGE="https://smallbasic.github.io"
+DOWNLOAD="https://github.com/smallbasic/SmallBASIC/releases/download/_tag_/smallbasic-_version_.tar.gz \
+          https://www.fltk.org/pub/fltk/snapshots/fltk-1.4.x-20240119-01f2f760.tar.gz \
+          https://github.com/smallbasic/SmallBASIC/releases/download/_tag_/smallbasic__version_.zip"
+MD5SUM="_md51_ \
+        7e2954731c18fd179ef3250b31e09cb9 \
+        _md52_"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"

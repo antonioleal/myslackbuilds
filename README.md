@@ -620,9 +620,9 @@
   
 
 - Category: development
-- Version: 12.26
+- Version: 12.27
 - Homepage: https://smallbasic.github.io
-- Code repository:
+- Code repository: https://github.com/smallbasic/SmallBASIC
 ## notepad++ (A powerful text editor from the Windows universe)
  Notepad++ is a free (as in "free speech" and also as in "free beer")
  source code editor and Notepad replacement that supports several
