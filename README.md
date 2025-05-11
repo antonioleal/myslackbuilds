@@ -250,7 +250,7 @@
   
 
 - Category: network
-- Version: 6.2.1
+- Version: 6.2.2
 - Homepage: https://whalebird.social
 - Code repository: https://github.com/h3poteto/whalebird-desktop
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
