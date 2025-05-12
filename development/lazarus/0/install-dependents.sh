@@ -11,10 +11,13 @@
 # └ winff  (Vijay Marcel <vijaymarcel@outlook.com>)
 
 
-# clean-up
-removepkg tqsl xplanet hamlib cqrlog
-removepkg ddrescueview
-removepkg doublecmd-qt5
-removepkg mp3gain vorbisgain easymp3gain
-removepkg transgui
-removepkg winff
+# install all dependents
+slapt-src -i  \
+    tqsl xplanet hamlib cqrlog \
+    ddrescueview \
+    doublecmd-qt5 \
+    mp3gain vorbisgain easymp3gain \
+    transgui \
+    winff
+
+

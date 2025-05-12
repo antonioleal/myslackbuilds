@@ -541,7 +541,7 @@
   
 
 - Category: development
-- Version: 3.8
+- Version: 4.0
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
 ## vstudio (Valentina Studio DB Management)

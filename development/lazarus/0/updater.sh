@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for plus42
+# Slackware updater script for lazarus
 
 # Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=plus42
+PRGNAM=lazarus
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
@@ -55,14 +55,9 @@ cd $SCRIPT_DIR
 #TARBALL=EightyOne V${NEWVERSION}.zip
 #URL="https://sourceforge.net/projects/eightyone-sinclair-emulator/files/EightyOne%20V${NEWVERSION}.zip"
 
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/lazarus/best_release.json" | jq -r ".platform_releases.linux.filename" | awk -F "-" '{print substr($NF,1,length($NF)-4)}'`
-#TARBALL=lazarus-${NEWVERSION}-0.tar.gz
-#URL="http://downloads.sourceforge.net/lazarus/${TARBALL}"
-
-TAG=`git ls-remote  https://github.com/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
-NEWVERSION=${TAG:1}
-TARBALL=plus42desktop-${NEWVERSION}.tar.gz
-URL="https://github.com/thomasokken/plus42desktop/archive/${TAG}/${TARBALL}"
+NEWVERSION=`curl -qsL "https://sourceforge.net/projects/lazarus/best_release.json" | jq -r ".platform_releases.linux.filename" | awk -F "-" '{print substr($NF,1,length($NF)-4)}'`
+TARBALL=lazarus-${NEWVERSION}-0.tar.gz
+URL="http://downloads.sourceforge.net/lazarus/${TARBALL}"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
