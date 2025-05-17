@@ -1,0 +1,2 @@
+- Homepage: https://www.syntevo.com/smartgit
+- Code repository: https://www.syntevo.com/smartgit/download/
