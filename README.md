@@ -646,6 +646,16 @@
 - Version: 8.8.1
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
+## smartsvn (Desktop SVN Client)
+ SmartSvn is a commercial desktop svn client that provides
+ trial edition for a limited time (31 days)
+ Homepage: http://www.smartsvn.com/
+  
+
+- Category: development
+- Version: 14.5.0
+- Homepage: https://www.smartsvn.com
+- Code repository: https://www.smartsvn.com/download/
 ## qb64 (Modern QuickBASIC compiler)
  QB64 is a modern extended BASIC programming language that retains
  QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
