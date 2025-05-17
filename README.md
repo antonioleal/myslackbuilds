@@ -561,7 +561,7 @@
   
 
 - Category: development
-- Version: 15.3
+- Version: 15.3.1
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
