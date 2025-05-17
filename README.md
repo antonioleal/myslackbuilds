@@ -506,6 +506,15 @@
 - Version: 2.5.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
+## smartgit (Desktop Git Client)
+ SmartGit is a commercial desktop git client that provides a
+ free non-commercial use license. You need to apply for this license
+ in https://www.syntevo.com/register-non-commercial/
+ otherwise you can purchase the software.
+  
+
+- Category: development
+- Version: 24.1.3
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
