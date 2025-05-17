@@ -515,6 +515,8 @@
 
 - Category: development
 - Version: 24.1.3
+- Homepage: https://www.syntevo.com/smartgit
+- Code repository: https://www.syntevo.com/smartgit/download/
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
