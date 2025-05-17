@@ -647,9 +647,10 @@
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 ## smartsvn (Desktop SVN Client)
- SmartSvn is a commercial desktop svn client that provides
- trial edition for a limited time (31 days)
- Homepage: http://www.smartsvn.com/
+ SmartSvn is a commercial desktop svn client.
+ SmartSVN starts with free evaluation mode for 30 days,
+ but you can request a non-commercial license at:
+ https://www.syntevo.com/register-non-commercial/
   
 
 - Category: development
