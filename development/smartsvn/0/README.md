@@ -1,0 +1,2 @@
+- Homepage: https://www.smartsvn.com
+- Code repository: https://www.smartsvn.com/download/
