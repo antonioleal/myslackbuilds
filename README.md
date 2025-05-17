@@ -730,6 +730,18 @@
 
 *Not possible to build with Slackware 15.0 - needs newer autoconf*
 
+## kphotoalbum (a photo management application)
+ Kphotoalbum (previously known as KimDaBa) is an image viewer and
+ organizer for KDE 4. It makes use of kipi plugins and exiv2 if
+ they are installed (both recommended).
+  
+
+- Category: graphics
+- Version: 5.11.0
+- Homepage: https://www.kphotoalbum.org/
+- Code repository: https://www.kphotoalbum.org/download/
+
+*No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
  Plus42 is an advanced scientific programmable calculator, based on
  Free42 (a complete re-implementation of the HP-42S scientific
