@@ -94,6 +94,7 @@ do
                     cd 0
                     source updater.sh
                     cd $CWD
+                    read -p "Press [ENTER] to continue." op
                 fi
                 ;;
             1)
