@@ -387,7 +387,7 @@
   
 
 - Category: system
-- Version: 1.3
+- Version: 1.4
 - Homepage: https://github.com/antonioleal/brave-browser-the-latest
 - Code repository: https://github.com/antonioleal/brave-browser-the-latest
 
