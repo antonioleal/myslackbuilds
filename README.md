@@ -823,7 +823,7 @@
   
 
 - Category: academic
-- Version: 1.3.5
+- Version: 1.3.6
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
 ## kphotoalbum (a photo management application)
