@@ -672,7 +672,7 @@
   
 
 - Category: network
-- Version: 6.5.7
+- Version: 6.5.9
 - Homepage: https://www.waterfox.net/
 - Code repository: https://github.com/BrowserWorks/Waterfox
 - Binary repository: https://www.waterfox.net/download/
