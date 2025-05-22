@@ -416,6 +416,20 @@
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
+## zxbasic (basic compiler for ZXSpectrum)
+ ZX BASIC is a BASIC "cross compiler". It will compile BASIC
+ programs (in your PC) for your ZX Spectrum. ZX BASIC is an
+ SDK entirely written in python. The SDK is implemented using
+ the PLY (Python Lex/Yacc) compiler tool. It translates BASIC
+ to Z80 assembler code, so it is easily portable to other Z80
+ platforms (Amstrad, MSX). Other non Z80 targets could also
+ be available in the future.
+  
+
+- Category: development
+- Version: 1.18.1
+- Homepage: "https://zxbasic.readthedocs.io"
+- Code repository: "https://github.com/boriel-basic/zxbasic"
 ## qb64pe (Modern QuickBASIC compiler)
  QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
  additional features and enhancements, maintained by a
