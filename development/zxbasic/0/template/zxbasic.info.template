@@ -1,0 +1,12 @@
+PRGNAM="zxbasic"
+VERSION="_version_"
+HOMEPAGE="https://zxbasic.readthedocs.io"
+DOWNLOAD="https://github.com/boriel-basic/zxbasic/archive/v_version_/zxbasic-_version_.tar.gz \
+          https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tgz"
+MD5SUM="_md5_ \
+        b3d8c043dcdd52d55d48769a95c8e7d1"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"
