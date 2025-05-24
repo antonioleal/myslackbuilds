@@ -1,0 +1,2 @@
+- Homepage: "https://zxbasic.readthedocs.io"
+- Code repository: "https://github.com/boriel-basic/zxbasic"

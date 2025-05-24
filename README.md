@@ -681,6 +681,17 @@
 - Version: 2.1
 - Homepage: https://qb64.com
 - Code repository: https://github.com/QB64Official/qb64
+## zxbasicstudio (an ide for zxbasic)
+ ZX Basic Studio is a cross-platform IDE for zxbasic
+ This is a work in progress but the development has reached a state
+ in which we feel comfortable to release it to be tested by users.
+ Expect bugs as this is a development build.
+  
+
+- Category: development
+- Version: 1.5
+- Homepage: "https://zxbasic.readthedocs.io"
+- Code repository: "https://github.com/boriel-basic/zxbasic"
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
  kForth-64 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
