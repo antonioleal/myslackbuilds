@@ -733,7 +733,7 @@
 - Category: development
 - Version: 1.5
 - Homepage: "https://zxbasic.readthedocs.io"
-- Code repository: "https://github.com/boriel-basic/zxbasic"
+- Code repository: "https://github.com/boriel-basic/zxbasicstudio"
 
 *Note: updater.sh is available for this package*
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
