@@ -120,6 +120,8 @@
 - Version: 8.3.3
 - Homepage: https://www.onlyoffice.com/apps.aspx
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
+
+*Note: updater.sh is available for this package*
 ## smoffice2021 (office suite)
  SoftMaker Office 2021 includes
   * TextMaker 2021, a word processor
