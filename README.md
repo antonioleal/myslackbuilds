@@ -628,7 +628,7 @@
   
 
 - Category: development
-- Version: 20241111_632be8b
+- Version: 20250520_95ab689
 - Homepage: https://notepadqq.com
 - Code repository: https://github.com/notepadqq/notepadqq/commits/master/
 ## gcc-local (Base GCC package with C support)
