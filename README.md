@@ -43,7 +43,7 @@
 - Version: 4.9.0
 - Homepage: https://github.com/antonioleal/qt-installer-script
 - Code repository:
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## fishui (base library for cutefish DE)
  FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every
  Cutefish application uses it.
@@ -81,7 +81,7 @@
 - Version: 3.7.13
 - Homepage: https://www.steinberg.net/developers/
 - Code repository: https://github.com/steinbergmedia/vst3sdk
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## smoffice2024 (office suite)
  SoftMaker Office 2024 includes
   * TextMaker 2024, a word processor
@@ -95,7 +95,7 @@
 - Version: 2024_1224
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository: https://www.softmaker.com/en/softmaker-office-linux
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## wps-office-dicts (Spell check dictionaries for WPS Office)
  Spell check dictionaries for WPS Office. The language files are
  adapted from the LibreOffice Dictionaries project.
@@ -130,7 +130,7 @@
 - Version: 2021_1068
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository:
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## wps-office (an office productivity suite for Linux)
  WPS Office, including Writer, Presentation and spreadsheets, is a
  powerful office suite. It is deeply compatible with all of the
@@ -249,7 +249,7 @@
 - Homepage: https://www.waterfox.net/
 - Code repository: https://github.com/BrowserWorks/Waterfox
 - Binary repository: https://www.waterfox.net/download/
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## whalebird (Mastondon, Pleroma and Misskey client)
  Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
   
@@ -258,7 +258,7 @@
 - Version: 6.2.2
 - Homepage: https://whalebird.social
 - Code repository: https://github.com/h3poteto/whalebird-desktop
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
  Maintaining an updated Firefox Standard Rel. on Slackware is now made
  easier with this small program, "firefox-standard-the-latest", a
@@ -284,7 +284,7 @@
 - Version: 14.3
 - Homepage: https://freefilesync.org/
 - Code repository: https://freefilesync.org/
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## clamtk (A frontend for ClamAV)
  ClamTk is a frontend for ClamAV using perl-Gtk3.
  It is intended to be an easy to use, light-weight,
@@ -375,7 +375,7 @@
 - Version: 1.41
 - Homepage: https://sourceforge.net/projects/eightyone-sinclair-emulator/
 - Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## B-em (BBC Microcomputer Emulator)
  B-em is an emulator for various models of BBC Microcomputer as
  made by Acorn Computers in the 1980s along with a selection of
@@ -387,7 +387,7 @@
 - Version: 20250520_a1bbf3d
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## brave-browser-the-latest (brave browser updater script)
  Maintaining an updated Brave Browser on Slackware is now made
  easier with this small program, "brave-browser-the-latest", a simple
@@ -414,7 +414,7 @@
 - Version: 1.1.24
 - Homepage:  http://doublecmd.sourceforge.net
 - Code repository: http://doublecmd.sourceforge.net
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## google-chrome-the-latest (Google Chrome Updater Script)
  Maintaining an updated Chrome Browser on Slackware is now made
  easier with this small program, "google-chrome-the-latest", a simple
@@ -464,7 +464,7 @@
 - Version: 20250425_29d3900
 - Homepage: https://opensimh.org
 - Code repository: https://github.com/open-simh/simh
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## simh-classic (3.X Classic Version)
  SimH (History Simulator) is a collection of simulators for
  historically significant or just plain interesting computer hardware
@@ -478,7 +478,7 @@
 - Version: 3.12_5
 - Homepage: http://simh.trailing-edge.com/
 - Code repository:
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## bbcsdl (BBC BASIC for linux)
  BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
  cross-platform implementation of BBC BASIC for Windows, MacOS,
@@ -529,7 +529,7 @@
 - Version: 24.1.3
 - Homepage: https://www.syntevo.com/smartgit
 - Code repository: https://www.syntevo.com/smartgit/download/
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
@@ -541,7 +541,7 @@
 - Version: 4.2.1
 - Homepage: https://github.com/wxFormBuilder/wxFormBuilder
 - Code repository:
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## SQLiteStudio (SQLite database manager written in C++ using Qt)
  A free, open source, multi-platform SQLite database manager written
  in C++, with use of Qt framework.
@@ -569,7 +569,7 @@
 - Version: 4.0
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
@@ -582,7 +582,7 @@
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## yabasic (basic-interpreter)
  Yabasic is a traditional basic-interpreter. It comes with goto and
  various loops and allows to define subroutines and libraries.
@@ -596,7 +596,7 @@
 - Version: 2.91.2
 - Homepage: "http://2484.de/yabasic/"
 - Code repository: "http://2484.de/yabasic/"
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for
@@ -638,7 +638,7 @@
 - Version: 1.18.1
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasic"
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
@@ -666,7 +666,7 @@
 - Version: 12.27
 - Homepage: https://smallbasic.github.io
 - Code repository: https://github.com/smallbasic/SmallBASIC
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## notepad++ (A powerful text editor from the Windows universe)
  Notepad++ is a free (as in "free speech" and also as in "free beer")
  source code editor and Notepad replacement that supports several
@@ -679,7 +679,7 @@
 - Version: 8.8.1
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## smartsvn (Desktop SVN Client)
  SmartSvn is a commercial desktop svn client.
  SmartSVN starts with free evaluation mode for 30 days,
@@ -691,7 +691,7 @@
 - Version: 14.5.0
 - Homepage: https://www.smartsvn.com
 - Code repository: https://www.smartsvn.com/download/
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## qb64 (Modern QuickBASIC compiler)
  QB64 is a modern extended BASIC programming language that retains
  QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
@@ -713,7 +713,7 @@
 - Version: 1.5
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasic"
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
  kForth-64 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
@@ -737,7 +737,7 @@
 - Version: 3.30
 - Homepage: https://sourceforge.net/projects/bwbasic
 - Code repository: https://sourceforge.net/projects/bwbasic
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## qb64pe (Modern QuickBASIC compiler)
  QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
  additional features and enhancements, maintained by a
@@ -752,7 +752,7 @@
 - Version: 4.1.0
 - Homepage: https://qb64phoenix.com/
 - Code repository: https://github.com/QB64-Phoenix-Edition/QB64pe
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## MinForth (A Forth System that can transpile Forth to C)
  MinForth V3.4 is a classic Forth system with command-line interface.
  Development resource requirements are minimal. A source text editor
@@ -766,7 +766,7 @@
 - Version: 3.4.8
 - Homepage: https://sourceforge.net/projects/minforth/
 - Code repository:
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## codeblocks (a free C++ and Fortran IDE)
  Code::Blocks is a free C++ and Fortran IDE built to meet the most
  demanding needs of its users. It is designed to be very extensible
@@ -807,7 +807,7 @@
 - Version: 1.3.6
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## cutefish-wallpapers (Wallpapers from CutefishOS)
  Ten official wallpapers from the CutefishOS project.
   
@@ -893,7 +893,7 @@
 - Version: 1.1.4
 - Homepage: https://www.pling.com/p/1127892/
 - Code repository:https://github.com/wusel1007/clamav-gui
-- **updater.sh is available for this package**
+**updater.sh is available for this package**
 ## cutefish-core (CutefishOS backend)
  Main component of the Cutefish Desktop Environment.
   
