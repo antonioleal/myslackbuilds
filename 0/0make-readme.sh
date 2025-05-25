@@ -55,7 +55,7 @@ do
         cat $DIR/0/README.md >> $README
         if [ -f $DIR/0/updater.sh ]; then
             echo >> $README
-            echo "*updater.sh is available for this package*" >> $README
+            echo "*Note: updater.sh is available for this package*" >> $README
         fi
     fi
 done
