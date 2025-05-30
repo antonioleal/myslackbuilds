@@ -902,7 +902,7 @@
   
 
 - Category: academic
-- Version: 1.3.7
+- Version: 1.3.7a
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
 
