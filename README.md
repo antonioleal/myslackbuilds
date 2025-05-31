@@ -633,6 +633,8 @@
 - Version: 20250520_95ab689
 - Homepage: https://notepadqq.com
 - Code repository: https://github.com/notepadqq/notepadqq/commits/master/
+
+*Note: updater.sh is available for this package*
 ## gcc-local (Base GCC package with C support)
  GCC is the GNU Compiler Collection.
  This package contains those parts of the compiler collection needed
