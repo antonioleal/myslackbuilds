@@ -507,6 +507,8 @@
 - Version: 1.41b
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
+
+*Note: updater.sh is available for this package*
 ## kforth (A Forth programming language and environment)
  kForth is an implementation of the Forth programming language and
  environment. The user may write Forth programs with an editor,

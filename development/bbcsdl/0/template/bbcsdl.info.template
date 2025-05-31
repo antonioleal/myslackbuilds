@@ -1,0 +1,14 @@
+PRGNAM="bbcsdl"
+VERSION="_fullversion_"
+HOMEPAGE="https://www.bbcbasic.co.uk/bbcsdl"
+DOWNLOAD="https://github.com/rtrussell/BBCSDL/archive/_commit_/BBCSDL-_commit_.tar.gz \
+          https://www.bbcbasic.co.uk/bbcsdl/bbclinux32.zip"
+MD5SUM="_md51_ \
+        _md52_"
+DOWNLOAD_x86_64="https://github.com/rtrussell/BBCSDL/archive/_commit_/BBCSDL-_commit_.tar.gz \
+                 https://www.bbcbasic.co.uk/bbcsdl/bbclinux.zip"
+MD5SUM_x86_64="_md51_ \
+               _md53_"
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"
