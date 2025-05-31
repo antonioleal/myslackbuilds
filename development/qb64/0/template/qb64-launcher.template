@@ -1,13 +1,13 @@
 #!/bin/sh
 
-DEST="$HOME/.config/qb64-2.1"
+DEST="$HOME/.config/qb64-_version_"
 if [ ! -d $DEST ]
 then
     notify-send "Setting up $DEST workspace for first run, please be patient..."
     CWD=`pwd`
     mkdir -p $DEST
     cd $DEST
-    tar xvfz /usr/src/qb64-2.1/qb64-2.1.tar.gz --strip-components=1
+    tar xvfz /usr/src/qb64-_version_/qb64-_version_.tar.gz --strip-components=1
     pushd internal/c/libqb/os/lnx >/dev/null
     rm -f libqb_setup.o
     ./setup_build.sh

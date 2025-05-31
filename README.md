@@ -1,4 +1,4 @@
-*This repo contains my slackbuild scripts, some of which also published to SlackBuilds.org*
+*This repo contains my slackbuild scripts, some of which are also published to SlackBuilds.org*
 
 ---
 
@@ -725,6 +725,8 @@
 - Version: 2.1
 - Homepage: https://qb64.com
 - Code repository: https://github.com/QB64Official/qb64
+
+*Note: updater.sh is available for this package*
 ## zxbasicstudio (an ide for zxbasic)
  ZX Basic Studio is a cross-platform IDE for zxbasic
  This is a work in progress but the development has reached a state

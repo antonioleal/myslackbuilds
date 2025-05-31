@@ -27,7 +27,7 @@ README=README.md
 
 rm -rf $README
 
-echo -e "*This repo contains my slackbuild scripts, some of which also published to SlackBuilds.org*\n" >> $README
+echo -e "*This repo contains my slackbuild scripts, some of which are also published to SlackBuilds.org*\n" >> $README
 echo -e "---\n" >> $README
 echo -e "  \n" >> $README
 
