@@ -34,7 +34,8 @@ NEWVERSION=`git ls-remote  https://github.com/QB64Official/qb64 | tail -n1 | awk
 TARBALL=qb64-${NEWVERSION}.tar.gz
 URL="https://github.com/QB64Official/qb64/archive/v${NEWVERSION}/${TARBALL}"
 
-VERSION=`cat version`
+#VERSION=`cat version`
+source ../qb64.info
 if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
