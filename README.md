@@ -839,7 +839,7 @@
   
 
 - Category: academic
-- Version: 1.3.7a
+- Version: 1.3.7b
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://github.com/thomasokken/plus42desktop
 

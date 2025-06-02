@@ -59,10 +59,10 @@ cd $SCRIPT_DIR
 #TARBALL=lazarus-${NEWVERSION}-0.tar.gz
 #URL="http://downloads.sourceforge.net/lazarus/${TARBALL}"
 
-TAG=`git ls-remote  https://github.com/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
+TAG=`git ls-remote  https://codeberg.org/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
 NEWVERSION=${TAG:1}
-TARBALL=plus42desktop-${NEWVERSION}.tar.gz
-URL="https://github.com/thomasokken/plus42desktop/archive/${TAG}/${TARBALL}"
+TARBALL=${TAG}.tar.gz
+URL="https://codeberg.org/thomasokken/plus42desktop/archive/${TAG}.tar.gz"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -90,11 +90,12 @@ else
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
 
     sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_md5_/$MD5/g"
-        \$SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+        -e "s/_md5_/$MD5/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 
     sed -e "s/_version_/${NEWVERSION}/g" \
         $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
