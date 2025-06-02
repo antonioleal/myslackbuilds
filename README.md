@@ -841,7 +841,7 @@
 - Category: academic
 - Version: 1.3.7b
 - Homepage: https://www.thomasokken.com/plus42
-- Code repository: https://github.com/thomasokken/plus42desktop
+- Code repository: https://codeberg.org/thomasokken/plus42desktop
 
 *Note: updater.sh is available for this package*
 ## cutefish-wallpapers (Wallpapers from CutefishOS)

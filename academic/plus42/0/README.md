@@ -1,2 +1,2 @@
 - Homepage: https://www.thomasokken.com/plus42
-- Code repository: https://github.com/thomasokken/plus42desktop
+- Code repository: https://codeberg.org/thomasokken/plus42desktop
