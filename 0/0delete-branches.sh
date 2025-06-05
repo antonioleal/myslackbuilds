@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware 0script to clean PR branches
+# Slackware 0script to delete branches
 
 # Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -26,27 +26,32 @@
 clear
 if [ "$1" == "" ]
 then
-    cd ~/slackware-builds/slackbuilds
-    git checkout master
+    echo "Error: please specify branch name or 'all' as parameter"
     echo
-    for b in `git branch | grep -v "master"`
-    do
-        echo "deleting $b"
-        git branch -D $b
-        echo
-    done
-    for b in `git branch -r | grep -v "master"`
-    do
-        echo "deleting remote $b"
-        git push origin -d $(echo $b | cut -d "/" -f2)
-        echo
-    done
 else
-    git branch -D $1
-    git push origin -d $1
+    if [ "$1" == "all" ]
+    then
+        cd ~/slackware-builds/slackbuilds
+        git checkout master
+        echo
+        for b in `git branch | grep -v "master"`
+        do
+            echo "deleting $b"
+            git branch -D $b
+            echo
+        done
+        for b in `git branch -r | grep -v "master"`
+        do
+            echo "deleting remote $b"
+            git push origin -d $(echo $b | cut -d "/" -f2)
+            echo
+        done
+    else
+        git branch -D $1
+        git push origin -d $1
+    fi
+    git fetch --prune
 fi
-git fetch --prune
-
 echo
 echo "------------------------------------------"
 git branch -a
