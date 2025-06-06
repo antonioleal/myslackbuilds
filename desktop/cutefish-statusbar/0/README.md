@@ -1,2 +1,0 @@
-- Homepage: https://github.com/cutefishos/statusbar
-- Code repository:
