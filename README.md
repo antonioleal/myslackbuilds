@@ -57,6 +57,8 @@
 - Version: 25.2.1.2
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
+
+*Note: updater.sh not available*
 ## wps-office (an office productivity suite for Linux)
  WPS Office, including Writer, Presentation and spreadsheets, is a
  powerful office suite. It is deeply compatible with all of the
@@ -68,6 +70,8 @@
 - Version: 11.1.0.11723.XA
 - Homepage: https://linux.wps.com/
 - Code repository:
+
+*Note: updater.sh not available*
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
@@ -89,6 +93,8 @@
 - Version: 0.08
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
+
+*Note: updater.sh not available*
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
@@ -115,6 +121,8 @@
 - Version: 0.5.0
 - Homepage: https://github.com/mynenik/kForth-64
 - Code repository:
+
+*Note: updater.sh not available*
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
@@ -128,6 +136,8 @@
 - Version: 3.2.2
 - Homepage: https://www.freepascal.org/
 - Code repository:
+
+*Note: updater.sh not available*
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -156,6 +166,8 @@
 
 *Not possible to build with Slackware 15.0 - needs newer autoconf*
 
+
+*Note: updater.sh not available*
 ## bbcsdl (BBC BASIC for linux)
  BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
  cross-platform implementation of BBC BASIC for Windows, MacOS,
@@ -226,6 +238,8 @@
 - Version: 1.8.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
+
+*Note: updater.sh not available*
 ## gcc-local (Base GCC package with C support)
  GCC is the GNU Compiler Collection.
  This package contains those parts of the compiler collection needed
@@ -238,6 +252,8 @@
 - Version: 15.1.0
 - Homepage: https://gcc.gnu.org/
 - Code repository: https://github.com/gcc-mirror/gcc
+
+*Note: updater.sh not available*
 ## notepad++ (A powerful text editor from the Windows universe)
  Notepad++ is a free (as in "free speech" and also as in "free beer")
  source code editor and Notepad replacement that supports several
@@ -350,6 +366,8 @@
 - Code repository:
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+
+*Note: updater.sh not available*
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
@@ -409,6 +427,8 @@
 - Version: 2.5.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
+
+*Note: updater.sh not available*
 ## tuxguitar (A Multitrack tablature editor and player)
  TuxGuitar is a multitrack guitar tablature editor and player
  written in Java-SWT. It can open GuitarPro, PowerTab, and
@@ -419,6 +439,8 @@
 - Version: 1.6.6
 - Homepage: https://www.tuxguitar.app/
 - Code repository: https://github.com/helge17/tuxguitar
+
+*Note: updater.sh not available*
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
@@ -434,6 +456,8 @@
 - Version: 1.4.5
 - Homepage: https://github.com/offa/plug
 - Code repository:
+
+*Note: updater.sh not available*
 ## bitwig-studio (Digital audio workstation for music production)
  Bitwig is designed to be an instrument for live performances as well
  as a tool for composing, recording, arranging, mixing, and mastering.
@@ -450,6 +474,8 @@
 - Code repository:
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+
+*Note: updater.sh not available*
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.
@@ -463,6 +489,8 @@
 - Version: 5.3.0
 - Homepage: https://zoomcorp.com/en/jp/
 - Code repository:
+
+*Note: updater.sh not available*
 ## brave-browser-the-latest (brave browser updater script)
  Maintaining an updated Brave Browser on Slackware is now made
  easier with this small program, "brave-browser-the-latest", a simple
@@ -477,6 +505,8 @@
 
 
 - Development: https://github.com/brave/brave-browser
+
+*Note: updater.sh not available*
 ## yaze-ag (yet another z80 emulator )
  is designed to provide an exact simulation of the Z80 microprocessor.
  It is fast, emulates undocumented opcodes, and passes instruction
@@ -491,6 +521,8 @@
 - Version: 2.51.3
 - Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
 - Code repository:
+
+*Note: updater.sh not available*
 ## doublecmd-qt5 (Double-panel File Manager)
  Double Commander is a free cross-platform open source file manager
  with two panels side by side (or one above the other). This is the Qt
@@ -529,6 +561,8 @@
 - Version: 4.2
 - Homepage: https://github.com/antonioleal/google-chrome-the-latest
 - Code repository:
+
+*Note: updater.sh not available*
 ## clamtk (A frontend for ClamAV)
  ClamTk is a frontend for ClamAV using perl-Gtk3.
  It is intended to be an easy to use, light-weight,
@@ -539,6 +573,8 @@
 - Version: 6.18
 - Homepage: https://github.com/dave-theunsub/clamtk
 - Code repository:
+
+*Note: updater.sh not available*
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
@@ -548,6 +584,8 @@
 - Version: 20130224_c135151
 - Homepage: https://github.com/LawrenceWoodman/CanAce
 - Code repository:
+
+*Note: updater.sh not available*
 ## FreeFileSync (Cross-platform file sync utility with GUI)
  FreeFileSync is a folder comparison and synchronization software
  that creates and manages backup copies of all your important files.
@@ -573,6 +611,8 @@
 - Version: 20250105_203025_e825ff1
 - Homepage: https://github.com/tom-seddon/b2
 - Code repository:
+
+*Note: updater.sh not available*
 ## arqiver (Simple Qt archive manager)
  arqiver is a simple Qt archive manager. It serves as a front-end for
  libarchive (bsdtar), gzip and 7z. 
@@ -584,6 +624,8 @@
 - Code repository:
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+
+*Note: updater.sh not available*
 ## xAce (A Jupiter Ace emulator for Linux)
  xAce is an emulator for the Jupiter Ace that runs under most flavours
  of Unix. It was written by Edward Patel and based on a ZX81 emulator
@@ -595,6 +637,8 @@
 - Version: 0.5
 - Homepage: https://lawrencewoodman.github.io/xAce/
 - Code repository:
+
+*Note: updater.sh not available*
 ## timeshift (incremental system snapshots, backup and restore)
  Timeshift for Linux is an application that provides functionality
  similar to the System Restore feature in Windows and the Time Machine
@@ -607,6 +651,8 @@
 - Version: 24.06.6
 - Homepage: https://github.com/linuxmint/timeshift
 - Code repository: https://github.com/linuxmint/timeshift
+
+*Note: updater.sh not available*
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
  Maintaining an updated Firefox Standard Rel. on Slackware is now made
  easier with this small program, "firefox-standard-the-latest", a
@@ -619,6 +665,8 @@
 - Version: 1.1
 - Homepage: https://github.com/antonioleal/firefox-standard-the-latest
 - Code repository:
+
+*Note: updater.sh not available*
 ## eightyone (emulator for the range of ZX home computers)
  EightyOne is an emulator for the range of ZX home computers made
  by Sinclair Research (and their clones) in the 1980s, primarily
@@ -688,6 +736,8 @@
 - Version: 2.41
 - Homepage: https://www.gnu.org/software/libc/
 - Code repository: https://ftp.gnu.org/gnu/glibc/
+
+*Note: updater.sh not available*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
@@ -698,6 +748,8 @@
 - Version: 2.8.9
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
+
+*Note: updater.sh not available*
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
@@ -735,6 +787,8 @@
 - Version: 12.0
 - Homepage: https://github.com/chernandezba/zesarux
 - Code repository:
+
+*Note: updater.sh not available*
 ## open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
@@ -795,6 +849,8 @@
 - Code repository: https://www.kphotoalbum.org/download/
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+
+*Note: updater.sh not available*
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
@@ -808,6 +864,8 @@
 - Version: 2.0.3.659
 - Homepage: https://musescore.org/
 - Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
+
+*Note: updater.sh not available*
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
  MuseScore is a free cross platform WYSIWYG music notation program,
  licensed under GNU GPL.
@@ -819,6 +877,8 @@
 - Version: 3.6.2
 - Homepage: http://www.musescore.org/
 - Code repository:
+
+*Note: updater.sh not available*
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
@@ -832,3 +892,5 @@
 *No longer feasible to update with stock Slackware 15.0, unless you install Qt Libraries version 6.2.4, on your own or using SBo:
 
 *In order to install Qt package from SBo you need first to register for a Qt account (free), install the package qt-install-script (available on Slackbuilds.org) and from it run qt-6.2.4-libraries-for-musescore.sh. After that you can proceed to install the latest MuseScore (this package).*
+
+*Note: updater.sh not available*

@@ -2,7 +2,7 @@
 
 # Slackware 0script to generate a README.md
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -56,6 +56,9 @@ do
         if [ -f $DIR/0/updater.sh ]; then
             echo >> $README
             echo "*Note: updater.sh is available for this package*" >> $README
+        else
+            echo >> $README
+            echo "*Note: updater.sh not available*" >> $README
         fi
     fi
 done
