@@ -68,64 +68,6 @@
 - Version: 11.1.0.11723.XA
 - Homepage: https://linux.wps.com/
 - Code repository:
-## cutefish-dock (Cutefish application dock)
- Dock application originally developed for CutefishOS.
-  
-
-- Category: desktop
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/dock
-- Code repository:
-## cutefish-terminal (A terminal emulator for Cutefish)
-
-  
-
-- Category: desktop
-- Version: 0.7
-- Homepage: https://github.com/cutefishos/terminal
-- Code repository:
-## cutefish-icons (icons for cutefish DE)
- Cutefish default icon themes, Crule and Crule-dark.
-  
-
-- Category: desktop
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/icons
-- Code repository:
-## cutefish-settings (CutefishOS settings application)
- System settings for Cutefish
-  
-
-- Category: desktop
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/settings
-- Code repository:
-## cutefish-calculator (desktop calculator for cutefish)
- cutefish-calculator is a simple calculator originally written for
- CutefishOS
-  
-
-- Category: desktop
-- Version: 0.4
-- Homepage: https://github.com/cutefishos/calculator
-- Code repository:
-## cutefish-filemanager (filemanager for CutefishOS)
- cutefish-filemanager is a simple to use, classic PC style filemanager
- originally written for CutefishOS.
-  
-
-- Category: desktop
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/filemanager
-- Code repository:
-## cutefish-screenlocker (CutefishOS screen locker)
- Screen locker application for Cutefish Desktop Environment
-  
-
-- Category: desktop
-- Version: 0.5
-- Homepage: https://github.com/cutefishos/screenlocker
-- Code repository:
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
@@ -139,14 +81,6 @@
 - Code repository:https://github.com/wusel1007/clamav-gui
 
 *Note: updater.sh is available for this package*
-## cutefish-launcher (CutefishOS launcher)
- Launcher application from CutefishOS.
-  
-
-- Category: desktop
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/launcher
-- Code repository:
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
  A simple plugin to allow right-click scanning in Thunar.
   
@@ -154,39 +88,6 @@
 - Category: desktop
 - Version: 0.08
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
-- Code repository:
-## cutefish-gtk-themes (Cutefish GTK+ themes)
- GTK+ theme pack developed for CutefishOS.
-  
-
-- Category: desktop
-- Version: 0.7
-- Homepage: https://github.com/cutefishos/gtk-themes
-- Code repository:
-## cutefish-wallpapers (Wallpapers from CutefishOS)
- Ten official wallpapers from the CutefishOS project.
-  
-
-- Category: desktop
-- Version: 1.0
-- Homepage: https://github.com/cutefishos/wallpapers
-- Code repository:
-## cutefish-core (CutefishOS backend)
- Main component of the Cutefish Desktop Environment.
-  
-
-- Category: desktop
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/core
-- Code repository:
-## cutefish-statusbar (CutefishOS statusbar application)
- The status bar at the top that displays the current status of the
- system, such as time, system tray, etc.
-  
-
-- Category: desktop
-- Version: 0.7
-- Homepage: https://github.com/cutefishos/statusbar
 - Code repository:
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
@@ -761,14 +662,6 @@
 - Code repository: https://github.com/h3poteto/whalebird-desktop
 
 *Note: updater.sh is available for this package*
-## libcutefish (System libraries for Cutefish applications)
- System libraries for Cutefish applications
-  
-
-- Category: libraries
-- Version: 0.7
-- Homepage: https://github.com/cutefishos/libcutefish
-- Code repository:
 ## qt-installer-script (Deploy Qt Libraries in Slackware)
  qt-installer-script is an umbrella script to the standard Qt
  installer to simplify the installation of Qt Libraries in your
@@ -795,14 +688,6 @@
 - Version: 2.41
 - Homepage: https://www.gnu.org/software/libc/
 - Code repository: https://ftp.gnu.org/gnu/glibc/
-## cutefish-qt-plugins (Cutefish Qt integration library)
- Unify Qt application style of CutefishOS
-  
-
-- Category: libraries
-- Version: 0.5
-- Homepage: https://github.com/cutefishos/qt-plugins
-- Code repository:
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
@@ -813,15 +698,6 @@
 - Version: 2.8.9
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
-## fishui (base library for cutefish DE)
- FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every
- Cutefish application uses it.
-  
-
-- Category: libraries
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/fishui
-- Code repository:
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
@@ -833,14 +709,6 @@
 - Code repository: https://github.com/steinbergmedia/vst3sdk
 
 *Note: updater.sh is available for this package*
-## cutefish-kwin-plugins (cutefish plugins for KWin)
- Kwin plugins and configurations for cutefish DE
-  
-
-- Category: libraries
-- Version: 0.8
-- Homepage: https://github.com/cutefishos/kwin-plugins
-- Code repository:
 ## atari_8bit_utils (utilities for atari 8bit machines/emulators)
  atari_8bit_utils contains a set of utilities by Preston Crow for
  atari 8 bit machines or emulators such atari 400/800, XL, XE.
