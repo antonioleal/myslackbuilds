@@ -199,7 +199,7 @@
 
 *In order to install Qt package from SBo you need first to register for a Qt account (free), install the package qt-install-script (available on Slackbuilds.org) and from it run qt-6.2.4-libraries-for-musescore.sh. After that you can proceed to install the latest MuseScore (this package).*
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
