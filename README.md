@@ -157,7 +157,7 @@
 - Homepage: https://github.com/offa/plug
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## tuxguitar (A Multitrack tablature editor and player)
  TuxGuitar is a multitrack guitar tablature editor and player
  written in Java-SWT. It can open GuitarPro, PowerTab, and
