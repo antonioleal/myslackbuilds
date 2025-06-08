@@ -169,7 +169,7 @@
 - Homepage: https://www.tuxguitar.app/
 - Code repository: https://github.com/helge17/tuxguitar
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.
