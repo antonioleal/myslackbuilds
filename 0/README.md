@@ -14,6 +14,8 @@ In order to use these environment the following setup is required:
 
 * Install the package `github-cli` available from SlackBuilds.org
 
+* Install the package `jq` available from SlackBuilds.org
+
 * Install the package `meld` available from SlackBuilds.org
 
 * Other useful package is KDE's `Ark`, specially if you use the **0.sh** menu
@@ -179,14 +181,17 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 
 2. Run `git pull --rebase` on your ~/slackware-builds/slackbuilds folder
 
-3. Delete all accessory branches by running **0delete-branches.sh**
+3. Delete accessory branches by running **0delete-branches.sh all**
 
 4. Run **0clean-tree.sh** to get rid of unneeded tarballs.
 
 5. That's it. Now you are ready to restart the workflow.
 
+##### "During the week":
+Strictly optional, if you constructed updater.sh scripts for your slackbuilds (see my examples), then you can run the scipt **0auto-updater.sh** to check automatically if the upstream developers of your packages have released anything new.
+
 ### Last but not least
-A simple menu describing the complete workflow and helping with the build sequence is provided in the **0.sh** script.
+A simple menu describing the complete workflow and helping with the build sequence is provided in the **0.sh** script (which you can invoke by just typing "**0**" also).
 
 #### Happy Slacking!
 António Leal
