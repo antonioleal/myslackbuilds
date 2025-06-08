@@ -32,7 +32,7 @@ cd $SCRIPT_DIR
 ################################
 TARBALL=Muse_Sounds_Manager_x64.tar.gz
 URL="https://muse-cdn.com/$TARBALL"
-wget $URL
+wget -q $URL
 NEWVERSION=`tar tvfz Muse_Sounds_Manager_x64.tar.gz | head -1 | awk -F "_" '{print $NF}' | cut -d "/" -f 1`
 
 VERSION=`cat version`
