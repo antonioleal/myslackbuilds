@@ -26,7 +26,7 @@
   
 
 - Category: libraries
-- Version: 4.9.0
+- Version: 4.10.0
 - Homepage: https://github.com/antonioleal/qt-installer-script
 - Code repository:
 
