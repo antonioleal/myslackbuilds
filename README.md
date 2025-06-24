@@ -756,7 +756,7 @@
   
 
 - Category: libraries
-- Version: 3.7.13
+- Version: 3.7.14
 - Homepage: https://www.steinberg.net/developers/
 - Code repository: https://github.com/steinbergmedia/vst3sdk
 
