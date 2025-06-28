@@ -141,6 +141,20 @@
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
 
 *Note: updater.sh not available*
+## ardour (Professional Audio Editing)
+ Ardour is an application to fit the needs of musicians under
+ Linux. It is designed to be a fully functional professional
+ audio application, that uses the professional sound server
+ jack for sound i/o.
+ Homepage: http://ardour.org
+  
+
+- Category: audio
+- Version: 8.12.0
+- Homepage: http://ardour.org
+- Code repository:
+
+*Note: updater.sh not available*
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
