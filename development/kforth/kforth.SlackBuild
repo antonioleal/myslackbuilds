@@ -2,7 +2,7 @@
 
 # Slackware build script for kForth-32 branch 1.x.x
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # Modified by SlackBuilds.org on 2022/03/18
 # Copyright 2022 G. Schoenmakers <gschoen@iinet.net.au>
 # All rights reserved.
@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=kforth
 VERSION=${VERSION:-1.8.0}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 TARBALL=${TARBALL:-kForth-32-$VERSION}

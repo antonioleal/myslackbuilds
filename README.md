@@ -549,7 +549,7 @@
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## kForth-32 (32-bit Forth System for x86-GNU/Linux)
  kForth-32 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
