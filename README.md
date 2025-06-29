@@ -564,7 +564,7 @@
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## smartgit (Desktop Git Client)
  SmartGit is a commercial desktop git client that provides a
  free non-commercial use license. You need to apply for this license
