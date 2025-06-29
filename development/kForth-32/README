@@ -15,4 +15,3 @@ kForth-32 is designed to be installed on a 32-bit linux operating
 system.
 It will not install on 64-bit Slackware unless multilib support is
 installed.
-
