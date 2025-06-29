@@ -1,4 +1,4 @@
-*This repo contains slackbuild scripts, some of which are also published to SlackBuilds.org*
+*This repo contains my slackbuild scripts, some of which are also published to SlackBuilds.org*
 
 ---
 
@@ -630,7 +630,7 @@
   
 
 - Category: development
-- Version: 15.3.5
+- Version: 15.4
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
