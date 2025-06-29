@@ -76,7 +76,7 @@
   
 
 - Category: office
-- Version: 25.2.1.2
+- Version: 25.2.5.1
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 
