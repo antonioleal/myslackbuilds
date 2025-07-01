@@ -846,7 +846,7 @@
   
 
 - Category: academic
-- Version: 1.3.8a
+- Version: 1.3.9
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://codeberg.org/thomasokken/plus42desktop
 
