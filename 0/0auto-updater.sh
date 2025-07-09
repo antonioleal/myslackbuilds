@@ -37,10 +37,10 @@ do
         echo
         if ! [ "$RET0" = "" ]
         then
-            read -p "Continue (Y/n) " op
-            if [ "$op" = "n" ] || [ "$op" = "N" ]
+            read -p "Spawn work Konsole ? (Y/n) " op
+            if [ "$op" = "y" ] || [ "$op" = "Y" ]
             then
-                exit 0
+                konsole --workdir ~/slackware-builds/myslackbuilds/$updaterdir
             fi
         fi
     else
