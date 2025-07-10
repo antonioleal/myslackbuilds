@@ -24,6 +24,16 @@
 
 #set -e
 clear
+
+cd ~/slackware-builds/slackbuilds
+git checkout master
+echo
+echo "Before:"
+echo "------------------------------------------"
+git branch -a
+echo "------------------------------------------"
+echo
+
 if [ "$1" == "" ]
 then
     echo "Error: please specify branch name or 'all' as parameter"
@@ -31,8 +41,6 @@ then
 else
     if [ "$1" == "all" ]
     then
-        cd ~/slackware-builds/slackbuilds
-        git checkout master
         echo
         for b in `git branch | grep -v "master"`
         do
@@ -53,6 +61,7 @@ else
     git fetch --prune
 fi
 echo
+echo "After:"
 echo "------------------------------------------"
 git branch -a
 echo "------------------------------------------"
