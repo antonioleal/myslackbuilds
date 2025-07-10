@@ -95,7 +95,7 @@ else
     # write templates              #
     ################################
     MD51=`md5sum ../$TARBALL1 | cut -d " " -f 1`
-    MD52=`md5sum ../$TARBALL1 | cut -d " " -f 1`
+    MD52=`md5sum ../$TARBALL2 | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
 
     sed -e "s/_version_/${NEWVERSION}/g" \
