@@ -38,9 +38,9 @@ do
         if ! [ "$RET0" = "" ]
         then
             read -p "Spawn work Konsole ? (Y/n) " op
-            if [ "$op" = "y" ] || [ "$op" = "Y" ]
+            if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]
             then
-                konsole --workdir ~/slackware-builds/myslackbuilds/$updaterdir
+                konsole --workdir ~/slackware-builds/myslackbuilds/$updaterdir/..
             fi
         fi
     else

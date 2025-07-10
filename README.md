@@ -316,7 +316,7 @@
   
 
 - Category: development
-- Version: 24.1.3
+- Version: 24.1.4
 - Homepage: https://www.syntevo.com/smartgit
 - Code repository: https://www.syntevo.com/smartgit/download/
 
