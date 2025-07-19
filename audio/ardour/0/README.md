@@ -1,2 +1,2 @@
 - Homepage: http://ardour.org
-- Code repository:
+- Code repository: go to Ardour.org and press download the source code tar archive
