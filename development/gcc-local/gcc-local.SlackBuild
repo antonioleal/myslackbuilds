@@ -2,7 +2,7 @@
 
 # Slackware build script for gcc-local
 
-# Copyright 2024 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2024-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,8 +25,8 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=gcc-local
-VERSION=${VERSION:-13.4.0}
-PKGNAM=${PRGNAM}_${VERSION//./_}  # Defined in order to allow install multiple glibc versions
+VERSION=${VERSION:-15.1.0}
+PKGNAM=${PRGNAM}_${VERSION//./_}  # Defined in order to allow install multiple gcc versions
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -86,19 +86,19 @@ cd b
 # CFLAGS="$SLKCFLAGS" \
 # CXXFLAGS="$SLKCFLAGS" \
 # ../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++,fortran,go
-../configure --prefix=/opt/$PRGNAM-$VERSION --disable-multilib --enable-languages=c,c++
+../configure --prefix=/opt/gcc-$VERSION --disable-multilib --enable-languages=c,c++
 make -j10
 make install DESTDIR=$PKG
 
-chmod +x $PKG/opt/$PRGNAM-$VERSION/lib64/libgcc_s.so.1
+chmod +x $PKG/opt/gcc-$VERSION/lib64/libgcc_s.so.1
 
 # rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 # find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
 #   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # Install the loader
-cp $CWD/load-gcc.sh $PKG/opt/$PRGNAM-$VERSION
-chmod +x $PKG/opt/$PRGNAM-$VERSION/load-gcc.sh
+cp $CWD/load-gcc.sh $PKG/opt/gcc-$VERSION
+chmod +x $PKG/opt/gcc-$VERSION/load-gcc.sh
 # mkdir -p $PKG/usr/bin
 # ( cd $PKG/usr/bin ; rm -rf load-gcc-13.2.0 )
 # ( cd $PKG/usr/bin ; ln -s ../../opt/$PRGNAM-$VERSION/load-gcc-13.2.0.sh load-gcc-13.2.0 )

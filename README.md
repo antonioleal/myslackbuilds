@@ -39,7 +39,7 @@
   
 
 - Category: libraries
-- Version: 2.41
+- Version: 2.35
 - Homepage: https://www.gnu.org/software/libc/
 - Code repository: https://ftp.gnu.org/gnu/glibc/
 
@@ -677,7 +677,7 @@
   
 
 - Category: development
-- Version: 13.4.0
+- Version: 15.1.0
 - Homepage: https://gcc.gnu.org/
 - Code repository: https://github.com/gcc-mirror/gcc
 
