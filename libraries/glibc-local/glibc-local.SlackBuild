@@ -26,6 +26,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=glibc-local
 VERSION=${VERSION:-2.41}
+PKGNAM=${PRGNAM}_${VERSION//./_}  # Redefined in order to allow install multiple glibc versions
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -79,7 +80,7 @@ mkdir -p ${PRGNAM}-$VERSION-build
 cd ${PRGNAM}-$VERSION-build
 ../glibc-${VERSION}/configure CFLAGS="$SLKCFLAGS" --prefix=/opt/glibc-$VERSION
 
-make -j 10
+make -j 12
 make install DESTDIR=$PKG
 
 #find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
@@ -93,4 +94,5 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+# /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
