@@ -265,7 +265,7 @@
   
 
 - Category: network
-- Version: 6.2.3
+- Version: 6.2.4
 - Homepage: https://whalebird.social
 - Code repository: https://github.com/h3poteto/whalebird-desktop
 
