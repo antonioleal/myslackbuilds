@@ -677,7 +677,7 @@
   
 
 - Category: development
-- Version: 15.1.0
+- Version: 13.4.0
 - Homepage: https://gcc.gnu.org/
 - Code repository: https://github.com/gcc-mirror/gcc
 
