@@ -617,7 +617,7 @@
   
 
 - Category: development
-- Version: 4.0
+- Version: 4.2
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
 
