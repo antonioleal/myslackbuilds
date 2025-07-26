@@ -294,7 +294,7 @@
   
 
 - Category: system
-- Version: 14.3
+- Version: 14.4
 - Homepage: https://freefilesync.org/
 - Code repository: https://freefilesync.org/
 
@@ -347,6 +347,7 @@
 - Homepage: https://github.com/Thomas-Tsai/partclone
 - Code repository: https://github.com/Thomas-Tsai/partclone
 
+*Mamba and Coral backups are made with versions ranging from 0.3.32 to 0.3.37*
 
 *Note: updater.sh not available*
 ## arqiver (Simple Qt archive manager)
