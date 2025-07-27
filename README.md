@@ -349,7 +349,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/Thomas-Tsai/partclone
 - Code repository: https://github.com/Thomas-Tsai/partclone
 
-*Mamba and Coral backups are made with versions ranging from 0.3.32 to 0.3.37*
+*Private note Mamba and Coral backups are made with version 0.3.37*
 
 *Note: updater.sh is available for this package*
 ## arqiver (Simple Qt archive manager)
