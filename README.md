@@ -333,7 +333,7 @@
 - Homepage: https://github.com/tom-seddon/b2
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## partclone (utility to clone various filesystems)
  Partclone is a program similar to the well-known backup utility
  "Partition Image" a.k.a partimage. Partclone provides utilities to
