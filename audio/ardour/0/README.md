@@ -1,2 +1,4 @@
 - Homepage: http://ardour.org
-- Code repository: go to Ardour.org and press download the source code tar archive
+- Code repository: https://github.com/Ardour/ardour
+
+Instead of github go to Ardour.org and press download to get the source code tar archive

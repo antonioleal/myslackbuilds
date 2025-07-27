@@ -152,9 +152,11 @@
 - Category: audio
 - Version: 8.12.0
 - Homepage: http://ardour.org
-- Code repository: go to Ardour.org and press download the source code tar archive
+- Code repository: https://github.com/Ardour/ardour
 
-*Note: updater.sh not available*
+Instead of github go to Ardour.org and press download to get the source code tar archive
+
+*Note: updater.sh is available for this package*
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
