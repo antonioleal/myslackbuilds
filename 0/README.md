@@ -1,9 +1,9 @@
 ## The Zero Scripts Setup
 
-*This folder contains a simple set of Slackware auxiliary scripts, so called zero ("0") scripts, it presents, in fact, one possible setup for you to collaborate with SlackBuilds.org*
+*This folder contains a simple set of Slackware auxiliary scripts, the so called zero ("0") scripts. They present, in fact, one possible setup for you to collaborate with SlackBuilds.org*
 
 
-Why the "0"? Because with *bash* it's very useful when you type 0 and press TAB to see what operations you can make in this environment *and* does not interfere with any other program in your Slackware box. Nice and tidy..
+Why the "0"? Because with *bash* it's very useful when you type 0 and press TAB twice to see what operations you can make in this environment *and* does not interfere with any other program in your Slackware box. Nice and tidy..
 
 ---
 
@@ -74,6 +74,9 @@ In the end your work environment should look like this:
 
 ... and you are ready to go!
 
+### The menu
+A simple menu describing the complete workflow and helping with the build sequence is provided in the **0.sh** script (which you can invoke by just typing "**0**" also). You need to start it from the slackbuild folder as it reads the .info file.
+
 ### The scripts
 With a few exceptions the zero ("0") scripts are meant to be started from the slackbuild directory. Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild. Have a look at my own setup.
 
@@ -141,6 +144,8 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Script: 0slackware-package-dependencies.sh
     Effect: Inspect a binary file and check discover its package dependencies.
 
+    Script: 0auto-updater.sh
+    Effect: Check a multitude of sites to know if new versions are available.
 
 
 ### Workflows
@@ -189,9 +194,6 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 
 ##### "During the week":
 Strictly optional, if you constructed updater.sh scripts for your slackbuilds (see my examples), then you can run the scipt **0auto-updater.sh** to check automatically if the upstream developers of your packages have released anything new.
-
-### Last but not least
-A simple menu describing the complete workflow and helping with the build sequence is provided in the **0.sh** script (which you can invoke by just typing "**0**" also).
 
 #### Happy Slacking!
 António Leal
