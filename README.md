@@ -351,7 +351,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 *Mamba and Coral backups are made with versions ranging from 0.3.32 to 0.3.37*
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## arqiver (Simple Qt archive manager)
  arqiver is a simple Qt archive manager. It serves as a front-end for
  libarchive (bsdtar), gzip and 7z. 
