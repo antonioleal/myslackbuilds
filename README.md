@@ -548,7 +548,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 1.1.26
+- Version: 1.1.27
 - Homepage:  http://doublecmd.sourceforge.net
 - Code repository: http://doublecmd.sourceforge.net
 
