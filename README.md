@@ -157,6 +157,17 @@
 Instead of github go to Ardour.org and press download to get the source code tar archive
 
 *Note: updater.sh is available for this package*
+## sndio (small audio and MIDI framework)
+ Sndio is a small audio and MIDI framework, part of the OpenBSD
+ project, and ported to FreeBSD, Linux and NetBSD. It provides
+ a lightweight audio & MIDI server and a fully documented
+ user-space API to access either the server or the hardware
+ directly in a uniform way.
+ https://sndio.org/
+  
+
+- Category: audio
+- Version: 1.10.0
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
