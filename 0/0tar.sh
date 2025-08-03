@@ -33,6 +33,7 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='*.tar'       \
     --exclude='*.tgz'       \
     --exclude='*.txz'       \
+    --exclude='*.xz'        \
     --exclude='*.bz2'       \
     --exclude='*.zip'       \
     --exclude='*.md'        \
