@@ -72,6 +72,14 @@
 - Code repository:
 
 *Note: updater.sh not available*
+## ledger-live (Ledger Hardware Wallet Manager)
+ A manager for your Ledger hardware wallet.
+ Install applications, update firmware, buy crypto, etc.
+ https://librewolf.net/
+  
+
+- Category: office
+- Version: 2.122.1
 ## dapper (Desktop Applications Autostarter)
  Simple lightweight desktop application auto-starter. It will read
  .desktop files in the autostart directories, all according to the
