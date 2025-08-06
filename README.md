@@ -72,6 +72,17 @@
 - Code repository:
 
 *Note: updater.sh not available*
+## dapper (Desktop Applications Autostarter)
+ Simple lightweight desktop application auto-starter. It will read
+ .desktop files in the autostart directories, all according to the
+ FreeDesktop autostart specifications. You can define which desktop to
+ start applications for (e.g. GNOME, XFCE, etc) in configuration file
+ (~/.config/dapper.conf) or from command line.
+ https://github.com/limine-bootloader/limine
+  
+
+- Category: desktop
+- Version: 1.0.0
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
