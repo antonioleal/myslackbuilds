@@ -655,6 +655,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh not available*
+## catatonit (Container init)
+ A container init that is so simple it's effectively brain-dead.
+ https://github.com/openSUSE/catatonit
+  
+
+- Category: system
+- Version: 0.2.1
 ## timeshift (incremental system snapshots, backup and restore)
  Timeshift for Linux is an application that provides functionality
  similar to the System Restore feature in Windows and the Time Machine
