@@ -748,11 +748,11 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 141.0_1
+- Version: 141.0.2_1
 - Homepage: https://librewolf.net/
 - Code repository: https://codeberg.org/librewolf/source/releases
 - Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## qt-installer-script (Deploy Qt Libraries in Slackware)
  qt-installer-script is an umbrella script to the standard Qt
  installer to simplify the installation of Qt Libraries in your
