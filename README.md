@@ -740,6 +740,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
 
 *Note: updater.sh is available for this package*
+## librespeed-cli (LibreSpeed CLI)
+ Command line program to test internet connection speed.
+ Homepage: https://github.com/librespeed/speedtest-cli
+  
+
+- Category: network
+- Version: 1.0.12
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
