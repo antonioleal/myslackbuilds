@@ -880,6 +880,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## swege (Static WEbsite GEnerator)
+ Bloat free static website generator written in C99.
+ https://github.com/sakhmatd/swege
+  
+
+- Category: misc
+- Version: 2.1.0
 ## open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
