@@ -585,6 +585,14 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/stardot/b-em
 
 *Note: updater.sh is available for this package*
+## limine (Modern, advanced, portable, multiprotocol bootloader)
+ Limine is a modern, advanced, portable, multiprotocol bootloader,
+ also limine: used as the reference implementation for the Limine
+ boot protocol.
+  
+
+- Category: system
+- Version: 9.6.0
 ## google-chrome-the-latest (Google Chrome Updater Script)
  Maintaining an updated Chrome Browser on Slackware is now made
  easier with this small program, "google-chrome-the-latest", a simple
