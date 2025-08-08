@@ -37,10 +37,10 @@ NEWVERSION=${NEWVERSION//-/_}
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+    echo "$PRGNAM is at version $VERSION."
     export RET0=""
 else
-    echo "updater.sh says $PRGNAM thereis a new version $VERSION, but you need to update it manually."
+    echo "$PRGNAM thereis a new version $VERSION, but you need to update it manually."
     echo $NEWVERSION > version
     export RET0=$NEWVERSION
 fi

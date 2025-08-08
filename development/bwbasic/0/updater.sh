@@ -39,7 +39,7 @@ URL2="https://sourceforge.net/projects/bwbasic/files/bwbasic/version%203.20/${TA
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+    echo "$PRGNAM is at version $VERSION."
     export RET0=""
 else
     ################################
@@ -79,6 +79,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
+    echo "$PRGNAM has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

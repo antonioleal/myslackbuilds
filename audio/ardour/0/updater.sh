@@ -35,10 +35,10 @@ NEWVERSION=$(curl -s https://github.com/Ardour/ardour/tags | grep ".zip" | head 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+    echo "$PRGNAM is at version $VERSION."
     export RET0=""
 else
     echo "$NEWVERSION" > version
-    echo "updater.sh says $PRGNAM has a new version $NEWVERSION", but you need to update it manually.
+    echo "$PRGNAM has a new version $NEWVERSION", but you need to update it manually.
     export RET0=$NEWVERSION
 fi

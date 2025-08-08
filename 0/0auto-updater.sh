@@ -31,10 +31,8 @@ do
     if [ "$updaterdir" == "./0" ] || [ "$updaterdir" == "./0/0" ]; then
         continue
     elif [ -f $updaterdir/updater.sh ]; then
-        echo "Running $updaterdir/updater.sh"
         RET0=""
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater.sh
-        echo
         if ! [ "$RET0" = "" ]
         then
             read -p "Spawn work Konsole ? (Y/n) " op
@@ -46,8 +44,7 @@ do
     else
         cd $updaterdir/..
         PKGNAME=${PWD##*/}
-        echo "No updater.sh for $PKGNAME"
-        echo
+        echo "* $PKGNAME has no updater.sh"
     fi
 done
 echo "Done."

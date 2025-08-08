@@ -36,10 +36,10 @@ NEWVERSION=`curl -s https://download.qt.io/official_releases/qt-installer-framew
 source ../$PRGNAM.info
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+    echo "$PRGNAM is at version $VERSION."
     export RET0=""
 else
     echo "$NEWVERSION" > version
-    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
+    echo "$PRGNAM has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

@@ -38,7 +38,7 @@ URL="https://github.com/stardot/b-em/archive/${NEWVERSION}/${TARBALL}"
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+    echo "$PRGNAM is at version $VERSION."
     export RET0=""
 else
     ################################
@@ -63,6 +63,6 @@ else
     sed -e "s/_version_/${NEWVERSION}/" -e "s/_fullversion_/${DATEVERSION}_${NEWVERSION}/" -e "s/_commit_/${COMMIT}/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
+    echo "$PRGNAM has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

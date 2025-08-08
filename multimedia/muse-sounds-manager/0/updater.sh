@@ -38,7 +38,7 @@ NEWVERSION=`tar tvfz Muse_Sounds_Manager_x64.tar.gz | head -1 | awk -F "_" '{pri
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "updater.sh says $PRGNAM is already at version $VERSION. No new update."
+    echo "$PRGNAM is at version $VERSION."
     export RET0=""
     rm -rf $TARBALL
 else
@@ -70,6 +70,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "updater.sh says $PRGNAM has a new version $NEWVERSION"
+    echo "$PRGNAM has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi
