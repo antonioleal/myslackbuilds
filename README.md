@@ -918,6 +918,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## tinytldr (tldr.sh command line client)
+ Minimalist https://tldr.sh command line client in C99.
+ https://github.com/kovmir/tinytldr
+  
+
+- Category: misc
+- Version: 1.2.0
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
  Plus42 is an advanced scientific programmable calculator, based on
  Free42 (a complete re-implementation of the HP-42S scientific
