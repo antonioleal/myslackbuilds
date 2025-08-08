@@ -733,6 +733,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 *Private note: Mamba and Coral backups are made with version 0.3.37*
 
 *Note: updater.sh is available for this package*
+## sdwmbar (dwm status bar)
+ Simple suckless dwm status bar
+ https://github.com/sakhmatd/sdwmbar
+  
+
+- Category: system
+- Version: 1.5
 ## eightyone (emulator for the range of ZX home computers)
  EightyOne is an emulator for the range of ZX home computers made
  by Sinclair Research (and their clones) in the 1980s, primarily
