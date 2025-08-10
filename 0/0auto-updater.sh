@@ -24,9 +24,12 @@
 
 # Note: In order for this to work please install the jq package from SBo
 
+echo
+counter=0
 cd ~/slackware-builds/myslackbuilds
 for updaterdir in `find . -name "0" -print`
 do
+    counter=$((counter+1))
     cd ~/slackware-builds/myslackbuilds
     if [ "$updaterdir" == "./0" ] || [ "$updaterdir" == "./0/0" ]; then
         continue
@@ -47,4 +50,5 @@ do
         echo "* $PKGNAME has no updater.sh"
     fi
 done
-echo "Done."
+echo
+echo "Checked $counter packages. Done."
