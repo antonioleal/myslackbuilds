@@ -715,6 +715,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: system
 - Version: 0.2.1
+- Homepage: https://github.com/openSUSE/catatonit
+- Code repository:
+
+*Note: updater.sh not available*
 ## timeshift (incremental system snapshots, backup and restore)
  Timeshift for Linux is an application that provides functionality
  similar to the System Restore feature in Windows and the Time Machine
