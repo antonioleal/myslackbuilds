@@ -59,7 +59,7 @@ cd $SCRIPT_DIR
 #TARBALL=lazarus-${NEWVERSION}-0.tar.gz
 #URL="http://downloads.sourceforge.net/lazarus/${TARBALL}"
 
-TAG=`git ls-remote  https://codeberg.org/thomasokken/plus42desktop | tail -n1 | cut -d"/" -f 3`
+TAG=`lynx -accept_all_cookies -dump  https://codeberg.org/thomasokken/plus42desktop/tags | grep "src/tag" | head -1 | awk -F"/" '{ print $NF }'`
 NEWVERSION=${TAG:1}
 TARBALL=${TAG}.tar.gz
 URL="https://codeberg.org/thomasokken/plus42desktop/archive/${TAG}.tar.gz"

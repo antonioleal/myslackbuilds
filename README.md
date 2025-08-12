@@ -948,7 +948,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: academic
-- Version: 1.3.9
+- Version: 1.3.10c
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://codeberg.org/thomasokken/plus42desktop
 
