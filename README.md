@@ -94,6 +94,10 @@
 
 - Category: desktop
 - Version: 1.0.0
+- Homepage: https://github.com/jjk-jacky/dapper
+- Code repository:
+
+*Note: updater.sh not available*
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin

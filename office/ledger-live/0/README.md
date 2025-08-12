@@ -1,0 +1,2 @@
+- Homepage: https://www.ledger.com/ledger-live
+- Code repository: https://www.ledger.com/ledger-live
