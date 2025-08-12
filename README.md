@@ -529,6 +529,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: audio
 - Version: 1.10.0
+- Homepage: https://sndio.org/
+- Code repository:
+
+*Note: updater.sh not available*
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.
