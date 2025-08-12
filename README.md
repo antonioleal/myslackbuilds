@@ -75,7 +75,6 @@
 ## ledger-live (Ledger Hardware Wallet Manager)
  A manager for your Ledger hardware wallet.
  Install applications, update firmware, buy crypto, etc.
- https://librewolf.net/
   
 
 - Category: office
