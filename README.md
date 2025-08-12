@@ -967,6 +967,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: misc
 - Version: 1.2.0
+- Homepage: https://github.com/kovmir/tinytldr#readme
+- Code repository:
+
+*Note: updater.sh not available*
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
  Plus42 is an advanced scientific programmable calculator, based on
  Free42 (a complete re-implementation of the HP-42S scientific
