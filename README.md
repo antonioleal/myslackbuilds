@@ -79,6 +79,10 @@
 
 - Category: office
 - Version: 2.122.1
+- Homepage: https://www.ledger.com/ledger-live
+- Code repository: https://www.ledger.com/ledger-live
+
+*Note: updater.sh not available*
 ## dapper (Desktop Applications Autostarter)
  Simple lightweight desktop application auto-starter. It will read
  .desktop files in the autostart directories, all according to the
