@@ -30,7 +30,7 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=`curl -s https://www.syntevo.com/smartgit/download/ | grep "Version" | head -1 | awk -F " " '{ print $2 }'`
+NEWVERSION=`lynx -dump https://www.smartgit.dev/download/  | grep "Version" | head -1 | awk -F " " '{ print $2 }'`
 FILE_VERSION=${NEWVERSION//./_}
 TARBALL=smartgit-linux-${FILE_VERSION}.tar.gz
 URL="https://downloads.syntevo.com/downloads/smartgit/${TARBALL}"
