@@ -796,6 +796,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: network
 - Version: 1.0.12
+- Homepage: https://github.com/librespeed/speedtest-cli
+- Code repository:
+
+*Note: updater.sh not available*
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
