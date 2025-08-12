@@ -770,6 +770,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: system
 - Version: 1.5
+- Homepage: https://github.com/sakhmatd/sdwmbar
+- Code repository:
+
+*Note: updater.sh not available*
 ## eightyone (emulator for the range of ZX home computers)
  EightyOne is an emulator for the range of ZX home computers made
  by Sinclair Research (and their clones) in the 1980s, primarily
