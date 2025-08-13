@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for b2
+# Slackware updater script to bypass updater.sh checks
 
 # Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,25 +22,9 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=b2
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
-
-################################
-# check versions               #
-################################
-TAG=$(curl -s https://api.github.com/repos/tom-seddon/b2/releases/latest | jq -r '.tag_name')
-NEWVERSION=${TAG:3}
-NEWVERSION=${NEWVERSION//-/_}
-
-VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ]
-then
-    echo "$PRGNAM is at version $VERSION (notification)"
-    export RET0=""
-else
-    echo "$PRGNAM thereis a new version $VERSION, but you need to update it manually."
-    echo $NEWVERSION > version
-    export RET0=$NEWVERSION
-fi
+source ../*.info
+echo "$PRGNAM is at version $VERSION (bypass)"
+export RET0=""
