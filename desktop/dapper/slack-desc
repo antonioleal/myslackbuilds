@@ -15,5 +15,5 @@ dapper: start applications for (e.g. GNOME, XFCE, etc) in configuration file
 dapper: (~/.config/dapper.conf) or from command line.
 dapper:
 dapper:
-dapper: https://github.com/limine-bootloader/limine
+dapper:
 dapper:
