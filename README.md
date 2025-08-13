@@ -89,7 +89,6 @@
  FreeDesktop autostart specifications. You can define which desktop to
  start applications for (e.g. GNOME, XFCE, etc) in configuration file
  (~/.config/dapper.conf) or from command line.
- https://github.com/limine-bootloader/limine
   
 
 - Category: desktop
@@ -120,7 +119,7 @@
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
@@ -193,7 +192,7 @@
 *Not possible to build with Slackware 15.0 - needs newer autoconf*
 
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## bbcsdl (BBC BASIC for linux)
  BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
  cross-platform implementation of BBC BASIC for Windows, MacOS,
@@ -393,7 +392,7 @@
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
@@ -517,14 +516,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## sndio (small audio and MIDI framework)
  Sndio is a small audio and MIDI framework, part of the OpenBSD
  project, and ported to FreeBSD, Linux and NetBSD. It provides
  a lightweight audio & MIDI server and a fully documented
  user-space API to access either the server or the hardware
  directly in a uniform way.
- https://sndio.org/
   
 
 - Category: audio
@@ -547,7 +545,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://zoomcorp.com/en/jp/
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## brave-browser-the-latest (brave browser updater script)
  Maintaining an updated Brave Browser on Slackware is now made
  easier with this small program, "brave-browser-the-latest", a simple
@@ -563,7 +561,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Development: https://github.com/brave/brave-browser
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## yaze-ag (yet another z80 emulator )
  is designed to provide an exact simulation of the Z80 microprocessor.
  It is fast, emulates undocumented opcodes, and passes instruction
@@ -631,7 +629,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/antonioleal/google-chrome-the-latest
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## clamtk (A frontend for ClamAV)
  ClamTk is a frontend for ClamAV using perl-Gtk3.
  It is intended to be an easy to use, light-weight,
@@ -643,7 +641,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/dave-theunsub/clamtk
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
@@ -654,7 +652,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/LawrenceWoodman/CanAce
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## FreeFileSync (Cross-platform file sync utility with GUI)
  FreeFileSync is a folder comparison and synchronization software
  that creates and manages backup copies of all your important files.
@@ -707,7 +705,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://lawrencewoodman.github.io/xAce/
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## catatonit (Container init)
  A container init that is so simple it's effectively brain-dead.
  https://github.com/openSUSE/catatonit
@@ -746,7 +744,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/antonioleal/firefox-standard-the-latest
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## partclone (utility to clone various filesystems)
  Partclone is a program similar to the well-known backup utility
  "Partition Image" a.k.a partimage. Partclone provides utilities to
@@ -866,7 +864,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://www.gnu.org/software/libc/
 - Code repository: https://ftp.gnu.org/gnu/glibc/
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
@@ -1001,7 +999,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
@@ -1029,7 +1027,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: http://www.musescore.org/
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
