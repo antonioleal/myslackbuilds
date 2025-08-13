@@ -38,7 +38,7 @@ URL="https://github.com/mynenik/kForth-64/archive/refs/tags/${TAG}/${TARBALL}"
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

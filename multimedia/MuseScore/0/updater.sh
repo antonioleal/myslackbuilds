@@ -38,7 +38,7 @@ URL="https://github.com/musescore/MuseScore/archive/$TAG/$TARBALL"
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

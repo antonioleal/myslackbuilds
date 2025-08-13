@@ -38,7 +38,7 @@ NEWVERSION=`tar tvfz Muse_Sounds_Manager_x64.tar.gz | head -1 | awk -F "_" '{pri
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
     rm -rf $TARBALL
 else

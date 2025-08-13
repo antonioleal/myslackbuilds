@@ -37,7 +37,7 @@ URL="https://github.com/Thomas-Tsai/partclone/archive/0.3.37/$TARBALL"
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

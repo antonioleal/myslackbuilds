@@ -58,7 +58,7 @@ TARBALL=wxFormBuilder-${NEWVERSION}-source-full.tar.gz
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "wxFormBuilder is at version $VERSION."
+    echo "wxFormBuilder is at version $VERSION"
     export RET0=""
 else
     ################################

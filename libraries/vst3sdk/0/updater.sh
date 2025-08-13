@@ -75,7 +75,7 @@ u=( $URL1 $URL2 $URL3 $URL4 $URL5 $URL6 $URL7 $URL8 )
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

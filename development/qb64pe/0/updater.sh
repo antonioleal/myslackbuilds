@@ -37,7 +37,7 @@ URL="https://github.com/QB64-Phoenix-Edition/QB64pe/archive/v${NEWVERSION}/${TAR
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

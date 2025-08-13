@@ -37,7 +37,7 @@ URL="https://downloads.sourceforge.net/project/doublecmd/Double%20Commander%20So
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

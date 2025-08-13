@@ -39,7 +39,7 @@ URL="https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/${RE
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

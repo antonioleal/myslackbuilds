@@ -38,7 +38,7 @@ URL="https://github.com/pcrow/atari_8bit_utils/archive/${NEWVERSION}/atari_8bit_
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

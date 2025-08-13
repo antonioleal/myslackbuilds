@@ -38,7 +38,7 @@ URL="https://github.com/offa/plug/archive/v1.4.5/$TARBALL"
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

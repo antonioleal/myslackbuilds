@@ -58,7 +58,7 @@ URL="https://cdn1.waterfox.net/waterfox/releases/${NEWVERSION}/Linux_x86_64/wate
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

@@ -67,7 +67,7 @@ URL="https://codeberg.org/thomasokken/plus42desktop/archive/${TAG}.tar.gz"
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

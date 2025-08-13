@@ -38,7 +38,7 @@ URL="https://downloads.smartsvn.com/downloads/smartsvn/${TARBALL}"
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

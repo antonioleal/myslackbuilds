@@ -37,7 +37,7 @@ URL="https://sourceforge.net/projects/minforth/files/${TARBALL}"
 VERSION=`cat version`
 if [ "$VERSION" = "$PREFIX" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

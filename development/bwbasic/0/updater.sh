@@ -39,7 +39,7 @@ URL2="https://sourceforge.net/projects/bwbasic/files/bwbasic/version%203.20/${TA
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

@@ -66,7 +66,7 @@ URL2="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/$
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

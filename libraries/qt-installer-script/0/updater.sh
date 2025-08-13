@@ -36,7 +36,7 @@ NEWVERSION=`curl -s https://download.qt.io/official_releases/qt-installer-framew
 source ../$PRGNAM.info
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     echo "$NEWVERSION" > version

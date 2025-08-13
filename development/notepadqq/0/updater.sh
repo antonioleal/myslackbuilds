@@ -39,7 +39,7 @@ URL="https://github.com/notepadqq/notepadqq/archive/${COMMIT}/notepadqq-${COMMIT
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################

@@ -38,7 +38,7 @@ URL="https://github.com/QB64Official/qb64/archive/v${NEWVERSION}/${TARBALL}"
 source ../qb64.info
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION."
+    echo "$PRGNAM is at version $VERSION"
     export RET0=""
 else
     ################################
