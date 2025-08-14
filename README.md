@@ -163,6 +163,23 @@
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## JAForth (An interpreter for the Jupiter ACE Forth)
+ This package contains three command-line programs:
+ - JAForth: An interpreter for the Jupiter ACE Forth, written in
+ Python, that can also compile to a Jupiter-format or Spectrum-format
+ .TAP tape file.
+ - jforth: A headless Jupiter ACE emulator which runs the Jupiter ACE
+ Forth, reading the input from a file and writing the output to
+ standard output.
+ - JADecompile: A Jupiter ACE Forth .TAP decompiler.
+  
+
+- Category: development
+- Version: 20250115_bfedbd4
+- Homepage: https://www.thomasokken.com/plus42
+- Code repository: https://codeberg.org/thomasokken/plus42desktop
+
+*Note: updater.sh not available*
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
