@@ -1,3 +1,6 @@
+A set of programs written Pedro Gimeno, and offered under the Expat
+license (one of the many MIT licenses).
+
 This package contains three command-line programs:
 
 - JAForth: An interpreter for the Jupiter ACE Forth, written in
