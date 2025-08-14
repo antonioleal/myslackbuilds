@@ -288,7 +288,7 @@
   
 
 - Category: development
-- Version: 8.8.4
+- Version: 8.8.5
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 
