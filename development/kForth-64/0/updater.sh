@@ -31,7 +31,7 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 #TAG=`git ls-remote https://github.com/mynenik/kForth-64 | tail -1 | awk -F "[/^]" '{print $3}'`
-TAG=`lynx --dump https://github.com/mynenik/kForth-64/tags | grep "releases/tag" | head -1 | awk -F"/" '{ print $NF }'`
+TAG=`lynx --dump https://github.com/mynenik/kForth-64/tags | grep "releases/tag/" | head -1 | awk -F"/" '{ print $NF }'`
 NEWVERSION=${TAG:1}
 TARBALL=${PRGNAM}-${NEWVERSION}.tar.gz
 URL="https://github.com/mynenik/kForth-64/archive/refs/tags/${TAG}/${TARBALL}"
