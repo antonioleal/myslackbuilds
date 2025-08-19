@@ -955,7 +955,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: misc
-- Version: 20250629_c5d1f8c
+- Version: 20250817_c20b391
 - Homepage: https://opensimh.org
 - Code repository: https://github.com/open-simh/simh
 
