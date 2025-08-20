@@ -148,6 +148,19 @@
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## gitnuro (a graphical git client)
+ A FOSS Git client based on (Jetbrains) Compose and JGit.
+ The main goal of Gitnuro is to provide a multiplatform open source
+ Git client without any kind of constraint to how you can use it nor
+ relying on web technologies.
+  
+
+- Category: development
+- Version: 1.5.0
+- Homepage: https://gitnuro.com/
+- Code repository: https://github.com/JetpackDuba/Gitnuro/
+
+*Note: updater.sh not available*
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,

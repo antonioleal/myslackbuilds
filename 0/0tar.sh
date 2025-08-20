@@ -37,6 +37,7 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='*.bz2'       \
     --exclude='*.zip'       \
     --exclude='*.md'        \
+    --exclude='*.jar'       \
     --exclude='*.sf3'       \
     --exclude='*.deb'       \
     --exclude='*.rpm'       \
