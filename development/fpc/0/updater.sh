@@ -35,10 +35,10 @@ NEWVERSION=`lynx -dump https://www.freepascal.org/download.html | grep "The late
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION"
+    echo "is at version $VERSION"
     export RET0=""
 else
     echo "$NEWVERSION" > version
-    echo "$PRGNAM has a new version $NEWVERSION (notification)"
+    echo "has a new version $NEWVERSION (notification)"
     export RET0=$NEWVERSION
 fi

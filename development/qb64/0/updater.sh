@@ -38,7 +38,7 @@ URL="https://github.com/QB64Official/qb64/archive/v${NEWVERSION}/${TARBALL}"
 source ../qb64.info
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION"
+    echo "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -73,6 +73,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild ../${PRGNAM}-launcher
     echo "$NEWVERSION" > version
-    echo "$PRGNAM has a new version $NEWVERSION"
+    echo "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

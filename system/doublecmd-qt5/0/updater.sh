@@ -37,7 +37,7 @@ URL="https://downloads.sourceforge.net/project/doublecmd/Double%20Commander%20So
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION"
+    echo "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -62,6 +62,6 @@ else
     sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "$PRGNAM has a new version $NEWVERSION"
+    echo "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

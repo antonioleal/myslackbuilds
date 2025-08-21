@@ -38,7 +38,7 @@ URL="https://github.com/pcrow/atari_8bit_utils/archive/${NEWVERSION}/atari_8bit_
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION"
+    echo "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -70,6 +70,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "$PRGNAM has a new version $NEWVERSION"
+    echo "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

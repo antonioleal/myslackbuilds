@@ -66,7 +66,7 @@ URL2="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/$
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION"
+    echo "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -99,6 +99,6 @@ else
     sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.template > ../${PRGNAM}
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "$PRGNAM has a new version $NEWVERSION"
+    echo "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

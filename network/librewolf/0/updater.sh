@@ -39,7 +39,7 @@ URL="https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/${RE
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION"
+    echo "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -71,6 +71,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "$PRGNAM has a new version $NEWVERSION"
+    echo "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

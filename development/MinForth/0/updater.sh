@@ -37,7 +37,7 @@ URL="https://sourceforge.net/projects/minforth/files/${TARBALL}"
 VERSION=`cat version`
 if [ "$VERSION" = "$PREFIX" ]
 then
-    echo "$PRGNAM is at version $VERSION"
+    echo "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -85,6 +85,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$PREFIX" > version
-    echo "$PRGNAM has a new version $NEWVERSION"
+    echo "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

@@ -26,5 +26,5 @@ set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
 source ../*.info
-echo "$PRGNAM is at version $VERSION (bypass)"
+echo "is at version $VERSION (bypass)"
 export RET0=""

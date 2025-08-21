@@ -37,7 +37,7 @@ NEWVERSION=${NEWVERSION//-/_}
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "$PRGNAM is at version $VERSION (notification)"
+    echo "is at version $VERSION (notification)"
     export RET0=""
 else
     echo "$PRGNAM thereis a new version $VERSION, but you need to update it manually."
