@@ -29,14 +29,14 @@ counter=0
 cd ~/slackware-builds/myslackbuilds
 for updaterdir in `find . -name "0" -print`
 do
+    if [ "$updaterdir" == "./0" ] || [ "$updaterdir" == "./0/0" ]; then
+        continue
+    fi
     cd ~/slackware-builds/myslackbuilds/$updaterdir/..
     PKGNAME=${PWD##*/}
     counter=$((counter+1))
-    cd ~/slackware-builds/myslackbuilds
 
-    if [ "$updaterdir" == "./0" ] || [ "$updaterdir" == "./0/0" ]; then
-        continue
-    elif [ -f $updaterdir/updater.sh ]; then
+    if [ -f 0/updater.sh ]; then
         RET0=""
         echo -n "$PKGNAME "
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater.sh
