@@ -1,9 +1,9 @@
 PRGNAM="JAForth"
-VERSION="20250117_bfedbd4"
+VERSION="_version_"
 HOMEPAGE="https://codeberg.org/pgimeno/JAForth"
-DOWNLOAD="https://codeberg.org/pgimeno/JAForth/archive/bfedbd4263e5df4e79bd8b897c00e235da3f3319.tar.gz \
+DOWNLOAD="https://codeberg.org/pgimeno/JAForth/archive/_tag_.tar.gz \
           https://raw.githubusercontent.com/antonioleal/myslackbuilds/main/development/JAForth/ace.rom.tar.gz"
-MD5SUM="8df88292d166e6f10ba275140b80e8bd \
+MD5SUM="_md5_ \
         93882b96ba1d9f0420f4fb46fea928e5"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
