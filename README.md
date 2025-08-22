@@ -160,7 +160,7 @@
 - Homepage: https://gitnuro.com/
 - Code repository: https://github.com/JetpackDuba/Gitnuro/
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
@@ -188,11 +188,11 @@
   
 
 - Category: development
-- Version: 20250115_bfedbd4
+- Version: 20250117_bfedbd4
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://codeberg.org/thomasokken/plus42desktop
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -827,7 +827,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/librespeed/speedtest-cli
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
