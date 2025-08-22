@@ -560,7 +560,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://sndio.org/
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.
@@ -607,7 +607,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## doublecmd-qt5 (Double-panel File Manager)
  Double Commander is a free cross-platform open source file manager
  with two panels side by side (or one above the other). This is the Qt
