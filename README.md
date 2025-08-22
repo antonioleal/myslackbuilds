@@ -642,11 +642,11 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 9.6.0
+- Version: 9.6.1
 - Homepage: https://limine-bootloader.org/
 - Code repository: https://github.com/limine-bootloader/limine
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## google-chrome-the-latest (Google Chrome Updater Script)
  Maintaining an updated Chrome Browser on Slackware is now made
  easier with this small program, "google-chrome-the-latest", a simple
