@@ -722,7 +722,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## xAce (A Jupiter Ace emulator for Linux)
  xAce is an emulator for the Jupiter Ace that runs under most flavours
  of Unix. It was written by Edward Patel and based on a ZX81 emulator
@@ -746,7 +746,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/openSUSE/catatonit
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## timeshift (incremental system snapshots, backup and restore)
  Timeshift for Linux is an application that provides functionality
  similar to the System Restore feature in Windows and the Time Machine
@@ -801,7 +801,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/sakhmatd/sdwmbar
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## eightyone (emulator for the range of ZX home computers)
  EightyOne is an emulator for the range of ZX home computers made
  by Sinclair Research (and their clones) in the 1980s, primarily
@@ -902,11 +902,11 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 2.8.9
+- Version: 2.8.12
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
@@ -956,7 +956,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/sakhmatd/swege
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
@@ -998,7 +998,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/kovmir/tinytldr#readme
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
  Plus42 is an advanced scientific programmable calculator, based on
  Free42 (a complete re-implementation of the HP-42S scientific
