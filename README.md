@@ -756,11 +756,11 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 24.06.6
+- Version: 25.07.5
 - Homepage: https://github.com/linuxmint/timeshift
 - Code repository: https://github.com/linuxmint/timeshift
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
  Maintaining an updated Firefox Standard Rel. on Slackware is now made
  easier with this small program, "firefox-standard-the-latest", a
