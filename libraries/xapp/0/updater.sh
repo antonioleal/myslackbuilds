@@ -30,7 +30,7 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=`lynx -accept_all_cookies -dump  https://github.com/linuxmint/xapp/tags | grep "refs/tags" | head -1 | awk -F"/" '{ print $NF }' | awk '{print substr($0,0,length($0)-4)}'`
+NEWVERSION=`lynx -accept_all_cookies -dump  https://github.com/linuxmint/xapp/tags | grep -v "master" | grep "refs/tags" | head -1 | awk -F"/" '{ print $NF }' | awk '{print substr($0,0,length($0)-4)}'`
 # NEWVERSION=${TAG:1}
 TARBALL="xapp-$NEWVERSION.tar.gz"
 URL="https://github.com/linuxmint/xapp/archive/$NEWVERSION/${TARBALL}"
