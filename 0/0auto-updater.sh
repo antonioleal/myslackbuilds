@@ -34,11 +34,15 @@ do
     fi
     cd ~/slackware-builds/myslackbuilds/$updaterdir/..
     PKGNAME=${PWD##*/}
+    cd ..
+    CATEGORY=${PWD##*/}
+    cd $PKGNAME
+
     counter=$((counter+1))
 
     if [ -f 0/updater.sh ]; then
         RET0=""
-        echo -n "$PKGNAME "
+        printf '%-15s %s ' $CATEGORY $PKGNAME
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater.sh
         if ! [ "$RET0" = "" ]
         then
