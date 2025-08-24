@@ -71,7 +71,7 @@
 - Homepage: https://linux.wps.com/
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## ledger-live (Ledger Hardware Wallet Manager)
  A manager for your Ledger hardware wallet.
  Install applications, update firmware, buy crypto, etc.
