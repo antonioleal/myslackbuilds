@@ -78,11 +78,11 @@
   
 
 - Category: office
-- Version: 2.122.1
+- Version: 2.124.0
 - Homepage: https://www.ledger.com/ledger-live
 - Code repository: https://www.ledger.com/ledger-live
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## dapper (Desktop Applications Autostarter)
  Simple lightweight desktop application auto-starter. It will read
  .desktop files in the autostart directories, all according to the
@@ -96,7 +96,7 @@
 - Homepage: https://github.com/jjk-jacky/dapper
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
