@@ -54,11 +54,11 @@
   
 
 - Category: office
-- Version: 25.2.5.2
+- Version: 25.8.0.4
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## wps-office (an office productivity suite for Linux)
  WPS Office, including Writer, Presentation and spreadsheets, is a
  powerful office suite. It is deeply compatible with all of the
