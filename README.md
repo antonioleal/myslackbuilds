@@ -584,7 +584,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 1.4
+- Version: 1.5
 - Homepage: https://github.com/antonioleal/brave-browser-the-latest
 - Code repository: https://github.com/antonioleal/brave-browser-the-latest
 
