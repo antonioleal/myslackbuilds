@@ -655,7 +655,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 4.2
+- Version: 4.3
 - Homepage: https://github.com/antonioleal/google-chrome-the-latest
 - Code repository:
 
