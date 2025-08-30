@@ -241,6 +241,21 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 
 *Note: updater.sh is available for this package*
+## python2-nuitka (python compiler)
+ Nuitka is the Python compiler. It is written in Python. It is a
+ seamless replacement or extension to the Python interpreter and
+ compiles every construct that Python 2 (2.6, 2.7) and Python 3
+ (3.4 - 3.13) have, when itself run with that Python version.
+ It then executes uncompiled code and compiled code together in
+ an extremely compatible manner.
+  
+
+- Category: python
+- Version: 2.7.13
+- Homepage: https://nuitka.net
+- Code repository: https://github.com/Nuitka/Nuitka/tags
+
+*Note: updater.sh is available for this package*
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
