@@ -1,2 +1,2 @@
-- Homepage: https://www.thomasokken.com/plus42
-- Code repository: https://codeberg.org/thomasokken/plus42desktop
+- Homepage: https://codeberg.org/pgimeno/JAForth
+- Code repository: https://codeberg.org/pgimeno/JAForth
