@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware 0script to, well, setup the 0scripts
+# Slackware script to setup the 0 scripts environment
 
 # Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -24,18 +24,23 @@
 
 
 set -e
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-cd $SCRIPT_DIR
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
+
+echo
+echo "Installing myslackbuilds environment"
 
 # Install dependencies
 slapt-src -y -i sbo-maintainer-tools meld jq github-cli
 
 mkdir $HOME/slackware-builds
-cd ../..
-mv myslackbuilds $HOME/slackware-builds
 cd $HOME/slackware-builds
-
-#git clone https://github.com/SlackBuildsOrg/slackbuilds
+git clone https://github.com/antonioleal/myslackbuilds
 git clone https://github.com/antonioleal/slackbuilds
 
-
+echo
+echo "make sure kde and ark are available and"
+echo "add to your path: $HOME/slackbuilds-builds/myslackbuilds/0"
+echo "Done."
