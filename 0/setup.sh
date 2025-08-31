@@ -24,23 +24,54 @@
 
 
 set -e
-if [ "$(id -u)" != "0" ]; then
-   echo "This script must be run as root" 1>&2
+if [ "$(id -u)" == "0" ]; then
+   echo "This script cannot be run as root" 1>&2
    exit 1
 fi
-
+clear
+echo "Installing the workspace environment in $HOME/slackware-builds"
 echo
-echo "Installing myslackbuilds environment"
+# rm -rf /tmp/SBo
 
-# Install dependencies
-slapt-src -y -i sbo-maintainer-tools meld jq github-cli
+deploy() { # the parameters are:  $1="category" $2="package name" $3="slackbuild extension"
+    mkdir -p /tmp/0
+    cd /tmp/0
+    wget https://slackbuilds.org/slackbuilds/15.0/$1/$2.$3
+    tar xvf $2.$3
+    cd $2
+    source $2.info
+    set +e
+    wget $DOWNLOAD
+    wget $DOWNLOAD_x86_64
+    set -e
+    ./$2.SlackBuild
+    PKG=`ls -1 /tmp/$2*.t?z | sort -r | head -1`
+    upgradepkg --install-new --reinstall $PKG
+}
+FUNC=$(declare -f deploy)
 
-mkdir $HOME/slackware-builds
+su - -c "
+    rm -rf /tmp/0
+    $FUNC
+    deploy development github-cli tar.gz
+    deploy system sbo-maintainer-tools tar.gz
+    deploy system jq tar.gz
+    deploy development meld tar.gz
+"
+
+mkdir -p $HOME/slackware-builds
 cd $HOME/slackware-builds
 git clone https://github.com/antonioleal/myslackbuilds
 git clone https://github.com/antonioleal/slackbuilds
 
+touch $HOME/.bashrc
+if ! grep -qF 'myslackbuilds' ~/.bashrc; then
+    echo 'export PATH=$PATH:$HOME/slackware-builds/myslackbuilds/0' >> ~/.bashrc
+fi
+
 echo
-echo "make sure kde and ark are available and"
-echo "add to your path: $HOME/slackbuilds-builds/myslackbuilds/0"
+echo "Make sure 'kde' and 'ark' are available."
+echo "$HOME/slackbuilds-builds/myslackbuilds/0 has beed added to"
+echo "your PATH in .bashrc. Please reopen console."
+echo
 echo "Done."
