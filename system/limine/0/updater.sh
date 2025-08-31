@@ -30,10 +30,9 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-TAG=$(curl -s https://api.github.com/repos/limine-bootloader/limine/releases/latest | jq -r '.tag_name')
-NEWVERSION=${TAG:1}
+NEWVERSION=$(curl -s https://codeberg.org/Limine/Limine/releases | grep "releases/download" | head -1 | awk -F "/" '{print substr($9,8,length($9)-26)}')
 TARBALL=limine-${NEWVERSION}.tar.gz
-URL="https://github.com/limine-bootloader/limine/releases/download/$TAG/$TARBALL"
+URL="https://codeberg.org/Limine/Limine/releases/download/v$NEWVERSION/limine-$NEWVERSION.tar.gz"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -59,8 +58,15 @@ else
     ################################
     MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-    sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+    sed \
+        -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_md5_/$MD5/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed \
+        -e "s/_version_/${NEWVERSION}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"

@@ -31,6 +31,14 @@
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## critcl (C Runtime In Tcl)
+ critcl is a system that lets you build C/C++ extension packages for
+ Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
+ For more information see: https://andreas-kupries.github.io/critcl
+  
+
+- Category: libraries
+- Version: 3.2
 ## glibc-local (GNU C library, installs to /opt)
  The GNU C Library project provides the core libraries for the
  GNU system and GNU/Linux systems, as well as many other systems
@@ -383,7 +391,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 9.6.1
+- Version: 9.6.5
 - Homepage: https://limine-bootloader.org/
 - Code repository: https://github.com/limine-bootloader/limine
 
