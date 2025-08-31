@@ -55,6 +55,19 @@
 - Code repository: https://github.com/steinbergmedia/vst3sdk
 
 *Note: updater.sh is available for this package*
+## Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt)
+ Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software
+ package for large-scale, nonlinear optimization. It is designed to
+ find (local) solutions of mathematical optimization problems.
+ Homepage: https://projects.coin-or.org/Ipopt
+  
+
+- Category: libraries
+- Version: 3.14.19
+- Homepage: https://github.com/coin-or/Ipopt
+- Code repository: 
+
+*Note: updater.sh is available for this package*
 ## smoffice2024 (office suite)
  SoftMaker Office 2024 includes
   * TextMaker 2024, a word processor
