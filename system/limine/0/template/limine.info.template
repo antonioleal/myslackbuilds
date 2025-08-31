@@ -1,7 +1,7 @@
 PRGNAM="limine"
 VERSION="_version_"
 HOMEPAGE="https://limine-bootloader.org/"
-DOWNLOAD="https://github.com/limine-bootloader/limine/releases/download/v_version_/limine-_version_.tar.gz"
+DOWNLOAD="https://codeberg.org/Limine/Limine/releases/download/v_version_/limine-_version_.tar.gz"
 MD5SUM="_md5_"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
