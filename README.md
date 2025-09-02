@@ -453,6 +453,18 @@
 - Code repository: "https://github.com/boriel-basic/zxbasic"
 
 *Note: updater.sh is available for this package*
+## critcl (C Runtime In Tcl)
+ critcl is a system that lets you build C/C++ extension packages for
+ Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
+ For more information see: https://andreas-kupries.github.io/critcl
+  
+
+- Category: development
+- Version: 3.3.1
+- Homepage: https://andreas-kupries.github.io/critcl/
+- Code repository: https://github.com/andreas-kupries/critcl
+
+*Note: updater.sh is available for this package*
 ## qb64pe (Modern QuickBASIC compiler)
  QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
  additional features and enhancements, maintained by a
@@ -946,18 +958,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.7.14
 - Homepage: https://www.steinberg.net/developers/
 - Code repository: https://github.com/steinbergmedia/vst3sdk
-
-*Note: updater.sh is available for this package*
-## critcl (C Runtime In Tcl)
- critcl is a system that lets you build C/C++ extension packages for
- Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
- For more information see: https://andreas-kupries.github.io/critcl
-  
-
-- Category: libraries
-- Version: 3.3.1
-- Homepage: https://andreas-kupries.github.io/critcl/
-- Code repository: https://github.com/andreas-kupries/critcl
 
 *Note: updater.sh is available for this package*
 ## atari_8bit_utils (utilities for atari 8bit machines/emulators)
