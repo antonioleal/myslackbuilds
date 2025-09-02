@@ -696,8 +696,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: system
 - Version: 1.4.4
-- Homepage: https://github.com/gapan/depfinder
-- Code repository:
+- Homepage: https://depfinder.sourceforge.net/
+- Code repository: https://github.com/gapan/depfinder
 
 *Note: updater.sh is available for this package*
 ## FreeFileSync (Cross-platform file sync utility with GUI)

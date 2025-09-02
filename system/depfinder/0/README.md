@@ -1,2 +1,2 @@
-- Homepage: https://github.com/gapan/depfinder
-- Code repository:
+- Homepage: https://depfinder.sourceforge.net/
+- Code repository: https://github.com/gapan/depfinder
