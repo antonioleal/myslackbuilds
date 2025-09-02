@@ -683,6 +683,23 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## depfinder (finds dependencies of Slackware packages)
+ depfinder is a tool that finds the dependencies of Slackware
+ packages and outputs them in a comma separated list, in stdout or a
+ .dep file. depfinder is very fast at calculating dependencies; the
+ speed difference mainly comes from the C++ code that is used to find
+ in which package each individual library is included. That C++ code is
+ 'borrowed' (as in blatanly ripped) from Nigel Bosch's zpm code.
+ depfinder also has support for running multiple jobs which makes it a
+ "*lot* faster on PCs with multiple CPUs/cores.
+  
+
+- Category: system
+- Version: 1.4.4
+- Homepage: https://github.com/gapan/depfinder
+- Code repository:
+
+*Note: updater.sh is available for this package*
 ## FreeFileSync (Cross-platform file sync utility with GUI)
  FreeFileSync is a folder comparison and synchronization software
  that creates and manages backup copies of all your important files.

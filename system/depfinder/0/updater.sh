@@ -32,7 +32,7 @@ cd $SCRIPT_DIR
 ################################
 NEWVERSION=$(lynx -accept_all_cookies -dump  https://github.com/gapan/depfinder/tags | grep "refs/tags" | head -1 | awk -F"/" '{ print $NF }' | awk '{ print substr($1,0,length($1)-4) }')
 TARBALL="depfinder-$NEWVERSION.tar.gz"
-URL="https://github.com/gapan/depfinder/archive/refs/tags/$TARBALL"
+URL="https://github.com/gapan/depfinder/archive/$NEWVERSION/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
