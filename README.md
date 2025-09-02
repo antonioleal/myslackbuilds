@@ -955,7 +955,11 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 3.2
+- Version: 3.3.1
+- Homepage: https://andreas-kupries.github.io/critcl/
+- Code repository: https://github.com/andreas-kupries/critcl
+
+*Note: updater.sh is available for this package*
 ## atari_8bit_utils (utilities for atari 8bit machines/emulators)
  atari_8bit_utils contains a set of utilities by Preston Crow for
  atari 8 bit machines or emulators such atari 400/800, XL, XE.
