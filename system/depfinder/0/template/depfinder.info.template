@@ -5,6 +5,6 @@ DOWNLOAD="https://github.com/gapan/depfinder/archive/_version_/depfinder-_versio
 MD5SUM="_md5_"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="txt2tags"
 MAINTAINER="Antonio Leal"
 EMAIL="antonioleal@yahoo.com"
