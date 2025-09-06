@@ -1100,6 +1100,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: development
 - Version: 1.9
+- Homepage: https://www.gnu.org/software/recutils/
+- Code repository: https://ftp.gnu.org/gnu/recutils/
+
+*Note: updater.sh is available for this package*
 ## kphotoalbum (a photo management application)
  Kphotoalbum (previously known as KimDaBa) is an image viewer and
  organizer for KDE 4. It makes use of kipi plugins and exiv2 if
