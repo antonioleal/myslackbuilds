@@ -43,7 +43,7 @@ else
     ################################
     # download tarball             #
     ################################
-    #wget $URL
+    wget $URL
     if [ ! -f ./$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."
