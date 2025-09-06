@@ -1090,6 +1090,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 
 *Note: updater.sh is available for this package*
+## recutils (tools and libraries to access recfiles)
+ GNU Recutils is a set of tools and libraries to access
+ human-editable, plain text databases called recfiles. The data is
+ stored as a sequence of records, each record containing an arbitrary
+ number of named fields.
+ https://www.gnu.org/software/recutils/
+  
+
+- Category: development
+- Version: 1.9
 ## kphotoalbum (a photo management application)
  Kphotoalbum (previously known as KimDaBa) is an image viewer and
  organizer for KDE 4. It makes use of kipi plugins and exiv2 if
