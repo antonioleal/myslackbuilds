@@ -30,7 +30,7 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=`curl -qsL "https://sourceforge.net/projects/bwbasic/best_release.json" | jq -r ".platform_releases.linux.filename" | awk '{print $2}' | awk -F "/" '{print $1}'`
+NEWVERSION=`lynx --dump https://sourceforge.net/projects/bwbasic/files/bwbasic/ | grep "]version" | head -1 | awk '{print $2}'`
 TARBALL1=bwbasic-${NEWVERSION}.zip
 URL1="https://sourceforge.net/projects/bwbasic/files/bwbasic/version%20${NEWVERSION}/${TARBALL1}"
 TARBALL2=bwbasic-tests-2017-07-06.zip
