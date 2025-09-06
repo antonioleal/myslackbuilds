@@ -67,3 +67,5 @@ have the gcc-g++ compiler, so that depfinder-search can be compiled.
 
 A huge thanks goes to Nigel Bosch for creating the original code for his
 zpm package manager and making it available in the first place.
+
+(README from program author included here in the SlackBuild)
