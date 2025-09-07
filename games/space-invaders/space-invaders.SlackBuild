@@ -58,12 +58,13 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-mkdir -p $PRGNAM-$VERSION
+rm -rf $PRGNAM-$VERSION space-invaders-redistribution
+tar xvf $CWD/*.tar.gz
+mv space-invaders-redistribution $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 
 mkdir -p $PKG/usr/src/space-invaders
-install -Dvm644 $CWD/$TARBALL.zip $PKG/usr/src/space-invaders/$TARBALL.zip
+install -Dvm644 $TARBALL.zip $PKG/usr/src/space-invaders/$TARBALL.zip
 
 mkdir -p $PKG/usr/bin
 install -Dvm755 $CWD/space-invaders $PKG/usr/bin/space-invaders
@@ -75,7 +76,6 @@ cp $CWD/space-invaders.desktop $PKG/usr/share/applications/
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-tar xvf $CWD/redistribution_permission.pdf.tar.gz
 cp redistribution_permission.pdf $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install
