@@ -663,7 +663,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://lowcarb.itch.io/space-invaders
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
