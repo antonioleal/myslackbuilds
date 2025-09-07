@@ -3,8 +3,10 @@ VERSION="1.4"
 HOMEPAGE="https://lowcarb.itch.io/space-invaders"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
-DOWNLOAD_x86_64=""
-MD5SUM_x86_64=""
+DOWNLOAD_x86_64="https://github.com/antonioleal/myslackbuilds/blob/main/games/space-invaders/SpaceInvaders_linux-x64.zip \
+                 https://github.com/antonioleal/myslackbuilds/blob/main/games/space-invaders/redistribution_permission.pdf"
+MD5SUM_x86_64="ab63e56c598b83a5890e7d3a38776e37 \
+               ef3098f92d70aca43126b07c019efe97"
 REQUIRES=""
 MAINTAINER="Antonio Leal"
 EMAIL="antonioleal@yahoo.com"
