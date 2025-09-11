@@ -84,6 +84,9 @@ CXXFLAGS="$SLKCFLAGS" \
   --prefix /opt/notepadqq \
   --qmake /usr/lib$LIBDIRSUFFIX/qt5/bin/qmake
 
+# addressing https://github.com/notepadqq/notepadqq/issues/1135
+sed -i "s|bool BackupService::s_autosaveEnabled = false;|bool BackupService::s_autosaveEnabled = true;|g" src/ui/Sessions/backupservice.cpp
+
 make
 make install DESTDIR=$PKG INSTALL_ROOT=$PKG
 

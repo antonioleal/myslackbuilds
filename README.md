@@ -288,7 +288,7 @@
   
 
 - Category: development
-- Version: 20250520_95ab689
+- Version: 20250911_c51b965
 - Homepage: https://notepadqq.com
 - Code repository: https://github.com/notepadqq/notepadqq/commits/master/
 
