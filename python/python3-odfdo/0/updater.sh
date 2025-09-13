@@ -32,7 +32,7 @@ cd $SCRIPT_DIR
 ################################
 TAG=`curl -s https://api.github.com/repos/jdum/odfdo/releases/latest | jq -r '.tag_name'`
 NEWVERSION=${TAG:1}
-URL64="$(brave-browser-stable --headless --dump-dom --disable-gpu "https://pypi.org/project/odfdo/3.16.6/#files" | grep "Download URL" | tail -1 | awk -F'"' '{print $2}')"
+URL64="$(brave-browser-stable --headless --dump-dom --disable-gpu "https://pypi.org/project/odfdo/3.16.6/#files" 2> /dev/null | grep "Download URL" | tail -1 | awk -F'"' '{print $2}')"
 TARBALL64=`echo $URL64 | awk -F "/" '{print $NF}'`
 
 VERSION=`cat version`
