@@ -64,6 +64,7 @@ find -L . \
 
 PYVER=$(python3 -c 'import sys; print("%d.%d" % sys.version_info[:2])')
 export PYTHONPATH=/opt/python$PYVER/site-packages/
+
 python3 -m installer --destdir "$PKG" "$CWD/$TARBALL"
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for uv
+# Slackware updater script for python3-uv
 
 # Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=uv
+PRGNAM=python3-uv
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
@@ -58,8 +58,8 @@ else
         exit
     fi
     # delete old tarball and place new one
-    rm -rf ../*.tar.gz 2> /dev/null
-    mv *.tar.gz ..
+    rm -rf ../*.whl 2> /dev/null
+    mv *.whl ..
 
     ################################
     # write templates              #
@@ -69,10 +69,10 @@ else
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
 
     sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_md532_/$MD532/g" \
-        -e "s/_md564_/$MD564/g" \
-        -e "s/_url32_/$URL32/g" \
-        -e "s/_url64_/$URL64/g" \
+        -e "s/_md532_/${MD532}/g" \
+        -e "s/_md564_/${MD564}/g" \
+        -e "s|_url32_|${URL32}|g" \
+        -e "s|_url64_|${URL64}|g" \
         $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 
     sed -e "s/_version_/${NEWVERSION}/g" \
