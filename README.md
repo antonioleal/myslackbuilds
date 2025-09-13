@@ -11,7 +11,7 @@
   
 
 - Category: libraries
-- Version: 2.8.12
+- Version: 2.8.13
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
 
