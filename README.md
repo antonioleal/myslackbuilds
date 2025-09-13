@@ -254,7 +254,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 
 *Note: updater.sh is available for this package*
-## uv (an extremely fast Python package and project manager)
+## python3-uv (an extremely fast Python package and project manager)
  A single tool to replace pip, pip-tools, pipx, poetry, pyenv, twine,
  virtualenv, and more.
  Its 10-100x faster than pip.
