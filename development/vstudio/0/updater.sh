@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=vstudio
-set -e
+set +e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
 
@@ -60,11 +60,6 @@ curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A
 NEWVERSION=`lynx -dump index.html | tail -1 |  awk -F "/" '{ print $(NF-1) }'`
 rm -rf index.html
 
-if [ "$NEWVERSION" = "0" ]; then
-    echo "is at version unknown (bypass)"
-    export RET0=""
-fi
-
 MAJOR=`echo $NEWVERSION | cut -d "." -f 1`
 TARBALL=vstudio_x64_${MAJOR}_lin.deb
 URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBALL}"
@@ -81,7 +76,8 @@ else
     if [ ! -f ./$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."
-        exit
+        export RET0=""
+        return
     fi
     # delete old tarball and place new one
     rm -rf ../*.deb 2> /dev/null
