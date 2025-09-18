@@ -41,6 +41,7 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='*.jar'       \
     --exclude='*.whl'       \
     --exclude='*.sf3'       \
+    --exclude='*.xpi'       \
     --exclude='*.deb'       \
     --exclude='*.rpm'       \
     --exclude='*.run'       \
