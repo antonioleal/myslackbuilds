@@ -1159,7 +1159,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 0.8.17
+- Version: 0.8.18
 - Homepage: https://astral.sh
 - Code repository: https://github.com/astral-sh/uv
 

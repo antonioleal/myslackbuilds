@@ -32,9 +32,9 @@ PKGTYPE=${PKGTYPE:-tgz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) ARCH=i586; TARBALL=_tarball32_ ;;
+    i?86) ARCH=i586 ;;
     arm*) echo "Architecture is supported, but not by this script. Modify it!"; exit 1 ;;
-       *) ARCH=$( uname -m ); TARBALL=_tarball64_ ;;
+       *) ARCH=$( uname -m ) ;;
   esac
 fi
 
@@ -65,7 +65,11 @@ find -L . \
 PYVER=$(python3 -c 'import sys; print("%d.%d" % sys.version_info[:2])')
 export PYTHONPATH=/opt/python$PYVER/site-packages/
 
-python3 -m installer --destdir "$PKG" "$CWD/$TARBALL"
+if [ "$ARCH" = "x86_64" ]; then
+    python3 -m installer --destdir "$PKG" "$CWD/_tarball64_"
+elif [ "$ARCH" = "i586" ]; then
+    python3 -m installer --destdir "$PKG" "$CWD/_tarball32_"
+fi
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
