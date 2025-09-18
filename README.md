@@ -884,6 +884,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## browsh (Private Web Browser)
+ Browsh is a fully-modern text-based browser. It renders anything that
+ a modern browser can; HTML5, CSS3, JS, video and even WebGL.
+  
+
+- Category: network
+- Version: 1.8.3
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
