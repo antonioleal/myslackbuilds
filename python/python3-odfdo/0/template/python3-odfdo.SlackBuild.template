@@ -29,7 +29,7 @@ VERSION=${VERSION:-_version_}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=_tarball64_
+_PRGNAM=odfdo
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -53,7 +53,8 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-mkdir -p $PRGNAM-$VERSION
+tar xvf $CWD/${_PRGNAM}-$VERSION.tar.gz
+mv ${_PRGNAM}-$VERSION $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 
 chown -R root:root .
@@ -65,8 +66,8 @@ find -L . \
 
 PYVER=$(python3 -c 'import sys; print("%d.%d" % sys.version_info[:2])')
 export PYTHONPATH=/opt/python$PYVER/site-packages/
-
-python3 -m installer --destdir "$PKG" "$CWD/$TARBALL"
+uv build --wheel
+python3 -m installer --destdir "$PKG" "dist/odfdo-$VERSION-py3-none-any.whl"
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

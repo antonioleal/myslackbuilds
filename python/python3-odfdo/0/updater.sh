@@ -32,8 +32,8 @@ cd $SCRIPT_DIR
 ################################
 TAG=`curl -s https://api.github.com/repos/jdum/odfdo/releases/latest | jq -r '.tag_name'`
 NEWVERSION=${TAG:1}
-URL64="$(brave-browser-stable --headless --dump-dom --disable-gpu "https://pypi.org/project/odfdo/3.16.6/#files" 2> /dev/null | grep "Download URL" | tail -1 | awk -F'"' '{print $2}')"
-TARBALL64=`echo $URL64 | awk -F "/" '{print $NF}'`
+URL64="https://github.com/jdum/odfdo/archive/$TAG/odfdo-$NEWVERSION.tar.gz"
+TARBALL64=odfdo-$NEWVERSION.tar.gz
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -51,8 +51,8 @@ else
         exit
     fi
     # delete old tarball and place new one
-    rm -rf ../*.whl 2> /dev/null
-    mv *.whl ..
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
 
     ################################
     # write templates              #
