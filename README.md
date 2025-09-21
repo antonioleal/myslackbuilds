@@ -239,6 +239,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## python3-ordered-set (Python3 hybrid of a list and a set)
+ An OrderedSet is a mutable data structure that is a hybrid of a list
+ and a set.
+ It remembers the order of its entries, and every entry has an index
+ number that can be looked up.
+  
+
+- Category: python
+- Version: 4.1.0
+- Homepage: https://github.com/rspeer/ordered-set
+- Code repository: 
+
+*Note: updater.sh not available*
 ## python3-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
