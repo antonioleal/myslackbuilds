@@ -31,10 +31,8 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 NEWVERSION=`curl -s https://api.github.com/repos/astral-sh/uv/releases/latest | jq -r '.tag_name'`
-URL32="$(lynx --dump https://pypi.org/project/uv/#files | grep -e "pythonhosted.*none-manylinux.*i686" | head -1 | awk '{print $2}')"
-URL64="$(lynx --dump https://pypi.org/project/uv/#files | grep -e "pythonhosted.*none-manylinux.*x86_64" | head -1 | awk '{print $2}')"
-TARBALL32=`echo $URL32 | awk -F "/" '{print $NF}'`
-TARBALL64=`echo $URL64 | awk -F "/" '{print $NF}'`
+TARBALL="source.tar.gz"
+URL="https://github.com/astral-sh/uv/releases/download/$NEWVERSION/source.tar.gz"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -45,39 +43,27 @@ else
     ################################
     # download tarball             #
     ################################
-    wget $URL32
-    wget $URL64
-    if [ ! -f ./$TARBALL32 ]
+    wget $URL
+    if [ ! -f ./$TARBALL ]
     then
-        echo "File $TARBALL32 not found, aborting..."
-        exit
-    fi
-    if [ ! -f ./$TARBALL64 ]
-    then
-        echo "File $TARBALL64 not found, aborting..."
+        echo "File $TARBALL not found, aborting..."
         exit
     fi
     # delete old tarball and place new one
-    rm -rf ../*.whl 2> /dev/null
-    mv *.whl ..
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
 
     ################################
     # write templates              #
     ################################
-    MD532=`md5sum ../$TARBALL32 | cut -d " " -f 1`
-    MD564=`md5sum ../$TARBALL64 | cut -d " " -f 1`
+    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
 
     sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_md532_/${MD532}/g" \
-        -e "s/_md564_/${MD564}/g" \
-        -e "s|_url32_|${URL32}|g" \
-        -e "s|_url64_|${URL64}|g" \
+        -e "s/_md5_/${MD5}/g" \
         $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 
     sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_tarball32_/$TARBALL32/g" \
-        -e "s/_tarball64_/$TARBALL64/g" \
         $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
 
     chmod 644 ../${PRGNAM}.SlackBuild
