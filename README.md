@@ -252,6 +252,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: 
 
 *Note: updater.sh not available*
+## python3-zstandard (Python3 bindings for Zstandard library)
+ Python bindings for interfacing with the Zstandard compression
+ library.
+ A C extension and CFFI interface are provided.
+  
+
+- Category: python
+- Version: 0.25.0
+- Homepage: https://github.com/indygreg/python-zstandard
+- Code repository: 
+
+*Note: updater.sh not available*
 ## python3-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
