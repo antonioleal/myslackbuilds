@@ -48,14 +48,14 @@ else
     ################################
     # download tarballs             #
     ################################
+    rm -rf ../*.tar.gz 2> /dev/null
+
     wget $URL1
     if [ ! -f ./$TARBALL1 ]
     then
         echo "File $TARBALL1 not found, aborting..."
         exit
     fi
-    # delete old tarball and place new one
-    rm -rf ../*.tar.gz 2> /dev/null
     mv *.tar.gz ..
 
     wget $URL2
@@ -64,8 +64,6 @@ else
         echo "File $TARBALL2 not found, aborting..."
         exit
     fi
-    # delete old tarball and place new one
-    rm -rf ../*.xpi 2> /dev/null
     mv *.xpi ..
 
     wget $URL3
@@ -74,8 +72,6 @@ else
         echo "File $TARBALL3 not found, aborting..."
         exit
     fi
-    # delete old tarball and place new one
-    rm -rf ../*.tar.gz 2> /dev/null
     mv *.tar.gz ..
 
     ################################
