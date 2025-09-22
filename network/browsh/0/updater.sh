@@ -34,7 +34,7 @@ TAG=`curl -s https://api.github.com/repos/browsh-org/browsh/releases/latest | jq
 NEWVERSION=${TAG:1}
 TARBALL1=browsh-$NEWVERSION.tar.gz
 TARBALL2=browsh-$NEWVERSION.xpi
-TARBALL2=go1.25.1.linux-amd64.tar.gz
+TARBALL3=go1.25.1.linux-amd64.tar.gz
 URL1="https://github.com/browsh-org/browsh/archive/$TAG/browsh-$NEWVERSION.tar.gz"
 URL2="https://github.com/browsh-org/browsh/releases/download/$TAG/browsh-$NEWVERSION.xpi"
 URL3="https://go.dev/dl/go1.25.1.linux-amd64.tar.gz"
@@ -49,6 +49,7 @@ else
     # download tarballs             #
     ################################
     rm -rf ../*.tar.gz 2> /dev/null
+    rm -rf ../*.xpi 2> /dev/null
 
     wget $URL1
     if [ ! -f ./$TARBALL1 ]
