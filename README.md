@@ -891,6 +891,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: network
 - Version: 1.8.3
+- Homepage: https://github.com/browsh-org/browsh/
+- Code repository:
+
+*Note: updater.sh is available for this package*
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
