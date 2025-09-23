@@ -33,7 +33,7 @@ _PRGNAM=ordered-set
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) echo "Architecture is supported."; exit 1 ;;
+    i?86) ARCH=i586 ;;
     arm*) echo "Architecture is supported, but not by this script. Modify it!"; exit 1 ;;
        *) ARCH=$( uname -m ) ;;
   esac
