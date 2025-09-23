@@ -33,7 +33,7 @@ _PRGNAM=python-zstandard
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) echo "Architecture is supported."; exit 1 ;;
+    i?86) ARCH=i586 ;;
     arm*) echo "Architecture is supported, but not by this script. Modify it!"; exit 1 ;;
        *) ARCH=$( uname -m ) ;;
   esac
@@ -65,7 +65,7 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 python3 -m pip wheel zstandard
-python3 -m installer --destdir "$PKG" "zstandard-${VERSION}-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+python3 -m installer --destdir "$PKG" "`ls -1 *.whl`"
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
