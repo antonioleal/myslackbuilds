@@ -29,7 +29,7 @@ VERSION=${VERSION:-0.25.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-_PRGNAM=python-zstandard
+# _PRGNAM=python-zstandard
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -52,10 +52,12 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/${_PRGNAM}-$VERSION.tar.gz
-mv ${_PRGNAM}-$VERSION $PRGNAM-$VERSION
-cd $PRGNAM-$VERSION
+
+# Temprarly use prebuild whl files instead of source. fix me!
+# rm -rf $PRGNAM-$VERSION
+# tar xvf $CWD/${_PRGNAM}-$VERSION.tar.gz
+# mv ${_PRGNAM}-$VERSION $PRGNAM-$VERSION
+# cd $PRGNAM-$VERSION
 
 chown -R root:root .
 find -L . \
@@ -64,8 +66,11 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-python3 -m pip wheel zstandard
-python3 -m installer --destdir "$PKG" "`ls -1 *.whl`"
+if [ "$ARCH" = "x86_64" ]; then
+    python3 -m installer --destdir "$PKG" "$CWD/zstandard-0.25.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+else
+    python3 -m installer --destdir "$PKG" "$CWD/zstandard-0.25.0-cp39-cp39-manylinux2010_i686.manylinux2014_i686.manylinux_2_12_i686.manylinux_2_17_i686.whl"
+fi
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
