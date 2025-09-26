@@ -350,6 +350,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 
 *Note: updater.sh is available for this package*
+## python3-mpmath (arithmetic library)
+ Mpmath is a free (BSD licensed) Python library for real and complex
+ floating-point arithmetic with arbitrary precision. It has been
+ developed by Fredrik Johansson since 2007, with help from many
+ contributors.
+ http://mpmath.org/
+  
+
+- Category: python
+- Version: 1.3.0
+- Homepage: https://mpmath.org/
+- Code repository: https://github.com/mpmath/mpmath
+
+*Note: updater.sh not available*
 ## python3-odfdo (OpenDocument Format library for Python)
  odfdo is a Python library for programmatically creating, parsing, and
  editing OpenDocument Format (ODF) files. It provides an interface for

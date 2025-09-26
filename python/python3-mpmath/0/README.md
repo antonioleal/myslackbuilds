@@ -1,0 +1,2 @@
+- Homepage: https://mpmath.org/
+- Code repository: https://github.com/mpmath/mpmath
