@@ -305,6 +305,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/astral-sh/uv
 
 *Note: updater.sh is available for this package*
+## python3-pypdf (Python PDF library)
+ pypdf is a free and open-source pure-python PDF library capable of
+ splitting, merging, cropping, and transforming the pages of PDF
+ files. It can also add custom data, viewing options, and passwords
+ to PDFfiles. pypdf can retrieve text and metadata from PDFs as well.
+ Homepage: https://github.com/py-pdf/pypdf
+  
+
+- Category: python
+- Version: 6.1.0
+- Homepage: https://github.com/py-pdf/pypdf
+- Code repository: 
+
+*Note: updater.sh not available*
 ## python2-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
