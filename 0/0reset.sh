@@ -49,5 +49,6 @@ if [ "$1" == "my" ] || [ "$1" == "all" ]; then
 fi
 
 if [ "$proc" == "no" ]; then
+    echo "---------------------------------------------------------------------"
     echo "please specify 'all', 'my' ou 'sl' as parameter"
 fi
