@@ -278,6 +278,22 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: 
 
 *Note: updater.sh not available*
+## python3-gmpy2 (multi-precision arithmetic for python)
+ gmpy2 is an optimized, c-coded python extension module that supports
+ fast multiple-precision arithmetic. gmpy2 is based on the original
+ gmpy module. In addition to supporting gmp or mpir for
+ multiple-precision integer and rational arithmetic, gmpy2 adds support
+ for the mpfr (correctly rounded real floating-point arithmetic) and
+ mpc (correctly rounded complex floating-point arithmetic) libraries.
+ Homepage: https://github.com/aleaxit/gmpy
+  
+
+- Category: python
+- Version: 2.2.1
+- Homepage: https://pypi.org/project/gmpy2/
+- Code repository: https://github.com/aleaxit/gmpy
+
+*Note: updater.sh not available*
 ## python3-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
