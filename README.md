@@ -309,6 +309,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 
 *Note: updater.sh is available for this package*
+## python3-neovim (Python client for Neovim)
+ python3-neovim is a Python client for Neovim.
+  
+
+- Category: python
+- Version: 0.6.0
+- Homepage: https://github.com/neovim/pynvim
+- Code repository: 
+
+*Note: updater.sh not available*
 ## python3-uv (an extremely fast Python package and project manager)
  A single tool to replace pip, pip-tools, pipx, poetry, pyenv, twine,
  virtualenv, and more.
