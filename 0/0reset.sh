@@ -28,6 +28,7 @@ proc="no"
 
 if [ "$1" == "sl" ] || [ "$1" == "all" ]; then
     echo "---------------------------------------------------------------------"
+    echo "on ~/slackware-builds/slackbuilds:"
     cd ~/slackware-builds/slackbuilds
     git checkout master
     git clean -f
@@ -38,6 +39,7 @@ fi
 
 if [ "$1" == "my" ] || [ "$1" == "all" ]; then
     echo "---------------------------------------------------------------------"
+    echo "on ~/slackware-builds/myslackbuilds:"
     cd ~/slackware-builds/myslackbuilds
     git checkout main
     git clean -f
