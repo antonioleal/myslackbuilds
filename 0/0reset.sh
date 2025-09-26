@@ -24,18 +24,28 @@
 
 set -e
 
-if [ "$1" == "sl" ]; then
+proc="no"
+
+if [ "$1" == "sl" ] || [ "$1" == "all" ]; then
+    echo "---------------------------------------------------------------------"
     cd ~/slackware-builds/slackbuilds
     git checkout master
     git clean -f
     git reset --hard
     git pull --rebase
-elif [ "$1" == "my" ]; then
+    proc="yes"
+fi
+
+if [ "$1" == "my" ] || [ "$1" == "all" ]; then
+    echo "---------------------------------------------------------------------"
     cd ~/slackware-builds/myslackbuilds
     git checkout main
     git clean -f
     git reset --hard
     git pull --rebase
-else
-    echo "please specify 'my' ou 'sl' as parameter"
+    proc="yes"
+fi
+
+if [ "$proc" == "no" ]; then
+    echo "please specify 'all', 'my' ou 'sl' as parameter"
 fi
