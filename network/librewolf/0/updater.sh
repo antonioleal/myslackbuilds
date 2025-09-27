@@ -45,11 +45,14 @@ else
     ################################
     # download tarball             #
     ################################
+    set +e
     wget $URL
+    set -e
     if [ ! -f ./$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."
-        exit
+        RET0=""
+        return
     fi
     # delete old tarball and place new one
     rm -rf ../*.tar.xz 2> /dev/null
