@@ -1208,6 +1208,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 
 *Note: updater.sh is available for this package*
+## python2-mpmath (arithmetic library)
+ Mpmath is a free (BSD licensed) Python library for real and complex
+ floating-point arithmetic with arbitrary precision. It has been
+ developed by Fredrik Johansson since 2007, with help from many
+ contributors.
+ http://mpmath.org/
+  
+
+- Category: python
+- Version: 1.3.0
+- Homepage: https://mpmath.org/
+- Code repository: https://github.com/mpmath/mpmath
+
+*Note: updater.sh not available*
 ## python2-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
