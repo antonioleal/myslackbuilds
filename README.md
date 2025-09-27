@@ -246,7 +246,7 @@
   
 
 - Category: development
-- Version: 1.42a
+- Version: 20250924_9921283
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
 
