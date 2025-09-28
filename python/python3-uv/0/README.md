@@ -1,2 +1,0 @@
-- Homepage: https://astral.sh
-- Code repository: https://github.com/astral-sh/uv
