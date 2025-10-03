@@ -31,7 +31,7 @@ cd $SCRIPT_DIR
 # get versions tarball         #
 ################################
 NEWVERSION=`curl -s https://freefilesync.org/archive.php | head -n 20 | grep "Download FreeFileSync" | cut -d " " -f 5 | rev | cut -c2- | rev`
-TARBALL=${PRGNAM}_${NEWVERSION}_Linux.tar.gz
+TARBALL=${PRGNAM}_${NEWVERSION}_Linux_x86_64.tar.gz
 URL="https://freefilesync.org/download/$TARBALL"
 
 VERSION=`cat version`

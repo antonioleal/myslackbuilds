@@ -56,7 +56,7 @@ rm -rf $PRGNAM-$VERSION
 mkdir -p $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 
-tar xvfz $CWD/${PRGNAM}_${VERSION}_Linux.tar.gz
+tar xvfz $CWD/${PRGNAM}_${VERSION}_Linux_x86_64.tar.gz
 mkdir p1
 cd p1
 7z x ../${PRGNAM}_${VERSION}_Install.run
