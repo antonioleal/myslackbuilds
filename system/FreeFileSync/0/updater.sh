@@ -31,8 +31,10 @@ cd $SCRIPT_DIR
 # get versions tarball         #
 ################################
 NEWVERSION=`curl -s https://freefilesync.org/archive.php | head -n 20 | grep "Download FreeFileSync" | cut -d " " -f 5 | rev | cut -c2- | rev`
-TARBALL=${PRGNAM}_${NEWVERSION}_Linux_x86_64.tar.gz
-URL="https://freefilesync.org/download/$TARBALL"
+TARBALL64=${PRGNAM}_${NEWVERSION}_Linux_x86_64.tar.gz
+URL64="https://freefilesync.org/download/$TARBALL64"
+TARBALL32=${PRGNAM}_${NEWVERSION}_Linux_i686.tar.gz
+URL32="https://freefilesync.org/download/$TARBALL32"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -43,10 +45,16 @@ else
     ################################
     # download tarball             #
     ################################
-    wget $URL
-    if [ ! -f ./$TARBALL ]
+    wget $URL64
+    if [ ! -f ./$TARBALL64 ]
     then
-        echo "File $TARBALL not found, aborting..."
+        echo "File $TARBALL64 not found, aborting..."
+        exit
+    fi
+    wget $URL32
+    if [ ! -f ./$TARBALL32 ]
+    then
+        echo "File $TARBALL32 not found, aborting..."
         exit
     fi
     # delete old tarball and place new one
@@ -56,9 +64,19 @@ else
     ################################
     # write templates              #
     ################################
-    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-    sed -e "s/_version_/${NEWVERSION}/" -e "s/_file_/${TARBALL}/" -e "s/_md5_/${MD5}/" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-    sed -e "s/_version_/${NEWVERSION}/" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+    MD564=`md5sum ../$TARBALL64 | cut -d " " -f 1`
+    MD532=`md5sum ../$TARBALL32 | cut -d " " -f 1`
+
+    sed -e "s/_version_/${NEWVERSION}/" \
+        -e "s/_file64_/${TARBALL64}/" \
+        -e "s/_md564_/${MD564}/" \
+        -e "s/_file32_/${TARBALL32}/" \
+        -e "s/_md532_/${MD532}/" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"
