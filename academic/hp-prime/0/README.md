@@ -1,0 +1,2 @@
+- Homepage: https://www.hpcalc.org/details/8939
+- Code repository:

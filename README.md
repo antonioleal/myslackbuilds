@@ -1294,6 +1294,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://codeberg.org/thomasokken/plus42desktop
 
 *Note: updater.sh is available for this package*
+## hp-prime (HP Prime Virtual Calculator simulation)
+ Emulator (technically a simulator, since it is a native PC program)
+ of the HP Prime Graphing Calculator for Wine. Lets you do everything
+ the calculator does, but with the full control of your keyboard and
+ mouse and taking full advantage of your PC's computing power.
+  
+
+- Category: academic
+- Version: 2.2.15257
+- Homepage: https://www.hpcalc.org/details/8939
+- Code repository:
+
+*Note: updater.sh not available*
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
  A simple plugin to allow right-click scanning in Thunar.
   
