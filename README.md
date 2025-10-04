@@ -884,6 +884,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## google-chrome (Web Browser)
+ Google Chrome is a browser that combines a minimal design with
+ sophisticated technology to make the web faster, safer, and easier.
+  
+
+- Category: network
+- Version: 141.0.7390.54
+- Homepage: http://www.google.com/chrome/
+- Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
+
+*Note: updater.sh is available for this package*
 ## browsh (Private Web Browser)
  Browsh is a fully-modern text-based browser. It renders anything that
  a modern browser can; HTML5, CSS3, JS, video and even WebGL.

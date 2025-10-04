@@ -49,9 +49,6 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-# Get the real version, thanks to Fred Richards.
-# REAL_VER=$(ar p google-chrome-${RELEASE}_current_${DEBARCH}.deb control.tar.gz | tar zxO ./control | grep Version | awk '{print $2}' | cut -d- -f1)
-
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $PKG
