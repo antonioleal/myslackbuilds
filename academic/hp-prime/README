@@ -24,8 +24,8 @@ computing power. Now delivered as a 64-bit version by default.
 
 NOTE: You must accept the license in order to use this software.
 
-WARNING: Do not auto-upgrade the version when running the program
-         as it will break you install on Slackware.
+WARNING: DO NOT auto-upgrade the version when running the calculator
+         itself as it will break the program.
 
 UNINSTALLING: before uninstalling the SlackBuild run as user:
 
