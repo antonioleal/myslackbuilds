@@ -1,0 +1,2 @@
+- Homepage: http://www.google.com/chrome/
+- Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
