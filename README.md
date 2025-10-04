@@ -1302,7 +1302,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: academic
-- Version: 2.2.15257
+- Version: 2.3.1
 - Homepage: https://www.hpcalc.org/details/8939
 - Code repository:
 

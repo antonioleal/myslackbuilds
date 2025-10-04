@@ -28,5 +28,6 @@ if [ ! -d "$DEST" ]
 then
     notify-send "Setting up $DEST workspace for first run."
     wine /usr/src/hp-prime/$(ls -1 /usr/src/hp-prime) /quiet
+    rm -rf "$HOME/.local/share/applications/wine/Programs/HP Calculators/HP Prime Virtual Calculator.desktop"
 fi
 wine "$DEST/HPPrime.exe"

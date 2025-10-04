@@ -27,8 +27,8 @@ NOTE: You must accept the license in order to use this software.
 WARNING: Do not auto-upgrade the version when running the program
          as it will break you install on Slackware.
 
-UNINSTALLING: before uninstalling the SlackBuild run:
+UNINSTALLING: before uninstalling the SlackBuild run as user:
 
-    "wine /usr/src/hp-prime/$(ls -1 *.exe) /uninstall /quiet"
+    wine $(ls -1 /usr/src/hp-prime/*.exe) /uninstall /quiet
 
-    to clean your $HOME/.wine
+to clean your $HOME/.wine

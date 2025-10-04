@@ -25,17 +25,16 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=hp-prime
-VERSION=${VERSION:-2.2.15257}
+VERSION=${VERSION:-2.3.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 
 case "$( uname -m )" in
-  x86_64) ARCH=x86_64; _ARCH="x64" ;;
-    i?86) ARCH=i586; _ARCH=""  ;;
+  x86_64) ARCH=x86_64; TARBALL="HP_Prime_Virtual_Calculator_x64_2025_01_31.exe"  ;;
+    i?86) ARCH=i586; TARBALL="HP_Prime_Virtual_Calculator_2025_01_31.exe"  ;;
        *) echo "Package for $(uname -m) architecture is not available." ; exit 1 ;;
 esac
-TARBALL="HP_Prime_Virtual_Calculator_${_ARCH}_2025_01_31.exe"
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
@@ -73,9 +72,6 @@ cp $CWD/hp-prime.png $PKG/usr/share/pixmaps/hp-prime.png
 
 mkdir -p $PKG/usr/share/applications
 cp $CWD/hp-prime.desktop $PKG/usr/share/applications
-
-# find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-#   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
