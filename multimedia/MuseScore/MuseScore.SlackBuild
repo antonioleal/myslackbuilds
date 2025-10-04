@@ -27,10 +27,11 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=MuseScore
-VERSION=${VERSION:-4.5.2}
+VERSION=${VERSION:-4.6.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
+QT=${QT:-6.9.3}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -79,19 +80,21 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
+# export PATH="/opt/Qt/Tools/CMake/bin:$PATH"
+
 mkdir b
-cmake -S . -B b \
-    -DCMAKE_PREFIX_PATH="/opt/Qt/6.2.4/gcc_64/lib/cmake" \
+/opt/Qt/Tools/CMake/bin/cmake -S . -B b \
+    -DCMAKE_PREFIX_PATH="/opt/Qt/${QT}/gcc_64/lib/cmake" \
     -DCMAKE_INSTALL_PREFIX=/opt/MuseScore \
     -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_BUILD_TYPE=Release \
     -DMUSE_APP_BUILD_MODE=RELEASE \
     -DCMAKE_MODULE_LINKER_FLAGS_RELEASE="-pthread" \
-    -DQMAKE=/opt/Qt/6.2.4/gcc_64/bin/qmake \
-    -DQT_QMAKE_EXECUTABLE=/opt/Qt/6.2.4/gcc_64/bin/qmake
+    -DQMAKE=/opt/Qt/${QT}/gcc_64/bin/qmake \
+    -DQT_QMAKE_EXECUTABLE=/opt/Qt/${QT}/gcc_64/bin/qmake
 
-cmake --build b -j 4
+/opt/Qt/Tools/CMake/bin/cmake --build b -j 8
 cd b
 make install \
   DESTDIR=$PKG \
