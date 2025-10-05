@@ -385,7 +385,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 3.16.7
+- Version: 3.16.8
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
 
