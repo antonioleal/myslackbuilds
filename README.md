@@ -40,7 +40,7 @@
   
 
 - Category: libraries
-- Version: 4.10.0.2
+- Version: 4.10.0
 - Homepage: https://github.com/antonioleal/qt-installer-script
 - Code repository:
 
