@@ -1171,7 +1171,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 1.5
+- Version: 1.6
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasicstudio"
 
