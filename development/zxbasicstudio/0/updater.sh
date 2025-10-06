@@ -32,7 +32,7 @@ cd $SCRIPT_DIR
 ################################
 TAG=$(curl -s https://api.github.com/repos/boriel-basic/ZXBasicStudio/releases/latest | jq -r '.tag_name')
 NEWVERSION=${TAG:1}
-TARBALL=ZXBasicStudio-Linux64-v${NEWVERSION}-beta.zip
+TARBALL=ZXBasicStudio-Linux-x64.v${NEWVERSION}.0-beta5.zip
 URL="https://github.com/boriel-basic/ZXBasicStudio/releases/download/${TAG}/${TARBALL}"
 
 VERSION=`cat version`
@@ -59,8 +59,14 @@ else
     ################################
     MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-    sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_md5_/$MD5/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"

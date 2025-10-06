@@ -30,7 +30,7 @@ VERSION=${VERSION:-_version_}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=ZXBasicStudio-Linux64-v${VERSION}-beta.zip
+TARBALL=ZXBasicStudio-Linux-x64.v_version_.0-beta5.zip
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
