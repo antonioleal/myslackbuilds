@@ -2,7 +2,7 @@
 
 # Slackware build script for MuseScore
 
-# Copyright 2024- Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2024-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # Copyright 2022-2023 Klaatu <klaatu@member.fsf.org> | Lawrence NZ
 # Thanks to Tim Dickson
 # All rights reserved.
@@ -80,21 +80,20 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
-# export PATH="/opt/Qt/Tools/CMake/bin:$PATH"
-
+export Qt6Test_DIR=/opt/MuseScore-Libraries/lib/cmake/Qt6Test
 mkdir b
-/opt/Qt/Tools/CMake/bin/cmake -S . -B b \
-    -DCMAKE_PREFIX_PATH="/opt/Qt/${QT}/gcc_64/lib/cmake" \
+/opt/cmake-opt/bin/cmake -S . -B b \
+    -DCMAKE_PREFIX_PATH="/opt/MuseScore-Libraries/lib/cmake/Qt6" \
     -DCMAKE_INSTALL_PREFIX=/opt/MuseScore \
     -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_BUILD_TYPE=Release \
     -DMUSE_APP_BUILD_MODE=RELEASE \
     -DCMAKE_MODULE_LINKER_FLAGS_RELEASE="-pthread" \
-    -DQMAKE=/opt/Qt/${QT}/gcc_64/bin/qmake \
-    -DQT_QMAKE_EXECUTABLE=/opt/Qt/${QT}/gcc_64/bin/qmake
+    -DQMAKE=/opt/MuseScore-Libraries/bin/qmake \
+    -DQT_QMAKE_EXECUTABLE=/opt/MuseScore-Libraries/bin/qmake
 
-/opt/Qt/Tools/CMake/bin/cmake --build b -j 8
+/opt/cmake-opt/bin/cmake --build b -j 8
 cd b
 make install \
   DESTDIR=$PKG \
