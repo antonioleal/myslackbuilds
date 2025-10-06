@@ -18,9 +18,3 @@ MuseScore features:
  - Print or create pdf files
 
 In Slackware this package partially installs to /opt/MuseScore
-
-** Important **
-Before atampting to build this package QT Libraries 6.9.3 must
-be installed in your system.
-see:
- https://github.com/musescore/MuseScore/wiki/Install-Qt-and-Qt-Creator
