@@ -332,7 +332,7 @@
   
 
 - Category: development
-- Version: 8.8.5
+- Version: 8.8.6
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 
