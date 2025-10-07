@@ -30,33 +30,7 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-
-#tag=$(curl -s https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.tag_name')
-#echo $tag
-
-# NEWVERSION
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-# cd git/simh
-# git reset --hard
-# git pull --rebase
-# COMMIT=`git rev-parse HEAD`
-# NEWVERSION=${COMMIT:0:7}
-# cd ../..
-
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
-#TARBALL=doublecmd-${NEWVERSION}-src.tar.gz
-
-#TAG=$(curl -s https://api.github.com/repos/wxFormBuilder/wxFormBuilder/releases/latest | jq -r '.tag_name')
-#NEWVERSION=${TAG:1}
-#TARBALL=wxFormBuilder-${NEWVERSION}-source-full.tar.gz
-
-#NEWVERSION=$(curl -s https://2484.de/yabasic/content_whatsnew.html | grep Version | head -n1 | cut -d " " -f 6 | cut -d "," -f 1)
-#TARBALL=yabasic-${NEWVERSION}.tar.gz
-
-# NEWVERSION
-curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A
+curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A > /dev/null 2>&1
 NEWVERSION=`lynx -dump index.html | tail -1 |  awk -F "/" '{ print $(NF-1) }'`
 rm -rf index.html
 
@@ -65,14 +39,14 @@ TARBALL=vstudio_x64_${MAJOR}_lin.deb
 URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBALL}"
 
 VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ]; then
+if [ "$VERSION" = "$NEWVERSION" ] || [ "$NEWVERSION" = "0" ]; then
     echo "is at version $VERSION"
     export RET0=""
 else
     ################################
     # download tarball             #
     ################################
-    wget $URL
+    wget $URL > /dev/null 2>&1
     if [ ! -f ./$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."
@@ -88,8 +62,16 @@ else
     ################################
     MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_major_/${MAJOR}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_major_/${MAJOR}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_major_/${MAJOR}/g" \
+        -e "s/_md5_/$MD5/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_major_/${MAJOR}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"
