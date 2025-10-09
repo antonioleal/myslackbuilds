@@ -143,7 +143,7 @@
   
 
 - Category: development
-- Version: 0.5.0
+- Version: 0.5.1
 - Homepage: https://github.com/mynenik/kForth-64
 - Code repository:
 
