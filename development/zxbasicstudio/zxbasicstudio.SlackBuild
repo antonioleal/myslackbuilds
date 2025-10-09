@@ -56,8 +56,7 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
-unzip $CWD/$TARBALL
-
+unzip $CWD/*.zip
 
 chown -R root:root .
 find -L . \
