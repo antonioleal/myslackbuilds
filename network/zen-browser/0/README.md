@@ -1,0 +1,2 @@
+- Homepage: https://zen-browser.app/
+- Code repository: https://github.com/zen-browser/desktop
