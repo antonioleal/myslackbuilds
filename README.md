@@ -906,6 +906,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## zen-browser (web browser)
+ Beautifully designed, privacy-focused, and packed with features.
+ It cares about your experience, not your data.
+  
+
+- Category: network
+- Version: 1.16.4b
+- Homepage: https://zen-browser.app/
+- Code repository: https://github.com/zen-browser/desktop
+
+*Note: updater.sh is available for this package*
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
