@@ -37,6 +37,7 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='*.bz2'       \
     --exclude='*.pdf'       \
     --exclude='*.zip'       \
+    --exclude='*.7z'       \
     --exclude='*.md'        \
     --exclude='*.jar'       \
     --exclude='*.whl'       \
@@ -47,5 +48,6 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='*.run'       \
     --exclude='*.exe'       \
     --exclude='*.AppImage'  \
+    --exclude='*.cmake'  \
     ../../../$sboname
 
