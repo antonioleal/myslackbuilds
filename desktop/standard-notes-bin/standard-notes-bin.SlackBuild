@@ -61,9 +61,10 @@ find -L . \
 # Make sure top-level perms are correct:
 chmod 0755 .
 
-# Reconstruct broken links
+# Broken link removed. /opt/hostedtoolcache/Python/3.10.18/x64/bin/python3 is certainly not doing anything on debian
 ( cd "$PKG/opt/Standard Notes/resources/app.asar.unpacked/node_modules/cbor-extract/build/node_gyp_bins" ; rm -rf python3 )
-( cd "$PKG/opt/Standard Notes/resources/app.asar.unpacked/node_modules/cbor-extract/build/node_gyp_bins" ; ln -sf /usr/bin/python3 python3 )
+# However sbopkglint identifies a broken link too when atempting to relink with the line below --> to be checked with sbo-maintainer-tools team.
+#( cd "$PKG/opt/Standard Notes/resources/app.asar.unpacked/node_modules/cbor-extract/build/node_gyp_bins" ; ln -sf "../../../../../../../../usr/bin/python3.9" python3 )
 
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
