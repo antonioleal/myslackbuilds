@@ -1365,3 +1365,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## standard-notes-bin (free, open-source encrypted notes app)
+ Standard Notes is an end-to-end encrypted note-taking app for
+ digitalists and professionals. Capture your notes, files, and
+ life's work all in one secure place.
+  
+
+- Category: desktop
+- Version: 3.198.5
+- Homepage: https://standardnotes.com/
+- Code repository: https://github.com/standardnotes/app
+
+*Note: updater.sh is available for this package*
