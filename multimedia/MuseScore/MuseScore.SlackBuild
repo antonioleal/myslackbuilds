@@ -80,14 +80,17 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
-export Qt6Test_DIR=/opt/MuseScore-Libraries/lib/cmake/Qt6Test
 mkdir -p b/_deps/harfbuzz
 
-# We need a minimal harfbuzz for engraving
-cp $CWD/harfbuzz.cmake b/_deps/harfbuzz/
-cp $CWD/harfbuzz_src.7z b/_deps/harfbuzz/
-( cd b/_deps/harfbuzz/; 7z x harfbuzz_src.7z )
+# We need a minimal harfbuzz as dependency
+(
+    cp $CWD/harfbuzz.cmake b/_deps/harfbuzz/
+    cp $CWD/harfbuzz_src.7z b/_deps/harfbuzz/
+    cd b/_deps/harfbuzz
+    7z x harfbuzz_src.7z
+)
 
+export Qt6Test_DIR=/opt/MuseScore-Libraries/lib/cmake/Qt6Test
 /opt/cmake-opt/bin/cmake -S . -B b \
     -DCMAKE_PREFIX_PATH="/opt/MuseScore-Libraries/lib/cmake/Qt6" \
     -DCMAKE_INSTALL_PREFIX=/opt/MuseScore \
@@ -96,7 +99,6 @@ cp $CWD/harfbuzz_src.7z b/_deps/harfbuzz/
     -DCMAKE_BUILD_TYPE=Release \
     -DMUSE_APP_BUILD_MODE=RELEASE \
     -DCMAKE_MODULE_LINKER_FLAGS_RELEASE="-pthread" \
-    -DQMAKE=/opt/MuseScore-Libraries/bin/qmake \
     -DQT_QMAKE_EXECUTABLE=/opt/MuseScore-Libraries/bin/qmake
 
 /opt/cmake-opt/bin/cmake --build b -j 8
