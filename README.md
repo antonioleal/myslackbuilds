@@ -17,7 +17,7 @@
 - Homepage: https://github.com/mcdope/pam_usb
 - Code repository: 
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
