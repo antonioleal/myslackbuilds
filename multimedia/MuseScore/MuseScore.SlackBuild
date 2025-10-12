@@ -81,7 +81,13 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
 export Qt6Test_DIR=/opt/MuseScore-Libraries/lib/cmake/Qt6Test
-mkdir b
+mkdir -p b/_deps/harfbuzz
+
+# We need a minimal harfbuzz for engraving
+cp $CWD/harfbuzz.cmake b/_deps/harfbuzz/
+cp $CWD/harfbuzz_src.7z b/_deps/harfbuzz/
+( cd b/_deps/harfbuzz/; 7z x harfbuzz_src.7z )
+
 /opt/cmake-opt/bin/cmake -S . -B b \
     -DCMAKE_PREFIX_PATH="/opt/MuseScore-Libraries/lib/cmake/Qt6" \
     -DCMAKE_INSTALL_PREFIX=/opt/MuseScore \
