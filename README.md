@@ -1017,7 +1017,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://download.qt.io/official_releases/qt/
 - Code repository: https://download.qt.io/official_releases/qt/
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## pam_usb (Hardware Auth via Memory Sticks)
  This is a PAM module for Linux authentication using USB memory sticks,
  SD cards, external SSD etc. Simply speaking, it lets you log onto
