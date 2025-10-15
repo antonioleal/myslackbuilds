@@ -28,7 +28,7 @@
   
 
 - Category: office
-- Version: 9.0.4
+- Version: 9.1.0
 - Homepage: https://www.onlyoffice.com/apps.aspx
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
 
