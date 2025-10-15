@@ -82,14 +82,14 @@ find -L . \
 #     -DCMAKE_INSTALL_PREFIX=/opt/SDL3 \
 #     -DSDL_INSTALL_HEADERSDIR="/usr/include" \
 
-/opt/cmake-opt/bin/cmake -S . -B b \
+cmake -S . -B b \
     -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_INSTALL_INCLUDEDIR="/usr/include" \
     -DCMAKE_INSTALL_LIBDIR="/usr/lib${LIBDIRSUFFIX}" \
     -DCMAKE_INSTALL_BINDIR="" \
     -DCMAKE_MODULE_LINKER_FLAGS_RELEASE="-pthread"
 
-/opt/cmake-opt/bin/cmake --build b -j 8
+cmake --build b -j 8
 cd b
 make install \
   DESTDIR=$PKG \
