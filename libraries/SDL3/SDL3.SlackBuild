@@ -79,9 +79,6 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
-#     -DCMAKE_INSTALL_PREFIX=/opt/SDL3 \
-#     -DSDL_INSTALL_HEADERSDIR="/usr/include" \
-
 cmake -S . -B b \
     -DCMAKE_C_FLAGS_RELEASE="$SLKCFLAGS" \
     -DCMAKE_INSTALL_INCLUDEDIR="/usr/include" \
