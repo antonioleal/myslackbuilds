@@ -996,6 +996,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://ftp.gnu.org/gnu/glibc/
 
 *Note: updater.sh is available for this package*
+## SDL3 (Simple DirectMedia Layer Version 3)
+ Simple DirectMedia Layer is a cross-platform development library
+ designed to provide low-level access to audio, keyboard, mouse,
+ joystick, and graphics hardware ia via OpenGL. It is used by
+ video playback software, emulators, and games.
+  
+
+- Category: libraries
+- Version: 3.2.24
+- Homepage: http://www.libsdl.org
+- Code repository: https://github.com/libsdl-org/SDL
+
+
+*Note: updater.sh not available*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
@@ -1183,6 +1197,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh not available*
+## x48ng (HP48 Calculator emulator)
+ x48ng is a vintage emulator capable of providing a faithful replication
+ of the HP48 Calculator. It requires a copy of the ROM software.
+ The user can initialize an HP48GX(r) ROM in $HOME/.hp48 with:
+ x48ng -initialize -reset -rom /usr/doc/x48ng-0.6.4/gxrom-r
+  
+
+- Category: academic
+- Version: 0.6.4
 ## python3-neovim (Python client for Neovim)
  python3-neovim is a Python client for Neovim.
   
