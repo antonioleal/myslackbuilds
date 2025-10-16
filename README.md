@@ -1197,6 +1197,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater.sh not available*
+## x48ng (HP48 Calculator emulator)
+ x48ng is a vintage emulator capable of providing a faithful
+ replication of the HP48 Calculator. It requires a copy of the ROM
+ software.
+ x48ng is a fork and continuation of the x48 project.
+  
+
+- Category: academic
+- Version: 0.50.0
+- Homepage: https://codeberg.org/gwh/x48ng/tags
+- Code repository: https://github.com/gwenhael-le-moine/x48ng
+
+*Note: updater.sh not available*
 ## python3-neovim (Python client for Neovim)
  python3-neovim is a Python client for Neovim.
   
