@@ -301,7 +301,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/indygreg/python-zstandard
 - Code repository: 
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## python3-gmpy2 (multi-precision arithmetic for python)
  gmpy2 is an optimized, c-coded python extension module that supports
  fast multiple-precision arithmetic. gmpy2 is based on the original
