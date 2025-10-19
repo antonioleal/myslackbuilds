@@ -399,7 +399,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://mpmath.org/
 - Code repository: https://github.com/mpmath/mpmath
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## python3-odfdo (OpenDocument Format library for Python)
  odfdo is a Python library for programmatically creating, parsing, and
  editing OpenDocument Format (ODF) files. It provides an interface for
