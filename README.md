@@ -356,7 +356,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://mpmath.org/
 - Code repository: https://github.com/mpmath/mpmath
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## python3-pypdf (Python PDF library)
  pypdf is a free and open-source pure-python PDF library capable of
  splitting, merging, cropping, and transforming the pages of PDF
