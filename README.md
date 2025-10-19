@@ -366,7 +366,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 6.1.1
+- Version: 6.1.2
 - Homepage: https://github.com/py-pdf/pypdf
 - Code repository: 
 
