@@ -1350,11 +1350,11 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: academic
-- Version: 0.50.0
+- Version: 0.51.1
 - Homepage: https://codeberg.org/gwh/x48ng/tags
 - Code repository: https://github.com/gwenhael-le-moine/x48ng
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
  A simple plugin to allow right-click scanning in Thunar.
   
