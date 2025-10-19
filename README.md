@@ -289,7 +289,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/rspeer/ordered-set
 - Code repository: 
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## python3-zstandard (Python3 bindings for Zstandard library)
  Python bindings for interfacing with the Zstandard compression
  library.
