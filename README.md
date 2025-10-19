@@ -342,7 +342,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/neovim/pynvim
 - Code repository: 
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## python2-mpmath (arithmetic library)
  Mpmath is a free (BSD licensed) Python library for real and complex
  floating-point arithmetic with arbitrary precision. It has been
