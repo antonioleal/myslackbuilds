@@ -30,4 +30,4 @@ then
     x48ng --print-config >> $HOME/.config/x48ng/config.lua
     x48ng-config gxrom-r
 fi
-x48ng
+x48ng-launcher
