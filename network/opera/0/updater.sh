@@ -31,8 +31,8 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 NEWVERSION=$(lynx --dump https://deb.opera.com/opera/pool/non-free/o/opera-stable/ | grep ".deb" | head -1 | awk -F"_" '{print $2}')
-TARBALL=opera-stable_$NEWVERSION_amd64.deb
-URL="https://get.geo.opera.com/pub/opera/desktop/$NEWVERSION/linux/opera-stable_$NEWVERSION_amd64.deb"
+TARBALL=opera-stable_${NEWVERSION}_amd64.deb
+URL="https://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_${NEWVERSION}_amd64.deb"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
