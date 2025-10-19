@@ -501,6 +501,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://codeberg.org/librewolf/source/releases
 - Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
 *Note: updater.sh is available for this package*
+## opera (A fast and secure web browser)
+ Opera is a graphical Web browser available on several platforms.
+ The desktop version runs on GNU/Linux and FreeBSD. Versions for
+ Macintosh and Windows are also available.
+  
+
+- Category: network
+- Version: 122.0.5643.142
+- Homepage: https://www.opera.com
+- Code repository: https://www.opera.com/opera
+
+
+*Note: updater.sh is available for this package*
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
