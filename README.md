@@ -370,7 +370,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/py-pdf/pypdf
 - Code repository: 
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## python2-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
