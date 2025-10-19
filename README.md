@@ -68,7 +68,7 @@
 - Code repository: https://github.com/libsdl-org/SDL
 
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## glibc-local (GNU C library, installs to /opt)
  The GNU C Library project provides the core libraries for the
  GNU system and GNU/Linux systems, as well as many other systems
