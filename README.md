@@ -1341,7 +1341,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://www.hpcalc.org/details/8939
 - Code repository:
 
-*Note: updater.sh not available*
+*Note: updater.sh is available for this package*
 ## x48ng (HP48 Calculator emulator)
  x48ng is a vintage emulator capable of providing a faithful
  replication of the HP48 Calculator. It requires a copy of the ROM
