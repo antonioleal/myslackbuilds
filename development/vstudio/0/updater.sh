@@ -33,13 +33,19 @@ cd $SCRIPT_DIR
 curl -s -o index.html http://valentina-db.com/download/prev_releases/?C=M;O=A > /dev/null 2>&1
 NEWVERSION=`lynx -dump index.html | tail -1 |  awk -F "/" '{ print $(NF-1) }'`
 rm -rf index.html
+# test if a valid version number was actually read
+if [ "$NEWVERSION" = "0" ]; then
+    echo "is at version $VERSION (bypass, could not read version number)"
+    export RET0=""
+    return
+fi
 
 MAJOR=`echo $NEWVERSION | cut -d "." -f 1`
 TARBALL=vstudio_x64_${MAJOR}_lin.deb
 URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBALL}"
 
 VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ] || [ "$NEWVERSION" = "0" ]; then
+if [ "$VERSION" = "$NEWVERSION" ]; then
     echo "is at version $VERSION"
     export RET0=""
 else

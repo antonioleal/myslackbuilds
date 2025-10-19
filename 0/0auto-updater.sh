@@ -53,7 +53,7 @@ do
             fi
         fi
     else
-        printf '%-15s * %s  has no updater.sh\n' $CATEGORY $PKGNAME
+        printf '%-15s %s  (bypass, has no updater.sh)\n' $CATEGORY $PKGNAME
     fi
 done
 echo
