@@ -1168,7 +1168,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 8.8.6
+- Version: 8.8.7
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 
