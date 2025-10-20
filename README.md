@@ -328,7 +328,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 2.8.1
+- Version: 2.8.4
 - Homepage: https://nuitka.net
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 
