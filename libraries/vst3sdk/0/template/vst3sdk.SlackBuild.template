@@ -83,7 +83,6 @@ cp CMakeLists.txt $PKG/usr/include/vst3sdk
 cp -a \
   LICENSE.txt \
   README.md \
-  VST3_License_Agreement.pdf \
   VST3_Usage_Guidelines.pdf \
   index.html \
 $PKG/usr/doc/$PRGNAM-$VERSION
