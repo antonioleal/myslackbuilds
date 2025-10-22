@@ -82,7 +82,7 @@ cp -avxu $PRGNAM-$VERSION/* $PKG/opt/$PRGNAM/
 mkdir -p $PKG/usr/bin $PKG/usr/share/applications $PKG/usr/share/pixmaps
 ( cd $PKG/usr/bin ; rm -rf zen-browser )
 ( cd $PKG/usr/bin ; ln -sf ../../opt/zen-browser/zen zen-browser )
-cp $CWD/zen-browser.png $PKG/usr/share/pixmaps/
+cp $PKG/opt/$PRGNAM/browser/chrome/icons/default/default128.png $PKG/usr/share/pixmaps/zen-browser.png
 cp $CWD/zen-browser.desktop $PKG/usr/share/applications
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
