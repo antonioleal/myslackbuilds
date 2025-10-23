@@ -283,7 +283,7 @@
   
 
 - Category: development
-- Version: 3.30
+- Version: 3.40
 - Homepage: https://sourceforge.net/projects/bwbasic
 - Code repository: https://sourceforge.net/projects/bwbasic
 
