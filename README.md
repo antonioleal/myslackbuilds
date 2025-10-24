@@ -202,6 +202,17 @@
 - Code repository:
 
 *Note: updater.sh is available for this package*
+## zxtext2p (convert text to zx81 basic tape)
+ zxtext2p converts a text file containing standard zx81 basic
+ to a tape file.
+  
+
+- Category: development
+- Version: 1.0
+- Homepage: https://freestuff.grok.co.uk/zxtext2p/index.html
+- Code repository:
+
+*Note: updater.sh not available*
 ## JAForth (An interpreter for the Jupiter ACE Forth)
  This package contains three command-line programs:
  - JAForth: An interpreter for the Jupiter ACE Forth, written in
