@@ -503,6 +503,17 @@
 - Code repository: "https://github.com/boriel-basic/zxbasic"
 
 *Note: updater.sh is available for this package*
+## zmakebas (convert text to ZXSpectrum basic tape)
+ zmakebas converts a text file containing standard ZXSpectrum basic
+ to a tape file.
+  
+
+- Category: development
+- Version: 1.2b
+- Homepage: https://github.com/z00m128/zmakebas
+- Code repository:
+
+*Note: updater.sh not available*
 ## critcl (C Runtime In Tcl)
  critcl is a system that lets you build C/C++ extension packages for
  Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
