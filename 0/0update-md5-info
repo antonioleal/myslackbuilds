@@ -3,7 +3,7 @@
 # Slackware 0script to print MD5SUM from existing downloaded tarballs file
 # useful to update *.info files
 
-# Copyright 2024 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2024-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is

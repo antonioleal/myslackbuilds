@@ -2,7 +2,7 @@
 
 # Slackware menu for 0scripts
 
-# Copyright 2024 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2024-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -40,8 +40,8 @@ DIALOG_CANCEL=1
 DIALOG_ESC=255
 
 OPTIONS=()
-if [ -f 0/updater.sh ]; then
-OPTIONS+=(0 "** Run updater.sh for this SlackBuild **"
+if [ -f 0/updater ]; then
+OPTIONS+=(0 "** Run updater for this SlackBuild **"
          "" "---------------------------------------------------------------------------------"
          )
 fi
@@ -90,9 +90,9 @@ do
 
     case $CHOICE in
             0)
-                if [ -f 0/updater.sh ]; then
+                if [ -f 0/updater ]; then
                     cd 0
-                    source updater.sh
+                    source updater
                     cd $CWD
                     read -p "Press [ENTER] to continue." op
                 fi
@@ -101,22 +101,22 @@ do
                 less $PKGNAME.info
                 ;;
             2)
-                0meld.sh
+                0meld
                 ;;
             3)
-                0replace-string.sh
+                0replace-string
                 read -p "Press [ENTER] to continue." op
                 ;;
             4)
-                0download-source-tarballs.sh
+                0download-source-tarballs
                 read -p "Press [ENTER] to continue." op
                 ;;
             5)
-                0update-md5-info.sh
+                0update-md5-info
                 read -p "Press [ENTER] to continue." op
                 ;;
             6)
-                0build.sh
+                0build
                 read -p "Press [ENTER] to continue." op
                 ;;
             7)
@@ -124,15 +124,15 @@ do
                 ark 0/slackbuild/$PKGNAME.tar.gz 2> /dev/null
                 ;;
             8)
-                0commit-push.sh
+                0commit-push
                 read -p "Press [ENTER] to continue." op
                 ;;
             9)
-                0pull-request.sh
+                0pull-request
                 read -p "Press [ENTER] to continue." op
                 ;;
             c)
-                0clean-tree.sh
+                0clean-tree
                 read -p "Press [ENTER] to continue." op
                 ;;
             e)

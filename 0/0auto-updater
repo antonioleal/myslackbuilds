@@ -40,10 +40,10 @@ do
 
     counter=$((counter+1))
 
-    if [ -f 0/updater.sh ]; then
+    if [ -f 0/updater ]; then
         RET0=""
         printf '%-15s %s ' $CATEGORY $PKGNAME
-        source ~/slackware-builds/myslackbuilds/$updaterdir/updater.sh
+        source ~/slackware-builds/myslackbuilds/$updaterdir/updater
         if ! [ "$RET0" = "" ]
         then
             read -p "Spawn work Konsole ? (Y/n) " op
@@ -53,7 +53,7 @@ do
             fi
         fi
     else
-        printf '%-15s %s  (bypass, has no updater.sh)\n' $CATEGORY $PKGNAME
+        printf '%-15s %s  (bypass, has no updater)\n' $CATEGORY $PKGNAME
     fi
 done
 echo

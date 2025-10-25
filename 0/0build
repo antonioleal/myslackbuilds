@@ -2,7 +2,7 @@
 
 # Slackware build scipt for 0scripts
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -71,7 +71,7 @@ fi
 
 echo "--------------------------------------------------------------------------------"
 echo
-read -p "Create SlackBuild package by running 0tar.sh? (Y/n) " op
+read -p "Create SlackBuild package by running 0tar? (Y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]; then
-    0tar.sh
+    0tar
 fi

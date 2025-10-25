@@ -2,7 +2,7 @@
 
 # Slackware 0script to discover package dependencies
 
-# Copyright 2023 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -55,7 +55,7 @@ echo "$msg" > $fich
 IFS=$'\n' # set the Internal Field Separator to newline
 for lib in $(cat "$aux")
 do
-        pkg="`0whichpkg.sh $lib`"
+        pkg="`0whichpkg $lib`"
         echo "$pkg"
         echo "$pkg" >> $fich
 done
