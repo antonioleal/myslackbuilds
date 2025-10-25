@@ -2,7 +2,7 @@
 
 # Slackware updater script for MuseScore
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,7 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-TAG=`curl -s https://api.github.com/repos/musescore/MuseScore/releases/latest | jq -r '.tag_name'`
+# TAG=`curl -s https://api.github.com/repos/musescore/MuseScore/releases/latest | jq -r '.tag_name'`
+TAG=$(gh release view -R musescore/MuseScore --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
 TARBALL=$PRGNAM-$NEWVERSION.tar.gz
 URL="https://github.com/musescore/MuseScore/archive/$TAG/$TARBALL"

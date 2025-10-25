@@ -30,7 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=`curl -s https://api.github.com/repos/coin-or/Ipopt/releases/latest | jq -r '.tag_name' | awk -F "/" '{print $2}'`
+# NEWVERSION=`curl -s https://api.github.com/repos/coin-or/Ipopt/releases/latest | jq -r '.tag_name' | awk -F "/" '{print $2}'`
+NEWVERSION=$(gh release view -R coin-or/Ipopt --json tagName --jq '.tagName' | awk -F "/" '{print $2}')
 TARBALL=Ipopt-releases-${NEWVERSION}.tar.gz
 URL="https://github.com/coin-or/Ipopt/archive/releases/$NEWVERSION/Ipopt-releases-$NEWVERSION.tar.gz"
 

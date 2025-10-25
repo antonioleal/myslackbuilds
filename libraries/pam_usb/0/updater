@@ -30,7 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=$(curl -s https://api.github.com/repos/mcdope/pam_usb/releases/latest | jq -r '.tag_name')
+# NEWVERSION=$(curl -s https://api.github.com/repos/mcdope/pam_usb/releases/latest | jq -r '.tag_name')
+NEWVERSION=$(gh release view -R mcdope/pam_usb --json tagName --jq '.tagName')
 TARBALL=pam_usb-$NEWVERSION.zip
 URL="https://github.com/mcdope/pam_usb/archive/$NEWVERSION/pam_usb-$NEWVERSION.zip"
 

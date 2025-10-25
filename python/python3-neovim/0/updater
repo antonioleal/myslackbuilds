@@ -30,36 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-
-#tag=$(curl -s https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.tag_name')
-#echo $tag
-
-# NEWVERSION
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
-#TARBALL=doublecmd-${NEWVERSION}-src.tar.gz
-
-#TAG=$(curl -s https://api.github.com/repos/wxFormBuilder/wxFormBuilder/releases/latest | jq -r '.tag_name')
-#NEWVERSION=${TAG:1}
-#TARBALL=wxFormBuilder-${NEWVERSION}-source-full.tar.gz
-
-#NEWVERSION=$(curl -s https://2484.de/yabasic/content_whatsnew.html | grep Version | head -n1 | cut -d " " -f 6 | cut -d "," -f 1)
-#TARBALL=yabasic-${NEWVERSION}.tar.gz
-
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/eightyone-sinclair-emulator/best_release.json" | jq -r ".release.filename" | cut -d " " -f 2 | awk '{ print substr($0,2,length($0)-5) }'`
-#TARBALL=EightyOne V${NEWVERSION}.zip
-#URL="https://sourceforge.net/projects/eightyone-sinclair-emulator/files/EightyOne%20V${NEWVERSION}.zip"
-
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/lazarus/best_release.json" | jq -r ".platform_releases.linux.filename" | awk -F "-" '{print substr($NF,1,length($NF)-4)}'`
-#TARBALL=lazarus-${NEWVERSION}-0.tar.gz
-#URL="http://downloads.sourceforge.net/lazarus/${TARBALL}"
-
-NEWVERSION=$(curl -s https://api.github.com/repos/neovim/pynvim/releases/latest | jq -r '.tag_name')
+# NEWVERSION=$(curl -s https://api.github.com/repos/neovim/pynvim/releases/latest | jq -r '.tag_name')
+NEWVERSION=$(gh release view -R neovim/pynvim --json tagName --jq '.tagName')
 TARBALL=pynvim-$NEWVERSION.tar.gz
 URL="https://github.com/neovim/pynvim/archive/$NEWVERSION/pynvim-$NEWVERSION.tar.gz"
 
