@@ -1393,7 +1393,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: academic
-- Version: 0.51.1
+- Version: 0.51.2
 - Homepage: https://codeberg.org/gwh/x48ng/tags
 - Code repository: https://github.com/gwenhael-le-moine/x48ng
 

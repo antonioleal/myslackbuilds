@@ -49,7 +49,7 @@ do
             read -p "Spawn work Konsole ? (Y/n) " op
             if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]
             then
-                konsole --workdir `dirname ~/slackware-builds/myslackbuilds/$updaterdir`
+                konsole --workdir `dirname ~/slackware-builds/myslackbuilds/$updaterdir` -e 0
             fi
         fi
     else
