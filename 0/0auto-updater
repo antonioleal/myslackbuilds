@@ -55,6 +55,8 @@ do
     else
         printf '%-15s %s  (bypass, has no updater)\n' $CATEGORY $PKGNAME
     fi
+
+    read -t 0.01 -n 1 -s && [[ "$REPLY" == "p" ]] && sleep 30
 done
 echo
 echo "Checked $counter packages. Done."

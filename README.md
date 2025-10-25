@@ -154,6 +154,10 @@
 
 - Category: office
 - Version: 0.9.12
+- Homepage: https://sigil-ebook.com/
+- Code repository:
+
+*Note: updater not available*
 ## ledger-live (Ledger Hardware Wallet Manager)
  A manager for your Ledger hardware wallet.
  Install applications, update firmware, buy crypto, etc.
@@ -417,7 +421,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 3.17.1
+- Version: 3.17.2
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
 
