@@ -2,7 +2,7 @@
 
 # Slackware updater script for zen-browser
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,8 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-
-NEWVERSION=$(curl -s https://api.github.com/repos/zen-browser/desktop/releases/latest | jq -r '.tag_name')
+# NEWVERSION=$(curl -s https://api.github.com/repos/zen-browser/desktop/releases/latest | jq -r '.tag_name')
+NEWVERSION=$(gh release view -R zen-browser/desktop --json tagName --jq '.tagName')
 TARBALL=zen.linux-x86_64.tar.xz
 URL="https://github.com/zen-browser/desktop/releases/download/$NEWVERSION/zen.linux-x86_64.tar.xz"
 

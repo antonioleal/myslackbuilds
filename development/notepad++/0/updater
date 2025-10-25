@@ -2,7 +2,7 @@
 
 # Slackware updater script for notepad++
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,33 +30,9 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-
-#tag=$(curl -s https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.tag_name')
-#echo $tag
-
-# NEWVERSION
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
-#TARBALL=doublecmd-${NEWVERSION}-src.tar.gz
-
-#TAG=$(curl -s https://api.github.com/repos/wxFormBuilder/wxFormBuilder/releases/latest | jq -r '.tag_name')
-#NEWVERSION=${TAG:1}
-#TARBALL=wxFormBuilder-${NEWVERSION}-source-full.tar.gz
-
-#NEWVERSION=$(curl -s https://2484.de/yabasic/content_whatsnew.html | grep Version | head -n1 | cut -d " " -f 6 | cut -d "," -f 1)
-#TARBALL=yabasic-${NEWVERSION}.tar.gz
-
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/eightyone-sinclair-emulator/best_release.json" | jq -r ".release.filename" | cut -d " " -f 2 | awk '{ print substr($0,2,length($0)-5) }'`
-#TARBALL=EightyOne V${NEWVERSION}.zip
-#URL="https://sourceforge.net/projects/eightyone-sinclair-emulator/files/EightyOne%20V${NEWVERSION}.zip"
-
 #NEWVERSION=`curl -s https://notepad-plus-plus.org/index.xml | grep Download | head -n1 | awk '{print substr($3,2,length($3)-1)}'`
-TAG=`curl -s https://api.github.com/repos/notepad-plus-plus/notepad-plus-plus/releases/latest | jq -r '.tag_name'`
+# TAG=`curl -s https://api.github.com/repos/notepad-plus-plus/notepad-plus-plus/releases/latest | jq -r '.tag_name'`
+TAG=$(gh release view -R notepad-plus-plus/notepad-plus-plus --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
 TARBALL1=npp.${NEWVERSION}.Installer.exe
 TARBALL2=npp.${NEWVERSION}.Installer.x64.exe
@@ -94,9 +70,11 @@ else
     MD51=`md5sum ../$TARBALL1 | cut -d " " -f 1`
     MD52=`md5sum ../$TARBALL2 | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+
     sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md51_/$MD51/g" -e "s/_md52_/$MD52/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
     sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
     sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.template > ../${PRGNAM}
+
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"

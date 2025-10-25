@@ -2,7 +2,7 @@
 
 # Slackware updater script for gitnuro
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,7 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-TAG=$(curl -s -k https://api.github.com/repos/JetpackDuba/Gitnuro/releases/latest | jq -r '.tag_name')
+# TAG=$(curl -s -k https://api.github.com/repos/JetpackDuba/Gitnuro/releases/latest | jq -r '.tag_name')
+TAG=$(gh release view -R JetpackDuba/Gitnuro --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
 TARBALL=Gitnuro-linux-x86_64-${NEWVERSION}.jar
 URL="https://github.com/JetpackDuba/Gitnuro/releases/download/${TAG}/${TARBALL}"
@@ -59,8 +60,14 @@ else
     ################################
     MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-    sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_md5_/$MD5/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"

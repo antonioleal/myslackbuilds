@@ -2,7 +2,7 @@
 
 # Slackware updater script for waterfox
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,28 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-
-#tag=$(curl -s https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.tag_name')
-#echo $tag
-
-# NEWVERSION
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-#COMMIT=`git ls-remote https://github.com/stardot/b-em/ | head -1 | cut  -f 1`
-#NEWVERSION=${COMMIT:0:7}
-
-#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/doublecmd/best_release.json" | jq -r ".platform_releases.linux.filename" | cut -d "/" -f 3 | cut -d " " -f 3`
-#TARBALL=doublecmd-${NEWVERSION}-src.tar.gz
-
-#TAG=$(curl -s https://api.github.com/repos/wxFormBuilder/wxFormBuilder/releases/latest | jq -r '.tag_name')
-#NEWVERSION=${TAG:1}
-#TARBALL=wxFormBuilder-${NEWVERSION}-source-full.tar.gz
-
-#NEWVERSION=$(curl -s https://2484.de/yabasic/content_whatsnew.html | grep Version | head -n1 | cut -d " " -f 6 | cut -d "," -f 1)
-#TARBALL=yabasic-${NEWVERSION}.tar.gz
-
-NEWVERSION=$(curl -s https://api.github.com/repos/BrowserWorks/Waterfox/releases/latest | jq -r '.tag_name')
+# NEWVERSION=$(curl -s https://api.github.com/repos/BrowserWorks/Waterfox/releases/latest | jq -r '.tag_name')
+NEWVERSION=$(gh release view -R BrowserWorks/Waterfox --json tagName --jq '.tagName')
 TARBALL=waterfox-${NEWVERSION}.tar.bz2
 URL="https://cdn1.waterfox.net/waterfox/releases/${NEWVERSION}/Linux_x86_64/waterfox-${NEWVERSION}.tar.bz2"
 
@@ -79,8 +59,14 @@ else
     ################################
     MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-    sed -e "s/_version_/${NEWVERSION}/g" -e "s/_md5_/$MD5/g" $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-    sed -e "s/_version_/${NEWVERSION}/g" $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_md5_/$MD5/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"

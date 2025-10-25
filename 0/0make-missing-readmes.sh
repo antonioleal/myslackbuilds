@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for b2
+# Slackware 0script to generate a README.md on any package
 
 # Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,26 +22,16 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=b2
-set -e
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-cd $SCRIPT_DIR
+cd ~/slackware-builds/myslackbuilds
 
-################################
-# check versions               #
-################################
-# TAG=$(curl -s https://api.github.com/repos/tom-seddon/b2/releases/latest | jq -r '.tag_name')
-TAG=$(gh release view -R tom-seddon/b2 --json tagName --jq '.tagName')
-NEWVERSION=${TAG:3}
-NEWVERSION=${NEWVERSION//-/_}
-
-VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ]
-then
-    echo "is at version $VERSION"
-    export RET0=""
-else
-    echo "$PRGNAM thereis a new version $VERSION, but you need to update it manually."
-    echo $NEWVERSION > version
-    export RET0=$NEWVERSION
-fi
+for f in `find . -name "*.info" -print`
+do
+    dir=`dirname $f`
+    mkdir -p $dir/0
+    if ! [ -f $dir/0/README.md ]; then
+        echo "README.md missing at $dir"
+        source $dir/*.info
+        echo "- Homepage: $HOMEPAGE" > $dir/0/README.md
+        echo "- Code repository:" >> $dir/0/README.md
+    fi
+done

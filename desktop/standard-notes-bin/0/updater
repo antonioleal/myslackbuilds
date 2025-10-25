@@ -2,7 +2,7 @@
 
 # Slackware updater script for standard-notes-bin
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,7 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=$(curl -s https://api.github.com/repos/standardnotes/app/releases/latest | jq -r '.tag_name' | awk -F"@" '{print $3}')
+# NEWVERSION=$(curl -s https://api.github.com/repos/standardnotes/app/releases/latest | jq -r '.tag_name' | awk -F"@" '{print $3}')
+NEWVERSION=$(gh release view -R standardnotes/app --json tagName --jq '.tagName' | awk -F"@" '{print $3}')
 TARBALL=standard-notes-${NEWVERSION}-linux-amd64.deb
 URL=https://github.com/standardnotes/app/releases/download/%40standardnotes%2Fdesktop%40${NEWVERSION}/standard-notes-${NEWVERSION}-linux-amd64.deb
 

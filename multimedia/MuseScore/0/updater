@@ -68,7 +68,6 @@ else
     sed -e "s/_version_/${NEWVERSION}/g" \
         $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
 
-
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo "has a new version $NEWVERSION"
