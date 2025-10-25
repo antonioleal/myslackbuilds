@@ -1,36 +1,34 @@
 ## The Zero Scripts Setup
 
-*This folder contains a simple set of Slackware auxiliary scripts, the so called zero ("0") scripts. They present, in fact, one possible setup for you to collaborate with SlackBuilds.org*
-
+*This folder contains a simple set of Slackware auxiliary scripts, the so called zero ("0") scripts, that simplify the process for you to collaborate with SlackBuilds.org*
 
 Why the "0"? Because with *bash* it's very useful when you type 0 and press TAB twice to see what operations you can make in this environment *and* does not interfere with any other program in your Slackware box. Nice and tidy..
 
 ---
 
 ### Setup
-In order to use these environment the following setup is required:
+A script called 0setup is provided to install the initial environment and the auxiliary packages described below, but the explanation is necessary for your understanding.
 
-* Install the package `sbo-maintainer-tools` available from SlackBuilds.org
+In order to use this environment the following setup is required:
 
-* Install the package `github-cli` available from SlackBuilds.org
+* the package `sbo-maintainer-tools` available from SlackBuilds.org
 
-* Install the package `jq` available from SlackBuilds.org
+* the package `github-cli` available from SlackBuilds.org
 
-* Install the package `meld` available from SlackBuilds.org
+* the package `jq` available from SlackBuilds.org
 
-* Other useful package is KDE's `Ark`, specially if you use the **0.sh** menu
+* the package `meld` available from SlackBuilds.org
+
+* Other useful package is KDE's `Ark`, specially if you use the **0** menu
 
 * You must setup a *wokspace* folder where your slackbuilds will be stored, where a sub-folder called "myslackbuilds" should exist. Inside it, you must follow strictly the organization of categories from SlackBuilds.org.
 >For example: The **plus42.SlackBuild** and all associated files, *.info, desc, etc.. are stored at `academic/plus42`, so your folder for this SlackBuild should be:
-> `/home/{username}/slackware-builds/myslackbuilds/academic/plus42`
+> `$HOME/slackware-builds/myslackbuilds/academic/plus42`
 
 * If you placed your *workspace* in a different folder you must make a symlink called "slackware-builds" in your home directory pointing at your *workspace*
 
-* The zero ("0") scripts are placed in your PATH, in my case for example I add to my `.bahsrc` the line (*1):
-> `export PATH=$PATH:/home/antonio/slackware-builds/myslackbuilds/0`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-(**1) notice a folder also called "0" actually holding the scripts is placed inside myslackbuilds*
+* The zero scripts location must be placed in your PATH, for example by adding this line to your .bashrc:
+> `export PATH=$PATH:$HOME/slackware-builds/myslackbuilds/0`
 
 * Create a github repository called 'myslackbuilds'. Check github policy (account key, etc..) so you are able to commit to your own repository. Now push all your own scripts to it, including (eventually) also the myslackbuilds/0 directory. Your 'myslackbuilds' should have a similar structure to 'slackbuilds' but naturally with much less SlackBuilds, or none at all if you are just starting.
 
@@ -75,7 +73,7 @@ In the end your work environment should look like this:
 ... and you are ready to go!
 
 ### The menu
-A simple menu describing the complete workflow and helping with the build sequence is provided in the **0.sh** script (which you can invoke by just typing "**0**" also). You need to start it from the slackbuild folder as it reads the .info file.
+A simple menu describing the complete workflow and helping with the build sequence is provided in the **0** script (which you can invoke by just typing "**0**" also). You need to start it from the slackbuild folder as it reads the .info file.
 
 ### The scripts
 With a few exceptions the zero ("0") scripts are meant to be started from the slackbuild directory. Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild. Have a look at my own setup.
@@ -83,68 +81,68 @@ With a few exceptions the zero ("0") scripts are meant to be started from the sl
 Example:
 > `cd ~/slackware-builds/myslackbuilds/academic/plus42`
 
-> `0pull-request.sh`
+> `0pull-request`
 
 will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds` 
 
 #### Current scripts
 
-    Script: 0download-source-tarballs.sh
+    Script: 0download-source-tarballs
     Effect: Downloads the sources referred in the *.info file. It also
             checks if MD5SUM(s) are correct in the infor file, use together
-            with 0print-tarball-md5sums.sh to prepare a new *.info file.
+            with 0print-tarball-md5sums to prepare a new *.info file.
 
-    Script: 0update-md5-info.sh
+    Script: 0update-md5-info
     Effect: Reads the source(s) in *.info file, calculates new MD5SUM(s) and   
             produces a new *.info file.
             
-    Script: 0meld.sh
+    Script: 0meld
     Effect: Compares what is currently published in slackbuilds.org (your local folder!)
             with your current script. You need the meld program.
 
-    Script: 0build.sh
+    Script: 0build
     Effect: Starts the build process.
 
-    Script: 0tar.sh
+    Script: 0tar
     Effect: creates a "slackbuild".tar.gz pack ready to be submitted on the
             folder 0/slackbuild under the SlackBuild you are working.
     
-    Script: 0commit-push.sh
-    Effect: Runs 0make-readme.sh, commits and pushes your changes to your github repo.
+    Script: 0commit-push
+    Effect: Runs 0make-readme, commits and pushes your changes to your github repo.
 
-    Script: 0pull-request.sh
+    Script: 0pull-request
     Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds.
 
-    Script: 0delete-branches.sh
+    Script: 0delete-branches
     Effect: Each Saturday afternoon, you can run this to delete all braches you
-            created with the script 0pull-request.sh.
+            created with the script 0pull-request.
 
-    Script: 0clean-tree.sh
+    Script: 0clean-tree
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this deletes all non-git controlled files.
 
-    Script: 0make-readme.sh
+    Script: 0make-readme
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this automatically generates a README.md for github.
 
-    Script: 0lspkg.sh
+    Script: 0lspkg
     Effect: A Slackware tool which simply lists the currently installed
             packages.
             see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
 
-    Script: 0pkginfo.sh
+    Script: 0pkginfo
     Effect: A Slackware tool to find the inforamtion about any installed 
             package
             see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
 
-    Script: 0whichpkg.sh
+    Script: 0whichpkg
     Effect: A Slackware tool to find which package a file comes from.
             see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
 
-    Script: 0slackware-package-dependencies.sh
+    Script: 0slackware-package-dependencies
     Effect: Inspect a binary file and check discover its package dependencies.
 
-    Script: 0auto-updater.sh
+    Script: 0auto-updater
     Effect: Check a multitude of sites to know if new versions are available.
 
 
@@ -156,24 +154,24 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 1. Check if new sources are available upstream for each of your packages.
     * Better still: subscribe to be notified when this occurs!
 
-2. Check if any slackbuild maintainer has modified your script. Sometimes they do! Use **0meld.sh** to compare your current script with the published one.
+2. Check if any slackbuild maintainer has modified your script. Sometimes they do! Use **0meld** to compare your current script with the published one.
 
 3. Once a new source is available update the *.info file and point DOWNLOAD and DOWNLOAD_x86_64 to the new source tarballs on the web.
-   * Afterwards **0download-source-tarballs.sh** and **0update-info.sh** are your friends.
+   * Afterwards **0download-source-tarballs** and **0update-info** are your friends.
 
 4. Update your *.SlackBuild script
     * Sometimes is just a matter of upgrading the version number, but upstream developers sometimes change formats.
     * If you patched the original sources make sure these mods are still applicable.
 
-5. Build the source with **0build.sh** saying 'yes' to all the steps.
+5. Build the source with **0build** saying 'yes' to all the steps.
     * The build package will be in /tmp as usual.
-    * A new compressed `'package'.tar.gz` will be created in 0/slackbuild sub-folders of your SlackBuild. You can also use **0tar.sh** for this.
+    * A new compressed `'package'.tar.gz` will be created in 0/slackbuild sub-folders of your SlackBuild. You can also use **0tar** for this.
 
 6. Test you new build.
     * It is a good idea to install your new software in a "clean" setup. If possible use a virtual machine.
     * If your tests are successful then you are ready to publish your work.
 
-7. If this is a second submission of an existing SlackBuild you can create a Pull Request (PR) with **0pull-request.sh**
+7. If this is a second submission of an existing SlackBuild you can create a Pull Request (PR) with **0pull-request**
     * Go to the github.com/SlackBuildsOrg/slackbuilds and confirm the PR.
 
     Otherwise, for first submissions, (totally new SlackBuild scripts) you have to use the SlackBuilds.org site and manually upload your work.
@@ -186,14 +184,14 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 
 2. Run `git pull --rebase` on your ~/slackware-builds/slackbuilds folder
 
-3. Delete accessory branches by running **0delete-branches.sh all**
+3. Delete accessory branches by running **0delete-branches all**
 
-4. Run **0clean-tree.sh** to get rid of unneeded tarballs.
+4. Run **0clean-tree** to get rid of unneeded tarballs.
 
 5. That's it. Now you are ready to restart the workflow.
 
 ##### "During the week":
-Strictly optional, if you constructed updater.sh scripts for your slackbuilds (see my examples), then you can run the scipt **0auto-updater.sh** to check automatically if the upstream developers of your packages have released anything new.
+Strictly optional, if you constructed updater scripts for your slackbuilds (see my examples), then you can run the scipt **0auto-updater** to check automatically if the upstream developers of your packages have released anything new.
 
 #### Happy Slacking!
 António Leal
