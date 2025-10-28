@@ -958,7 +958,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 122.0.5643.142
+- Version: 123.0.5669.23
 - Homepage: https://www.opera.com
 - Code repository: https://www.opera.com/opera
 
