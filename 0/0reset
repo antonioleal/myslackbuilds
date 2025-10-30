@@ -26,7 +26,7 @@ set -e
 
 proc="no"
 
-if [ "$1" == "sl" ] || [ "$1" == "all" ]; then
+if [ "$1" == "all" ]; then
     echo "---------------------------------------------------------------------"
     echo "on ~/slackware-builds/slackbuilds:"
     cd ~/slackware-builds/slackbuilds
@@ -37,7 +37,7 @@ if [ "$1" == "sl" ] || [ "$1" == "all" ]; then
     proc="yes"
 fi
 
-if [ "$1" == "my" ] || [ "$1" == "all" ]; then
+if [ "$1" == "" ] || [ "$1" == "all" ]; then
     echo "---------------------------------------------------------------------"
     echo "on ~/slackware-builds/myslackbuilds:"
     cd ~/slackware-builds/myslackbuilds
@@ -50,5 +50,5 @@ fi
 
 if [ "$proc" == "no" ]; then
     echo "---------------------------------------------------------------------"
-    echo "please specify 'all', 'my' ou 'sl' as parameter"
+    echo "please specify 'all' or nothing as parameter"
 fi
