@@ -481,7 +481,7 @@
   
 
 - Category: development
-- Version: 16.1
+- Version: 16.2
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
