@@ -48,14 +48,15 @@ def usage():
     print ("    i, install [programs]        install package *and* install a slackbuild ")
     print ("    c, clean                     clean caches")
     print ("    r, remove  [programs]        remove programs")
+    print ("    l, list                      list available programs")
     print ("")
     print ("options:")
-    print ("    -y                           do not prompt install/upgrade")
+    print ("    -y                           do not prompt for install/upgrade, assume yes")
     print ("")
     print ("The program defines the symlinks 'sl' and 'slapt' pointing to the 'silk' executable. Use them as aliases.")
 
 def execute(lines):
-    print(lines)
+    #print(lines)
     with open('/tmp/silk', 'w') as file:
         file.writelines(lines)
     os.system('chmod +x /tmp/silk')
@@ -79,6 +80,8 @@ def slapt_get(command, options, programs=""):
         localcmd = '--clean'
     if command in ['r', 'remove']:
         localcmd = '--remove'
+    if command in ['l', 'list']:
+        localcmd = '--available'
 
     for op in options.split():
         if op == '-y':
@@ -88,6 +91,9 @@ def slapt_get(command, options, programs=""):
     if localcmd != "":
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n']
         execute(lines)
+    else:
+        usage()
+        exit(0)
 
 def slapt_src(command, options, programs=""):
     localops = ''
@@ -107,6 +113,8 @@ def slapt_src(command, options, programs=""):
         localcmd = '--clean'
     if command in ['r', 'remove']:
         return
+    if command in ['l', 'list']:
+        localcmd = '--list'
 
     for op in options.split():
         if op == '-y':
@@ -116,6 +124,9 @@ def slapt_src(command, options, programs=""):
     if localcmd != "":
         lines = ['#!/bin/bash\n\n', f'sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n']
         execute(lines)
+    else:
+        usage()
+        exit(0)
 
 def main():
     printline()
