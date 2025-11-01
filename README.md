@@ -777,7 +777,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: system
 - Version: 20251101_d7ba87d
-- Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
+- Homepage: https://limine-bootloader.org/
 - Code repository:
 
 *Note: updater not available*

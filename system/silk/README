@@ -1,8 +1,16 @@
 Silk is a frontend for slapt-get and slapt-src.
-It implements the more common commands and simplifies
-the operation of both programs by unifying the syntax
-and their execution.
+It implements the more common commands and simplifies the operation
+of both programs by unifying the syntax and their execution.
 
-This program conflicts with the sl package
-found in SlackBuilds.org, do not install
-both at the same time
+usage examples:
+
+    sl u          --> update cache
+    sl U          --> upgrade installed programs and slackbuilds
+    sl s 'name'   --> search for a package or slackbuild 'name'
+    sl i 'name'   --> install 'name'
+    sl r 'name'   --> remove name
+
+Note: 'sl' is a symlink to 'silk'.
+
+This program conflicts with the 'sl' package found in SlackBuilds.org,
+do not install both at the same time

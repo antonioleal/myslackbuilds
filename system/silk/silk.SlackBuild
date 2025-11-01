@@ -53,14 +53,14 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
 mkdir -p $PKG/usr/bin
-install -T -m0755 silk $PKG/usr/bin/silk
+install -T -m0755 $CWD/silk $PKG/usr/bin/silk
 
 ( cd $PKG/usr/bin ; rm -rf sl )
 ( cd $PKG/usr/bin ; ln -sf silk sl )
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-cp README $PKG/usr/doc/$PRGNAM-$VERSION
+cp README $CWD/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
