@@ -10,7 +10,7 @@ usage examples:
     sl i 'name'   --> install 'name'
     sl r 'name'   --> remove name
 
-Note: 'sl' is a symlink to 'silk'.
+Note: 'sl' and 'slapt' are symlinks to 'silk'. Use them at will.
 
 This program conflicts with the 'sl' package found in SlackBuilds.org,
-do not install both at the same time
+do not install both at the same time.

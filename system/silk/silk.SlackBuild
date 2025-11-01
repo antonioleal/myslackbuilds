@@ -29,14 +29,7 @@ VERSION=${VERSION:-20251101_d7ba87d}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-
-if [ -z "$ARCH" ]; then
-  case "$( uname -m )" in
-    i?86) ARCH=i586 ;;
-    arm*) ARCH=arm ;;
-       *) ARCH=$( uname -m ) ;;
-  esac
-fi
+ARCH=noarch
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
@@ -57,10 +50,12 @@ install -T -m0755 $CWD/silk $PKG/usr/bin/silk
 
 ( cd $PKG/usr/bin ; rm -rf sl )
 ( cd $PKG/usr/bin ; ln -sf silk sl )
+( cd $PKG/usr/bin ; rm -rf slapt )
+( cd $PKG/usr/bin ; ln -sf silk slapt )
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-cp README $CWD/usr/doc/$PRGNAM-$VERSION
+cp $CWD/README $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

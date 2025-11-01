@@ -47,9 +47,12 @@ def usage():
     print ("    b, build   [programs]        download package *and* build a slackbuild ")
     print ("    i, install [programs]        install package *and* install a slackbuild ")
     print ("    c, clean                     clean caches")
+    print ("    r, remove  [programs]        remove programs")
     print ("")
     print ("options:")
     print ("    -y                           do not prompt install/upgrade")
+    print ("")
+    print ("The program defines the symlinks 'sl' and 'slapt' pointing to the 'silk' executable. Use them as aliases.")
 
 def execute(lines):
     print(lines)
@@ -70,6 +73,8 @@ def slapt_get(command, options, programs=""):
         localcmd = '--search'
     if command in ['b', 'build']:
         localcmd = '-d --install'
+    if command in ['i', 'install']:
+        localcmd = '--install'
     if command in ['c', 'clean']:
         localcmd = '--clean'
     if command in ['r', 'remove']:
