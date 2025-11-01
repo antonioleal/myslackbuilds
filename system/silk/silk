@@ -32,9 +32,6 @@ import sys
 import os
 import subprocess
 
-def printline():
-    print('-------------------------------------------------------------------------------------------------------------------------------')
-
 def usage():
     print ("Silk is a practical frontend to slapt-get + slapt-src")
     print ("")
@@ -89,6 +86,7 @@ def slapt_get(command, options, programs=""):
     localops = localops.strip()
 
     if localcmd != "":
+        print(f'    Running: sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n']
         execute(lines)
     else:
@@ -122,6 +120,7 @@ def slapt_src(command, options, programs=""):
     localops = localops.strip()
 
     if localcmd != "":
+        print(f'    Running: sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n']
         execute(lines)
     else:
@@ -129,7 +128,7 @@ def slapt_src(command, options, programs=""):
         exit(0)
 
 def main():
-    printline()
+    print()
     if (len(sys.argv[1:]) == 0):
         usage()
     else:
@@ -142,9 +141,9 @@ def main():
             else:
                 programs = programs + " " + arg
         slapt_get(command, options, programs)
-        printline()
+        print()
         slapt_src(command, options, programs)
-    printline()
+    print()
 
 if __name__ == '__main__':
     main()
