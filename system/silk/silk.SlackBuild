@@ -25,7 +25,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=silk
-VERSION=${VERSION:-20251101_d7ba87d}
+VERSION=${VERSION:-20251101_00c98fa}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
