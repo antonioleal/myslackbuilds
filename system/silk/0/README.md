@@ -1,2 +1,2 @@
-- Homepage: https://limine-bootloader.org/
+- Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 - Code repository:
