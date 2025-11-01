@@ -1,0 +1,134 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+#**********************************************************************************
+#*                                                                                *
+#*                                   Silk Fontend                                 *
+#*          ------------------------------------------------------------          *
+#*                                                                                *
+#**********************************************************************************
+# Copyright 2025 Antonio Leal, Porto Salvo, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# $Id:$
+
+import sys
+import os
+import subprocess
+
+def printline():
+    print('-------------------------------------------------------------------------------------------------------------------------------')
+
+def usage():
+    print ("Silk is a practical frontend to slapt-get + slapt-src")
+    print ("")
+    print ("Usage: silk command [options] [programs]")
+    print ("")
+    print ("commands:")
+    print ("    u, update                    retrieve pkg data from MIRROR *and* update local cache of remote slackbuilds ")
+    print ("    U, upgrade                   upgrade installed pkgs *and* upgrade all installed slackbuilds")
+    print ("    s, search                    search stuff")
+    print ("    b, build   [programs]        download package *and* build a slackbuild ")
+    print ("    i, install [programs]        install package *and* install a slackbuild ")
+    print ("    c, clean                     clean caches")
+    print ("")
+    print ("options:")
+    print ("    -y                           do not prompt install/upgrade")
+
+def execute(lines):
+    print(lines)
+    with open('/tmp/silk', 'w') as file:
+        file.writelines(lines)
+    os.system('chmod +x /tmp/silk')
+    subprocess.call('/tmp/silk')
+
+def slapt_get(command, options, programs=""):
+    localops = ''
+    localcmd = ''
+
+    if command in ['u', 'update']:
+        localcmd = '-u'
+    if command in ['U', 'upgrade']:
+        localcmd = '--upgrade'
+    if command in ['s', 'search']:
+        localcmd = '--search'
+    if command in ['b', 'build']:
+        localcmd = '-d --install'
+    if command in ['c', 'clean']:
+        localcmd = '--clean'
+    if command in ['r', 'remove']:
+        localcmd = '--remove'
+
+    for op in options.split():
+        if op == '-y':
+            localops = localops + "-y "
+    localops = localops.strip()
+
+    if localcmd != "":
+        lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n']
+        execute(lines)
+
+def slapt_src(command, options, programs=""):
+    localops = ''
+    localcmd = ''
+
+    if command in ['u', 'update']:
+        localcmd = '-u'
+    if command in ['U', 'upgrade']:
+        localcmd = '--upgrade-all'
+    if command in ['s', 'search']:
+        localcmd = '--search'
+    if command in ['b', 'build']:
+        localcmd = '--build'
+    if command in ['i', 'install']:
+        localcmd = '--install'
+    if command in ['c', 'clean']:
+        localcmd = '--clean'
+    if command in ['r', 'remove']:
+        return
+
+    for op in options.split():
+        if op == '-y':
+            localops = localops + "-y "
+    localops = localops.strip()
+
+    if localcmd != "":
+        lines = ['#!/bin/bash\n\n', f'sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n']
+        execute(lines)
+
+def main():
+    printline()
+    if (len(sys.argv[1:]) == 0):
+        usage()
+    else:
+        command = sys.argv[1]
+        options = ""
+        programs = ""
+        for arg in sys.argv[2:]:
+            if arg[0] == '-':
+                options=options + " " + arg
+            else:
+                programs = programs + " " + arg
+        slapt_get(command, options, programs)
+        printline()
+        slapt_src(command, options, programs)
+    printline()
+
+if __name__ == '__main__':
+    main()
