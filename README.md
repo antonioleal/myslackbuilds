@@ -538,7 +538,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 1.17.3b
+- Version: 1.17.4b
 - Homepage: https://zen-browser.app/
 - Code repository: https://github.com/zen-browser/desktop
 
