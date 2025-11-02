@@ -780,7 +780,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 - Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## brave-browser-the-latest (brave browser updater script)
  Maintaining an updated Brave Browser on Slackware is now made
  easier with this small program, "brave-browser-the-latest", a simple
