@@ -3,6 +3,8 @@ tools, namely slackpkg, sbopkg, slapt-get, slapt-src.
 It implements the more common commands and simplifies the operation
 of both programs by unifying the syntax and their execution.
 
+Please add your user to sudoers in order to use the program.
+
 usage examples:
 
     sl u          --> update cache
