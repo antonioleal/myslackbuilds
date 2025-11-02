@@ -1,5 +1,5 @@
 PRGNAM="silk"
-VERSION="20251101_00c98fa"
+VERSION="20251102_0cf8978"
 HOMEPAGE="https://github.com/antonioleal/myslackbuilds/tree/main/system/silk"
 DOWNLOAD="https://github.com/antonioleal/myslackbuilds/raw/main/system/silk/silk"
 MD5SUM="0f021e79c44480c7455cb7f7a93dff44"

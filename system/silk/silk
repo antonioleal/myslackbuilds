@@ -34,7 +34,7 @@ import os
 import subprocess
 import configparser
 
-VERSION = '20251101_00c98fa'
+VERSION = '20251102_0cf8978'
 
 def usage():
     print ("Silk is a practical frontend to various slackware package management tools,")
