@@ -49,6 +49,6 @@ tar -z -c -f $sboname.tar.gz -v \
     --exclude='*.exe'       \
     --exclude='*.AppImage'  \
     --exclude='*.cmake'  \
-    --exclude='silk'  \
+    --exclude='silk/silk'  \
     ../../../$sboname
 
