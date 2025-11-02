@@ -7,6 +7,7 @@
 #*          ------------------------------------------------------------          *
 #*                                                                                *
 #**********************************************************************************
+#
 # Copyright 2025 Antonio Leal, Porto Salvo, Portugal
 # All rights reserved.
 #
@@ -31,9 +32,13 @@
 import sys
 import os
 import subprocess
+import configparser
+
+VERSION = '20251101_00c98fa'
 
 def usage():
-    print ("Silk is a practical frontend to slapt-get + slapt-src")
+    print ("Silk is a practical frontend to various slackware package management tools,")
+    print ("namely slackpkg, sbopkg, slapt-get, slapt-src.")
     print ("")
     print ("Usage: silk command [options] [programs]")
     print ("")
@@ -51,6 +56,7 @@ def usage():
     print ("    -y                           do not prompt for install/upgrade, assume yes")
     print ("")
     print ("The program defines the symlinks 'sl' and 'slapt' pointing to the 'silk' executable. Use them as aliases.")
+    print ("Please also check ~/.config/silkrc settings.")
 
 def execute(lines):
     #print(lines)
@@ -127,7 +133,37 @@ def slapt_src(command, options, programs=""):
         usage()
         exit(0)
 
+def setconfig():
+    home = os.path.expanduser('~')
+    rc = f'{home}/.config/silkrc'
+    config = configparser.ConfigParser()
+    createfile=False
+    if os.path.isfile(rc):
+        config.read(rc)
+        if (config.get('settings','version') != VERSION):
+            createfile = True
+        else:
+            print(f'Loaded {home}/.config/silkrc')
+    else:
+        createfile = True
+    if createfile:
+        print(f'New {home}/.config/silkrc config file is invalid/older, creating a new one...')
+        with open(f'{home}/.config/silkrc', 'w') as file:
+            file.writelines('[settings]\n')
+            file.writelines('version = ' + str(VERSION) + '\n\n')
+            file.writelines('slapt-get = true\n')
+            file.writelines('slapt-src = true\n')
+            file.writelines('sbopkg = false\n')
+            file.writelines('slackpkg = false\n')
+        exit(0)
+
 def main():
+    setconfig()
+    home = os.path.expanduser('~')
+    rc = f'{home}/.config/silkrc'
+    config = configparser.ConfigParser()
+    config.read(rc)
+
     print()
     if (len(sys.argv[1:]) == 0):
         usage()
@@ -140,9 +176,12 @@ def main():
                 options=options + " " + arg
             else:
                 programs = programs + " " + arg
-        slapt_get(command, options, programs)
-        print()
-        slapt_src(command, options, programs)
+
+        if bool(config.getboolean('settings','slapt-get')):
+            slapt_get(command, options, programs)
+            print()
+        if bool(config.getboolean('settings','slapt-src')):
+            slapt_src(command, options, programs)
     print()
 
 if __name__ == '__main__':

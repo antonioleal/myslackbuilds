@@ -1,4 +1,5 @@
-Silk is a frontend for slapt-get and slapt-src.
+Silk is a practical frontend to various slackware package management
+tools, namely slackpkg, sbopkg, slapt-get, slapt-src.
 It implements the more common commands and simplifies the operation
 of both programs by unifying the syntax and their execution.
 
