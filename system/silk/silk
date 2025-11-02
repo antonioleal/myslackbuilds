@@ -91,7 +91,7 @@ def slapt_get(command, options, programs=""):
             localops = localops + "-y "
     localops = localops.strip()
     if localcmd != "":
-        print(f'    Running: sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n')
+        print(f'++++ Running sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n']
         execute(lines)
     else:
@@ -122,7 +122,7 @@ def slapt_src(command, options, programs=""):
             localops = localops + "-y "
     localops = localops.strip()
     if localcmd != "":
-        print(f'    Running: sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n')
+        print(f'++++ Running sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n']
         execute(lines)
     else:
@@ -131,31 +131,31 @@ def slapt_src(command, options, programs=""):
 
 def sbopkg(command, programs=""):
     if command in ['u', 'update']:
-        print(f'    Running: sudo /usr/sbin/sbopkg -r\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -r\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -r\n']
         execute(lines)
     elif command in ['U', 'upgrade']:
-        print(f'    Running: sudo /usr/sbin/sbopkg -c\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -c\n')
         lines = ['#!/bin/bash\n\n',
                  f'sudo /usr/sbin/sbopkg -c | sudo tee /tmp/silkout \n',
                  'cat /tmp/silkout | egrep ":$" | cut -d":" -f1 | tr \"\\n\" \" \" > /tmp/silktmp\n',
                  f'sudo /usr/sbin/sbopkg -i "`cat /tmp/silktmp`"\n']
         execute(lines)
     elif command in ['s', 'search']:
-        print(f'    Running: sudo /usr/sbin/sbopkg -g "{programs}"\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -g "{programs}"\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -g "{programs}"\n']
         execute(lines)
     elif command in ['b', 'build']:
-        print(f'    Running: sudo /usr/sbin/sbopkg -b "{programs}"\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -b "{programs}"\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -b "{programs}"\n']
         execute(lines)
     elif command in ['i', 'install']:
-        print(f'    Running: sudo /usr/sbin/sbopkg -i "{programs}"\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -i "{programs}"\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -i "{programs}"\n']
         execute(lines)
     elif command in ['c', 'clean']:
-        print(f'    Running: sudo /usr/sbin/sbopkg -o\n')
-        print(f'    Running: sudo /usr/sbin/sbopkg -P\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -o\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -P\n')
         lines = ['#!/bin/bash\n\n',
                  f'sudo /usr/sbin/sbopkg -o\n',
                  f'sudo /usr/sbin/sbopkg -P\n']
@@ -163,11 +163,11 @@ def sbopkg(command, programs=""):
     elif command in ['r', 'remove']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'    Running: sudo sbin/removepkg {pkg}\n')
+            print(f'++++ Running sudo sbin/removepkg {pkg}\n')
             lines.append(f'sudo /sbin/removepkg {pkg}\n')
         execute(lines)
     elif command in ['l', 'list']:
-        print(f'    Running: sudo /usr/sbin/sbopkg -p | cat\n')
+        print(f'++++ Running sudo /usr/sbin/sbopkg -p | cat\n')
         lines = ['#!/bin/bash\n\n',
                  f'sudo /usr/sbin/sbopkg -p | cat\n']
         execute(lines)
@@ -177,12 +177,12 @@ def sbopkg(command, programs=""):
 
 def slackpkg(command, programs=""):
     if command in ['u', 'update']:
-        print(f'    Running: sudo /usr/sbin/slackpkg update\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg update\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slackpkg update\n']
         execute(lines)
     elif command in ['U', 'upgrade']:
-        print(f'    Running: sudo /usr/sbin/slackpkg install-new\n')
-        print(f'    Running: sudo /usr/sbin/slackpkg upgrade-all\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg install-new\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg upgrade-all\n')
         lines = ['#!/bin/bash\n\n',
                  f'sudo /usr/sbin/slackpkg install-new\n',
                  f'sudo /usr/sbin/slackpkg upgrade-all\n']
@@ -190,36 +190,36 @@ def slackpkg(command, programs=""):
     elif command in ['s', 'search']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'    Running: sudo /usr/sbin/slackpkg search {pkg}\n')
+            print(f'++++ Running sudo /usr/sbin/slackpkg search {pkg}\n')
             lines.append(f'sudo /usr/sbin/slackpkg search {pkg}\n')
         execute(lines)
     elif command in ['b', 'build']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'    Running: sudo /usr/sbin/slackpkg download {pkg}\n')
+            print(f'++++ Running sudo /usr/sbin/slackpkg download {pkg}\n')
             lines.append(f'sudo /usr/sbin/slackpkg download {pkg}\n')
         execute(lines)
     elif command in ['i', 'install']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'    Running: sudo /usr/sbin/slackpkg install {pkg}\n')
+            print(f'++++ Running sudo /usr/sbin/slackpkg install {pkg}\n')
             lines.append(f'sudo /usr/sbin/slackpkg install {pkg}\n')
         execute(lines)
     elif command in ['c', 'clean']:
-        print(f'    Running: sudo /usr/sbin/slackpkg clean-system\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg clean-system\n')
         lines = ['#!/bin/bash\n\n',
                  f'sudo /usr/sbin/slackpkg clean-system\n']
         execute(lines)
     elif command in ['r', 'remove']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'    Running: sudo sbin/removepkg {pkg}\n')
+            print(f'++++ Running sudo sbin/removepkg {pkg}\n')
             lines.append(f'sudo /sbin/removepkg {pkg}\n')
         execute(lines)
     elif command in ['l', 'list']:
-        print(f'    Running: sudo rm /etc/slackpkg/templates/silk.template\n')
-        print(f'    Running: sudo /usr/sbin/slackpkg generate-template silk\n')
-        print(f'    Running: cat /etc/slackpkg/templates/silk.template\n')
+        print(f'++++ Running sudo rm /etc/slackpkg/templates/silk.template\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg generate-template silk\n')
+        print(f'++++ Running cat /etc/slackpkg/templates/silk.template\n')
         lines = ['#!/bin/bash\n\n',
                  'sudo rm /etc/slackpkg/templates/silk.template\n',
                  'sudo /usr/sbin/slackpkg generate-template silk\n',
