@@ -78,7 +78,7 @@
   
 
 - Category: office
-- Version: 2.131.1
+- Version: 2.132.0
 - Homepage: https://www.ledger.com/ledger-live
 - Code repository: https://www.ledger.com/ledger-live
 
