@@ -54,7 +54,7 @@
   
 
 - Category: office
-- Version: 25.8.3.1
+- Version: 25.8.3.2
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 
