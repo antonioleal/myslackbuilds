@@ -212,7 +212,7 @@
 - Homepage: https://freestuff.grok.co.uk/zxtext2p/index.html
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## JAForth (An interpreter for the Jupiter ACE Forth)
  This package contains three command-line programs:
  - JAForth: An interpreter for the Jupiter ACE Forth, written in
@@ -515,7 +515,7 @@
 - Homepage: https://github.com/z00m128/zmakebas
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## critcl (C Runtime In Tcl)
  critcl is a system that lets you build C/C++ extension packages for
  Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
