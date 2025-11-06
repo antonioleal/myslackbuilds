@@ -1312,7 +1312,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://pypi.org/project/gmpy2/
 - Code repository: https://github.com/aleaxit/gmpy
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## python3-mpmath (arithmetic library)
  Mpmath is a free (BSD licensed) Python library for real and complex
  floating-point arithmetic with arbitrary precision. It has been
