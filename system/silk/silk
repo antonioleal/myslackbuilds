@@ -290,7 +290,8 @@ def loadconfig():
     resetcolor()
 
 def main():
-    os.system('xseticon -id "$WINDOWID" /usr/share/pixmaps/silk.png')
+    if os.path.isfile('/usr/bin/xseticon'):
+        os.system('xseticon -id "$WINDOWID" /usr/share/pixmaps/silk.png')
     os.system('clear')
     loadconfig()
     home = os.path.expanduser('~')
