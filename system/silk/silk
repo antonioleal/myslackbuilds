@@ -36,9 +36,35 @@ import configparser
 
 VERSION = '20251102_0cf8978'
 
+# https://stackabuse.com/how-to-print-colored-text-in-python/
+ESC = '\033['
+NORMAL = 0
+BOLD = 1
+LIGHT = 2
+ITALIC = 3
+UNDERLINE = 4
+BLINK = 5
+BLACK = 30
+RED = 31
+GREEN = 32
+YELLOW = 33
+BLUE = 34
+PURPLE = 35
+CYAN = 36
+WHITE = 37
+
+def undefcolor():
+    return f'{ESC}0;0m'
+def defcolor(style, foreground, background):
+    return f'{ESC}{style};{foreground};{background+10}m'
+def resetcolor():
+    print(undefcolor(), end='')
+def setcolor(style, foreground, background):
+    print(defcolor(style,foreground,background), end='')
+
 def usage():
-    print ("Silk is a practical frontend to various slackware package management tools,")
-    print ("namely slapt-get, slapt-src, sbopkg and slackpkg.")
+    print (f"{defcolor(BOLD, WHITE, BLACK)}Silk is a practical frontend to various slackware package management tools,")
+    print (f"namely slapt-get, slapt-src, sbopkg and slackpkg.{undefcolor()}")
     print ("")
     print ("Usage: silk command [options] [programs]")
     print ("")
@@ -230,6 +256,7 @@ def slackpkg(command, programs=""):
         exit(0)
 
 def loadconfig():
+    setcolor(BOLD, RED, BLACK)
     home = os.path.expanduser('~')
     rc = f'{home}/.config/silkrc'
     config = configparser.ConfigParser()
@@ -251,6 +278,7 @@ def loadconfig():
             file.writelines('slapt-src = true\n')
             file.writelines('sbopkg = false\n')
             file.writelines('slackpkg = false\n')
+    resetcolor()
 
 def main():
     loadconfig()
@@ -273,16 +301,22 @@ def main():
                 programs = programs + " " + arg
 
         if bool(config.getboolean('settings','slapt-get')):
+            setcolor(NORMAL, GREEN, BLACK)
             slapt_get(command, options, programs)
+            resetcolor()
             print()
         if bool(config.getboolean('settings','slapt-src')):
+            setcolor(NORMAL, CYAN, BLACK)
             slapt_src(command, options, programs)
+            resetcolor()
             print()
         if bool(config.getboolean('settings','sbopkg')):
             sbopkg(command, programs)
             print()
         if bool(config.getboolean('settings','slackpkg')):
+            setcolor(NORMAL, YELLOW, BLACK)
             slackpkg(command, programs)
+            resetcolor()
             print()
 
 if __name__ == '__main__':
