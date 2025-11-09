@@ -47,6 +47,7 @@ cd $TMP
 
 mkdir -p $PKG/usr/bin
 install -T -m0755 $CWD/silk $PKG/usr/bin/silk
+install -T -m0755 $CWD/silk-shell $PKG/usr/bin/silk-shell
 
 ( cd $PKG/usr/bin ; rm -rf sl )
 ( cd $PKG/usr/bin ; ln -sf silk sl )

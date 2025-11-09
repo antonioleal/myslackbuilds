@@ -127,7 +127,6 @@ def slapt_get(command, options, programs=""):
         execute(lines)
     else:
         usage()
-        exit(0)
 
 def slapt_src(command, options, programs=""):
     localops = ''
@@ -158,7 +157,6 @@ def slapt_src(command, options, programs=""):
         execute(lines)
     else:
         usage()
-        exit(0)
 
 def sbopkg(command, programs=""):
     if command in ['u', 'update']:
@@ -204,7 +202,6 @@ def sbopkg(command, programs=""):
         execute(lines)
     else:
         usage()
-        exit(0)
 
 def slackpkg(command, programs=""):
     if command in ['u', 'update']:
@@ -258,7 +255,6 @@ def slackpkg(command, programs=""):
         execute(lines)
     else:
         usage()
-        exit(0)
 
 def loadconfig():
     setcolor(BOLD, RED, BLACK)

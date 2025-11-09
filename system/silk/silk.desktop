@@ -2,8 +2,8 @@
 Name=Silk
 GenericName=Silk
 Comment=A practical frontend to multiple slackware package management tools
-Exec=xterm -fa default -fs 16 -bg black -fg white -title Silk -geometry 132x40 -e '/usr/bin/silk; cd; export PS1=">"; sh'
-Icon=/usr/share/pixmaps/silk.png
+Exec=silk-shell
+Icon=silk
 Terminal=false
 Type=Application
 Categories=System;Utility;
