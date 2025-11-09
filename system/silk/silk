@@ -33,41 +33,43 @@ import sys
 import os
 import subprocess
 import configparser
+import ast
 
 VERSION = '20251102_0cf8978'
 
 # https://stackabuse.com/how-to-print-colored-text-in-python/
 ESC = '\033['
-NORMAL = 0
-BOLD = 1
-LIGHT = 2
-ITALIC = 3
-UNDERLINE = 4
-BLINK = 5
-BLACK = 30
-RED = 31
-GREEN = 32
-YELLOW = 33
-BLUE = 34
-PURPLE = 35
-CYAN = 36
-WHITE = 37
-
-def undefcolor():
-    return f'{ESC}0;0m'
+NORMAL, BOLD, LIGHT, ITALIC, UNDERLINE, BLINK = [0, 1, 2, 3, 4, 5]
+BLACK, RED, GREEN, YELLOW, BLUE, PURPLE, CYAN, WHITE = [30, 31, 32, 33, 34, 35, 36, 37]
+def checkcolor(style, foreground, background):
+    if style not in [NORMAL, BOLD, LIGHT, ITALIC, UNDERLINE, BLINK]: return False
+    if foreground not in [BLACK, RED, GREEN, YELLOW, BLUE, PURPLE, CYAN, WHITE]: return False
+    if background not in [BLACK, RED, GREEN, YELLOW, BLUE, PURPLE, CYAN, WHITE]: return False
+    return True
 def defcolor(style, foreground, background):
-    return f'{ESC}{style};{foreground};{background+10}m'
-def resetcolor():
-    print(undefcolor(), end='')
+    if checkcolor(style, foreground, background):
+        return f'{ESC}{style};{foreground};{background+10}m'
+    return ''
 def setcolor(style, foreground, background):
     print(defcolor(style,foreground,background), end='')
+def undefcolor():
+    return f'{ESC}0;0m'
+def resetcolor():
+    print(undefcolor(), end='')
+def style2int(style):
+    values = { 'NORMAL': 0, 'BOLD': 1, 'LIGHT': 2, 'ITALIC': 3, 'UNDERLINE': 4, 'BLINK': 5 }
+    return values[style]
+def color2int(color):
+    values = { 'BLACK': 30, 'RED': 31, 'GREEN': 32, 'YELLOW': 33, 'BLUE': 34, 'PURPLE': 35, 'CYAN': 36, 'WHITE': 37 }
+    return values[color]
+
 
 def usage():
     print (f"{defcolor(BOLD, WHITE, BLACK)}Silk is a practical frontend to various slackware package management tools,")
     print (f"namely slapt-get, slapt-src, sbopkg and slackpkg.{undefcolor()}")
-    print ("")
+    print ()
     print ("Usage: silk command [options] [programs]")
-    print ("")
+    print ()
     print ("commands:")
     print ("    u, update                    retrieve pkg data from MIRROR *and* update local cache of remote slackbuilds ")
     print ("    U, upgrade                   upgrade installed pkgs *and* upgrade all installed slackbuilds")
@@ -83,8 +85,9 @@ def usage():
     print ("options:")
     print ("    -y                           do not prompt for install/upgrade, assume yes")
     print ("")
-    print ("The program defines the symlinks 'sl' and 'slapt' pointing to the 'silk' executable. Use them as aliases.")
-    print ("Please also check ~/.config/silkrc settings to decide which ones you want to run.")
+    print (f"{defcolor(BOLD, WHITE, BLACK)}The program defines the symlinks 'sl' and 'slapt' pointing to the 'silk' executable. Use them as aliases.")
+    print (f"Please also check ~/.config/silkrc settings to decide which ones you want to run.{undefcolor()}")
+    print ()
 
 def execute(lines):
     #print(lines)
@@ -274,10 +277,14 @@ def loadconfig():
         with open(f'{home}/.config/silkrc', 'w') as file:
             file.writelines('[settings]\n')
             file.writelines('version = ' + str(VERSION) + '\n\n')
+            file.writelines('slapt-get-colors = NORMAL BLUE BLACK\n')
+            file.writelines('slapt-src-colors = NORMAL YELLOW BLACK\n')
+            file.writelines('sbopkg-colors = NORMAL GREEN BLACK\n')
+            file.writelines('slackpkg-colors = NORMAL WHITE BLACK\n\n')
             file.writelines('slapt-get = true\n')
             file.writelines('slapt-src = true\n')
-            file.writelines('sbopkg = false\n')
-            file.writelines('slackpkg = false\n')
+            file.writelines('sbopkg = true\n')
+            file.writelines('slackpkg = true\n')
     resetcolor()
 
 def main():
@@ -301,20 +308,26 @@ def main():
                 programs = programs + " " + arg
 
         if bool(config.getboolean('settings','slapt-get')):
-            setcolor(NORMAL, GREEN, BLACK)
+            c = config.get('settings', 'slapt-get-colors').split()
+            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
             slapt_get(command, options, programs)
             resetcolor()
             print()
         if bool(config.getboolean('settings','slapt-src')):
-            setcolor(NORMAL, CYAN, BLACK)
+            c = config.get('settings', 'slapt-src-colors').split()
+            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
             slapt_src(command, options, programs)
             resetcolor()
             print()
         if bool(config.getboolean('settings','sbopkg')):
+            c = config.get('settings', 'sbopkg-colors').split()
+            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
             sbopkg(command, programs)
+            resetcolor()
             print()
         if bool(config.getboolean('settings','slackpkg')):
-            setcolor(NORMAL, YELLOW, BLACK)
+            c = config.get('settings', 'slackpkg-colors').split()
+            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
             slackpkg(command, programs)
             resetcolor()
             print()
