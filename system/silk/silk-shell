@@ -34,12 +34,12 @@ exec(open("/usr/bin/silk").read())
 
 while(True):
     print('You are running silk-shell, please type your commands directly.')
-    print('Type "exit" or press ctrl-d to end your session.\n')
+    print('Type "q", "quit" or press ctrl-d to end your session.\n')
     try:
         cmd = input('Silk> ')
     except EOFError:
         exit(0)
-    if cmd.lower() == 'exit':
+    if cmd.lower() == 'q' or cmd.lower() == 'quit':
         exit(0)
     sys.argv = ['/usr/bin/silk'] + cmd.split()
     exec(open("/usr/bin/silk").read())
