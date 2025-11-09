@@ -6,5 +6,5 @@ Exec=silk-shell
 Icon=silk
 Terminal=false
 Type=Application
-Categories=System;Utility;
+Categories=System;
 StartupNotify=false
