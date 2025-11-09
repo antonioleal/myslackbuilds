@@ -69,6 +69,8 @@ def usage():
     print (f"namely slapt-get, slapt-src, sbopkg and slackpkg.{undefcolor()}")
     print ()
     print ("Usage: silk command [options] [programs]")
+    print ("       slapt command [options] [programs]")
+    print ("       sl command [options] [programs]")
     print ()
     print ("commands:")
     print ("    u, update                    retrieve metadata related to packages and slackbuilds, does not change your system")
@@ -85,8 +87,8 @@ def usage():
     print ("options:")
     print ("    -y                           do not prompt for install/upgrade, assume yes")
     print ("")
-    print (f"{defcolor(BOLD, WHITE, BLACK)}The program defines the symlinks 'sl' and 'slapt' pointing to the 'silk' executable. Use them as aliases.")
-    print (f"Please also check ~/.config/silkrc settings to decide which ones you want to run.{undefcolor()}")
+    print (f"{defcolor(BOLD, WHITE, BLACK)}The program defines the symlinks 'slapt' and 'sl' pointing to the 'silk'.")
+    print (f"Please also check ~/.config/silkrc settings to decide which tools you want to run.{undefcolor()}")
     print ()
 
 def execute(lines):
@@ -269,15 +271,15 @@ def loadconfig():
         if (config.get('settings','version') != VERSION):
             createfile = True
         else:
-            print(f'Loaded {home}/.config/silkrc')
+            print(f'Loaded {home}/.config/silkrc\n')
     else:
         createfile = True
     if createfile:
-        print(f'\nNew {home}/.config/silkrc config file is invalid/older, creating a new one...')
+        print(f'New {home}/.config/silkrc config file is invalid/older, creating a new one...\n')
         with open(f'{home}/.config/silkrc', 'w') as file:
             file.writelines('[settings]\n')
             file.writelines('version = ' + str(VERSION) + '\n\n')
-            file.writelines('slapt-get-colors = NORMAL BLUE BLACK\n')
+            file.writelines('slapt-get-colors = NORMAL CYAN BLACK\n')
             file.writelines('slapt-src-colors = NORMAL YELLOW BLACK\n')
             file.writelines('sbopkg-colors = NORMAL GREEN BLACK\n')
             file.writelines('slackpkg-colors = NORMAL WHITE BLACK\n\n')
@@ -288,13 +290,14 @@ def loadconfig():
     resetcolor()
 
 def main():
+    os.system('xseticon -id "$WINDOWID" /usr/share/pixmaps/silk.png')
+    os.system('clear')
     loadconfig()
     home = os.path.expanduser('~')
     rc = f'{home}/.config/silkrc'
     config = configparser.ConfigParser()
     config.read(rc)
 
-    print()
     if (len(sys.argv[1:]) == 0):
         usage()
     else:
@@ -334,3 +337,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
