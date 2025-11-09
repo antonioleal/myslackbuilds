@@ -125,8 +125,9 @@ def slapt_get(command, options, programs=""):
         print(f'++++ Running sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slapt-get {localops} {localcmd} {programs}\n']
         execute(lines)
+        return True
     else:
-        usage()
+        return False
 
 def slapt_src(command, options, programs=""):
     localops = ''
@@ -155,14 +156,16 @@ def slapt_src(command, options, programs=""):
         print(f'++++ Running sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/bin/slapt-src {localops} {localcmd} {programs}\n']
         execute(lines)
+        return True
     else:
-        usage()
+        return False
 
-def sbopkg(command, programs=""):
+def sbopkg(command, options, programs=""):
     if command in ['u', 'update']:
         print(f'++++ Running sudo /usr/sbin/sbopkg -r\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -r\n']
         execute(lines)
+        return True
     elif command in ['U', 'upgrade']:
         print(f'++++ Running sudo /usr/sbin/sbopkg -c\n')
         lines = ['#!/bin/bash\n\n',
@@ -170,18 +173,22 @@ def sbopkg(command, programs=""):
                  'cat /tmp/silkout | egrep ":$" | cut -d":" -f1 | tr \"\\n\" \" \" > /tmp/silktmp\n',
                  f'sudo /usr/sbin/sbopkg -i "`cat /tmp/silktmp`"\n']
         execute(lines)
+        return True
     elif command in ['s', 'search']:
         print(f'++++ Running sudo /usr/sbin/sbopkg -g "{programs}"\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -g "{programs}"\n']
         execute(lines)
+        return True
     elif command in ['b', 'build']:
         print(f'++++ Running sudo /usr/sbin/sbopkg -b "{programs}"\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -b "{programs}"\n']
         execute(lines)
+        return True
     elif command in ['i', 'install']:
         print(f'++++ Running sudo /usr/sbin/sbopkg -i "{programs}"\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/sbopkg -i "{programs}"\n']
         execute(lines)
+        return True
     elif command in ['c', 'clean']:
         print(f'++++ Running sudo /usr/sbin/sbopkg -o\n')
         print(f'++++ Running sudo /usr/sbin/sbopkg -P\n')
@@ -189,25 +196,29 @@ def sbopkg(command, programs=""):
                  f'sudo /usr/sbin/sbopkg -o\n',
                  f'sudo /usr/sbin/sbopkg -P\n']
         execute(lines)
+        return True
     elif command in ['r', 'remove']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
             print(f'++++ Running sudo sbin/removepkg {pkg}\n')
             lines.append(f'sudo /sbin/removepkg {pkg}\n')
         execute(lines)
+        return True
     elif command in ['l', 'list']:
         print(f'++++ Running sudo /usr/sbin/sbopkg -p | cat\n')
         lines = ['#!/bin/bash\n\n',
                  f'sudo /usr/sbin/sbopkg -p | cat\n']
         execute(lines)
+        return True
     else:
-        usage()
+        return False
 
-def slackpkg(command, programs=""):
+def slackpkg(command, options, programs=""):
     if command in ['u', 'update']:
         print(f'++++ Running sudo /usr/sbin/slackpkg update\n')
         lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slackpkg update\n']
         execute(lines)
+        return True
     elif command in ['U', 'upgrade']:
         print(f'++++ Running sudo /usr/sbin/slackpkg install-new\n')
         print(f'++++ Running sudo /usr/sbin/slackpkg upgrade-all\n')
@@ -215,35 +226,41 @@ def slackpkg(command, programs=""):
                  f'sudo /usr/sbin/slackpkg install-new\n',
                  f'sudo /usr/sbin/slackpkg upgrade-all\n']
         execute(lines)
+        return True
     elif command in ['s', 'search']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
             print(f'++++ Running sudo /usr/sbin/slackpkg search {pkg}\n')
             lines.append(f'sudo /usr/sbin/slackpkg search {pkg}\n')
         execute(lines)
+        return True
     elif command in ['b', 'build']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
             print(f'++++ Running sudo /usr/sbin/slackpkg download {pkg}\n')
             lines.append(f'sudo /usr/sbin/slackpkg download {pkg}\n')
         execute(lines)
+        return True
     elif command in ['i', 'install']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
             print(f'++++ Running sudo /usr/sbin/slackpkg install {pkg}\n')
             lines.append(f'sudo /usr/sbin/slackpkg install {pkg}\n')
         execute(lines)
+        return True
     elif command in ['c', 'clean']:
         print(f'++++ Running sudo /usr/sbin/slackpkg clean-system\n')
         lines = ['#!/bin/bash\n\n',
                  f'sudo /usr/sbin/slackpkg clean-system\n']
         execute(lines)
+        return True
     elif command in ['r', 'remove']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
             print(f'++++ Running sudo sbin/removepkg {pkg}\n')
             lines.append(f'sudo /sbin/removepkg {pkg}\n')
         execute(lines)
+        return True
     elif command in ['l', 'list']:
         print(f'++++ Running sudo rm /etc/slackpkg/templates/silk.template\n')
         print(f'++++ Running sudo /usr/sbin/slackpkg generate-template silk\n')
@@ -253,8 +270,9 @@ def slackpkg(command, programs=""):
                  'sudo /usr/sbin/slackpkg generate-template silk\n',
                  'cat /etc/slackpkg/templates/silk.template\n',]
         execute(lines)
+        return True
     else:
-        usage()
+        return False
 
 def loadconfig():
     setcolor(BOLD, RED, BLACK)
@@ -307,30 +325,16 @@ def main():
             else:
                 programs = programs + " " + arg
 
-        if bool(config.getboolean('settings','slapt-get')):
-            c = config.get('settings', 'slapt-get-colors').split()
-            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
-            slapt_get(command, options, programs)
-            resetcolor()
-            print()
-        if bool(config.getboolean('settings','slapt-src')):
-            c = config.get('settings', 'slapt-src-colors').split()
-            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
-            slapt_src(command, options, programs)
-            resetcolor()
-            print()
-        if bool(config.getboolean('settings','sbopkg')):
-            c = config.get('settings', 'sbopkg-colors').split()
-            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
-            sbopkg(command, programs)
-            resetcolor()
-            print()
-        if bool(config.getboolean('settings','slackpkg')):
-            c = config.get('settings', 'slackpkg-colors').split()
-            setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
-            slackpkg(command, programs)
-            resetcolor()
-            print()
+        funcs = [slapt_get, slapt_src, sbopkg, slackpkg]
+        for f in funcs:
+            fsetting = f.__name__.replace('_','-')
+            if bool(config.getboolean('settings',fsetting)):
+                c = config.get('settings', fsetting + '-colors').split()
+                setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
+                if not f(command, options, programs):
+                    usage()
+                    return
+                resetcolor()
 
 if __name__ == '__main__':
     main()

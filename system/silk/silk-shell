@@ -33,8 +33,8 @@ import os
 exec(open("/usr/bin/silk").read())
 
 while(True):
-    print('You are using silk-shell, please type your commands directly.')
-    print('Type "exit" to end your session.\n')
+    print('You are running silk-shell, please type your commands directly.')
+    print('Type "exit" or press ctrl-d to end your session.\n')
     try:
         cmd = input('Silk> ')
     except EOFError:
