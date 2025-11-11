@@ -214,44 +214,49 @@ def sbopkg(command, options, programs=""):
         return False
 
 def slackpkg(command, options, programs=""):
+    localops = ''
+    for op in options.split():
+        if op == '-y':
+            localops = localops + "-batch=on -default_answer=y "
+    localops = localops.strip()
     if command in ['u', 'update']:
-        print(f'++++ Running sudo /usr/sbin/slackpkg update\n')
-        lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slackpkg update\n']
+        print(f'++++ Running sudo /usr/sbin/slackpkg {localops}update\n')
+        lines = ['#!/bin/bash\n\n', f'sudo /usr/sbin/slackpkg {localops}update\n']
         execute(lines)
         return True
     elif command in ['U', 'upgrade']:
-        print(f'++++ Running sudo /usr/sbin/slackpkg install-new\n')
-        print(f'++++ Running sudo /usr/sbin/slackpkg upgrade-all\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg {localops}install-new\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg {localops}upgrade-all\n')
         lines = ['#!/bin/bash\n\n',
-                 f'sudo /usr/sbin/slackpkg install-new\n',
-                 f'sudo /usr/sbin/slackpkg upgrade-all\n']
+                 f'sudo /usr/sbin/slackpkg {localops}install-new\n',
+                 f'sudo /usr/sbin/slackpkg {localops}upgrade-all\n']
         execute(lines)
         return True
     elif command in ['s', 'search']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'++++ Running sudo /usr/sbin/slackpkg search {pkg}\n')
-            lines.append(f'sudo /usr/sbin/slackpkg search {pkg}\n')
+            print(f'++++ Running sudo /usr/sbin/slackpkg {localops}search {pkg}\n')
+            lines.append(f'sudo /usr/sbin/slackpkg {localops}search {pkg}\n')
         execute(lines)
         return True
     elif command in ['b', 'build']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'++++ Running sudo /usr/sbin/slackpkg download {pkg}\n')
-            lines.append(f'sudo /usr/sbin/slackpkg download {pkg}\n')
+            print(f'++++ Running sudo /usr/sbin/slackpkg {localops}download {pkg}\n')
+            lines.append(f'sudo /usr/sbin/slackpkg {localops}download {pkg}\n')
         execute(lines)
         return True
     elif command in ['i', 'install']:
         lines = ['#!/bin/bash\n\n']
         for pkg in programs.split():
-            print(f'++++ Running sudo /usr/sbin/slackpkg install {pkg}\n')
-            lines.append(f'sudo /usr/sbin/slackpkg install {pkg}\n')
+            print(f'++++ Running sudo /usr/sbin/slackpkg {localops}install {pkg}\n')
+            lines.append(f'sudo /usr/sbin/slackpkg {localops}install {pkg}\n')
         execute(lines)
         return True
     elif command in ['c', 'clean']:
-        print(f'++++ Running sudo /usr/sbin/slackpkg clean-system\n')
+        print(f'++++ Running sudo /usr/sbin/slackpkg {localops}clean-system\n')
         lines = ['#!/bin/bash\n\n',
-                 f'sudo /usr/sbin/slackpkg clean-system\n']
+                 f'sudo /usr/sbin/slackpkg {localops}clean-system\n']
         execute(lines)
         return True
     elif command in ['r', 'remove']:
@@ -262,11 +267,11 @@ def slackpkg(command, options, programs=""):
         execute(lines)
         return True
     elif command in ['l', 'list']:
-        print(f'++++ Running sudo rm /etc/slackpkg/templates/silk.template\n')
+        print(f'++++ Running sudo rm -rf /etc/slackpkg/templates/silk.template\n')
         print(f'++++ Running sudo /usr/sbin/slackpkg generate-template silk\n')
         print(f'++++ Running cat /etc/slackpkg/templates/silk.template\n')
         lines = ['#!/bin/bash\n\n',
-                 'sudo rm /etc/slackpkg/templates/silk.template\n',
+                 'sudo rm -rf /etc/slackpkg/templates/silk.template\n',
                  'sudo /usr/sbin/slackpkg generate-template silk\n',
                  'cat /etc/slackpkg/templates/silk.template\n',]
         execute(lines)
