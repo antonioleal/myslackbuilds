@@ -408,7 +408,7 @@
   
 
 - Category: development
-- Version: 5.56
+- Version: 5.57
 - Homepage: https://github.com/sasagawa888/eisl
 - Code repository: https://github.com/sasagawa888/eisl
 
