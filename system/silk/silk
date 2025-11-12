@@ -33,7 +33,6 @@ import sys
 import os
 import subprocess
 import configparser
-import ast
 
 VERSION = '20251109_5c3e5dc'
 
@@ -302,15 +301,14 @@ def loadconfig():
             file.writelines('slapt-src-colors = NORMAL YELLOW BLACK\n')
             file.writelines('sbopkg-colors = NORMAL GREEN BLACK\n')
             file.writelines('slackpkg-colors = NORMAL WHITE BLACK\n\n')
-            file.writelines('slapt-get = true\n')
-            file.writelines('slapt-src = true\n')
-            file.writelines('sbopkg = true\n')
-            file.writelines('slackpkg = true\n')
+            file.writelines('# order of execution (write 0 to prevent running):\n')
+            file.writelines('slapt-get = 1\n')
+            file.writelines('slapt-src = 2\n')
+            file.writelines('sbopkg = 0\n')
+            file.writelines('slackpkg = 4\n')
     resetcolor()
 
 def main():
-    if os.path.isfile('/usr/bin/xseticon'):
-        os.system('xseticon -id "$WINDOWID" /usr/share/pixmaps/silk.png')
     os.system('clear')
     loadconfig()
     home = os.path.expanduser('~')
@@ -331,15 +329,16 @@ def main():
                 programs = programs + " " + arg
 
         funcs = [slapt_get, slapt_src, sbopkg, slackpkg]
-        for f in funcs:
-            fsetting = f.__name__.replace('_','-')
-            if bool(config.getboolean('settings',fsetting)):
-                c = config.get('settings', fsetting + '-colors').split()
-                setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
-                if not f(command, options, programs):
-                    usage()
-                    return
-                resetcolor()
+        for order in range(1, 5):
+            for f in funcs:
+                fsetting = f.__name__.replace('_','-')
+                if order == config.getint('settings',fsetting):
+                    c = config.get('settings', fsetting + '-colors').split()
+                    setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
+                    if not f(command, options, programs):
+                        usage()
+                        return
+                    resetcolor()
 
 if __name__ == '__main__':
     main()
