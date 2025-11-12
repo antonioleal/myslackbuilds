@@ -1439,6 +1439,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater is available for this package*
+## opera-ffmpeg-codecs (Extra ffmpeg codec for Opera browser)
+ FFMpeg prebuilt binaries with proprietary codecs and build
+ instructions for window, linux and osx.
+ Home Page: https://github.com/iteufel/nwjs-ffmpeg-prebuilt
+  
+
+- Category: multimedia
+- Version: 0.105.0
+- Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
+- Code repository:
+
+*Note: updater not available*
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
