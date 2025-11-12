@@ -33,7 +33,7 @@ cd $SCRIPT_DIR
 # NEWVERSION=$(curl -s https://api.github.com/repos/Thomas-Tsai/partclone/releases/latest | jq -r '.tag_name')
 NEWVERSION=$(gh release view -R Thomas-Tsai/partclone --json tagName --jq '.tagName')
 TARBALL="partclone-$NEWVERSION.tar.gz"
-URL="https://github.com/Thomas-Tsai/partclone/archive/0.3.37/$TARBALL"
+URL="https://github.com/Thomas-Tsai/partclone/archive/$NEWVERSION/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
