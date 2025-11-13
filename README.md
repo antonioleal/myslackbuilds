@@ -1450,7 +1450,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
