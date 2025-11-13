@@ -421,7 +421,7 @@
   
 
 - Category: development
-- Version: 24.1.5
+- Version: 25.1.093
 - Homepage: https://www.syntevo.com/smartgit
 - Code repository: https://www.syntevo.com/smartgit/download/
 
