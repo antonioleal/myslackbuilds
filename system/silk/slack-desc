@@ -8,10 +8,10 @@
     |-----handy-ruler------------------------------------------------------|
 silk: silk (slapt-get + slapt-src frontend)
 silk:
-silk: Silk is a frontend for slapt-get and slapt-src.
-silk: It implements the more common commands and simplifies
-silk: the operation of both programs by unifying the syntax
-silk: and their execution.
+silk: Silk is a frontend for slapt-get, slapt-src, sbopkg and slackpkg.
+silk: It implements the more common commands and simplifies the operation
+silk: of these programs by providing a common syntax.
+silk:
 silk:
 silk:
 silk:

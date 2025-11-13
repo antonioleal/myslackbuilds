@@ -723,10 +723,9 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 *Note: updater is available for this package*
 ## silk (slapt-get + slapt-src frontend)
- Silk is a frontend for slapt-get and slapt-src.
- It implements the more common commands and simplifies
- the operation of both programs by unifying the syntax
- and their execution.
+ Silk is a frontend for slapt-get, slapt-src, sbopkg and slackpkg.
+ It implements the more common commands and simplifies the operation
+ of these programs by providing a common syntax.
   
 
 - Category: system
