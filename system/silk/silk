@@ -63,9 +63,20 @@ def color2int(color):
     return values[color]
 
 
-def usage():
-    print (f"{defcolor(BOLD, WHITE, BLACK)}Silk is a practical frontend to various slackware package management tools,")
-    print (f"namely slapt-get, slapt-src, sbopkg and slackpkg.{undefcolor()}")
+def usage(config):
+    print (f"Silk is a practical frontend to various slackware package management tools.")
+    print (f"It will run the tools in the order:")
+    setcolor(BOLD, WHITE, BLACK)
+    aux = []
+    for f in FUNCS:
+        fsetting = f.__name__.replace('_','-')
+        order = config.get('settings', fsetting)
+        if order in '1234':
+            aux.append(f'({order}) {fsetting}')
+    lst = sorted(aux)
+    for func in lst:
+        print(f'    {func}')
+    resetcolor()
     print ()
     print ("Usage: silk command [options] [programs]")
     print ("       slapt command [options] [programs]")
@@ -87,9 +98,8 @@ def usage():
     print ("    -y                           do not prompt for install/upgrade, assume yes")
     print ("    -o[1-4]                      select which tools (1-4) to run and the order of execution")
     print ("")
-    print (f"{defcolor(BOLD, WHITE, BLACK)}The program defines the symlinks 'slapt' and 'sl' pointing to the 'silk'.")
-    print (f"Please also check ~/.config/silkrc settings to decide which tools you want to run.{undefcolor()}")
-    print ()
+    print (f"The program defines the symlinks 'slapt' and 'sl' pointing to the 'silk'.")
+    print (f"Please also check ~/.config/silkrc settings to decide which tools you want to run.\n")
 
 def execute(lines):
     #print(lines)
@@ -275,7 +285,7 @@ def slackpkg(command, options, programs=""):
     else:
         return False
 
-def loadconfig():
+def setconfig():
     setcolor(BOLD, RED, BLACK)
     home = os.path.expanduser('~')
     rc = f'{home}/.config/silkrc'
@@ -304,17 +314,14 @@ def loadconfig():
             file.writelines('sbopkg = 0\n')
             file.writelines('slackpkg = 4\n')
     resetcolor()
+    return config
 
 def main():
     os.system('clear')
-    loadconfig()
-    home = os.path.expanduser('~')
-    rc = f'{home}/.config/silkrc'
-    config = configparser.ConfigParser()
-    config.read(rc)
+    config = setconfig()
 
     if (len(sys.argv[1:]) == 0):
-        usage()
+        usage(config)
     else:
         command = sys.argv[1]
         options = ""
@@ -325,23 +332,23 @@ def main():
             else:
                 programs = programs + " " + arg
 
-        funcs = [slapt_get, slapt_src, sbopkg, slackpkg]
         sequence = '1234'
         for x in options.split():
             if x[0:2] == '-o':
                 sequence = x[2:]
         for t in sequence:
-            for f in funcs:
+            for f in FUNCS:
                 fsetting = f.__name__.replace('_','-')
                 if str(t) == config.get('settings',fsetting):
                     c = config.get('settings', fsetting + '-colors').split()
                     setcolor(style2int(c[0]), color2int(c[1]), color2int(c[2]))
                     if not f(command, options, programs):
-                        usage()
+                        usage(config)
                         return
                     resetcolor()
 
 if __name__ == '__main__':
+    FUNCS = [slapt_get, slapt_src, sbopkg, slackpkg]
     main()
 
 
