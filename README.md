@@ -145,7 +145,7 @@
 - Homepage: https://www.openoffice.org/
 - Code repository: https://sourceforge.net/projects/openofficeorg.mirror/files/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## onlyoffice-desktopeditors (office suite)
  ONLYOFFICE Desktop Editors is a free AGPL v3 licensed office suite
  that combines text, spreadsheet and presentation editors. It is fully
