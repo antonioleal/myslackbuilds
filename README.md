@@ -801,7 +801,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 20251109_5c3e5dc
+- Version: 20251115_9859476
 - Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 - Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 
