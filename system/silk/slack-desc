@@ -6,12 +6,12 @@
 # leave one space after the ':'.
 
     |-----handy-ruler------------------------------------------------------|
-silk: silk (slapt-get + slapt-src frontend)
+silk: silk (package management tools front end)
 silk:
-silk: Silk is a frontend for slapt-get, slapt-src, sbopkg and slackpkg.
+silk: Silk is a practical front end to various slackware package management
+silk: tools, namely slackpkg, sbopkg, slapt-get and slapt-src.
 silk: It implements the more common commands and simplifies the operation
-silk: of these programs by providing a common syntax.
-silk:
+silk: of multiple programs by unifying their syntax and execution.
 silk:
 silk:
 silk:

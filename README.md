@@ -794,14 +794,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater is available for this package*
-## silk (slapt-get + slapt-src frontend)
- Silk is a frontend for slapt-get, slapt-src, sbopkg and slackpkg.
+## silk (package management tools front end)
+ Silk is a practical front end to various slackware package management
+ tools, namely slackpkg, sbopkg, slapt-get and slapt-src.
  It implements the more common commands and simplifies the operation
- of these programs by providing a common syntax.
+ of multiple programs by unifying their syntax and execution.
   
 
 - Category: system
-- Version: 1.0.0
+- Version: 1.0.1
 - Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 - Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 
