@@ -414,6 +414,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/mpmath/mpmath
 
 *Note: updater is available for this package*
+## python3-Webscout (search the web)
+ Your All-in-One Python Toolkit for Web Search, AI Interaction,
+ Digital Utilities, and More
+ Access diverse search engines, cutting-edge AI models, temporary
+ communication tools, media utilities, developer helpers, and
+ powerful CLI interfaces - all through one unified library.
+  
+
+- Category: python
+- Version: 2025.11.16
+- Homepage: https://github.com/OEvortex/Webscout
+- Code repository:
+
+*Note: updater not available*
 ## python3-odfdo (OpenDocument Format library for Python)
  odfdo is a Python library for programmatically creating, parsing, and
  editing OpenDocument Format (ODF) files. It provides an interface for
