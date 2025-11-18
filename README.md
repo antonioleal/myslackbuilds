@@ -369,7 +369,7 @@
   
 
 - Category: development
-- Version: 8.8.7
+- Version: 8.8.8
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 
