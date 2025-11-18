@@ -51,7 +51,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" ]; then
   LIBDIRSUFFIX=""
-  BITS="i686"0.94.1
+  BITS="i686"
   echo "This package is currently only available for 64bit."
   exit 1
 elif [ "$ARCH" = "i686" ]; then
