@@ -92,7 +92,7 @@
   
 
 - Category: office
-- Version: 2.132.0
+- Version: 2.133.0
 - Homepage: https://www.ledger.com/ledger-live
 - Code repository: https://www.ledger.com/ledger-live
 
