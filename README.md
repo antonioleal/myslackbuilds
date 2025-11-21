@@ -414,6 +414,17 @@
 - Code repository:
 
 *Note: updater is available for this package*
+## antigravity (Google Antigravity IDE)
+ Google Antigravity is an agentic development platform, evolving the
+ IDE into the agent-first era.
+  
+
+- Category: development
+- Version: 1.11.5
+- Homepage: https://antigravity.google/
+- Code repository:
+
+*Note: updater not available*
 ## eisl (ISO ISLISP interpreter)
  Easy-ISLisp (EISL) is an interpreter and compiler compatible with the
  ISLisp standard. EISL was written by Kenichi Sasagawa and is
