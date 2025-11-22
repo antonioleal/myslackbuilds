@@ -43,6 +43,15 @@ then
     export RET0=""
 else
     ################################
+    # check for testonly parameter #
+    ################################
+    if [ "$ARG0" = "TESTONLY" ]
+    then
+        echo "has a new version $NEWVERSION"
+        export RET0=$NEWVERSION
+        return
+    fi
+    ################################
     # download tarball             #
     ################################
     set +e

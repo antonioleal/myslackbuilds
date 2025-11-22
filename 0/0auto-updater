@@ -43,6 +43,7 @@ do
     if [ -f 0/updater ]; then
         RET0=""
         printf '%-15s %s ' $CATEGORY $PKGNAME
+        export ARG0="TESTONLY"
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater
         if ! [ "$RET0" = "" ]
         then
