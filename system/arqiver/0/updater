@@ -32,7 +32,7 @@ cd $SCRIPT_DIR
 ################################
 TAG=$(gh release view -R tsujan/Arqiver --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
-TARBALL=Arqiver-${NEWVERSION}.tar.gz
+TARBALL=Arqiver-${NEWVERSION}.tar.xz
 URL="https://github.com/tsujan/Arqiver/releases/download/$TAG/Arqiver-$NEWVERSION.tar.xz"
 
 VERSION=`cat version`
