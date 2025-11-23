@@ -160,6 +160,18 @@
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
 
 *Note: updater is available for this package*
+## sigil (Multi-platform WYSIWYG ebook editor)
+ Sigil is a multi-platform WYSIWYG ebook editor. It is designed to
+ edit books in ePub format.
+ Homepage: https://sigil-ebook.com/
+  
+
+- Category: office
+- Version: 2.6.2
+- Homepage: https://sigil-ebook.com/
+- Code repository:
+
+*Note: updater not available*
 ## ledger-live (Ledger Hardware Wallet Manager)
  A manager for your Ledger hardware wallet.
  Install applications, update firmware, buy crypto, etc.
