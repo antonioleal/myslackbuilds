@@ -392,7 +392,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 6.3.0
+- Version: 6.4.0
 - Homepage: https://github.com/py-pdf/pypdf
 - Code repository: 
 
@@ -1014,7 +1014,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://antigravity.google/
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## smartgit (Desktop Git Client)
  SmartGit is a commercial desktop git client that provides a
  free non-commercial use license. You need to apply for this license
