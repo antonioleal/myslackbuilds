@@ -171,7 +171,7 @@
 - Homepage: https://sigil-ebook.com/
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## ledger-live (Ledger Hardware Wallet Manager)
  A manager for your Ledger hardware wallet.
  Install applications, update firmware, buy crypto, etc.
