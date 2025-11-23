@@ -534,6 +534,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://librewolf.net/
 - Code repository: https://codeberg.org/librewolf/source/releases
 - Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
+
+
 *Note: updater is available for this package*
 ## opera (A fast and secure web browser)
  Opera is a graphical Web browser available on several platforms.
