@@ -704,11 +704,12 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 0.12.0
+- Version: 1.0.1
 - Homepage: https://github.com/tsujan/Arqiver
 - Code repository:
 
-*No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+
+
 
 *Note: updater is available for this package*
 ## catatonit (Container init)
