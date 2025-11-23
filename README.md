@@ -629,7 +629,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 10.3.0
+- Version: 10.3.2
 - Homepage: https://limine-bootloader.org/
 - Code repository: https://github.com/limine-bootloader/limine
 
