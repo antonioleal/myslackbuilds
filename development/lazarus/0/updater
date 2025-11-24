@@ -31,7 +31,8 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 #NEWVERSION=`curl -qsL "https://sourceforge.net/projects/lazarus/best_release.json" | jq -r ".platform_releases.linux.filename" | awk -F "-" '{print substr($NF,1,length($NF)-4)}'`
-NEWVERSION=`curl -qsL "https://sourceforge.net/projects/lazarus/best_release.json" | jq -r ".platform_releases.linux.filename" | awk -F "-" '{print $2}'`
+#NEWVERSION=`curl -qsL "https://sourceforge.net/projects/lazarus/best_release.json" | jq -r ".platform_releases.linux.filename" | awk -F "-" '{print $2}'`
+NEWVERSION=$(lynx -accept_all_cookies -dump https://github.com/fpc/Lazarus/tags | grep lazarus_ | head -1 | cut -d"_" -f2- | tr "_" ".")
 TARBALL=lazarus-${NEWVERSION}-0.tar.gz
 URL="http://downloads.sourceforge.net/lazarus/${TARBALL}"
 
