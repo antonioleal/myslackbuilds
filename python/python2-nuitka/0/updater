@@ -33,7 +33,7 @@ cd $SCRIPT_DIR
 _PRGNAM=Nuitka
 NEWVERSION=`lynx -accept_all_cookies -dump  https://github.com/Nuitka/Nuitka/tags  | grep "refs/tags" | head -1 | awk -F"/" '{ print $NF }' | awk '{print substr($0,0,length($0)-4)}'`
 TARBALL=${_PRGNAM}-${NEWVERSION}.tar.gz
-URL="https://nuitka.net/releases/${TARBALL}"
+URL="https://github.com/Nuitka/Nuitka/archive/$NEWVERSION/Nuitka-$NEWVERSION.tar.gz"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
