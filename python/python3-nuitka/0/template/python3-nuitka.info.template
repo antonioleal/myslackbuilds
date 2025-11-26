@@ -1,7 +1,7 @@
 PRGNAM="python3-nuitka"
 VERSION="_version_"
 HOMEPAGE="https://nuitka.net"
-DOWNLOAD="https://nuitka.net/releases/Nuitka-_version_.tar.gz"
+DOWNLOAD="https://github.com/Nuitka/Nuitka/archive/_version_/Nuitka-_version_.tar.gz"
 MD5SUM="_md5_"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
