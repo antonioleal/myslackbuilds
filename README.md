@@ -1210,7 +1210,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: misc
-- Version: 2.1.0
+- Version: 2.2.0
 - Homepage: https://github.com/sakhmatd/swege
 - Code repository:
 
