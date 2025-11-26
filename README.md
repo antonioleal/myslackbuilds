@@ -131,7 +131,7 @@
   
 
 - Category: desktop
-- Version: 1.1.5
+- Version: 1.1.8
 - Homepage: https://www.pling.com/p/1127892/
 - Code repository:https://github.com/wusel1007/clamav-gui
 
