@@ -31,7 +31,8 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 _PRGNAM=Nuitka
-NEWVERSION=`lynx -accept_all_cookies -dump  https://github.com/Nuitka/Nuitka/tags  | grep "refs/tags" | head -1 | awk -F"/" '{ print $NF }' | awk '{print substr($0,0,length($0)-4)}'`
+#NEWVERSION=`lynx -accept_all_cookies -dump  https://github.com/Nuitka/Nuitka/tags  | grep "refs/tags" | head -1 | awk -F"/" '{ print $NF }' | awk '{print substr($0,0,length($0)-4)}'`
+NEWVERSION=$(gh api repos/Nuitka/Nuitka/tags --jq '.[].name' | head -1)
 TARBALL=${_PRGNAM}-${NEWVERSION}.tar.gz
 URL="https://nuitka.net/releases/${TARBALL}"
 
