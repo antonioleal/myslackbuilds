@@ -544,9 +544,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 124.0.5705.42
+- Version: 124.0.5705.65
 - Homepage: https://www.opera.com
 - Code repository: https://www.opera.com/opera
+- test playback: https://forums.opera.com/topic/30578/ffmpeg-installation-instructions
 
 
 *Note: updater is available for this package*
