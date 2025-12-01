@@ -446,7 +446,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 4.6.3
+- Version: 4.6.4
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
 
