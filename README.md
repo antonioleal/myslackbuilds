@@ -1085,6 +1085,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater is available for this package*
+## page (Python Tkinter GUI builder)
+ PAGE is a drop and drag tool which helps to create Tkinter
+ GUI interfaces for use within Python programs.  It is a fork
+ of the program Visual Tcl which now produces Python code.
+ PAGE builds multiple GUI windows and generates a working
+ skeletal Python program using tk and ttk widgets.
+  
+
+- Category: development
+- Version: 8.1
+- Homepage: https://sourceforge.net/projects/page/
+- Code repository:
+
+*Note: updater not available*
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
