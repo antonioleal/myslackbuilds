@@ -1,6 +1,10 @@
+<p align="center">
+<img src="media/zeroscripts.png"  alt="Silk" style="width:33%; height:auto;"/>
+</p>
+
 ## The Zero Scripts Setup
 
-*This folder contains a simple set of Slackware auxiliary scripts, the so called zero ("0") scripts, that simplify the process for you to collaborate with SlackBuilds.org*
+*This folder contains a simple set of Slackware auxiliary scripts, the so called Zero Scripts ("0") , that simplify the process for you to collaborate with SlackBuilds.org*
 
 Why the "0"? Because with *bash* it's very useful when you type 0 and press TAB twice to see what operations you can make in this environment *and* does not interfere with any other program in your Slackware box. Nice and tidy..
 
