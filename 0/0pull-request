@@ -71,6 +71,10 @@ gh pr create --title "$MSG" --body "$MSG"
 echo
 echo
 
+# issue pr build command to sbo-bot ci/cd
+gh pr comment --body "@sbo-bot: build ${CATEGORY}/${PKGNAME}"
+echo
+
 # return to master branch
 git checkout master
 echo
