@@ -167,7 +167,7 @@
   
 
 - Category: office
-- Version: 2.6.2
+- Version: 2.7.0
 - Homepage: https://sigil-ebook.com/
 - Code repository:
 
