@@ -34,7 +34,7 @@ cd $SCRIPT_DIR
 TAG=$(gh release view -R offa/plug --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
 TARBALL=$PRGNAM-$NEWVERSION.tar.gz
-URL="https://github.com/offa/plug/archive/v1.4.5/$TARBALL"
+URL="https://github.com/offa/plug/archive/$TAG/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
