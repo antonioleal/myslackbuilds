@@ -97,9 +97,8 @@ find -L . \
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-rm -rf $PKG/usr/share/applications/*.desktop
+find $PKG/usr/ -name "*.desktop" -print | xargs -n2 rm -rf
 cp $CWD/*.desktop $PKG/usr/share/applications/
-rm -rf $PKG/usr/share/freeoffice2024/mime/*.desktop
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv $PKG/usr/share/doc/softmaker-freeoffice-2024/* $PKG/usr/doc/$PRGNAM-$VERSION
