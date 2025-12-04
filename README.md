@@ -72,19 +72,6 @@
 - Code repository:
 
 *Note: updater is available for this package*
-## FreeOffice (The best free alternative to Microsoft Office)
- FreeOffice is a complete Office suite with a word processor,
- a spreadsheet application and a presentation program - all compatible
- with their counterparts in Microsoft Office.
- Homepage: https://www.freeoffice.com/
-  
-
-- Category: office
-- Version: 2024_1228
-- Homepage: https://www.freeoffice.com/
-- Code repository:
-
-*Note: updater not available*
 ## openoffice.org (a full-featured open-source office suite)
  OpenOffice.org is a full-featured open-source office suite that is
  compatible with all other major office software.
@@ -533,7 +520,7 @@
   
 
 - Category: development
-- Version: 16.3
+- Version: 16.3.1
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
