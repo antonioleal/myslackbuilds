@@ -85,7 +85,7 @@ rm -rf $PRGNAM
 mkdir -p $PRGNAM
 cd $PRGNAM
 ar -x $CWD/$SRCNAM-$VERSION-01_$DEBARCH.deb
-tar xvf data.tar.xz -C $PKG
+tar xvf data.tar.xz -C $PKG  --exclude='*.desktop'
 cd $PKG
 chown -R root:root .
 find -L . \
