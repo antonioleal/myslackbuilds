@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
                |-----handy-ruler------------------------------------------------------|
-qt6-shadertools: qt6-shadertools (Qt GUI toolkit, version 6, base)
+qt6-shadertools: qt6-shadertools (Qt GUI toolkit, version 6, shadertools)
 qt6-shadertools:
 qt6-shadertools: Qt is a cross-platform application and UI framework for developers
 qt6-shadertools: using C++ or QML, a CSS/JavaScript-like language.

@@ -61,7 +61,7 @@
 - Code repository:
 
 *Note: updater is available for this package*
-## qt6-shadertools (Qt GUI toolkit, version 6, base)
+## qt6-shadertools (Qt GUI toolkit, version 6, shadertools)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
@@ -114,6 +114,22 @@
 - Code repository: https://ftp.gnu.org/gnu/glibc/
 
 *Note: updater is available for this package*
+## qt6-svg (Qt GUI toolkit, version 6, svg)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
+ Homepage: https://www.qt.io
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository: https://download.qt.io/archive/qt/
+
+*Note: updater not available*
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
