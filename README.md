@@ -237,6 +237,22 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
+## qt6-serialport (Qt GUI toolkit, version 6, serialport)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
+ Homepage: https://www.qt.io
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository: https://download.qt.io/archive/qt/
+
+*Note: updater not available*
 ## Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt)
  Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software
  package for large-scale, nonlinear optimization. It is designed to
