@@ -258,7 +258,7 @@
   
 
 - Category: libraries
-- Version: 6.9.1
+- Version: 6.9.2
 - Homepage: https://download.qt.io/official_releases/qt/
 - Code repository: https://download.qt.io/official_releases/qt/
 
