@@ -432,7 +432,7 @@
   
 
 - Category: development
-- Version: 1.11.14_1764918088
+- Version: 1.11.17_1765244408
 - Homepage: https://antigravity.google/
 - Code repository:
 

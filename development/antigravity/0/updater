@@ -39,5 +39,7 @@ then
     export RET0=""
 else
     echo "$PRGNAM thereis a new version $NEWVERSION, but you need to update it manually"
+    echo
+    lynx -dump https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=antigravity-bin | grep -A2 source=
     export RET0=$NEWVERSION
 fi
