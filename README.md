@@ -1066,7 +1066,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 145.0.2_2
+- Version: 146.0_2
 - Homepage: https://librewolf.net/
 - Code repository: https://codeberg.org/librewolf/source/releases
 - Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
