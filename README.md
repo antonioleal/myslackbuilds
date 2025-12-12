@@ -213,6 +213,17 @@
 - Code repository: https://ftp.gnu.org/gnu/recutils/
 
 *Note: updater is available for this package*
+## a68g (Algol 68 compiler-interpreter)
+ It can be used for executing Algol 68 programs or scripts.
+ HomePage: https://jmvdveer.home.xs4all.nl
+  
+
+- Category: development
+- Version: 3.10.8
+- Homepage: https://jmvdveer.home.xs4all.nl
+- Code repository:
+
+*Note: updater not available*
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
