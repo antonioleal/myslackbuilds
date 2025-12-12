@@ -1410,7 +1410,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 3.2.0
+- Version: 3.2.1
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
 
