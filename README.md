@@ -4,14 +4,13 @@
 
   
 
-## qt6-datavis3d (Qt GUI toolkit, version 6, datavis3d)
+## qt6-datavis3d (Qt GUI toolkit, version 6, qtdatavis3d)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -20,14 +19,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-3d (Qt GUI toolkit, version 6, 3d)
+## qt6-3d (Qt GUI toolkit, version 6, qt3d)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -36,30 +34,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-qt5compat (Qt GUI toolkit, version 6, qt5compat)
+## qt6-quick3d (Qt GUI toolkit, version 6, qtquick3d)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
-  
-
-- Category: libraries
-- Version: 6.10.1
-- Homepage: https://qt.io
-- Code repository: https://download.qt.io/archive/qt/
-
-*Note: updater not available*
-## qt6-quick3d (Qt GUI toolkit, version 6, quick3d)
- Qt is a cross-platform application and UI framework for developers
- using C++ or QML, a CSS/JavaScript-like language.
- With Qt, code can be reused efficiently to target multiple platforms
- with one code base. The modular C++ class library and developer tools
- easily enables developers to create applications for one platform and
- easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -82,14 +63,13 @@
 - Code repository: 
 
 *Note: updater is available for this package*
-## qt6-remoteobjects (Qt GUI toolkit, version 6, remoteobjects)
+## qt6-remoteobjects (Qt GUI toolkit, version 6, qtremoteobjects)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -114,14 +94,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-webchannel (Qt GUI toolkit, version 6, webchannel)
+## qt6-webchannel (Qt GUI toolkit, version 6, qtwebchannel)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -142,14 +121,13 @@
 - Code repository: https://github.com/linuxmint/xapp
 
 *Note: updater is available for this package*
-## qt6-tools (Qt GUI toolkit, version 6, tools)
+## qt6-tools (Qt GUI toolkit, version 6, qttools)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -158,14 +136,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-imageformats (Qt GUI toolkit, version 6, imageformats)
+## qt6-imageformats (Qt GUI toolkit, version 6, qtimageformats)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -174,14 +151,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-quick3dphysics (Qt GUI toolkit, version 6, quick3dphysics)
+## qt6-quick3dphysics (Qt GUI toolkit, version 6, qtquick3dphysics)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -190,14 +166,28 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-positioning (Qt GUI toolkit, version 6, positioning)
+## qt6-doc (Qt GUI toolkit, version 6, qtdoc)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-positioning (Qt GUI toolkit, version 6, qtpositioning)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
   
 
 - Category: libraries
@@ -206,14 +196,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-activeqt (Qt GUI toolkit, version 6, activeqt)
+## qt6-activeqt (Qt GUI toolkit, version 6, qtactiveqt)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -222,14 +211,43 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-sensors (Qt GUI toolkit, version 6, sensors)
+## qt6-location (Qt GUI toolkit, version 6, qtlocation)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-lottie (Qt GUI toolkit, version 6, qtlottie)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-sensors (Qt GUI toolkit, version 6, qtsensors)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
   
 
 - Category: libraries
@@ -253,14 +271,13 @@
 - Code repository:
 
 *Note: updater is available for this package*
-## qt6-serialbus (Qt GUI toolkit, version 6, serialbus)
+## qt6-serialbus (Qt GUI toolkit, version 6, qtserialbus)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -269,14 +286,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-networkauth (Qt GUI toolkit, version 6, networkauth)
+## qt6-networkauth (Qt GUI toolkit, version 6, qtnetworkauth)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -285,14 +301,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-shadertools (Qt GUI toolkit, version 6, shadertools)
+## qt6-shadertools (Qt GUI toolkit, version 6, qtshadertools)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -301,14 +316,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-quicktimeline (Qt GUI toolkit, version 6, quicktimeline)
+## qt6-quicktimeline (Qt GUI toolkit, version 6, qtquicktimeline)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -317,14 +331,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-websockets (Qt GUI toolkit, version 6, websockets)
+## qt6-websockets (Qt GUI toolkit, version 6, qtwebsockets)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -333,14 +346,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-httpserver (Qt GUI toolkit, version 6, httpserver)
+## qt6-httpserver (Qt GUI toolkit, version 6, qthttpserver)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -349,14 +361,28 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-charts (Qt GUI toolkit, version 6, charts)
+## qt6-speech (Qt GUI toolkit, version 6, qtspeech)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-charts (Qt GUI toolkit, version 6, qtcharts)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
   
 
 - Category: libraries
@@ -375,14 +401,13 @@
 - Code repository: https://download.qt.io/official_releases/qt/
 
 *Note: updater is available for this package*
-## qt6-graphs (Qt GUI toolkit, version 6, graphs)
+## qt6-graphs (Qt GUI toolkit, version 6, qtgraphs)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -391,14 +416,73 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-languageserver (Qt GUI toolkit, version 6, languageserver)
+## qt6-wayland (Qt GUI toolkit, version 6, qtwayland)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-5compat (Qt GUI toolkit, version 6, qt5compat)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-translations (Qt GUI toolkit, version 6, qttranslations)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-virtualkeyboard (Qt GUI toolkit, version 6, qtvirtualkeyboard)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
+  
+
+- Category: libraries
+- Version: 6.10.1
+- Homepage: https://qt.io
+- Code repository:
+
+*Note: updater not available*
+## qt6-languageserver (Qt GUI toolkit, version 6, qtlanguageserver)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ With Qt, code can be reused efficiently to target multiple platforms
+ with one code base. The modular C++ class library and developer tools
+ easily enables developers to create applications for one platform and
+ easily build and run to deploy on another platform.
   
 
 - Category: libraries
@@ -434,14 +518,13 @@
 - Code repository: https://ftp.gnu.org/gnu/glibc/
 
 *Note: updater is available for this package*
-## qt6-multimedia (Qt GUI toolkit, version 6, multimedia)
+## qt6-multimedia (Qt GUI toolkit, version 6, qtmultimedia)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -450,14 +533,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-connectivity (Qt GUI toolkit, version 6, connectivity)
+## qt6-connectivity (Qt GUI toolkit, version 6, qtconnectivity)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -466,14 +548,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-grpc (Qt GUI toolkit, version 6, grpc)
+## qt6-grpc (Qt GUI toolkit, version 6, qtgrpc)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -482,14 +563,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-webengine (Qt GUI toolkit, version 6, webengine)
+## qt6-webengine (Qt GUI toolkit, version 6, qtwebengine)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -498,14 +578,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-svg (Qt GUI toolkit, version 6, svg)
+## qt6-svg (Qt GUI toolkit, version 6, qtsvg)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -525,14 +604,13 @@
 - Code repository: https://github.com/steinbergmedia/vst3sdk
 
 *Note: updater is available for this package*
-## qt6-scxml (Qt GUI toolkit, version 6, scxml)
+## qt6-scxml (Qt GUI toolkit, version 6, qtscxml)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -541,14 +619,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-quickeffectmaker (Qt GUI toolkit, version 6, quickeffectmaker)
+## qt6-quickeffectmaker (Qt GUI toolkit, version 6, qtquickeffectmaker)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -557,14 +634,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-webview (Qt GUI toolkit, version 6, webview)
+## qt6-webview (Qt GUI toolkit, version 6, qtwebview)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -573,14 +649,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-declarative (Qt GUI toolkit, version 6, declarative)
+## qt6-declarative (Qt GUI toolkit, version 6, qtdeclarative)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
@@ -589,14 +664,13 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-serialport (Qt GUI toolkit, version 6, serialport)
+## qt6-serialport (Qt GUI toolkit, version 6, qtserialport)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
  With Qt, code can be reused efficiently to target multiple platforms
  with one code base. The modular C++ class library and developer tools
  easily enables developers to create applications for one platform and
  easily build and run to deploy on another platform.
- Homepage: https://www.qt.io
   
 
 - Category: libraries
