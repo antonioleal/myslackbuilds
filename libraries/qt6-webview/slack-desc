@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
            |-----handy-ruler------------------------------------------------------|
-qt6-webview: qt6-webview (Qt GUI toolkit, version 6, webview)
+qt6-webview: qt6-webview (Qt GUI toolkit, version 6, qtwebview)
 qt6-webview:
 qt6-webview: Qt is a cross-platform application and UI framework for developers
 qt6-webview: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-webview: with one code base. The modular C++ class library and developer too
 qt6-webview: easily enables developers to create applications for one platform and
 qt6-webview: easily build and run to deploy on another platform.
 qt6-webview:
-qt6-webview: Homepage: https://www.qt.io
+qt6-webview:

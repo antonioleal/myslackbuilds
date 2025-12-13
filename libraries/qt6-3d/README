@@ -1,4 +1,4 @@
-qt6-3d (Qt GUI toolkit, version 6)
+qt6-3d (Qt GUI toolkit, version 6, qt3d)
 
 Qt6 is a complete and well-developed object-oriented framework for
 developing graphical user interface (GUI) applications using C++.
@@ -7,9 +7,3 @@ This build uses GCC instead of LLVM, but it does use cmake-opt,
 available on SlackBuilds.org.
 The goal is to have an updated but minimised qt6 build, where
 users can select which packages are realy needed.
-
-Optional dependencies:
-    qt6-declarative,
-    qt6-multimedia,
-    qt6-shadertools
-

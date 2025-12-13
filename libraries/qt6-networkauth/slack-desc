@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
                |-----handy-ruler------------------------------------------------------|
-qt6-networkauth: qt6-networkauth (Qt GUI toolkit, version 6, networkauth)
+qt6-networkauth: qt6-networkauth (Qt GUI toolkit, version 6, qtnetworkauth)
 qt6-networkauth:
 qt6-networkauth: Qt is a cross-platform application and UI framework for developers
 qt6-networkauth: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-networkauth: with one code base. The modular C++ class library and developer
 qt6-networkauth: easily enables developers to create applications for one platform and
 qt6-networkauth: easily build and run to deploy on another platform.
 qt6-networkauth:
-qt6-networkauth: Homepage: https://www.qt.io
+qt6-networkauth:

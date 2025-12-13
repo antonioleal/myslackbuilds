@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
              |-----handy-ruler------------------------------------------------------|
-qt6-serialbus: qt6-serialbus (Qt GUI toolkit, version 6, serialbus)
+qt6-serialbus: qt6-serialbus (Qt GUI toolkit, version 6, qtserialbus)
 qt6-serialbus:
 qt6-serialbus: Qt is a cross-platform application and UI framework for developers
 qt6-serialbus: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-serialbus: with one code base. The modular C++ class library and developer t
 qt6-serialbus: easily enables developers to create applications for one platform and
 qt6-serialbus: easily build and run to deploy on another platform.
 qt6-serialbus:
-qt6-serialbus: Homepage: https://www.qt.io
+qt6-serialbus:

@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
           |-----handy-ruler------------------------------------------------------|
-qt6-charts: qt6-charts (Qt GUI toolkit, version 6, charts)
+qt6-charts: qt6-charts (Qt GUI toolkit, version 6, qtcharts)
 qt6-charts:
 qt6-charts: Qt is a cross-platform application and UI framework for developers
 qt6-charts: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-charts: with one code base. The modular C++ class library and developer tool
 qt6-charts: easily enables developers to create applications for one platform and
 qt6-charts: easily build and run to deploy on another platform.
 qt6-charts:
-qt6-charts: Homepage: https://www.qt.io
+qt6-charts:

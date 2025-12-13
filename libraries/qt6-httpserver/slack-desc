@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
               |-----handy-ruler------------------------------------------------------|
-qt6-httpserver: qt6-httpserver (Qt GUI toolkit, version 6, httpserver)
+qt6-httpserver: qt6-httpserver (Qt GUI toolkit, version 6, qthttpserver)
 qt6-httpserver:
 qt6-httpserver: Qt is a cross-platform application and UI framework for developers
 qt6-httpserver: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-httpserver: with one code base. The modular C++ class library and developer 
 qt6-httpserver: easily enables developers to create applications for one platform and
 qt6-httpserver: easily build and run to deploy on another platform.
 qt6-httpserver:
-qt6-httpserver: Homepage: https://www.qt.io
+qt6-httpserver:

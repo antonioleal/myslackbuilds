@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
               |-----handy-ruler------------------------------------------------------|
-qt6-multimedia: qt6-multimedia (Qt GUI toolkit, version 6, multimedia)
+qt6-multimedia: qt6-multimedia (Qt GUI toolkit, version 6, qtmultimedia)
 qt6-multimedia:
 qt6-multimedia: Qt is a cross-platform application and UI framework for developers
 qt6-multimedia: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-multimedia: with one code base. The modular C++ class library and developer 
 qt6-multimedia: easily enables developers to create applications for one platform and
 qt6-multimedia: easily build and run to deploy on another platform.
 qt6-multimedia:
-qt6-multimedia: Homepage: https://www.qt.io
+qt6-multimedia:

@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
                  |-----handy-ruler------------------------------------------------------|
-qt6-quicktimeline: qt6-quicktimeline (Qt GUI toolkit, version 6, quicktimeline)
+qt6-quicktimeline: qt6-quicktimeline (Qt GUI toolkit, version 6, qtquicktimeline)
 qt6-quicktimeline:
 qt6-quicktimeline: Qt is a cross-platform application and UI framework for developers
 qt6-quicktimeline: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-quicktimeline: with one code base. The modular C++ class library and develop
 qt6-quicktimeline: easily enables developers to create applications for one platform and
 qt6-quicktimeline: easily build and run to deploy on another platform.
 qt6-quicktimeline:
-qt6-quicktimeline: Homepage: https://www.qt.io
+qt6-quicktimeline:

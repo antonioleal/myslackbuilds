@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
              |-----handy-ruler------------------------------------------------------|
-qt6-datavis3d: qt6-datavis3d (Qt GUI toolkit, version 6, datavis3d)
+qt6-datavis3d: qt6-datavis3d (Qt GUI toolkit, version 6, qtdatavis3d)
 qt6-datavis3d:
 qt6-datavis3d: Qt is a cross-platform application and UI framework for developers
 qt6-datavis3d: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-datavis3d: with one code base. The modular C++ class library and developer t
 qt6-datavis3d: easily enables developers to create applications for one platform and
 qt6-datavis3d: easily build and run to deploy on another platform.
 qt6-datavis3d:
-qt6-datavis3d: Homepage: https://www.qt.io
+qt6-datavis3d:

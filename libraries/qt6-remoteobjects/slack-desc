@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
                  |-----handy-ruler------------------------------------------------------|
-qt6-remoteobjects: qt6-remoteobjects (Qt GUI toolkit, version 6, remoteobjects)
+qt6-remoteobjects: qt6-remoteobjects (Qt GUI toolkit, version 6, qtremoteobjects)
 qt6-remoteobjects:
 qt6-remoteobjects: Qt is a cross-platform application and UI framework for developers
 qt6-remoteobjects: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-remoteobjects: with one code base. The modular C++ class library and develop
 qt6-remoteobjects: easily enables developers to create applications for one platform and
 qt6-remoteobjects: easily build and run to deploy on another platform.
 qt6-remoteobjects:
-qt6-remoteobjects: Homepage: https://www.qt.io
+qt6-remoteobjects:

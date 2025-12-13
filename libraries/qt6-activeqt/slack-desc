@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
             |-----handy-ruler------------------------------------------------------|
-qt6-activeqt: qt6-activeqt (Qt GUI toolkit, version 6, activeqt)
+qt6-activeqt: qt6-activeqt (Qt GUI toolkit, version 6, qtactiveqt)
 qt6-activeqt:
 qt6-activeqt: Qt is a cross-platform application and UI framework for developers
 qt6-activeqt: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-activeqt: with one code base. The modular C++ class library and developer to
 qt6-activeqt: easily enables developers to create applications for one platform and
 qt6-activeqt: easily build and run to deploy on another platform.
 qt6-activeqt:
-qt6-activeqt: Homepage: https://www.qt.io
+qt6-activeqt:

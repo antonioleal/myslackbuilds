@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
         |-----handy-ruler------------------------------------------------------|
-qt6-grpc: qt6-grpc (Qt GUI toolkit, version 6, grpc)
+qt6-grpc: qt6-grpc (Qt GUI toolkit, version 6, qtgrpc)
 qt6-grpc:
 qt6-grpc: Qt is a cross-platform application and UI framework for developers
 qt6-grpc: using C++ or QML, a CSS/JavaScript-like language.
@@ -16,4 +16,4 @@ qt6-grpc: with one code base. The modular C++ class library and developer tools
 qt6-grpc: easily enables developers to create applications for one platform and
 qt6-grpc: easily build and run to deploy on another platform.
 qt6-grpc:
-qt6-grpc: Homepage: https://www.qt.io
+qt6-grpc:
