@@ -166,21 +166,6 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
-## qt6-doc (Qt GUI toolkit, version 6, qtdoc)
- Qt is a cross-platform application and UI framework for developers
- using C++ or QML, a CSS/JavaScript-like language.
- With Qt, code can be reused efficiently to target multiple platforms
- with one code base. The modular C++ class library and developer tools
- easily enables developers to create applications for one platform and
- easily build and run to deploy on another platform.
-  
-
-- Category: libraries
-- Version: 6.10.1
-- Homepage: https://qt.io
-- Code repository:
-
-*Note: updater not available*
 ## qt6-positioning (Qt GUI toolkit, version 6, qtpositioning)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -1161,7 +1146,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 1.17.13b
+- Version: 1.17.14b
 - Homepage: https://zen-browser.app/
 - Code repository: https://github.com/zen-browser/desktop
 
