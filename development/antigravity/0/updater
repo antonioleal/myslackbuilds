@@ -30,6 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
+# get the tarball with: lynx -dump https://github.com/oslook/antigravity-downloads | grep "http.*tar.gz" | awk '{print $2}' | head -1
+# get the full version  with: lynx -dump https://github.com/oslook/antigravity-downloads | grep "Full Build" | head -1 | awk '{print $4}'
 NEWVERSION=$(lynx -dump https://github.com/oslook/antigravity-downloads | grep "Latest Stable" | awk '{print $4}')
 
 source ../$PRGNAM.info
