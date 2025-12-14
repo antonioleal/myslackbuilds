@@ -25,10 +25,11 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=antigravity
-VERSION=${VERSION:-1.11.17_1765244408}
+VERSION=${VERSION:-1.11.17}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
+TARBALL=antigravity_1.11.17-1765244408_amd64_9df0712156d4f7f37ea353feaa9633ca.deb
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -55,7 +56,7 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
-ar -x $CWD/antigravity_1.11.17-1765244408_amd64_9df0712156d4f7f37ea353feaa9633ca.deb
+ar -x $CWD/$TARBALL
 tar xvf data.tar.xz -C $PKG
 
 cd $PKG

@@ -30,7 +30,7 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=$(links -dump  https://aur.archlinux.org/packages/antigravity-bin | grep "Package Details" | cut -d" " -f4 | cut -d"-" -f1)
+NEWVERSION=$(lynx -dump https://github.com/oslook/antigravity-downloads | grep "Latest Stable" | awk '{print $4}')
 
 source ../$PRGNAM.info
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -38,8 +38,6 @@ then
     echo "is at version $VERSION"
     export RET0=""
 else
-    echo "$PRGNAM thereis a new version $NEWVERSION, but you need to update it manually"
-    echo
-    lynx -dump https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=antigravity-bin | grep -A2 source=
+    echo "thereis a new version $NEWVERSION, but you need to update it manually"
     export RET0=$NEWVERSION
 fi
