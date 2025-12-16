@@ -2058,7 +2058,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 2.0.4.872
+- Version: 2.1.1.912
 - Homepage: https://musescore.org/
 - Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
 
