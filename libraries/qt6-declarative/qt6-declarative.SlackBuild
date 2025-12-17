@@ -79,9 +79,13 @@ mkdir b
 cd b
 export CFLAGS="$SLKCFLAGS -w"
 export CXXFLAGS="$SLKCFLAGS -w"
+export PATH=/opt/Qt/prebuilt_environment/libclang/bin:$PATH
+export LLVM_INSTALL_DIR=/opt/Qt/prebuilt_environment/libclang
+export LD_LIBRARY_PATH=/opt/Qt/prebuilt_environment/libclang/lib:$LD_LIBRARY_PATH
+
 /opt/Qt/${VERSION}/bin/qt-configure-module ..
-cmake --build . --parallel
-DESTDIR=$PKG cmake --install .
+/opt/cmake-opt/bin/cmake --build . --parallel
+DESTDIR=$PKG /opt/cmake-opt/bin/cmake --install .
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

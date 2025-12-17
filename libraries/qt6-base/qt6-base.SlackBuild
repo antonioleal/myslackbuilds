@@ -77,11 +77,19 @@ find -L . \
 rm -rf b
 mkdir b
 cd b
-export CFLAGS="$SLKCFLAGS -w"
-export CXXFLAGS="$SLKCFLAGS -w"
-../configure -prefix /opt/Qt/$VERSION
-cmake --build . --parallel
-DESTDIR=$PKG cmake --install .
+export PATH=/opt/Qt/prebuilt_environment/libclang/bin:$PATH
+export LLVM_INSTALL_DIR=/opt/Qt/prebuilt_environment/libclang
+export LD_LIBRARY_PATH=/opt/Qt/prebuilt_environment/libclang/lib:$LD_LIBRARY_PATH
+/opt/cmake-opt/bin/cmake \
+    -G Ninja \
+    -Wno-dev \
+    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_INSTALL_PREFIX=/opt/Qt/$VERSION \
+    -DCMAKE_PREFIX_PATH=/opt/Qt/prebuilt_environment/libclang \
+    -DCMAKE_BUILD_TYPE=Release ..
+/opt/cmake-opt/bin/cmake --build . --parallel
+DESTDIR=$PKG /opt/cmake-opt/bin/cmake --install .
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
