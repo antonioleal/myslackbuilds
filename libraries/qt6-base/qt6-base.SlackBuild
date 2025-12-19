@@ -74,18 +74,22 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-rm -rf b
-mkdir b
-cd b
+export QT6PREFIX="/opt/Qt/$VERSION"
+export CFLAGS="$SLKCFLAGS"
+export CXXFLAGS="$SLKCFLAGS"
 export PATH=/opt/Qt/prebuilt_environment/libclang/bin:$PATH
 export LLVM_INSTALL_DIR=/opt/Qt/prebuilt_environment/libclang
 export LD_LIBRARY_PATH=/opt/Qt/prebuilt_environment/libclang/lib:$LD_LIBRARY_PATH
+
+rm -rf b
+mkdir b
+cd b
 /opt/cmake-opt/bin/cmake \
     -G Ninja \
     -Wno-dev \
     -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_INSTALL_PREFIX=/opt/Qt/$VERSION \
+    -DCMAKE_INSTALL_PREFIX=$QT6PREFIX \
     -DCMAKE_PREFIX_PATH=/opt/Qt/prebuilt_environment/libclang \
     -DCMAKE_BUILD_TYPE=Release ..
 /opt/cmake-opt/bin/cmake --build . --parallel

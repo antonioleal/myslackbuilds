@@ -74,27 +74,88 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-rm -rf b
-mkdir b
-cd b
-export CFLAGS="$SLKCFLAGS -w"
-export CXXFLAGS="$SLKCFLAGS -w"
+export QT6PREFIX="/opt/Qt/$VERSION"
+export CFLAGS="$SLKCFLAGS"
+export CXXFLAGS="$SLKCFLAGS"
 export PATH=/opt/Qt/prebuilt_environment/libclang/bin:$PATH
 export LLVM_INSTALL_DIR=/opt/Qt/prebuilt_environment/libclang
 export LD_LIBRARY_PATH=/opt/Qt/prebuilt_environment/libclang/lib:$LD_LIBRARY_PATH
 
-/opt/Qt/${VERSION}/bin/qt-configure-module ..
+rm -rf b
+mkdir b
+cd b
+$QT6PREFIX/bin/qt-configure-module ..
 /opt/cmake-opt/bin/cmake --build . --parallel
 DESTDIR=$PKG /opt/cmake-opt/bin/cmake --install .
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
+mkdir -p $PKG/usr/share/icons/hicolor/128x128/apps
+install -Dm644 ../src/assistant/assistant/images/assistant-128.png \
+  $PKG/usr/share/icons/hicolor/128x128/apps/qt6-assistant.png
+install -Dm644 ../src/designer/src/designer/images/designer.png \
+  $PKG/usr/share/icons/hicolor/128x128/apps/qt6-designer.png
+install -Dm644 ../src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
+  $PKG/usr/share/icons/hicolor/128x128/apps/qt6-qdbusviewer.png
+install -Dm644 ../src/linguist/linguist/images/icons/linguist-128-32.png \
+  $PKG/usr/share/icons/hicolor/128x128/apps/qt6-linguist.png
+
+mkdir -p $PKG/usr/share/applications
+cat <<EOF > $PKG/usr/share/applications/qt6-designer.desktop
+[Desktop Entry]
+Name=Qt6 Designer
+GenericName=Interface Designer
+Comment=Design GUIs for Qt6 applications
+Exec=$QT6PREFIX/bin/designer
+Icon=qt6-designer
+MimeType=application/x-designer;
+Terminal=false
+Encoding=UTF-8
+Type=Application
+Categories=Qt;Development;
+EOF
+cat <<EOF > $PKG/usr/share/applications/qt6-assistant.desktop
+[Desktop Entry]
+Name=Qt6 Assistant
+Comment=Shows Qt6 documentation and examples
+Exec=$QT6PREFIX/bin/assistant
+Icon=qt6-assistant
+Terminal=false
+Encoding=UTF-8
+Type=Application
+Categories=Qt;Development;Documentation;
+EOF
+cat <<EOF > $PKG/usr/share/applications/qt6-linguist.desktop
+[Desktop Entry]
+Name=Qt6 Linguist
+Comment=Add translations to Qt6 applications
+Exec=$QT6PREFIX/bin/linguist
+Icon=qt6-linguist
+MimeType=text/vnd.trolltech.linguist;application/x-linguist;
+Terminal=false
+Encoding=UTF-8
+Type=Application
+Categories=Qt;Development;
+EOF
+cat <<EOF > $PKG/usr/share/applications/qt6-qdbusviewer.desktop
+[Desktop Entry]
+Name=Qt6 QDbusViewer
+GenericName=Qt6 D-Bus Debugger
+Comment=Debug D-Bus applications
+Exec=$QT6PREFIX/bin/qdbusviewer
+Icon=qt6-qdbusviewer
+Terminal=false
+Type=Application
+Categories=Qt;Development;Debugger;
+EOF
+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
