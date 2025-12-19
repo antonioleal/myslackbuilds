@@ -1002,7 +1002,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 143.0.7499.146
+- Version: 143.0.7499.169
 - Homepage: http://www.google.com/chrome/
 - Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
 
