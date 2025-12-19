@@ -4,8 +4,8 @@ HOMEPAGE="https://github.com/musescore/MuseScore"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://github.com/musescore/MuseScore/archive/v_version_/MuseScore-_version_.tar.gz \
-                 https://raw.githubusercontent.com/musescore/muse_deps/main//harfbuzz/7.1.0/harfbuzz_src.7z \
-                 https://raw.githubusercontent.com/musescore/muse_deps/main//harfbuzz/7.1.0/harfbuzz.cmake"
+                 https://raw.githubusercontent.com/musescore/muse_deps/main/harfbuzz/7.1.0/harfbuzz_src.7z \
+                 https://raw.githubusercontent.com/musescore/muse_deps/main/harfbuzz/7.1.0/harfbuzz.cmake"
 MD5SUM_x86_64="_md5_ \
                695d5daec954dc62409ba85b040b5092 \
                cf9148f6e09761dbe15e3de38e6baced"
