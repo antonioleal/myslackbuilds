@@ -907,7 +907,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: audio
-- Version: 3.0.4
+- Version: 3.0.5
 - Homepage: https://musikcube.com
 - Code repository:
 
