@@ -1634,7 +1634,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 1.11.17
+- Version: 1.13.3
 - Homepage: https://antigravity.google/
 - Code repository:
 
