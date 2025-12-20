@@ -1059,7 +1059,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 3.18.2
+- Version: 3.18.3
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
 
