@@ -43,7 +43,14 @@ echo "--------------------------------------------------------------------------
 echo
 read -p "Run SlackBuild for Package $PKGNAME? (Y/n) " op
 if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]; then
-    sudo sh ./$PKGNAME.SlackBuild
+    read -p "Define MAKEFLAGS=-j<value> or press enter for <value>=10 > " mf
+    if [ "$mf" = "" ]; then
+        mf=10
+        echo "Using MAKEFLAGS=-j10"
+    else
+        echo "Using MAKEFLAGS=-j${mf}"
+    fi
+    sudo MAKEFLAGS=-j${mf} sh ./$PKGNAME.SlackBuild
 fi
 
 echo "--------------------------------------------------------------------------------"
