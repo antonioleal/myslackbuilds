@@ -338,7 +338,7 @@
   
 
 - Category: libraries
-- Version: 3.0.16
+- Version: 3.0.17
 - Homepage: https://notcurses.com/
 - Code repository:
 
