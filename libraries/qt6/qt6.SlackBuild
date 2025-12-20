@@ -100,13 +100,13 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/share/icons/hicolor/128x128/apps
-install -Dm644 ../src/assistant/assistant/images/assistant-128.png \
+install -Dm644 ../qttools/src/assistant/assistant/images/assistant-128.png \
   $PKG/usr/share/icons/hicolor/128x128/apps/$PRGNAM-assistant.png
-install -Dm644 ../src/designer/src/designer/images/designer.png \
+install -Dm644 ../qttools/src/designer/src/designer/images/designer.png \
   $PKG/usr/share/icons/hicolor/128x128/apps/$PRGNAM-designer.png
-install -Dm644 ../src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
+install -Dm644 ../qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
   $PKG/usr/share/icons/hicolor/128x128/apps/$PRGNAM-qdbusviewer.png
-install -Dm644 ../src/linguist/linguist/images/icons/linguist-128-32.png \
+install -Dm644 ../qttools/src/linguist/linguist/images/icons/linguist-128-32.png \
   $PKG/usr/share/icons/hicolor/128x128/apps/$PRGNAM-linguist.png
 
 mkdir -p $PKG/usr/share/applications
