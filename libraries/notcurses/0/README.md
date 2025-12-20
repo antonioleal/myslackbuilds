@@ -1,0 +1,2 @@
+- Homepage: https://notcurses.com/
+- Code repository:

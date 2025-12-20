@@ -327,6 +327,22 @@
 - Code repository: https://download.qt.io/archive/qt/
 
 *Note: updater not available*
+## notcurses (Blingful character graphics/TUI library)
+ notcurses is a library facilitating complex TUIs on modern terminal
+ emulators, supporting vivid colors, multimedia, threads, and Unicode
+ to the maximum degree possible. Things can be done with Notcurses
+ that simply can't be done with NCURSES. It is furthermore fast. It is
+ not a source-compatible X/Open Curses implementation, nor a
+ replacement for NCURSES on existing systems.
+ Homepage: https://notcurses.com/
+  
+
+- Category: libraries
+- Version: 3.0.16
+- Homepage: https://notcurses.com/
+- Code repository:
+
+*Note: updater not available*
 ## qt6-shadertools (Qt GUI toolkit, version 6, qtshadertools)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
