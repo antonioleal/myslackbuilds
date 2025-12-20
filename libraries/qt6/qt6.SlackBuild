@@ -90,7 +90,7 @@ cd b
     -Wno-dev \
     -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_INSTALL_PREFIX=/opt/Qt/$VERSION \
+    -DCMAKE_INSTALL_PREFIX=$QT6PREFIX \
     -DCMAKE_PREFIX_PATH=/opt/Qt/prebuilt_environment/libclang \
     -DCMAKE_BUILD_TYPE=Release ..
 /opt/cmake-opt/bin/cmake --build . --parallel
