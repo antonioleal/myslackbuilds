@@ -1414,7 +1414,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 20251010_0b6f1d2
+- Version: 20251220_7eb9b67
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
 
