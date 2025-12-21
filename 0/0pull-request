@@ -67,7 +67,7 @@ echo
 
 # or:
 gh pr create --title "$MSG" --body "$MSG"
-# ver opcões: --head your-branch-name --base main --draft
+# ver opcões: gh pr create --title "$MSG" --body "$MSG" --head antonioleal:${PKGNAME} --base master
 echo
 echo
 
