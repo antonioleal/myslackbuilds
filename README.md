@@ -1359,6 +1359,22 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *Note: updater is available for this package*
+## zutty (X terminal emulator using OpenGL ES Compute Shaders)
+ Zutty is a terminal emulator for the X Window System, functionally
+ similar to several other X terminal emulators such as xterm, rxvt and
+ countless others. It is also similar to other, much more modern,
+ GPU-accelerated terminal emulators such as Alacritty and Kitty. What
+ really sets Zutty apart is its radically simple, yet extremely
+ efficient rendering implementation.
+ Homepage: https://tomscii.sig7.se/zutty/
+  
+
+- Category: system
+- Version: 0.16
+- Homepage: https://tomscii.sig7.se/zutty/
+- Code repository:
+
+*Note: updater not available*
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
