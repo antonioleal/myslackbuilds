@@ -1046,7 +1046,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 1.11.2
+- Version: 1.14.1
 - Homepage: https://github.com/Rockhopper-Technologies/enlighten
 - Code repository:
 
