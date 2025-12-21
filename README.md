@@ -968,6 +968,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: 
 
 *Note: updater is available for this package*
+## python2-blessed (library for making terminal apps)
+ Easy, practical library for making terminal apps, by providing an
+ elegant, well-documented interface to Colors, Keyboard input, and
+ screen Positioning capabilities.
+  
+
+- Category: python
+- Version: 1.22.0
+- Homepage: https://pypi.org/project/blessed/
+- Code repository:
+
+*Note: updater not available*
 ## python3-gmpy2 (multi-precision arithmetic for python)
  gmpy2 is an optimized, c-coded python extension module that supports
  fast multiple-precision arithmetic. gmpy2 is based on the original
@@ -1091,6 +1103,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Category: python
 - Version: 1.12.4
 - Homepage: https://github.com/Rockhopper-Technologies/enlighten
+- Code repository:
+
+*Note: updater not available*
+## python2-prefixed (prefixed alternative numeric library)
+ Prefixed alternative numeric library
+  
+
+- Category: python
+- Version: 0.9.0
+- Homepage: https://nuitka.net
 - Code repository:
 
 *Note: updater not available*
