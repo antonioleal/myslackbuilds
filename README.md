@@ -18,7 +18,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-3d (Qt GUI toolkit, version 6, qt3d)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -33,7 +33,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-quick3d (Qt GUI toolkit, version 6, qtquick3d)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -48,7 +48,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## pam_usb (Hardware Auth via Memory Sticks)
  This is a PAM module for Linux authentication using USB memory sticks,
  SD cards, external SSD etc. Simply speaking, it lets you log onto
@@ -77,7 +77,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-base (Qt GUI toolkit, version 6, qtbase)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -92,7 +92,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-webchannel (Qt GUI toolkit, version 6, qtwebchannel)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -107,7 +107,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-prebuilt_environment (Clang and LLVM to build Qt the GUI toolkit)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -119,7 +119,7 @@
 - Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
@@ -146,7 +146,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-imageformats (Qt GUI toolkit, version 6, qtimageformats)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -161,7 +161,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-quick3dphysics (Qt GUI toolkit, version 6, qtquick3dphysics)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -176,7 +176,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6 (Qt GUI toolkit, version 6)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -191,7 +191,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-doc (Qt GUI toolkit, version 6, qtdoc)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -206,7 +206,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-positioning (Qt GUI toolkit, version 6, qtpositioning)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -221,7 +221,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-activeqt (Qt GUI toolkit, version 6, qtactiveqt)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -236,7 +236,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-location (Qt GUI toolkit, version 6, qtlocation)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -251,7 +251,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-lottie (Qt GUI toolkit, version 6, qtlottie)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -266,7 +266,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-sensors (Qt GUI toolkit, version 6, qtsensors)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -281,7 +281,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt-installer-script (Deploy Qt Libraries in Slackware)
  qt-installer-script is an umbrella script to the standard Qt
  installer to simplify the installation of Qt Libraries in your
@@ -311,7 +311,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-networkauth (Qt GUI toolkit, version 6, qtnetworkauth)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -326,7 +326,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## notcurses (Blingful character graphics/TUI library)
  notcurses is a library facilitating complex TUIs on modern terminal
  emulators, supporting vivid colors, multimedia, threads, and Unicode
@@ -357,7 +357,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-quicktimeline (Qt GUI toolkit, version 6, qtquicktimeline)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -372,7 +372,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-websockets (Qt GUI toolkit, version 6, qtwebsockets)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -387,7 +387,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-httpserver (Qt GUI toolkit, version 6, qthttpserver)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -402,7 +402,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-speech (Qt GUI toolkit, version 6, qtspeech)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -417,7 +417,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-charts (Qt GUI toolkit, version 6, qtcharts)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -432,7 +432,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## MuseScore-Libraries (libraries required by MuseScore)
  The minimum set of libraries required by MuseScore.
   
@@ -457,7 +457,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-wayland (Qt GUI toolkit, version 6, qtwayland)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -472,7 +472,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-5compat (Qt GUI toolkit, version 6, qt5compat)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -487,7 +487,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-translations (Qt GUI toolkit, version 6, qttranslations)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -502,7 +502,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-virtualkeyboard (Qt GUI toolkit, version 6, qtvirtualkeyboard)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -517,7 +517,7 @@
 - Homepage: https://qt.io
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-languageserver (Qt GUI toolkit, version 6, qtlanguageserver)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -532,7 +532,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## SDL3 (Simple DirectMedia Layer Version 3)
  Simple DirectMedia Layer is a cross-platform development library
  designed to provide low-level access to audio, keyboard, mouse,
@@ -574,7 +574,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-connectivity (Qt GUI toolkit, version 6, qtconnectivity)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -589,7 +589,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-grpc (Qt GUI toolkit, version 6, qtgrpc)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -604,7 +604,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-webengine (Qt GUI toolkit, version 6, qtwebengine)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -619,7 +619,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-svg (Qt GUI toolkit, version 6, qtsvg)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -634,7 +634,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
@@ -660,7 +660,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-quickeffectmaker (Qt GUI toolkit, version 6, qtquickeffectmaker)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -675,7 +675,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-webview (Qt GUI toolkit, version 6, qtwebview)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -690,7 +690,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-declarative (Qt GUI toolkit, version 6, qtdeclarative)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -705,7 +705,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-serialport (Qt GUI toolkit, version 6, qtserialport)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -720,7 +720,7 @@
 - Homepage: https://qt.io
 - Code repository: https://download.qt.io/archive/qt/
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt)
  Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software
  package for large-scale, nonlinear optimization. It is designed to
@@ -1032,7 +1032,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 6.4.2
+- Version: 6.5.0
 - Homepage: https://github.com/py-pdf/pypdf
 - Code repository: 
 
