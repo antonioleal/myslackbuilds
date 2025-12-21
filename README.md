@@ -956,6 +956,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: 
 
 *Note: updater is available for this package*
+## python3-prefixed (prefixed alternative numeric library)
+ Prefixed alternative numeric library
+  
+
+- Category: python
+- Version: 0.9.0
+- Homepage: https://nuitka.net
+- Code repository:
+
+*Note: updater not available*
 ## python3-zstandard (Python3 bindings for Zstandard library)
  Python bindings for interfacing with the Zstandard compression
  library.
@@ -1100,7 +1110,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 1.12.4
+- Version: 1.14.1
 - Homepage: https://github.com/Rockhopper-Technologies/enlighten
 - Code repository:
 
