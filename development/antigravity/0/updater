@@ -30,16 +30,57 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-# get the tarball with: lynx -dump https://github.com/oslook/antigravity-downloads | grep "http.*tar.gz" | awk '{print $2}' | head -1
-# get the full version  with: lynx -dump https://github.com/oslook/antigravity-downloads | grep "Full Build" | head -1 | awk '{print $4}'
-NEWVERSION=$(lynx -dump https://github.com/oslook/antigravity-downloads | grep "Latest Stable" | awk '{print $4}')
+FULLVERSION=$(lynx -dump https://github.com/oslook/antigravity-downloads | grep "Full Build" | awk '{print $4}' | head -1)
+NEWVERSION=$(echo $FULLVERSION | cut -d"-" -f1)
+BUILD=$(echo $FULLVERSION | cut -d"-" -f2)
+TARBALL=Antigravity.tar.gz
+URL="https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/${NEWVERSION}-${BUILD}/linux-x64/$TARBALL"
 
-source ../$PRGNAM.info
+VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo "is at version $VERSION"
     export RET0=""
 else
-    echo "thereis a new version $NEWVERSION, but you need to update it manually"
+    ################################
+    # check for testonly parameter #
+    ################################
+    if [ "$ARG0" = "TESTONLY" ]
+    then
+        echo "has a new version $NEWVERSION"
+        export RET0=$NEWVERSION
+        return
+    fi
+    ################################
+    # download tarball             #
+    ################################
+    wget $URL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    echo $MD5
+    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_md5_/$MD5/g" \
+        -e "s/_build_/$BUILD/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
+    chmod 644 ../${PRGNAM}.SlackBuild
+    echo "has a new version $NEWVERSION"
+    echo "$NEWVERSION" > version
     export RET0=$NEWVERSION
 fi
