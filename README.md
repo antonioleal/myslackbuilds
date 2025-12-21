@@ -1037,6 +1037,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: 
 
 *Note: updater is available for this package*
+## python2-enlighten (Progress bar for Python console apps)
+ Enlighten Progress Bar is a console progress bar library for Python.
+ The main advantage of Enlighten is it allows writing to stdout and
+ stderr without any redirection or additional code. Just print or log
+ as you normally would.
+ Homepage: https://github.com/Rockhopper-Technologies/enlighten
+  
+
+- Category: python
+- Version: 1.11.2
+- Homepage: https://github.com/Rockhopper-Technologies/enlighten
+- Code repository:
+
+*Note: updater not available*
 ## python2-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
@@ -1066,6 +1080,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/mpmath/mpmath
 
 *Note: updater is available for this package*
+## python3-enlighten (Progress bar for Python console apps)
+ Enlighten Progress Bar is a console progress bar library for Python.
+ The main advantage of Enlighten is it allows writing to stdout and
+ stderr without any redirection or additional code. Just print or log
+ as you normally would.
+ Homepage: https://github.com/Rockhopper-Technologies/enlighten
+  
+
+- Category: python
+- Version: 1.12.4
+- Homepage: https://github.com/Rockhopper-Technologies/enlighten
+- Code repository:
+
+*Note: updater not available*
 ## python3-odfdo (OpenDocument Format library for Python)
  odfdo is a Python library for programmatically creating, parsing, and
  editing OpenDocument Format (ODF) files. It provides an interface for
