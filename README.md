@@ -1054,7 +1054,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
  The main advantage of Enlighten is it allows writing to stdout and
  stderr without any redirection or additional code. Just print or log
  as you normally would.
- Homepage: https://github.com/Rockhopper-Technologies/enlighten
   
 
 - Category: python
