@@ -42,7 +42,7 @@ do
 
     if [ -f 0/updater ]; then
         RET0=""
-        printf '%-15s %s ' $CATEGORY $PKGNAME
+        printf '%-15s %-30s ' $CATEGORY $PKGNAME
         export ARG0="TESTONLY"
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater
         if ! [ "$RET0" = "" ]
@@ -54,7 +54,7 @@ do
             fi
         fi
     else
-        printf '%-15s %s  (bypass, has no updater)\n' $CATEGORY $PKGNAME
+        printf '%-15s %-30s (bypass, has no updater)\n' $CATEGORY $PKGNAME
     fi
 
     read -t 0.01 -n 1 -s && [[ "$REPLY" == "p" ]] && sleep 30
