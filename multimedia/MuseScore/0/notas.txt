@@ -1,2 +1,9 @@
 cmake --install . --prefix /tmp/pasta
 
+
+
+# Debug do arranque - definir a variavel LD_DEBUG=libs
+
+ LD_DEBUG=libs mscore
+
+
