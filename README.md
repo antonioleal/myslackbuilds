@@ -927,7 +927,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://musikcube.com
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.

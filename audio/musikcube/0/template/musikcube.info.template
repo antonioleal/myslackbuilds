@@ -1,0 +1,12 @@
+PRGNAM="musikcube"
+VERSION="_version_"
+HOMEPAGE="https://musikcube.com"
+DOWNLOAD="https://github.com/clangen/musikcube/archive/_version_/musikcube-_version_.tar.gz \
+          https://github.com/chriskohlhoff/asio/archive/f693a3eb7fe72a5f19b975289afc4f437d373d9c/asio-f693a3eb7fe72a5f19b975289afc4f437d373d9c.tar.gz"
+MD5SUM="_md5_ \
+        343e9434cad3006dc74ba13bdf84445a"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="libev libmicrohttpd"
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"
