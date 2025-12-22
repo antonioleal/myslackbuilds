@@ -342,7 +342,7 @@
 - Homepage: https://notcurses.com/
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## qt6-shadertools (Qt GUI toolkit, version 6, qtshadertools)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
