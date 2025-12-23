@@ -1264,11 +1264,11 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 3.10.8
+- Version: 3.10.9
 - Homepage: https://jmvdveer.home.xs4all.nl
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## JAForth (An interpreter for the Jupiter ACE Forth)
  This package contains three command-line programs:
  - JAForth: An interpreter for the Jupiter ACE Forth, written in
