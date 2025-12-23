@@ -1,2 +1,0 @@
-- Homepage: https://qt.io
-- Code repository: https://download.qt.io/archive/qt/
