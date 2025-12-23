@@ -52,25 +52,25 @@ In the end your work environment should look like this:
 
         ~/slackware-builds/
         
-            /myslackbuilds/
+            myslackbuilds/
                 .git
-                /0/                     <- the "0" main scripts live here
-                /academic/plus42/       <- your plus42 scripts go here
-                /academic/plus42/0/     <- place whatever you want here
-                (...etc...)
-                /desktop/my_great_new_slackbuild  <- in "desktop", for ex.
+                 0/                     <- the "0" main scripts live here
+                 academic/plus42/       <- your plus42 scripts go here
+                 academic/plus42/0/     <- place whatever you want here
+                 (...etc...)
+                 desktop/my_great_new_slackbuild  <- in "desktop", for ex.
                 
-            /slackbuilds                <- your fork of slackbuilds
+             slackbuilds                <- your fork of slackbuilds
                 .git
-                /academic/3D-ICE/
-                /academic/celestia/
-                /academic/plus42/
-                /desktop/thunar-sendto-clamtk
-                (...etc...)
+                 academic/3D-ICE/
+                 academic/celestia/
+                 academic/plus42/
+                 desktop/thunar-sendto-clamtk
+                 (...etc...)
         
-            /otherbuilds
-                /some_test_or_scripts_from_others/
-                (...etc...)
+             otherbuilds
+                 some_test_or_scripts_from_others/
+                 (...etc...)
     
 
 
@@ -91,63 +91,81 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
 
 #### Current scripts
 
-    Script: 0download-source-tarballs
-    Effect: Downloads the sources referred in the *.info file. It also
-            checks if MD5SUM(s) are correct in the infor file, use together
-            with 0print-tarball-md5sums to prepare a new *.info file.
-
-    Script: 0update-md5-info
-    Effect: Reads the source(s) in *.info file, calculates new MD5SUM(s) and   
-            produces a new *.info file.
-            
-    Script: 0meld
-    Effect: Compares what is currently published in slackbuilds.org (your local folder!)
-            with your current script. You need the meld program.
+    Script: 0auto-updater
+    Effect: Check a multitude of sites to know if new versions are available.
+            But you need to provide an updater script. See my examples.
+            Notice you are web-crawling so use this with care.
 
     Script: 0build
     Effect: Starts the build process.
-
-    Script: 0tar
-    Effect: creates a "slackbuild".tar.gz pack ready to be submitted on the
-            folder 0/slackbuild under the SlackBuild you are working.
-    
-    Script: 0commit-push
-    Effect: Runs 0make-readme, commits and pushes your changes to your github repo.
-
-    Script: 0pull-request
-    Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds.
-
-    Script: 0delete-branches
-    Effect: Each Saturday afternoon, you can run this to delete all braches you
-            created with the script 0pull-request.
 
     Script: 0clean-tree
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this deletes all non-git controlled files.
 
-    Script: 0make-readme
-    Effect: if you also placed myslackbuilds directory in github (like me!)
-            then this automatically generates a README.md for github.
+    Script: 0commit-push
+    Effect: Runs 0make-readme, commits and pushes your changes to your github repo.
+
+    Script: 0delete-branches
+    Effect: Each Saturday afternoon, you can run this to delete all braches you
+            created with the script 0pull-request.
+
+    Script: 0download-source-tarballs
+    Effect: Downloads the sources referred in the *.info file. It also
+            checks if MD5SUM(s) are correct in the infor file, use together
+            with 0print-tarball-md5sums to prepare a new *.info file.
 
     Script: 0lspkg
     Effect: A Slackware tool which simply lists the currently installed
             packages.
             see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
 
+    Script: 0make-missing-readmes
+    Effect: if you also placed myslackbuilds directory in github (like me!)
+            then this automatically generates a README.md for github.
+
+    Script: 0make-readme
+    Effect: if you also placed myslackbuilds directory in github (like me!)
+            then this automatically generates a README.md for github.
+
+    Script: 0meld
+    Effect: Compares what is currently published in slackbuilds.org (your local folder!)
+            with your current script. You need the meld program.
+
     Script: 0pkginfo
     Effect: A Slackware tool to find the inforamtion about any installed 
             package
             see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
 
-    Script: 0whichpkg
-    Effect: A Slackware tool to find which package a file comes from.
-            see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
+    Script: 0pull-request
+    Effect: Makes a PR to github.com/SlackBuildsOrg/slackbuilds.
+
+    Script: 0replace-string
+    Effect: This uses sed to replace one string for another in your whole slackbuild scripts.
+            Very useful, but use with care.
+
+    Script: 0reset
+    Effect: Resets & cleans myslackbuilds and if parameter "all" is specified also your
+            slackbuilds clone folder.
+
+    Script: 0setup
+    Effect: Run once to setup your slack-builds '0' environment.
 
     Script: 0slackware-package-dependencies
     Effect: Inspect a binary file and check discover its package dependencies.
 
-    Script: 0auto-updater
-    Effect: Check a multitude of sites to know if new versions are available.
+    Script: 0tar
+    Effect: creates a "slackbuild".tar.gz pack ready to be submitted on the
+            folder 0/slackbuild under the SlackBuild you are working.
+            This step is needed before you run 0commit-push
+
+    Script: 0update-md5-info
+    Effect: Reads the source(s) in *.info file, calculates new MD5SUM(s) and   
+            produces a new *.info file.
+
+    Script: 0whichpkg
+    Effect: A Slackware tool to find which package a file comes from.
+            see http://www.linuxquestions.org/questions/showthread.php?postid=899459#post899459
 
 
 ### Workflows
@@ -161,10 +179,11 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 2. Check if any slackbuild maintainer has modified your script. Sometimes they do! Use **0meld** to compare your current script with the published one.
 
 3. Once a new source is available update the *.info file and point DOWNLOAD and DOWNLOAD_x86_64 to the new source tarballs on the web.
-   * Afterwards **0download-source-tarballs** and **0update-info** are your friends.
+   * Afterwards **0download-source-tarballs** and **0update-md5-info** are your friends.
 
 4. Update your *.SlackBuild script
     * Sometimes is just a matter of upgrading the version number, but upstream developers sometimes change formats.
+    * **0replace-string** is your friend.
     * If you patched the original sources make sure these mods are still applicable.
 
 5. Build the source with **0build** saying 'yes' to all the steps.
