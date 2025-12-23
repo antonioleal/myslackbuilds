@@ -1228,7 +1228,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://sourceforge.net/projects/page/
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
