@@ -18,6 +18,18 @@
 - Code repository: 
 
 *Note: updater is available for this package*
+## qt6-prebuilt_environment (Clang and LLVM to build Qt the GUI toolkit)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ This package contains the Clang and LLVM to build the Qt GUI toolkit.
+  
+
+- Category: libraries
+- Version: 20.1.0
+- Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
+- Code repository:
+
+*Note: updater not available*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
