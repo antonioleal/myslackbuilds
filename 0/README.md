@@ -209,7 +209,7 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 
 3. Delete accessory branches by running **0delete-branches all**
 
-4. Run **0clean-tree** to get rid of unneeded tarballs.
+4. Run **0reset all** to get rid of unneeded tarballs and other trash.
 
 5. That's it. Now you are ready to restart the workflow.
 
