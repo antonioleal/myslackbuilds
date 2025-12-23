@@ -29,7 +29,7 @@
 - Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
@@ -789,7 +789,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://tomscii.sig7.se/zutty/
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
