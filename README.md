@@ -1285,7 +1285,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for

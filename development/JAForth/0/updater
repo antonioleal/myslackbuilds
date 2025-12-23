@@ -30,14 +30,15 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-TAG=`lynx -accept_all_cookies -dump  https://codeberg.org/pgimeno/JAForth/commits/branch/master | grep "src/commit" | head -1 | awk -F"/" '{ print $NF }'`
-TARBALL=${TAG}.tar.gz
+COMMIT=$(lynx --dump https://codeberg.org/pgimeno/JAForth.rss | grep "JAForth/commit" | head -1 | awk -F"&" '{print $3}' | awk -F"/" '{print $NF}')
+NEWVERSION=${COMMIT:0:7}
+TARBALL=${COMMIT}.tar.gz
 URL="https://codeberg.org/pgimeno/JAForth/archive/${TARBALL}"
 
 VERSION=`cat version`
-if [ "$VERSION" = "$TAG" ]
+if [ "$VERSION" = "$COMMIT" ]
 then
-    echo "is at version $VERSION"
+    echo "is at version $NEWVERSION"
     export RET0=""
 else
     ################################
@@ -71,7 +72,7 @@ else
         exit
     fi
     # delete old tarball and place new one
-    rm -rf ../$TAG.tar.gz 2> /dev/null
+    rm -rf ../$COMMIT.tar.gz 2> /dev/null
     mv *.tar.gz ..
 
     ################################
@@ -82,15 +83,15 @@ else
 
     sed -e "s/_version_/${NEWVERSION}/g" \
         -e "s/_md5_/$MD5/g" \
-        -e "s/_tag_/$TAG/g" \
+        -e "s/_commit_/$COMMIT/g" \
         $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 
     sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_tag_/$TAG/g" \
+        -e "s/_commit_/$COMMIT/g" \
         $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
 
     chmod 644 ../${PRGNAM}.SlackBuild
-    echo "$TAG" > version
+    echo "$COMMIT" > version
     echo "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

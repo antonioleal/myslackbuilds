@@ -29,7 +29,7 @@ VERSION=${VERSION:-_version_}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=_tag_
+TARBALL=_commit_
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
