@@ -57,8 +57,6 @@ cd $TMP
 rm -rf $SRCNAM-$VERSION
 tar xf $CWD/$SRCNAM-$VERSION.tar.?z
 cd $SRCNAM-$VERSION
-rm -rf .github
-rm -rf .gitignore
 
 chown -R root:root .
 find -L . \
