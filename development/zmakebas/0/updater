@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Slackware updater script to bypass updater.sh checks
+# Slackware updater script for zmakebas
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,9 +22,61 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+PRGNAM=zmakebas
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
-source ../*.info
-echo "is at version $VERSION (bypass)"
-export RET0=""
+
+################################
+# check versions               #
+################################
+NEWVERSION=$(gh release view -R z00m128/zmakebas --json tagName --jq '.tagName')
+TARBALL=$PRGNAM-$NEWVERSION.tar.gz
+URL="https://github.com/z00m128/zmakebas/archive/$NEWVERSION/$TARBALL"
+
+VERSION=`cat version`
+if [ "$VERSION" = "$NEWVERSION" ]
+then
+    echo "is at version $VERSION"
+    export RET0=""
+else
+    ################################
+    # check for testonly parameter #
+    ################################
+    if [ "$ARG0" = "TESTONLY" ]
+    then
+        echo "has a new version $NEWVERSION"
+        export RET0=$NEWVERSION
+        return
+    fi
+    ################################
+    # download tarball             #
+    ################################
+    wget $URL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_md5_/${MD5}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
+    chmod 644 ../${PRGNAM}.SlackBuild
+    echo "$NEWVERSION" > version
+    echo "has a new version $NEWVERSION"
+    export RET0=$NEWVERSION
+fi
