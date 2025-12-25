@@ -380,7 +380,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://nuitka.net
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## python3-zstandard (Python3 bindings for Zstandard library)
  Python bindings for interfacing with the Zstandard compression
  library.
