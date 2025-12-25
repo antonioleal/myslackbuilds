@@ -529,7 +529,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/Rockhopper-Technologies/enlighten
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## python2-prefixed (prefixed alternative numeric library)
  Prefixed alternative numeric library
   
