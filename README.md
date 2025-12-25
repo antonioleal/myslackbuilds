@@ -604,7 +604,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
 - Code repository:
 
-*Note: updater not available*
+*Note: updater is available for this package*
 ## browsh (Private Web Browser)
  Browsh is a fully-modern text-based browser. It renders anything that
  a modern browser can; HTML5, CSS3, JS, video and even WebGL.
