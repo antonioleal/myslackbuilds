@@ -16,8 +16,6 @@
 - Version: 0.8.5
 - Homepage: https://github.com/mcdope/pam_usb
 - Code repository: 
-
-*Note: updater is available for this package*
 ## qt6-prebuilt_environment (Clang and LLVM to build Qt the GUI toolkit)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -28,8 +26,6 @@
 - Version: 20.1.0
 - Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
 - Code repository:
-
-*Note: updater is available for this package*
 ## xapp (library to provide applications to users in multiple DEs)
  This project gathers the components which are common to multiple GTK 
  desktop environments (Cinnamon, MATE and Xfce) and required to
@@ -40,8 +36,6 @@
 - Version: 3.2.1
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
-
-*Note: updater is available for this package*
 ## qt6 (Qt GUI toolkit, version 6)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.
@@ -55,8 +49,6 @@
 - Version: 6.10.1
 - Homepage: https://qt.io
 - Code repository:
-
-*Note: updater is available for this package*
 ## qt-installer-script (Deploy Qt Libraries in Slackware)
  qt-installer-script is an umbrella script to the standard Qt
  installer to simplify the installation of Qt Libraries in your
@@ -70,8 +62,6 @@
 - Version: 4.10.0
 - Homepage: https://github.com/antonioleal/qt-installer-script
 - Code repository:
-
-*Note: updater is available for this package*
 ## notcurses (Blingful character graphics/TUI library)
  notcurses is a library facilitating complex TUIs on modern terminal
  emulators, supporting vivid colors, multimedia, threads, and Unicode
@@ -86,8 +76,6 @@
 - Version: 3.0.17
 - Homepage: https://notcurses.com/
 - Code repository:
-
-*Note: updater is available for this package*
 ## MuseScore-Libraries (libraries required by MuseScore)
  The minimum set of libraries required by MuseScore.
   
@@ -96,8 +84,6 @@
 - Version: 6.9.2
 - Homepage: https://download.qt.io/official_releases/qt/
 - Code repository: https://download.qt.io/official_releases/qt/
-
-*Note: updater is available for this package*
 ## SDL3 (Simple DirectMedia Layer Version 3)
  Simple DirectMedia Layer is a cross-platform development library
  designed to provide low-level access to audio, keyboard, mouse,
@@ -110,8 +96,6 @@
 - Homepage: http://www.libsdl.org
 - Code repository: https://github.com/libsdl-org/SDL
 
-
-*Note: updater is available for this package*
 ## glibc-local (GNU C library, installs to /opt)
  The GNU C Library project provides the core libraries for the
  GNU system and GNU/Linux systems, as well as many other systems
@@ -123,8 +107,6 @@
 - Version: 2.35
 - Homepage: https://www.gnu.org/software/libc/
 - Code repository: https://ftp.gnu.org/gnu/glibc/
-
-*Note: updater is available for this package*
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
@@ -134,8 +116,6 @@
 - Version: 3.8.0
 - Homepage: https://www.steinberg.net/developers/
 - Code repository: https://github.com/steinbergmedia/vst3sdk
-
-*Note: updater is available for this package*
 ## Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt)
  Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software
  package for large-scale, nonlinear optimization. It is designed to
@@ -147,8 +127,6 @@
 - Version: 3.14.19
 - Homepage: https://github.com/coin-or/Ipopt
 - Code repository: 
-
-*Note: updater is available for this package*
 ## smoffice2024 (office suite)
  SoftMaker Office 2024 includes
   * TextMaker 2024, a word processor
@@ -162,8 +140,6 @@
 - Version: 2024_1230
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository: https://www.softmaker.com/en/softmaker-office-linux
-
-*Note: updater is available for this package*
 ## wps-office-dicts (Spell check dictionaries for WPS Office)
  Spell check dictionaries for WPS Office. The language files are
  adapted from the LibreOffice Dictionaries project.
@@ -173,8 +149,6 @@
 - Version: 26.2.0.1
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
-
-*Note: updater is available for this package*
 ## openoffice.org (a full-featured open-source office suite)
  OpenOffice.org is a full-featured open-source office suite that is
  compatible with all other major office software.
@@ -187,8 +161,6 @@
 - Version: 4.1.16
 - Homepage: https://www.openoffice.org/
 - Code repository: https://sourceforge.net/projects/openofficeorg.mirror/files/
-
-*Note: updater is available for this package*
 ## onlyoffice-desktopeditors (office suite)
  ONLYOFFICE Desktop Editors is a free AGPL v3 licensed office suite
  that combines text, spreadsheet and presentation editors. It is fully
@@ -201,8 +173,6 @@
 - Version: 9.2.1
 - Homepage: https://www.onlyoffice.com/apps.aspx
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
-
-*Note: updater is available for this package*
 ## sigil (Multi-platform WYSIWYG ebook editor)
  Sigil is a multi-platform WYSIWYG ebook editor. It is designed to
  edit books in ePub format.
@@ -213,8 +183,6 @@
 - Version: 2.7.0
 - Homepage: https://sigil-ebook.com/
 - Code repository:
-
-*Note: updater is available for this package*
 ## ledger-live (Ledger Hardware Wallet Manager)
  A manager for your Ledger hardware wallet.
  Install applications, update firmware, buy crypto, etc.
@@ -224,8 +192,6 @@
 - Version: 2.133.0
 - Homepage: https://www.ledger.com/ledger-live
 - Code repository: https://www.ledger.com/ledger-live
-
-*Note: updater is available for this package*
 ## smoffice2021 (office suite)
  SoftMaker Office 2021 includes
   * TextMaker 2021, a word processor
@@ -239,8 +205,6 @@
 - Version: 2021_1068
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository:
-
-*Note: updater is available for this package*
 ## wps-office (an office productivity suite for Linux)
  WPS Office, including Writer, Presentation and spreadsheets, is a
  powerful office suite. It is deeply compatible with all of the
@@ -252,8 +216,6 @@
 - Version: 11.1.0.11723.XA
 - Homepage: https://linux.wps.com/
 - Code repository:
-
-*Note: updater is available for this package*
 ## bitwig-studio (Digital audio workstation for music production)
  Bitwig is designed to be an instrument for live performances as well
  as a tool for composing, recording, arranging, mixing, and mastering.
@@ -270,8 +232,6 @@
 - Code repository:
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
-
-*Note: updater is available for this package*
 ## ardour (Professional Audio Editing)
  Ardour is an application to fit the needs of musicians under
  Linux. It is designed to be a fully functional professional
@@ -286,8 +246,6 @@
 - Code repository: https://github.com/Ardour/ardour
 
 Instead of github go to Ardour.org and press download to get the source code tar archive
-
-*Note: updater is available for this package*
 ## sndio (small audio and MIDI framework)
  Sndio is a small audio and MIDI framework, part of the OpenBSD
  project, and ported to FreeBSD, Linux and NetBSD. It provides
@@ -300,8 +258,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.10.0
 - Homepage: https://sndio.org/
 - Code repository:
-
-*Note: updater is available for this package*
 ## plug ( Fender Mustang Amps Controller )
  Plug is a Software to control Fender Mustang Amps, a linux
  replacement for the now discontinued Fender Fuse.
@@ -317,8 +273,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.5.0
 - Homepage: https://github.com/offa/plug
 - Code repository:
-
-*Note: updater is available for this package*
 ## tuxguitar (A Multitrack tablature editor and player)
  TuxGuitar is a multitrack guitar tablature editor and player
  written in Java-SWT. It can open GuitarPro, PowerTab, and
@@ -329,8 +283,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.0.0
 - Homepage: https://www.tuxguitar.app/
 - Code repository: https://github.com/helge17/tuxguitar
-
-*Note: updater is available for this package*
 ## musikcube (Terminal-based audio engine, library, player, and server)
  A cross-platform, terminal-based audio engine, library, player and
  server written in C++.
@@ -341,8 +293,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.0.5
 - Homepage: https://musikcube.com
 - Code repository:
-
-*Note: updater is available for this package*
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.
@@ -356,8 +306,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 5.3.0
 - Homepage: https://zoomcorp.com/en/jp/
 - Code repository:
-
-*Note: updater is available for this package*
 ## python3-ordered-set (Python3 hybrid of a list and a set)
  An OrderedSet is a mutable data structure that is a hybrid of a list
  and a set.
@@ -369,8 +317,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.1.0
 - Homepage: https://github.com/rspeer/ordered-set
 - Code repository: 
-
-*Note: updater is available for this package*
 ## python3-prefixed (prefixed alternative numeric library)
  Prefixed alternative numeric library
   
@@ -379,8 +325,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.9.0
 - Homepage: https://nuitka.net
 - Code repository:
-
-*Note: updater is available for this package*
 ## python3-zstandard (Python3 bindings for Zstandard library)
  Python bindings for interfacing with the Zstandard compression
  library.
@@ -391,8 +335,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.25.0
 - Homepage: https://github.com/indygreg/python-zstandard
 - Code repository: 
-
-*Note: updater is available for this package*
 ## python2-blessed (library for making terminal apps)
  Easy, practical library for making terminal apps, by providing an
  elegant, well-documented interface to Colors, Keyboard input, and
@@ -403,8 +345,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.22.0
 - Homepage: https://pypi.org/project/blessed/
 - Code repository:
-
-*Note: updater is available for this package*
 ## python3-gmpy2 (multi-precision arithmetic for python)
  gmpy2 is an optimized, c-coded python extension module that supports
  fast multiple-precision arithmetic. gmpy2 is based on the original
@@ -419,8 +359,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.2.2
 - Homepage: https://pypi.org/project/gmpy2/
 - Code repository: https://github.com/aleaxit/gmpy
-
-*Note: updater is available for this package*
 ## python3-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
@@ -434,8 +372,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.8.10
 - Homepage: https://nuitka.net
 - Code repository: https://github.com/Nuitka/Nuitka/tags
-
-*Note: updater is available for this package*
 ## python3-neovim (Python client for Neovim)
  python3-neovim is a Python client for Neovim.
   
@@ -444,8 +380,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.6.0
 - Homepage: https://github.com/neovim/pynvim
 - Code repository: 
-
-*Note: updater is available for this package*
 ## python2-mpmath (arithmetic library)
  Mpmath is a free (BSD licensed) Python library for real and complex
  floating-point arithmetic with arbitrary precision. It has been
@@ -458,8 +392,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.3.0
 - Homepage: https://mpmath.org/
 - Code repository: https://github.com/mpmath/mpmath
-
-*Note: updater is available for this package*
 ## python3-pypdf (Python PDF library)
  pypdf is a free and open-source pure-python PDF library capable of
  splitting, merging, cropping, and transforming the pages of PDF
@@ -472,8 +404,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 6.5.0
 - Homepage: https://github.com/py-pdf/pypdf
 - Code repository: 
-
-*Note: updater is available for this package*
 ## python2-enlighten (Progress bar for Python console apps)
  Enlighten Progress Bar is a console progress bar library for Python.
  The main advantage of Enlighten is it allows writing to stdout and
@@ -485,8 +415,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.14.1
 - Homepage: https://github.com/Rockhopper-Technologies/enlighten
 - Code repository:
-
-*Note: updater is available for this package*
 ## python2-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
  seamless replacement or extension to the Python interpreter and
@@ -500,8 +428,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.8.10
 - Homepage: https://nuitka.net
 - Code repository: https://github.com/Nuitka/Nuitka/tags
-
-*Note: updater is available for this package*
 ## python3-mpmath (arithmetic library)
  Mpmath is a free (BSD licensed) Python library for real and complex
  floating-point arithmetic with arbitrary precision. It has been
@@ -514,8 +440,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.3.0
 - Homepage: https://mpmath.org/
 - Code repository: https://github.com/mpmath/mpmath
-
-*Note: updater is available for this package*
 ## python3-enlighten (Progress bar for Python console apps)
  Enlighten Progress Bar is a console progress bar library for Python.
  The main advantage of Enlighten is it allows writing to stdout and
@@ -528,8 +452,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.14.1
 - Homepage: https://github.com/Rockhopper-Technologies/enlighten
 - Code repository:
-
-*Note: updater is available for this package*
 ## python2-prefixed (prefixed alternative numeric library)
  Prefixed alternative numeric library
   
@@ -538,8 +460,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.9.0
 - Homepage: https://nuitka.net
 - Code repository:
-
-*Note: updater is available for this package*
 ## python3-odfdo (OpenDocument Format library for Python)
  odfdo is a Python library for programmatically creating, parsing, and
  editing OpenDocument Format (ODF) files. It provides an interface for
@@ -552,8 +472,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.18.3
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
-
-*Note: updater is available for this package*
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
@@ -563,8 +481,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.6.5
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
-
-*Note: updater is available for this package*
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
@@ -578,8 +494,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.1.1.912
 - Homepage: https://musescore.org/
 - Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
-
-*Note: updater is available for this package*
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
  MuseScore is a free cross platform WYSIWYG music notation program,
  licensed under GNU GPL.
@@ -591,8 +505,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.6.2
 - Homepage: http://www.musescore.org/
 - Code repository:
-
-*Note: updater is available for this package*
 ## opera-ffmpeg-codecs (Extra ffmpeg codec for Opera browser)
  FFMpeg prebuilt binaries with proprietary codecs and build
  instructions for window, linux and osx.
@@ -603,8 +515,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.102.1
 - Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
 - Code repository:
-
-*Note: updater is available for this package*
 ## browsh (Private Web Browser)
  Browsh is a fully-modern text-based browser. It renders anything that
  a modern browser can; HTML5, CSS3, JS, video and even WebGL.
@@ -614,8 +524,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.8.3
 - Homepage: https://github.com/browsh-org/browsh/
 - Code repository:
-
-*Note: updater is available for this package*
 ## librespeed-cli (LibreSpeed CLI)
  Command line program to test internet connection speed.
  Homepage: https://github.com/librespeed/speedtest-cli
@@ -625,8 +533,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0.12
 - Homepage: https://github.com/librespeed/speedtest-cli
 - Code repository:
-
-*Note: updater is available for this package*
 ## google-chrome (Web Browser)
  Google Chrome is a browser that combines a minimal design with
  sophisticated technology to make the web faster, safer, and easier.
@@ -636,8 +542,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 143.0.7499.169
 - Homepage: http://www.google.com/chrome/
 - Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
-
-*Note: updater is available for this package*
 ## librewolf (Private Web Browser)
  This project is a custom and independent version of Firefox, with the
  LibreWolf: primary goals of privacy, security and user freedom.
@@ -649,8 +553,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://codeberg.org/librewolf/source/releases
 - Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
 
-
-*Note: updater is available for this package*
 ## opera (A fast and secure web browser)
  Opera is a graphical Web browser available on several platforms.
  The desktop version runs on GNU/Linux and FreeBSD. Versions for
@@ -663,8 +565,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://www.opera.com/opera
 - test playback: https://forums.opera.com/topic/30578/ffmpeg-installation-instructions
 
-
-*Note: updater is available for this package*
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
@@ -681,8 +581,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://www.waterfox.net/
 - Code repository: https://github.com/BrowserWorks/Waterfox
 - Binary repository: https://www.waterfox.net/download/
-
-*Note: updater is available for this package*
 ## zen-browser (web browser)
  Beautifully designed, privacy-focused, and packed with features.
  It cares about your experience, not your data.
@@ -692,8 +590,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.17.15b
 - Homepage: https://zen-browser.app/
 - Code repository: https://github.com/zen-browser/desktop
-
-*Note: updater is available for this package*
 ## whalebird (Mastondon, Pleroma and Misskey client)
  Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
   
@@ -702,8 +598,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 6.2.7
 - Homepage: https://whalebird.social
 - Code repository: https://github.com/h3poteto/whalebird-desktop
-
-*Note: updater is available for this package*
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
  Maintaining an updated Firefox Standard Rel. on Slackware is now made
  easier with this small program, "firefox-standard-the-latest", a
@@ -716,8 +610,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.1
 - Homepage: https://github.com/antonioleal/firefox-standard-the-latest
 - Code repository:
-
-*Note: updater is available for this package*
 ## depfinder (finds dependencies of Slackware packages)
  depfinder is a tool that finds the dependencies of Slackware
  packages and outputs them in a comma separated list, in stdout or a
@@ -733,8 +625,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.4.4
 - Homepage: https://depfinder.sourceforge.net/
 - Code repository: https://github.com/gapan/depfinder
-
-*Note: updater is available for this package*
 ## limine (Modern, advanced, portable, multiprotocol bootloader)
  Limine is a modern, advanced, portable, multiprotocol bootloader,
  also limine: used as the reference implementation for the Limine
@@ -745,8 +635,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 10.5.1
 - Homepage: https://limine-bootloader.org/
 - Code repository: https://github.com/limine-bootloader/limine
-
-*Note: updater is available for this package*
 ## FreeFileSync (Cross-platform file sync utility with GUI)
  FreeFileSync is a folder comparison and synchronization software
  that creates and manages backup copies of all your important files.
@@ -760,8 +648,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 14.6
 - Homepage: https://freefilesync.org/
 - Code repository: https://freefilesync.org/
-
-*Note: updater is available for this package*
 ## clamtk (A frontend for ClamAV)
  ClamTk is a frontend for ClamAV using perl-Gtk3.
  It is intended to be an easy to use, light-weight,
@@ -772,8 +658,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 6.18
 - Homepage: https://github.com/dave-theunsub/clamtk
 - Code repository:
-
-*Note: updater is available for this package*
 ## zutty (X terminal emulator using OpenGL ES Compute Shaders)
  Zutty is a terminal emulator for the X Window System, functionally
  similar to several other X terminal emulators such as xterm, rxvt and
@@ -788,8 +672,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.16
 - Homepage: https://tomscii.sig7.se/zutty/
 - Code repository:
-
-*Note: updater is available for this package*
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
@@ -799,8 +681,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20130224_c135151
 - Homepage: https://github.com/LawrenceWoodman/CanAce
 - Code repository:
-
-*Note: updater is available for this package*
 ## b2 (BBC Microcomputer Emulator)
  b2 is a cross-platform BBC Micro emulator. Use your Windows/Linux PC
  or macOS computer to play your old BBC games or develop new BBC
@@ -811,8 +691,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20250808_172419_959a8ab
 - Homepage: https://github.com/tom-seddon/b2
 - Code repository:
-
-*Note: updater is available for this package*
 ## partclone (utility to clone various filesystems)
  Partclone is a program similar to the well-known backup utility
  "Partition Image" a.k.a partimage. Partclone provides utilities to
@@ -827,8 +705,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/Thomas-Tsai/partclone
 
 *Private note: Mamba and Coral backups are made with version 0.3.37*
-
-*Note: updater is available for this package*
 ## arqiver (Simple Qt archive manager)
  arqiver is a simple Qt archive manager. It serves as a front-end for
  libarchive (bsdtar), gzip and 7z. 
@@ -841,8 +717,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 
 
-
-*Note: updater is available for this package*
 ## catatonit (Container init)
  A container init that is so simple it's effectively brain-dead.
  https://github.com/openSUSE/catatonit
@@ -852,8 +726,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.2.1
 - Homepage: https://github.com/openSUSE/catatonit
 - Code repository:
-
-*Note: updater is available for this package*
 ## yaze-ag (yet another z80 emulator )
  is designed to provide an exact simulation of the Z80 microprocessor.
  It is fast, emulates undocumented opcodes, and passes instruction
@@ -868,8 +740,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.51.3
 - Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
 - Code repository:
-
-*Note: updater is available for this package*
 ## timeshift (incremental system snapshots, backup and restore)
  Timeshift for Linux is an application that provides functionality
  similar to the System Restore feature in Windows and the Time Machine
@@ -882,8 +752,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 25.12.2
 - Homepage: https://github.com/linuxmint/timeshift
 - Code repository: https://github.com/linuxmint/timeshift
-
-*Note: updater is available for this package*
 ## xAce (A Jupiter Ace emulator for Linux)
  xAce is an emulator for the Jupiter Ace that runs under most flavours
  of Unix. It was written by Edward Patel and based on a ZX81 emulator
@@ -895,8 +763,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.5
 - Homepage: https://lawrencewoodman.github.io/xAce/
 - Code repository:
-
-*Note: updater is available for this package*
 ## eightyone (emulator for the range of ZX home computers)
  EightyOne is an emulator for the range of ZX home computers made
  by Sinclair Research (and their clones) in the 1980s, primarily
@@ -910,8 +776,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.41
 - Homepage: https://sourceforge.net/projects/eightyone-sinclair-emulator/
 - Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
-
-*Note: updater is available for this package*
 ## B-em (BBC Microcomputer Emulator)
  B-em is an emulator for various models of BBC Microcomputer as
  made by Acorn Computers in the 1980s along with a selection of
@@ -923,8 +787,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20251220_7eb9b67
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
-
-*Note: updater is available for this package*
 ## sdwmbar (dwm status bar)
  Simple suckless dwm status bar
  https://github.com/sakhmatd/sdwmbar
@@ -934,8 +796,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.5
 - Homepage: https://github.com/sakhmatd/sdwmbar
 - Code repository:
-
-*Note: updater is available for this package*
 ## silk (package management tools front end)
  Silk is a practical front end to various slackware package management
  tools, namely slackpkg, sbopkg, slapt-get and slapt-src.
@@ -947,8 +807,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0.2
 - Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 - Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
-
-*Note: updater is available for this package*
 ## brave-browser-the-latest (brave browser updater script)
  Maintaining an updated Brave Browser on Slackware is now made
  easier with this small program, "brave-browser-the-latest", a simple
@@ -963,8 +821,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 
 - Development: https://github.com/brave/brave-browser
-
-*Note: updater is available for this package*
 ## doublecmd-qt5 (Double-panel File Manager)
  Double Commander is a free cross-platform open source file manager
  with two panels side by side (or one above the other). This is the Qt
@@ -977,8 +833,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.1.31
 - Homepage:  http://doublecmd.sourceforge.net
 - Code repository: http://doublecmd.sourceforge.net
-
-*Note: updater is available for this package*
 ## google-chrome-the-latest (Google Chrome Updater Script)
  Maintaining an updated Chrome Browser on Slackware is now made
  easier with this small program, "google-chrome-the-latest", a simple
@@ -990,8 +844,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.3.1
 - Homepage: https://github.com/antonioleal/google-chrome-the-latest
 - Code repository:
-
-*Note: updater is available for this package*
 ## ZEsarUX (retro machines emulator)
  ZEsarUX is a ZX Machines Emulator for Unix, including all the
  Sinclair computers: MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and
@@ -1006,8 +858,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 12.1
 - Homepage: https://github.com/chernandezba/zesarux
 - Code repository:
-
-*Note: updater is available for this package*
 ## atari_8bit_utils (utilities for atari 8bit machines/emulators)
  atari_8bit_utils contains a set of utilities by Preston Crow for
  atari 8 bit machines or emulators such atari 400/800, XL, XE.
@@ -1018,8 +868,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20241017_6da5fcf
 - Homepage: https://github.com/pcrow/atari_8bit_utils
 - Code repository:
-
-*Note: updater is available for this package*
 ## space-invaders (arcade game)
  This game is a tribute to Space Invaders, the famous arcade game
  created by Tomohiro Nishikado in 1978.
@@ -1034,8 +882,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.4
 - Homepage: https://lowcarb.itch.io/space-invaders
 - Code repository:
-
-*Note: updater is available for this package*
 ## open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
@@ -1050,8 +896,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20251023_4d38373
 - Homepage: https://opensimh.org
 - Code repository: https://github.com/open-simh/simh
-
-*Note: updater is available for this package*
 ## swege (Static WEbsite GEnerator)
  Bloat free static website generator written in C99.
  https://github.com/sakhmatd/swege
@@ -1061,8 +905,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.2.0
 - Homepage: https://github.com/sakhmatd/swege
 - Code repository:
-
-*Note: updater is available for this package*
 ## simh-classic (3.X Classic Version)
  SimH (History Simulator) is a collection of simulators for
  historically significant or just plain interesting computer hardware
@@ -1076,8 +918,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.12_5
 - Homepage: http://simh.trailing-edge.com/
 - Code repository:
-
-*Note: updater is available for this package*
 ## tinytldr (tldr.sh command line client)
  Minimalist https://tldr.sh command line client in C99.
  https://github.com/kovmir/tinytldr
@@ -1087,8 +927,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.2.0
 - Homepage: https://github.com/kovmir/tinytldr#readme
 - Code repository:
-
-*Note: updater is available for this package*
 ## bbcsdl (BBC BASIC for linux)
  BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
  cross-platform implementation of BBC BASIC for Windows, MacOS,
@@ -1101,8 +939,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20251222_2bb3804
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
-
-*Note: updater is available for this package*
 ## kforth (A Forth programming language and environment)
  kForth is an implementation of the Forth programming language and
  environment. The user may write Forth programs with an editor,
@@ -1117,8 +953,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.8.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
-
-*Note: updater is available for this package*
 ## kForth-32 (32-bit Forth System for x86-GNU/Linux)
  kForth-32 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
@@ -1132,8 +966,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.5.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
-
-*Note: updater is available for this package*
 ## antigravity (Google Antigravity IDE)
  Google Antigravity is an agentic development platform, evolving the
  IDE into the agent-first era.
@@ -1143,8 +975,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.13.3
 - Homepage: https://antigravity.google/
 - Code repository:
-
-*Note: updater is available for this package*
 ## smartgit (Desktop Git Client)
  SmartGit is a commercial desktop git client that provides a
  free non-commercial use license. You need to apply for this license
@@ -1158,8 +988,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://www.syntevo.com/smartgit/download/
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
-
-*Note: updater is available for this package*
 ## zmakebas (convert text to ZXSpectrum basic tape)
  zmakebas converts a text file containing standard ZXSpectrum basic
  to a tape file.
@@ -1169,8 +997,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.2b
 - Homepage: https://github.com/z00m128/zmakebas
 - Code repository:
-
-*Note: updater is available for this package*
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
@@ -1182,8 +1008,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.2.1
 - Homepage: https://github.com/wxFormBuilder/wxFormBuilder
 - Code repository:
-
-*Note: updater is available for this package*
 ## SQLiteStudio (SQLite database manager written in C++ using Qt)
  A free, open source, multi-platform SQLite database manager written
  in C++, with use of Qt framework.
@@ -1198,8 +1022,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository:
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
-
-*Note: updater is available for this package*
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -1213,8 +1035,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.4
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
-
-*Note: updater is available for this package*
 ## page (Python Tkinter GUI builder)
  PAGE is a drop and drag tool which helps to create Tkinter
  GUI interfaces for use within Python programs.  It is a fork
@@ -1227,8 +1047,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 8.1
 - Homepage: https://sourceforge.net/projects/page/
 - Code repository:
-
-*Note: updater is available for this package*
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
@@ -1241,8 +1059,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
-
-*Note: updater is available for this package*
 ## yabasic (basic-interpreter)
  Yabasic is a traditional basic-interpreter. It comes with goto and
  various loops and allows to define subroutines and libraries.
@@ -1256,8 +1072,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.91.4
 - Homepage: "http://2484.de/yabasic/"
 - Code repository: "http://2484.de/yabasic/"
-
-*Note: updater is available for this package*
 ## a68g (Algol 68 compiler-interpreter)
  It can be used for executing Algol 68 programs or scripts.
  HomePage: https://jmvdveer.home.xs4all.nl
@@ -1267,8 +1081,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.10.9
 - Homepage: https://jmvdveer.home.xs4all.nl
 - Code repository:
-
-*Note: updater is available for this package*
 ## JAForth (An interpreter for the Jupiter ACE Forth)
  This package contains three command-line programs:
  - JAForth: An interpreter for the Jupiter ACE Forth, written in
@@ -1284,8 +1096,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20250117_bfedbd4
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
-
-*Note: updater is available for this package*
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for
@@ -1301,8 +1111,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20251218_5d2a96a
 - Homepage: https://notepadqq.com
 - Code repository: https://github.com/notepadqq/notepadqq/commits/master/
-
-*Note: updater is available for this package*
 ## critcl (C Runtime In Tcl)
  critcl is a system that lets you build C/C++ extension packages for
  Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
@@ -1313,8 +1121,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.3.1
 - Homepage: https://andreas-kupries.github.io/critcl/
 - Code repository: https://github.com/andreas-kupries/critcl
-
-*Note: updater is available for this package*
 ## gcc-local (Base GCC package with C support)
  GCC is the GNU Compiler Collection.
  This package contains those parts of the compiler collection needed
@@ -1327,8 +1133,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 15.1.0
 - Homepage: https://gcc.gnu.org/
 - Code repository: https://github.com/gcc-mirror/gcc
-
-*Note: updater is available for this package*
 ## zxbasic (basic compiler for ZXSpectrum)
  ZX BASIC is a BASIC "cross compiler". It will compile BASIC
  programs (in your PC) for your ZX Spectrum. ZX BASIC is an
@@ -1343,8 +1147,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.18.3
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasic"
-
-*Note: updater is available for this package*
 ## eisl (ISO ISLISP interpreter)
  Easy-ISLisp (EISL) is an interpreter and compiler compatible with the
  ISLisp standard. EISL was written by Kenichi Sasagawa and is
@@ -1356,8 +1158,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 5.61
 - Homepage: https://github.com/sasagawa888/eisl
 - Code repository: https://github.com/sasagawa888/eisl
-
-*Note: updater is available for this package*
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
  compiler. It is available for different processors: Intel x86,
@@ -1371,8 +1171,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.2.2
 - Homepage: https://www.freepascal.org/
 - Code repository:
-
-*Note: updater is available for this package*
 ## SmallBASIC (basic-interpreter)
  SmallBASIC is a fast and easy to learn BASIC language interpreter
  ideal for everyday calculations, scripts and prototypes.
@@ -1387,8 +1185,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 12.27
 - Homepage: https://smallbasic.github.io
 - Code repository: https://github.com/smallbasic/SmallBASIC
-
-*Note: updater is available for this package*
 ## notepad++ (A powerful text editor from the Windows universe)
  Notepad++ is a free (as in "free speech" and also as in "free beer")
  source code editor and Notepad replacement that supports several
@@ -1401,8 +1197,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 8.8.9
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
-
-*Note: updater is available for this package*
 ## smartsvn (Desktop SVN Client)
  SmartSvn is a commercial desktop svn client.
  SmartSVN starts with free evaluation mode for 30 days,
@@ -1414,8 +1208,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 14.5.1
 - Homepage: https://www.smartsvn.com
 - Code repository: https://www.smartsvn.com/download/
-
-*Note: updater is available for this package*
 ## gitnuro (a graphical git client)
  A FOSS Git client based on (Jetbrains) Compose and JGit.
  The main goal of Gitnuro is to provide a multiplatform open source
@@ -1427,8 +1219,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.5.0
 - Homepage: https://gitnuro.com/
 - Code repository: https://github.com/JetpackDuba/Gitnuro/
-
-*Note: updater is available for this package*
 ## qb64 (Modern QuickBASIC compiler)
  QB64 is a modern extended BASIC programming language that retains
  QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
@@ -1439,8 +1229,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.1
 - Homepage: https://qb64.com
 - Code repository: https://github.com/QB64Official/qb64
-
-*Note: updater is available for this package*
 ## zxbasicstudio (an ide for zxbasic)
  ZX Basic Studio is a cross-platform IDE for zxbasic
  This is a work in progress but the development has reached a state
@@ -1452,8 +1240,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.6
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasicstudio"
-
-*Note: updater is available for this package*
 ## zxtext2p (convert text to zx81 basic tape)
  zxtext2p converts a text file containing standard zx81 basic
  to a tape file.
@@ -1463,8 +1249,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0
 - Homepage: https://freestuff.grok.co.uk/zxtext2p/index.html
 - Code repository:
-
-*Note: updater is available for this package*
 ## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
  kForth-64 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
@@ -1478,8 +1262,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.5.1
 - Homepage: https://github.com/mynenik/kForth-64
 - Code repository:
-
-*Note: updater is available for this package*
 ## bwbasic (basic interpreter)
  The Bywater BASIC Interpreter (bwBASIC) implements a large superset
  of the ANSI Standard for Minimal BASIC (X3.60-1978) and a significant
@@ -1490,8 +1272,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.40
 - Homepage: https://sourceforge.net/projects/bwbasic
 - Code repository: https://sourceforge.net/projects/bwbasic
-
-*Note: updater is available for this package*
 ## qb64pe (Modern QuickBASIC compiler)
  QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
  additional features and enhancements, maintained by a
@@ -1506,8 +1286,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.3.0
 - Homepage: https://qb64phoenix.com/
 - Code repository: https://github.com/QB64-Phoenix-Edition/QB64pe
-
-*Note: updater is available for this package*
 ## MinForth (A Forth System that can transpile Forth to C)
  MinForth V3.4 is a classic Forth system with command-line interface.
  Development resource requirements are minimal. A source text editor
@@ -1521,8 +1299,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.4.8
 - Homepage: https://sourceforge.net/projects/minforth/
 - Code repository:
-
-*Note: updater is available for this package*
 ## codeblocks (a free C++ and Fortran IDE)
  Code::Blocks is a free C++ and Fortran IDE built to meet the most
  demanding needs of its users. It is designed to be very extensible
@@ -1536,8 +1312,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 *Not possible to build with Slackware 15.0 - needs newer autoconf*
 
-
-*Note: updater is available for this package*
 ## recutils (tools and libraries to access recfiles)
  GNU Recutils is a set of tools and libraries to access
  human-editable, plain text databases called recfiles. The data is
@@ -1550,8 +1324,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.9
 - Homepage: https://www.gnu.org/software/recutils/
 - Code repository: https://ftp.gnu.org/gnu/recutils/
-
-*Note: updater is available for this package*
 ## kphotoalbum (a photo management application)
  Kphotoalbum (previously known as KimDaBa) is an image viewer and
  organizer for KDE 4. It makes use of kipi plugins and exiv2 if
@@ -1564,8 +1336,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://www.kphotoalbum.org/download/
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
-
-*Note: updater is available for this package*
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
  Plus42 is an advanced scientific programmable calculator, based on
  Free42 (a complete re-implementation of the HP-42S scientific
@@ -1581,8 +1351,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.3.12
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://codeberg.org/thomasokken/plus42desktop
-
-*Note: updater is available for this package*
 ## hp-prime (HP Prime Virtual Calculator simulation)
  Emulator (technically a simulator, since it is a native PC program)
  of the HP Prime Graphing Calculator for Wine. Lets you do everything
@@ -1594,8 +1362,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.3.1
 - Homepage: https://www.hpcalc.org/details/8939
 - Code repository:
-
-*Note: updater is available for this package*
 ## x48ng (HP48 Calculator emulator)
  x48ng is a vintage emulator capable of providing a faithful
  replication of the HP48 Calculator. It requires a copy of the ROM
@@ -1607,8 +1373,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.51.2
 - Homepage: https://codeberg.org/gwh/x48ng/tags
 - Code repository: https://github.com/gwenhael-le-moine/x48ng
-
-*Note: updater is available for this package*
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
  A simple plugin to allow right-click scanning in Thunar.
   
@@ -1617,8 +1381,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.08
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
-
-*Note: updater is available for this package*
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
@@ -1630,8 +1392,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.1.8
 - Homepage: https://www.pling.com/p/1127892/
 - Code repository:https://github.com/wusel1007/clamav-gui
-
-*Note: updater is available for this package*
 ## dapper (Desktop Applications Autostarter)
  Simple lightweight desktop application auto-starter. It will read
  .desktop files in the autostart directories, all according to the
@@ -1644,8 +1404,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0.0
 - Homepage: https://github.com/jjk-jacky/dapper
 - Code repository:
-
-*Note: updater is available for this package*
 ## standard-notes-bin (free, open-source encrypted notes app)
  Standard Notes is an end-to-end encrypted note-taking app for
  digitalists and professionals. Capture your notes, files, and
@@ -1656,5 +1414,3 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.198.5
 - Homepage: https://standardnotes.com/
 - Code repository: https://github.com/standardnotes/app
-
-*Note: updater is available for this package*
