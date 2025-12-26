@@ -43,11 +43,6 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-if [ "$ARCH" != "x86_64" ]; then
-    echo "This is a x86_64 only SlackBuild"
-    exit 1
-fi
-
 TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
