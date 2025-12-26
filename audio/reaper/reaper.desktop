@@ -1,8 +1,7 @@
 [Desktop Entry]
-Encoding=UTF-8
 Type=Application
 Name=REAPER
-Comment=REAPER
+Comment=Digital Audio Workstation
 Categories=Audio;Video;AudioVideo;AudioVideoEditing;Recorder;
 Exec=/opt/reaper/reaper %F
 Icon=/opt/reaper/Resources/main.png
