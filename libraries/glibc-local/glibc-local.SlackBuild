@@ -80,7 +80,7 @@ mkdir -p ${PRGNAM}-$VERSION-build
 cd ${PRGNAM}-$VERSION-build
 ../glibc-${VERSION}/configure CFLAGS="$SLKCFLAGS" --prefix=/opt/glibc-$VERSION
 
-make -j 8
+make
 make install DESTDIR=$PKG
 
 #find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
