@@ -75,11 +75,15 @@ mv * $PKG/opt/reaper
 mkdir -p $PKG/usr/share/applications
 cp $CWD/reaper.desktop $PKG/usr/share/applications
 
+mkdir -p $PKG/usr/share/icons/hicolor/256x256/apps
+cp $PKG/opt/reaper/Resources/cockos-reaper*.png $PKG/usr/share/icons/hicolor/256x256/apps
+
 mkdir -p $PKG/usr/share/mime/packages
 cp $CWD/application-x-reaper.xml $PKG/usr/share/mime/packages
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv \
+    ../readme-linux.txt \
     $PKG/opt/reaper/EULA.txt \
     $PKG/opt/reaper/whatsnew.txt \
     $PKG/opt/reaper/Docs/* \
