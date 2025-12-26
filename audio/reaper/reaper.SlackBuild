@@ -33,14 +33,14 @@ PKGTYPE=${PKGTYPE:-tgz}
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586
-          ARCHPKG=i686
+          export ARCHPKG=i686
           ;;
     arm*) ARCH=arm
           echo "Unsupported architecture $ARCH"
           exit 0
           ;;
        *) ARCH=$( uname -m )
-          ARCHPKG=x86_64
+          export ARCHPKG=x86_64
           ;;
   esac
 fi
@@ -66,7 +66,7 @@ for f in $(ls -1 $CWD/*.tar.xz)
 do
     tar xvf $f
 done
-cd ${PRGNAM}_linux_$ARCHPKG/REAPER
+cd "${PRGNAM}_linux_${ARCHPKG}/REAPER"
 
 chown -R root:root .
 find -L . \
