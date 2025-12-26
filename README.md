@@ -293,6 +293,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.0.5
 - Homepage: https://musikcube.com
 - Code repository:
+## reaper (digital audio production application)
+ REAPER is a complete digital audio production application for
+ computers, offering a full multitrack audio and MIDI recording,
+ editing, processing, mixing and mastering toolset.
+ REAPER supports a vast range of hardware, digital formats and
+ plugins, and can be comprehensively extended, scripted and modified.
+  
+
+- Category: audio
+- Version: 7.57
+- Homepage: https://www.reaper.fm
+- Code repository:
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
  The Edit&Share application is used to control Zoom G3/B3 pedals from
  your favourite Slackware box.
