@@ -35,7 +35,6 @@ TAG=$(gh release view -R gmpy2/gmpy2 --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
 TARBALL=gmpy2-$NEWVERSION.tar.gz
 URL="https://github.com/gmpy2/gmpy2/releases/download/$TAG/$TARBALL"
-echo $URL
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
