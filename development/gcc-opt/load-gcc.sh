@@ -1,9 +1,10 @@
 #!/bin/bash
 
-VERSION=15.1.0
+VERSION=15.2.0
 
 export PATH=/opt/gcc-${VERSION}/bin:$PATH
 export LD_LIBRARY_PATH=/opt/gcc-${VERSION}/lib64:$LD_LIBRARY_PATH
+export LDFLAGS="-L/opt/gcc-${VERSION}/lib64 -Wl,-rpath,/opt/gcc-${VERSION}/lib64"
 
 # To let CMake know
 export CC=/opt/gcc-${VERSION}/bin/gcc

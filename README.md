@@ -1096,6 +1096,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20250117_bfedbd4
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
+## gcc-opt (Base GCC package with C support)
+ GCC is the GNU Compiler Collection.
+ This package contains those parts of the compiler collection needed
+ to compile C code. Other packages add Ada, C++, D, Fortran, Go,
+ Objective-C, and BRIG support to the compiler core.
+ This package installs to /opt
+  
+
+- Category: development
+- Version: 15.2.0
+- Homepage: https://gcc.gnu.org/
+- Code repository: https://github.com/gcc-mirror/gcc
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for
@@ -1121,18 +1133,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.3.1
 - Homepage: https://andreas-kupries.github.io/critcl/
 - Code repository: https://github.com/andreas-kupries/critcl
-## gcc-local (Base GCC package with C support)
- GCC is the GNU Compiler Collection.
- This package contains those parts of the compiler collection needed
- to compile C code. Other packages add Ada, C++, D, Fortran, Go,
- Objective-C, and BRIG support to the compiler core.
- This package installs to /opt
-  
-
-- Category: development
-- Version: 15.1.0
-- Homepage: https://gcc.gnu.org/
-- Code repository: https://github.com/gcc-mirror/gcc
 ## zxbasic (basic compiler for ZXSpectrum)
  ZX BASIC is a BASIC "cross compiler". It will compile BASIC
  programs (in your PC) for your ZX Spectrum. ZX BASIC is an
