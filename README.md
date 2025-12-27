@@ -1206,7 +1206,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 8.8.9
+- Version: 8.9
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 ## smartsvn (Desktop SVN Client)
