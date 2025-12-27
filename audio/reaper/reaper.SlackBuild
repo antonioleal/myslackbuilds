@@ -33,16 +33,12 @@ PKGTYPE=${PKGTYPE:-tgz}
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586
-          TARBALL=$PRGNAM${VERSION/./}_linux_i686
-          WORKDIR=${PRGNAM}_linux_i686
           ;;
     arm*) ARCH=arm
           echo "Unsupported architecture $ARCH"
           exit 0
           ;;
        *) ARCH=$( uname -m )
-          TARBALL=$PRGNAM${VERSION/./}_linux_x86_64
-          WORKDIR=${PRGNAM}_linux_x86_64
           ;;
   esac
 fi
@@ -62,12 +58,19 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
-rm -rf $WORKDIR
-for f in $(ls -1 $CWD/*.tar.xz)
-do
+if [[ "$ARCH" == "i586" ]]; then
+    rm -rf reaper_linux_i686
+else
+    rm -rf reaper_linux_x86_64
+fi
+for f in $(ls -1 $CWD/*.tar.xz); do
     tar xvf $f
 done
-cd "${WORKDIR}/REAPER"
+if [[ "$ARCH" == "i586" ]]; then
+    cd reaper_linux_i686
+else
+    cd reaper_linux_x86_64
+fi
 
 chown -R root:root .
 find -L . \
