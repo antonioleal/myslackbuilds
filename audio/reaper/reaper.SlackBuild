@@ -67,9 +67,9 @@ for f in $(ls -1 $CWD/*.tar.xz); do
     tar xvf $f
 done
 if [[ "$ARCH" == "i586" ]]; then
-    cd reaper_linux_i686
+    cd reaper_linux_i686/REAPER
 else
-    cd reaper_linux_x86_64
+    cd reaper_linux_x86_64/REAPER
 fi
 
 chown -R root:root .
