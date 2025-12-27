@@ -92,7 +92,7 @@ mkdir -p $PKG/usr/share/mime/packages
 cp $CWD/application-x-reaper.xml $PKG/usr/share/mime/packages
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-mv \
+cp \
     ../readme-linux.txt \
     $PKG/opt/reaper/EULA.txt \
     $PKG/opt/reaper/whatsnew.txt \
