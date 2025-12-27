@@ -280,7 +280,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: audio
-- Version: 2.0.0
+- Version: 2.0.1
 - Homepage: https://www.tuxguitar.app/
 - Code repository: https://github.com/helge17/tuxguitar
 ## musikcube (Terminal-based audio engine, library, player, and server)
