@@ -58,11 +58,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
-if [[ "$ARCH" == "i586" ]]; then
-    rm -rf reaper_linux_i686
-else
-    rm -rf reaper_linux_x86_64
-fi
+rm -rf reaper_linux_*
 for f in $(ls -1 $CWD/*.tar.xz); do
     tar xvf $f
 done
@@ -98,8 +94,6 @@ cp \
     $PKG/opt/reaper/whatsnew.txt \
     $PKG/opt/reaper/Docs/* \
   $PKG/usr/doc/$PRGNAM-$VERSION
-chown root:root $PKG/usr/doc/$PRGNAM-$VERSION/*
-rmdir $PKG/opt/reaper/Docs/
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
