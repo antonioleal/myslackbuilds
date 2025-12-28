@@ -644,7 +644,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 10.5.1
+- Version: 10.6.0
 - Homepage: https://limine-bootloader.org/
 - Code repository: https://github.com/limine-bootloader/limine
 ## FreeFileSync (Cross-platform file sync utility with GUI)
