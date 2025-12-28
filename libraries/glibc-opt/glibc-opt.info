@@ -1,4 +1,4 @@
-PRGNAM="glibc-local"
+PRGNAM="glibc-opt"
 VERSION="2.35"
 HOMEPAGE="https://www.gnu.org/software/libc/"
 DOWNLOAD="https://ftp.gnu.org/gnu/glibc/glibc-2.35.tar.gz"

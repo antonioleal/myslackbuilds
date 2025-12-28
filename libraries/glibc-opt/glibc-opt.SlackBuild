@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware build script for glibc-local
+# Slackware build script for glibc-opt
 
 # Copyright 2024- Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -24,7 +24,7 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PRGNAM=glibc-local
+PRGNAM=glibc-opt
 VERSION=${VERSION:-2.35}
 PKGNAM=${PRGNAM}_${VERSION//./_}  # Redefined in order to allow install multiple glibc versions
 BUILD=${BUILD:-1}

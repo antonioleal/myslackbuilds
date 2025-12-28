@@ -76,6 +76,17 @@
 - Version: 3.0.17
 - Homepage: https://notcurses.com/
 - Code repository:
+## glibc-opt (GNU C library, installs to /opt)
+ The GNU C Library project provides the core libraries for the
+ GNU system and GNU/Linux systems, as well as many other systems
+ that use Linux as the kernel. These libraries provide critical APIs
+ including ISO C11, POSIX.1-2008, BSD, OS-specific APIs and more.
+  
+
+- Category: libraries
+- Version: 2.35
+- Homepage: https://www.gnu.org/software/libc/
+- Code repository: https://ftp.gnu.org/gnu/glibc/
 ## MuseScore-Libraries (libraries required by MuseScore)
  The minimum set of libraries required by MuseScore.
   
@@ -96,17 +107,6 @@
 - Homepage: http://www.libsdl.org
 - Code repository: https://github.com/libsdl-org/SDL
 
-## glibc-local (GNU C library, installs to /opt)
- The GNU C Library project provides the core libraries for the
- GNU system and GNU/Linux systems, as well as many other systems
- that use Linux as the kernel. These libraries provide critical APIs
- including ISO C11, POSIX.1-2008, BSD, OS-specific APIs and more.
-  
-
-- Category: libraries
-- Version: 2.35
-- Homepage: https://www.gnu.org/software/libc/
-- Code repository: https://ftp.gnu.org/gnu/glibc/
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
