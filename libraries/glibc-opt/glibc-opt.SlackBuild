@@ -25,7 +25,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=glibc-opt
-VERSION=${VERSION:-2.35}
+VERSION=${VERSION:-2.41}
 PKGNAM=${PRGNAM}_${VERSION//./_}  # Redefined in order to allow install multiple glibc versions
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

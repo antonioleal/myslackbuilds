@@ -84,7 +84,7 @@
   
 
 - Category: libraries
-- Version: 2.35
+- Version: 2.41
 - Homepage: https://www.gnu.org/software/libc/
 - Code repository: https://ftp.gnu.org/gnu/glibc/
 ## MuseScore-Libraries (libraries required by MuseScore)

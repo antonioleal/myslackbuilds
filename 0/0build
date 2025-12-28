@@ -57,7 +57,9 @@ echo "--------------------------------------------------------------------------
 echo
 VERSION=`cat *.info | grep VERSION | cut -d"\"" -f2`
 echo "Tarballs available at /tmp:"
+set +e
 ls /tmp/$PKGNAME-$VERSION* -lasth
+set -e
 TARBALL=`ls /tmp/$PKGNAME-$VERSION* -1t | head -n1`
 
 
