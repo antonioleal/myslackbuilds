@@ -816,7 +816,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 1.0.2
+- Version: 1.0.3
 - Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 - Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
 ## brave-browser-the-latest (brave browser updater script)
