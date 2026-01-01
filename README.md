@@ -103,7 +103,7 @@
   
 
 - Category: libraries
-- Version: 3.2.28
+- Version: 3.4.0
 - Homepage: http://www.libsdl.org
 - Code repository: https://github.com/libsdl-org/SDL
 
