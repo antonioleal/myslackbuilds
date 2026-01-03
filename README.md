@@ -1067,7 +1067,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 16.5
+- Version: 16.5.1
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
