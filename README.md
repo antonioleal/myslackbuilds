@@ -302,7 +302,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: audio
-- Version: 7.57
+- Version: 7.58
 - Homepage: https://www.reaper.fm
 - Code repository:
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
