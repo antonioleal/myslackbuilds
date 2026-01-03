@@ -590,6 +590,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://codeberg.org/librewolf/source/releases
 - Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
 
+## gallery-dl (Command line image scraper)
+ gallery-dl is a command-line program to download image galleries and
+ collections from several image hosting sites. It is a cross-platform
+ tool with many configuration options and powerful filenaming capabi-
+ lities. 
+ Homepage: https://github.com/mikf/gallery-dl
+  
+
+- Category: network
+- Version: 1.31.2
+- Homepage: https://github.com/mikf/gallery-dl
+- Code repository:
 ## opera (A fast and secure web browser)
  Opera is a graphical Web browser available on several platforms.
  The desktop version runs on GNU/Linux and FreeBSD. Versions for
