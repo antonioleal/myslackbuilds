@@ -48,15 +48,18 @@ echo
 
 cd ~/slackware-builds/slackbuilds
 
-# ensure the correponding branch is deleted, if existing
-BRANCH=$(git branch -a | grep $PKGNAME)
-if [[ ! -z "$BRANCH" ]]; then
+# first ensure the correponding branch is deleted, if existing
+BRANCH=$(git branch -a | grep "$PKGNAME")
+if [[ -n "$BRANCH" ]]
+then
+    set +e
     git branch -D $PKGNAME
     git push origin -d $PKGNAME
     git fetch --prune
+    set -e
 fi
 
-# now create the new branch and commit
+# now create the new branch and continue
 git checkout -B $PKGNAME
 cd ~/slackware-builds/slackbuilds/$CATEGORY/
 echo
