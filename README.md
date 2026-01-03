@@ -1385,6 +1385,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.9
 - Homepage: https://www.gnu.org/software/recutils/
 - Code repository: https://ftp.gnu.org/gnu/recutils/
+## catimg (Insanely fast image printing in your terminal)
+ catimg is a little program written in C with no dependencies that 
+ prints images in terminal. It supports JPEG, PNG and GIF formats. 
+ This program was originally a script that did the same by using 
+ ImageMagick convert.
+ Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
+  
+
+- Category: graphics
+- Version: 2.8.0
+- Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
+- Code repository:
 ## kphotoalbum (a photo management application)
  Kphotoalbum (previously known as KimDaBa) is an image viewer and
  organizer for KDE 4. It makes use of kipi plugins and exiv2 if
