@@ -31,6 +31,10 @@ if [ "$1" == "all" ]; then
     echo "on ~/slackware-builds/slackbuilds:"
     cd ~/slackware-builds/slackbuilds
     git checkout master
+
+    ACCOUNT=$(gh api user --jq .login)
+    gh repo sync ${ACCOUNT}/slackbuilds -b master
+
     git clean -f
     git reset --hard
     git pull --rebase
@@ -42,6 +46,7 @@ if [ "$1" == "" ] || [ "$1" == "all" ]; then
     echo "on ~/slackware-builds/myslackbuilds:"
     cd ~/slackware-builds/myslackbuilds
     git checkout main
+
     git clean -f
     git reset --hard
     git pull --rebase
