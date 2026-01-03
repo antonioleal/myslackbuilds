@@ -154,6 +154,12 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Script: 0slackware-package-dependencies
     Effect: Inspect a binary file and check discover its package dependencies.
 
+    Script: 0takeover
+    Effect: copies and modifies a SlackBuild from "slackbuilds" to "myslackbuilds"
+            so that it is prepared for you to takeover its maintenance.
+            Your need to edit YOURNAME, YOUREMAIL and YOURCOPYRIGHT variables
+            in the 0takeover script, unless you want to use mine ;-)
+
     Script: 0tar
     Effect: creates a "slackbuild".tar.gz pack ready to be submitted on the
             folder 0/slackbuild under the SlackBuild you are working.
