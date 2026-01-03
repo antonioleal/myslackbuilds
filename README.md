@@ -161,6 +161,17 @@
 - Version: 4.1.16
 - Homepage: https://www.openoffice.org/
 - Code repository: https://sourceforge.net/projects/openofficeorg.mirror/files/
+## ishmael (EBook dumper)
+ ishmael is a Perl program that can read and dump the contents of
+ various popular (and unpopular) ebook formats. It originally only
+ dumped the formatted text contents of an ebook, but has since grown
+ to be able to dump metadata, images, and more.
+  
+
+- Category: office
+- Version: 1.09
+- Homepage: https://codeberg.org/1-1sam/ishmael
+- Code repository:
 ## onlyoffice-desktopeditors (office suite)
  ONLYOFFICE Desktop Editors is a free AGPL v3 licensed office suite
  that combines text, spreadsheet and presentation editors. It is fully
