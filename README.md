@@ -742,6 +742,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/Thomas-Tsai/partclone
 
 *Private note: Mamba and Coral backups are made with version 0.3.37*
+## oils (Programming language and Bash-compatible Unix shell)
+ oils is a project that aims to develop a modern shell language that
+ appeals to developers from languages like Python or JavaScript. It
+ is marketed as an "upgrade path from bash to a better language and
+ runtime."
+ Homepage: https://oils.pub/
+  
+
+- Category: system
+- Version: 0.37.0
+- Homepage: https://oils.pub/
+- Code repository:
 ## arqiver (Simple Qt archive manager)
  arqiver is a simple Qt archive manager. It serves as a front-end for
  libarchive (bsdtar), gzip and 7z. 
