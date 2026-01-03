@@ -95,6 +95,20 @@
 - Version: 6.9.2
 - Homepage: https://download.qt.io/official_releases/qt/
 - Code repository: https://download.qt.io/official_releases/qt/
+## libmobi (Library for Mobipocket/Kindle ebook formats)
+ C library for handling Mobipocket/Kindle (MOBI) ebook format
+ documents. Supports PalmDOC (pdb), Mobipocket (prc, mobi), newer MOBI
+ files including KF8 format (azw, azw3), and replica print files
+ (azw4). Includes features such as reading/parsing documents,
+ reacreating source files, editing metadata, handling encrypted
+ documents, and much more.
+ Homepage: https://www.fabiszewski.net/libmobi/
+  
+
+- Category: libraries
+- Version: 0.12
+- Homepage: https://www.fabiszewski.net/libmobi/
+- Code repository:
 ## SDL3 (Simple DirectMedia Layer Version 3)
  Simple DirectMedia Layer is a cross-platform development library
  designed to provide low-level access to audio, keyboard, mouse,

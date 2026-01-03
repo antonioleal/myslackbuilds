@@ -1,0 +1,2 @@
+- Homepage: https://www.fabiszewski.net/libmobi/
+- Code repository:
