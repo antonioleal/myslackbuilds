@@ -30,8 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-
-REALNEWVERSION=`curl -s https://codeberg.org/librewolf/source/releases | grep "librewolf-source" | head -1 | awk -F"/" '{print $11}'`
+#REALNEWVERSION=`curl -s https://codeberg.org/librewolf/source/releases | grep "librewolf-source" | head -1 | awk -F"/" '{print $11}
+REALNEWVERSION=`lynx --dump https://codeberg.org/librewolf/-/packages/generic/librewolf | grep "linux-x86_64-package.tar.xz " | awk -F"-" '{printf "%s-%s\n", $2, $3}'`
 NEWVERSION=${REALNEWVERSION/-/_}
 TARBALL=librewolf-${REALNEWVERSION}-linux-x86_64-package.tar.xz
 URL="https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/${REALNEWVERSION}/$TARBALL"
