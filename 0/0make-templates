@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Slackware menu for 0scripts
+
+# Copyright 2024-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+CWD="$(echo `pwd`)"
+PKGNAME=${PWD##*/}
+if ! [ -f $PKGNAME.info ]; then
+  echo "You must run this script from within a SlackBuild folder."
+  exit 0
+fi
+
+source $PKGNAME.info
+
+mkdir -p 0/template
+echo "an empty version number" > 0/version
+cp $PKGNAME.info 0/template/$PKGNAME.info.template
+cp $PKGNAME.SlackBuild 0/template/$PKGNAME.SlackBuild.template
+
+# Prepare the info file
+sed -i -e "s/{$VERSION}/_version_/g" 0/template/$PKGNAME.info.template
+if [ ! "$MD5SUM" = "" ] && [ "$MD5SUM_x86_64" = "" ]; then
+    sed -i -e "s/MD5SUM=.*/MD5SUM=\"_md5_\"/" 0/template/$PKGNAME.info.template
+elif [ "$MD5SUM" = "" ] && [ ! "$MD5SUM_x86_64" = "" ]; then
+    sed -i -e "s/MD5SUM_x86_64=.*/MD5SUM_x86_64=\"_md5_\"/" 0/template/$PKGNAME.info.template
+else
+    sed -i -e "s/MD5SUM=.*/MD5SUM=\"_md532_\"/" 0/template/$PKGNAME.info.template
+    sed -i -e "s/MD5SUM_x86_64=.*/MD5SUM_x86_64=\"_md564_\"/" 0/template/$PKGNAME.info.template
+fi
+
+# Prepare the SlackBuild file
+sed -i -e "s/VERSION=.*/VERSION=\$\{VERSION:-_version_\}\"/" 0/template/$PKGNAME.SlackBuild.template
+
