@@ -37,7 +37,7 @@ cp $PKGNAME.info 0/template/$PKGNAME.info.template
 cp $PKGNAME.SlackBuild 0/template/$PKGNAME.SlackBuild.template
 
 # Prepare the info file
-sed -i -e "s/{$VERSION}/_version_/g" 0/template/$PKGNAME.info.template
+sed -i -e "s/${VERSION}/_version_/g" 0/template/$PKGNAME.info.template
 if [ ! "$MD5SUM" = "" ] && [ "$MD5SUM_x86_64" = "" ]; then
     sed -i -e "s/MD5SUM=.*/MD5SUM=\"_md5_\"/" 0/template/$PKGNAME.info.template
 elif [ "$MD5SUM" = "" ] && [ ! "$MD5SUM_x86_64" = "" ]; then
@@ -48,5 +48,5 @@ else
 fi
 
 # Prepare the SlackBuild file
-sed -i -e "s/VERSION=.*/VERSION=\$\{VERSION:-_version_\}\"/" 0/template/$PKGNAME.SlackBuild.template
+sed -i -e "s/VERSION=.*/VERSION=\$\{VERSION:-_version_\}/" 0/template/$PKGNAME.SlackBuild.template
 
