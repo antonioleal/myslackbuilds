@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for <program>
+# Slackware updater script for _program_
 
 # Copyright 2025-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=<program>
+PRGNAM=_program_
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
@@ -30,11 +30,11 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-#NEWVERSION=$(curl -s https://api.github.com/repos/<repo>/<program>/releases/latest |  jq -r '.tag_name')
-TAG=$(gh release view -R <repo>/<program> --json tagName --jq '.tagName')
+#NEWVERSION=$(curl -s https://api.github.com/repos/_repo_/_program_/releases/latest |  jq -r '.tag_name')
+TAG=$(gh release view -R _repo_/_program_ --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
-TARBALL=<program>-$NEWVERSION.tar.gz
-URL="https://github.com/<repo>/<program>/releases/download/$TAG/$TARBALL"
+TARBALL=_program_-$NEWVERSION.tar.gz
+URL="https://github.com/_repo_/_program_/releases/download/$TAG/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
