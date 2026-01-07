@@ -31,12 +31,20 @@ fi
 
 source $PKGNAME.info
 
-mkdir -p 0/template
+# Instantiate updater
+cp $HOME/slackware-builds/myslackbuilds/0/updater-templates/github_release/updater.template 0/updater
+sed -i -e "s/_program_/${PKGNAME}/g" 0/updater
+REPO=$(echo $DOWNLOAD | awk -F"/" '{print $4}')
+sed -i -e "s/_repo_/${REPO}/g" 0/updater
+
 echo "an empty version number" > 0/version
+
+# Prepare template folder
+mkdir -p 0/template
 cp $PKGNAME.info 0/template/$PKGNAME.info.template
 cp $PKGNAME.SlackBuild 0/template/$PKGNAME.SlackBuild.template
 
-# Prepare the info file
+# Generate the info template
 sed -i -e "s/${VERSION}/_version_/g" 0/template/$PKGNAME.info.template
 if [ ! "$MD5SUM" = "" ] && [ "$MD5SUM_x86_64" = "" ]; then
     sed -i -e "s/MD5SUM=.*/MD5SUM=\"_md5_\"/" 0/template/$PKGNAME.info.template
@@ -47,6 +55,7 @@ else
     sed -i -e "s/MD5SUM_x86_64=.*/MD5SUM_x86_64=\"_md564_\"/" 0/template/$PKGNAME.info.template
 fi
 
-# Prepare the SlackBuild file
+# Generate the SlackBuild template
 sed -i -e "s/VERSION=.*/VERSION=\$\{VERSION:-_version_\}/" 0/template/$PKGNAME.SlackBuild.template
+
 
