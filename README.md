@@ -681,7 +681,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 1.1.31
+- Version: 1.1.32
 - Homepage:  http://doublecmd.sourceforge.net
 - Code repository: http://doublecmd.sourceforge.net
 ## B-em (BBC Microcomputer Emulator)
