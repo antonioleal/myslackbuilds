@@ -1,0 +1,30 @@
+As stated in
+https://unix.stackexchange.com/questions/203136/how-do-i-run-gui-applications-as-root-by-using-pkexec
+
+timeshift-gtk can be executed with pkexec if a policy file is defined
+
+/usr/share/polkit-1/actions/org.freedesktop.policykit.timeshift-gtk.policy
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+    <action id="org.freedesktop.policykit.pkexec.timeshift-gtk">
+    <description>Run timeshift-gtk program</description>
+    <message>Authentication is required to run the Timeshift</message>
+    <icon_name>timeshift</icon_name>
+    <defaults>
+        <allow_any>auth_admin</allow_any>
+        <allow_inactive>auth_admin</allow_inactive>
+        <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/timeshift-gtk</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+    </action>
+</policyconfig>
+
+
+run with:
+
+pkexec timeshift-gtk
+
+
