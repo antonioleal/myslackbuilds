@@ -285,7 +285,7 @@
   
 
 - Category: development
-- Version: 20251222_2bb3804
+- Version: 20260109_58eb01b
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
 ## zxbasicstudio (an ide for zxbasic)
