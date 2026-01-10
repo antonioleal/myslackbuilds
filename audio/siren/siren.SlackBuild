@@ -86,8 +86,8 @@ CXXFLAGS="$SLKCFLAGS" \
 
 make
 make install DESTDIR=$PKG
-chmod +x $PKG/usr/lib64/siren/ip/*.so
-chmod +x $PKG/usr/lib64/siren/op/*.so
+chmod +x $PKG/usr/lib${LIBDIRSUFFIX}/siren/ip/*.so
+chmod +x $PKG/usr/lib${LIBDIRSUFFIX}/siren/op/*.so
 
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
