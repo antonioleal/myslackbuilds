@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for dapper
+# Slackware updater script for _program_
 
 # Copyright 2025-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=dapper
+PRGNAM=_program_
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
@@ -30,10 +30,10 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-AUX=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/jjk-jacky/dapper/tags | jq '.[]' | jq '.name')
-NEWVERSION=${AUX//\"/}
-TARBALL=dapper-$NEWVERSION.tar.gz
-URL="https://github.com/jjk-jacky/dapper/archive/$NEWVERSION/$TARBALL"
+AUX=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/_repo_/_program_/tags | jq '.[]' | jq '.name')
+NEWVERSION=${TAG:1}
+TARBALL=_program_-$NEWVERSION.tar.gz
+URL="https://github.com/_repo_/_program_/releases/download/$TAG/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
