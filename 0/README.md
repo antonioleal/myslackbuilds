@@ -128,6 +128,18 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Effect: if you also placed myslackbuilds directory in github (like me!)
             then this automatically generates a README.md for github.
 
+    Script: 0make-updater
+    Effect: This command will create the "updater" script, as well as two templates
+            based on *.info and *.SlackBuild files:
+                    <you slackbuild folder>/0/updater
+                    <you slackbuild folder>/0/version
+                    <you slackbuild folder>/0/template/<program>.info.template
+                    <you slackbuild folder>/0/template/<program>.SlackBuild.template
+            You need to carefully check what the updater is doing and test if it can
+            recreate your current version of SlackBuild. To do that write some string
+            inside the 0/version file, for ex "1234", run the updater andheck the
+            resulting new *.info and *.SlackBuild using git --diff.
+
     Script: 0meld
     Effect: Compares what is currently published in slackbuilds.org (your local folder!)
             with your current script. You need the meld program.
