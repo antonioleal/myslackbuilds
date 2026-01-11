@@ -151,7 +151,7 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
     Script: 0setup
     Effect: Run once to setup your slack-builds '0' environment.
 
-    Script: 0slackware-package-dependencies
+    Script: 0slackware-binary-dependencies
     Effect: Inspect a binary file and check discover its package dependencies.
 
     Script: 0takeover
