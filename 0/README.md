@@ -232,11 +232,17 @@ If you are in Europe SlackBuilds.org public updates occur each Saturday, usually
 5. That's it. Now you are ready to restart the workflow.
 
 ##### III. (Optional) Go the easy way, use an "updater":
-Eventually you'll end up with bigger number of SlackBuilds to maintain. This is where and "updater" becomes usefull.<br>
-An "updater" is basically a script that checks if a new version of your program is available and is able to upgrade the *.info and *.SlackBuild files,
-as well and download the new sources. All in time for you to build and check if the new program version is functional.<br>
+Eventually you'll end up with a bigger number of SlackBuilds to maintain. This is where and "updater" becomes usefull.<br>
+An "updater" is basically a script that:
+1. checks if a new version of your program is available upstream
+2. is able to upgrade the *.info and *.SlackBuild files, or any other required file.
+3. downloads the new sources
+All in time for you to **build** and **test** if the new program version is functional.
+
 In order to create an updater you can use **0make-updater** which will create a draft of the script for you to change.<br>
 All updaters can be invoked "in bulk" using **@auto-updater**.
+
+See my examples of updater scripts, compare a few I'll see they are all very similar.
 
 <br><b>
 #### Happy Slacking!
