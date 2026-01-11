@@ -235,6 +235,7 @@ An "updater" is basically a script that:
 1. checks if a new version of your program is available upstream
 2. is able to upgrade the *.info and *.SlackBuild files, or any other required file.
 3. downloads the new sources
+
 All in time for you to **build** and **test** if the new program version is functional.
 
 In order to create an updater you can use **0make-updater** which will create a draft of the script for you to change.<br>
