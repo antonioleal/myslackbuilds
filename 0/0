@@ -2,7 +2,7 @@
 
 # Slackware menu for 0scripts
 
-# Copyright 2024-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2024-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,11 +25,11 @@
 CWD="$(echo `pwd`)"
 PKGNAME=${PWD##*/}
 HEIGHT=26
-WIDTH=90
+WIDTH=120
 CHOICE_HEIGHT=24
 BACKTITLE="Antonio Leal's \"0\" scripts SlackBuild environment at $CWD"
 TITLE="$PKGNAME"
-MENU="Choose one of the following options for package: $PKGNAME"
+MENU="Choose one of the following:"
 
 if ! [ -f $PKGNAME.info ]; then
   echo "You must run this script from within a SlackBuild folder."
@@ -41,26 +41,26 @@ DIALOG_ESC=255
 
 OPTIONS=()
 if [ -f 0/updater ]; then
-OPTIONS+=(0 "** Run updater for this SlackBuild **"
-         "" "---------------------------------------------------------------------------------"
+OPTIONS+=(0 "Run the updater                     - upgrade the SlackBuild package files"
+         "" "-----------------------------------------------------------------------------------------------------------"
          )
 fi
-OPTIONS+=(1 "Run \"less $PKGNAME.info\""
-         2 "Compare with slackbuilds            # check if SlackBuilds.org changed the script"
-         3 "Replace strings                     # Uses sed in the $PKGNAME folder"
-         4 "Download sources                    # get the source code"
-         5 "Update md5 in info                  # recalculates md5 and updates info file"
-         "" "---------------------------------------------------------------------------------"
-         6 "Build                               # builds the package"
-         7 "Open tar.gz ready SlackBuild        # uses the ark program"
-         "" "---------------------------------------------------------------------------------"
-         8 "Commit & Push                       # local commits changes and pushes to GitHub"
-         9 "Pull Request SlackBuilds.org        # generates a PR on SlackBuilds GitHub site"
-         "" "---------------------------------------------------------------------------------"
-         c "Clean tree                          # runs git clean -f"
-         e "Edit files"
-         d "Run \"git diff\""
-         s "Run \"git status\""
+OPTIONS+=(1 "Run \"less $PKGNAME.info\"              - list the contents of $PKGNAME.info"
+         2 "0meld                               - check if SlackBuilds.org changed the script"
+         3 "0replace-string                     - uses sed in the $PKGNAME folder to replace strings"
+         4 "0download-source-tarballs           - get the source code, as per $PKGNAME.info"
+         5 "0update-md5-info                    - recalculates md5 and updates info file"
+         "" "-----------------------------------------------------------------------------------------------------------"
+         6 "0build                              - builds the package"
+         7 "Open tar.gz ready SlackBuild        - open $PKGNAME.tar.gz with ark"
+         "" "-----------------------------------------------------------------------------------------------------------"
+         8 "0commit-push                        - local commits changes and pushes to GitHub"
+         9 "0pull-request                       - generates a PR on SlackBuilds GitHub site"
+         "" "-----------------------------------------------------------------------------------------------------------"
+         c "0clean-tree                         - runs git clean -f on myslackbuilds"
+         e "Edit files                          - edit files in the $PKGNAME folder"
+         d "Run \"git diff\"                      - Compare local changes"
+         s "Run \"git status\"                    - Check which files are new or have changed"
          q "Quit to DOS :)"
          )
 
