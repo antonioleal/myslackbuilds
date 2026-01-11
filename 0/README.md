@@ -240,7 +240,7 @@ An "updater" is basically a script that:
 All in time for you to **build** and **test** if the new program version is functional.
 
 In order to create an updater you can use **0make-updater** which will create a draft of the script for you to change.<br>
-All updaters can be invoked "in bulk" using **@auto-updater**.
+All updaters can be invoked "in bulk" using **0auto-updater**.
 
 See my examples of updater scripts, compare a few and notice they are all very similar...
 
