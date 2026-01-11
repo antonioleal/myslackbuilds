@@ -242,7 +242,7 @@ All in time for you to **build** and **test** if the new program version is func
 In order to create an updater you can use **0make-updater** which will create a draft of the script for you to change.<br>
 All updaters can be invoked "in bulk" using **@auto-updater**.
 
-See my examples of updater scripts, compare a few I'll see they are all very similar.
+See my examples of updater scripts, compare a few and notice they are all very similar...
 
 <br><b>
 #### Happy Slacking!
