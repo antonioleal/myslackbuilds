@@ -4,9 +4,7 @@
 
 ## The Zero Scripts Setup
 
-*This folder contains a simple set of Slackware auxiliary scripts, the so called Zero Scripts ("0") , that simplify the process for you to collaborate with SlackBuilds.org*
-
-Why the "0"? Because with *bash* it's very useful when you type 0 and press TAB twice to see what operations you can make in this environment *and* does not interfere with any other program in your Slackware box. Nice and tidy..
+*This folder contains a simple set of auxiliary scripts, the Zero ("0") Scripts, that simplify the process of collaborating with SlackBuilds.org*
 
 ---
 
@@ -77,10 +75,10 @@ In the end your work environment should look like this:
 ... and you are ready to go!
 
 ### The menu
-A simple menu describing the complete workflow and helping with the build sequence is provided in the **0** script (which you can invoke by just typing "**0**" also). You need to start it from the slackbuild folder as it reads the .info file.
+A simple menu describing the complete workflow and helping with the build sequence is provided in the **0** script (which you can invoke by just typing "**0**" also). You need to run it from within your slackbuild folder.
 
 ### The scripts
-With a few exceptions the zero ("0") scripts are meant to be started from the slackbuild directory. Inside the slackbuild directory a folder called "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild. Have a look at my own setup.
+With a few exceptions the zero scripts are meant to be started from the slackbuild directory. Inside the slackbuild directory a folder named "0" also exists where you can store any additional files or notes you need to help you maintain your slackbuild. Have a look at my own setup.
 
 Example:
 > `cd ~/slackware-builds/myslackbuilds/academic/plus42`
