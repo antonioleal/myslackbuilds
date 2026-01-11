@@ -188,9 +188,9 @@ will create a branch and issue a PR on `github.com/SlackBuildsOrg/slackbuilds`
 
 ### Workflows
 
-If you are in Europe SlackBuilds.org commits occur during the morning of each Saturday. So your workflow would be something like the one described here.
+If you are in Europe SlackBuilds.org public updates occur each Saturday, usually in the morning. So your workflow would be something like the one described here.
 
-##### "During the week":
+##### I. "During the week":
 1. Check if new sources are available upstream for each of your packages.
     * Better still: subscribe to be notified when this occurs!
 
@@ -220,7 +220,17 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 8. Periodically check github.com/SlackBuildsOrg/slackbuilds to see if you work has been approved, or rejected by some reason.
     * Its is a very good idea to subscribe to the `slackbuilds-users` and `slackbuilds-devel` mailling lists so you are aware of what other people are doing. You can also ask for specific help regarding your scripts or get the "maintainer" status for new ones.
 
-##### "Saturday afternoon":
+##### II. Go the easy way, use an "updater":
+Eventually you'll end up with bigger number of SlackBuilds to maintain. This is where and "updater" becomes usefull.
+
+An "updater" is basically a script that checks if a new version of your program is available and is able to upgrade the *.info and *.SlackBuild files,
+as well and download the new sources. All in time for you to build and check if the new program version is functional.
+
+In order to create an updater you can use **0make-updater** which will create a draft of the script for you to change.
+
+All updaters can be invoked "in bulk" using **@auto-updater**.
+
+##### III. "Saturday afternoon":
 1. Once your scripts are released to the public go to `https://github.com/{your account}/slackbuilds` and synchronize your fork with the upstream master.
 
 2. Run `git pull --rebase` on your ~/slackware-builds/slackbuilds folder
@@ -231,7 +241,7 @@ If you are in Europe SlackBuilds.org commits occur during the morning of each Sa
 
 5. That's it. Now you are ready to restart the workflow.
 
-##### "During the week":
+##### IV. "During the week":
 Strictly optional, if you constructed updater scripts for your slackbuilds (see my examples), then you can run the scipt **0auto-updater** to check automatically if the upstream developers of your packages have released anything new.
 
 #### Happy Slacking!
