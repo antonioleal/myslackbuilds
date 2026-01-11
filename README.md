@@ -1475,7 +1475,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: desktop
-- Version: 0.08
+- Version: 0.08_2
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
 ## ClamAV-GUI (A Qt GUI for clamav)

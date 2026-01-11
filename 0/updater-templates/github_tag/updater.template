@@ -32,9 +32,11 @@ cd $SCRIPT_DIR
 ################################
 AUX=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/_repo_/_program_/tags | jq '.[]' | jq '.name' | head -1)
 TAG=${AUX//\"/}
-NEWVERSION=${TAG/v/}
-TARBALL=_program_-$NEWVERSION.tar.gz
-URL="https://github.com/_repo_/_program_/releases/download/$TAG/$TARBALL"
+REALVERSION=${TAG:1}
+NEWVERSION=${REALVERSION/-/_}
+
+TARBALL=_program_-$REALVERSION.tar.gz
+URL="https://github.com/_repo_/_program_/archive/$TAG/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]

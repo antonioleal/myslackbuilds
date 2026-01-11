@@ -30,11 +30,14 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-#NEWVERSION=$(curl -s https://api.github.com/repos/_repo_/_program_/releases/latest |  jq -r '.tag_name')
-TAG=$(gh release view -R _repo_/_program_ --json tagName --jq '.tagName')
-NEWVERSION=${TAG:1}
-TARBALL=_program_-$NEWVERSION.tar.gz
-URL="https://github.com/_repo_/_program_/releases/download/$TAG/$TARBALL"
+#AUX=$(curl -s https://api.github.com/repos/_repo_/_program_/releases/latest |  jq -r '.tag_name')
+AUX=$(gh release view -R _repo_/_program_ --json tagName --jq '.tagName')
+TAG=${AUX//\"/}
+REALVERSION=${TAG:1}
+NEWVERSION=${REALVERSION/-/_}
+
+TARBALL=_program_-$REALVERSION.tar.gz
+URL="https://github.com/_repo_/_program_/archive/$TAG/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
