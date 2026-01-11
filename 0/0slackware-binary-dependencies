@@ -49,7 +49,7 @@ cat $aux
 echo
 
 echo "*******************************************************************************************************************"
-echo "now finding their packages:"
+echo "now finding their corresponding packages:"
 echo "$msg" > $fich
 #print the version on the screen
 IFS=$'\n' # set the Internal Field Separator to newline
