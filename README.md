@@ -1253,7 +1253,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: academic
-- Version: 1.3.12
+- Version: 1.3.13
 - Homepage: https://www.thomasokken.com/plus42
 - Code repository: https://codeberg.org/thomasokken/plus42desktop
 ## hp-prime (HP Prime Virtual Calculator simulation)
