@@ -2,8 +2,8 @@
 
 # Slackware build script for Google Chrome
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
-# Copyright 2009-2011  Erik Hanson, Minneapolis, MN, USA
+# Copyright 2025-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2009-2011 Erik Hanson, Minneapolis, MN, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,7 +26,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=google-chrome
-VERSION=${VERSION:-143.0.7499.192}
+VERSION=${VERSION:-144.0.7559.59}
 RELEASE=stable		# stable, beta, or unstable
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -82,6 +82,8 @@ mv $PKG/usr/share/man $PKG/usr/man
 mkdir -p $PKG/usr/share/applications
 sed -i -e "s#Icon=google-chrome#Icon=/opt/google/chrome/product_logo_256.png#" \
   $PKG/usr/share/applications/google-chrome.desktop
+sed -i -e "s/NoDisplay=true//" \
+  $PKG/usr/share/applications/com.google.Chrome.desktop
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
