@@ -1112,17 +1112,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.14.19
 - Homepage: https://github.com/coin-or/Ipopt
 - Code repository: 
-## box2d (Box2D is a 2D physics engine for games)
- Box2D is a 2D rigid body simulation library for games.
- Programmers can use it in their games to make objects
- move in realistic ways and make the game world more
- interactive.
-  
-
-- Category: libraries
-- Version: 3.1.1
-- Homepage: https://box2d.org/
-- Code repository:
 ## qt6-prebuilt_environment (Clang and LLVM to build Qt the GUI toolkit)
  Qt is a cross-platform application and UI framework for developers
  using C++ or QML, a CSS/JavaScript-like language.

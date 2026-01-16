@@ -1,2 +1,0 @@
-- Homepage: https://box2d.org/
-- Code repository:
