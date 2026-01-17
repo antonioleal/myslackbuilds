@@ -30,6 +30,7 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
+#NEWVERSION=$(lynx --dump https://aur.archlinux.org/packages/antigravity | grep "Package Details:" | awk '{print $NF}' | awk -F"-" '{print $1}')
 FULLVERSION=$(lynx -dump https://github.com/oslook/antigravity-downloads | grep "Full Build" | awk '{print $4}' | head -1)
 NEWVERSION=$(echo $FULLVERSION | cut -d"-" -f1)
 BUILD=$(echo $FULLVERSION | cut -d"-" -f2)
