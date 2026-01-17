@@ -422,6 +422,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.8.10
 - Homepage: https://nuitka.net
 - Code repository: https://github.com/Nuitka/Nuitka/tags
+## python3-icoextract (Icon Extraction Tool)
+ Extract icons from Windows PE files (.exe/.dll) 
+ Homepage: https://github.com/jlu5/icoextract
+  
+
+- Category: python
+- Version: 0.2.0
+- Homepage: https://github.com/jlu5/icoextract
+- Code repository:
 ## python3-neovim (Python client for Neovim)
  python3-neovim is a Python client for Neovim.
   
