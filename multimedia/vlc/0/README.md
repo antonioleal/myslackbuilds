@@ -1,0 +1,2 @@
+- Homepage: https://www.videolan.org/vlc/
+- Code repository:

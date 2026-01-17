@@ -531,6 +531,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.6.5
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
+## vlc (VLC media player)
+ VLC media player is a free and open source media player and multi-
+ media framework written by the VideoLAN project. VLC is a portable
+ multimedia player, encoder, and streamer supporting many audio and
+ video codecs and file formats as well as DVDs, VCDs, and various
+ streaming protocols. It is able to stream over networks and to
+ transcode multimedia files and save them into various formats.
+ homepage: http://www.videolan.org/vlc
+  
+
+- Category: multimedia
+- Version: 3.0.23
+- Homepage: https://www.videolan.org/vlc/
+- Code repository:
 ## muse-sounds-manager (MuseScore 4 optional high quality sounds)
  Muse Sounds Manager (Muse Hub for linux) is a new label of optional
  high quality playback instruments for MuseScore 4.
