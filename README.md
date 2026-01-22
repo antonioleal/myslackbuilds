@@ -1309,6 +1309,14 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.1.0
 - Homepage: https://github.com/rspeer/ordered-set
 - Code repository: 
+## python3-xapp (Python 3 XApp library)
+ Small Python library providing XApp functionality.
+  
+
+- Category: python
+- Version: 3.0.2
+- Homepage: https://github.com/linuxmint/python3-xapp
+- Code repository:
 ## python3-icoextract (Icon Extraction Tool)
  Extract icons from Windows PE files (.exe/.dll) 
  Homepage: https://github.com/jlu5/icoextract
