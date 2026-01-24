@@ -385,6 +385,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.25.0
 - Homepage: https://github.com/indygreg/python-zstandard
 - Code repository: 
+## python3-xapp (Python3 Xapp Library)
+ This package provides the Python3 Xapp Library.
+ Homepage: https://github.com/linuxmint/python3-xapp
+  
+
+- Category: python
+- Version: 3.0.2
+- Homepage: https://github.com/linuxmint/python3-xapp
+- Code repository:
 ## python2-blessed (library for making terminal apps)
  Easy, practical library for making terminal apps, by providing an
  elegant, well-documented interface to Colors, Keyboard input, and
