@@ -30,12 +30,8 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-#NEWVERSION=$(lynx --dump https://aur.archlinux.org/packages/antigravity | grep "Package Details:" | awk '{print $NF}' | awk -F"-" '{print $1}')
-FULLVERSION=$(lynx -dump https://github.com/oslook/antigravity-downloads | grep "Full Build" | awk '{print $4}' | head -1)
-NEWVERSION=$(echo $FULLVERSION | cut -d"-" -f1)
-BUILD=$(echo $FULLVERSION | cut -d"-" -f2)
+NEWVERSION=$(curl -L https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/dists/antigravity-debian/main/binary-amd64/Packages | grep "Version:" | tail -1 | awk '{print $2}' | awk -F"-" '{print $1}')
 TARBALL=Antigravity.tar.gz
-URL="https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/${NEWVERSION}-${BUILD}/linux-x64/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -52,6 +48,15 @@ else
         export RET0=$NEWVERSION
         return
     fi
+    ################################
+    # build build                  #
+    ################################
+    # https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/1.15.8-5724687216017408/linux-x64/Antigravity.tar.gz
+    firefox https://antigravity.google/download/linux &
+    read -p "Paste full download link = " AUX
+    BUILD=$(echo "$AUX" | awk -F"-" '{print $2}' | awk -F"/" '{print $1}')
+    URL="https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/${NEWVERSION}-${BUILD}/linux-x64/$TARBALL"
+
     ################################
     # download tarball             #
     ################################
