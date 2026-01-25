@@ -198,6 +198,14 @@
 - Version: 9.2.1
 - Homepage: https://www.onlyoffice.com/apps.aspx
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
+## pageEdit (Simple Single Page XHTML Visual Editor)
+ Simple Single Page XHTML Visual Editor, split from Sigil's BookView.
+  
+
+- Category: office
+- Version: 2.7.0
+- Homepage: https://sigil-ebook.com/pageedit/
+- Code repository:
 ## sigil (Multi-platform WYSIWYG ebook editor)
  Sigil is a multi-platform WYSIWYG ebook editor. It is designed to
  edit books in ePub format.
