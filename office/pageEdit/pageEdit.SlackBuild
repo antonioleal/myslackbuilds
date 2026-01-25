@@ -80,7 +80,6 @@ find -L . \
 mkdir build
 cd build
   cmake -G "Unix Makefiles" \
-    -D USE_QT6=1 \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
