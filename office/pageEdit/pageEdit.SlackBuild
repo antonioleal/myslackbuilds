@@ -73,10 +73,6 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Don't bulid against system libminizip if installed.
-# Ref: https://bugzilla.redhat.com/show_bug.cgi?id=1424609
-#sed -i '/MiniZip/s|.*|#&|' CMakeLists.txt
-
 mkdir build
 cd build
   cmake -G "Unix Makefiles" \
@@ -85,7 +81,7 @@ cd build
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_BUILD_TYPE=Release ..
 
-  make VERBOSE=1
+  make
   make install DESTDIR=$PKG
 cd ..
 
