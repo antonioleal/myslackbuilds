@@ -1466,7 +1466,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 3.19.0
+- Version: 3.20.0
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
 ## python3-zstandard (Python3 bindings for Zstandard library)
