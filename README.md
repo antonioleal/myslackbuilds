@@ -988,7 +988,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 1.18.1b
+- Version: 1.18.3b
 - Homepage: https://zen-browser.app/
 - Code repository: https://github.com/zen-browser/desktop
 ## opera (A fast and secure web browser)
