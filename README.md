@@ -195,7 +195,7 @@
   
 
 - Category: development
-- Version: 0.5.1
+- Version: 0.6.1
 - Homepage: https://github.com/mynenik/kForth-64
 - Code repository:
 ## gitnuro (a graphical git client)
