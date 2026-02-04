@@ -2,7 +2,7 @@
 
 # Slackware build script for antigravity
 
-# Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -80,6 +80,8 @@ find -L . \
 
 mkdir -p $PKG/opt/$PRGNAM
 cp -avxu * $PKG/opt/$PRGNAM
+chmod +x $PKG/opt/$PRGNAM/resources/app/extensions/microsoft-authentication/dist/msal-node-runtime.node
+chmod +x $PKG/opt/$PRGNAM/resources/app/extensions/microsoft-authentication/dist/libmsalruntime.so
 
 mkdir -p $PKG/usr/bin
 ( cd $PKG/usr/bin ; rm -rf antigravity )
