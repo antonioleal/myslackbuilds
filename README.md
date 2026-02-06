@@ -581,7 +581,7 @@
   
 
 - Category: audio
-- Version: 8.12.0
+- Version: 9.0.0
 - Homepage: http://ardour.org
 - Code repository: https://github.com/Ardour/ardour
 
