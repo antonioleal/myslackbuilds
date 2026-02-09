@@ -483,7 +483,7 @@
   
 
 - Category: development
-- Version: 16.5.2
+- Version: 17.0
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
