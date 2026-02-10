@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from gmpy2 import *
 
 print(mpz(99) * 43)
