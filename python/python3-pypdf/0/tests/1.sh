@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from pypdf import PdfReader
 
 reader = PdfReader("example.pdf")
