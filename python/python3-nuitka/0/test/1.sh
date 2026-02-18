@@ -1,5 +1,7 @@
-#!/usr/bin/env python3
+#!/bin/bash
 
-for i in range(10000000):
-        print (i, end=' ')
-        
+nuitka 1.py
+./1.bin
+
+rm -rf 1.build
+rm -rf 1.bin
