@@ -313,7 +313,7 @@
   
 
 - Category: development
-- Version: 1.6.0_beta6.3
+- Version: 1.7.0
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasicstudio"
 ## bwbasic (basic interpreter)
