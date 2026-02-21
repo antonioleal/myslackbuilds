@@ -90,7 +90,7 @@
   
 
 - Category: office
-- Version: 1.09
+- Version: 2.01
 - Homepage: https://codeberg.org/1-1sam/ishmael
 - Code repository:
 ## ledger-live (Ledger Hardware Wallet Manager)
