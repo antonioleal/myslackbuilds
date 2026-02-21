@@ -1,4 +1,4 @@
-*This repo contains my slackbuild scripts, some of which are also published to SlackBuilds.org*
+*My Slackbuild scripts, some of which are published to Slackbuild.org. Here lives also the "0" scipts development environment.*
 
 ---
 
