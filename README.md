@@ -1084,7 +1084,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 3.4.0
+- Version: 3.4.2
 - Homepage: http://www.libsdl.org
 - Code repository: https://github.com/libsdl-org/SDL
 
