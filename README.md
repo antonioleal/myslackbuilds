@@ -1387,7 +1387,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 1.3.0
+- Version: 1.4.0
 - Homepage: https://mpmath.org/
 - Code repository: https://github.com/mpmath/mpmath
 ## python2-enlighten (Progress bar for Python console apps)
