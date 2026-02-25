@@ -18,6 +18,8 @@ slapt-src -i  \
     doublecmd-qt5 \
     mp3gain vorbisgain easymp3gain \
     transgui \
-    winff
+    winff \
+    HeidiSQL \
+    PeaZip
 
 

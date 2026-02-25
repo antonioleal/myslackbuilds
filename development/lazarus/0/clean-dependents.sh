@@ -18,3 +18,6 @@ removepkg doublecmd-qt5
 removepkg mp3gain vorbisgain easymp3gain
 removepkg transgui
 removepkg winff
+removepkg HeidiSQL
+removepkg PeaZip
+

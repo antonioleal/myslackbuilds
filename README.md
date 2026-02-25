@@ -277,7 +277,7 @@
   
 
 - Category: development
-- Version: 4.4
+- Version: 4.6
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
 ## codeblocks (a free C++ and Fortran IDE)
