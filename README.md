@@ -326,6 +326,18 @@
 - Version: 3.40
 - Homepage: https://sourceforge.net/projects/bwbasic
 - Code repository: https://sourceforge.net/projects/bwbasic
+## electron-bin (Library for building cross-platform applications)
+ Electron is an open source library developed by GitHub for building
+ cross-platform desktop applications with HTML, CSS, and JavaScript.
+ Electron accomplishes this by combining Chromium and Node.js into a
+ single runtime and apps can be packaged for Mac, Windows, and Linux.
+ This is electron binary repackaged in Slackware style.
+  
+
+- Category: development
+- Version: 40.0.0
+- Homepage: https://www.electronjs.org/
+- Code repository:
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for
