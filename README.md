@@ -315,6 +315,8 @@
 
 - Category: development
 - Version: 2026.01
+- Homepage: https://github.com/sourcegit-scm/sourcegit
+- Code repository:
 ## zxbasicstudio (an ide for zxbasic)
  ZX Basic Studio is a cross-platform IDE for zxbasic
  This is a work in progress but the development has reached a state
@@ -1025,6 +1027,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://www.opera.com/opera
 - test playback: https://forums.opera.com/topic/30578/ffmpeg-installation-instructions
 
+## abdownloadmanager-bin (Download Manager)
+ https://github.com/amir1376/ab-download-manager
+ https://abdownloadmanager.com
+  
+
+- Category: network
+- Version: 1.8.4
+- Homepage: https://abdownloadmanager.com/
+- Code repository:
 ## waterfox (a fast and private web browser)
  Waterfox is is built with privacy in mind. It does not track you,
  and it doesn't make money from your data.
