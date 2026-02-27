@@ -305,6 +305,16 @@
 - Version: 20260204_3b306af
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
+## sourcegit (GUI client for GIT users)
+ Opensource Git GUI client. Supports SSH access with each remote.
+ This software also supports using OpenAI or other AI service
+ that has an OpenAI compatible HTTP API to generate commit message.
+ You need configurate the service in Preference window
+ HomePage: https://github.com/sourcegit-scm/sourcegit
+  
+
+- Category: development
+- Version: 2026.01
 ## zxbasicstudio (an ide for zxbasic)
  ZX Basic Studio is a cross-platform IDE for zxbasic
  This is a work in progress but the development has reached a state
