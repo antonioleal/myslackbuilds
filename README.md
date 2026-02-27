@@ -1225,6 +1225,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 12.1
 - Homepage: https://github.com/chernandezba/zesarux
 - Code repository:
+## balena-etcher-bin (Flash OS images to SD cards & USB drives)
+ Etcher is a powerful OS image flasher built with web technologies
+ to ensure flashing an SDCard or USB drive is a pleasant and safe
+ experience. It protects you from accidentally writing to your
+ hard-drives, ensures every byte of data was written correctly, and
+ much more. It can also directly flash Raspberry Pi devices that
+ support USB device boot mode.
+ https://www.balena.io/etcher/
+  
+
+- Category: misc
+- Version: 2.1.4
+- Homepage: https://www.balena.io/etcher/
+- Code repository:
 ## swege (Static WEbsite GEnerator)
  Bloat free static website generator written in C99.
  https://github.com/sakhmatd/swege
