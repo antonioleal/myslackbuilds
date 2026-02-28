@@ -35,7 +35,7 @@ NEWVERSION=`lynx -dump index.html | tail -1 |  awk -F "/" '{ print $(NF-1) }'`
 rm -rf index.html
 # test if a valid version number was actually read
 if [ "$NEWVERSION" = "0" ]; then
-    echo "is at version $VERSION (bypass, could not read version number)"
+    echo -n "is at version $VERSION (bypass, could not read version number)"
     export RET0=""
     return
 fi
@@ -46,7 +46,7 @@ URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBA
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]; then
-    echo "is at version $VERSION"
+    echo -n "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -54,7 +54,7 @@ else
     ################################
     if [ "$ARG0" = "TESTONLY" ]
     then
-        echo "has a new version $NEWVERSION"
+        echo -n "has a new version $NEWVERSION"
         export RET0=$NEWVERSION
         return
     fi
@@ -89,6 +89,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "has a new version $NEWVERSION"
+    echo -n "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

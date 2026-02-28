@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Note: In order for this to work please install the jq package from SBo
-
+set +x
 echo
 counter=0
 cd ~/slackware-builds/myslackbuilds
@@ -38,6 +38,36 @@ do
     CATEGORY=${PWD##*/}
     cd $PKGNAME
 
+    # Check if SBO Admins have changed this package (if existing in SBo)
+    if [ -d  $HOME/slackware-builds/slackbuilds/$CATEGORY/$PKGNAME ]
+        then
+        CHANGED=$(diff -r       \
+        --exclude='0'           \
+        --exclude='*.tar.gz'    \
+        --exclude='*.tar'       \
+        --exclude='*.tgz'       \
+        --exclude='*.txz'       \
+        --exclude='*.xz'        \
+        --exclude='*.bz2'       \
+        --exclude='*.pdf'       \
+        --exclude='*.zip'       \
+        --exclude='*.7z'        \
+        --exclude='*.md'        \
+        --exclude='*.jar'       \
+        --exclude='*.whl'       \
+        --exclude='*.sf3'       \
+        --exclude='*.xpi'       \
+        --exclude='*.deb'       \
+        --exclude='*.rpm'       \
+        --exclude='*.run'       \
+        --exclude='*.exe'       \
+        --exclude='*.AppImage'  \
+        --exclude='*.cmake'     \
+        --exclude='silk/silk'   \
+        ~/slackware-builds/myslackbuilds/$CATEGORY/$PKGNAME  \
+        ~/slackware-builds/slackbuilds/$CATEGORY/$PKGNAME | head -1)
+    fi
+
     counter=$((counter+1))
 
     if [ -f 0/updater ]; then
@@ -45,6 +75,11 @@ do
         printf '%-15s %-30s ' $CATEGORY $PKGNAME
         export ARG0="TESTONLY"
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater
+        if ! [ "$CHANGED" == "" ]
+        then
+            echo -n -e "\e[5;31m SBo change detected\e[0m"
+        fi
+        echo
         if ! [ "$RET0" = "" ]
         then
             read -p "Spawn work Konsole ? (Y/n) " op
@@ -54,7 +89,12 @@ do
             fi
         fi
     else
-        printf '%-15s %-30s (bypass, has no updater)\n' $CATEGORY $PKGNAME
+        printf '%-15s %-30s (bypass, has no updater)' $CATEGORY $PKGNAME
+        if ! [ "$CHANGED" == "" ]
+        then
+            echo -n -e "\e[5;31m SBo change detected\e[0m"
+        fi
+        echo
     fi
 
     read -t 0.01 -n 1 -s && [[ "$REPLY" == "p" ]] && sleep 30

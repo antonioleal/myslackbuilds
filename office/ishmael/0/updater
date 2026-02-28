@@ -38,7 +38,7 @@ URL="https://cpan.metacpan.org/authors/id/S/SA/SAMYOUNG/${TARBALL}"
 VERSION=`cat version`
 if [ "$VERSION" = "$COMMIT" ]
 then
-    echo "is at version $NEWVERSION"
+    echo -n "is at version $NEWVERSION"
     export RET0=""
 else
     ################################
@@ -58,7 +58,7 @@ else
     ################################
     if [ "$ARG0" = "TESTONLY" ]
     then
-        echo "has a new version $NEWVERSION"
+        echo -n "has a new version $NEWVERSION"
         export RET0=$NEWVERSION
         return
     fi
@@ -90,6 +90,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$COMMIT" > version
-    echo "has a new version $NEWVERSION"
+    echo -n "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi

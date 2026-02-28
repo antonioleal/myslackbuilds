@@ -95,6 +95,7 @@ do
                     export ARG0=""
                     source updater
                     cd $CWD
+                    echo
                     read -p "Press [ENTER] to continue." op
                 fi
                 ;;

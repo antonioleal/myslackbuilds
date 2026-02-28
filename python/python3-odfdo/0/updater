@@ -39,7 +39,7 @@ TARBALL64=odfdo-$NEWVERSION.tar.gz
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
-    echo "is at version $VERSION"
+    echo -n "is at version $VERSION"
     export RET0=""
 else
     ################################
@@ -47,7 +47,7 @@ else
     ################################
     if [ "$ARG0" = "TESTONLY" ]
     then
-        echo "has a new version $NEWVERSION"
+        echo -n "has a new version $NEWVERSION"
         export RET0=$NEWVERSION
         return
     fi
@@ -81,6 +81,6 @@ else
 
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
-    echo "has a new version $NEWVERSION"
+    echo -n "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
 fi
