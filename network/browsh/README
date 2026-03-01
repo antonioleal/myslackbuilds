@@ -9,3 +9,5 @@ Browsh is available as a single static binary on all major platforms.
 The only dependency is a recent 57+ version of Firefox.
 
 Pressing F1 opens the documentation, essential to use the browser.
+
+NOTE: This script requires network connection during build.
