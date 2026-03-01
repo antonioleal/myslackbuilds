@@ -11,5 +11,3 @@ If you prefer to build the vanilla version invoke the
 SlackBuild as follows:
 
 SLACKMODS=no ./xAce.SlackBuild
-
-Homepage at https://lawrencewoodman.github.io/xAce/

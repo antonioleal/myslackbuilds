@@ -883,6 +883,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  of Unix. It was written by Edward Patel and based on a ZX81 emulator
  called xz81 written by Russell Marks, which was in turn based on
  Ian Collier's xz80, a ZX Spectrum emulator for X.
+ Homepage at https://lawrencewoodman.github.io/xAce/
   
 
 - Category: system
