@@ -1102,6 +1102,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  define variables and define and execute individual words.
  kForth-32 provides a large subset of the Forth-2012 specification
  and includes some useful extensions.
+ https://github.com/mynenik/kForth-32
   
 
 - Category: development
