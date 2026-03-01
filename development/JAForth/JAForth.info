@@ -1,5 +1,5 @@
 PRGNAM="JAForth"
-VERSION="20250117_bfedbd4"
+VERSION="20250115_bfedbd4"
 HOMEPAGE="https://codeberg.org/pgimeno/JAForth"
 DOWNLOAD="https://codeberg.org/pgimeno/JAForth/archive/bfedbd4263e5df4e79bd8b897c00e235da3f3319.tar.gz \
           https://raw.githubusercontent.com/antonioleal/myslackbuilds/main/development/JAForth/ace.rom.tar.gz"

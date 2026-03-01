@@ -1249,7 +1249,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 20250117_bfedbd4
+- Version: 20250115_bfedbd4
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
 ## gcc-opt (Base GCC package with C support)
