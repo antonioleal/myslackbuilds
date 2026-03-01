@@ -787,6 +787,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 ## CanAce (A Jupiter Ace emulator for Linux)
  CanAce is a fork by Lawrence Woodman of xAce featuring a
  tcl frontend and some fixes to the original source.
+ Homepage at https://github.com/lawrencewoodman/CanAce/
   
 
 - Category: system

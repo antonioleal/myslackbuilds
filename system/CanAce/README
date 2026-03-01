@@ -16,5 +16,3 @@ If you prefer to build the vanilla
 version invoke the SlackBuild as follows:
 
 SLACKMODS=no ./CanAce.SlackBuild
-
-Homepage at https://github.com/lawrencewoodman/CanAce/
