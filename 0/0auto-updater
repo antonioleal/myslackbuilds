@@ -77,8 +77,8 @@ do
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater
         if ! [ "$CHANGED" == "" ]
         then
-            #echo -n -e "\e[5;31m SBo change detected\e[0m"
-            echo -n -e "\033[0;31m SBo diff\e[0m"
+            #echo -n -e "\e[5;31m, SBo diff\e[0m"
+            echo -n -e "\033[0;31m, SBo diff\e[0m"
         fi
         echo
         if ! [ "$RET0" = "" ]
@@ -93,8 +93,8 @@ do
         printf '%-15s %-30s (bypass, has no updater)' $CATEGORY $PKGNAME
         if ! [ "$CHANGED" == "" ]
         then
-            #echo -n -e "\e[5;31m SBo change detected\e[0m"
-            echo -n -e "\033[0;31m SBo diff\e[0m"
+            #echo -n -e "\e[5;31m, SBo diff\e[0m"
+            echo -n -e "\033[0;31m, SBo diff\e[0m"
         fi
         echo
     fi
