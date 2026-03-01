@@ -83,14 +83,16 @@ do
         echo
         if ! [ "$RET0" = "" ]
         then
-            read -p "Spawn work Konsole ? (Y/n) " op
+            echo -n -e "\033[32mSpawn work Konsole ? (Y/n)\033[0m "
+            read op
             if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]
             then
                 konsole --workdir `dirname ~/slackware-builds/myslackbuilds/$updaterdir`
             fi
         fi
     else
-        printf '%-15s %-30s (bypass, has no updater)' $CATEGORY $PKGNAME
+        printf '%-15s %-30s' $CATEGORY $PKGNAME
+        echo -n -e "\033[0;33m has no updater script\e[0m"
         if ! [ "$CHANGED" == "" ]
         then
             #echo -n -e ",\e[5;31m SBo diff\e[0m"
