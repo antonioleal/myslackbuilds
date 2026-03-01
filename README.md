@@ -859,6 +859,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  Management Unit (MMU) and the BIOS which supports CP/M 3.1.
  YAZE-AG is a Z80-CPU-Emulator and NOT a CP/M-Emulator!
  Inside the Emulator runs an original CP/M or a replacement of CP/M.
+ Please visit homepage for further reading on this excelent emulator.
   
 
 - Category: system
