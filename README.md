@@ -1309,6 +1309,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  version also supports the Motorola 680x0. The following operating
  systems are supported: Linux, FreeBSD, Mac OS X/Darwin, DOS, Win32,
  Win64, WinCE, OS/2, Netware (libc and classic) and MorphOS.
+ Homepage: http://www.freepascal.org/
   
 
 - Category: development
