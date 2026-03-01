@@ -2,7 +2,7 @@
 
 # Slackware 0script to run all updaters
 
-# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -80,11 +80,10 @@ do
             #echo -n -e ",\e[5;31m SBo diff\e[0m"
             echo -n -e ",\033[0;31m SBo diff\e[0m"
         fi
-        echo
         if ! [ "$RET0" = "" ]
         then
-            echo -n -e "\033[32mSpawn work Konsole ? (Y/n)\033[0m "
-            read op
+            echo -n -e ", \033[32mSpawn ? (Y/n)\033[0m "
+            read -n 1 op
             if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]
             then
                 konsole --workdir `dirname ~/slackware-builds/myslackbuilds/$updaterdir`
@@ -98,9 +97,10 @@ do
             #echo -n -e ",\e[5;31m SBo diff\e[0m"
             echo -n -e ",\033[0;31m SBo diff\e[0m"
         fi
-        echo
     fi
-
+    # Move to the next line, ready for the next package:
+    echo
+    # Each "p" keypress will pause for 30 seconds
     read -t 0.01 -n 1 -s && [[ "$REPLY" == "p" ]] && sleep 30
 done
 echo
