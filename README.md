@@ -1161,7 +1161,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 3.4.17
+- Version: 3.4.21
 - Homepage: https://sqlitestudio.pl/
 - Code repository:
 
