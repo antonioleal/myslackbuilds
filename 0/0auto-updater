@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Note: In order for this to work please install the jq package from SBo
-set +x
+
 echo
 counter=0
 cd ~/slackware-builds/myslackbuilds
