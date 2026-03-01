@@ -29,8 +29,38 @@ ends tragically (optionally you can choose to start the current
 stage over); otherwise, it ends generally if the player's last
 cannon is destroyed by the enemy's projectiles.
 
+** Options **
+
+- You can toggle the bezel on/off
+- You can toggle the background on/off
+- You can choose whether to start a game with 3, 4, 5 or 6 lives
+- You can choose at which score to earn an extra life
+- You can choose whether, after the alien invasion has taken place,
+  the game should end or the current stage should start over
+- You can toggle the autofire on/off
+- There are 2 difficulty levels to choose from: Easy, Normal
+
+** Controls **
+
+- Arrow keys Controller lever: Move laser cannon left/right
+- Spacebar, Ctrl keys, Any controller button: Fire
+- P: Pause
+- Home: Stop game and return to title screen
+- Shift+Del: Reset ranking (while the top scores are displayed)
+- Esc: Exit game
+
+You can also use the WASD or IJKL keys as directional keys, and
+the Z or M keys as fire button.
+The gamepad D-Pad can also be used.
+
 ** Game License **
 
 This game is developed by LC-Games, authored by Luca Carminati.
 Redistribution has been granted to Antonio Leal as stated in
 /usr/doc/space-invaders-(version)/redistribution_permission.pdf
+
+If you like the game please donate at:
+
+        https://lowcarb.itch.io/space-invaders
+
+Donations to the author are appreciated!
