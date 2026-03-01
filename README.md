@@ -230,6 +230,7 @@
  powerful office suite. It is deeply compatible with all of the
  latest Microsoft Office file formats. It can easily open and read
  the documents created with Microsoft Office.
+ Homepage: https://linux.wps.com/
   
 
 - Category: office
@@ -244,6 +245,7 @@
  music arrangement and non-linear (clip-based) production. It has
  multi-monitor and touch screen support. Bitwig is notable for its
  strong modulation and automation capabilities.
+ Homepage at https://www.bitwig.com/
   
 
 - Category: audio
@@ -272,6 +274,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  a lightweight audio & MIDI server and a fully documented
  user-space API to access either the server or the hardware
  directly in a uniform way.
+ https://sndio.org/
   
 
 - Category: audio
