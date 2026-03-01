@@ -1577,6 +1577,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  FreeDesktop autostart specifications. You can define which desktop to
  start applications for (e.g. GNOME, XFCE, etc) in configuration file
  (~/.config/dapper.conf) or from command line.
+ https://github.com/limine-bootloader/limine
   
 
 - Category: desktop
