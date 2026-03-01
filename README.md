@@ -1039,6 +1039,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  highly portable system simulators and to publish them as freeware on
  the Internet, with freely available copies of significant or
  representative software.
+ Homepage: http://simh.trailing-edge.com/
   
 
 - Category: misc
