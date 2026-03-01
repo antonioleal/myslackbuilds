@@ -1,2 +1,0 @@
-- Homepage: https://gcc.gnu.org/
-- Code repository: https://ftp.gnu.org/gnu/gcc
