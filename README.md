@@ -1145,6 +1145,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  Code generation is supported for C++, Python, XRC, Lua and PHP.
  Additionally, the import and export of XRC code is possible.
  To support additional widgets, custom plugins can be used.
+ Homepage at https://github.com/wxFormBuilder/wxFormBuilder
   
 
 - Category: development
