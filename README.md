@@ -1460,6 +1460,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
  Code::Blocks is a free C++ and Fortran IDE built to meet the most
  demanding needs of its users. It is designed to be very extensible
  and fully configurable.
+ Homepage: http://www.codeblocks.org/
   
 
 - Category: development
