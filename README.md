@@ -1032,7 +1032,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 1.8.4
+- Version: 1.8.7
 - Homepage: https://abdownloadmanager.com/
 - Code repository:
 ## waterfox (a fast and private web browser)
