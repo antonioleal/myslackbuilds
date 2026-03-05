@@ -475,7 +475,7 @@
   
 
 - Category: development
-- Version: 12.27
+- Version: 12.33
 - Homepage: https://smallbasic.github.io
 - Code repository: https://github.com/smallbasic/SmallBASIC
 ## SQLiteStudio (SQLite database manager written in C++ using Qt)
