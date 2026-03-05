@@ -73,22 +73,10 @@ tar xvfz $CWD/${PRGNAM}-${VERSION/./_}.tar.gz
 # Extract submodules
 (
     cd ${PRGNAM}-${VERSION/./_}/src/lib
-
-    tar xvf $CWD/jsmn-25647e692c7906b96ffd2b05ca54c097948e879c.tar.gz
-    mv jsmn-25647e692c7906b96ffd2b05ca54c097948e879c/* jsmn
-    rm -rf jsmn-25647e692c7906b96ffd2b05ca54c097948e879c
-
-    tar xvf $CWD/lodepng-17d08dd26cac4d63f43af217ebd70318bfb8189c.tar.gz
-    mv lodepng-17d08dd26cac4d63f43af217ebd70318bfb8189c/* lodepng/
-    rm -rf lodepng-17d08dd26cac4d63f43af217ebd70318bfb8189c
-
-    tar xvf $CWD/miniaudio-350784a9467a79d0fa65802132668e5afbcf3777.tar.gz
-    mv miniaudio-350784a9467a79d0fa65802132668e5afbcf3777/* miniaudio
-    rm -rf miniaudio-350784a9467a79d0fa65802132668e5afbcf3777
-
-    tar xvf $CWD/stb-f58f558c120e9b32c217290b80bad1a0729fbb2c.tar.gz
-    mv stb-f58f558c120e9b32c217290b80bad1a0729fbb2c/* stb
-    rm -rf stb-f58f558c120e9b32c217290b80bad1a0729fbb2c
+    tar xvf $CWD/jsmn-25647e692c7906b96ffd2b05ca54c097948e879c.tar.gz --strip-components=1 -C jsmn
+    tar xvf $CWD/lodepng-17d08dd26cac4d63f43af217ebd70318bfb8189c.tar.gz  --strip-components=1 -C lodepng
+    tar xvf $CWD/miniaudio-350784a9467a79d0fa65802132668e5afbcf3777.tar.gz  --strip-components=1 -C miniaudio
+    tar xvf $CWD/stb-f58f558c120e9b32c217290b80bad1a0729fbb2c.tar.gz  --strip-components=1 -C stb
 )
 
 fixperms() {
@@ -102,17 +90,15 @@ fixperms() {
 
 export CFLAGS="$SLKCFLAGS"
 export CXXFLAGS="$SLKCFLAGS"
-
 # Build statical FLTK libraries
 (
     cd $FLTKTARBALL
     fixperms
     ./autogen.sh
     ./configure --prefix=/tmp/$FLTKTARBALL
-    make -j7
+    make
     make install
 )
-
 cd ${PRGNAM}-${VERSION/./_}
 fixperms
 
@@ -122,15 +108,15 @@ patch src/ui/textedit.cpp $CWD/textedit.cpp.patch
 # Build Console Version
 ./autogen.sh
 ./configure
-make -j7
+make
 make install DESTDIR=$PKG
 
 # Build SDL Version
 make clean
 ./configure --enable-sdl
-make -j1
+make
 make install DESTDIR=$PKG
-mv $PKG/usr/local/share/applications/io.github.smallbasic.desktop $PKG/usr/local/share/applications/smallbasic-sdl.desktop
+mv $PKG/usr/local/share/applications/io.github.smallbasic.SmallBASIC.desktop $PKG/usr/local/share/applications/smallbasic-sdl.desktop
 sed -i -e "s/SmallBASIC/SmallBASIC (SDL)/" $PKG/usr/local/share/applications/smallbasic-sdl.desktop
 
 # Build FLTK Version
