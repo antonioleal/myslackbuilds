@@ -2,7 +2,7 @@
 
 # Slackware build script for SmallBASIC
 
-# Copyright 2024 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2024-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -116,8 +116,6 @@ make clean
 ./configure --enable-sdl
 make
 make install DESTDIR=$PKG
-mv $PKG/usr/local/share/applications/io.github.smallbasic.SmallBASIC.desktop $PKG/usr/local/share/applications/smallbasic-sdl.desktop
-sed -i -e "s/SmallBASIC/SmallBASIC (SDL)/" $PKG/usr/local/share/applications/smallbasic-sdl.desktop
 
 # Build FLTK Version
 make clean
@@ -125,14 +123,12 @@ export PATH=/tmp/$FLTKTARBALL/bin:$PATH
 CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --enable-fltk
 make
 make install DESTDIR=$PKG
-mv $PKG/usr/local/share/applications/io.github.smallbasic.desktop $PKG/usr/local/share/applications/smallbasic-fltk.desktop
-sed -i -e "s/SmallBASIC/SmallBASIC (FLTK)/" $PKG/usr/local/share/applications/smallbasic-fltk.desktop
 
 # Place files at the correct locations
-mkdir -p $PKG/usr/bin -p $PKG/usr/share/pixmaps $PKG/usr/share/applications $PKG/usr/share/$PRGNAM
-mv $PKG/usr/local/bin/* $PKG/usr/bin
-mv $PKG/usr/local/share/icons/hicolor/128x128/apps/sb-desktop-128x128.png $PKG/usr/share/pixmaps
-mv $PKG/usr/local/share/applications/* $PKG/usr/share/applications
+mkdir -p $PKG/usr/share
+mv $PKG/usr/local/bin $PKG/usr
+mv $PKG/usr/local/share/icons $PKG/usr/share
+mv $PKG/usr/local/share/applications $PKG/usr/share
 
 # Clean-up
 rm -rf $PKG/usr/local
