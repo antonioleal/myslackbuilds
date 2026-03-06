@@ -15,6 +15,6 @@ MD5SUM="5a1196548c62dbe243293f20b171f8f8 \
         a69d2b9417c1b30a84f4537eb5d868ca"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="SDL3"
 MAINTAINER="Antonio Leal"
 EMAIL="antonioleal@yahoo.com"
