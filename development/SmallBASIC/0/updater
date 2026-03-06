@@ -35,8 +35,6 @@ TAG=$(gh release view -R smallbasic/SmallBASIC --json tagName --jq '.tagName')
 NEWVERSION=${TAG//_/\.}
 TARBALL1=smallbasic-${NEWVERSION}.tar.gz
 URL1="https://github.com/smallbasic/SmallBASIC/releases/download/${TAG}/${TARBALL1}"
-TARBALL2=smallbasic_${NEWVERSION}.zip
-URL2="https://github.com/smallbasic/SmallBASIC/releases/download/${TAG}/${TARBALL2}"
 
 
 VERSION=`cat version`
@@ -50,47 +48,8 @@ else
     ################################
     if [ "$ARG0" = "TESTONLY" ]
     then
-        echo -n "has a new version $NEWVERSION"
+        echo -n "has a new version $NEWVERSION, but you have to update it manually"
         export RET0=$NEWVERSION
         return
     fi
-    ################################
-    # download tarball             #
-    ################################
-    wget $URL1
-    if [ ! -f ./$TARBALL1 ]
-    then
-        echo "File $TARBALL1 not found, aborting..."
-        exit
-    fi
-    wget $URL2
-    if [ ! -f ./$TARBALL2 ]
-    then
-        echo "File $TARBALL2 not found, aborting..."
-        exit
-    fi
-    rm -rf ../small*.tar.gz 2> /dev/null
-    rm -rf ../small*.zip 2> /dev/null
-    mv $TARBALL1 ..
-    mv $TARBALL2 ..
-
-    ################################
-    # write templates              #
-    ################################
-    MD51=`md5sum ../$TARBALL1 | cut -d " " -f 1`
-    MD52=`md5sum ../$TARBALL2 | cut -d " " -f 1`
-
-    sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_tag_/$TAG/g" \
-        -e "s/_md51_/$MD51/g" \
-        -e "s/_md52_/$MD52/g" \
-        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-
-    sed -e "s/_version_/${NEWVERSION}/g" \
-        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-
-    chmod 644 ../${PRGNAM}.SlackBuild
-    echo "$NEWVERSION" > version
-    echo -n "has a new version $NEWVERSION"
-    export RET0=$NEWVERSION
 fi

@@ -48,7 +48,7 @@
   
 
 - Category: office
-- Version: 26.2.1.2
+- Version: 26.2.2.1
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 ## wps-office (an office productivity suite for Linux)
