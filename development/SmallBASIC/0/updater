@@ -36,20 +36,13 @@ NEWVERSION=${TAG//_/\.}
 TARBALL1=smallbasic-${NEWVERSION}.tar.gz
 URL1="https://github.com/smallbasic/SmallBASIC/releases/download/${TAG}/${TARBALL1}"
 
-
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo -n "is at version $VERSION"
     export RET0=""
 else
-    ################################
-    # check for testonly parameter #
-    ################################
-    if [ "$ARG0" = "TESTONLY" ]
-    then
-        echo -n "has a new version $NEWVERSION, but you have to update it manually"
-        export RET0=$NEWVERSION
-        return
-    fi
+    echo "$PRGNAM thereis a new version $VERSION, but you need to update it manually."
+    echo $NEWVERSION > version
+    export RET0=$NEWVERSION
 fi
