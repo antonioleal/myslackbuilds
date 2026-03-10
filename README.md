@@ -993,7 +993,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 145.0.7632.159
+- Version: 146.0.7680.71
 - Homepage: http://www.google.com/chrome/
 - Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
 ## browsh (Private Web Browser)
