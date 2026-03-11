@@ -1106,6 +1106,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.10.0
 - Homepage: https://github.com/antonioleal/qt-installer-script
 - Code repository:
+## libupnp (Portable SDK for UPnP Devices)
+ The portable SDK for UPnP Devices (libupnp) provides developers with
+ an API and open source code for building control points, devices, and
+ bridges that are compliant with Version 1.0 of the Universal Plug and
+ Play Device Architecture Specification and support several operating
+ systems like Linux, *BSD, Solaris and others.
+ libupnp is used in UPnP implentations in Open Source projects over the
+ World. It is 100% compatible fork of original libupnp.
+  
+
+- Category: libraries
+- Version: 1.14.12
 ## SDL3 (Simple DirectMedia Layer Version 3)
  Simple DirectMedia Layer is a cross-platform development library
  designed to provide low-level access to audio, keyboard, mouse,
