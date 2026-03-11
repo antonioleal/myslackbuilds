@@ -68,7 +68,7 @@
   
 
 - Category: office
-- Version: 2.7.0
+- Version: 2.7.5
 - Homepage: https://sigil-ebook.com/pageedit/
 - Code repository:
 ## openoffice.org (a full-featured open-source office suite)
