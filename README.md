@@ -1202,6 +1202,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20260104_bb7b488
 - Homepage: https://github.com/pcrow/atari_8bit_utils
 - Code repository:
+## lutris (Open Gaming Platform)
+ Lutris is an open gaming platform for Linux. It helps you install
+ and manage your games in a unified interface.  The goal is to support
+ every game which runs on Linux, from native Windows games (via Wine)
+ to emulators and browser games.
+ Home page: https://lutris.net/
+  
+
+- Category: games
+- Version: 0.5.13
 ## space-invaders (arcade game)
  This game is a tribute to Space Invaders, the famous arcade game
  created by Tomohiro Nishikado in 1978.
