@@ -1014,6 +1014,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.19.1b
 - Homepage: https://zen-browser.app/
 - Code repository: https://github.com/zen-browser/desktop
+## aMule (multiplatform ed2k client)
+ aMule is a multiplatform ed2k client, fork of the eMule client,
+ using the wxWidgets class library, supporting Linux, *BSD platforms,
+ Solaris, *MacOSX and *Win32 (*soon). It was originally forked from
+ the xMule project, which in turn was forked from the lMule project.
+  
+
+- Category: network
+- Version: 2.3.3
 ## opera (A fast and secure web browser)
  Opera is a graphical Web browser available on several platforms.
  The desktop version runs on GNU/Linux and FreeBSD. Versions for
