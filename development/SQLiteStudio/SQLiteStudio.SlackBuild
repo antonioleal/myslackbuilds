@@ -81,7 +81,7 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
 # Make sure sqlite from the official patches/packages is installed
-upgradepkg --install-new $CWD/$SQLITE
+/sbin/upgradepkg --install-new $CWD/$SQLITE
 
 tar xvfz $CWD/$BASENAME-$VERSION.tar.gz
 cd $BUILDDIR
