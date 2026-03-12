@@ -38,9 +38,15 @@ BASENAME=${BASENAME:-sqlitestudio}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) ARCH=i586 ;;
-    arm*) ARCH=arm ;;
-       *) ARCH=$( uname -m ) ;;
+    i?86) ARCH=i586
+          SQLITE=sqlite-3.50.4-i586-2_slack15.0.txz
+          ;;
+    arm*) echo "Unsupported $ARCH architecture."
+          exit 1
+          ;;
+       *) ARCH=$( uname -m )
+          SQLITE=sqlite-3.50.4-x86_64-2_slack15.0.txz
+          ;;
   esac
 fi
 
@@ -73,6 +79,9 @@ BUILDDIR=$TMP/$BASENAME-$VERSION
 rm -rf $PKG $BUILDDIR
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+
+# Make sure sqlite from the official patches/packages is installed
+upgradepkg --install-new $CWD/$SQLITE
 
 tar xvfz $CWD/$BASENAME-$VERSION.tar.gz
 cd $BUILDDIR
