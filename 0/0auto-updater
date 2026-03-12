@@ -26,6 +26,8 @@
 
 echo
 counter=0
+modified=0
+
 cd ~/slackware-builds/myslackbuilds
 for updaterdir in `find . -name "0" -print`
 do
@@ -79,6 +81,7 @@ do
         then
             #echo -n -e ",\e[5;31m SBo diff\e[0m"
             echo -n -e ",\033[0;31m SBo diff\e[0m"
+            modified=$((modified+1))
         fi
         if ! [ "$RET0" = "" ]
         then
@@ -96,6 +99,7 @@ do
         then
             #echo -n -e ",\e[5;31m SBo diff\e[0m"
             echo -n -e ",\033[0;31m SBo diff\e[0m"
+            modified=$((modified+1))
         fi
     fi
     # Move to the next line, ready for the next package:
@@ -104,4 +108,7 @@ do
     read -t 0.01 -n 1 -s && [[ "$REPLY" == "p" ]] && sleep 30
 done
 echo
-echo "Checked $counter packages. Done."
+echo "Checked $counter packages, found $modified modified."
+echo "Done."
+echo
+
