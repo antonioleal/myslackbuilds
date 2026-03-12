@@ -74,7 +74,7 @@ do
 
     if [ -f 0/updater ]; then
         RET0=""
-        printf '%-15s %-30s ' $CATEGORY $PKGNAME
+        printf '%-30s %-15s ' $PKGNAME $CATEGORY
         export ARG0="TESTONLY"
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater
         if ! [ "$CHANGED" == "" ]
@@ -93,8 +93,8 @@ do
             fi
         fi
     else
-        printf '%-15s %-30s' $CATEGORY $PKGNAME
-        echo -n -e "\033[0;33m has no updater script\e[0m"
+        printf '%-30s %-15s ' $PKGNAME $CATEGORY
+        echo -n -e "\033[0;33mhas no updater script\e[0m"
         if ! [ "$CHANGED" == "" ]
         then
             #echo -n -e ",\e[5;31m SBo diff\e[0m"
