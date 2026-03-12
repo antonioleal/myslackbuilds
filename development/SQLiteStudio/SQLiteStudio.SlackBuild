@@ -2,7 +2,7 @@
 
 # Slackware build script for the SQLiteStudio
 
-# Copyright 2023-2024 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -81,7 +81,8 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
 # Make sure sqlite from the official patches/packages is installed
-/sbin/upgradepkg --install-new $CWD/$SQLITE
+cp $CWD/*.txz .
+/sbin/upgradepkg --install-new $SQLITE
 
 tar xvfz $CWD/$BASENAME-$VERSION.tar.gz
 cd $BUILDDIR
