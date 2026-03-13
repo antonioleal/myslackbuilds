@@ -26,7 +26,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=google-chrome
-VERSION=${VERSION:-146.0.7680.71}
+VERSION=${VERSION:-146.0.7680.75}
 RELEASE=stable		# stable, beta, or unstable
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
