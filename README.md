@@ -1023,6 +1023,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: network
 - Version: 2.3.3
+- Homepage: http://www.amule.org
+- Code repository:
 ## opera (A fast and secure web browser)
  Opera is a graphical Web browser available on several platforms.
  The desktop version runs on GNU/Linux and FreeBSD. Versions for
@@ -1118,6 +1120,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: libraries
 - Version: 1.14.12
+- Homepage: http://pupnp.sourceforge.net/
+- Code repository:
 ## SDL3 (Simple DirectMedia Layer Version 3)
  Simple DirectMedia Layer is a cross-platform development library
  designed to provide low-level access to audio, keyboard, mouse,
@@ -1181,6 +1185,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20.1.0
 - Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
 - Code repository:
+## libupnp-legacy (Portable SDK for UPnP Devices)
+ The portable SDK for UPnP Devices (libupnp-legacy) provides developers
+ with an API and open source code for building control points, devices,
+ and bridges that are compliant with Version 1.0 of the Universal Plug
+ and Play Device Architecture Specification and support several
+ operating systems like Linux, *BSD, Solaris and others.
+ libupnp-legacy is the legacy old ABI version.
+  
+
+- Category: libraries
+- Version: 1.6.25
+- Homepage: http://pupnp.sourceforge.net/
+- Code repository:
 ## vst3sdk (Software development kit for VST3 plug-ins)
  This allows plug-in developers to create plug-ins in VST 3 format and
  host developers to load VST 3 plug-ins into a DAW or audio editor. 
@@ -1224,6 +1241,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: games
 - Version: 0.5.13
+- Homepage: https://lutris.net/
+- Code repository:
 ## space-invaders (arcade game)
  This game is a tribute to Space Invaders, the famous arcade game
  created by Tomohiro Nishikado in 1978.
