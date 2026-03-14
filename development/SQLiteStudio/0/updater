@@ -39,10 +39,21 @@ NEWVERSION=${REALVERSION/-/_}
 TARBALL=sqlitestudio-$REALVERSION.tar.gz
 URL="https://github.com/pawelsalawa/sqlitestudio/archive/$TAG/$TARBALL"
 
+check_sqlite_version() {
+    sqlite3ver=$(sqlite3 --version  | awk '{print $1}')
+    source ../$PRGNAM.info
+    sqlitechanged=`echo $DOWNLOAD | grep "$sqlite3ver"`
+    if [ "$sqlitechanged" = "" ]
+    then
+        echo -n -e ",\033[0;31m warning: pat changed sqlite3 $sqlite3ver\e[0m"
+    fi
+}
+
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo -n "is at version $VERSION"
+    check_sqlite_version
     export RET0=""
 else
     ################################
@@ -51,6 +62,7 @@ else
     if [ "$ARG0" = "TESTONLY" ]
     then
         echo -n "has a new version $NEWVERSION"
+        check_sqlite_version
         export RET0=$NEWVERSION
         return
     fi
@@ -83,5 +95,6 @@ else
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo -n "has a new version $NEWVERSION"
+    check_sqlite_version
     export RET0=$NEWVERSION
 fi
