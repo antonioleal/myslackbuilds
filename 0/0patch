@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-EDITOR=geany
+EDITOR="geany -i"
 
 CWD="$(echo `pwd`)"
 PKGNAME=${PWD##*/}
@@ -40,15 +40,16 @@ if [ "$1" = "" ]; then
 fi 
 
 file="${1##*/}"
+echo
+echo "Creating patch in folder patches/$file.patch"
+echo
+echo "Apply the patch in the SlackBuild with:"
+echo "	patch $1 \$CWD/patches/$file.patch"
+echo
 
 mkdir -p patches
 mkdir -p 0/patched
+
 cp $1 0/patched/$file.new
-$EDITOR 0/patched/$file.new
+$EDITOR 0/patched/$file.new > /dev/null 2>&1
 diff -u $1 0/patched/$file.new > patches/$file.patch
-echo
-echo "Created patch in folder patches/$file.patch"
-echo
-echo "Apply the patch in the SlackBuild with:"
-echo "	patch -p1 < \$CWD/patches/$file.patch"
-echo
