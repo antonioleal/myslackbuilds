@@ -50,5 +50,5 @@ echo
 echo "Created patch in folder patches/$file.patch"
 echo
 echo "Apply the patch in the SlackBuild with:"
-echo "	patch -p1 < patches/$file.patch"
+echo "	patch -p1 < $CWD/patches/$file.patch"
 echo
