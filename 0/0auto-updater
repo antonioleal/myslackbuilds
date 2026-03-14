@@ -27,6 +27,7 @@
 echo
 counter=0
 modified=0
+upgradable=0
 
 cd ~/slackware-builds/myslackbuilds
 for updaterdir in `find . -name "0" -print`
@@ -91,6 +92,7 @@ do
             then
                 konsole --workdir `dirname ~/slackware-builds/myslackbuilds/$updaterdir`
             fi
+            upgradable=$((upgradable+1))
         fi
     else
         printf '%-30s %-15s ' $PKGNAME $CATEGORY
@@ -108,7 +110,7 @@ do
     read -t 0.01 -n 1 -s && [[ "$REPLY" == "p" ]] && sleep 30
 done
 echo
-echo "Checked $counter packages, found $modified modified."
+echo "Checked $counter packages, found $modified modified, $upgradable upgradable."
 echo "Done."
 echo
 
