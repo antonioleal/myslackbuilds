@@ -40,6 +40,7 @@ TARBALL=sqlitestudio-$REALVERSION.tar.gz
 URL="https://github.com/pawelsalawa/sqlitestudio/archive/$TAG/$TARBALL"
 
 check_sqlite_version() {
+	set +e
     sqlite3ver=$(sqlite3 --version  | awk '{print $1}')
     source ../$PRGNAM.info
     sqlitechanged=`echo $DOWNLOAD | grep "$sqlite3ver"`
@@ -47,6 +48,7 @@ check_sqlite_version() {
     then
         echo -n -e ",\033[0;31m warning: pat changed sqlite3 $sqlite3ver\e[0m"
     fi
+    set -e
 }
 
 VERSION=`cat version`
