@@ -1,0 +1,31 @@
+ip link set eth1 promisc on
+ifconfig eth0 promisc
+
+-------
+
+pcap
+
+vde2 install
+sudo apt-get install libvdeplug-dev
+
+
+----
+
+sim> show xq eth
+
+
+----
+checkout for networking tun/tap
+http://www.openvmshobbyist.com/forum/viewthread.php?forum_id=162&thread_id=2341
+
+8GB system disks:
+
+set rq0 ra92
+set -L rq0 rauser=16777216
+attach rq0 dua0.dsk
+
+16GB data disks:
+
+set rqc0 ra92
+set -L rqc0 rauser=33553408
+attach rqc0 duc0.dsk

@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# Slackware script to setup the 0 scripts environment
+
+# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+set -e
+if [ "$(id -u)" == "0" ]; then
+   echo "This script cannot be run as root" 1>&2
+   exit 1
+fi
+clear
+echo "Installing the workspace environment in $HOME/slackware-builds"
+echo
+# rm -rf /tmp/SBo
+
+deploy() { # the parameters are:  $1="category" $2="package name" $3="slackbuild extension"
+    mkdir -p /tmp/0
+    cd /tmp/0
+    wget https://slackbuilds.org/slackbuilds/15.0/$1/$2.$3
+    tar xvf $2.$3
+    cd $2
+    source $2.info
+    set +e
+    wget $DOWNLOAD
+    wget $DOWNLOAD_x86_64
+    set -e
+    ./$2.SlackBuild
+    PKG=`ls -1 /tmp/$2*.t?z | sort -r | head -1`
+    upgradepkg --install-new --reinstall $PKG
+}
+FUNC=$(declare -f deploy)
+
+su - -c "
+    rm -rf /tmp/0
+    $FUNC
+    deploy development github-cli tar.gz
+    deploy system sbo-maintainer-tools tar.gz
+    deploy system jq tar.gz
+    deploy development meld tar.gz
+"
+
+mkdir -p $HOME/slackware-builds
+cd $HOME/slackware-builds
+git clone https://github.com/antonioleal/myslackbuilds
+git clone https://github.com/antonioleal/slackbuilds
+
+touch $HOME/.bashrc
+if ! grep -qF 'myslackbuilds' ~/.bashrc; then
+    echo 'export PATH=$PATH:$HOME/slackware-builds/myslackbuilds/0' >> ~/.bashrc
+fi
+
+echo
+echo "Make sure 'kde' and 'ark' are available."
+echo "$HOME/slackbuilds-builds/myslackbuilds/0 has beed added to"
+echo "your PATH in .bashrc. Please reopen console."
+echo
+echo "Done."

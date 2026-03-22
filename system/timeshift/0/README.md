@@ -1,0 +1,2 @@
+- Homepage: https://github.com/linuxmint/timeshift
+- Code repository: https://github.com/linuxmint/timeshift

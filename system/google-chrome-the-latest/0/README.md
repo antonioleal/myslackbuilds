@@ -1,0 +1,2 @@
+- Homepage: https://github.com/antonioleal/google-chrome-the-latest
+- Code repository:

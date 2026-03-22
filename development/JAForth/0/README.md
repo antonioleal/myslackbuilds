@@ -1,0 +1,2 @@
+- Homepage: https://codeberg.org/pgimeno/JAForth
+- Code repository: https://codeberg.org/pgimeno/JAForth

@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Slackware utikity to patch a SlackBuild
+
+# Copyright 2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+EDITOR="geany -i"
+
+CWD="$(echo `pwd`)"
+PKGNAME=${PWD##*/}
+
+set -e
+
+if ! [ -f $PKGNAME.info ]; then
+  echo "You must run this script from within a SlackBuild folder."
+  exit 0
+fi
+
+if [ "$1" = "" ]; then
+	echo "Please provide a source file to patch as argument."
+	exit 0
+fi 
+
+file="${1##*/}"
+echo
+echo "Creating patch in folder patches/$file.patch"
+echo
+echo "Apply the patch in the SlackBuild with:"
+echo "	patch $1 \$CWD/patches/$file.patch"
+echo
+
+mkdir -p patches
+mkdir -p 0/patched
+
+cp $1 0/patched/$file.new
+$EDITOR 0/patched/$file.new > /dev/null 2>&1
+diff -u $1 0/patched/$file.new > patches/$file.patch

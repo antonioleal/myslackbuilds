@@ -1,0 +1,7 @@
+xapp
+├ lightdm-slick-greeter  (Isaac Yu <isaacyu@protonmail.com>)
+│ └ lightdm-settings  (Isaac Yu <isaacyu@protonmail.com>)
+├ nemo  (Isaac Yu <isaacyu@protonmail.com>)
+│ └ nemo-fileroller  (Isaac Yu <isaacyu@protonmail.com>)
+├ warpinator  (Olivier Brouckaert <olivier.b@i-services.be>)
+└ xviewer  (Isaac Yu <isaacyu@protonmail.com>)

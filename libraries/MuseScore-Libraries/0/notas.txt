@@ -1,0 +1,22 @@
+
+https://download.qt.io/official_releases/qt/6.9/6.9.3/single/qt-everywhere-src-6.9.3.tar.xz
+
+requer: cmake-opt
+
+
+installing Qt 6
+    sudo apt install qt6-base-dev qt6-base-private-dev qt6-networkauth-dev \
+        qt6-declarative-dev  qt6-svg-dev qt6-tools-dev qt6-5compat-dev \
+        qml6-module-qtqml-statemachine libqt6statemachine6 qt6-scxml-dev libsndfile1-dev
+
+depois de extrair a src
+mkdir a
+cd a
+../configure -prefix /tmp/qt693 -submodules qtbase,qt5compat,qtnetworkauth,qtscxml,qttools,qtdeclarative,qtsvg
+
+# ninja qtbase/all qt5compat/all  qtnetworkauth/all qtscxml/all qttools/all qtdeclarative/all qtsvg/all qtimageformats/all qtqtshadertools/all qtlanguageserver/all qtactiveqt/all
+
+ou melhor
+
+cmake --build . --parallel
+cmake --install .

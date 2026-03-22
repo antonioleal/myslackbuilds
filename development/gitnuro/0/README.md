@@ -1,0 +1,2 @@
+- Homepage: https://gitnuro.com/
+- Code repository: https://github.com/JetpackDuba/Gitnuro/

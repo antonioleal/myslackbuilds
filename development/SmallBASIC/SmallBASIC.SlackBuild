@@ -1,0 +1,148 @@
+#!/bin/bash
+
+# Slackware build script for SmallBASIC
+
+# Copyright 2024-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+cd $(dirname $0) ; CWD=$(pwd)
+
+PRGNAM=SmallBASIC
+VERSION=${VERSION:-12.33}
+BUILD=${BUILD:-2}
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
+
+FLTKTARBALL=fltk-1.4.3
+
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  exit 0
+fi
+
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+else
+  SLKCFLAGS="-O2"
+fi
+
+set -e
+rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+cd $TMP
+rm -rf /tmp/$FLTKTARBALL
+rm -rf $FLTKTARBALL ${PRGNAM}-${VERSION/./_}
+rm -rf $TMP/${VERSION/./_}
+
+tar xvfz $CWD/$FLTKTARBALL-source.tar.gz
+tar xvfz $CWD/${PRGNAM}-${VERSION/./_}.tar.gz
+# Extract submodules
+(
+    cd ${PRGNAM}-${VERSION/./_}/src/lib
+    tar xvf $CWD/jsmn-25647e692c7906b96ffd2b05ca54c097948e879c.tar.gz --strip-components=1 -C jsmn
+    tar xvf $CWD/lodepng-17d08dd26cac4d63f43af217ebd70318bfb8189c.tar.gz  --strip-components=1 -C lodepng
+    tar xvf $CWD/miniaudio-350784a9467a79d0fa65802132668e5afbcf3777.tar.gz  --strip-components=1 -C miniaudio
+    tar xvf $CWD/stb-f58f558c120e9b32c217290b80bad1a0729fbb2c.tar.gz  --strip-components=1 -C stb
+)
+
+fixperms() {
+    chown -R root:root .
+    find -L . \
+    \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+    -o -perm 511 \) -exec chmod 755 {} \; -o \
+    \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+    -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+}
+
+export CFLAGS="$SLKCFLAGS"
+export CXXFLAGS="$SLKCFLAGS"
+# Build statical FLTK libraries
+(
+    cd $FLTKTARBALL
+    fixperms
+    ./autogen.sh
+    ./configure --prefix=/tmp/$FLTKTARBALL
+    make
+    make install
+)
+cd ${PRGNAM}-${VERSION/./_}
+fixperms
+
+# patch lambda by-copy capture default
+patch src/ui/textedit.cpp $CWD/textedit.cpp.patch
+
+# Build Console Version
+./autogen.sh
+./configure
+make
+make install DESTDIR=$PKG
+
+# Build SDL Version
+make clean
+./configure --enable-sdl
+make
+make install DESTDIR=$PKG
+
+# Build FLTK Version
+make clean
+export PATH=/tmp/$FLTKTARBALL/bin:$PATH
+CFLAGS="-I/tmp/$FLTKTARBALL/include" LDFLAGS="-L/tmp/$FLTKTARBALL/lib" ./configure --enable-fltk
+make
+make install DESTDIR=$PKG
+
+# Place files at the correct locations
+mkdir -p $PKG/usr/share
+mv $PKG/usr/local/bin $PKG/usr
+mv $PKG/usr/local/share/icons $PKG/usr/share
+mv $PKG/usr/local/share/applications $PKG/usr/share
+
+# Clean-up
+rm -rf $PKG/usr/local
+rm -rf /tmp/$FLTKTARBALL
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

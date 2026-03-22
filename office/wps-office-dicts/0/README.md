@@ -1,0 +1,2 @@
+- Homepage: https://github.com/LibreOffice/dictionaries/
+- Code repository:

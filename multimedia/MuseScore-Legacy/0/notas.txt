@@ -1,0 +1,2 @@
+cmake --install . --prefix /tmp/pasta
+

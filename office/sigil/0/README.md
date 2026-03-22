@@ -1,0 +1,2 @@
+- Homepage: https://sigil-ebook.com/
+- Code repository:

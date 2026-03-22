@@ -1,0 +1,2 @@
+- Homepage: https://sigil-ebook.com/pageedit/
+- Code repository:

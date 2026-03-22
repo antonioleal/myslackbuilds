@@ -1,0 +1,2 @@
+- Homepage: "http://2484.de/yabasic/"
+- Code repository: "http://2484.de/yabasic/"

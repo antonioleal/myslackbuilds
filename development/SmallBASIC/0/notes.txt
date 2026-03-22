@@ -1,0 +1,17 @@
+cd fltk-1.4.x-20240119-01f2f760
+./autogen.sh
+./configure --prefix=/opt/smallbasic/fltk
+make
+sudo make install
+
+
+For SmallBASIC
+
+export PATH=/opt/smallbasic/fltk/bin/:$PATH
+CFLAGS="-I/opt/smallbasic/fltk/include" LDFLAGS="-L/opt/smallbasic/fltk/lib" ./configure --prefix=/opt/smallbasic --enable-fltk
+
+export PATH=/tmp/fltk-1.4.x-20240119-01f2f760/bin/:$PATH
+CFLAGS="-I/tmp/fltk-1.4.x-20240119-01f2f760/include" LDFLAGS="-L/tmp/fltk-1.4.x-20240119-01f2f760/lib" ./configure --prefix=/opt/smallbasic --enable-fltk
+
+make
+sudo make install

@@ -1,0 +1,2 @@
+- Homepage: https://notepad-plus-plus.org/
+- Code repository:

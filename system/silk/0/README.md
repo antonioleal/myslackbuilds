@@ -1,0 +1,2 @@
+- Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
+- Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk

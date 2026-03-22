@@ -1,0 +1,2 @@
+- Homepage: https://pypi.org/project/gmpy2/
+- Code repository: https://github.com/aleaxit/gmpy

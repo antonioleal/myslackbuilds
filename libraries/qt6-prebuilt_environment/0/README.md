@@ -1,0 +1,2 @@
+- Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
+- Code repository:

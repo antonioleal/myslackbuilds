@@ -1,0 +1,2 @@
+- Homepage: http://www.musescore.org/
+- Code repository: https://github.com/musescore/MuseScore

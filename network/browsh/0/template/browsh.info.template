@@ -1,0 +1,14 @@
+PRGNAM="browsh"
+VERSION="_version_"
+HOMEPAGE="https://www.brow.sh/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/browsh-org/browsh/archive/v_version_/browsh-_version_.tar.gz \
+                 https://github.com/browsh-org/browsh/releases/download/v_version_/browsh-_version_.xpi \
+                 https://go.dev/dl/go1.25.1.linux-amd64.tar.gz"
+MD5SUM_x86_64="_md51_ \
+               _md52_ \
+               _md53_"
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"

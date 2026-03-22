@@ -1,0 +1,2 @@
+- Homepage: https://limine-bootloader.org/
+- Code repository: https://github.com/limine-bootloader/limine

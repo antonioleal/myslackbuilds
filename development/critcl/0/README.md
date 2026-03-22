@@ -1,0 +1,2 @@
+- Homepage: https://andreas-kupries.github.io/critcl/
+- Code repository: https://github.com/andreas-kupries/critcl

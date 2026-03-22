@@ -1,0 +1,2 @@
+- Homepage: https://github.com/xapp-project/xapp-symbolic-icons
+- Code repository:

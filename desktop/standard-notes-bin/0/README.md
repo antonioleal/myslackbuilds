@@ -1,0 +1,2 @@
+- Homepage: https://standardnotes.com/
+- Code repository: https://github.com/standardnotes/app

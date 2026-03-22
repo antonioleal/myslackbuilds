@@ -1,0 +1,2 @@
+- Homepage: https://pypi.org/project/blessed/
+- Code repository:

@@ -1,0 +1,12 @@
+PRGNAM="onlyoffice-desktopeditors"
+VERSION="_version_"
+HOMEPAGE="https://www.onlyoffice.com/apps.aspx"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v_version_/onlyoffice-desktopeditors_amd64.deb \
+                 https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v_version_/onlyoffice-desktopeditors-help_all.deb"
+MD5SUM_x86_64="_md51_ \
+               _md52_"
+REQUIRES=""
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"

@@ -1,0 +1,36 @@
+
+NOTAS VARIADAS:
+----------------------------------------------------------------------------------------------------------------------------
+
+#obter versão tar.gz visitando o site https://opensimh.org/ e vendo o botão de download
+
+o link pode ser construido assim:
+
+https://github.com/open-simh/simh/archive/open-simh-simh-open-simh-151-gce79113.tar.gz
+
+COMMIT=ce791138b5b5365105415a9a1cf4091d6e50a43d
+
+#fazer para obter o nome do ficheiro par o link com:
+git describe
+
+# o que dá:
+open-simh-151-gce791138
+
+# a versão é:
+git rev-list --abbrev-commit HEAD | wc -l | awk '{print $1}'
+
+----------------------------------------------------------------------------------------------------------------------------
+
+uma alternativa seria fazer https://github.com/open-simh/simh/archive/open-simh/simh/open-simh-151-gce79113.tar.gz
+
+----------------------------------------------------------------------------------------------------------------------------
+
+checkout certain zip file from github:
+
+git rev-parse --short HEAD
+
+wget https://github.com/simh/simh/archive/1196827c2d22df4a0369f42c425802314dc8bc9d.zip
+
+                                          ^______^
+
+wget https://github.com/simh/simh/archive/1196827c.zip

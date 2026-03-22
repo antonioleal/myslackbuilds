@@ -1,0 +1,2 @@
+- Homepage: https://github.com/sakhmatd/sdwmbar
+- Code repository:

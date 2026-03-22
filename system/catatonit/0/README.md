@@ -1,0 +1,2 @@
+- Homepage: https://github.com/openSUSE/catatonit
+- Code repository:

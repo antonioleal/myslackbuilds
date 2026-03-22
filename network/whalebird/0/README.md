@@ -1,0 +1,2 @@
+- Homepage: https://whalebird.social
+- Code repository: https://github.com/h3poteto/whalebird-desktop

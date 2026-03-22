@@ -1,0 +1,2 @@
+- Homepage: https://www.openoffice.org/
+- Code repository: https://sourceforge.net/projects/openofficeorg.mirror/files/

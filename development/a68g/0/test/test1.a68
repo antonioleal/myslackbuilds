@@ -1,0 +1,8 @@
+BEGIN STRING u := "Barbershop";
+TO UPB u + 1
+DO print ((u, new line));
+CHAR v = u[UPB u]; STRING w = u[1 : UPB u - 1];
+u[2 : UPB u] := w;
+u[1] := v
+OD
+END

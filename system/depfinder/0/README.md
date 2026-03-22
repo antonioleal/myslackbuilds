@@ -1,0 +1,2 @@
+- Homepage: https://depfinder.sourceforge.net/
+- Code repository: https://github.com/gapan/depfinder

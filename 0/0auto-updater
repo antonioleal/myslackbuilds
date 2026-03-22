@@ -1,0 +1,116 @@
+#!/bin/bash
+
+# Slackware 0script to run all updaters
+
+# Copyright 2023-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Note: In order for this to work please install the jq package from SBo
+
+echo
+counter=0
+modified=0
+upgradable=0
+
+cd ~/slackware-builds/myslackbuilds
+for updaterdir in `find . -name "0" -print`
+do
+    if [ "$updaterdir" == "./0" ] || [ "$updaterdir" == "./0/0" ]; then
+        continue
+    fi
+    cd ~/slackware-builds/myslackbuilds/$updaterdir/..
+    PKGNAME=${PWD##*/}
+    cd ..
+    CATEGORY=${PWD##*/}
+    cd $PKGNAME
+
+    # Check if SBO Admins have changed this package (if existing in SBo)
+    if [ -d  $HOME/slackware-builds/slackbuilds/$CATEGORY/$PKGNAME ]
+        then
+        CHANGED=$(diff -r       \
+        --exclude='0'           \
+        --exclude='*.tar.gz'    \
+        --exclude='*.tar'       \
+        --exclude='*.tgz'       \
+        --exclude='*.txz'       \
+        --exclude='*.xz'        \
+        --exclude='*.bz2'       \
+        --exclude='*.pdf'       \
+        --exclude='*.zip'       \
+        --exclude='*.7z'        \
+        --exclude='*.md'        \
+        --exclude='*.jar'       \
+        --exclude='*.whl'       \
+        --exclude='*.sf3'       \
+        --exclude='*.xpi'       \
+        --exclude='*.deb'       \
+        --exclude='*.rpm'       \
+        --exclude='*.run'       \
+        --exclude='*.exe'       \
+        --exclude='*.AppImage'  \
+        --exclude='*.cmake'     \
+        --exclude='silk/silk'   \
+        ~/slackware-builds/myslackbuilds/$CATEGORY/$PKGNAME  \
+        ~/slackware-builds/slackbuilds/$CATEGORY/$PKGNAME | head -1)
+    fi
+
+    counter=$((counter+1))
+
+    if [ -f 0/updater ]; then
+        RET0=""
+        printf '%-30s %-15s ' $PKGNAME $CATEGORY
+        export ARG0="TESTONLY"
+        source ~/slackware-builds/myslackbuilds/$updaterdir/updater
+        if ! [ "$CHANGED" == "" ]
+        then
+            #echo -n -e ",\e[5;31m SBo diff\e[0m"
+            echo -n -e ",\033[0;31m SBo diff\e[0m"
+            modified=$((modified+1))
+        fi
+        if ! [ "$RET0" = "" ]
+        then
+            echo -n -e ", \033[32mSpawn ? (Y/n)\033[0m "
+            read -n 1 op
+            if [ "$op" = "y" ] || [ "$op" = "Y" ] || [ "$op" = "" ]
+            then
+                konsole --workdir `dirname ~/slackware-builds/myslackbuilds/$updaterdir`
+            fi
+            upgradable=$((upgradable+1))
+        fi
+    else
+        printf '%-30s %-15s ' $PKGNAME $CATEGORY
+        echo -n -e "\033[0;33mhas no updater script\e[0m"
+        if ! [ "$CHANGED" == "" ]
+        then
+            #echo -n -e ",\e[5;31m SBo diff\e[0m"
+            echo -n -e ",\033[0;31m SBo diff\e[0m"
+            modified=$((modified+1))
+        fi
+    fi
+    # Move to the next line, ready for the next package:
+    echo
+    # Each "p" keypress will pause for 30 seconds
+    read -t 0.01 -n 1 -s && [[ "$REPLY" == "p" ]] && sleep 30
+done
+echo
+echo "Checked $counter packages, found $modified modified, $upgradable upgradable."
+echo "Done."
+echo
+

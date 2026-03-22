@@ -1,0 +1,2 @@
+- Homepage: https://github.com/indygreg/python-zstandard
+- Code repository: 

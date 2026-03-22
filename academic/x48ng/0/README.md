@@ -1,0 +1,2 @@
+- Homepage: https://codeberg.org/gwh/x48ng/tags
+- Code repository: https://github.com/gwenhael-le-moine/x48ng

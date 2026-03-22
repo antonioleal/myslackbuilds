@@ -1,0 +1,2 @@
+- Homepage: https://sourceforge.net/projects/bwbasic
+- Code repository: https://sourceforge.net/projects/bwbasic
