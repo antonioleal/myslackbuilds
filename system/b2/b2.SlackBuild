@@ -71,6 +71,41 @@ rm -rf $TARBALL
 tar xvfz $CWD/$TARBALL.tar.gz
 cd $TARBALL
 
+# Extract submodules
+(
+    cd submodules
+    tar xvf $CWD/SDL-cfcedfccf3a079be983ae571fc5160461a70ca95.tar.gz --strip-components=1 -C SDL
+    tar xvf $CWD/Font-Awesome-731953d9efa9e83a8f13d296de605057d0fb366d.tar.gz --strip-components=1 -C Font-Awesome
+    tar xvf $CWD/IconFontCppHeaders-45cd891f2b01ed2658f77f439e9407f9e2068498.tar.gz --strip-components=1 -C IconFontCppHeaders
+    tar xvf $CWD/Remotery-5483f65b60334059933ff82464d8ea6882d20073.tar.gz --strip-components=1 -C Remotery
+    tar xvf $CWD/imgui-a959617d2e47954fb5847a9b36909c1a586f7f20.tar.gz --strip-components=1 -C imgui
+    tar xvf $CWD/macdylibbundler-a11deb53e4b7f080f0e42df092fefce7ce4c2d33.tar.gz --strip-components=1 -C macdylibbundler
+    tar xvf $CWD/noc-924c03f297954e8c75c49b41de7be2672dbf8146.tar.gz --strip-components=1 -C noc
+    tar xvf $CWD/rapidjson-24b5e7a8b27f42fa16b96fc70aade9106cf7102f.tar.gz --strip-components=1 -C rapidjson
+    tar xvf $CWD/relacy-5e60a3e567a7eab3dfe7bb5b6708ff963272f72f.tar.gz --strip-components=1 -C relacy
+    tar xvf $CWD/miniz-76237898c0966f156f8d102f42155d9e20c467d9.tar.gz --strip-components=1 -C miniz
+    tar xvf $CWD/sanitizers-cmake-0573e2ea8651b9bb3083f193c41eb086497cc80a.tar.gz --strip-components=1 -C sanitizers-cmake
+    tar xvf $CWD/imgui_club-019ed6171a5b46448eb8a2c8e7e8a1d792c722fd.tar.gz --strip-components=1 -C imgui_club
+    tar xvf $CWD/libuv-5152db2cbfeb5582e9c27c5ea1dba2cd9e10759b.tar.gz --strip-components=1 -C libuv
+    tar xvf $CWD/http-parser-54f55a2f02a823e5f5c87abe853bb76d1170718d.tar.gz --strip-components=1 -C http-parser
+    tar xvf $CWD/curl-6c81f2a35c9442158d69ea0b93010fc1d5aae5b6.tar.gz --strip-components=1 -C curl
+    tar xvf $CWD/salieri-77861df8d455727e041a7629a343206e9e4e9306.tar.gz --strip-components=1 -C salieri
+    tar xvf $CWD/rcedit-3a8e8239daade0c1cecffed75246ccfcca72103c.tar.gz --strip-components=1 -C rcedit
+    tar xvf $CWD/beeb-fc823006ed03594aabe10b64b1d4bb741c491046.tar.gz --strip-components=1 -C beeb
+    tar xvf $CWD/shellcmd.py-3cad540949d602779d1af54326cd8e673fd077f5.tar.gz --strip-components=1 -C shellcmd.py
+    tar xvf $CWD/perfect6502-350f4b27e0b461dc9e08951427ad742a98f22cf7.tar.gz --strip-components=1 -C perfect6502
+    tar xvf $CWD/stb-5736b15f7ea0ffb08dd38af21067c314d6a3aae9.tar.gz --strip-components=1 -C stb
+    tar xvf $CWD/SDL_official-6a71328638c5e5abb03f47cfe83f9a71f5a037c0.tar.gz --strip-components=1 -C SDL_official
+    tar xvf $CWD/6502Timing-8a7e08a6604bb6d44def5f029bd2a13883caae5f.tar.gz --strip-components=1 -C 6502Timing
+    tar xvf $CWD/visual6502-d8ecc129b34e0eaf320e0400fcf33329475bdb1e.tar.gz --strip-components=1 -C visual6502
+    tar xvf $CWD/6502-tests-6ecccbfebdb9e10588b1019166bcb5b3b6e617bc.tar.gz --strip-components=1 -C 6502-tests
+    tar xvf $CWD/SDL_GameControllerDB-b1759cf84028aab89caa1c395e198c340b8dfd89.tar.gz --strip-components=1 -C SDL_GameControllerDB
+    tar xvf $CWD/json-c67d538274502163b55e8fb54b5c27c17764722d.tar.gz --strip-components=1 -C json
+    tar xvf $CWD/shared_lib-cb439ea9a2c1d5d500a68c22224f59ea40a682d9.tar.gz --strip-components=1 -C shared_lib
+    tar xvf $CWD/beeb_6502_timing_tests-f3dec4fddd1acce008949551ffbf2c4fea181989.tar.gz --strip-components=1 -C beeb_6502_timing_tests
+)
+
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
