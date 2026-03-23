@@ -1,9 +1,9 @@
 PRGNAM="b2"
-VERSION="20250808_172419_959a8ab"
+VERSION="20260322_193052_51e70d7"
 HOMEPAGE="https://github.com/tom-seddon/b2"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
-DOWNLOAD_x86_64="https://github.com/antonioleal/myslackbuilds/raw/main/system/b2/b2-20250808-172419-959a8ab.tar.gz \
+DOWNLOAD_x86_64="https://github.com/tom-seddon/b2/archive/b2-20260322-193052-51e70d7/b2-b2-20260322-193052-51e70d7.tar.gz \
                  https://github.com/tom-seddon/SDL/archive/cfcedfccf3a079be983ae571fc5160461a70ca95/SDL-cfcedfccf3a079be983ae571fc5160461a70ca95.tar.gz \
                  https://github.com/FortAwesome/Font-Awesome/archive/731953d9efa9e83a8f13d296de605057d0fb366d/Font-Awesome-731953d9efa9e83a8f13d296de605057d0fb366d.tar.gz \
                  https://github.com/juliettef/IconFontCppHeaders/archive/45cd891f2b01ed2658f77f439e9407f9e2068498/IconFontCppHeaders-45cd891f2b01ed2658f77f439e9407f9e2068498.tar.gz \
@@ -25,7 +25,7 @@ DOWNLOAD_x86_64="https://github.com/antonioleal/myslackbuilds/raw/main/system/b2
                  https://github.com/tom-seddon/shellcmd.py/archive/3cad540949d602779d1af54326cd8e673fd077f5/shellcmd.py-3cad540949d602779d1af54326cd8e673fd077f5.tar.gz \
                  https://github.com/tom-seddon/perfect6502/archive/350f4b27e0b461dc9e08951427ad742a98f22cf7/perfect6502-350f4b27e0b461dc9e08951427ad742a98f22cf7.tar.gz \
                  https://github.com/nothings/stb/archive/5736b15f7ea0ffb08dd38af21067c314d6a3aae9/stb-5736b15f7ea0ffb08dd38af21067c314d6a3aae9.tar.gz \
-                 https://github.com/tom-seddon/SDL-1/archive/6a71328638c5e5abb03f47cfe83f9a71f5a037c0/SDL_official-6a71328638c5e5abb03f47cfe83f9a71f5a037c0.tar.gz \
+                 https://github.com/tom-seddon/SDL-1/archive/6a71328638c5e5abb03f47cfe83f9a71f5a037c0/SDL-1-6a71328638c5e5abb03f47cfe83f9a71f5a037c0.tar.gz \
                  https://github.com/dp111/6502Timing/archive/8a7e08a6604bb6d44def5f029bd2a13883caae5f/6502Timing-8a7e08a6604bb6d44def5f029bd2a13883caae5f.tar.gz \
                  https://github.com/tom-seddon/visual6502/archive/d8ecc129b34e0eaf320e0400fcf33329475bdb1e/visual6502-d8ecc129b34e0eaf320e0400fcf33329475bdb1e.tar.gz \
                  https://github.com/tom-seddon/6502-tests/archive/6ecccbfebdb9e10588b1019166bcb5b3b6e617bc/6502-tests-6ecccbfebdb9e10588b1019166bcb5b3b6e617bc.tar.gz \
@@ -33,7 +33,7 @@ DOWNLOAD_x86_64="https://github.com/antonioleal/myslackbuilds/raw/main/system/b2
                  https://github.com/nlohmann/json/archive/c67d538274502163b55e8fb54b5c27c17764722d/json-c67d538274502163b55e8fb54b5c27c17764722d.tar.gz \
                  https://github.com/tom-seddon/shared_lib/archive/cb439ea9a2c1d5d500a68c22224f59ea40a682d9/shared_lib-cb439ea9a2c1d5d500a68c22224f59ea40a682d9.tar.gz \
                  https://github.com/tom-seddon/beeb_6502_timing_tests/archive/f3dec4fddd1acce008949551ffbf2c4fea181989/beeb_6502_timing_tests-f3dec4fddd1acce008949551ffbf2c4fea181989.tar.gz"
-MD5SUM_x86_64="ea8e61dce1aba0fb1eed6eb5797822c5 \
+MD5SUM_x86_64="d91492a61437b337564b3961b990d66c \
                7f93925bed6d7ebf3fcbb500d619e31f \
                9025592c15c7885af2a7d95c0ab5240d \
                735be8e17551f600bb21ef9a8c5ca8f1 \
