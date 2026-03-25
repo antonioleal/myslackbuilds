@@ -1105,7 +1105,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 4.10.0
+- Version: 4.11.0
 - Homepage: https://github.com/antonioleal/qt-installer-script
 - Code repository:
 ## libupnp (Portable SDK for UPnP Devices)
