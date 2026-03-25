@@ -1,68 +1,10 @@
 PRGNAM="b2"
-VERSION="20260322_193052_51e70d7"
+VERSION="20250808_172419_959a8ab"
 HOMEPAGE="https://github.com/tom-seddon/b2"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
-DOWNLOAD_x86_64="https://github.com/tom-seddon/b2/archive/b2-20260322-193052-51e70d7/b2-b2-20260322-193052-51e70d7.tar.gz \
-                 https://github.com/tom-seddon/SDL/archive/cfcedfccf3a079be983ae571fc5160461a70ca95/SDL-cfcedfccf3a079be983ae571fc5160461a70ca95.tar.gz \
-                 https://github.com/FortAwesome/Font-Awesome/archive/731953d9efa9e83a8f13d296de605057d0fb366d/Font-Awesome-731953d9efa9e83a8f13d296de605057d0fb366d.tar.gz \
-                 https://github.com/juliettef/IconFontCppHeaders/archive/45cd891f2b01ed2658f77f439e9407f9e2068498/IconFontCppHeaders-45cd891f2b01ed2658f77f439e9407f9e2068498.tar.gz \
-                 https://github.com/tom-seddon/Remotery/archive/5483f65b60334059933ff82464d8ea6882d20073/Remotery-5483f65b60334059933ff82464d8ea6882d20073.tar.gz \
-                 https://github.com/tom-seddon/imgui/archive/a959617d2e47954fb5847a9b36909c1a586f7f20/imgui-a959617d2e47954fb5847a9b36909c1a586f7f20.tar.gz \
-                 https://github.com/tom-seddon/macdylibbundler/archive/a11deb53e4b7f080f0e42df092fefce7ce4c2d33/macdylibbundler-a11deb53e4b7f080f0e42df092fefce7ce4c2d33.tar.gz \
-                 https://github.com/tom-seddon/noc/archive/924c03f297954e8c75c49b41de7be2672dbf8146/noc-924c03f297954e8c75c49b41de7be2672dbf8146.tar.gz \
-                 https://github.com/tom-seddon/rapidjson/archive/24b5e7a8b27f42fa16b96fc70aade9106cf7102f/rapidjson-24b5e7a8b27f42fa16b96fc70aade9106cf7102f.tar.gz \
-                 https://github.com/tom-seddon/relacy/archive/5e60a3e567a7eab3dfe7bb5b6708ff963272f72f/relacy-5e60a3e567a7eab3dfe7bb5b6708ff963272f72f.tar.gz \
-                 https://github.com/richgel999/miniz/archive/76237898c0966f156f8d102f42155d9e20c467d9/miniz-76237898c0966f156f8d102f42155d9e20c467d9.tar.gz \
-                 https://github.com/arsenm/sanitizers-cmake/archive/0573e2ea8651b9bb3083f193c41eb086497cc80a/sanitizers-cmake-0573e2ea8651b9bb3083f193c41eb086497cc80a.tar.gz \
-                 https://github.com/tom-seddon/imgui_club/archive/019ed6171a5b46448eb8a2c8e7e8a1d792c722fd/imgui_club-019ed6171a5b46448eb8a2c8e7e8a1d792c722fd.tar.gz \
-                 https://github.com/tom-seddon/libuv/archive/5152db2cbfeb5582e9c27c5ea1dba2cd9e10759b/libuv-5152db2cbfeb5582e9c27c5ea1dba2cd9e10759b.tar.gz \
-                 https://github.com/tom-seddon/http-parser/archive/54f55a2f02a823e5f5c87abe853bb76d1170718d/http-parser-54f55a2f02a823e5f5c87abe853bb76d1170718d.tar.gz \
-                 https://github.com/tom-seddon/curl/archive/6c81f2a35c9442158d69ea0b93010fc1d5aae5b6/curl-6c81f2a35c9442158d69ea0b93010fc1d5aae5b6.tar.gz \
-                 https://github.com/tom-seddon/salieri/archive/77861df8d455727e041a7629a343206e9e4e9306/salieri-77861df8d455727e041a7629a343206e9e4e9306.tar.gz \
-                 https://github.com/electron/rcedit/archive/3a8e8239daade0c1cecffed75246ccfcca72103c/rcedit-3a8e8239daade0c1cecffed75246ccfcca72103c.tar.gz \
-                 https://github.com/tom-seddon/beeb/archive/fc823006ed03594aabe10b64b1d4bb741c491046/beeb-fc823006ed03594aabe10b64b1d4bb741c491046.tar.gz \
-                 https://github.com/tom-seddon/shellcmd.py/archive/3cad540949d602779d1af54326cd8e673fd077f5/shellcmd.py-3cad540949d602779d1af54326cd8e673fd077f5.tar.gz \
-                 https://github.com/tom-seddon/perfect6502/archive/350f4b27e0b461dc9e08951427ad742a98f22cf7/perfect6502-350f4b27e0b461dc9e08951427ad742a98f22cf7.tar.gz \
-                 https://github.com/nothings/stb/archive/5736b15f7ea0ffb08dd38af21067c314d6a3aae9/stb-5736b15f7ea0ffb08dd38af21067c314d6a3aae9.tar.gz \
-                 https://github.com/tom-seddon/SDL-1/archive/6a71328638c5e5abb03f47cfe83f9a71f5a037c0/SDL-1-6a71328638c5e5abb03f47cfe83f9a71f5a037c0.tar.gz \
-                 https://github.com/dp111/6502Timing/archive/8a7e08a6604bb6d44def5f029bd2a13883caae5f/6502Timing-8a7e08a6604bb6d44def5f029bd2a13883caae5f.tar.gz \
-                 https://github.com/tom-seddon/visual6502/archive/d8ecc129b34e0eaf320e0400fcf33329475bdb1e/visual6502-d8ecc129b34e0eaf320e0400fcf33329475bdb1e.tar.gz \
-                 https://github.com/tom-seddon/6502-tests/archive/6ecccbfebdb9e10588b1019166bcb5b3b6e617bc/6502-tests-6ecccbfebdb9e10588b1019166bcb5b3b6e617bc.tar.gz \
-                 https://github.com/gabomdq/SDL_GameControllerDB/archive/b1759cf84028aab89caa1c395e198c340b8dfd89/SDL_GameControllerDB-b1759cf84028aab89caa1c395e198c340b8dfd89.tar.gz \
-                 https://github.com/nlohmann/json/archive/c67d538274502163b55e8fb54b5c27c17764722d/json-c67d538274502163b55e8fb54b5c27c17764722d.tar.gz \
-                 https://github.com/tom-seddon/shared_lib/archive/cb439ea9a2c1d5d500a68c22224f59ea40a682d9/shared_lib-cb439ea9a2c1d5d500a68c22224f59ea40a682d9.tar.gz \
-                 https://github.com/tom-seddon/beeb_6502_timing_tests/archive/f3dec4fddd1acce008949551ffbf2c4fea181989/beeb_6502_timing_tests-f3dec4fddd1acce008949551ffbf2c4fea181989.tar.gz"
-MD5SUM_x86_64="d91492a61437b337564b3961b990d66c \
-               7f93925bed6d7ebf3fcbb500d619e31f \
-               9025592c15c7885af2a7d95c0ab5240d \
-               735be8e17551f600bb21ef9a8c5ca8f1 \
-               3febdccdbfcf9947a1b7075065f17033 \
-               51a7bdaff27b6fd886e259bbfccbc11c \
-               e6caefc43d151a5e59f99e8218d59c32 \
-               e3d9a7287b92959329d3f32b09dc7586 \
-               531f76775e11b09b28422bfa1d4d59b5 \
-               ed3b53cef5e86b0988f1585632152ba1 \
-               5d38b16115e2227e4b9ffc3b27c51bec \
-               b22713b61e244c1372d4c3738a9e81a0 \
-               9af700ba2e372cc8a9dd78a12920335a \
-               5d6e35a52401c6de0e7a94d2db842326 \
-               fd206178bd5a87329bf02211afcb792d \
-               39b017e68cfb3b1facca2320d9535e32 \
-               53e4d7dc6e77bbaade55a89923d458f3 \
-               9a0797ab428b5ef91162a0ff36659cd2 \
-               3bd890bc1f992096c87e81a9f3e9d9ab \
-               702344bd8e3be2f09296783c0bbba351 \
-               0b5290944bc6ff44ea8560af5bcbfbad \
-               d59543e741c975e237b45bf053f58633 \
-               8cc36f28fb6b1e7440385dd4bcd37bf7 \
-               c89feee1291be59f2217046cd0135b83 \
-               3c2f3b8f5c9f7412c4f187cfeb7286e1 \
-               03ce4ef03b0599b69e3e05200c4bf352 \
-               5504430f01be21a0bee414a92250d5a2 \
-               ad31b811d9bb89e377fb0101f7c62b70 \
-               17de6172e9b10a12f420febb44338c17 \
-               232789599ca0109035920140f757e137"
+DOWNLOAD_x86_64="https://github.com/antonioleal/myslackbuilds/raw/main/system/b2/b2-20250808-172419-959a8ab.tar.gz"
+MD5SUM_x86_64="ea8e61dce1aba0fb1eed6eb5797822c5"
 REQUIRES="uuid"
 MAINTAINER="Antonio Leal"
 EMAIL="antonioleal@yahoo.com"
