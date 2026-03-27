@@ -1062,6 +1062,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Homepage: https://www.waterfox.net/
 - Code repository: https://github.com/BrowserWorks/Waterfox
 - Binary repository: https://www.waterfox.net/download/
+## mullvad-browser (web browser)
+ mullvad-browser (web browser)
+ The Mullvad Browser is a privacy-focused web browser developed in a
+ to minimize tracking and fingerprinting.
+  
+
+- Category: network
+- Version: 15.0.8
+- Homepage: https://mullvad.net/en/browser
+- Code repository:
 ## whalebird (Mastondon, Pleroma and Misskey client)
  Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
   
