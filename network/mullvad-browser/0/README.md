@@ -1,0 +1,2 @@
+- Homepage: https://mullvad.net/en/browser
+- Code repository:
