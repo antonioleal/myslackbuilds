@@ -57,8 +57,12 @@ mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 unzip $CWD/*.zip
 
-mkdir -p $PKG/opt/ximple
-cp -avxu * $PKG/opt/ximple
+mkdir -p $PKG/opt/XiMpLe
+if [ "$ARCH" = "i586" ]; then
+    cp -avxu tools/XiMpLe_x32.exe $PKG/opt/XiMpLe/XiMpLe.exe
+else
+    cp -avxu tools/XiMpLe_x64.exe $PKG/opt/XiMpLe/XiMpLe.exe
+fi
 
 mkdir -p $PKG/usr/share/applications $PKG/usr/share/pixmaps
 cp $CWD/XiMpLe.png $PKG/usr/share/pixmaps/XiMpLe.png

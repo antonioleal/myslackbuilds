@@ -1,9 +1,9 @@
 [Desktop Entry]
 Categories=Development;
 Comment=XML IDE
-Exec=/home/antonio/Documents/AppImage/wine-stable_8.0.0.0-x86_64.appimage /home/antonio/Documents/Bin/XiMpLe/XiMpLe.exe
+Exec=wine /opt/XiMpLe/XiMpLe.exe
 GenericName=XiMpLe
-Icon=/home/antonio/Documents/Bin/XiMpLe/XiMpLe.png
+Icon=XiMpLe
 MimeType=
 Name=XiMpLe
 StartupNotify=true
