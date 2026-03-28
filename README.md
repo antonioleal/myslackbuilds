@@ -1411,6 +1411,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: development
 - Version: 1.6.2603.14891
+- Homepage: http://www.ximple.cz
+- Code repository:
 ## smartsvn (Desktop SVN Client)
  SmartSvn is a commercial desktop svn client.
  SmartSVN starts with free evaluation mode for 30 days,
