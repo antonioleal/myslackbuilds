@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Development;
+Comment=XML IDE
+Exec=/home/antonio/Documents/AppImage/wine-stable_8.0.0.0-x86_64.appimage /home/antonio/Documents/Bin/XiMpLe/XiMpLe.exe
+GenericName=XiMpLe
+Icon=/home/antonio/Documents/Bin/XiMpLe/XiMpLe.png
+MimeType=
+Name=XiMpLe
+StartupNotify=true
+Terminal=false
+Type=Application
+
