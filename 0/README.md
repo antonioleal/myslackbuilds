@@ -219,7 +219,7 @@ If you are in Europe SlackBuilds.org public updates occur each Saturday, usually
     * Its is a very good idea to subscribe to the `slackbuilds-users` and `slackbuilds-devel` mailling lists so you are aware of what other people are doing. You can also ask for specific help regarding your scripts or get the "maintainer" status for new ones.
 
 ##### II. "Saturday afternoon":
-1. Once your scripts are released to the public go to `https://github.com/{your account}/slackbuilds` and synchronize your fork with the upstream master. This can be done by running **0reset all** which also deletes unneeded tarballs and other trash. **0reset all** can be run at any time to clean your workspace.
+1. Once your scripts are released to the public go to `https://github.com/{your account}/slackbuilds` and synchronize your fork with the upstream master. Better still: this can be done by running **0reset all** which also deletes unneeded tarballs and other trash. Also **0reset all** can be run at any time to clean your workspace.
 
 2. Delete accessory branches by running **0delete-branches all**
 
