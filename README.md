@@ -1546,7 +1546,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 4.0.6
+- Version: 4.0.7
 - Homepage: https://nuitka.net
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 ## python3-odfdo (OpenDocument Format library for Python)
