@@ -433,7 +433,7 @@
   
 
 - Category: development
-- Version: 1.20.6
+- Version: 1.21.6
 - Homepage: https://antigravity.google/
 - Code repository:
 ## eisl (ISO ISLISP interpreter)
