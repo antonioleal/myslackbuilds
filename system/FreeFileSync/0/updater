@@ -78,6 +78,6 @@ else
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo -n "has a new version $NEWVERSION"
-    echo "Don't forget to upload $TARBALL to github"
+    echo " Don't forget to upload $TARBALL to github !"
     export RET0=$NEWVERSION
 fi
