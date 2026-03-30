@@ -3,7 +3,7 @@ VERSION="_version_"
 HOMEPAGE="http://www.ximple.cz"
 DOWNLOAD="https://community.chocolatey.org/api/v2/package/XiMpLe \
           http://www.ximple.cz/files/XiMpLe.pdf"
-MD5SUM="_md5_"
+MD5SUM="_md5_ \
         18db17c45c601b24e4e7ac21382bc68e"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
