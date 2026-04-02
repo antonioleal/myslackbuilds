@@ -30,13 +30,14 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-AUX=$(links -dump https://community.chocolatey.org/packages/ximple | grep "Downloads of v" | head -1 | awk '{print $NF}' | cut -d ":" -f1)
+AUX=$(links -dump https://www.ximple.cz/download.php | grep version | awk '{print $NF}')
 TAG=${AUX//\"/}
 REALVERSION=${TAG}
 NEWVERSION=${REALVERSION/-/_}
 
-TARBALL=XiMpLe
-URL="https://community.chocolatey.org/api/v2/package/$TARBALL"
+URL1="https://www.ximple.cz/files.net4/XiMpLe.exe"
+URL2="https://www.ximple.cz/files.net4/XiMpLe(32bit).exe"
+URL3=" http://www.ximple.cz/files/XiMpLe.pdf"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -56,7 +57,10 @@ else
     ################################
     # download tarball             #
     ################################
-    wget $URL
+    wget $URL1
+    wget $URL2
+    wget $URL3
+
     if [ ! -f ./$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."

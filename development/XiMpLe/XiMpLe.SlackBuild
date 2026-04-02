@@ -62,12 +62,12 @@ find -L . \
 
 mkdir -p $PKG/opt/XiMpLe
 if [ "$ARCH" = "i586" ]; then
-    #cp -avxu "$CWD/XiMpLe(32bit).exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
-    install -D -m0755 "$CWD/XiMpLe(32bit).exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
+    cp $CWD/XiMpLe\(32bit\).exe $PKG/opt/XiMpLe/XiMpLe.exe
 else
-    #cp -avxu "$CWD/XiMpLe.exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
-    install -D -m0755 "$CWD/XiMpLe.exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
+    cp  $CWD/XiMpLe.exe $PKG/opt/XiMpLe/XiMpLe.exe
 fi
+chown root:root $PKG/opt/XiMpLe/XiMpLe.exe
+chmod 755 $PKG/opt/XiMpLe/XiMpLe.exe
 
 mkdir -p $PKG/usr/share/applications $PKG/usr/share/pixmaps
 cp $CWD/XiMpLe.png $PKG/usr/share/pixmaps/XiMpLe.png
