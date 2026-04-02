@@ -52,6 +52,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+rm -rf $PRGNAM-$VERSION
+mkdir $PRGNAM-$VERSION
+cd $PRGNAM-$VERSION
 
 chown -R root:root .
 find -L . \
@@ -60,18 +63,14 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-mkdir -p $PKG/opt/XiMpLe
-cd $PKG/opt/XiMpLe
+mkdir -p $PKG/opt/$PRGNAM
+cd $PKG/opt/$PRGNAM
 if [ "$ARCH" = "i586" ]; then
-    #cp $CWD/XiMpLe\(32bit\).exe $PKG/opt/XiMpLe/XiMpLe.exe # done like below because of ci/cd
-    cp $CWD/*.exe .
-    mv XiMpLe\(32bit\).exe XiMpLe.exe
+    install -D -m0755 $CWD/*.exe -t $PKG/opt/$PRGNAM/
+    mv "XiMpLe(32bit).exe" XiMpLe.exe
 else
-    #cp  $CWD/XiMpLe.exe $PKG/opt/XiMpLe/XiMpLe.exe # done like below because of ci/cd
-    cp $CWD/*.exe .
+    install -D -m0755 $CWD/*.exe -t $PKG/opt/$PRGNAM/
 fi
-chown root:root $PKG/opt/XiMpLe/XiMpLe.exe
-chmod 755 $PKG/opt/XiMpLe/XiMpLe.exe
 
 mkdir -p $PKG/usr/share/applications $PKG/usr/share/pixmaps
 cp $CWD/XiMpLe.png $PKG/usr/share/pixmaps/XiMpLe.png
