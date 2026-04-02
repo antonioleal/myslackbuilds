@@ -52,10 +52,6 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-mkdir $PRGNAM-$VERSION
-cd $PRGNAM-$VERSION
-unzip $CWD/XiMpLe
 
 chown -R root:root .
 find -L . \
@@ -66,9 +62,11 @@ find -L . \
 
 mkdir -p $PKG/opt/XiMpLe
 if [ "$ARCH" = "i586" ]; then
-    cp -avxu tools/XiMpLe_x32.exe $PKG/opt/XiMpLe/XiMpLe.exe
+    #cp -avxu "$CWD/XiMpLe(32bit).exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
+    install -D -m0755 "$CWD/XiMpLe(32bit).exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
 else
-    cp -avxu tools/XiMpLe_x64.exe $PKG/opt/XiMpLe/XiMpLe.exe
+    #cp -avxu "$CWD/XiMpLe.exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
+    install -D -m0755 "$CWD/XiMpLe.exe" "$PKG/opt/XiMpLe/XiMpLe.exe"
 fi
 
 mkdir -p $PKG/usr/share/applications $PKG/usr/share/pixmaps
@@ -76,7 +74,6 @@ cp $CWD/XiMpLe.png $PKG/usr/share/pixmaps/XiMpLe.png
 cp $CWD/XiMpLe.desktop $PKG/usr/share/applications/XiMpLe.desktop
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp legal/* $PKG/usr/doc/$PRGNAM-$VERSION
 cp $CWD/XiMpLe.pdf $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
