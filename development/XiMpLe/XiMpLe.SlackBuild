@@ -61,10 +61,14 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 mkdir -p $PKG/opt/XiMpLe
+cd $PKG/opt/XiMpLe
 if [ "$ARCH" = "i586" ]; then
-    cp $CWD/XiMpLe\(32bit\).exe $PKG/opt/XiMpLe/XiMpLe.exe
+    #cp $CWD/XiMpLe\(32bit\).exe $PKG/opt/XiMpLe/XiMpLe.exe # done like below because of ci/cd
+    cp $CWD/*.exe .
+    mv XiMpLe\(32bit\).exe XiMpLe.exe
 else
-    cp  $CWD/XiMpLe.exe $PKG/opt/XiMpLe/XiMpLe.exe
+    #cp  $CWD/XiMpLe.exe $PKG/opt/XiMpLe/XiMpLe.exe # done like below because of ci/cd
+    cp $CWD/*.exe .
 fi
 chown root:root $PKG/opt/XiMpLe/XiMpLe.exe
 chmod 755 $PKG/opt/XiMpLe/XiMpLe.exe
