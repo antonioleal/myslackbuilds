@@ -67,7 +67,7 @@ mkdir -p $PKG/opt/$PRGNAM
 cd $PKG/opt/$PRGNAM
 if [ "$ARCH" = "i586" ]; then
     install -D -m0755 $CWD/*.exe -t $PKG/opt/$PRGNAM/
-    mv "XiMpLe(32bit).exe" XiMpLe.exe
+    mv "*32*" XiMpLe.exe
 else
     install -D -m0755 $CWD/*.exe -t $PKG/opt/$PRGNAM/
 fi
