@@ -35,9 +35,12 @@ TAG=${AUX//\"/}
 REALVERSION=${TAG}
 NEWVERSION=${REALVERSION/-/_}
 
-URL1="https://www.ximple.cz/files.net4/XiMpLe.exe"
-URL2="https://www.ximple.cz/files.net4/XiMpLe(32bit).exe"
-URL3=" http://www.ximple.cz/files/XiMpLe.pdf"
+TARBALL1="XiMpLe(32bit).exe"
+TARBALL2="XiMpLe.exe"
+TARBALL3="XiMpLe.pdf"
+URL1="https://www.ximple.cz/files.net4/$TARBALL1"
+URL2="https://www.ximple.cz/files.net4/$TARBALL2"
+URL3=" http://www.ximple.cz/files/$TARBALL3"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
@@ -61,23 +64,41 @@ else
     wget $URL2
     wget $URL3
 
-    if [ ! -f ./$TARBALL ]
+    if [ ! -f ./$TARBALL1 ]
     then
-        echo "File $TARBALL not found, aborting..."
+        echo "File $TARBALL1 not found, aborting..."
+        exit
+    fi
+    if [ ! -f ./$TARBALL2 ]
+    then
+        echo "File $TARBALL2 not found, aborting..."
+        exit
+    fi
+    if [ ! -f ./$TARBALL3 ]
+    then
+        echo "File $TARBALL3 not found, aborting..."
         exit
     fi
     # delete old tarball and place new one
-    rm -rf ../$TARBALL 2> /dev/null
-    mv $TARBALL ..
+    rm -rf ../$TARBALL1 2> /dev/null
+    rm -rf ../$TARBALL2 2> /dev/null
+    rm -rf ../$TARBALL3 2> /dev/null
+    mv $TARBALL1 ..
+    mv $TARBALL2 ..
+    mv $TARBALL3 ..
 
     ################################
     # write templates              #
     ################################
-    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
+    MD51=`md5sum ../$TARBALL1 | cut -d " " -f 1`
+    MD52=`md5sum ../$TARBALL2 | cut -d " " -f 1`
+    MD53=`md5sum ../$TARBALL3 | cut -d " " -f 1`
     #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
 
     sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_md5_/${MD5}/g" \
+        -e "s/_md51_/${MD51}/g" \
+        -e "s/_md52_/${MD52}/g" \
+        -e "s/_md53_/${MD53}/g" \
         $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
 
     sed -e "s/_version_/${NEWVERSION}/g" \

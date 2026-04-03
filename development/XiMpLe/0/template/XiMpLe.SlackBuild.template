@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware build script for ximple
+# Slackware build script for XiMpLe
 
 # Copyright 2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -55,7 +55,6 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
-unzip $CWD/XiMpLe
 
 chown -R root:root .
 find -L . \
@@ -64,11 +63,13 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-mkdir -p $PKG/opt/XiMpLe
+mkdir -p $PKG/opt/$PRGNAM
+cd $PKG/opt/$PRGNAM
 if [ "$ARCH" = "i586" ]; then
-    cp -avxu tools/XiMpLe_x32.exe $PKG/opt/XiMpLe/XiMpLe.exe
+    install -D -m0755 $CWD/*.exe -t $PKG/opt/$PRGNAM/
+    mv 'XiMpLe(32bit).exe' XiMpLe.exe
 else
-    cp -avxu tools/XiMpLe_x64.exe $PKG/opt/XiMpLe/XiMpLe.exe
+    install -D -m0755 $CWD/*.exe -t $PKG/opt/$PRGNAM/
 fi
 
 mkdir -p $PKG/usr/share/applications $PKG/usr/share/pixmaps
@@ -76,7 +77,6 @@ cp $CWD/XiMpLe.png $PKG/usr/share/pixmaps/XiMpLe.png
 cp $CWD/XiMpLe.desktop $PKG/usr/share/applications/XiMpLe.desktop
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp legal/* $PKG/usr/doc/$PRGNAM-$VERSION
 cp $CWD/XiMpLe.pdf $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
