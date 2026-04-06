@@ -256,7 +256,7 @@
   
 
 - Category: development
-- Version: 20260330_06a913e
+- Version: 20260403_e52cb98
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
 ## lazarus (rapid application development tool for freepascal)
