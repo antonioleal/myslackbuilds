@@ -37,8 +37,10 @@ SLACKVERSION=${NEWVERSION/-/_}
 TARBALL=ZXBasicStudio-Linux-x64.v${NEWVERSION}.zip
 URL="https://github.com/boriel-basic/ZXBasicStudio/releases/download/${TAG}/${TARBALL}"
 
+AUX=$(echo $NEWVERSION | grep "XBSI")
+
 VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ]
+if [ "$VERSION" = "$NEWVERSION" ] || [ ! "$AUX" = "" ]
 then
     echo -n "is at version $VERSION"
     export RET0=""
