@@ -1558,7 +1558,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 3.22.3
+- Version: 3.22.4
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
 ## python3-boto3 (Python API for AWS)
