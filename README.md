@@ -1347,7 +1347,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: misc
-- Version: 1.2.0
+- Version: 1.2.1
 - Homepage: https://github.com/kovmir/tinytldr#readme
 - Code repository:
 ## plus42 (An Enhanced HP-42S Calculator Simulator)
