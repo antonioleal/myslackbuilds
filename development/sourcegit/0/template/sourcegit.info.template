@@ -1,0 +1,12 @@
+PRGNAM="sourcegit"
+VERSION="_version_"
+HOMEPAGE="https://github.com/sourcegit-scm/sourcegit"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/sourcegit-scm/sourcegit/archive/v_version_/sourcegit-_version_.tar.gz \
+                 https://github.com/love-linger/AvaloniaEdit/archive/_hash_/AvaloniaEdit-_hash_.tar.gz"
+MD5SUM_x86_64="_md51_ \
+               _md52_"
+REQUIRES="dotnet-runtime-10.0 dotnet-sdk-10.0"
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"

@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=sourgegit
+PRGNAM=sourcegit
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
@@ -31,14 +31,69 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 
-NEWVERSION=$(gh release view -R sourcegit-scm/sourcegit --json tagName --jq '.tagName')
+TAG=$(gh release view -R sourcegit-scm/sourcegit --json tagName --jq '.tagName')
+NEWVERSION=${TAG:1}
+TARBALL=sourcegit-${NEWVERSION}.tar.gz
+URL="https://github.com/sourcegit-scm/sourcegit/archive/${TAG}/${TARBALL}"
+
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo -n "is at version $VERSION"
     export RET0=""
 else
-    echo "$PRGNAM thereis a new version $NEWVERSION, but you need to update it manually."
-    echo $NEWVERSION > version
+    ################################
+    # check for testonly parameter #
+    ################################
+    if [ "$ARG0" = "TESTONLY" ]
+    then
+        echo -n "has a new version $NEWVERSION"
+        export RET0=$NEWVERSION
+        return
+    fi
+
+    ################################
+    # AvaloniaEdit submodule       #
+    ################################
+    git clone https://github.com/sourcegit-scm/sourcegit
+    cd sourcegit
+    HASH=$(git submodule | awk '{print substr($1,2)'})
+    cd ..
+    rm -rf sourcegit
+    wget https://github.com/love-linger/AvaloniaEdit/archive/${HASH}/AvaloniaEdit-${HASH}.tar.gz
+
+    ################################
+    # download tarball             #
+    ################################
+    wget $URL
+    if [ ! -f ./$TARBALL ]
+    then
+        echo "File $TARBALL not found, aborting..."
+        exit
+    fi
+    # delete old tarball and place new one
+    rm -rf ../*.tar.gz 2> /dev/null
+    mv *.tar.gz ..
+
+    ################################
+    # write templates              #
+    ################################
+    MD51=`md5sum ../$TARBALL | cut -d " " -f 1`
+    MD52=`md5sum ../AvaloniaEdit-${HASH}.tar.gz | cut -d " " -f 1`
+    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_md51_/$MD51/g" \
+        -e "s/_md52_/$MD52/g" \
+        -e "s/_hash_/$HASH/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
+
+    sed -e "s/_version_/${NEWVERSION}/g" \
+        -e "s/_hash_/$HASH/g" \
+        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
+
+    chmod 644 ../${PRGNAM}.SlackBuild
+    echo -n "has a new version $NEWVERSION"
+    echo "$NEWVERSION" > version
     export RET0=$NEWVERSION
 fi
