@@ -1,2 +1,0 @@
-- Homepage: https://aws.amazon.com/sdk-for-python/
-- Code repository:
