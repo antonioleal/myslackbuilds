@@ -340,7 +340,7 @@
   
 
 - Category: development
-- Version: 41.1.1
+- Version: 41.2.0
 - Homepage: https://www.electronjs.org/
 - Code repository:
 ## notepadqq (Notepad++-like editor for the Linux desktop)
