@@ -996,6 +996,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0.12
 - Homepage: https://github.com/librespeed/speedtest-cli
 - Code repository:
+## helium-browser (web browser)
+ Best privacy and unbiased ad-blocking by default.
+ Handy features like native !bangs and split view.
+ No adware, no bloat, no noise. Made for people, by people.
+ Fully open source.
+  
+
+- Category: network
+- Version: 0.11.2.1
 ## google-chrome (Web Browser)
  Google Chrome is a browser that combines a minimal design with
  sophisticated technology to make the web faster, safer, and easier.
