@@ -765,6 +765,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 11.2.1
 - Homepage: https://limine-bootloader.org/
 - Code repository: https://github.com/limine-bootloader/limine
+## ventoy (Bootable USB Solution)
+ Ventoy is an open source tool to create bootable USB drives
+ for ISO/WIM/IMG/VHD(x)/EFI files.
+ With Ventoy, you do not need to format the disk repeatedly.
+ Just copy the image files to the USB drive and boot them.
+ You can copy many files at a time and Ventoy will provide
+ a boot menu. It also supports browsing local disk files.
+  
+
+- Category: system
+- Version: 1.1.11
+- Homepage: https://www.ventoy.net
+- Code repository:
 ## silk (package management tools front end)
  Silk is a practical front end to various slackware package management
  tools, namely slackpkg, sbopkg, slapt-get and slapt-src.
@@ -1005,6 +1018,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: network
 - Version: 0.11.2.1
+- Homepage: https://helium.computer/
+- Code repository:
 ## google-chrome (Web Browser)
  Google Chrome is a browser that combines a minimal design with
  sophisticated technology to make the web faster, safer, and easier.
