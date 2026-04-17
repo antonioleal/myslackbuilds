@@ -118,12 +118,12 @@ for binary in xzcat hexdump; do
 done
 
 #package stuff
-install -Dm644 -vt      "$PKG/opt/${PRGNAM}/boot/"            $TMP/$PRGNAM-$VERSION/boot/*
-install -Dm644 -vt      "$PKG/opt/${PRGNAM}/${PRGNAM}/"       $TMP/$PRGNAM-$VERSION/"${PRGNAM}"/*
-install -Dm755 -vt      "$PKG/opt/${PRGNAM}/tool/"            $TMP/$PRGNAM-$VERSION/tool/*.{cer,glade,json,sh,xz}
-install -Dm755 -vt      "$PKG/opt/${PRGNAM}/tool/$CARCH/"     $TMP/$PRGNAM-$VERSION/tool/$CARCH/*
-install -Dm755 -vt      "$PKG/opt/${PRGNAM}/"                 $TMP/$PRGNAM-$VERSION/*.sh
-cp --no-preserve=o -avt "$PKG/opt/${PRGNAM}/"                 $TMP/$PRGNAM-$VERSION/plugin WebUI
+install -Dm644 -vt      "$PKG/opt/${PRGNAM}/boot/"            boot/*
+install -Dm644 -vt      "$PKG/opt/${PRGNAM}/${PRGNAM}/"       "${PRGNAM}"/*
+install -Dm755 -vt      "$PKG/opt/${PRGNAM}/tool/"            tool/*.{cer,glade,json,sh,xz}
+install -Dm755 -vt      "$PKG/opt/${PRGNAM}/tool/$CARCH/"     tool/$CARCH/*
+install -Dm755 -vt      "$PKG/opt/${PRGNAM}/"                 *.sh
+cp --no-preserve=o -avt "$PKG/opt/${PRGNAM}/"                 plugin WebUI
 
 install -Dm755 "VentoyGUI.$CARCH" -vt "$PKG/opt/${PRGNAM}"
 install -Dm644 WebUI/static/img/VentoyLogo.png -v "$PKG/usr/share/pixmaps/${PRGNAM}.png"
