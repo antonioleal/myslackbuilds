@@ -1,0 +1,119 @@
+#!/bin/bash
+
+# Slackware 0script to build a package and its dependents
+
+# Copyright 2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+set -e
+
+if [ "$1" = "" ]; then
+    echo "Usage: 0build-package <pkgname> [-q]"
+    exit 0
+fi
+
+QUERY="$2"
+
+PKGS=()
+
+function loadsbo() {
+    local PKGNAME=$1
+    local INFO=""
+    local REQUIRES
+
+    cd ~/slackware-builds/slackbuilds
+    INFO=$(find . -name "${PKGNAME}.info" -print)
+    source $INFO
+
+    cd ~/slackware-builds/slackbuilds/$(dirname $INFO)/
+    PKGNAME=${PWD##*/}
+    cd ..
+    CATEGORY=${PWD##*/}
+    cd $PKGNAME
+    PKGS+=("${CATEGORY}|${PKGNAME}")
+
+    for r in $REQUIRES
+    do
+        loadsbo "$r"
+    done
+}
+loadsbo "$1"
+
+reversed=($(printf "%s\n" "${PKGS[@]}" | tac))
+
+echo "----"
+echo "This will Build:"
+echo
+for p in "${reversed[@]}"; do
+    CATEGORY=$(echo $p | cut -d "|" -f 1)
+    PKGNAME=$(echo $p | cut -d "|" -f 2)
+    echo "$CATEGORY/$PKGNAME"
+done
+echo
+for p in "${reversed[@]}"; do
+    CATEGORY=$(echo $p | cut -d "|" -f 1)
+    PKGNAME=$(echo $p | cut -d "|" -f 2)
+    echo -n "$PKGNAME "
+done
+echo
+echo "----"
+echo
+read -p "Continue (y/N)? " op
+if [ ! "$op" = "Y" ] && [ ! "$op" = "y" ]; then
+    exit
+fi
+
+for p in "${reversed[@]}"; do
+    CATEGORY=$(echo $p | cut -d "|" -f 1)
+    PKGNAME=$(echo $p | cut -d "|" -f 2)
+    cd ~/slackware-builds/slackbuilds/$CATEGORY/$PKGNAME
+    source $PKGNAME.info
+
+    confirm=""
+    if [ "$QUERY" = "-q" ]; then
+        read -p "Build $PKGNAME (Y/n)?" confirm
+        if [ "$confirm" = "N" ] || [ "$confirm" = "n" ]; then
+            continue
+        fi
+    fi
+
+    if [ "${DOWNLOAD:0:3}" = "htt" ]; then
+        for s in $DOWNLOAD; do
+            wget -nc $s
+        done
+    fi
+    if [ "${DOWNLOAD_x86_64:0:3}" = "htt" ]; then
+        for s in $DOWNLOAD_x86_64; do
+            wget -nc $s
+        done
+    fi
+    sudo sh ./$PKGNAME.SlackBuild MAKEFLAGS='-j20'
+done
+
+echo "----"
+echo "Packages needed:"
+echo
+for p in "${reversed[@]}"; do
+    CATEGORY=$(echo $p | cut -d "|" -f 1)
+    PKGNAME=$(echo $p | cut -d "|" -f 2)
+    echo "$CATEGORY/$PKGNAME"
+done
+echo
+
