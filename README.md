@@ -399,6 +399,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.25.0
 - Homepage: https://github.com/indygreg/python-zstandard
 - Code repository: 
+## python3-boto3 (Python API for AWS)
+ Boto is the Amazon Web Services (AWS) Software Development Kit (SDK)
+ for Python, which allows Python developers to write software that
+ makes use of services like Amazon S3 and Amazon EC2. You can find the
+ latest, most up to date, documentation at `Read the Docs`_, including
+ a list of services that are supported.
+ Homepage: http://aws.amazon.com/sdk-for-python/
+  
+
+- Category: python
+- Version: 1.42.84
+- Homepage: https://aws.amazon.com/sdk-for-python/
+- Code repository:
 ## python3-xapp (Python3 Xapp Library)
  This package provides the Python3 Xapp Library.
  Homepage: https://github.com/linuxmint/python3-xapp
