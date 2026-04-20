@@ -1469,7 +1469,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 6.10.1
+- Version: 6.10.2
 - Homepage: https://github.com/py-pdf/pypdf
 - Code repository: 
 ## python3-gmpy2 (multi-precision arithmetic for python)
