@@ -218,7 +218,7 @@
   
 
 - Category: development
-- Version: 3.11.1
+- Version: 3.11.3
 - Homepage: https://jmvdveer.home.xs4all.nl
 - Code repository:
 ## fpc (free pascal compiler)
