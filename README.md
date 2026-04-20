@@ -1595,7 +1595,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 1.42.84
+- Version: 1.42.92
 - Homepage: https://aws.amazon.com/sdk-for-python/
 - Code repository:
 ## python3-zstandard (Python3 bindings for Zstandard library)
