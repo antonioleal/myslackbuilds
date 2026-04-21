@@ -34,11 +34,9 @@ TARBALL=ventoy-${VERSION}-linux.tar.gz
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) ARCH=i586
-          CARCH=i386 ;;
+    i?86) ARCH=i586 ;;
     arm*) ARCH=arm ;;
-       *) ARCH=$( uname -m )
-          CARCH=x86_64 ;;
+       *) ARCH=$( uname -m ) ;;
   esac
 fi
 
@@ -72,15 +70,16 @@ tar xvf $CWD/$TARBALL
 cd $PRGNAM-$VERSION
 
 # Decompress tools
-
-pushd tool/$CARCH
+if [ "$ARCH" == "x86_64" ]; then
+    pushd tool/x86_64
+else
+    pushd tool/i386
+fi
 for file in *.xz; do
     xzcat $file > ${file%.xz}
     chmod +x ${file%.xz}
 done
-
-# Cleanup .xz files
-#rm -fv ./*.xz
+# Then cleanup .xz files
 rm -rf *.xz
 popd
 
@@ -104,7 +103,11 @@ sed -i 's|bin/sh|usr/bin/env bash|g' {Ventoy2Disk,VentoyVlnk,tool/{create_ventoy
 # Clean up unused binaries
 # Preserving mkexfatfs and mount.exfat-fuse because exfatprogs is incompatible
 for binary in xzcat hexdump; do
-    rm -rf tool/$CARCH/${binary}
+    if [ "$ARCH" == "x86_64" ]; then
+        rm -rf tool/x86_64/${binary}
+    else
+        rm -rf tool/i386/${binary}
+    fi
 done
 
 mkdir -p $PKG/opt/${PRGNAM}
@@ -138,7 +141,7 @@ if [ "$ARCH" == "x86_64" ]; then
     rm "$PKG/opt/${PRGNAM}/tool/x86_64/Ventoy2Disk.gtk2"
 fi
 
-# Link system binaries
+# Link system binaries...
 if [ "$ARCH" == "x86_64" ]; then
     for binary in $(ls -1 $PKG/opt/${PRGNAM}/tool/x86_64); do
         ( cd $PKG/usr/bin ; rm -rf $binary )
