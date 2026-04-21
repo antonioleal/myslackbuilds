@@ -140,14 +140,16 @@ fi
 
 # Link system binaries
 if [ "$ARCH" == "x86_64" ]; then
-    BINS="$(ls -1 $PKG/opt/${PRGNAM}/tool/x86_64)"
+    for binary in $(ls -1 $PKG/opt/${PRGNAM}/tool/x86_64); do
+        ( cd $PKG/usr/bin ; rm -rf $binary )
+        ( cd $PKG/usr/bin ; ln -sf ../../opt/ventoy/tool/x86_64/$binary $binary )
+    done
 else
-    BINS="$(ls -1 $PKG/opt/${PRGNAM}/tool/i386)"
+    for binary in $(ls -1 $PKG/opt/${PRGNAM}/tool/i386); do
+        ( cd $PKG/usr/bin ; rm -rf $binary )
+        ( cd $PKG/usr/bin ; ln -sf ../../opt/ventoy/tool/i386/$binary $binary )
+    done
 fi
-for binary in $BINS; do
-    ( cd $PKG/usr/bin ; rm -rf $binary )
-    ( cd $PKG/usr/bin ; ln -sf ../../opt/ventoy/tool/$CARCH/$binary $binary )
-done
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
