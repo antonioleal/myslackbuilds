@@ -112,11 +112,12 @@ rm -rf tool/aarch64
 rm -rf tool/mips64el
 if [ "$ARCH" = "x86_64" ]; then
     rm -rf tool/i386
+    cp -avxu VentoyGUI.x86_64 $PKG/opt/${PRGNAM}/
 else
     rm -rf tool/x86_64
+    cp -avxu VentoyGUI.i386 $PKG/opt/${PRGNAM}/
 fi
 cp -avxu tool $PKG/opt/${PRGNAM}
-cp -avxu VentoyGUI.$CARCH $PKG/opt/${PRGNAM}/
 
 cp -avxu ${PRGNAM} $PKG/opt/${PRGNAM}/
 cp -avxu boot $PKG/opt/${PRGNAM}/
