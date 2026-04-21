@@ -3,10 +3,6 @@
 # Slackware build script for ventoy
 
 # Copyright 2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
-# Scandalously stolen from from Arch linux contributors
-#   DuckSoft <realducksoft at gmail dot com>
-#   Mark Wagie <mark dot wagie at proton dot me>
-#   KokaKiwi <kokakiwi+aur@kokakiwi.net>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -39,14 +35,10 @@ TARBALL=ventoy-${VERSION}-linux.tar.gz
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586
-          CARCH=i386
-          ;;
-    arm*) ARCH=arm
-          CARCH=aarch64
-          ;;
+          CARCH=i386 ;;
+    arm*) ARCH=arm ;;
        *) ARCH=$( uname -m )
-          CARCH=x86_64
-          ;;
+          CARCH=x86_64 ;;
   esac
 fi
 
@@ -80,6 +72,7 @@ tar xvf $CWD/$TARBALL
 cd $PRGNAM-$VERSION
 
 # Decompress tools
+
 pushd tool/$CARCH
 for file in *.xz; do
     xzcat $file > ${file%.xz}
@@ -102,50 +95,60 @@ find -L . \
 patch --verbose -Np1 -i "$CWD/sanitize.patch"
 
 # Log location
-sed -i 's|log\.txt|/var/log/ventoy.log|g' \
-WebUI/static/js/languages.js tool/languages.json
-sed -i 's|\./log\.txt|/var/log/ventoy.log|g' \
-Ventoy2Disk.sh tool/{ventoy_lib,VentoyWorker}.sh
+sed -i 's|log\.txt|/var/log/ventoy.log|g' WebUI/static/js/languages.js tool/languages.json
+sed -i 's|\./log\.txt|/var/log/ventoy.log|g' Ventoy2Disk.sh tool/{ventoy_lib,VentoyWorker}.sh
 
 # Non-POSIX compliant scripts
-sed -i 's|bin/sh|usr/bin/env bash|g' \
-{Ventoy2Disk,VentoyVlnk,tool/{create_ventoy_iso_part_dm,ventoy_lib,VentoyWorker}}.sh
+sed -i 's|bin/sh|usr/bin/env bash|g' {Ventoy2Disk,VentoyVlnk,tool/{create_ventoy_iso_part_dm,ventoy_lib,VentoyWorker}}.sh
 
 # Clean up unused binaries
 # Preserving mkexfatfs and mount.exfat-fuse because exfatprogs is incompatible
 for binary in xzcat hexdump; do
-    rm -rf tool/$CARCH/$binary
+    rm -rf tool/$CARCH/${binary}
 done
 
-#package stuff
-install -Dm644 -vt      "$PKG/opt/${PRGNAM}/boot/"            boot/*
-install -Dm644 -vt      "$PKG/opt/${PRGNAM}/${PRGNAM}/"       "${PRGNAM}"/*
-install -Dm755 -vt      "$PKG/opt/${PRGNAM}/tool/"            tool/*.{cer,glade,json,sh,xz}
-install -Dm755 -vt      "$PKG/opt/${PRGNAM}/tool/$CARCH/"     tool/$CARCH/*
-install -Dm755 -vt      "$PKG/opt/${PRGNAM}/"                 *.sh
-cp --no-preserve=o -avt "$PKG/opt/${PRGNAM}/"                 plugin WebUI
+mkdir -p $PKG/opt/${PRGNAM}
+rm -rf tool/aarch64
+rm -rf tool/mips64el
+if [ "$ARCH" = "x86_64" ]; then
+    rm -rf tool/i386
+else
+    rm -rf tool/x86_64
+fi
+cp -avxu tool $PKG/opt/${PRGNAM}
+cp -avxu VentoyGUI.$CARCH $PKG/opt/${PRGNAM}/
 
-install -Dm755 "VentoyGUI.$CARCH" -vt "$PKG/opt/${PRGNAM}"
-install -Dm644 WebUI/static/img/VentoyLogo.png -v "$PKG/usr/share/pixmaps/${PRGNAM}.png"
-install -Dm644 "$CWD/${PRGNAM}.desktop" -vt "$PKG/usr/share/applications"
+cp -avxu ${PRGNAM} $PKG/opt/${PRGNAM}/
+cp -avxu boot $PKG/opt/${PRGNAM}/
+cp -avxu plugin $PKG/opt/${PRGNAM}/
+cp -avxu WebUI $PKG/opt/${PRGNAM}/
+cp -avxu *.sh $PKG/opt/${PRGNAM}/
 
-# Link system binaries
-for binary in xzcat hexdump; do
-    ln -svf /usr/bin/$binary "$PKG/opt/${PRGNAM}/tool/$CARCH/"
-done
+mkdir -p $PKG/usr/share/pixmaps
+cp WebUI/static/img/VentoyLogo.png $PKG/usr/share/pixmaps/${PRGNAM}.png
+mkdir -p $PKG/usr/share/applications
+install -Dm644 $CWD/${PRGNAM}.desktop $PKG/usr/share/applications
 
+mkdir -p $PKG/usr/bin
 install -Dm755 "$CWD/${PRGNAM}"{,gui,web,plugson,-{,extend-}persistent} -vt "$PKG"/usr/bin/
 
 # Remove Gtk 2 files
-if [ $CARCH == "x86_64" ]; then
-    rm "$PKG/opt/${PRGNAM}/tool/$CARCH/Ventoy2Disk.gtk2"
+if [ "$ARCH" == "x86_64" ]; then
+    rm "$PKG/opt/${PRGNAM}/tool/x86_64/Ventoy2Disk.gtk2"
 fi
+
+# Link system binaries
+for binary in $(ls -1 $PKG/opt/${PRGNAM}/tool/$CARCH); do
+    ( cd $PKG/usr/bin ; rm -rf $binary )
+    ( cd $PKG/usr/bin ; ln -sf ../../opt/ventoy/tool/$CARCH/$binary $binary )
+done
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+cat README > $PKG/usr/doc/$PRGNAM-$VERSION/README
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
