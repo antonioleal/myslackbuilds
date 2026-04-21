@@ -1096,13 +1096,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: https://github.com/BrowserWorks/Waterfox
 - Binary repository: https://www.waterfox.net/download/
 ## mullvad-browser (web browser)
- mullvad-browser (web browser)
  The Mullvad Browser is a privacy-focused web browser developed in a
+ collaboration between Mullvad VPN and the Tor Project. Its designed
  to minimize tracking and fingerprinting.
   
 
 - Category: network
-- Version: 15.0.9
+- Version: 15.0.10
 - Homepage: https://mullvad.net/en/browser
 - Code repository:
 ## whalebird (Mastondon, Pleroma and Misskey client)
