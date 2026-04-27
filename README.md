@@ -569,7 +569,7 @@
   
 
 - Category: development
-- Version: 4.4.0
+- Version: 4.5.0
 - Homepage: https://qb64phoenix.com/
 - Code repository: https://github.com/QB64-Phoenix-Edition/QB64pe
 ## kForth-32 (32-bit Forth System for x86-GNU/Linux)
