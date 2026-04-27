@@ -163,7 +163,7 @@
   
 
 - Category: office
-- Version: 26.2.3.1
+- Version: 26.2.3.2
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 ## openoffice.org (a full-featured open-source office suite)
