@@ -1102,7 +1102,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 15.0.10
+- Version: 15.0.11
 - Homepage: https://mullvad.net/en/browser
 - Code repository:
 ## whalebird (Mastondon, Pleroma and Misskey client)
