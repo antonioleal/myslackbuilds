@@ -33,7 +33,7 @@ cd $SCRIPT_DIR
 # TAG=$(curl -s -k https://api.github.com/repos/librespeed/speedtest-cli/releases/latest | jq -r '.tag_name')
 TAG=$(gh release view -R librespeed/speedtest-cli --json tagName --jq '.tagName')
 NEWVERSION=${TAG:1}
-TARBALL=librespeed-cli_1.0.12_linux_amd64.tar.gz
+TARBALL=librespeed-cli_${NEWVERSION}_linux_amd64.tar.gz
 URL="https://github.com/librespeed/speedtest-cli/releases/download/v$NEWVERSION/$TARBALL"
 
 VERSION=`cat version`

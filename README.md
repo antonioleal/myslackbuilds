@@ -1006,7 +1006,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 1.0.12
+- Version: 1.0.13
 - Homepage: https://github.com/librespeed/speedtest-cli
 - Code repository:
 ## helium-browser (web browser)
