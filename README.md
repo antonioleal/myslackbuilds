@@ -567,6 +567,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.22.6
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
+## ardour-harvid-bin (ardour video tools)
+ If Ardour is compiled from source, or installed from a 3rd party
+ repository, three additional tools will need to be installed
+ manually, which are used by Ardour to provide video features and
+ allow direct export your session to mp3.
+  
+
+- Category: multimedia
+- Version: 0.9.1
 ## MuseScore (WYSIWYG Music Score Typesetter)
  MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
  music notation program licensed under GNU GPL.
