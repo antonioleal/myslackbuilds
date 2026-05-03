@@ -1,0 +1,2 @@
+
+Usar o install_video_tools.sh para instalar suporte para exportar mp3
