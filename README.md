@@ -657,7 +657,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: audio
-- Version: 7.70
+- Version: 7.71
 - Homepage: https://www.reaper.fm
 - Code repository:
 ## bitwig-studio (Digital audio workstation for music production)
