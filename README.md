@@ -1204,7 +1204,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 0.8.5
+- Version: 0.8.6
 - Homepage: https://github.com/mcdope/pam_usb
 - Code repository: 
 ## Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt)
