@@ -381,7 +381,7 @@
   
 
 - Category: development
-- Version: 8.9.4
+- Version: 8.9.5
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 ## XiMpLe (tabular xml editor)
