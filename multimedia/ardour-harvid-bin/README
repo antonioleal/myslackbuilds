@@ -16,6 +16,3 @@ To avoid conflicts with Slackware packages, Ardour looks for
 ffmpeg_harvid and ffprobe_harvid.
 
 If you only need mp3 export, xjadeo is not required.
-
-see https://manual.ardour.org/video-timeline/setup/ for
-further information.
