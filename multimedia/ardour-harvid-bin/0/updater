@@ -63,8 +63,8 @@ else
         exit
     fi
     # delete old tarball and place new one
-    rm -rf ../*.tar.gz 2> /dev/null
-    mv *.tar.gz ..
+    rm -rf ../*.tgz 2> /dev/null
+    mv *.tgz ..
 
     ################################
     # write templates              #
