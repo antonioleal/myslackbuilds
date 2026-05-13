@@ -1192,7 +1192,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 6.9.2
+- Version: 6.9.3
 - Homepage: https://download.qt.io/official_releases/qt/
 - Code repository: https://download.qt.io/official_releases/qt/
 ## pam_usb (Hardware Auth via Memory Sticks)
@@ -1682,6 +1682,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 4.6.5
+- Version: 4.7.0
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
