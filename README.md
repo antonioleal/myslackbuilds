@@ -509,7 +509,7 @@
   
 
 - Category: development
-- Version: 17.3.1
+- Version: 17.4
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
