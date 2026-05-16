@@ -1,4 +1,4 @@
-PRGNAM="qt6-prebuilt_environment"
+PRGNAM="qt6-prebuilt-environment"
 VERSION="20.1.0"
 HOMEPAGE="https://download.qt.io/development_releases/prebuilt/libclang/qt"
 DOWNLOAD="UNSUPPORTED"

@@ -1,4 +1,4 @@
-qt6-prebuilt_environment (Clang and LLVM to build the Qt GUI toolkit)
+qt6-prebuilt-environment (Clang and LLVM to build the Qt GUI toolkit)
 
 Qt is a cross-platform application and UI framework for developers
 using C++ or QML, a CSS/JavaScript-like language.

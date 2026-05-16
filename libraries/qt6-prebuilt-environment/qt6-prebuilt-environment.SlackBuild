@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware build script for qt6-prebuilt_environment
+# Slackware build script for qt6-prebuilt-environment
 
 # Copyright 2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -24,7 +24,7 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PRGNAM=qt6-prebuilt_environment
+PRGNAM=qt6-prebuilt-environment
 VERSION=${VERSION:-20.1.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -76,8 +76,8 @@ chown -R root:root .
 set +e
 7z x $CWD/$TARBALL
 set -e
-mkdir -p $PKG/opt/Qt/prebuilt_environment
-mv libclang $PKG/opt/Qt/prebuilt_environment
+mkdir -p $PKG/opt/Qt/prebuilt-environment
+mv libclang $PKG/opt/Qt/prebuilt-environment
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
