@@ -100,7 +100,7 @@
   
 
 - Category: office
-- Version: 4.2.2
+- Version: 4.4.0
 - Homepage: https://www.ledger.com/ledger-live
 - Code repository: https://www.ledger.com/ledger-live
 ## sigil (Multi-platform WYSIWYG ebook editor)
