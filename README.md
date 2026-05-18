@@ -1448,7 +1448,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 3.0.2
+- Version: 3.0.3
 - Homepage: https://github.com/linuxmint/python3-xapp
 - Code repository:
 ## python3-icoextract (Icon Extraction Tool)
