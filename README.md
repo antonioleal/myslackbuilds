@@ -132,7 +132,7 @@
   
 
 - Category: desktop
-- Version: 1.0.9
+- Version: 1.1.0
 - Homepage: https://github.com/xapp-project/xapp-symbolic-icons
 - Code repository:
 ## ClamAV-GUI (A Qt GUI for clamav)
