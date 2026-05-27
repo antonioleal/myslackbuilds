@@ -752,7 +752,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 20260521_05e762b
+- Version: 20260527_dc65698
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
 ## limine (Modern, advanced, portable, multiprotocol bootloader)
