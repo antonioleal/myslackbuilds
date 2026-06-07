@@ -876,6 +876,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20130224_c135151
 - Homepage: https://github.com/LawrenceWoodman/CanAce
 - Code repository:
+## brave-origin-the-latest (Brave Origin updater script)
+ Maintaining an updated Brave Origin on Slackware is now made
+ easier with this small program, "brave-origin-the-latest", a simple
+ python script that will install and keep checking afterwards what is
+ the latest version available so your Slackware box is kept safer.
+  
+
+- Category: system
+- Version: 1.0.0
+- Homepage: https://github.com/antonioleal/brave-origin-the-latest
+- Code repository: https://github.com/antonioleal/brave-origin-the-latest
+
+
+- Development: https://github.com/brave/brave-origin
 ## b2 (BBC Microcomputer Emulator)
  b2 is a cross-platform BBC Micro emulator. Use your Windows/Linux PC
  or macOS computer to play your old BBC games or develop new BBC
