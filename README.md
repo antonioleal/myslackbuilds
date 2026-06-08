@@ -1079,7 +1079,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 2.3.3
+- Version: 3.0.0
 - Homepage: http://www.amule.org
 - Code repository:
 ## opera (A fast and secure web browser)
