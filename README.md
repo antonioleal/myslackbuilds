@@ -216,7 +216,7 @@
   
 
 - Category: office
-- Version: 2.7.6
+- Version: 2.8.0
 - Homepage: https://sigil-ebook.com/
 - Code repository:
 ## ledger-live (Ledger Hardware Wallet Manager)
