@@ -1,2 +1,0 @@
-- Homepage: https://brave.com/origin/
-- Code repository:

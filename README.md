@@ -991,16 +991,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.37.0
 - Homepage: https://oils.pub/
 - Code repository:
-## brave-origin (open source web browser, debloated)
- Brave Origin is a free and open-source web browser developed by
- Brave Software, Inc. based on the Chromium web browser.
- Brave Origin is the debloated version of Brave.
-  
-
-- Category: network
-- Version: 1.91.168
-- Homepage: https://brave.com/origin/
-- Code repository:
 ## gallery-dl (Command line image scraper)
  gallery-dl is a command-line program to download image galleries and
  collections from several image hosting sites. It is a cross-platform
