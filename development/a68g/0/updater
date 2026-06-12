@@ -30,9 +30,9 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=$(lynx --dump https://jmvdveer.home.xs4all.nl/en.download.algol-68-genie-current.html | grep "algol68" | head -1 | awk '{print $1'} | awk -F"-" '{print substr($2,0,length($2)-7)}')
+NEWVERSION=$(curl -s  https://algol68genie.nl/en/algol-68-genie/#obtain | grep "tar.gz" | cut -d "\"" -f2 | cut -d "-" -f2 | awk '{print substr($0,0,length($0)-7)}')
 TARBALL=algol68g-$NEWVERSION.tar.gz
-URL="https://jmvdveer.home.xs4all.nl/$TARBALL"
+URL="https://algol68genie.nl/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
