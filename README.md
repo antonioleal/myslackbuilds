@@ -878,7 +878,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 1.0.1
+- Version: 1.0.2
 - Homepage: https://github.com/tsujan/Arqiver
 - Code repository:
 
