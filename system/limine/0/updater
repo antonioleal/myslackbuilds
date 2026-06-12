@@ -30,9 +30,13 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-NEWVERSION=$(curl -s https://codeberg.org/Limine/Limine/releases | grep "releases/download" | head -1 | awk -F "/" '{print substr($9,8,length($9)-26)}')
+AUX=$(gh release view -R Limine-Bootloader/Limine --json tagName --jq '.tagName')
+TAG=${AUX//\"/}
+REALVERSION=${TAG:1}
+NEWVERSION=${REALVERSION/-/_}
+
 TARBALL=limine-${NEWVERSION}.tar.gz
-URL="https://codeberg.org/Limine/Limine/releases/download/v$NEWVERSION/limine-$NEWVERSION.tar.gz"
+URL="https://github.com/Limine-Bootloader/Limine/releases/download/$TAG/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
