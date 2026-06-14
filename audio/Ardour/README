@@ -1,0 +1,14 @@
+Ardour is an application to fit the needs of musicians under Linux.
+It is designed to be a fully functional professional audio application,
+that uses the professional sound server jack for sound i/o.
+
+soundtouch, libwebsockets, cppunit and lua are optional dependencies.
+
+This package is essentially the same as the one provided by
+Matteo Bernardini at SlackBuilds.org, but usually installs a more
+updated version of Ardour. Do not install both at the same time.
+
+Note:
+Although you can download the sources provided in this package
+github, as general practice you should download them directly
+from Ardour.org.

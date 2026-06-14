@@ -1,4 +1,4 @@
-PRGNAM="ardour"
+PRGNAM="Ardour"
 VERSION="9.7.0"
 HOMEPAGE="http://ardour.org"
 DOWNLOAD="https://github.com/antonioleal/myslackbuilds/raw/main/audio/ardour/Ardour-9.7.0.tar.bz2"

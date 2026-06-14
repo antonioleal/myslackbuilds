@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
       |-----handy-ruler------------------------------------------------------|
-ardour: ardour (Professional Audio Editing)
-ardour:
-ardour: Ardour is an application to fit the needs of musicians under
-ardour: Linux. It is designed to be a fully functional professional
-ardour: audio application, that uses the professional sound server
-ardour: jack for sound i/o.
-ardour:
-ardour: Homepage: http://ardour.org
-ardour:
-ardour:
-ardour:
+Ardour: Ardour (Professional Audio Editing)
+Ardour:
+Ardour: Ardour is an application to fit the needs of musicians under
+Ardour: Linux. It is designed to be a fully functional professional
+Ardour: audio application, that uses the professional sound server
+Ardour: jack for sound i/o.
+Ardour:
+Ardour: Homepage: http://ardour.org
+Ardour:
+Ardour:
+Ardour:
