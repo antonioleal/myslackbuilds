@@ -80,8 +80,12 @@ do
         source ~/slackware-builds/myslackbuilds/$updaterdir/updater
         if ! [ "$CHANGED" == "" ]
         then
-            #echo -n -e ",\e[5;31m SBo diff\e[0m"
-            echo -n -e ",\033[0;31m SBo diff\e[0m"
+            if [ -e ~/slackware-builds/slackbuilds/$CATEGORY/$PKGNAME/$PKGNAME.info ]
+            then
+                echo -n -e ",\033[0;31m SBo diff\e[0m"
+            else
+                echo -n -e ", Not in SBo"
+            fi
             modified=$((modified+1))
         fi
         if ! [ "$RET0" = "" ]
@@ -99,8 +103,12 @@ do
         echo -n -e "\033[0;33mhas no updater script\e[0m"
         if ! [ "$CHANGED" == "" ]
         then
-            #echo -n -e ",\e[5;31m SBo diff\e[0m"
-            echo -n -e ",\033[0;31m SBo diff\e[0m"
+            if [ -e ~/slackware-builds/slackbuilds/$CATEGORY/$PKGNAME/$PKGNAME.info ]
+            then
+                echo -n -e ",\033[0;31m SBo diff\e[0m"
+            else
+                echo -n -e ", Not in SBo"
+            fi
             modified=$((modified+1))
         fi
     fi
