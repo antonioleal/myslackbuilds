@@ -219,7 +219,7 @@
 
 - Category: development
 - Version: 3.12.2
-- Homepage: https://jmvdveer.home.xs4all.nl
+- Homepage: https://algol68genie.nl/en/algol-68-genie/
 - Code repository:
 ## fpc (free pascal compiler)
  Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
