@@ -343,6 +343,15 @@
 - Version: 42.4.0
 - Homepage: https://www.electronjs.org/
 - Code repository:
+## gn (Meta-build system)
+ GN is a meta-build system that generates build files for Ninja.
+ Homepage: https://gn.googlesource.com/gn/
+  
+
+- Category: development
+- Version: 0.1616
+- Homepage: https://gn.googlesource.com/
+- Code repository:
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for
