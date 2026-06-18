@@ -355,7 +355,7 @@
   
 
 - Category: development
-- Version: 20251218_5d2a96a
+- Version: 20260618_ebae9f7
 - Homepage: https://notepadqq.com
 - Code repository: https://github.com/notepadqq/notepadqq/commits/master/
 ## kforth (A Forth programming language and environment)
