@@ -352,6 +352,18 @@
 - Version: 0.1616
 - Homepage: https://gn.googlesource.com/
 - Code repository:
+## evemu (Device descriptions and events recording and replaying tools)
+ evemu records and replays device descriptions and events, making it
+ possible to emulate input devices through the kernel's input system.
+ Emulated devices are for most practical purposes indistinguishable
+ from real devices.
+ Homepage: https://www.freedesktop.org/wiki/Evemu/
+  
+
+- Category: development
+- Version: 2.7.0
+- Homepage: https://www.freedesktop.org/wiki/Evemu/
+- Code repository:
 ## notepadqq (Notepad++-like editor for the Linux desktop)
  It helps developers by providing all you can expect from
  general purpose text editor, such as syntax highlighting for
