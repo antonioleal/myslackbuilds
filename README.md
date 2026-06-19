@@ -1319,6 +1319,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20260104_bb7b488
 - Homepage: https://github.com/pcrow/atari_8bit_utils
 - Code repository:
+## exult (game engine for running Ultima7)
+ As computers evolve, we risk losing classic games from the not-so-
+ distant past. One of these, Ultima 7, an RPG from the early 1990's,
+ still has a huge following, and many consider it to be one of the
+ most immersive games ever produced. Exult is a project to recreate
+ Ultima 7 for modern operating systems, using the game's original
+ plot, data, and graphics files.
+ Homepage: http://exult.sourceforge.net/
+  
+
+- Category: games
+- Version: 1.6
+- Homepage: http://exult.sourceforge.net/
+- Code repository:
 ## solarus (an ARPG game engine)
  Solarus is a free and open-source Action-RPG game engine, licensed
  under GPL, and written in C++. It runs quests in Lua, and can work on
