@@ -1404,6 +1404,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2018.01.13_1fa4044
 - Homepage: http://nuvie.sourceforge.net
 - Code repository:
+## yarntown (2D hommage to Bloodborne for the solarus engine)
+ You've come on the night of the hunt. The streets of this cursed,
+ gothic town are overrun with beasts, and what has become of the men
+ who tried to hunt them before. Explore the twisting roads, go toe to
+ toe with powerful foes, and uncover Yarntown's dark secrets.
+ Homeage: https://gitlab.com/maxmraz/yarntown
+  
+
+- Category: games
+- Version: 1.0.6
+- Homepage: https://gitlab.com/maxmraz/yarntown
+- Code repository:
 ## zbom (Zelda fangame for the solarus engine)
  Link's newest quest is set a few generations after Twilight Princess
  and spans two different continents of Hyrule. Explore eight unique
