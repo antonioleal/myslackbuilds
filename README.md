@@ -1382,6 +1382,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.2.1
 - Homepage: https://www.solarus-games.org/
 - Code repository:
+## zsxd (Parodic Zelda fangame)
+ Zelda Mystery of Solarus XD is a parodic game that we released on
+ April 1st, 2011. Though it's a big April 1st joke, it's a real, full
+ game with two huge dungeons and 5-10 hours of playing.
+ Homeage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.12.2
+- Homepage: https://www.solarus-games.org/
+- Code repository:
 ## antares (A tactical space combat game)
  Antares is based on Ares, a game developed by Nathan Lamont, and
  released for the classic Mac OS in 1996.
