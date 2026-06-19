@@ -1394,6 +1394,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2018.01.13_1fa4044
 - Homepage: http://nuvie.sourceforge.net
 - Code repository:
+## zbom (Zelda fangame for the solarus engine)
+ Link's newest quest is set a few generations after Twilight Princess
+ and spans two different continents of Hyrule. Explore eight unique
+ temples and defeat enemies and bosses in order to gain powerful items
+ to assist you in your goal. Explore many areas of Hyrule and assist
+ different races in their conflicts.
+ Homeage: https://sites.google.com/site/zeldabom/
+  
+
+- Category: games
+- Version: 1.4
+- Homepage: https://sites.google.com/site/zeldabom/
+- Code repository:
 ## ZEsarUX (retro machines emulator)
  ZEsarUX is a ZX Machines Emulator for Unix, including all the
  Sinclair computers: MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and
