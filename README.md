@@ -1200,6 +1200,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.14.30
 - Homepage: http://pupnp.sourceforge.net/
 - Code repository:
+## zimg (Scaling, colorspace conversion, and dithering library)
+ The "z" library implements the commonly required image processing
+ basics of scaling, colorspace conversion, and depth conversion.
+ Homepage: https://github.com/sekrit-twc/zimg
+  
+
+- Category: libraries
+- Version: 3.0.5
+- Homepage: https://github.com/sekrit-twc/zimg
+- Code repository:
 ## SDL3 (Simple DirectMedia Layer Version 3)
  Simple DirectMedia Layer is a cross-platform development library
  designed to provide low-level access to audio, keyboard, mouse,
