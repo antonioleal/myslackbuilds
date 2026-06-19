@@ -1688,6 +1688,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.1.1.912
 - Homepage: https://musescore.org/
 - Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
+## vapoursynth (video processing framework)
+ A video processing framework with simplicity in mind.
+ Homepage: https://www.vapoursynth.com/
+  
+
+- Category: multimedia
+- Version: R70
+- Homepage: https://www.vapoursynth.com/
+- Code repository:
 ## vlc (VLC media player)
  VLC media player is a free and open source media player and multi-
  media framework written by the VideoLAN project. VLC is a portable
@@ -1712,6 +1721,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Category: multimedia
 - Version: 0.9.1
 - Homepage: https://x42.github.io/harvid/
+- Code repository:
+## vapoursynth-mvtools (motion estimation vapoursynth plugin)
+ MVTools is a set of filters for motion estimation and compensation.
+ Homepage: https://github.com/dubhater/vapoursynth-mvtools
+  
+
+- Category: multimedia
+- Version: 24
+- Homepage: https://github.com/dubhater/vapoursynth-mvtools
 - Code repository:
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
  MuseScore is a free cross platform WYSIWYG music notation program,
