@@ -1,0 +1,2 @@
+- Homepage: https://www.solarus-games.org/
+- Code repository:
