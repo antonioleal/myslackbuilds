@@ -1416,6 +1416,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0.6
 - Homepage: https://gitlab.com/maxmraz/yarntown
 - Code repository:
+## solarus-quest-editor (GUI to edit quests for the Solarus engine)
+ Solarus Quest Editor is a free and open-source game editor for
+ Solarus, licensed under GPL. It is written in C++ with Qt. It helps
+ you managing your project, and editing maps, sprites, tilesets,
+ dialogs, scripts, musics and sounds.
+ Homepage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.6.4
+- Homepage: https://www.solarus-games.org/
+- Code repository:
 ## zbom (Zelda fangame for the solarus engine)
  Link's newest quest is set a few generations after Twilight Princess
  and spans two different continents of Hyrule. Explore eight unique
