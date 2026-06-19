@@ -1642,6 +1642,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.8.0
 - Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
 - Code repository:
+## renderdoc (Stand-alone graphics debugging tool)
+ RenderDoc is a frame-capture based graphics debugger, currently
+ available for Vulkan, D3D11, D3D12, OpenGL, and OpenGL ES
+ development.
+ Homepage: https://renderdoc.org/
+  
+
+- Category: graphics
+- Version: 1.11
+- Homepage: https://renderdoc.org/
+- Code repository:
 ## kphotoalbum (a photo management application)
  Kphotoalbum (previously known as KimDaBa) is an image viewer and
  organizer for KDE 4. It makes use of kipi plugins and exiv2 if
