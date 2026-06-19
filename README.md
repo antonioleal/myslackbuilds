@@ -1743,3 +1743,14 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.7.3
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
+## devedeng (create video CDs and DVDs)
+ DevedeNG is a program to create video DVDs and CDs (VCD, sVCD or CVD)
+ suitable for home players, from any number of video files, in any of
+ the formats supported by Mplayer.
+ Homepage: http://www.rastersoft.com/programas/devede.html
+  
+
+- Category: multimedia
+- Version: 4.16.0
+- Homepage: http://www.rastersoft.com/programas/devede.html
+- Code repository:
