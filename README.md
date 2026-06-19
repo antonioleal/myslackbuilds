@@ -1417,6 +1417,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.4
 - Homepage: https://sites.google.com/site/zeldabom/
 - Code repository:
+## dhewm3 (Doom 3 GPL source port)
+ The goal of dhewm 3 is bring DOOM 3 with the help of SDL to all
+ suitable platforms.
+ Homepage: https://dhewm3.org/
+  
+
+- Category: games
+- Version: 1.5.0
+- Homepage: https://dhewm3.org/
+- Code repository:
 ## ZEsarUX (retro machines emulator)
  ZEsarUX is a ZX Machines Emulator for Unix, including all the
  Sinclair computers: MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and
