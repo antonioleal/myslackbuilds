@@ -1382,6 +1382,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.2.1
 - Homepage: https://www.solarus-games.org/
 - Code repository:
+## antares (A tactical space combat game)
+ Antares is based on Ares, a game developed by Nathan Lamont, and
+ released for the classic Mac OS in 1996.
+ Homepage: https://arescentral.org/antares
+  
+
+- Category: games
+- Version: 0.9.1
+- Homepage: https://arescentral.org/antares
+- Code repository:
 ## nuvie (New Ultima VI Engine)
  Nuvie (Pronounced New-Vee) is an open source engine for Origin's games
  Ultima 6, Martian Dreams and The Savage Empire. It uses the original
