@@ -1345,6 +1345,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.4
 - Homepage: https://lowcarb.itch.io/space-invaders
 - Code repository:
+## nuvie (New Ultima VI Engine)
+ Nuvie (Pronounced New-Vee) is an open source engine for Origin's games
+ Ultima 6, Martian Dreams and The Savage Empire. It uses the original
+ data files from the games. It should be able to run on any platform
+ that is supported by the SDL library.
+ Homepage: http://nuvie.sourceforge.net
+  
+
+- Category: games
+- Version: 2018.01.13_1fa4044
+- Homepage: http://nuvie.sourceforge.net
+- Code repository:
 ## ZEsarUX (retro machines emulator)
  ZEsarUX is a ZX Machines Emulator for Unix, including all the
  Sinclair computers: MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and
