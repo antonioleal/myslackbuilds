@@ -1319,6 +1319,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20260104_bb7b488
 - Homepage: https://github.com/pcrow/atari_8bit_utils
 - Code repository:
+## solarus (an ARPG game engine)
+ Solarus is a free and open-source Action-RPG game engine, licensed
+ under GPL, and written in C++. It runs quests in Lua, and can work on
+ a great number of platforms.
+ Homepage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.6.4
+- Homepage: https://www.solarus-games.org/
+- Code repository:
 ## lutris (Open Gaming Platform)
  Lutris is an open gaming platform for Linux. It helps you install
  and manage your games in a unified interface.  The goal is to support
@@ -1344,6 +1355,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Category: games
 - Version: 1.4
 - Homepage: https://lowcarb.itch.io/space-invaders
+- Code repository:
+## zelda-roth-se (Zelda fangame for the Solarus engine)
+ Zelda Return of the Hylian Solarus Edition is a remake of the
+ original Zelda Return of the Hylian, a short and pleasant fangame
+ from Vincent Jouillat. The original game was developed in C++ and was
+ released in 2006.
+ Homepage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.2.1
+- Homepage: https://www.solarus-games.org/
 - Code repository:
 ## nuvie (New Ultima VI Engine)
  Nuvie (Pronounced New-Vee) is an open source engine for Origin's games
