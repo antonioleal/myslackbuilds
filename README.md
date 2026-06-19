@@ -1465,6 +1465,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.1.1
 - Homepage: https://www.solarus-games.org/
 - Code repository:
+## zsdx (Zelda fangame for the solarus engine)
+ The Legend of Zelda: Mystery of Solarus DX is set to be a direct
+ sequel to The Legend of Zelda: A Link to the Past on the SNES, using
+ the same graphics and game mechanisms. Zelda Mystery of Solarus DX is
+ the first game made with the Solarus engine and in fact, Solarus was
+ primarily designed for this game.
+ Homeage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.12.2
+- Homepage: https://www.solarus-games.org/
+- Code repository:
 ## balena-etcher-bin (Flash OS images to SD cards & USB drives)
  Etcher is a powerful OS image flasher built with web technologies
  to ensure flashing an SDCard or USB drive is a pleasant and safe
