@@ -1394,6 +1394,18 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 13.0
 - Homepage: https://github.com/chernandezba/zesarux
 - Code repository:
+## zelda-xd2-mercuris-chess (Parodic Zelda fangame)
+ Zelda XD2: Mercuris Chess is the sequel of the first XD parodic game,
+ and was also released on April 1st, in 2017 this time. As a direct
+ sequel, the overworld is expanded, the story is extended and the funny
+ tone is kept, if not bettered!
+ Homeage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.1.1
+- Homepage: https://www.solarus-games.org/
+- Code repository:
 ## balena-etcher-bin (Flash OS images to SD cards & USB drives)
  Etcher is a powerful OS image flasher built with web technologies
  to ensure flashing an SDCard or USB drive is a pleasant and safe
