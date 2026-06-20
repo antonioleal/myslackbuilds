@@ -795,7 +795,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: network
 - Version: 3.0.0
-- Homepage: http://www.amule.org
+- Homepage: https://amule-org.github.io/
 - Code repository:
 ## newsraft (Terminal feed reader)
  Newsraft is a feed reader with an ncurses user interface. It's

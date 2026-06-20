@@ -1,2 +1,2 @@
-- Homepage: http://www.amule.org
+- Homepage: https://amule-org.github.io/
 - Code repository:
