@@ -1871,6 +1871,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.08_2
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
+## antigravity2 (Google Antigravity 2.0 agent command center)
+ Google Antigravity agent command center for orchestration and
+ automation.
+  
+
+- Category: desktop
+- Version: 2.1.4
+- Homepage: https://antigravity.google/
+- Code repository:
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
