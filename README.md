@@ -1406,7 +1406,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: development
-- Version: 1.23.2
+- Version: 2.0.4
 - Homepage: https://antigravity.google/
 - Code repository:
 ## smartgit (Desktop Git Client)

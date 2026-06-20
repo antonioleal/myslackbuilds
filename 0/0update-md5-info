@@ -56,7 +56,8 @@ calcula()
     echo -n "$2\"" >> $INFOFILE.new
     for i in $1
     do
-        source=`echo $i| rev | cut -d "/" -f1 | rev`
+        aux=`echo $i| rev | cut -d "/" -f1 | rev`
+        source=$(echo -e "${aux//%/\\x}")  # decode %20 characters in tarball names
         if [[ $pass -eq 0 ]]
         then
             pass=1
@@ -80,7 +81,7 @@ calcula()
     echo -n "$3\"" >> $INFOFILE.new
     for i in ${!MD5SUM[@]}
     do
-        aux=`md5sum ${MD5SUM[$i]} | cut -d" " -f1`
+        aux=`md5sum "${MD5SUM[$i]}" | cut -d" " -f1`
         if [[ $i -eq 0 ]]
         then
             echo -n "$aux"
