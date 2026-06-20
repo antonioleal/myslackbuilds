@@ -1530,7 +1530,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Code repository: "http://2484.de/yabasic/"
 ## a68g (Algol 68 compiler-interpreter)
  It can be used for executing Algol 68 programs or scripts.
- HomePage: https://jmvdveer.home.xs4all.nl
+ HomePage: https://algol68genie.nl/en/algol-68-genie/
   
 
 - Category: development
