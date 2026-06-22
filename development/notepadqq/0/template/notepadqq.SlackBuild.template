@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=notepadqq
 VERSION=${VERSION:-_fullversion_}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 TARBALL=${TARBALL:-_commit_}
@@ -82,7 +82,7 @@ CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix /opt/notepadqq \
-  --qmake /usr/lib$LIBDIRSUFFIX/qt5/bin/qmake
+  --qmake /usr/lib$LIBDIRSUFFIX/qt6/bin/qmake
 
 # addressing https://github.com/notepadqq/notepadqq/issues/1135
 sed -i "s|bool BackupService::s_autosaveEnabled = false;|bool BackupService::s_autosaveEnabled = true;|g" src/ui/Sessions/backupservice.cpp
