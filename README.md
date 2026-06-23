@@ -531,6 +531,20 @@
 - Version: 12.33
 - Homepage: https://smallbasic.github.io
 - Code repository: https://github.com/smallbasic/SmallBASIC
+## SQLiteStudio (SQLite database manager written in C++ using Qt)
+ A free, open source, multi-platform SQLite database manager written
+ in C++, with use of Qt framework.
+ SQLiteStudio is a desktop application for browsing and editing SQLite
+ database files. It is aimed for people, who know what SQLite is, or
+ what relational databases are in general.
+  
+
+- Category: development
+- Version: 3.4.21
+- Homepage: https://sqlitestudio.pl/
+- Code repository:
+
+*No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
 ## vstudio (Valentina Studio DB Management)
  Valentina Studio is the best way to transform your data into
  meaningful information; create, administer, query and explore
