@@ -80,11 +80,7 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 
 # Make sure sqlite from the official patches/packages is installed
-if [[ "$ARCH" == "i586" ]]; then
-    /sbin/upgradepkg --install-new $CWD/sqlite-3.50.4-i586-2_slack15.0.txz
-else
-    /sbin/upgradepkg --install-new $CWD/sqlite-3.50.4-x86_64-2_slack15.0.txz
-fi
+/sbin/upgradepkg --install-new $CWD/sqlite-3.50.4-x86_64-2_slack15.0.txz
 
 tar xvfz $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
