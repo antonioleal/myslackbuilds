@@ -57,7 +57,7 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 mkdir -p $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
-unzip $CWD/$TARBALL gn
+cat $CWD/$TARBALL  | bsdtar -xf -
 
 chown -R root:root .
 mkdir -p $PKG/usr/bin
