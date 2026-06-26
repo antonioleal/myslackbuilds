@@ -363,7 +363,7 @@
   
 
 - Category: development
-- Version: 0.1616
+- Version: 2429_a5cbe3d1e70b
 - Homepage: https://gn.googlesource.com/
 - Code repository:
 ## evemu (Device descriptions and events recording and replaying tools)
