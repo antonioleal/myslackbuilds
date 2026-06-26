@@ -31,8 +31,8 @@ cd $SCRIPT_DIR
 # check versions               #
 ################################
 TARBALL=$(curl -s https://chrome-infra-packages.appspot.com/p/gn/gn/linux-amd64 | grep "\"version-link\"" | head -1 | cut -d "/" -f7 | awk '{print $1}' | cut -d "\"" -f1)
-wget https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/$TARBALL
-unzip $TARBALL gn
+wget https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/$TARBALL >/dev/null 2>&1
+unzip $TARBALL gn >/dev/null 2>&1
 NEWVERSION=$(./gn --version |  tr -d '()' | tr ' ' '_')
 URL="https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/$TARBALL"
 rm -rf $TARBALL
