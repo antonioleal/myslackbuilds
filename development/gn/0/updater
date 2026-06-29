@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Slackware updater script for gn
+# Slackware updater script to bypass updater.sh checks
 
 # Copyright 2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
@@ -22,67 +22,9 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=gn
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
-
-################################
-# check versions               #
-################################
-TARBALL=$(curl -s https://chrome-infra-packages.appspot.com/p/gn/gn/linux-amd64 | grep "\"version-link\"" | head -1 | cut -d "/" -f7 | awk '{print $1}' | cut -d "\"" -f1)
-wget https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/$TARBALL >/dev/null 2>&1
-unzip $TARBALL gn >/dev/null 2>&1
-NEWVERSION=$(./gn --version |  tr -d '()' | tr ' ' '_')
-URL="https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/$TARBALL"
-rm -rf $TARBALL
-rm -rf gn
-
-VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ]
-then
-    echo -n "is at version $VERSION"
-    export RET0=""
-else
-    ################################
-    # check for testonly parameter #
-    ################################
-    if [ "$ARG0" = "TESTONLY" ]
-    then
-        echo -n "has a new version $NEWVERSION"
-        export RET0=$NEWVERSION
-        return
-    fi
-    ################################
-    # download tarball             #
-    ################################
-    wget $URL
-    if [ ! -f ./$TARBALL ]
-    then
-        echo "File $TARBALL not found, aborting..."
-        exit
-    fi
-    # delete old tarball and place new one
-    mv $TARBALL ..
-    rm -rf gn
-
-    ################################
-    # write templates              #
-    ################################
-    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
-
-    sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_md5_/${MD5}/g" \
-        -e "s/_tarball_/${TARBALL}/g" \
-        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-
-    sed -e "s/_version_/${NEWVERSION}/g" \
-        -e "s/_tarball_/${TARBALL}/g" \
-        $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-
-    chmod 644 ../${PRGNAM}.SlackBuild
-    echo "$NEWVERSION" > version
-    echo -n "has a new version $NEWVERSION"
-    export RET0=$NEWVERSION
-fi
+source ../*.info
+echo -n "is at version $VERSION, bypass, if updated breaks antares game"
+export RET0=""
