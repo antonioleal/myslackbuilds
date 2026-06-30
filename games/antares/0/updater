@@ -36,7 +36,8 @@ REALVERSION=${TAG:1}
 NEWVERSION=${REALVERSION/-/_}
 
 TARBALL=antares-$REALVERSION.zip
-URL="https://github.com/arescentral/antares/archive/$TAG/$TARBALL"
+#URL="https://github.com/arescentral/antares/archive/$TAG/$TARBALL"
+URL="http://downloads.arescentral.org/Antares/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
