@@ -33,7 +33,7 @@ cd $SCRIPT_DIR
 #AUX=$(curl -s https://api.github.com/repos/pawelsalawa/letos/releases/latest |  jq -r '.tag_name')
 AUX=$(gh release view -R pawelsalawa/letos --json tagName --jq '.tagName')
 TAG=${AUX//\"/}
-REALVERSION=${TAG:1}
+REALVERSION=${TAG}
 NEWVERSION=${REALVERSION/-/_}
 
 TARBALL=letos-$REALVERSION.tar.gz
