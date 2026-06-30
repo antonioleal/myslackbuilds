@@ -444,7 +444,7 @@
   
 
 - Category: development
-- Version: 2.1.4
+- Version: 2.2.1
 - Homepage: https://antigravity.google/
 - Code repository:
 ## smartsvn (Desktop SVN Client)
