@@ -1219,6 +1219,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.14.30
 - Homepage: http://pupnp.sourceforge.net/
 - Code repository:
+## libreplaygain (Musepack ReplayGain library)
+ Musepack ReplayGain library.
+ Homepage: <http://www.musepack.net/>
+  
+
+- Category: libraries
+- Version: r475
+- Homepage: http://www.musepack.net/
+- Code repository:
 ## zimg (Scaling, colorspace conversion, and dithering library)
  The "z" library implements the commonly required image processing
  basics of scaling, colorspace conversion, and depth conversion.
