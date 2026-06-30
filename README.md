@@ -1229,6 +1229,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.0.5
 - Homepage: https://github.com/sekrit-twc/zimg
 - Code repository:
+## libcuefile (CUE File library)
+ Cue File library from Musepack project.
+ Homepage: <http://www.musepack.net/>
+  
+
+- Category: libraries
+- Version: r475
+- Homepage: http://www.musepack.net/
+- Code repository:
 ## SDL3 (Simple DirectMedia Layer Version 3)
  Simple DirectMedia Layer is a cross-platform development library
  designed to provide low-level access to audio, keyboard, mouse,
