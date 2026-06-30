@@ -690,6 +690,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 7.76
 - Homepage: https://www.reaper.fm
 - Code repository:
+## musepack-tools (Musepack SV8 command line tools)
+ This package contains the Musepack Stream Version 8 command line
+ tools for Linux. SV8 supercedes SV7 and is preferable for any task.
+ Homepage: <http://www.musepack.net/>
+  
+
+- Category: audio
+- Version: r475
+- Homepage: http://www.musepack.net/
+- Code repository:
 ## bitwig-studio (Digital audio workstation for music production)
  Bitwig is designed to be an instrument for live performances as well
  as a tool for composing, recording, arranging, mixing, and mastering.
