@@ -1,0 +1,2 @@
+- Homepage: http://fontmanager.github.io/
+- Code repository:

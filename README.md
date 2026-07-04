@@ -1005,6 +1005,14 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.41
 - Homepage: https://sourceforge.net/projects/eightyone-sinclair-emulator/
 - Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
+## font-manager (GTK+ font manager)
+ A simple font management application for GTK+ Desktop Environments.
+  
+
+- Category: system
+- Version: 0.8.8
+- Homepage: http://fontmanager.github.io/
+- Code repository:
 ## zutty (X terminal emulator using OpenGL ES Compute Shaders)
  Zutty is a terminal emulator for the X Window System, functionally
  similar to several other X terminal emulators such as xterm, rxvt and
