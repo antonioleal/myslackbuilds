@@ -1632,6 +1632,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.3.1
 - Homepage: https://www.hpcalc.org/details/8939
 - Code repository:
+## free42 (re-implementation of HP-42S calculator and HP-82240 printer)
+ Free42 is a re-implementation of the HP-42S calculator and the
+ HP-82240 printer. It is a complete rewrite, not using any HP code,
+ and it does not require an HP-42S ROM image.  Free42 is an Open
+ Source project. The executables and source code are released
+ under the terms of the GNU General Public License, version 2.
+ All third-party code used in Free42 is either in the public domain,
+ or licensed under terms compatible with GPLv2, or used with the
+ authors' permission.
+ Homepage: http://thomasokken.com/free42/index.html
+  
+
+- Category: academic
+- Version: 2.0.4
 ## x48ng (HP48 Calculator emulator)
  x48ng is a vintage emulator capable of providing a faithful
  replication of the HP48 Calculator. It requires a copy of the ROM
