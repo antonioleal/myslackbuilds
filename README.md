@@ -1533,6 +1533,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: games
 - Version: 3.6.5
+- Homepage: http://www.vassalengine.org/
+- Code repository:
 ## zsdx (Zelda fangame for the solarus engine)
  The Legend of Zelda: Mystery of Solarus DX is set to be a direct
  sequel to The Legend of Zelda: A Link to the Past on the SNES, using
@@ -1646,6 +1648,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: academic
 - Version: 2.0.4
+- Homepage: http://thomasokken.com/free42/index.html
+- Code repository:
 ## x48ng (HP48 Calculator emulator)
  x48ng is a vintage emulator capable of providing a faithful
  replication of the HP48 Calculator. It requires a copy of the ROM
