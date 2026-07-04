@@ -1300,6 +1300,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.14.19
 - Homepage: https://github.com/coin-or/Ipopt
 - Code repository: 
+## libmodbus (a fast and portable Modbus library)
+ libmodbus is a free software library to send/receive data according
+ to the Modbus protocol. This library is written in C and supports
+ RTU (serial) and TCP (Ethernet) communications.
+ Homepage: http://www.libmodbus.org
+  
+
+- Category: libraries
+- Version: 3.0.6
 ## libupnp-legacy (Portable SDK for UPnP Devices)
  The portable SDK for UPnP Devices (libupnp-legacy) provides developers
  with an API and open source code for building control points, devices,
