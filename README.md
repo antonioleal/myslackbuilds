@@ -1525,6 +1525,14 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.1.1
 - Homepage: https://www.solarus-games.org/
 - Code repository:
+## VASSAL (engine for board and card games)
+ VASSAL is a game engine for building and playing online adaptations
+ of board games and card games. Play live on the Internet or by email.
+ VASSAL runs on all platforms, and is free, open-source software.
+  
+
+- Category: games
+- Version: 3.6.5
 ## zsdx (Zelda fangame for the solarus engine)
  The Legend of Zelda: Mystery of Solarus DX is set to be a direct
  sequel to The Legend of Zelda: A Link to the Past on the SNES, using
