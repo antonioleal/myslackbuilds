@@ -186,7 +186,7 @@
   
 
 - Category: development
-- Version: 4.0.0
+- Version: 4.0.1
 - Homepage: https://letos.org
 - Code repository:
 
