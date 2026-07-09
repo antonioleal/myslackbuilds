@@ -1243,7 +1243,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 3.0.5
+- Version: 3.0.6
 - Homepage: https://github.com/sekrit-twc/zimg
 - Code repository:
 ## libcuefile (CUE File library)
