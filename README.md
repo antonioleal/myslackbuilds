@@ -1316,7 +1316,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 3.0.6
+- Version: 3.2.0
 - Homepage: http://www.libmodbus.org
 - Code repository:
 ## libupnp-legacy (Portable SDK for UPnP Devices)
