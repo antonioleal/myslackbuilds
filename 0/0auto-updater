@@ -84,7 +84,7 @@ do
             then
                 echo -n -e ",\033[0;31m SBo diff\e[0m"
             else
-                echo -n -e ", Not in SBo"
+                echo -n -e ",\033[0;34m Not in SBo\e[0m"
             fi
             modified=$((modified+1))
         fi

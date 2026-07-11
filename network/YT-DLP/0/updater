@@ -43,7 +43,6 @@ VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo -n "is at version $VERSION"
-    echo -n -e ",\033[0;34m Not in SBo\e[0m"
     export RET0=""
 else
     ################################
@@ -52,7 +51,6 @@ else
     if [ "$ARG0" = "TESTONLY" ]
     then
         echo -n "has a new version $NEWVERSION"
-        echo -n -e ",\033[0;34m Not in SBo\e[0m"
         export RET0=$NEWVERSION
         return
     fi
@@ -89,6 +87,5 @@ else
     chmod 644 ../${PRGNAM}.SlackBuild
     echo "$NEWVERSION" > version
     echo -n "has a new version $NEWVERSION"
-    echo -n -e ",\033[0;34m Not in SBo\e[0m"
     export RET0=$NEWVERSION
 fi
