@@ -71,13 +71,13 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
-tar xvfz $PRGNAM-$VERSION.tar.gz
+tar xvfz $CWD/$PRGNAM-$VERSION.tar.gz
 
 mkdir -p $PKG/usr/bin
-install -s -m0755 -oroot -groot $CWD/yt-dlp_linux $PKG/usr/bin/yt-dlp
+install -s -m0755 -oroot -groot yt-dlp_linux $PKG/usr/bin/yt-dlp
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

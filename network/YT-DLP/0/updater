@@ -63,8 +63,11 @@ else
         echo "File $TARBALL not found, aborting..."
         exit
     fi
+
     # delete old tarball and place new one
     tar cvfz $PRGNAM-$NEWVERSION.tar.gz $TARBALL --remove-files $TARBALL
+    TARBALL=$PRGNAM-$NEWVERSION.tar.gz
+
     rm -rf ../*.tar.gz 2> /dev/null
     mv *.tar.gz ..
 
