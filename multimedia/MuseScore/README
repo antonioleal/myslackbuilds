@@ -18,3 +18,10 @@ MuseScore features:
  - Print or create pdf files
 
 In Slackware this package partially installs to /opt/MuseScore
+
+Big Caveats on Slackware:
+a) MuseScore does not work with pipewire.
+   Disable it and reboot your machine if you want to use ms
+b) Wayland was not tested.
+c) For better Dawn integration use MuseScore-Legacy 3.6.2
+   instead.
