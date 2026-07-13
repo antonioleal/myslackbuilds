@@ -20,10 +20,9 @@ MuseScore features:
 In Slackware this package partially installs to /opt/MuseScore
 
 Notes:
-a) MuseScore 4.x does not work with pipewire.
-   Disable it and reboot your machine if you want to use this
-   excelent editor and have top engraving.
-b) Wayland was not tested. I suspect it will have its issues.
+a) if having difficulties making MuseScore 4.x working with
+   pipewire, try disable the later and reboot your machine.
+b) Wayland compatibility was not tested.
 c) For better Daw integration use MuseScore-Legacy 3.6.2
    instead available on SlackBuilds.org and MuseScore 4.x
    does not yet support midi sync.
