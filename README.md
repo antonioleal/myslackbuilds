@@ -816,7 +816,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 12.4.1
+- Version: 12.4.2
 - Homepage: https://limine-bootloader.org/
 - Code repository: https://github.com/limine-bootloader/limine
 ## ventoy (Bootable USB Solution)
