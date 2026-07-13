@@ -232,7 +232,7 @@
   
 
 - Category: development
-- Version: 3.12.2
+- Version: 3.12.3
 - Homepage: https://algol68genie.nl/en/algol-68-genie/
 - Code repository:
 ## fpc (free pascal compiler)
