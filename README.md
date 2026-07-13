@@ -1048,7 +1048,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 1.32.5
+- Version: 1.32.6
 - Homepage: https://github.com/mikf/gallery-dl
 - Code repository:
 ## newsraft (Terminal feed reader)
