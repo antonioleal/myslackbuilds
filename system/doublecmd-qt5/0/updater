@@ -36,8 +36,8 @@ TAG=${AUX//\"/}
 REALVERSION=${TAG:1}
 NEWVERSION=${REALVERSION/-/_}
 
-TARBALL=doublecmd-$REALVERSION.tar.gz
-URL="https://github.com/doublecmd/doublecmd/releases/download/$TAG/doublecmd-$REALVERSION-src.tar.gz"
+TARBALL=doublecmd-$REALVERSION-src.tar.gz
+URL="https://github.com/doublecmd/doublecmd/releases/download/$TAG/$TARBALL"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
