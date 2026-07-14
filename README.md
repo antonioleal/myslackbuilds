@@ -1676,7 +1676,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: academic
-- Version: 2.0.4
+- Version: 3.3.12
 - Homepage: http://thomasokken.com/free42/index.html
 - Code repository:
 ## x48ng (HP48 Calculator emulator)
