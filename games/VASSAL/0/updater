@@ -36,7 +36,7 @@ TAG=${AUX//\"/}
 REALVERSION=${TAG}
 NEWVERSION=${REALVERSION/-/_}
 
-TARBALL=VASSAL-$REALVERSION.tar.bz2
+TARBALL=VASSAL-$REALVERSION-linux.tar.bz2
 URL="https://github.com/vassalengine/vassal/releases/download/$REALVERSION/$TARBALL"
 
 VERSION=`cat version`
