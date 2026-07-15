@@ -1,0 +1,8 @@
+
+necessário
+
+export LDFLAGS="-ldl"
+ou
+export LDFLAGS="-Wl,--copy-dt-needed-entries"
+
+antes de configurar

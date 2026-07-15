@@ -1392,11 +1392,10 @@ Instead of github go to Ardour.org and press download to get the source code tar
  most immersive games ever produced. Exult is a project to recreate
  Ultima 7 for modern operating systems, using the game's original
  plot, data, and graphics files.
- Homepage: http://exult.sourceforge.net/
   
 
 - Category: games
-- Version: 1.6
+- Version: 1.12.1
 - Homepage: http://exult.sourceforge.net/
 - Code repository:
 ## solarus (an ARPG game engine)
