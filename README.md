@@ -1406,7 +1406,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: games
-- Version: 1.6.4
+- Version: 2.0.4
 - Homepage: https://www.solarus-games.org/
 - Code repository:
 ## lutris (Open Gaming Platform)
