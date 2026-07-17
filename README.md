@@ -1975,6 +1975,15 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 24
 - Homepage: https://github.com/dubhater/vapoursynth-mvtools
 - Code repository:
+## dirac (free video compression format codec)
+ Dirac is an advanced royalty-free video compression format designed
+ for a wide range of uses, from delivering low-resolution web content
+ to broadcasting HD and beyond, to near-lossless studio editing.
+ Homepage: https://wiki.multimedia.cx/index.php/Dirac
+  
+
+- Category: multimedia
+- Version: 1.0.2
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
  MuseScore is a free cross platform WYSIWYG music notation program,
  licensed under GNU GPL.
