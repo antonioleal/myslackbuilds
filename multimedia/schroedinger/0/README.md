@@ -1,0 +1,2 @@
+- Homepage: https://launchpad.net/schroedinger
+- Code repository:

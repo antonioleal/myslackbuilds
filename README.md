@@ -1932,6 +1932,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.2.1.953
 - Homepage: https://musescore.org/
 - Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
+## schroedinger (a C implementation of BBC's Dirac Codec)
+ Schroedinger is a high-speed implementation of BBC's dirac
+ codec in C.
+ Homepage: https://launchpad.net/schroedinger
+  
+
+- Category: multimedia
+- Version: 1.0.11
+- Homepage: https://launchpad.net/schroedinger
+- Code repository:
 ## vapoursynth (video processing framework)
  A video processing framework with simplicity in mind.
  Homepage: https://www.vapoursynth.com/
@@ -1984,6 +1994,8 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: multimedia
 - Version: 1.0.2
+- Homepage: https://wiki.multimedia.cx/index.php/Dirac
+- Code repository:
 ## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
  MuseScore is a free cross platform WYSIWYG music notation program,
  licensed under GNU GPL.
