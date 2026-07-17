@@ -1246,6 +1246,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: r475
 - Homepage: http://www.musepack.net/
 - Code repository:
+## libkate (codec for karaoke and text support in Ogg)
+ kate is a codec for karaoke and text encapsulation for Ogg.
+ Most of the time, this would be multiplexed with audio/video
+ to carry subtitles, song lyrics etc.
+ Home Page https://wiki.xiph.org/OggKate
+  
+
+- Category: libraries
+- Version: 0.4.1
+- Homepage: https://wiki.xiph.org/OggKate
+- Code repository:
 ## zimg (Scaling, colorspace conversion, and dithering library)
  The "z" library implements the commonly required image processing
  basics of scaling, colorspace conversion, and depth conversion.
