@@ -110,7 +110,7 @@
   
 
 - Category: office
-- Version: 2.8.0
+- Version: 2.8.1
 - Homepage: https://sigil-ebook.com/
 - Code repository:
 ## dapper (Desktop Applications Autostarter)
