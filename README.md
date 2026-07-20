@@ -762,6 +762,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 5.3.0
 - Homepage: https://zoomcorp.com/en/jp/
 - Code repository:
+## pmidi (command line midi player for alsa)
+ This is a straightforward command line program to play midi files
+ through the ALSA sequencer.
+ As you can specify the client and port to connect to on the command
+ line it is also useful for testing ALSA or clients that need to
+ receive sequencer events.
+ This program works with latest ALSA 1.0 drivers and former O.9
+ versions.
+  
+
+- Category: audio
+- Version: 1.6.0
+- Homepage: http://www.parabola.me.uk/alsa/pmidi.html
+- Code repository:
 ## brave-browser-the-latest (brave browser updater script)
  Maintaining an updated Brave Browser on Slackware is now made
  easier with this small program, "brave-browser-the-latest", a simple
