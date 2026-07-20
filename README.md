@@ -80,6 +80,17 @@
 - Version: 2.7.6
 - Homepage: https://sigil-ebook.com/pageedit/
 - Code repository:
+## FreeOffice (The best free alternative to Microsoft Office)
+ FreeOffice is a complete Office suite with a word processor,
+ a spreadsheet application and a presentation program - all compatible
+ with their counterparts in Microsoft Office.
+ Homepage: https://www.freeoffice.com/
+  
+
+- Category: office
+- Version: 2024_1234
+- Homepage: https://www.freeoffice.com/
+- Code repository:
 ## openoffice.org (a full-featured open-source office suite)
  OpenOffice.org is a full-featured open-source office suite that is
  compatible with all other major office software.
