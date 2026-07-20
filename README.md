@@ -17,6 +17,15 @@
 - Version: 2024_1234
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository: https://www.softmaker.com/en/softmaker-office-linux
+## openoffice-langpack (for Apache OpenOffice Productivity Suite)
+ Language Pack for Apache OpenOffice productivity suite.
+ Homepage: http://www.openoffice.org
+  
+
+- Category: office
+- Version: 4.1.6
+- Homepage: http://www.openoffice.org
+- Code repository:
 ## onlyoffice-desktopeditors (office suite)
  ONLYOFFICE Desktop Editors is a free AGPL v3 licensed office suite
  that combines text, spreadsheet and presentation editors. It is fully
