@@ -437,6 +437,16 @@
 - Version: 1.6.2603.14891
 - Homepage: http://www.ximple.cz
 - Code repository:
+## pasdoc (documentation tool for ObjectPascal source code)
+ Documentation is generated from comments found in source code.
+ Available output formats are HTML, HtmlHelp, LaTeX, latex2rtf,
+ simplexml. More output formats may be added in the future.
+  
+
+- Category: development
+- Version: 0.14.0
+- Homepage: http://pasdoc.sipsolutions.net/
+- Code repository:
 ## qb64 (Modern QuickBASIC compiler)
  QB64 is a modern extended BASIC programming language that retains
  QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
