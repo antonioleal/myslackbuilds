@@ -687,7 +687,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: audio
-- Version: 7.77
+- Version: 7.78
 - Homepage: https://www.reaper.fm
 - Code repository:
 ## musepack-tools (Musepack SV8 command line tools)
