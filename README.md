@@ -1619,7 +1619,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: games
-- Version: 1.1.1
+- Version: 1.1.2
 - Homepage: https://www.solarus-games.org/
 - Code repository:
 ## VASSAL (engine for board and card games)
