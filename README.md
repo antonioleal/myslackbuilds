@@ -1642,7 +1642,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: games
-- Version: 1.12.2
+- Version: 1.12.3
 - Homepage: https://www.solarus-games.org/
 - Code repository:
 ## balena-etcher-bin (Flash OS images to SD cards & USB drives)
