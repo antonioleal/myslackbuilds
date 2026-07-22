@@ -1584,7 +1584,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: games
 - Version: 1.5
-- Homepage: https://sites.google.com/site/zeldabom/
+- Homepage: https://wrightmatta.wixsite.com/zeldabom
 - Code repository:
 ## dhewm3 (Doom 3 GPL source port)
  The goal of dhewm 3 is bring DOOM 3 with the help of SDL to all

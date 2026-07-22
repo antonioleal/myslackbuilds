@@ -1,2 +1,2 @@
-- Homepage: https://sites.google.com/site/zeldabom/
+- Homepage: https://wrightmatta.wixsite.com/zeldabom
 - Code repository:
