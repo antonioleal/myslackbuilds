@@ -1,2 +1,2 @@
-- Homepage: http://nuvie.sourceforge.net
+- Homepage: https://github.com/nuvie/nuvie
 - Code repository:

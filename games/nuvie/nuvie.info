@@ -1,6 +1,6 @@
 PRGNAM="nuvie"
 VERSION="20250312_759cc0c"
-HOMEPAGE="http://nuvie.sourceforge.net"
+HOMEPAGE="https://github.com/nuvie/nuvie"
 DOWNLOAD="https://github.com/nuvie/nuvie/archive/759cc0c33bb1a555d6935976c467e52007c3aea1/nuvie-759cc0c33bb1a555d6935976c467e52007c3aea1.tar.gz"
 MD5SUM="e872bd812ef3010c855f3d5dca5cc7c9"
 DOWNLOAD_x86_64=""

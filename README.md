@@ -1547,7 +1547,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 
 - Category: games
 - Version: 20250312_759cc0c
-- Homepage: http://nuvie.sourceforge.net
+- Homepage: https://github.com/nuvie/nuvie
 - Code repository:
 ## yarntown (2D hommage to Bloodborne for the solarus engine)
  You've come on the night of the hunt. The streets of this cursed,
