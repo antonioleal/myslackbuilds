@@ -1353,7 +1353,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 3.2.2
+- Version: 3.3.3-unstable
 - Homepage: https://github.com/linuxmint/xapp
 - Code repository: https://github.com/linuxmint/xapp
 ## MuseScore-Libraries (libraries required by MuseScore)
