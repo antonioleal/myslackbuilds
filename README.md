@@ -1593,7 +1593,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: games
-- Version: 1.5.0
+- Version: 1.5.5
 - Homepage: https://dhewm3.org/
 - Code repository:
 ## ZEsarUX (retro machines emulator)
