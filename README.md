@@ -2043,6 +2043,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 24
 - Homepage: https://github.com/dubhater/vapoursynth-mvtools
 - Code repository:
+## ffmpeg2theora (simple command line video transcoder)
+ ffmpeg2theora is a simple command line video transcoder
+ to convert files to Ogg Theora using ffmpeg.
+ Home Page http://v2v.cc/~j/ffmpeg2theora/
+  
+
+- Category: multimedia
+- Version: 0.30
+- Homepage: https://archive.flossmanuals.net/ogg-theora/encoding/ffmpeg2theora.html
+- Code repository:
 ## dirac (free video compression format codec)
  Dirac is an advanced royalty-free video compression format designed
  for a wide range of uses, from delivering low-resolution web content
