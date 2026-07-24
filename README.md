@@ -184,6 +184,16 @@
 - Version: 0.08_2
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
+## perl-Text-CSV (Perl Text::CSV module)
+ Text::CSV provides facilities for the composition and
+ decomposition of comma-separated values using Text::CSV_XS
+ or its pure Perl version.
+  
+
+- Category: perl
+- Version: 1.99
+- Homepage: https://metacpan.org/pod/Text::CSV
+- Code repository:
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
  Code generation is supported for C++, Python, XRC, Lua and PHP.
