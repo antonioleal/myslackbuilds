@@ -1481,6 +1481,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20260703_a1f57fa
 - Homepage: https://opensimh.org
 - Code repository: https://github.com/open-simh/simh
+## es40 (alpha emulator)
+ ES40 is a fork of the es40 emulator.
+ It could theoretically be used for running any operating system that
+ runs on the OpenVMS or Tru64 PALcode e.g. OpenVMS, Windows 2000,
+ Tru64 UNIX, Linux, NetBSD,..
+ The emulator supports SCSI, sound, IDE, serial ports, Ethernet
+ using pcap, or TUN/TAP on Linux and VGA graphics (using SDL3).
+  
+
+- Category: misc
+- Version: 0.76
+- Homepage: https://github.com/ES40-Emu/es40
+- Code repository:
 ## swege (Static WEbsite GEnerator)
  Bloat free static website generator written in C99.
  https://github.com/sakhmatd/swege
