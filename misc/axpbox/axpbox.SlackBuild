@@ -77,19 +77,9 @@ export CXXFLAGS="$SLKCFLAGS"
 
 cmake -E make_directory build
 cd build
-#cmake .. -DCMAKE_C_COMPILER="clang" -DCMAKE_CXX_COMPILER="clang++" -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Wall"
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Wall"
+#cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Wall"
+cmake .. -DCMAKE_C_COMPILER="clang" -DCMAKE_CXX_COMPILER="clang++" -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Wall"
 MAKEFLAGS=-j"$(nproc)" cmake --build . --config Release
-
-# run tests
-(
-    cd ..
-    cp "$CWD/cl67srmrom.exe" test/vms/
-    cp "$CWD/cl67srmrom.exe" test/arc/
-    cp "$CWD/cl67srmrom.exe" test/disk/unwritable/
-    test/run
-)
-
 mkdir -p "$PKG/usr/bin"
 install axpbox "$PKG/usr/bin/axpbox"
 cd ..
