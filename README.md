@@ -1481,7 +1481,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 20260703_a1f57fa
 - Homepage: https://opensimh.org
 - Code repository: https://github.com/open-simh/simh
-## es40 (alpha emulator)
+## es40 (AlphaServer ES40 emulator)
  ES40 is a fork of the es40 emulator.
  It could theoretically be used for running any operating system that
  runs on the OpenVMS or Tru64 PALcode e.g. OpenVMS, Windows 2000,

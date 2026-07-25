@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
     |-----handy-ruler------------------------------------------------------|
-es40: es40 (alpha emulator)
+es40: es40 (AlphaServer ES40 emulator)
 es40:
 es40: ES40 is a fork of the es40 emulator.
 es40: It could theoretically be used for running any operating system that
