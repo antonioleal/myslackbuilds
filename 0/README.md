@@ -46,7 +46,7 @@ so you end-up with all published slackbuilds in the following structure:
 > `/home/{username}/slackware-builds/slackbuilds/(...)`
 
 
-In the end your work environment should look like this:
+The complete work environment should look like this:
 
         ~/slackware-builds/
         
