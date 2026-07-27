@@ -1,0 +1,14 @@
+PRGNAM="axpbox"
+VERSION="_version_"
+HOMEPAGE="https://github.com/lenticularis39/axpbox"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/lenticularis39/axpbox/archive/v_version_/axpbox-_version_.tar.gz \
+          https://download-mirror.savannah.gnu.org/releases/vgabios/vgabios-0.6a.bin \
+          https://raymii.org/s/inc/downloads/es40-srmon/cl67srmrom.exe"
+MD5SUM_x86_64="_md5_ \
+        94ed7f27ab207f84b6f99885fc210c24 \
+        2edbd7f28f17ef909cee32fd11632df7"
+REQUIRES="SDL3"
+MAINTAINER="Antonio Leal"
+EMAIL="antonioleal@yahoo.com"
