@@ -465,7 +465,7 @@
   
 
 - Category: development
-- Version: 0.14.0
+- Version: 1.0.4
 - Homepage: http://pasdoc.sipsolutions.net/
 - Code repository:
 ## qb64 (Modern QuickBASIC compiler)
