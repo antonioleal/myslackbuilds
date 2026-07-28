@@ -1127,7 +1127,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 9.0.304.23
+- Version: 9.0.304.24
 - Homepage: http://www.kermitproject.org/ck90.html
 - Code repository:
 ## librespeed-cli (LibreSpeed CLI)
