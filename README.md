@@ -191,7 +191,7 @@
   
 
 - Category: perl
-- Version: 1.99
+- Version: 2.06
 - Homepage: https://metacpan.org/pod/Text::CSV
 - Code repository:
 ## wxFormBuilder ( wxWidgets RAD tool )
