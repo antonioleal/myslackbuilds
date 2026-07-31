@@ -30,7 +30,9 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-AUX=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/_repo_/_program_/tags | jq '.[]' | jq '.name' | head -1)
+#AUX=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/_repo_/_program_/tags | jq '.[]' | jq '.name' | head -1)
+#AUX=$(curl -s https://api.github.com/repos/_repo_/_program_/releases/latest |  jq -r '.tag_name')
+AUX=$(gh release view -R _repo_/_program_ --json tagName --jq '.tagName')
 TAG=${AUX//\"/}
 REALVERSION=${TAG:1}
 NEWVERSION=${REALVERSION/-/_}

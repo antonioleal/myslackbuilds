@@ -30,38 +30,9 @@ if ! [ -f $PKGNAME.info ]; then
   exit 0
 fi
 source $PKGNAME.info
-TEMPLATES=$(ls -1 $HOME/slackware-builds/myslackbuilds/0/updater-templates/)
-
-usage() {
-    echo
-    echo "Usage: 0make-updater <template>"
-    echo
-    echo -n "    where <template> is one of:"
-    for TPL in $TEMPLATES; do
-        echo -n " \"$TPL\""
-    done
-    echo
-    echo
-}
-
-# Check syntax
-if [ "$1" = "" ]; then
-    usage
-    exit 0
-fi
-TEMPLATE=""
-for TPL in $TEMPLATES; do
-    if [ "$1" = "$TPL" ]; then
-        TEMPLATE="$TPL"
-    fi
-done
-if [ "$TEMPLATE" = "" ]; then
-    usage
-    exit 0
-fi
 
 # Instantiate updater
-cp $HOME/slackware-builds/myslackbuilds/0/updater-templates/$TEMPLATE/updater.template 0/updater
+cp $HOME/slackware-builds/myslackbuilds/0/updater-template/updater.template 0/updater
 
 sed -i -e "s/_program_/${PKGNAME}/g" 0/updater
 REPO=$(echo $DOWNLOAD | awk -F"/" '{print $4}')
