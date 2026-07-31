@@ -37,6 +37,7 @@ cd $SCRIPT_DIR
 curl -s https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=antigravity > PKGBUILD
 source /dev/stdin <<< "$(cat PKGBUILD | grep "pkgver" | head -1)"
 source /dev/stdin <<< "$(cat PKGBUILD | grep "_build" | head -1)"
+rm -rf PKGBUILD
 TAG="$pkgver"
 REALVERSION="$pkgver"
 NEWVERSION="$pkgver"
