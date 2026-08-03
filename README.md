@@ -351,7 +351,7 @@
   
 
 - Category: development
-- Version: 2026.16
+- Version: 2026.17
 - Homepage: https://github.com/sourcegit-scm/sourcegit
 - Code repository:
 ## zxbasicstudio (an ide for zxbasic)
