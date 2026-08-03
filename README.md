@@ -420,7 +420,7 @@
   
 
 - Category: development
-- Version: 20260727_132ac0a
+- Version: 20260802_37652c5
 - Homepage: https://notepadqq.com
 - Code repository: https://github.com/notepadqq/notepadqq/commits/master/
 ## kforth (A Forth programming language and environment)
