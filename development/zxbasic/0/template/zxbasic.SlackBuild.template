@@ -30,7 +30,7 @@ VERSION=${VERSION:-_version_}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-PYTHONTARBALL=Python-3.13.3
+PYTHONTARBALL=Python-3.14.0
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

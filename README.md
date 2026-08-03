@@ -594,7 +594,7 @@
   
 
 - Category: development
-- Version: 1.18.7
+- Version: 1.19.0
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasic"
 ## zmakebas (convert text to ZXSpectrum basic tape)
