@@ -4,57 +4,195 @@
 
   
 
-## eisl (ISO ISLISP interpreter)
- Easy-ISLisp (EISL) is an interpreter and compiler compatible with the
- ISLisp standard. EISL was written by Kenichi Sasagawa and is
- available under a BSD license.
- For more information, see: https://github.com/sasagawa888/eisl
+## smoffice2024 (office suite)
+ SoftMaker Office 2024 includes
+  * TextMaker 2024, a word processor
+  * PlanMaker 2024, a spreadsheet program
+  * Presentations 2024, a presentation software
+ The main feature of SoftMaker Office 2024 is the extremely high
+ compatibility with the MS Office file formats.
   
 
-- Category: development
-- Version: 5.68
-- Homepage: https://github.com/sasagawa888/eisl
-- Code repository: https://github.com/sasagawa888/eisl
-## qb64 (Modern QuickBASIC compiler)
- QB64 is a modern extended BASIC programming language that retains
- QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
- Windows, Linux, and macOS.
+- Category: office
+- Version: 2024_1234
+- Homepage: https://www.softmaker.com/en/softmaker-office-linux
+- Code repository: https://www.softmaker.com/en/softmaker-office-linux
+## openoffice-langpack (for Apache OpenOffice Productivity Suite)
+ Language Pack for Apache OpenOffice productivity suite.
+ Homepage: http://www.openoffice.org
   
 
-- Category: development
-- Version: 2.1
-- Homepage: https://qb64.com
-- Code repository: https://github.com/QB64Official/qb64
-## bbcsdl (BBC BASIC for linux)
- BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
- cross-platform implementation of BBC BASIC for Windows, MacOS,
- Linux (x86 CPU only), Raspberry  Pi OS (RPi3 or later), Android,
- iOS or for running in a browser.
- BBC BASIC is very well documented.
-  
-
-- Category: development
-- Version: 20260801_6c30298
-- Homepage: https://www.bbcbasic.co.uk/bbcsdl
-- Code repository: https://github.com/rtrussell/BBCSDL
-## pasdoc (documentation tool for ObjectPascal source code)
- Documentation is generated from comments found in source code.
- Available output formats are HTML, HtmlHelp, LaTeX, latex2rtf,
- simplexml. More output formats may be added in the future.
-  
-
-- Category: development
-- Version: 1.0.4
-- Homepage: http://pasdoc.sipsolutions.net/
+- Category: office
+- Version: 4.1.16
+- Homepage: http://www.openoffice.org
 - Code repository:
-## antigravity (Google Antigravity IDE)
- Google Antigravity is an agentic development platform, evolving the
- IDE into the agent-first era.
+## onlyoffice-desktopeditors (office suite)
+ ONLYOFFICE Desktop Editors is a free AGPL v3 licensed office suite
+ that combines text, spreadsheet and presentation editors. It is fully
+ compatible with Office Open XML formats: .docx, .xlsx, .pptx, which
+ are its native formats. It also supports DOC, ODT, RTF, TXT, PDF,
+ HTML, EPUB, XPS, DjVu, XLS, ODS, CSV, PPT, ODP.
   
 
-- Category: development
-- Version: 2.1.1
-- Homepage: https://antigravity.google/
+- Category: office
+- Version: 9.4.0
+- Homepage: https://www.onlyoffice.com/apps.aspx
+- Code repository: https://github.com/ONLYOFFICE/DesktopEditors
+## smoffice2021 (office suite)
+ SoftMaker Office 2021 includes
+  * TextMaker 2021, a word processor
+  * PlanMaker 2021, a spreadsheet program
+  * Presentations 2021, a presentation software
+ The main feature of SoftMaker Office 2021 is the extremely high
+ compatibility with the MS Office file formats.
+  
+
+- Category: office
+- Version: 2021_1068
+- Homepage: https://www.softmaker.com/en/softmaker-office-linux
+- Code repository:
+## wps-office-dicts (Spell check dictionaries for WPS Office)
+ Spell check dictionaries for WPS Office. The language files are
+ adapted from the LibreOffice Dictionaries project.
+  
+
+- Category: office
+- Version: 26.8.0.2
+- Homepage: https://github.com/LibreOffice/dictionaries/
+- Code repository:
+## wps-office (an office productivity suite for Linux)
+ WPS Office, including Writer, Presentation and spreadsheets, is a
+ powerful office suite. It is deeply compatible with all of the
+ latest Microsoft Office file formats. It can easily open and read
+ the documents created with Microsoft Office.
+ Homepage: https://linux.wps.com/
+  
+
+- Category: office
+- Version: 11.1.0.11723.XA
+- Homepage: https://linux.wps.com/
+- Code repository:
+## pageEdit (Simple Single Page XHTML Visual Editor)
+ Simple Single Page XHTML Visual Editor, split from Sigil's BookView.
+  
+
+- Category: office
+- Version: 2.7.6
+- Homepage: https://sigil-ebook.com/pageedit/
+- Code repository:
+## FreeOffice (The best free alternative to Microsoft Office)
+ FreeOffice is a complete Office suite with a word processor,
+ a spreadsheet application and a presentation program - all compatible
+ with their counterparts in Microsoft Office.
+ Homepage: https://www.freeoffice.com/
+  
+
+- Category: office
+- Version: 2024_1234
+- Homepage: https://www.freeoffice.com/
+- Code repository:
+## openoffice.org (a full-featured open-source office suite)
+ OpenOffice.org is a full-featured open-source office suite that is
+ compatible with all other major office software.
+ This is a repackaging of the official OpenOffice.org binary RPM's
+ distributed by the upstream developers.
+ Homepage: http://openoffice.org
+  
+
+- Category: office
+- Version: 4.1.16
+- Homepage: https://www.openoffice.org/
+- Code repository: https://sourceforge.net/projects/openofficeorg.mirror/files/
+## ishmael (EBook dumper)
+ ishmael is a Perl program that can read and dump the contents of
+ various popular (and unpopular) ebook formats. It originally only
+ dumped the formatted text contents of an ebook, but has since grown
+ to be able to dump metadata, images, and more.
+  
+
+- Category: office
+- Version: 2.04
+- Homepage: https://codeberg.org/1-1sam/ishmael
+- Code repository:
+## ledger-live (Ledger Hardware Wallet Manager)
+ A manager for your Ledger hardware wallet.
+ Install applications, update firmware, buy crypto, etc.
+  
+
+- Category: office
+- Version: 4.13.1
+- Homepage: https://www.ledger.com/ledger-live
+- Code repository: https://www.ledger.com/ledger-live
+## sigil (Multi-platform WYSIWYG ebook editor)
+ Sigil is a multi-platform WYSIWYG ebook editor. It is designed to
+ edit books in ePub format.
+ Homepage: https://sigil-ebook.com/
+  
+
+- Category: office
+- Version: 2.8.1
+- Homepage: https://sigil-ebook.com/
+- Code repository:
+## dapper (Desktop Applications Autostarter)
+ Simple lightweight desktop application auto-starter. It will read
+ .desktop files in the autostart directories, all according to the
+ FreeDesktop autostart specifications. You can define which desktop to
+ start applications for (e.g. GNOME, XFCE, etc) in configuration file
+ (~/.config/dapper.conf) or from command line.
+ https://github.com/limine-bootloader/limine
+  
+
+- Category: desktop
+- Version: 1.0.0
+- Homepage: https://github.com/jjk-jacky/dapper
+- Code repository:
+## xapp-symbolic-icons (XApp symbolic icons)
+ This package provides a set of symbolic icons for GTK projects
+ (XApp, Cinnamon, Linux Mint).
+  
+
+- Category: desktop
+- Version: 1.1.0
+- Homepage: https://github.com/xapp-project/xapp-symbolic-icons
+- Code repository:
+## ClamAV-GUI (A Qt GUI for clamav)
+ This application provides a graphical user interface for clamav and
+ freshclam with an integrated service menu for Konqueror/Dolphin
+ to scan files directly from your file manager.
+ Homepage at https://github.com/wusel1007/ClamAV-GUI
+  
+
+- Category: desktop
+- Version: 1.4.1
+- Homepage: https://www.pling.com/p/1127892/
+- Code repository:https://github.com/wusel1007/clamav-gui
+## standard-notes-bin (free, open-source encrypted notes app)
+ Standard Notes is an end-to-end encrypted note-taking app for
+ digitalists and professionals. Capture your notes, files, and
+ life's work all in one secure place.
+  
+
+- Category: desktop
+- Version: 3.201.21
+- Homepage: https://standardnotes.com/
+- Code repository: https://github.com/standardnotes/app
+## thunar-sendto-clamtk (A clamtk plugin for Thunar)
+ A simple plugin to allow right-click scanning in Thunar.
+  
+
+- Category: desktop
+- Version: 0.08_2
+- Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
+- Code repository:
+## perl-Text-CSV (Perl Text::CSV module)
+ Text::CSV provides facilities for the composition and
+ decomposition of comma-separated values using Text::CSV_XS
+ or its pure Perl version.
+  
+
+- Category: perl
+- Version: 2.06
+- Homepage: https://metacpan.org/pod/Text::CSV
 - Code repository:
 ## wxFormBuilder ( wxWidgets RAD tool )
  wxFormBuilder is a GUI builder for the wxWidgets framework.
@@ -68,80 +206,88 @@
 - Version: 4.2.1
 - Homepage: https://github.com/wxFormBuilder/wxFormBuilder
 - Code repository:
-## page (Python Tkinter GUI builder)
- PAGE is a drop and drag tool which helps to create Tkinter
- GUI interfaces for use within Python programs.  It is a fork
- of the program Visual Tcl which now produces Python code.
- PAGE builds multiple GUI windows and generates a working
- skeletal Python program using tk and ttk widgets.
+## letos (SQLite database manager written in C++ using Qt)
+ Previously known as SQLiteStudio, letos is A free, open source,
+ multi-platform SQLite database manager written in C++,
+ with use of Qt framework.
+ SQLiteStudio is a desktop application for browsing and editing SQLite
+ database files. It is aimed for people, who know what SQLite is, or
+ what relational databases are in general.
   
 
 - Category: development
-- Version: 8.1
-- Homepage: https://sourceforge.net/projects/page/
-- Code repository:
-## gn (Meta-build system)
- GN is a meta-build system that generates build files for Ninja.
- Homepage: https://gn.googlesource.com/gn/
-  
-
-- Category: development
-- Version: 0.1616
-- Homepage: https://gn.googlesource.com/
-- Code repository:
-## electron-bin (Library for building cross-platform applications)
- Electron is an open source library developed by GitHub for building
- cross-platform desktop applications with HTML, CSS, and JavaScript.
- Electron accomplishes this by combining Chromium and Node.js into a
- single runtime and apps can be packaged for Mac, Windows, and Linux.
- This is electron binary repackaged in Slackware style.
-  
-
-- Category: development
-- Version: 43.2.0
-- Homepage: https://www.electronjs.org/
-- Code repository:
-## SmallBASIC (basic-interpreter)
- SmallBASIC is a fast and easy to learn BASIC language interpreter
- ideal for everyday calculations, scripts and prototypes.
- SmallBASIC includes trigonometric, matrices and algebra functions,
- a built in IDE, a powerful string library, system, sound, graphic
- commands and communication via serial or sockets along with
- structured programming syntax.
- SmallBASIC includes online examples ready to run.
-  
-
-- Category: development
-- Version: 12.33
-- Homepage: https://smallbasic.github.io
-- Code repository: https://github.com/smallbasic/SmallBASIC
-## codeblocks (a free C++ and Fortran IDE)
- Code::Blocks is a free C++ and Fortran IDE built to meet the most
- demanding needs of its users. It is designed to be very extensible
- and fully configurable.
- Homepage: http://www.codeblocks.org/
-  
-
-- Category: development
-- Version: 20.03
-- Homepage: http://www.codeblocks.org/
+- Version: 4.0.1
+- Homepage: https://letos.org
 - Code repository:
 
-*Not possible to build with Slackware 15.0 - needs newer autoconf*
-
-## yabasic (basic-interpreter)
- Yabasic is a traditional basic-interpreter. It comes with goto and
- various loops and allows to define subroutines and libraries.
- It does simple graphics and printing. Yabasic can call out to
- libraries written in C and allows to create standalone programs.
- Yabasic runs under Unix and Windows and has a comprehensive
- documentation; it is small, simple, open-source and free.
+## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
+ kForth-64 is an implementation of the Forth programming language
+ and environment. Like other implementations of Forth, provides an
+ interactive environment, allowing the user to examine or
+ define variables and define and execute individual words.
+ kForth-64 provides a large subset of the Forth-2012 specification
+ and includes some useful extensions.
   
 
 - Category: development
-- Version: 2.92.1
-- Homepage: "http://2484.de/yabasic/"
-- Code repository: "http://2484.de/yabasic/"
+- Version: 0.6.1
+- Homepage: https://github.com/mynenik/kForth-64
+- Code repository:
+## gitnuro (a graphical git client)
+ A FOSS Git client based on (Jetbrains) Compose and JGit.
+ The main goal of Gitnuro is to provide a multiplatform open source
+ Git client without any kind of constraint to how you can use it nor
+ relying on web technologies.
+  
+
+- Category: development
+- Version: 1.5.0
+- Homepage: https://gitnuro.com/
+- Code repository: https://github.com/JetpackDuba/Gitnuro/
+## recutils (tools and libraries to access recfiles)
+ GNU Recutils is a set of tools and libraries to access
+ human-editable, plain text databases called recfiles. The data is
+ stored as a sequence of records, each record containing an arbitrary
+ number of named fields.
+ https://www.gnu.org/software/recutils/
+  
+
+- Category: development
+- Version: 1.9
+- Homepage: https://www.gnu.org/software/recutils/
+- Code repository: https://ftp.gnu.org/gnu/recutils/
+## a68g (Algol 68 compiler-interpreter)
+ It can be used for executing Algol 68 programs or scripts.
+ HomePage: https://algol68genie.nl/en/algol-68-genie/
+  
+
+- Category: development
+- Version: 3.12.3
+- Homepage: https://algol68genie.nl/en/algol-68-genie/
+- Code repository:
+## fpc (free pascal compiler)
+ Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
+ compiler. It is available for different processors: Intel x86,
+ Amd64/x86_64, PowerPC, PowerPC64, Sparc, ARM. The discontinued 1.0
+ version also supports the Motorola 680x0. The following operating
+ systems are supported: Linux, FreeBSD, Mac OS X/Darwin, DOS, Win32,
+ Win64, WinCE, OS/2, Netware (libc and classic) and MorphOS.
+ Homepage: http://www.freepascal.org/
+  
+
+- Category: development
+- Version: 3.2.2
+- Homepage: https://www.freepascal.org/
+- Code repository:
+## zxtext2p (convert text to zx81 basic tape)
+ zxtext2p converts a text file containing standard zx81 basic
+ to a tape file.
+  
+
+- Category: development
+- Version: 1.0
+- Homepage: https://freestuff.grok.co.uk/zxtext2p/index.html
+- Code repository:
 ## JAForth (An interpreter for the Jupiter ACE Forth)
  This package contains three command-line programs:
  - JAForth: An interpreter for the Jupiter ACE Forth, written in
@@ -157,52 +303,6 @@
 - Version: 20260407_82541e7
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
-## qb64pe (Modern QuickBASIC compiler)
- QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
- additional features and enhancements, maintained by a
- group of original developers of QB64.com.
- QB64-PE is a modern extended BASIC programming language with embedded
- OpenGL support that retains QuickBASIC 4.5 and QBasic compatibility
- and compiles native binaries for Windows (Vista and up),
- Linux and macOS.
-  
-
-- Category: development
-- Version: 4.6.0
-- Homepage: https://qb64phoenix.com/
-- Code repository: https://github.com/QB64-Phoenix-Edition/QB64pe
-## MinForth (A Forth System that can transpile Forth to C)
- MinForth V3.4 is a classic Forth system with command-line interface.
- Development resource requirements are minimal. A source text editor
- and a C compiler are sufficient. By design no toolchain is required
- to adapt or rebuild MinForth. A complete rebuild takes only few
- seconds.
- Current sources are for Windows and Linux (32-bit or 64-bit).
-  
-
-- Category: development
-- Version: 3.4.8
-- Homepage: https://sourceforge.net/projects/minforth/
-- Code repository:
-## zmakebas (convert text to ZXSpectrum basic tape)
- zmakebas converts a text file containing standard ZXSpectrum basic
- to a tape file.
-  
-
-- Category: development
-- Version: 1.2b
-- Homepage: https://github.com/z00m128/zmakebas
-- Code repository:
-## critcl (C Runtime In Tcl)
- critcl is a system that lets you build C/C++ extension packages for
- Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
- For more information see: https://andreas-kupries.github.io/critcl
-  
-
-- Category: development
-- Version: 3.3.1
-- Homepage: https://andreas-kupries.github.io/critcl/
-- Code repository: https://github.com/andreas-kupries/critcl
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -216,19 +316,85 @@
 - Version: 4.8
 - Homepage: http://www.lazarus.freepascal.org/
 - Code repository:
-## kforth (A Forth programming language and environment)
- kForth is an implementation of the Forth programming language and
- environment. The user may write Forth programs with an editor,
- load these program files from kForth, and run them. kForth, like
- other implementations of Forth, provides an interactive environment,
- allowing the user to examine or define variables and execute or
- define individual words.
- This package contains the branch 1.x of kforth for legacy systems.
+## codeblocks (a free C++ and Fortran IDE)
+ Code::Blocks is a free C++ and Fortran IDE built to meet the most
+ demanding needs of its users. It is designed to be very extensible
+ and fully configurable.
+ Homepage: http://www.codeblocks.org/
   
 
 - Category: development
-- Version: 1.8.0
-- Homepage: https://github.com/mynenik/kForth-32
+- Version: 20.03
+- Homepage: http://www.codeblocks.org/
+- Code repository:
+
+*Not possible to build with Slackware 15.0 - needs newer autoconf*
+
+## bbcsdl (BBC BASIC for linux)
+ BBC BASIC for SDL 2.0 (BBCSDL) is an entirely free and Open Source
+ cross-platform implementation of BBC BASIC for Windows, MacOS,
+ Linux (x86 CPU only), Raspberry  Pi OS (RPi3 or later), Android,
+ iOS or for running in a browser.
+ BBC BASIC is very well documented.
+  
+
+- Category: development
+- Version: 20260801_6c30298
+- Homepage: https://www.bbcbasic.co.uk/bbcsdl
+- Code repository: https://github.com/rtrussell/BBCSDL
+## sourcegit (GUI client for GIT users)
+ Opensource Git GUI client. Supports SSH access with each remote.
+ This software also supports using OpenAI or other AI service
+ that has an OpenAI compatible HTTP API to generate commit message.
+ You need configurate the service in Preference window
+ HomePage: https://github.com/sourcegit-scm/sourcegit
+  
+
+- Category: development
+- Version: 2026.17
+- Homepage: https://github.com/sourcegit-scm/sourcegit
+- Code repository:
+## zxbasicstudio (an ide for zxbasic)
+ ZX Basic Studio is a cross-platform IDE for zxbasic
+ This is a work in progress but the development has reached a state
+ in which we feel comfortable to release it to be tested by users.
+ Expect bugs as this is a development build.
+  
+
+- Category: development
+- Version: 1.8.0_beta2
+- Homepage: "https://zxbasic.readthedocs.io"
+- Code repository: "https://github.com/boriel-basic/zxbasicstudio"
+## bwbasic (basic interpreter)
+ The Bywater BASIC Interpreter (bwBASIC) implements a large superset
+ of the ANSI Standard for Minimal BASIC (X3.60-1978) and a significant
+ subset of the ANSI Standard for Full BASIC (X3.113-1987) in C.
+  
+
+- Category: development
+- Version: 3.40
+- Homepage: https://sourceforge.net/projects/bwbasic
+- Code repository: https://sourceforge.net/projects/bwbasic
+## electron-bin (Library for building cross-platform applications)
+ Electron is an open source library developed by GitHub for building
+ cross-platform desktop applications with HTML, CSS, and JavaScript.
+ Electron accomplishes this by combining Chromium and Node.js into a
+ single runtime and apps can be packaged for Mac, Windows, and Linux.
+ This is electron binary repackaged in Slackware style.
+  
+
+- Category: development
+- Version: 43.3.0
+- Homepage: https://www.electronjs.org/
+- Code repository:
+## gn (Meta-build system)
+ GN is a meta-build system that generates build files for Ninja.
+ Homepage: https://gn.googlesource.com/gn/
+  
+
+- Category: development
+- Version: 0.1616
+- Homepage: https://gn.googlesource.com/
 - Code repository:
 ## evemu (Device descriptions and events recording and replaying tools)
  evemu records and replays device descriptions and events, making it
@@ -257,83 +423,18 @@
 - Version: 20260802_37652c5
 - Homepage: https://notepadqq.com
 - Code repository: https://github.com/notepadqq/notepadqq/commits/master/
-## smartgit (Desktop Git Client)
- SmartGit is a commercial desktop git client that provides a
- free non-commercial use license. You need to apply for this license
- in https://www.syntevo.com/register-non-commercial/
- otherwise you can purchase the software.
+## kforth (A Forth programming language and environment)
+ kForth is an implementation of the Forth programming language and
+ environment. The user may write Forth programs with an editor,
+ load these program files from kForth, and run them. kForth, like
+ other implementations of Forth, provides an interactive environment,
+ allowing the user to examine or define variables and execute or
+ define individual words.
+ This package contains the branch 1.x of kforth for legacy systems.
   
 
 - Category: development
-- Version: 25.1.093
-- Homepage: https://www.syntevo.com/smartgit
-- Code repository: https://www.syntevo.com/smartgit/download/
-
-*No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
-## a68g (Algol 68 compiler-interpreter)
- It can be used for executing Algol 68 programs or scripts.
- HomePage: https://algol68genie.nl/en/algol-68-genie/
-  
-
-- Category: development
-- Version: 3.12.3
-- Homepage: https://algol68genie.nl/en/algol-68-genie/
-- Code repository:
-## zxbasicstudio (an ide for zxbasic)
- ZX Basic Studio is a cross-platform IDE for zxbasic
- This is a work in progress but the development has reached a state
- in which we feel comfortable to release it to be tested by users.
- Expect bugs as this is a development build.
-  
-
-- Category: development
-- Version: 1.8.0_beta2
-- Homepage: "https://zxbasic.readthedocs.io"
-- Code repository: "https://github.com/boriel-basic/zxbasicstudio"
-## zxtext2p (convert text to zx81 basic tape)
- zxtext2p converts a text file containing standard zx81 basic
- to a tape file.
-  
-
-- Category: development
-- Version: 1.0
-- Homepage: https://freestuff.grok.co.uk/zxtext2p/index.html
-- Code repository:
-## vstudio (Valentina Studio DB Management)
- Valentina Studio is the best way to transform your data into
- meaningful information; create, administer, query and explore
- Valentina DB, MySQL, Postgre and SQLite databases for free on
- 32/64 bit Windows, Linux and Mac OS X.
-  
-
-- Category: development
-- Version: 17.5.3
-- Homepage: http://www.valentina-db.com/
-- Code repository: https://valentina-db.com/download/prev_releases/
-
-## smartsvn (Desktop SVN Client)
- SmartSvn is a commercial desktop svn client.
- SmartSVN starts with free evaluation mode for 30 days,
- but you can request a non-commercial license at:
- https://www.syntevo.com/register-non-commercial/
-  
-
-- Category: development
-- Version: 14.5.1
-- Homepage: https://www.smartsvn.com
-- Code repository: https://www.smartsvn.com/download/
-## kForth-32 (32-bit Forth System for x86-GNU/Linux)
- kForth-32 is an implementation of the Forth programming language
- and environment. Like other implementations of Forth, provides an
- interactive environment, allowing the user to examine or
- define variables and define and execute individual words.
- kForth-32 provides a large subset of the Forth-2012 specification
- and includes some useful extensions.
- https://github.com/mynenik/kForth-32
-  
-
-- Category: development
-- Version: 2.6.1
+- Version: 1.8.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
 ## notepad++ (A powerful text editor from the Windows universe)
@@ -348,53 +449,35 @@
 - Version: 8.9.7
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
-## gitnuro (a graphical git client)
- A FOSS Git client based on (Jetbrains) Compose and JGit.
- The main goal of Gitnuro is to provide a multiplatform open source
- Git client without any kind of constraint to how you can use it nor
- relying on web technologies.
+## XiMpLe (tabular xml editor)
+ XiMpLe is an xml and json editor based on a table grid view
+ (the same nodes are arranged in tables).
   
 
 - Category: development
-- Version: 1.5.0
-- Homepage: https://gitnuro.com/
-- Code repository: https://github.com/JetpackDuba/Gitnuro/
-## bwbasic (basic interpreter)
- The Bywater BASIC Interpreter (bwBASIC) implements a large superset
- of the ANSI Standard for Minimal BASIC (X3.60-1978) and a significant
- subset of the ANSI Standard for Full BASIC (X3.113-1987) in C.
-  
-
-- Category: development
-- Version: 3.40
-- Homepage: https://sourceforge.net/projects/bwbasic
-- Code repository: https://sourceforge.net/projects/bwbasic
-## recutils (tools and libraries to access recfiles)
- GNU Recutils is a set of tools and libraries to access
- human-editable, plain text databases called recfiles. The data is
- stored as a sequence of records, each record containing an arbitrary
- number of named fields.
- https://www.gnu.org/software/recutils/
-  
-
-- Category: development
-- Version: 1.9
-- Homepage: https://www.gnu.org/software/recutils/
-- Code repository: https://ftp.gnu.org/gnu/recutils/
-## letos (SQLite database manager written in C++ using Qt)
- Previously known as SQLiteStudio, letos is A free, open source,
- multi-platform SQLite database manager written in C++,
- with use of Qt framework.
- SQLiteStudio is a desktop application for browsing and editing SQLite
- database files. It is aimed for people, who know what SQLite is, or
- what relational databases are in general.
-  
-
-- Category: development
-- Version: 4.0.1
-- Homepage: https://letos.org
+- Version: 1.6.2603.14891
+- Homepage: http://www.ximple.cz
 - Code repository:
+## pasdoc (documentation tool for ObjectPascal source code)
+ Documentation is generated from comments found in source code.
+ Available output formats are HTML, HtmlHelp, LaTeX, latex2rtf,
+ simplexml. More output formats may be added in the future.
+  
 
+- Category: development
+- Version: 1.0.4
+- Homepage: http://pasdoc.sipsolutions.net/
+- Code repository:
+## qb64 (Modern QuickBASIC compiler)
+ QB64 is a modern extended BASIC programming language that retains
+ QBasic/QuickBASIC 4.5 compatibility and compiles native binaries for
+ Windows, Linux, and macOS.
+  
+
+- Category: development
+- Version: 2.1
+- Homepage: https://qb64.com
+- Code repository: https://github.com/QB64Official/qb64
 ## antigravity2 (Google Antigravity 2.0 agent command center)
  Google Antigravity agent command center for orchestration and
  automation.
@@ -404,6 +487,102 @@
 - Version: 2.4.3
 - Homepage: https://antigravity.google/
 - Code repository:
+## smartsvn (Desktop SVN Client)
+ SmartSvn is a commercial desktop svn client.
+ SmartSVN starts with free evaluation mode for 30 days,
+ but you can request a non-commercial license at:
+ https://www.syntevo.com/register-non-commercial/
+  
+
+- Category: development
+- Version: 14.5.1
+- Homepage: https://www.smartsvn.com
+- Code repository: https://www.smartsvn.com/download/
+## MinForth (A Forth System that can transpile Forth to C)
+ MinForth V3.4 is a classic Forth system with command-line interface.
+ Development resource requirements are minimal. A source text editor
+ and a C compiler are sufficient. By design no toolchain is required
+ to adapt or rebuild MinForth. A complete rebuild takes only few
+ seconds.
+ Current sources are for Windows and Linux (32-bit or 64-bit).
+  
+
+- Category: development
+- Version: 3.4.8
+- Homepage: https://sourceforge.net/projects/minforth/
+- Code repository:
+## antigravity (Google Antigravity IDE)
+ Google Antigravity is an agentic development platform, evolving the
+ IDE into the agent-first era.
+  
+
+- Category: development
+- Version: 2.1.1
+- Homepage: https://antigravity.google/
+- Code repository:
+## eisl (ISO ISLISP interpreter)
+ Easy-ISLisp (EISL) is an interpreter and compiler compatible with the
+ ISLisp standard. EISL was written by Kenichi Sasagawa and is
+ available under a BSD license.
+ For more information, see: https://github.com/sasagawa888/eisl
+  
+
+- Category: development
+- Version: 5.68
+- Homepage: https://github.com/sasagawa888/eisl
+- Code repository: https://github.com/sasagawa888/eisl
+## smartgit (Desktop Git Client)
+ SmartGit is a commercial desktop git client that provides a
+ free non-commercial use license. You need to apply for this license
+ in https://www.syntevo.com/register-non-commercial/
+ otherwise you can purchase the software.
+  
+
+- Category: development
+- Version: 25.1.093
+- Homepage: https://www.syntevo.com/smartgit
+- Code repository: https://www.syntevo.com/smartgit/download/
+
+*No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+## yabasic (basic-interpreter)
+ Yabasic is a traditional basic-interpreter. It comes with goto and
+ various loops and allows to define subroutines and libraries.
+ It does simple graphics and printing. Yabasic can call out to
+ libraries written in C and allows to create standalone programs.
+ Yabasic runs under Unix and Windows and has a comprehensive
+ documentation; it is small, simple, open-source and free.
+  
+
+- Category: development
+- Version: 2.92.1
+- Homepage: "http://2484.de/yabasic/"
+- Code repository: "http://2484.de/yabasic/"
+## SmallBASIC (basic-interpreter)
+ SmallBASIC is a fast and easy to learn BASIC language interpreter
+ ideal for everyday calculations, scripts and prototypes.
+ SmallBASIC includes trigonometric, matrices and algebra functions,
+ a built in IDE, a powerful string library, system, sound, graphic
+ commands and communication via serial or sockets along with
+ structured programming syntax.
+ SmallBASIC includes online examples ready to run.
+  
+
+- Category: development
+- Version: 12.33
+- Homepage: https://smallbasic.github.io
+- Code repository: https://github.com/smallbasic/SmallBASIC
+## vstudio (Valentina Studio DB Management)
+ Valentina Studio is the best way to transform your data into
+ meaningful information; create, administer, query and explore
+ Valentina DB, MySQL, Postgre and SQLite databases for free on
+ 32/64 bit Windows, Linux and Mac OS X.
+  
+
+- Category: development
+- Version: 17.5.3
+- Homepage: http://www.valentina-db.com/
+- Code repository: https://valentina-db.com/download/prev_releases/
+
 ## zxbasic (basic compiler for ZXSpectrum)
  ZX BASIC is a BASIC "cross compiler". It will compile BASIC
  programs (in your PC) for your ZX Spectrum. ZX BASIC is an
@@ -418,116 +597,1076 @@
 - Version: 1.19.0
 - Homepage: "https://zxbasic.readthedocs.io"
 - Code repository: "https://github.com/boriel-basic/zxbasic"
-## fpc (free pascal compiler)
- Free Pascal (aka FPK Pascal) is a 32 and 64 bit professional Pascal
- compiler. It is available for different processors: Intel x86,
- Amd64/x86_64, PowerPC, PowerPC64, Sparc, ARM. The discontinued 1.0
- version also supports the Motorola 680x0. The following operating
- systems are supported: Linux, FreeBSD, Mac OS X/Darwin, DOS, Win32,
- Win64, WinCE, OS/2, Netware (libc and classic) and MorphOS.
- Homepage: http://www.freepascal.org/
+## zmakebas (convert text to ZXSpectrum basic tape)
+ zmakebas converts a text file containing standard ZXSpectrum basic
+ to a tape file.
   
 
 - Category: development
-- Version: 3.2.2
-- Homepage: https://www.freepascal.org/
+- Version: 1.2b
+- Homepage: https://github.com/z00m128/zmakebas
 - Code repository:
-## XiMpLe (tabular xml editor)
- XiMpLe is an xml and json editor based on a table grid view
- (the same nodes are arranged in tables).
+## page (Python Tkinter GUI builder)
+ PAGE is a drop and drag tool which helps to create Tkinter
+ GUI interfaces for use within Python programs.  It is a fork
+ of the program Visual Tcl which now produces Python code.
+ PAGE builds multiple GUI windows and generates a working
+ skeletal Python program using tk and ttk widgets.
   
 
 - Category: development
-- Version: 1.6.2603.14891
-- Homepage: http://www.ximple.cz
+- Version: 8.1
+- Homepage: https://sourceforge.net/projects/page/
 - Code repository:
-## kForth-64 (64-bit Forth System for x86_64-GNU/Linux)
- kForth-64 is an implementation of the Forth programming language
+## critcl (C Runtime In Tcl)
+ critcl is a system that lets you build C/C++ extension packages for
+ Tcl on the fly, from C/C++ code embedeed within your Tcl scripts.
+ For more information see: https://andreas-kupries.github.io/critcl
+  
+
+- Category: development
+- Version: 3.3.1
+- Homepage: https://andreas-kupries.github.io/critcl/
+- Code repository: https://github.com/andreas-kupries/critcl
+## qb64pe (Modern QuickBASIC compiler)
+ QB64 Phoenix Edition (QB64-PE) is a fork of QB64.com, providing
+ additional features and enhancements, maintained by a
+ group of original developers of QB64.com.
+ QB64-PE is a modern extended BASIC programming language with embedded
+ OpenGL support that retains QuickBASIC 4.5 and QBasic compatibility
+ and compiles native binaries for Windows (Vista and up),
+ Linux and macOS.
+  
+
+- Category: development
+- Version: 4.6.0
+- Homepage: https://qb64phoenix.com/
+- Code repository: https://github.com/QB64-Phoenix-Edition/QB64pe
+## kForth-32 (32-bit Forth System for x86-GNU/Linux)
+ kForth-32 is an implementation of the Forth programming language
  and environment. Like other implementations of Forth, provides an
  interactive environment, allowing the user to examine or
  define variables and define and execute individual words.
- kForth-64 provides a large subset of the Forth-2012 specification
+ kForth-32 provides a large subset of the Forth-2012 specification
  and includes some useful extensions.
+ https://github.com/mynenik/kForth-32
   
 
 - Category: development
-- Version: 0.6.1
-- Homepage: https://github.com/mynenik/kForth-64
+- Version: 2.6.1
+- Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
-## sourcegit (GUI client for GIT users)
- Opensource Git GUI client. Supports SSH access with each remote.
- This software also supports using OpenAI or other AI service
- that has an OpenAI compatible HTTP API to generate commit message.
- You need configurate the service in Preference window
- HomePage: https://github.com/sourcegit-scm/sourcegit
+## siren (Text-based audio player)
+ Siren is a text-based audio player for UNIX-like operating systems.
+ Various aspects of Siren have been inspired by cmus. Supported file
+ formats include Ogg Vorbis, MP3, Opus, FLAC, AAC, WavPack, WAVE and
+ AIFF. Playback is possible through sndio, PulseAudio, ALSA, OSS, Sun
+ audio, PortAudio and libao.
+ Homepage: https://www.kariliq.nl/siren/
   
 
-- Category: development
-- Version: 2026.17
-- Homepage: https://github.com/sourcegit-scm/sourcegit
+- Category: audio
+- Version: 0.11
+- Homepage: https://www.kariliq.nl/siren/
 - Code repository:
-## perl-Text-CSV (Perl Text::CSV module)
- Text::CSV provides facilities for the composition and
- decomposition of comma-separated values using Text::CSV_XS
- or its pure Perl version.
+## tuxguitar (A Multitrack tablature editor and player)
+ TuxGuitar is a multitrack guitar tablature editor and player
+ written in Java-SWT. It can open GuitarPro, PowerTab, and
+ TablEdit files.
   
 
-- Category: perl
-- Version: 2.06
-- Homepage: https://metacpan.org/pod/Text::CSV
+- Category: audio
+- Version: 2.1.0
+- Homepage: https://www.tuxguitar.app/
+- Code repository: https://github.com/helge17/tuxguitar
+## Ardour (Professional Audio Editing)
+ Ardour is an application to fit the needs of musicians under
+ Linux. It is designed to be a fully functional professional
+ audio application, that uses the professional sound server
+ jack for sound i/o.
+ Homepage: http://ardour.org
+  
+
+- Category: audio
+- Version: 9.7.0
+- Homepage: http://ardour.org
+- Code repository: https://github.com/Ardour/ardour
+
+Instead of github go to Ardour.org and press download to get the source code tar archive
+## musikcube (Terminal-based audio engine, library, player, and server)
+ A cross-platform, terminal-based audio engine, library, player and
+ server written in C++.
+ Homepage: https://musikcube.com
+  
+
+- Category: audio
+- Version: 3.0.5
+- Homepage: https://musikcube.com
 - Code repository:
-## x48ng (HP48 Calculator emulator)
- x48ng is a vintage emulator capable of providing a faithful
- replication of the HP48 Calculator. It requires a copy of the ROM
+## plug ( Fender Mustang Amps Controller )
+ Plug is a Software to control Fender Mustang Amps, a linux
+ replacement for the now discontinued Fender Fuse.
+ It addresses the following models:
+ v1: Mustang I, Mustang II, Mustang III, Mustang IV, Mustang V,
+     Mustang Bronco, Mustang Mini and Mustang Floor.
+ v2: Mustang I, Mustang II, Mustang III, Mustang IV and Mustang V.
+ You must add your user to the plugdev group before using
+ the program.
+  
+
+- Category: audio
+- Version: 1.5.0
+- Homepage: https://github.com/offa/plug
+- Code repository:
+## reaper (digital audio production application)
+ REAPER is a complete digital audio production application for
+ computers, offering a full multitrack audio and MIDI recording,
+ editing, processing, mixing and mastering toolset.
+ REAPER supports a vast range of hardware, digital formats and
+ plugins, and can be comprehensively extended, scripted and modified.
+  
+
+- Category: audio
+- Version: 7.78
+- Homepage: https://www.reaper.fm
+- Code repository:
+## musepack-tools (Musepack SV8 command line tools)
+ This package contains the Musepack Stream Version 8 command line
+ tools for Linux. SV8 supercedes SV7 and is preferable for any task.
+ Homepage: <http://www.musepack.net/>
+  
+
+- Category: audio
+- Version: r475
+- Homepage: http://www.musepack.net/
+- Code repository:
+## bitwig-studio (Digital audio workstation for music production)
+ Bitwig is designed to be an instrument for live performances as well
+ as a tool for composing, recording, arranging, mixing, and mastering.
+ It offers a suite of controls for beatmatching, crossfading, and other
+ effects used by turntablists. Bitwig supports both traditional linear
+ music arrangement and non-linear (clip-based) production. It has
+ multi-monitor and touch screen support. Bitwig is notable for its
+ strong modulation and automation capabilities.
+ Homepage at https://www.bitwig.com/
+  
+
+- Category: audio
+- Version: 5.1.9
+- Homepage: https://www.bitwig.com/
+- Code repository:
+
+*No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
+## sndio (small audio and MIDI framework)
+ Sndio is a small audio and MIDI framework, part of the OpenBSD
+ project, and ported to FreeBSD, Linux and NetBSD. It provides
+ a lightweight audio & MIDI server and a fully documented
+ user-space API to access either the server or the hardware
+ directly in a uniform way.
+ https://sndio.org/
+  
+
+- Category: audio
+- Version: 1.10.0
+- Homepage: https://sndio.org/
+- Code repository:
+## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
+ The Edit&Share application is used to control Zoom G3/B3 pedals from
+ your favourite Slackware box.
+ The Zoom G3/B3 guitar pedals opens the door to a new level of
+ creativity. It offers a number of effects, along with amp and cabinet
+ models, and allows you to chain them together for full multi-effect
+ complexity.
+  
+
+- Category: audio
+- Version: 5.3.0
+- Homepage: https://zoomcorp.com/en/jp/
+- Code repository:
+## pmidi (command line midi player for alsa)
+ This is a straightforward command line program to play midi files
+ through the ALSA sequencer.
+ As you can specify the client and port to connect to on the command
+ line it is also useful for testing ALSA or clients that need to
+ receive sequencer events.
+ This program works with latest ALSA 1.0 drivers and former O.9
+ versions.
+  
+
+- Category: audio
+- Version: 1.7.1
+- Homepage: http://www.parabola.me.uk/alsa/pmidi.html
+- Code repository:
+## brave-browser-the-latest (brave browser updater script)
+ Maintaining an updated Brave Browser on Slackware is now made
+ easier with this small program, "brave-browser-the-latest", a simple
+ python script that will install and keep checking afterwards what is
+ the latest version available so your Slackware box is kept safer.
+  
+
+- Category: system
+- Version: 1.5.3
+- Homepage: https://github.com/antonioleal/brave-browser-the-latest
+- Code repository: https://github.com/antonioleal/brave-browser-the-latest
+
+
+- Development: https://github.com/brave/brave-browser
+## yaze-ag (yet another z80 emulator )
+ is designed to provide an exact simulation of the Z80 microprocessor.
+ It is fast, emulates undocumented opcodes, and passes instruction
+ regression tests against real Z80 hardware.
+ NEW in yaze-ag version 2.xx is the support of an emulated Memory
+ Management Unit (MMU) and the BIOS which supports CP/M 3.1.
+ YAZE-AG is a Z80-CPU-Emulator and NOT a CP/M-Emulator!
+ Inside the Emulator runs an original CP/M or a replacement of CP/M.
+ Please visit homepage for further reading on this excelent emulator.
+  
+
+- Category: system
+- Version: 2.51.3
+- Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
+- Code repository:
+## doublecmd-qt5 (Double-panel File Manager)
+ Double Commander is a free cross-platform open source file manager
+ with two panels side by side (or one above the other). This is the Qt
+ version of the program.
+ Since it is written in Pascal, lazarus, fpc, and qt5pas packages must
+ be installed before building.
+  
+
+- Category: system
+- Version: 1.2.7
+- Homepage:  http://doublecmd.sourceforge.net
+- Code repository: http://doublecmd.sourceforge.net
+## B-em (BBC Microcomputer Emulator)
+ B-em is an emulator for various models of BBC Microcomputer as
+ made by Acorn Computers in the 1980s along with a selection of
+ 2nd processors.
+ B-em is licensed under the GPL, see COPYING for more details.
+  
+
+- Category: system
+- Version: 20260701_6018d5e
+- Homepage:  https://b-em.bbcmicro.com/
+- Code repository: https://github.com/stardot/b-em
+## brave-origin-the-latest (Brave Origin updater script)
+ Maintaining an updated Brave Origin on Slackware is now made
+ easier with this small program, "brave-origin-the-latest", a simple
+ python script that will install and keep checking afterwards what is
+ the latest version available so your Slackware box is kept safer.
+  
+
+- Category: system
+- Version: 1.0.1
+- Homepage: https://github.com/antonioleal/brave-origin-the-latest
+- Code repository: https://github.com/antonioleal/brave-origin-the-latest
+
+
+- Development: https://github.com/brave/brave-origin
+## limine (Modern, advanced, portable, multiprotocol bootloader)
+ Limine is a modern, advanced, portable, multiprotocol bootloader,
+ also limine: used as the reference implementation for the Limine
+ boot protocol.
+  
+
+- Category: system
+- Version: 12.5.2
+- Homepage: https://limine-bootloader.org/
+- Code repository: https://github.com/limine-bootloader/limine
+## ventoy (Bootable USB Solution)
+ Ventoy is an open source tool to create bootable USB drives
+ for ISO/WIM/IMG/VHD(x)/EFI files.
+ With Ventoy, you do not need to format the disk repeatedly.
+ Just copy the image files to the USB drive and boot them.
+ You can copy many files at a time and Ventoy will provide
+ a boot menu. It also supports browsing local disk files.
+  
+
+- Category: system
+- Version: 1.1.17
+- Homepage: https://www.ventoy.net
+- Code repository:
+## silk (package management tools front end)
+ Silk is a practical front end to various slackware package management
+ tools, namely slackpkg, sbopkg, slapt-get and slapt-src.
+ It implements the more common commands and simplifies the operation
+ of multiple programs by unifying their syntax and execution.
+  
+
+- Category: system
+- Version: 1.0.5
+- Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
+- Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
+## google-chrome-the-latest (Google Chrome Updater Script)
+ Maintaining an updated Chrome Browser on Slackware is now made
+ easier with this small program, "google-chrome-the-latest", a simple
+ python script that will install and keep checking afterwards what is
+ the latest version available so your Slackware box is kept safer.
+  
+
+- Category: system
+- Version: 4.3.1
+- Homepage: https://github.com/antonioleal/google-chrome-the-latest
+- Code repository:
+## clamtk (A frontend for ClamAV)
+ ClamTk is a frontend for ClamAV using perl-Gtk3.
+ It is intended to be an easy to use, light-weight,
+ on-demand scanner for Linux systems.
+  
+
+- Category: system
+- Version: 6.18
+- Homepage: https://github.com/dave-theunsub/clamtk
+- Code repository:
+## CanAce (A Jupiter Ace emulator for Linux)
+ CanAce is a fork by Lawrence Woodman of xAce featuring a
+ tcl frontend and some fixes to the original source.
+ Homepage at https://github.com/lawrencewoodman/CanAce/
+  
+
+- Category: system
+- Version: 20130224_c135151
+- Homepage: https://github.com/LawrenceWoodman/CanAce
+- Code repository:
+## depfinder (finds dependencies of Slackware packages)
+ depfinder is a tool that finds the dependencies of Slackware
+ packages and outputs them in a comma separated list, in stdout or a
+ .dep file. depfinder is very fast at calculating dependencies; the
+ speed difference mainly comes from the C++ code that is used to find
+ in which package each individual library is included. That C++ code is
+ 'borrowed' (as in blatanly ripped) from Nigel Bosch's zpm code.
+ depfinder also has support for running multiple jobs which makes it a
+ "*lot* faster on PCs with multiple CPUs/cores.
+  
+
+- Category: system
+- Version: 1.4.4
+- Homepage: https://depfinder.sourceforge.net/
+- Code repository: https://github.com/gapan/depfinder
+## FreeFileSync (Cross-platform file sync utility with GUI)
+ FreeFileSync is a folder comparison and synchronization software
+ that creates and manages backup copies of all your important files.
+ Instead of copying every file every time, FreeFileSync determines
+ the differences between a source and a target folder and transfers
+ only the minimum amount of data needed. FreeFileSync is Open
+ Source software, available for Windows, Linux and macOS.
+  
+
+- Category: system
+- Version: 14.10
+- Homepage: https://freefilesync.org/
+- Code repository: https://freefilesync.org/
+## b2 (BBC Microcomputer Emulator)
+ b2 is a cross-platform BBC Micro emulator. Use your Windows/Linux PC
+ or macOS computer to play your old BBC games or develop new BBC
  software.
- x48ng is a fork and continuation of the x48 project.
   
 
-- Category: academic
-- Version: 0.51.2
-- Homepage: https://codeberg.org/gwh/x48ng/tags
-- Code repository: https://github.com/gwenhael-le-moine/x48ng
-## plus42 (An Enhanced HP-42S Calculator Simulator)
- Plus42 is an advanced scientific programmable calculator, based on
- Free42 (a complete re-implementation of the HP-42S scientific
- programmable RPN calculator)
- Plus42 builds on Free42 and adds: A Larger Display, with 8 rows and 22
- columns (131x64 pixels) by default, which the user may resize at will;
- Algebraic Expressions; attached Units and unit conversions;
- Directories; TVM and amortization tables; and two-dimensional Plotting
- of functions.
-  
-
-- Category: academic
-- Version: 1.3.15
-- Homepage: https://www.thomasokken.com/plus42
-- Code repository: https://codeberg.org/thomasokken/plus42desktop
-## free42 (re-implementation of HP-42S calculator and HP-82240 printer)
- Free42 is a re-implementation of the HP-42S calculator and the
- HP-82240 printer. It is a complete rewrite, not using any HP code,
- and it does not require an HP-42S ROM image.  Free42 is an Open
- Source project. The executables and source code are released
- under the terms of the GNU General Public License, version 2.
- All third-party code used in Free42 is either in the public domain,
- or licensed under terms compatible with GPLv2, or used with the
- authors' permission.
- Homepage: http://thomasokken.com/free42/index.html
-  
-
-- Category: academic
-- Version: 3.3.12
-- Homepage: http://thomasokken.com/free42/index.html
+- Category: system
+- Version: 20250808_172419_959a8ab
+- Homepage: https://github.com/tom-seddon/b2
 - Code repository:
-## hp-prime (HP Prime Virtual Calculator simulation)
- Emulator (technically a simulator, since it is a native PC program)
- of the HP Prime Graphing Calculator for Wine. Lets you do everything
- the calculator does, but with the full control of your keyboard and
- mouse and taking full advantage of your PC's computing power.
+## arqiver (Simple Qt archive manager)
+ arqiver is a simple Qt archive manager. It serves as a front-end for
+ libarchive (bsdtar), gzip and 7z. 
   
 
-- Category: academic
-- Version: 2.3.1
-- Homepage: https://www.hpcalc.org/details/8939
+- Category: system
+- Version: 1.0.2
+- Homepage: https://github.com/tsujan/Arqiver
+- Code repository:
+
+
+
+## xAce (A Jupiter Ace emulator for Linux)
+ xAce is an emulator for the Jupiter Ace that runs under most flavours
+ of Unix. It was written by Edward Patel and based on a ZX81 emulator
+ called xz81 written by Russell Marks, which was in turn based on
+ Ian Collier's xz80, a ZX Spectrum emulator for X.
+ Homepage at https://lawrencewoodman.github.io/xAce/
+  
+
+- Category: system
+- Version: 0.5
+- Homepage: https://lawrencewoodman.github.io/xAce/
+- Code repository:
+## catatonit (Container init)
+ A container init that is so simple it's effectively brain-dead.
+ https://github.com/openSUSE/catatonit
+  
+
+- Category: system
+- Version: 0.2.1
+- Homepage: https://github.com/openSUSE/catatonit
+- Code repository:
+## timeshift (incremental system snapshots, backup and restore)
+ Timeshift for Linux is an application that provides functionality
+ similar to the System Restore feature in Windows and the Time Machine
+ tool in Mac OS. Timeshift protects your system by taking incremental
+ snapshots of the file system at regular intervals. These snapshots
+ can be restored at a later date to undo all changes to the system.
+  
+
+- Category: system
+- Version: 25.12.4
+- Homepage: https://github.com/linuxmint/timeshift
+- Code repository: https://github.com/linuxmint/timeshift
+## firefox-standard-the-latest (Firefox Standard Updater Script)
+ Maintaining an updated Firefox Standard Rel. on Slackware is now made
+ easier with this small program, "firefox-standard-the-latest", a
+ simple python script that will install and keep checking afterwards
+ what is the latest version available so your Slackware box is kept
+ safer.
+  
+
+- Category: system
+- Version: 1.1
+- Homepage: https://github.com/antonioleal/firefox-standard-the-latest
+- Code repository:
+## partclone (utility to clone various filesystems)
+ Partclone is a program similar to the well-known backup utility
+ "Partition Image" a.k.a partimage. Partclone provides utilities to
+ save and restore used blocks on a partition and is designed for
+ higher compatibility of the file system by using existing libraries,
+ e.g. e2fslibs is used to read and write the ext2 partition.
+  
+
+- Category: system
+- Version: 0.3.47
+- Homepage: https://github.com/Thomas-Tsai/partclone
+- Code repository: https://github.com/Thomas-Tsai/partclone
+
+*Private note: Mamba and Coral backups are made with version 0.3.37*
+## sdwmbar (dwm status bar)
+ Simple suckless dwm status bar
+ https://github.com/sakhmatd/sdwmbar
+  
+
+- Category: system
+- Version: 1.5
+- Homepage: https://github.com/sakhmatd/sdwmbar
+- Code repository:
+## eightyone (emulator for the range of ZX home computers)
+ EightyOne is an emulator for the range of ZX home computers made
+ by Sinclair Research (and their clones) in the 1980s, primarily
+ the ZX80 and ZX81 but also includes the ZX Spectrum models.
+ As well as emulating the machines themselves, various add-on
+ interfaces are supported, including storage devices, hi-res
+ graphics, custom character sets, sound and colour cards.
+  
+
+- Category: system
+- Version: 1.41
+- Homepage: https://sourceforge.net/projects/eightyone-sinclair-emulator/
+- Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
+## font-manager (GTK+ font manager)
+ A simple font management application for GTK+ Desktop Environments.
+  
+
+- Category: system
+- Version: 0.8.8
+- Homepage: http://fontmanager.github.io/
+- Code repository:
+## zutty (X terminal emulator using OpenGL ES Compute Shaders)
+ Zutty is a terminal emulator for the X Window System, functionally
+ similar to several other X terminal emulators such as xterm, rxvt and
+ countless others. It is also similar to other, much more modern,
+ GPU-accelerated terminal emulators such as Alacritty and Kitty. What
+ really sets Zutty apart is its radically simple, yet extremely
+ efficient rendering implementation.
+ Homepage: https://tomscii.sig7.se/zutty/
+  
+
+- Category: system
+- Version: 0.16
+- Homepage: https://tomscii.sig7.se/zutty/
+- Code repository:
+## oils (Programming language and Bash-compatible Unix shell)
+ oils is a project that aims to develop a modern shell language that
+ appeals to developers from languages like Python or JavaScript. It
+ is marketed as an "upgrade path from bash to a better language and
+ runtime."
+ Homepage: https://oils.pub/
+  
+
+- Category: system
+- Version: 0.37.0
+- Homepage: https://oils.pub/
+- Code repository:
+## gallery-dl (Command line image scraper)
+ gallery-dl is a command-line program to download image galleries and
+ collections from several image hosting sites. It is a cross-platform
+ tool with many configuration options and powerful filenaming capabi-
+ lities. 
+ Homepage: https://github.com/mikf/gallery-dl
+  
+
+- Category: network
+- Version: 1.32.9
+- Homepage: https://github.com/mikf/gallery-dl
+- Code repository:
+## newsraft (Terminal feed reader)
+ Newsraft is a feed reader with an ncurses user interface. It's
+ greatly inspired by Newsboat and tries to be its lightweight
+ counterpart.
+ Homepage: https://newsraft.codeberg.page/
+  
+
+- Category: network
+- Version: 0.37
+- Homepage: https://newsraft.codeberg.page/
+- Code repository:
+## ckermit (combined network and serial communication software package)
+ C-Kermit is a combined network and serial communication software
+ package offering a consistent, transport-independent, cross-platform
+ approach to connection establishment, terminal sessions, file
+ transfer, file management, character-set translation, numeric and
+ alphanumeric paging, and automation of file transfer and management,
+ dialogs, and communication tasks through its built-in scripting
+ language.
+  
+
+- Category: network
+- Version: 9.0.304.24
+- Homepage: http://www.kermitproject.org/ck90.html
+- Code repository:
+## librespeed-cli (LibreSpeed CLI)
+ Command line program to test internet connection speed.
+ Homepage: https://github.com/librespeed/speedtest-cli
+  
+
+- Category: network
+- Version: 1.0.13
+- Homepage: https://github.com/librespeed/speedtest-cli
+- Code repository:
+## YT-DLP (download videos from youtube and other video sites)
+ yt-dlp is a feature-rich command-line audio/video downloader with
+ support for thousands of sites. The project is a fork of youtube-dl,
+ based on the now-inactive youtube-dlc.
+  
+
+- Category: network
+- Version: 2026.07.04
+- Homepage: https://github.com/yt-dlp/yt-dlp
+- Code repository:
+## helium-browser (web browser)
+ Best privacy and unbiased ad-blocking by default.
+ Handy features like native !bangs and split view.
+ No adware, no bloat, no noise. Made for people, by people.
+ Fully open source.
+  
+
+- Category: network
+- Version: 0.15.1.1
+- Homepage: https://helium.computer/
+- Code repository:
+## google-chrome (Web Browser)
+ Google Chrome is a browser that combines a minimal design with
+ sophisticated technology to make the web faster, safer, and easier.
+  
+
+- Category: network
+- Version: 151.0.7922.71
+- Homepage: http://www.google.com/chrome/
+- Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
+## browsh (Private Web Browser)
+ Browsh is a fully-modern text-based browser. It renders anything that
+ a modern browser can; HTML5, CSS3, JS, video and even WebGL.
+  
+
+- Category: network
+- Version: 1.8.3
+- Homepage: https://github.com/browsh-org/browsh/
+- Code repository:
+## zen-browser (web browser)
+ Beautifully designed, privacy-focused, and packed with features.
+ It cares about your experience, not your data.
+  
+
+- Category: network
+- Version: 1.21.10b
+- Homepage: https://zen-browser.app/
+- Code repository: https://github.com/zen-browser/desktop
+## aMule (multiplatform ed2k client)
+ aMule is a multiplatform ed2k client, fork of the eMule client,
+ using the wxWidgets class library, supporting Linux, *BSD platforms,
+ Solaris, *MacOSX and *Win32 (*soon). It was originally forked from
+ the xMule project, which in turn was forked from the lMule project.
+  
+
+- Category: network
+- Version: 3.0.0
+- Homepage: https://amule-org.github.io/
+- Code repository:
+## opera (A fast and secure web browser)
+ Opera is a graphical Web browser available on several platforms.
+ The desktop version runs on GNU/Linux and FreeBSD. Versions for
+ Macintosh and Windows are also available.
+  
+
+- Category: network
+- Version: 133.0.5932.85
+- Homepage: https://www.opera.com
+- Code repository: https://www.opera.com/opera
+- test playback: https://forums.opera.com/topic/30578/ffmpeg-installation-instructions
+
+## abdownloadmanager-bin (Download Manager)
+ https://github.com/amir1376/ab-download-manager
+ https://abdownloadmanager.com
+  
+
+- Category: network
+- Version: 1.8.7
+- Homepage: https://abdownloadmanager.com/
+- Code repository:
+## waterfox (a fast and private web browser)
+ Waterfox is is built with privacy in mind. It does not track you,
+ and it doesn't make money from your data.
+ Waterfox has search partnerships. So it survives by making the
+ default search on Waterfox monetized. If you search with it,
+ Waterfox gets a share of the revenue.
+ You are under no obligation to use the default search - but if you
+ like what Waterfox does and want to support the project,
+ please consider using it.
+  
+
+- Category: network
+- Version: 6.6.17
+- Homepage: https://www.waterfox.net/
+- Code repository: https://github.com/BrowserWorks/Waterfox
+- Binary repository: https://www.waterfox.net/download/
+## mullvad-browser (web browser)
+ The Mullvad Browser is a privacy-focused web browser developed in a
+ collaboration between Mullvad VPN and the Tor Project. Its designed
+ to minimize tracking and fingerprinting.
+  
+
+- Category: network
+- Version: 15.0.19
+- Homepage: https://mullvad.net/en/browser
+- Code repository:
+## whalebird (Mastondon, Pleroma and Misskey client)
+ Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
+  
+
+- Category: network
+- Version: 6.3.0
+- Homepage: https://whalebird.social
+- Code repository: https://github.com/h3poteto/whalebird-desktop
+## librewolf (Private Web Browser)
+ This project is a custom and independent version of Firefox, with the
+ LibreWolf: primary goals of privacy, security and user freedom.
+  
+
+- Category: network
+- Version: 153.0.1_1
+- Homepage: https://librewolf.net/
+- Code repository: https://codeberg.org/librewolf/source/releases
+- Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
+
+## libmobi (Library for Mobipocket/Kindle ebook formats)
+ C library for handling Mobipocket/Kindle (MOBI) ebook format
+ documents. Supports PalmDOC (pdb), Mobipocket (prc, mobi), newer MOBI
+ files including KF8 format (azw, azw3), and replica print files
+ (azw4). Includes features such as reading/parsing documents,
+ reacreating source files, editing metadata, handling encrypted
+ documents, and much more.
+ Homepage: https://www.fabiszewski.net/libmobi/
+  
+
+- Category: libraries
+- Version: 0.12
+- Homepage: https://www.fabiszewski.net/libmobi/
+- Code repository:
+## qt-installer-script (Deploy Qt Libraries in Slackware)
+ qt-installer-script is an umbrella script to the standard Qt
+ installer to simplify the installation of Qt Libraries in your
+ Slackware system.
+ It is provided to perform and unattended install, define a
+ location (/opt/Qt) and setup a basic skeleton so you can add
+ several Qt library versions in parallel.
+  
+
+- Category: libraries
+- Version: 4.11.0
+- Homepage: https://github.com/antonioleal/qt-installer-script
+- Code repository:
+## libupnp (Portable SDK for UPnP Devices)
+ The portable SDK for UPnP Devices (libupnp) provides developers with
+ an API and open source code for building control points, devices, and
+ bridges that are compliant with Version 1.0 of the Universal Plug and
+ Play Device Architecture Specification and support several operating
+ systems like Linux, *BSD, Solaris and others.
+ libupnp is used in UPnP implentations in Open Source projects over the
+ World. It is 100% compatible fork of original libupnp.
+  
+
+- Category: libraries
+- Version: 1.14.30
+- Homepage: http://pupnp.sourceforge.net/
+- Code repository:
+## libreplaygain (Musepack ReplayGain library)
+ Musepack ReplayGain library.
+ Homepage: <http://www.musepack.net/>
+  
+
+- Category: libraries
+- Version: r475
+- Homepage: http://www.musepack.net/
+- Code repository:
+## libkate (codec for karaoke and text support in Ogg)
+ kate is a codec for karaoke and text encapsulation for Ogg.
+ Most of the time, this would be multiplexed with audio/video
+ to carry subtitles, song lyrics etc.
+ Home Page https://wiki.xiph.org/OggKate
+  
+
+- Category: libraries
+- Version: 0.4.1
+- Homepage: https://wiki.xiph.org/OggKate
+- Code repository:
+## zimg (Scaling, colorspace conversion, and dithering library)
+ The "z" library implements the commonly required image processing
+ basics of scaling, colorspace conversion, and depth conversion.
+ Homepage: https://github.com/sekrit-twc/zimg
+  
+
+- Category: libraries
+- Version: 3.0.6
+- Homepage: https://github.com/sekrit-twc/zimg
+- Code repository:
+## libcuefile (CUE File library)
+ Cue File library from Musepack project.
+ Homepage: <http://www.musepack.net/>
+  
+
+- Category: libraries
+- Version: r475
+- Homepage: http://www.musepack.net/
+- Code repository:
+## SDL3 (Simple DirectMedia Layer Version 3)
+ Simple DirectMedia Layer is a cross-platform development library
+ designed to provide low-level access to audio, keyboard, mouse,
+ joystick, and graphics hardware ia via OpenGL. It is used by
+ video playback software, emulators, and games.
+  
+
+- Category: libraries
+- Version: 3.4.14
+- Homepage: http://www.libsdl.org
+- Code repository: https://github.com/libsdl-org/SDL
+
+## xapp (library to provide applications to users in multiple DEs)
+ This project gathers the components which are common to multiple GTK 
+ desktop environments (Cinnamon, MATE and Xfce) and required to
+ implement cross-DE solutions.
+  
+
+- Category: libraries
+- Version: 3.2.2
+- Homepage: https://github.com/linuxmint/xapp
+- Code repository: https://github.com/linuxmint/xapp
+## MuseScore-Libraries (libraries required by MuseScore)
+ The minimum set of libraries required by MuseScore.
+  
+
+- Category: libraries
+- Version: 6.9.3
+- Homepage: https://download.qt.io/official_releases/qt/
+- Code repository: https://download.qt.io/official_releases/qt/
+## pam_usb (Hardware Auth via Memory Sticks)
+ This is a PAM module for Linux authentication using USB memory sticks,
+ SD cards, external SSD etc. Simply speaking, it lets you log onto
+ your Linux user without typing password if the pre-configured memory
+ stick is detected.
+ See https://github.com/mcdope/pam_usb for configuration instruction.
+  
+
+- Category: libraries
+- Version: 0.9.3
+- Homepage: https://github.com/mcdope/pam_usb
+- Code repository: 
+## Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt)
+ Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software
+ package for large-scale, nonlinear optimization. It is designed to
+ find (local) solutions of mathematical optimization problems.
+ Homepage: https://projects.coin-or.org/Ipopt
+  
+
+- Category: libraries
+- Version: 3.14.19
+- Homepage: https://github.com/coin-or/Ipopt
+- Code repository: 
+## libmodbus (a fast and portable Modbus library)
+ libmodbus is a free software library to send/receive data according
+ to the Modbus protocol. This library is written in C and supports
+ RTU (serial) and TCP (Ethernet) communications.
+ Homepage: http://www.libmodbus.org
+  
+
+- Category: libraries
+- Version: 3.2.0
+- Homepage: http://www.libmodbus.org
+- Code repository:
+## libupnp-legacy (Portable SDK for UPnP Devices)
+ The portable SDK for UPnP Devices (libupnp-legacy) provides developers
+ with an API and open source code for building control points, devices,
+ and bridges that are compliant with Version 1.0 of the Universal Plug
+ and Play Device Architecture Specification and support several
+ operating systems like Linux, *BSD, Solaris and others.
+ libupnp-legacy is the legacy old ABI version.
+  
+
+- Category: libraries
+- Version: 1.6.25
+- Homepage: http://pupnp.sourceforge.net/
+- Code repository:
+## qt6-prebuilt-environment (Clang and LLVM to build Qt the GUI toolkit)
+ Qt is a cross-platform application and UI framework for developers
+ using C++ or QML, a CSS/JavaScript-like language.
+ This package contains the Clang and LLVM to build the Qt GUI toolkit.
+  
+
+- Category: libraries
+- Version: 20.1.0
+- Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
+- Code repository:
+## vst3sdk (Software development kit for VST3 plug-ins)
+ This allows plug-in developers to create plug-ins in VST 3 format and
+ host developers to load VST 3 plug-ins into a DAW or audio editor. 
+  
+
+- Category: libraries
+- Version: 3.8.0
+- Homepage: https://www.steinberg.net/developers/
+- Code repository: https://github.com/steinbergmedia/vst3sdk
+## notcurses (Blingful character graphics/TUI library)
+ notcurses is a library facilitating complex TUIs on modern terminal
+ emulators, supporting vivid colors, multimedia, threads, and Unicode
+ to the maximum degree possible. Things can be done with Notcurses
+ that simply can't be done with NCURSES. It is furthermore fast. It is
+ not a source-compatible X/Open Curses implementation, nor a
+ replacement for NCURSES on existing systems.
+ Homepage: https://notcurses.com/
+  
+
+- Category: libraries
+- Version: 3.0.17
+- Homepage: https://notcurses.com/
+- Code repository:
+## atari_8bit_utils (utilities for atari 8bit machines/emulators)
+ atari_8bit_utils contains a set of utilities by Preston Crow for
+ atari 8 bit machines or emulators such atari 400/800, XL, XE.
+ among others: mount atr disks, or convert atr formats..
+  
+
+- Category: games
+- Version: 20260104_bb7b488
+- Homepage: https://github.com/pcrow/atari_8bit_utils
+- Code repository:
+## exult (game engine for running Ultima7)
+ As computers evolve, we risk losing classic games from the not-so-
+ distant past. One of these, Ultima 7, an RPG from the early 1990's,
+ still has a huge following, and many consider it to be one of the
+ most immersive games ever produced. Exult is a project to recreate
+ Ultima 7 for modern operating systems, using the game's original
+ plot, data, and graphics files.
+  
+
+- Category: games
+- Version: 1.12.1
+- Homepage: http://exult.sourceforge.net/
+- Code repository:
+## solarus (an ARPG game engine)
+ Solarus is a free and open-source Action-RPG game engine, licensed
+ under GPL, and written in C++. It runs quests in Lua, and can work on
+ a great number of platforms.
+ Homepage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 2.1.0
+- Homepage: https://www.solarus-games.org/
+- Code repository:
+## lutris (Open Gaming Platform)
+ Lutris is an open gaming platform for Linux. It helps you install
+ and manage your games in a unified interface.  The goal is to support
+ every game which runs on Linux, from native Windows games (via Wine)
+ to emulators and browser games.
+ Home page: https://lutris.net/
+  
+
+- Category: games
+- Version: 0.5.22
+- Homepage: https://lutris.net/
+- Code repository:
+## space-invaders (arcade game)
+ This game is a tribute to Space Invaders, the famous arcade game
+ created by Tomohiro Nishikado in 1978.
+ Space Invaders is a fixed shooter in which the player controls a
+ laser cannon by moving it horizontally across the bottom of the
+ screen and firing at descending aliens.
+ Permission is granted to redistribute this game. See README.
+ Please donate at https://lowcarb.itch.io/space-invaders
+  
+
+- Category: games
+- Version: 1.4
+- Homepage: https://lowcarb.itch.io/space-invaders
+- Code repository:
+## zelda-roth-se (Zelda fangame for the Solarus engine)
+ Zelda Return of the Hylian Solarus Edition is a remake of the
+ original Zelda Return of the Hylian, a short and pleasant fangame
+ from Vincent Jouillat. The original game was developed in C++ and was
+ released in 2006.
+ Homepage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.2.1
+- Homepage: https://www.solarus-games.org/
+- Code repository:
+## zsxd (Parodic Zelda fangame)
+ Zelda Mystery of Solarus XD is a parodic game that we released on
+ April 1st, 2011. Though it's a big April 1st joke, it's a real, full
+ game with two huge dungeons and 5-10 hours of playing.
+ Homeage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.12.2
+- Homepage: https://www.solarus-games.org/
+- Code repository:
+## antares (A tactical space combat game)
+ Antares is based on Ares, a game developed by Nathan Lamont, and
+ released for the classic Mac OS in 1996.
+ Homepage: https://arescentral.org/antares
+  
+
+- Category: games
+- Version: 0.9.1
+- Homepage: https://arescentral.org/antares
+- Code repository:
+## nuvie (New Ultima VI Engine)
+ Nuvie (Pronounced New-Vee) is an open source engine for Origin's games
+ Ultima 6, Martian Dreams and The Savage Empire. It uses the original
+ data files from the games. It should be able to run on any platform
+ that is supported by the SDL library.
+ Homepage: http://nuvie.sourceforge.net
+  
+
+- Category: games
+- Version: 20250312_759cc0c
+- Homepage: https://github.com/nuvie/nuvie
+- Code repository:
+## yarntown (2D hommage to Bloodborne for the solarus engine)
+ You've come on the night of the hunt. The streets of this cursed,
+ gothic town are overrun with beasts, and what has become of the men
+ who tried to hunt them before. Explore the twisting roads, go toe to
+ toe with powerful foes, and uncover Yarntown's dark secrets.
+ Homeage: https://gitlab.com/maxmraz/yarntown
+  
+
+- Category: games
+- Version: 1.0.6
+- Homepage: https://gitlab.com/maxmraz/yarntown
+- Code repository:
+## solarus-quest-editor (GUI to edit quests for the Solarus engine)
+ Solarus Quest Editor is a free and open-source game editor for
+ Solarus, licensed under GPL. It is written in C++ with Qt. It helps
+ you managing your project, and editing maps, sprites, tilesets,
+ dialogs, scripts, musics and sounds.
+ Homepage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.6.4
+- Homepage: https://www.solarus-games.org/
+- Code repository:
+## zbom (Zelda fangame for the solarus engine)
+ Link's newest quest is set a few generations after Twilight Princess
+ and spans two different continents of Hyrule. Explore eight unique
+ temples and defeat enemies and bosses in order to gain powerful items
+ to assist you in your goal. Explore many areas of Hyrule and assist
+ different races in their conflicts.
+ Homeage: https://sites.google.com/site/zeldabom/
+  
+
+- Category: games
+- Version: 1.5
+- Homepage: https://wrightmatta.wixsite.com/zeldabom
+- Code repository:
+## dhewm3 (Doom 3 GPL source port)
+ The goal of dhewm 3 is bring DOOM 3 with the help of SDL to all
+ suitable platforms.
+ Homepage: https://dhewm3.org/
+  
+
+- Category: games
+- Version: 1.5.5
+- Homepage: https://dhewm3.org/
+- Code repository:
+## ZEsarUX (retro machines emulator)
+ ZEsarUX is a ZX Machines Emulator for Unix, including all the
+ Sinclair computers: MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and
+ also:  Timex TS 2068, Sam Coupe, Pentagon, Chloe 140 SE, 280 SE,
+ Chrome, Prism, ZX-Uno, ZX-Evolution TS-Conf,
+ TBBlue/ZX Spectrum Next, Jupiter Ace and Amstrad CPC 464
+ ZEsarUX also includes third-party roms, media, programs and
+ games NOT covered by the GNU GPL license.
+  
+
+- Category: games
+- Version: 13.0
+- Homepage: https://github.com/chernandezba/zesarux
+- Code repository:
+## zelda-xd2-mercuris-chess (Parodic Zelda fangame)
+ Zelda XD2: Mercuris Chess is the sequel of the first XD parodic game,
+ and was also released on April 1st, in 2017 this time. As a direct
+ sequel, the overworld is expanded, the story is extended and the funny
+ tone is kept, if not bettered!
+ Homeage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.1.2
+- Homepage: https://www.solarus-games.org/
+- Code repository:
+## VASSAL (engine for board and card games)
+ VASSAL is a game engine for building and playing online adaptations
+ of board games and card games. Play live on the Internet or by email.
+ VASSAL runs on all platforms, and is free, open-source software.
+  
+
+- Category: games
+- Version: 3.7.26
+- Homepage: http://www.vassalengine.org/
+- Code repository:
+## zsdx (Zelda fangame for the solarus engine)
+ The Legend of Zelda: Mystery of Solarus DX is set to be a direct
+ sequel to The Legend of Zelda: A Link to the Past on the SNES, using
+ the same graphics and game mechanisms. Zelda Mystery of Solarus DX is
+ the first game made with the Solarus engine and in fact, Solarus was
+ primarily designed for this game.
+ Homeage: https://www.solarus-games.org/
+  
+
+- Category: games
+- Version: 1.12.3
+- Homepage: https://www.solarus-games.org/
+- Code repository:
+## axpbox (alpha emulator)
+ AXPbox is a fork of the es40 emulator.
+ It could theoretically be used for running any operating system that
+ runs on the OpenVMS or Tru64 PALcode e.g. OpenVMS, Windows 2000,
+ Tru64 UNIX, Linux, NetBSD,..
+ The emulator supports SCSI, sound, IDE, serial ports, Ethernet
+ using pcap, or TUN/TAP on Linux and VGA graphics (using SDL3).
+  
+
+- Category: misc
+- Version: 1.2.0
+- Homepage: https://github.com/lenticularis39/axpbox
 - Code repository:
 ## balena-etcher-bin (Flash OS images to SD cards & USB drives)
  Etcher is a powerful OS image flasher built with web technologies
@@ -565,28 +1704,6 @@
 - Version: 0.79.5
 - Homepage: https://github.com/ES40-Emu/es40
 - Code repository:
-## axpbox (alpha emulator)
- AXPbox is a fork of the es40 emulator.
- It could theoretically be used for running any operating system that
- runs on the OpenVMS or Tru64 PALcode e.g. OpenVMS, Windows 2000,
- Tru64 UNIX, Linux, NetBSD,..
- The emulator supports SCSI, sound, IDE, serial ports, Ethernet
- using pcap, or TUN/TAP on Linux and VGA graphics (using SDL3).
-  
-
-- Category: misc
-- Version: 1.2.0
-- Homepage: https://github.com/lenticularis39/axpbox
-- Code repository:
-## tinytldr (tldr.sh command line client)
- Minimalist https://tldr.sh command line client in C99.
- https://github.com/kovmir/tinytldr
-  
-
-- Category: misc
-- Version: 1.2.2
-- Homepage: https://github.com/kovmir/tinytldr#readme
-- Code repository:
 ## open-simh (Historical Computer Simulation)
  Open SimH is a collection of simulators for historically significant
  or just plain interesting computer hardware and software from the
@@ -615,348 +1732,150 @@
 - Version: 3.12_5
 - Homepage: http://simh.trailing-edge.com/
 - Code repository:
-## renderdoc (Stand-alone graphics debugging tool)
- RenderDoc is a frame-capture based graphics debugger, currently
- available for Vulkan, D3D11, D3D12, OpenGL, and OpenGL ES
- development.
- Homepage: https://renderdoc.org/
+## tinytldr (tldr.sh command line client)
+ Minimalist https://tldr.sh command line client in C99.
+ https://github.com/kovmir/tinytldr
   
 
-- Category: graphics
-- Version: 1.11
-- Homepage: https://renderdoc.org/
+- Category: misc
+- Version: 1.2.2
+- Homepage: https://github.com/kovmir/tinytldr#readme
 - Code repository:
-## catimg (Insanely fast image printing in your terminal)
- catimg is a little program written in C with no dependencies that 
- prints images in terminal. It supports JPEG, PNG and GIF formats. 
- This program was originally a script that did the same by using 
- ImageMagick convert.
- Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
+## plus42 (An Enhanced HP-42S Calculator Simulator)
+ Plus42 is an advanced scientific programmable calculator, based on
+ Free42 (a complete re-implementation of the HP-42S scientific
+ programmable RPN calculator)
+ Plus42 builds on Free42 and adds: A Larger Display, with 8 rows and 22
+ columns (131x64 pixels) by default, which the user may resize at will;
+ Algebraic Expressions; attached Units and unit conversions;
+ Directories; TVM and amortization tables; and two-dimensional Plotting
+ of functions.
   
 
-- Category: graphics
-- Version: 2.8.0
-- Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
+- Category: academic
+- Version: 1.3.15
+- Homepage: https://www.thomasokken.com/plus42
+- Code repository: https://codeberg.org/thomasokken/plus42desktop
+## hp-prime (HP Prime Virtual Calculator simulation)
+ Emulator (technically a simulator, since it is a native PC program)
+ of the HP Prime Graphing Calculator for Wine. Lets you do everything
+ the calculator does, but with the full control of your keyboard and
+ mouse and taking full advantage of your PC's computing power.
+  
+
+- Category: academic
+- Version: 2.3.1
+- Homepage: https://www.hpcalc.org/details/8939
 - Code repository:
-## kphotoalbum (a photo management application)
- Kphotoalbum (previously known as KimDaBa) is an image viewer and
- organizer for KDE 4. It makes use of kipi plugins and exiv2 if
- they are installed (both recommended).
+## free42 (re-implementation of HP-42S calculator and HP-82240 printer)
+ Free42 is a re-implementation of the HP-42S calculator and the
+ HP-82240 printer. It is a complete rewrite, not using any HP code,
+ and it does not require an HP-42S ROM image.  Free42 is an Open
+ Source project. The executables and source code are released
+ under the terms of the GNU General Public License, version 2.
+ All third-party code used in Free42 is either in the public domain,
+ or licensed under terms compatible with GPLv2, or used with the
+ authors' permission.
+ Homepage: http://thomasokken.com/free42/index.html
   
 
-- Category: graphics
-- Version: 5.11.0
-- Homepage: https://www.kphotoalbum.org/
-- Code repository: https://www.kphotoalbum.org/download/
-
-*No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
-## dapper (Desktop Applications Autostarter)
- Simple lightweight desktop application auto-starter. It will read
- .desktop files in the autostart directories, all according to the
- FreeDesktop autostart specifications. You can define which desktop to
- start applications for (e.g. GNOME, XFCE, etc) in configuration file
- (~/.config/dapper.conf) or from command line.
- https://github.com/limine-bootloader/limine
-  
-
-- Category: desktop
-- Version: 1.0.0
-- Homepage: https://github.com/jjk-jacky/dapper
+- Category: academic
+- Version: 3.3.12
+- Homepage: http://thomasokken.com/free42/index.html
 - Code repository:
-## standard-notes-bin (free, open-source encrypted notes app)
- Standard Notes is an end-to-end encrypted note-taking app for
- digitalists and professionals. Capture your notes, files, and
- life's work all in one secure place.
+## x48ng (HP48 Calculator emulator)
+ x48ng is a vintage emulator capable of providing a faithful
+ replication of the HP48 Calculator. It requires a copy of the ROM
+ software.
+ x48ng is a fork and continuation of the x48 project.
   
 
-- Category: desktop
-- Version: 3.201.21
-- Homepage: https://standardnotes.com/
-- Code repository: https://github.com/standardnotes/app
-## thunar-sendto-clamtk (A clamtk plugin for Thunar)
- A simple plugin to allow right-click scanning in Thunar.
+- Category: academic
+- Version: 0.51.2
+- Homepage: https://codeberg.org/gwh/x48ng/tags
+- Code repository: https://github.com/gwenhael-le-moine/x48ng
+## python3-neovim (Python client for Neovim)
+ python3-neovim is a Python client for Neovim.
   
 
-- Category: desktop
-- Version: 0.08_2
-- Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
+- Category: python
+- Version: 0.6.0
+- Homepage: https://github.com/neovim/pynvim
+- Code repository: 
+## python3-enlighten (Progress bar for Python console apps)
+ Enlighten Progress Bar is a console progress bar library for Python.
+ The main advantage of Enlighten is it allows writing to stdout and
+ stderr without any redirection or additional code. Just print or log
+ as you normally would.
+ Homepage: https://github.com/Rockhopper-Technologies/enlighten
+  
+
+- Category: python
+- Version: 1.14.1
+- Homepage: https://github.com/Rockhopper-Technologies/enlighten
 - Code repository:
-## xapp-symbolic-icons (XApp symbolic icons)
- This package provides a set of symbolic icons for GTK projects
- (XApp, Cinnamon, Linux Mint).
+## python3-ordered-set (Python3 hybrid of a list and a set)
+ An OrderedSet is a mutable data structure that is a hybrid of a list
+ and a set.
+ It remembers the order of its entries, and every entry has an index
+ number that can be looked up.
   
 
-- Category: desktop
-- Version: 1.1.0
-- Homepage: https://github.com/xapp-project/xapp-symbolic-icons
+- Category: python
+- Version: 4.1.0
+- Homepage: https://github.com/rspeer/ordered-set
+- Code repository: 
+## python3-xapp (Python3 Xapp Library)
+ This package provides the Python3 Xapp Library.
+ Homepage: https://github.com/linuxmint/python3-xapp
+  
+
+- Category: python
+- Version: 3.0.3
+- Homepage: https://github.com/linuxmint/python3-xapp
 - Code repository:
-## ClamAV-GUI (A Qt GUI for clamav)
- This application provides a graphical user interface for clamav and
- freshclam with an integrated service menu for Konqueror/Dolphin
- to scan files directly from your file manager.
- Homepage at https://github.com/wusel1007/ClamAV-GUI
+## python3-icoextract (Icon Extraction Tool)
+ Extract icons from Windows PE files (.exe/.dll) 
+ Homepage: https://github.com/jlu5/icoextract
   
 
-- Category: desktop
-- Version: 1.4.1
-- Homepage: https://www.pling.com/p/1127892/
-- Code repository:https://github.com/wusel1007/clamav-gui
-## vapoursynth (video processing framework)
- A video processing framework with simplicity in mind.
- Homepage: https://www.vapoursynth.com/
-  
-
-- Category: multimedia
-- Version: R71
-- Homepage: https://www.vapoursynth.com/
+- Category: python
+- Version: 0.2.0
+- Homepage: https://github.com/jlu5/icoextract
 - Code repository:
-## vapoursynth-mvtools (motion estimation vapoursynth plugin)
- MVTools is a set of filters for motion estimation and compensation.
- Homepage: https://github.com/dubhater/vapoursynth-mvtools
+## python3-pypdf (Python PDF library)
+ pypdf is a free and open-source pure-python PDF library capable of
+ splitting, merging, cropping, and transforming the pages of PDF
+ files. It can also add custom data, viewing options, and passwords
+ to PDFfiles. pypdf can retrieve text and metadata from PDFs as well.
+ Homepage: https://github.com/py-pdf/pypdf
   
 
-- Category: multimedia
-- Version: 25
-- Homepage: https://github.com/dubhater/vapoursynth-mvtools
-- Code repository:
-## vlc (VLC media player)
- VLC media player is a free and open source media player and multi-
- media framework written by the VideoLAN project. VLC is a portable
- multimedia player, encoder, and streamer supporting many audio and
- video codecs and file formats as well as DVDs, VCDs, and various
- streaming protocols. It is able to stream over networks and to
- transcode multimedia files and save them into various formats.
- homepage: http://www.videolan.org/vlc
+- Category: python
+- Version: 6.14.2
+- Homepage: https://github.com/py-pdf/pypdf
+- Code repository: 
+## python3-gmpy2 (multi-precision arithmetic for python)
+ gmpy2 is an optimized, c-coded python extension module that supports
+ fast multiple-precision arithmetic. gmpy2 is based on the original
+ gmpy module. In addition to supporting gmp or mpir for
+ multiple-precision integer and rational arithmetic, gmpy2 adds support
+ for the mpfr (correctly rounded real floating-point arithmetic) and
+ mpc (correctly rounded complex floating-point arithmetic) libraries.
+ Homepage: https://github.com/aleaxit/gmpy
   
 
-- Category: multimedia
-- Version: 3.0.23
-- Homepage: https://www.videolan.org/vlc/
-- Code repository:
-## ffmpeg2theora (simple command line video transcoder)
- ffmpeg2theora is a simple command line video transcoder
- to convert files to Ogg Theora using ffmpeg.
- Home Page http://v2v.cc/~j/ffmpeg2theora/
+- Category: python
+- Version: 2.3.1
+- Homepage: https://pypi.org/project/gmpy2/
+- Code repository: https://github.com/aleaxit/gmpy
+## python3-prefixed (prefixed alternative numeric library)
+ Prefixed alternative numeric library
   
 
-- Category: multimedia
-- Version: 0.30
-- Homepage: https://archive.flossmanuals.net/ogg-theora/encoding/ffmpeg2theora.html
-- Code repository:
-## dirac (free video compression format codec)
- Dirac is an advanced royalty-free video compression format designed
- for a wide range of uses, from delivering low-resolution web content
- to broadcasting HD and beyond, to near-lossless studio editing.
- Homepage: https://wiki.multimedia.cx/index.php/Dirac
-  
-
-- Category: multimedia
-- Version: 1.0.2
-- Homepage: https://wiki.multimedia.cx/index.php/Dirac
-- Code repository:
-## devedeng (create video CDs and DVDs)
- DevedeNG is a program to create video DVDs and CDs (VCD, sVCD or CVD)
- suitable for home players, from any number of video files, in any of
- the formats supported by Mplayer.
- Homepage: http://www.rastersoft.com/programas/devede.html
-  
-
-- Category: multimedia
-- Version: 4.17.0
-- Homepage: http://www.rastersoft.com/programas/devede.html
-- Code repository:
-## opera-ffmpeg-codecs (Extra ffmpeg codec for Opera browser)
- FFMpeg prebuilt binaries with proprietary codecs and build
- instructions for window, linux and osx.
- Home Page: https://github.com/iteufel/nwjs-ffmpeg-prebuilt
-  
-
-- Category: multimedia
-- Version: 0.102.1
-- Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
-- Code repository:
-## ardour-harvid-bin (ardour video tools)
- If Ardour is compiled from source, or installed from a 3rd party
- repository, three additional tools will need to be installed
- manually, which are used by Ardour to provide video features and
- allow direct export your session to mp3.
-  
-
-- Category: multimedia
-- Version: 0.9.1
-- Homepage: https://x42.github.io/harvid/
-- Code repository:
-## muse-sounds-manager (MuseScore 4 optional high quality sounds)
- Muse Sounds Manager (Muse Hub for linux) is a new label of optional
- high quality playback instruments for MuseScore 4.
- Painstakingly recorded and edited specifically for the custom and
- revolutionary playback engine that powers these applications,
- they are capable of rendering incredibly lifelike results which
- breathe realism and emotion into your compositions.
-  
-
-- Category: multimedia
-- Version: 2.2.1.953
-- Homepage: https://musescore.org/
-- Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
-## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
- MuseScore is a free cross platform WYSIWYG music notation program,
- licensed under GNU GPL.
- This package builds the legacy version 3.6.2 the last one in the 3.x
- series.
-  
-
-- Category: multimedia
-- Version: 3.6.2
-- Homepage: http://www.musescore.org/
-- Code repository:
-## MuseScore (WYSIWYG Music Score Typesetter)
- MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
- music notation program licensed under GNU GPL.
-  
-
-- Category: multimedia
-- Version: 4.7.3
-- Homepage: http://www.musescore.org/
-- Code repository: https://github.com/musescore/MuseScore
-## schroedinger (a C implementation of BBC's Dirac Codec)
- Schroedinger is a high-speed implementation of BBC's dirac
- codec in C.
- Homepage: https://launchpad.net/schroedinger
-  
-
-- Category: multimedia
-- Version: 1.0.11
-- Homepage: https://launchpad.net/schroedinger
-- Code repository:
-## pageEdit (Simple Single Page XHTML Visual Editor)
- Simple Single Page XHTML Visual Editor, split from Sigil's BookView.
-  
-
-- Category: office
-- Version: 2.7.6
-- Homepage: https://sigil-ebook.com/pageedit/
-- Code repository:
-## openoffice-langpack (for Apache OpenOffice Productivity Suite)
- Language Pack for Apache OpenOffice productivity suite.
- Homepage: http://www.openoffice.org
-  
-
-- Category: office
-- Version: 4.1.16
-- Homepage: http://www.openoffice.org
-- Code repository:
-## onlyoffice-desktopeditors (office suite)
- ONLYOFFICE Desktop Editors is a free AGPL v3 licensed office suite
- that combines text, spreadsheet and presentation editors. It is fully
- compatible with Office Open XML formats: .docx, .xlsx, .pptx, which
- are its native formats. It also supports DOC, ODT, RTF, TXT, PDF,
- HTML, EPUB, XPS, DjVu, XLS, ODS, CSV, PPT, ODP.
-  
-
-- Category: office
-- Version: 9.4.0
-- Homepage: https://www.onlyoffice.com/apps.aspx
-- Code repository: https://github.com/ONLYOFFICE/DesktopEditors
-## openoffice.org (a full-featured open-source office suite)
- OpenOffice.org is a full-featured open-source office suite that is
- compatible with all other major office software.
- This is a repackaging of the official OpenOffice.org binary RPM's
- distributed by the upstream developers.
- Homepage: http://openoffice.org
-  
-
-- Category: office
-- Version: 4.1.16
-- Homepage: https://www.openoffice.org/
-- Code repository: https://sourceforge.net/projects/openofficeorg.mirror/files/
-## smoffice2024 (office suite)
- SoftMaker Office 2024 includes
-  * TextMaker 2024, a word processor
-  * PlanMaker 2024, a spreadsheet program
-  * Presentations 2024, a presentation software
- The main feature of SoftMaker Office 2024 is the extremely high
- compatibility with the MS Office file formats.
-  
-
-- Category: office
-- Version: 2024_1234
-- Homepage: https://www.softmaker.com/en/softmaker-office-linux
-- Code repository: https://www.softmaker.com/en/softmaker-office-linux
-## smoffice2021 (office suite)
- SoftMaker Office 2021 includes
-  * TextMaker 2021, a word processor
-  * PlanMaker 2021, a spreadsheet program
-  * Presentations 2021, a presentation software
- The main feature of SoftMaker Office 2021 is the extremely high
- compatibility with the MS Office file formats.
-  
-
-- Category: office
-- Version: 2021_1068
-- Homepage: https://www.softmaker.com/en/softmaker-office-linux
-- Code repository:
-## ledger-live (Ledger Hardware Wallet Manager)
- A manager for your Ledger hardware wallet.
- Install applications, update firmware, buy crypto, etc.
-  
-
-- Category: office
-- Version: 4.13.1
-- Homepage: https://www.ledger.com/ledger-live
-- Code repository: https://www.ledger.com/ledger-live
-## wps-office (an office productivity suite for Linux)
- WPS Office, including Writer, Presentation and spreadsheets, is a
- powerful office suite. It is deeply compatible with all of the
- latest Microsoft Office file formats. It can easily open and read
- the documents created with Microsoft Office.
- Homepage: https://linux.wps.com/
-  
-
-- Category: office
-- Version: 11.1.0.11723.XA
-- Homepage: https://linux.wps.com/
-- Code repository:
-## ishmael (EBook dumper)
- ishmael is a Perl program that can read and dump the contents of
- various popular (and unpopular) ebook formats. It originally only
- dumped the formatted text contents of an ebook, but has since grown
- to be able to dump metadata, images, and more.
-  
-
-- Category: office
-- Version: 2.04
-- Homepage: https://codeberg.org/1-1sam/ishmael
-- Code repository:
-## FreeOffice (The best free alternative to Microsoft Office)
- FreeOffice is a complete Office suite with a word processor,
- a spreadsheet application and a presentation program - all compatible
- with their counterparts in Microsoft Office.
- Homepage: https://www.freeoffice.com/
-  
-
-- Category: office
-- Version: 2024_1234
-- Homepage: https://www.freeoffice.com/
-- Code repository:
-## sigil (Multi-platform WYSIWYG ebook editor)
- Sigil is a multi-platform WYSIWYG ebook editor. It is designed to
- edit books in ePub format.
- Homepage: https://sigil-ebook.com/
-  
-
-- Category: office
-- Version: 2.8.1
-- Homepage: https://sigil-ebook.com/
-- Code repository:
-## wps-office-dicts (Spell check dictionaries for WPS Office)
- Spell check dictionaries for WPS Office. The language files are
- adapted from the LibreOffice Dictionaries project.
-  
-
-- Category: office
-- Version: 26.8.0.2
-- Homepage: https://github.com/LibreOffice/dictionaries/
+- Category: python
+- Version: 0.9.0
+- Homepage: https://nuitka.net
 - Code repository:
 ## python3-mpmath (arithmetic library)
  Mpmath is a free (BSD licensed) Python library for real and complex
@@ -970,24 +1889,16 @@
 - Version: 1.4.0
 - Homepage: https://mpmath.org/
 - Code repository: https://github.com/mpmath/mpmath
-## python3-xapp (Python3 Xapp Library)
- This package provides the Python3 Xapp Library.
- Homepage: https://github.com/linuxmint/python3-xapp
+## python2-enlighten (Progress bar for Python console apps)
+ Enlighten Progress Bar is a console progress bar library for Python.
+ The main advantage of Enlighten is it allows writing to stdout and
+ stderr without any redirection or additional code. Just print or log
+ as you normally would.
   
 
 - Category: python
-- Version: 3.0.3
-- Homepage: https://github.com/linuxmint/python3-xapp
-- Code repository:
-## python2-blessed (library for making terminal apps)
- Easy, practical library for making terminal apps, by providing an
- elegant, well-documented interface to Colors, Keyboard input, and
- screen Positioning capabilities.
-  
-
-- Category: python
-- Version: 1.22.0
-- Homepage: https://pypi.org/project/blessed/
+- Version: 1.14.1
+- Homepage: https://github.com/Rockhopper-Technologies/enlighten
 - Code repository:
 ## python3-nuitka (python compiler)
  Nuitka is the Python compiler. It is written in Python. It is a
@@ -1002,19 +1913,29 @@
 - Version: 4.1.3
 - Homepage: https://nuitka.net
 - Code repository: https://github.com/Nuitka/Nuitka/tags
-## python3-enlighten (Progress bar for Python console apps)
- Enlighten Progress Bar is a console progress bar library for Python.
- The main advantage of Enlighten is it allows writing to stdout and
- stderr without any redirection or additional code. Just print or log
- as you normally would.
- Homepage: https://github.com/Rockhopper-Technologies/enlighten
+## python2-blessed (library for making terminal apps)
+ Easy, practical library for making terminal apps, by providing an
+ elegant, well-documented interface to Colors, Keyboard input, and
+ screen Positioning capabilities.
   
 
 - Category: python
-- Version: 1.14.1
-- Homepage: https://github.com/Rockhopper-Technologies/enlighten
+- Version: 1.22.0
+- Homepage: https://pypi.org/project/blessed/
 - Code repository:
-## python3-prefixed (prefixed alternative numeric library)
+## python2-mpmath (arithmetic library)
+ Mpmath is a free (BSD licensed) Python library for real and complex
+ floating-point arithmetic with arbitrary precision. It has been
+ developed by Fredrik Johansson since 2007, with help from many
+ contributors.
+ http://mpmath.org/
+  
+
+- Category: python
+- Version: 1.3.0
+- Homepage: https://mpmath.org/
+- Code repository: https://github.com/mpmath/mpmath
+## python2-prefixed (prefixed alternative numeric library)
  Prefixed alternative numeric library
   
 
@@ -1047,62 +1968,6 @@
 - Version: 3.24.0
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
-## python3-gmpy2 (multi-precision arithmetic for python)
- gmpy2 is an optimized, c-coded python extension module that supports
- fast multiple-precision arithmetic. gmpy2 is based on the original
- gmpy module. In addition to supporting gmp or mpir for
- multiple-precision integer and rational arithmetic, gmpy2 adds support
- for the mpfr (correctly rounded real floating-point arithmetic) and
- mpc (correctly rounded complex floating-point arithmetic) libraries.
- Homepage: https://github.com/aleaxit/gmpy
-  
-
-- Category: python
-- Version: 2.3.1
-- Homepage: https://pypi.org/project/gmpy2/
-- Code repository: https://github.com/aleaxit/gmpy
-## python3-neovim (Python client for Neovim)
- python3-neovim is a Python client for Neovim.
-  
-
-- Category: python
-- Version: 0.6.0
-- Homepage: https://github.com/neovim/pynvim
-- Code repository: 
-## python2-mpmath (arithmetic library)
- Mpmath is a free (BSD licensed) Python library for real and complex
- floating-point arithmetic with arbitrary precision. It has been
- developed by Fredrik Johansson since 2007, with help from many
- contributors.
- http://mpmath.org/
-  
-
-- Category: python
-- Version: 1.3.0
-- Homepage: https://mpmath.org/
-- Code repository: https://github.com/mpmath/mpmath
-## python2-enlighten (Progress bar for Python console apps)
- Enlighten Progress Bar is a console progress bar library for Python.
- The main advantage of Enlighten is it allows writing to stdout and
- stderr without any redirection or additional code. Just print or log
- as you normally would.
-  
-
-- Category: python
-- Version: 1.14.1
-- Homepage: https://github.com/Rockhopper-Technologies/enlighten
-- Code repository:
-## python3-ordered-set (Python3 hybrid of a list and a set)
- An OrderedSet is a mutable data structure that is a hybrid of a list
- and a set.
- It remembers the order of its entries, and every entry has an index
- number that can be looked up.
-  
-
-- Category: python
-- Version: 4.1.0
-- Homepage: https://github.com/rspeer/ordered-set
-- Code repository: 
 ## python3-zstandard (Python3 bindings for Zstandard library)
  Python bindings for interfacing with the Zstandard compression
  library.
@@ -1113,1031 +1978,166 @@
 - Version: 0.25.0
 - Homepage: https://github.com/indygreg/python-zstandard
 - Code repository: 
-## python2-prefixed (prefixed alternative numeric library)
- Prefixed alternative numeric library
+## catimg (Insanely fast image printing in your terminal)
+ catimg is a little program written in C with no dependencies that 
+ prints images in terminal. It supports JPEG, PNG and GIF formats. 
+ This program was originally a script that did the same by using 
+ ImageMagick convert.
+ Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
   
 
-- Category: python
-- Version: 0.9.0
-- Homepage: https://nuitka.net
+- Category: graphics
+- Version: 2.8.0
+- Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
 - Code repository:
-## python3-icoextract (Icon Extraction Tool)
- Extract icons from Windows PE files (.exe/.dll) 
- Homepage: https://github.com/jlu5/icoextract
+## renderdoc (Stand-alone graphics debugging tool)
+ RenderDoc is a frame-capture based graphics debugger, currently
+ available for Vulkan, D3D11, D3D12, OpenGL, and OpenGL ES
+ development.
+ Homepage: https://renderdoc.org/
   
 
-- Category: python
-- Version: 0.2.0
-- Homepage: https://github.com/jlu5/icoextract
+- Category: graphics
+- Version: 1.11
+- Homepage: https://renderdoc.org/
 - Code repository:
-## python3-pypdf (Python PDF library)
- pypdf is a free and open-source pure-python PDF library capable of
- splitting, merging, cropping, and transforming the pages of PDF
- files. It can also add custom data, viewing options, and passwords
- to PDFfiles. pypdf can retrieve text and metadata from PDFs as well.
- Homepage: https://github.com/py-pdf/pypdf
+## kphotoalbum (a photo management application)
+ Kphotoalbum (previously known as KimDaBa) is an image viewer and
+ organizer for KDE 4. It makes use of kipi plugins and exiv2 if
+ they are installed (both recommended).
   
 
-- Category: python
-- Version: 6.14.2
-- Homepage: https://github.com/py-pdf/pypdf
-- Code repository: 
-## FreeFileSync (Cross-platform file sync utility with GUI)
- FreeFileSync is a folder comparison and synchronization software
- that creates and manages backup copies of all your important files.
- Instead of copying every file every time, FreeFileSync determines
- the differences between a source and a target folder and transfers
- only the minimum amount of data needed. FreeFileSync is Open
- Source software, available for Windows, Linux and macOS.
-  
-
-- Category: system
-- Version: 14.10
-- Homepage: https://freefilesync.org/
-- Code repository: https://freefilesync.org/
-## yaze-ag (yet another z80 emulator )
- is designed to provide an exact simulation of the Z80 microprocessor.
- It is fast, emulates undocumented opcodes, and passes instruction
- regression tests against real Z80 hardware.
- NEW in yaze-ag version 2.xx is the support of an emulated Memory
- Management Unit (MMU) and the BIOS which supports CP/M 3.1.
- YAZE-AG is a Z80-CPU-Emulator and NOT a CP/M-Emulator!
- Inside the Emulator runs an original CP/M or a replacement of CP/M.
- Please visit homepage for further reading on this excelent emulator.
-  
-
-- Category: system
-- Version: 2.51.3
-- Homepage: https://www.mathematik.uni-ulm.de/users/ag/yaze-ag
-- Code repository:
-## timeshift (incremental system snapshots, backup and restore)
- Timeshift for Linux is an application that provides functionality
- similar to the System Restore feature in Windows and the Time Machine
- tool in Mac OS. Timeshift protects your system by taking incremental
- snapshots of the file system at regular intervals. These snapshots
- can be restored at a later date to undo all changes to the system.
-  
-
-- Category: system
-- Version: 25.12.4
-- Homepage: https://github.com/linuxmint/timeshift
-- Code repository: https://github.com/linuxmint/timeshift
-## font-manager (GTK+ font manager)
- A simple font management application for GTK+ Desktop Environments.
-  
-
-- Category: system
-- Version: 0.8.8
-- Homepage: http://fontmanager.github.io/
-- Code repository:
-## partclone (utility to clone various filesystems)
- Partclone is a program similar to the well-known backup utility
- "Partition Image" a.k.a partimage. Partclone provides utilities to
- save and restore used blocks on a partition and is designed for
- higher compatibility of the file system by using existing libraries,
- e.g. e2fslibs is used to read and write the ext2 partition.
-  
-
-- Category: system
-- Version: 0.3.47
-- Homepage: https://github.com/Thomas-Tsai/partclone
-- Code repository: https://github.com/Thomas-Tsai/partclone
-
-*Private note: Mamba and Coral backups are made with version 0.3.37*
-## doublecmd-qt5 (Double-panel File Manager)
- Double Commander is a free cross-platform open source file manager
- with two panels side by side (or one above the other). This is the Qt
- version of the program.
- Since it is written in Pascal, lazarus, fpc, and qt5pas packages must
- be installed before building.
-  
-
-- Category: system
-- Version: 1.2.7
-- Homepage:  http://doublecmd.sourceforge.net
-- Code repository: http://doublecmd.sourceforge.net
-## arqiver (Simple Qt archive manager)
- arqiver is a simple Qt archive manager. It serves as a front-end for
- libarchive (bsdtar), gzip and 7z. 
-  
-
-- Category: system
-- Version: 1.0.2
-- Homepage: https://github.com/tsujan/Arqiver
-- Code repository:
-
-
-
-## eightyone (emulator for the range of ZX home computers)
- EightyOne is an emulator for the range of ZX home computers made
- by Sinclair Research (and their clones) in the 1980s, primarily
- the ZX80 and ZX81 but also includes the ZX Spectrum models.
- As well as emulating the machines themselves, various add-on
- interfaces are supported, including storage devices, hi-res
- graphics, custom character sets, sound and colour cards.
-  
-
-- Category: system
-- Version: 1.41
-- Homepage: https://sourceforge.net/projects/eightyone-sinclair-emulator/
-- Code repository: https://sourceforge.net/projects/eightyone-sinclair-emulator/files/
-## sdwmbar (dwm status bar)
- Simple suckless dwm status bar
- https://github.com/sakhmatd/sdwmbar
-  
-
-- Category: system
-- Version: 1.5
-- Homepage: https://github.com/sakhmatd/sdwmbar
-- Code repository:
-## clamtk (A frontend for ClamAV)
- ClamTk is a frontend for ClamAV using perl-Gtk3.
- It is intended to be an easy to use, light-weight,
- on-demand scanner for Linux systems.
-  
-
-- Category: system
-- Version: 6.18
-- Homepage: https://github.com/dave-theunsub/clamtk
-- Code repository:
-## B-em (BBC Microcomputer Emulator)
- B-em is an emulator for various models of BBC Microcomputer as
- made by Acorn Computers in the 1980s along with a selection of
- 2nd processors.
- B-em is licensed under the GPL, see COPYING for more details.
-  
-
-- Category: system
-- Version: 20260701_6018d5e
-- Homepage:  https://b-em.bbcmicro.com/
-- Code repository: https://github.com/stardot/b-em
-## brave-browser-the-latest (brave browser updater script)
- Maintaining an updated Brave Browser on Slackware is now made
- easier with this small program, "brave-browser-the-latest", a simple
- python script that will install and keep checking afterwards what is
- the latest version available so your Slackware box is kept safer.
-  
-
-- Category: system
-- Version: 1.5.3
-- Homepage: https://github.com/antonioleal/brave-browser-the-latest
-- Code repository: https://github.com/antonioleal/brave-browser-the-latest
-
-
-- Development: https://github.com/brave/brave-browser
-## depfinder (finds dependencies of Slackware packages)
- depfinder is a tool that finds the dependencies of Slackware
- packages and outputs them in a comma separated list, in stdout or a
- .dep file. depfinder is very fast at calculating dependencies; the
- speed difference mainly comes from the C++ code that is used to find
- in which package each individual library is included. That C++ code is
- 'borrowed' (as in blatanly ripped) from Nigel Bosch's zpm code.
- depfinder also has support for running multiple jobs which makes it a
- "*lot* faster on PCs with multiple CPUs/cores.
-  
-
-- Category: system
-- Version: 1.4.4
-- Homepage: https://depfinder.sourceforge.net/
-- Code repository: https://github.com/gapan/depfinder
-## silk (package management tools front end)
- Silk is a practical front end to various slackware package management
- tools, namely slackpkg, sbopkg, slapt-get and slapt-src.
- It implements the more common commands and simplifies the operation
- of multiple programs by unifying their syntax and execution.
-  
-
-- Category: system
-- Version: 1.0.5
-- Homepage: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
-- Code repository: https://github.com/antonioleal/myslackbuilds/tree/main/system/silk
-## google-chrome-the-latest (Google Chrome Updater Script)
- Maintaining an updated Chrome Browser on Slackware is now made
- easier with this small program, "google-chrome-the-latest", a simple
- python script that will install and keep checking afterwards what is
- the latest version available so your Slackware box is kept safer.
-  
-
-- Category: system
-- Version: 4.3.1
-- Homepage: https://github.com/antonioleal/google-chrome-the-latest
-- Code repository:
-## oils (Programming language and Bash-compatible Unix shell)
- oils is a project that aims to develop a modern shell language that
- appeals to developers from languages like Python or JavaScript. It
- is marketed as an "upgrade path from bash to a better language and
- runtime."
- Homepage: https://oils.pub/
-  
-
-- Category: system
-- Version: 0.37.0
-- Homepage: https://oils.pub/
-- Code repository:
-## catatonit (Container init)
- A container init that is so simple it's effectively brain-dead.
- https://github.com/openSUSE/catatonit
-  
-
-- Category: system
-- Version: 0.2.1
-- Homepage: https://github.com/openSUSE/catatonit
-- Code repository:
-## firefox-standard-the-latest (Firefox Standard Updater Script)
- Maintaining an updated Firefox Standard Rel. on Slackware is now made
- easier with this small program, "firefox-standard-the-latest", a
- simple python script that will install and keep checking afterwards
- what is the latest version available so your Slackware box is kept
- safer.
-  
-
-- Category: system
-- Version: 1.1
-- Homepage: https://github.com/antonioleal/firefox-standard-the-latest
-- Code repository:
-## zutty (X terminal emulator using OpenGL ES Compute Shaders)
- Zutty is a terminal emulator for the X Window System, functionally
- similar to several other X terminal emulators such as xterm, rxvt and
- countless others. It is also similar to other, much more modern,
- GPU-accelerated terminal emulators such as Alacritty and Kitty. What
- really sets Zutty apart is its radically simple, yet extremely
- efficient rendering implementation.
- Homepage: https://tomscii.sig7.se/zutty/
-  
-
-- Category: system
-- Version: 0.16
-- Homepage: https://tomscii.sig7.se/zutty/
-- Code repository:
-## limine (Modern, advanced, portable, multiprotocol bootloader)
- Limine is a modern, advanced, portable, multiprotocol bootloader,
- also limine: used as the reference implementation for the Limine
- boot protocol.
-  
-
-- Category: system
-- Version: 12.5.2
-- Homepage: https://limine-bootloader.org/
-- Code repository: https://github.com/limine-bootloader/limine
-## CanAce (A Jupiter Ace emulator for Linux)
- CanAce is a fork by Lawrence Woodman of xAce featuring a
- tcl frontend and some fixes to the original source.
- Homepage at https://github.com/lawrencewoodman/CanAce/
-  
-
-- Category: system
-- Version: 20130224_c135151
-- Homepage: https://github.com/LawrenceWoodman/CanAce
-- Code repository:
-## xAce (A Jupiter Ace emulator for Linux)
- xAce is an emulator for the Jupiter Ace that runs under most flavours
- of Unix. It was written by Edward Patel and based on a ZX81 emulator
- called xz81 written by Russell Marks, which was in turn based on
- Ian Collier's xz80, a ZX Spectrum emulator for X.
- Homepage at https://lawrencewoodman.github.io/xAce/
-  
-
-- Category: system
-- Version: 0.5
-- Homepage: https://lawrencewoodman.github.io/xAce/
-- Code repository:
-## ventoy (Bootable USB Solution)
- Ventoy is an open source tool to create bootable USB drives
- for ISO/WIM/IMG/VHD(x)/EFI files.
- With Ventoy, you do not need to format the disk repeatedly.
- Just copy the image files to the USB drive and boot them.
- You can copy many files at a time and Ventoy will provide
- a boot menu. It also supports browsing local disk files.
-  
-
-- Category: system
-- Version: 1.1.17
-- Homepage: https://www.ventoy.net
-- Code repository:
-## brave-origin-the-latest (Brave Origin updater script)
- Maintaining an updated Brave Origin on Slackware is now made
- easier with this small program, "brave-origin-the-latest", a simple
- python script that will install and keep checking afterwards what is
- the latest version available so your Slackware box is kept safer.
-  
-
-- Category: system
-- Version: 1.0.1
-- Homepage: https://github.com/antonioleal/brave-origin-the-latest
-- Code repository: https://github.com/antonioleal/brave-origin-the-latest
-
-
-- Development: https://github.com/brave/brave-origin
-## b2 (BBC Microcomputer Emulator)
- b2 is a cross-platform BBC Micro emulator. Use your Windows/Linux PC
- or macOS computer to play your old BBC games or develop new BBC
- software.
-  
-
-- Category: system
-- Version: 20250808_172419_959a8ab
-- Homepage: https://github.com/tom-seddon/b2
-- Code repository:
-## solarus (an ARPG game engine)
- Solarus is a free and open-source Action-RPG game engine, licensed
- under GPL, and written in C++. It runs quests in Lua, and can work on
- a great number of platforms.
- Homepage: https://www.solarus-games.org/
-  
-
-- Category: games
-- Version: 2.1.0
-- Homepage: https://www.solarus-games.org/
-- Code repository:
-## zbom (Zelda fangame for the solarus engine)
- Link's newest quest is set a few generations after Twilight Princess
- and spans two different continents of Hyrule. Explore eight unique
- temples and defeat enemies and bosses in order to gain powerful items
- to assist you in your goal. Explore many areas of Hyrule and assist
- different races in their conflicts.
- Homeage: https://sites.google.com/site/zeldabom/
-  
-
-- Category: games
-- Version: 1.5
-- Homepage: https://wrightmatta.wixsite.com/zeldabom
-- Code repository:
-## zsxd (Parodic Zelda fangame)
- Zelda Mystery of Solarus XD is a parodic game that we released on
- April 1st, 2011. Though it's a big April 1st joke, it's a real, full
- game with two huge dungeons and 5-10 hours of playing.
- Homeage: https://www.solarus-games.org/
-  
-
-- Category: games
-- Version: 1.12.2
-- Homepage: https://www.solarus-games.org/
-- Code repository:
-## dhewm3 (Doom 3 GPL source port)
- The goal of dhewm 3 is bring DOOM 3 with the help of SDL to all
- suitable platforms.
- Homepage: https://dhewm3.org/
-  
-
-- Category: games
-- Version: 1.5.5
-- Homepage: https://dhewm3.org/
-- Code repository:
-## atari_8bit_utils (utilities for atari 8bit machines/emulators)
- atari_8bit_utils contains a set of utilities by Preston Crow for
- atari 8 bit machines or emulators such atari 400/800, XL, XE.
- among others: mount atr disks, or convert atr formats..
-  
-
-- Category: games
-- Version: 20260104_bb7b488
-- Homepage: https://github.com/pcrow/atari_8bit_utils
-- Code repository:
-## ZEsarUX (retro machines emulator)
- ZEsarUX is a ZX Machines Emulator for Unix, including all the
- Sinclair computers: MK14, ZX80, ZX81, ZX Spectrum, QL, Z88 and
- also:  Timex TS 2068, Sam Coupe, Pentagon, Chloe 140 SE, 280 SE,
- Chrome, Prism, ZX-Uno, ZX-Evolution TS-Conf,
- TBBlue/ZX Spectrum Next, Jupiter Ace and Amstrad CPC 464
- ZEsarUX also includes third-party roms, media, programs and
- games NOT covered by the GNU GPL license.
-  
-
-- Category: games
-- Version: 13.0
-- Homepage: https://github.com/chernandezba/zesarux
-- Code repository:
-## antares (A tactical space combat game)
- Antares is based on Ares, a game developed by Nathan Lamont, and
- released for the classic Mac OS in 1996.
- Homepage: https://arescentral.org/antares
-  
-
-- Category: games
-- Version: 0.9.1
-- Homepage: https://arescentral.org/antares
-- Code repository:
-## zelda-roth-se (Zelda fangame for the Solarus engine)
- Zelda Return of the Hylian Solarus Edition is a remake of the
- original Zelda Return of the Hylian, a short and pleasant fangame
- from Vincent Jouillat. The original game was developed in C++ and was
- released in 2006.
- Homepage: https://www.solarus-games.org/
-  
-
-- Category: games
-- Version: 1.2.1
-- Homepage: https://www.solarus-games.org/
-- Code repository:
-## VASSAL (engine for board and card games)
- VASSAL is a game engine for building and playing online adaptations
- of board games and card games. Play live on the Internet or by email.
- VASSAL runs on all platforms, and is free, open-source software.
-  
-
-- Category: games
-- Version: 3.7.26
-- Homepage: http://www.vassalengine.org/
-- Code repository:
-## exult (game engine for running Ultima7)
- As computers evolve, we risk losing classic games from the not-so-
- distant past. One of these, Ultima 7, an RPG from the early 1990's,
- still has a huge following, and many consider it to be one of the
- most immersive games ever produced. Exult is a project to recreate
- Ultima 7 for modern operating systems, using the game's original
- plot, data, and graphics files.
-  
-
-- Category: games
-- Version: 1.12.1
-- Homepage: http://exult.sourceforge.net/
-- Code repository:
-## nuvie (New Ultima VI Engine)
- Nuvie (Pronounced New-Vee) is an open source engine for Origin's games
- Ultima 6, Martian Dreams and The Savage Empire. It uses the original
- data files from the games. It should be able to run on any platform
- that is supported by the SDL library.
- Homepage: http://nuvie.sourceforge.net
-  
-
-- Category: games
-- Version: 20250312_759cc0c
-- Homepage: https://github.com/nuvie/nuvie
-- Code repository:
-## zsdx (Zelda fangame for the solarus engine)
- The Legend of Zelda: Mystery of Solarus DX is set to be a direct
- sequel to The Legend of Zelda: A Link to the Past on the SNES, using
- the same graphics and game mechanisms. Zelda Mystery of Solarus DX is
- the first game made with the Solarus engine and in fact, Solarus was
- primarily designed for this game.
- Homeage: https://www.solarus-games.org/
-  
-
-- Category: games
-- Version: 1.12.3
-- Homepage: https://www.solarus-games.org/
-- Code repository:
-## yarntown (2D hommage to Bloodborne for the solarus engine)
- You've come on the night of the hunt. The streets of this cursed,
- gothic town are overrun with beasts, and what has become of the men
- who tried to hunt them before. Explore the twisting roads, go toe to
- toe with powerful foes, and uncover Yarntown's dark secrets.
- Homeage: https://gitlab.com/maxmraz/yarntown
-  
-
-- Category: games
-- Version: 1.0.6
-- Homepage: https://gitlab.com/maxmraz/yarntown
-- Code repository:
-## zelda-xd2-mercuris-chess (Parodic Zelda fangame)
- Zelda XD2: Mercuris Chess is the sequel of the first XD parodic game,
- and was also released on April 1st, in 2017 this time. As a direct
- sequel, the overworld is expanded, the story is extended and the funny
- tone is kept, if not bettered!
- Homeage: https://www.solarus-games.org/
-  
-
-- Category: games
-- Version: 1.1.2
-- Homepage: https://www.solarus-games.org/
-- Code repository:
-## space-invaders (arcade game)
- This game is a tribute to Space Invaders, the famous arcade game
- created by Tomohiro Nishikado in 1978.
- Space Invaders is a fixed shooter in which the player controls a
- laser cannon by moving it horizontally across the bottom of the
- screen and firing at descending aliens.
- Permission is granted to redistribute this game. See README.
- Please donate at https://lowcarb.itch.io/space-invaders
-  
-
-- Category: games
-- Version: 1.4
-- Homepage: https://lowcarb.itch.io/space-invaders
-- Code repository:
-## lutris (Open Gaming Platform)
- Lutris is an open gaming platform for Linux. It helps you install
- and manage your games in a unified interface.  The goal is to support
- every game which runs on Linux, from native Windows games (via Wine)
- to emulators and browser games.
- Home page: https://lutris.net/
-  
-
-- Category: games
-- Version: 0.5.22
-- Homepage: https://lutris.net/
-- Code repository:
-## solarus-quest-editor (GUI to edit quests for the Solarus engine)
- Solarus Quest Editor is a free and open-source game editor for
- Solarus, licensed under GPL. It is written in C++ with Qt. It helps
- you managing your project, and editing maps, sprites, tilesets,
- dialogs, scripts, musics and sounds.
- Homepage: https://www.solarus-games.org/
-  
-
-- Category: games
-- Version: 1.6.4
-- Homepage: https://www.solarus-games.org/
-- Code repository:
-## Ardour (Professional Audio Editing)
- Ardour is an application to fit the needs of musicians under
- Linux. It is designed to be a fully functional professional
- audio application, that uses the professional sound server
- jack for sound i/o.
- Homepage: http://ardour.org
-  
-
-- Category: audio
-- Version: 9.7.0
-- Homepage: http://ardour.org
-- Code repository: https://github.com/Ardour/ardour
-
-Instead of github go to Ardour.org and press download to get the source code tar archive
-## tuxguitar (A Multitrack tablature editor and player)
- TuxGuitar is a multitrack guitar tablature editor and player
- written in Java-SWT. It can open GuitarPro, PowerTab, and
- TablEdit files.
-  
-
-- Category: audio
-- Version: 2.1.0
-- Homepage: https://www.tuxguitar.app/
-- Code repository: https://github.com/helge17/tuxguitar
-## musepack-tools (Musepack SV8 command line tools)
- This package contains the Musepack Stream Version 8 command line
- tools for Linux. SV8 supercedes SV7 and is preferable for any task.
- Homepage: <http://www.musepack.net/>
-  
-
-- Category: audio
-- Version: r475
-- Homepage: http://www.musepack.net/
-- Code repository:
-## plug ( Fender Mustang Amps Controller )
- Plug is a Software to control Fender Mustang Amps, a linux
- replacement for the now discontinued Fender Fuse.
- It addresses the following models:
- v1: Mustang I, Mustang II, Mustang III, Mustang IV, Mustang V,
-     Mustang Bronco, Mustang Mini and Mustang Floor.
- v2: Mustang I, Mustang II, Mustang III, Mustang IV and Mustang V.
- You must add your user to the plugdev group before using
- the program.
-  
-
-- Category: audio
-- Version: 1.5.0
-- Homepage: https://github.com/offa/plug
-- Code repository:
-## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
- The Edit&Share application is used to control Zoom G3/B3 pedals from
- your favourite Slackware box.
- The Zoom G3/B3 guitar pedals opens the door to a new level of
- creativity. It offers a number of effects, along with amp and cabinet
- models, and allows you to chain them together for full multi-effect
- complexity.
-  
-
-- Category: audio
-- Version: 5.3.0
-- Homepage: https://zoomcorp.com/en/jp/
-- Code repository:
-## sndio (small audio and MIDI framework)
- Sndio is a small audio and MIDI framework, part of the OpenBSD
- project, and ported to FreeBSD, Linux and NetBSD. It provides
- a lightweight audio & MIDI server and a fully documented
- user-space API to access either the server or the hardware
- directly in a uniform way.
- https://sndio.org/
-  
-
-- Category: audio
-- Version: 1.10.0
-- Homepage: https://sndio.org/
-- Code repository:
-## bitwig-studio (Digital audio workstation for music production)
- Bitwig is designed to be an instrument for live performances as well
- as a tool for composing, recording, arranging, mixing, and mastering.
- It offers a suite of controls for beatmatching, crossfading, and other
- effects used by turntablists. Bitwig supports both traditional linear
- music arrangement and non-linear (clip-based) production. It has
- multi-monitor and touch screen support. Bitwig is notable for its
- strong modulation and automation capabilities.
- Homepage at https://www.bitwig.com/
-  
-
-- Category: audio
-- Version: 5.1.9
-- Homepage: https://www.bitwig.com/
-- Code repository:
+- Category: graphics
+- Version: 5.11.0
+- Homepage: https://www.kphotoalbum.org/
+- Code repository: https://www.kphotoalbum.org/download/
 
 *No longer feasible to update with Slackware 15.0. Wait for the following Slackware version.*
-## reaper (digital audio production application)
- REAPER is a complete digital audio production application for
- computers, offering a full multitrack audio and MIDI recording,
- editing, processing, mixing and mastering toolset.
- REAPER supports a vast range of hardware, digital formats and
- plugins, and can be comprehensively extended, scripted and modified.
+## muse-sounds-manager (MuseScore 4 optional high quality sounds)
+ Muse Sounds Manager (Muse Hub for linux) is a new label of optional
+ high quality playback instruments for MuseScore 4.
+ Painstakingly recorded and edited specifically for the custom and
+ revolutionary playback engine that powers these applications,
+ they are capable of rendering incredibly lifelike results which
+ breathe realism and emotion into your compositions.
   
 
-- Category: audio
-- Version: 7.78
-- Homepage: https://www.reaper.fm
+- Category: multimedia
+- Version: 2.2.1.953
+- Homepage: https://musescore.org/
+- Code repository: https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz
+## schroedinger (a C implementation of BBC's Dirac Codec)
+ Schroedinger is a high-speed implementation of BBC's dirac
+ codec in C.
+ Homepage: https://launchpad.net/schroedinger
+  
+
+- Category: multimedia
+- Version: 1.0.11
+- Homepage: https://launchpad.net/schroedinger
 - Code repository:
-## pmidi (command line midi player for alsa)
- This is a straightforward command line program to play midi files
- through the ALSA sequencer.
- As you can specify the client and port to connect to on the command
- line it is also useful for testing ALSA or clients that need to
- receive sequencer events.
- This program works with latest ALSA 1.0 drivers and former O.9
- versions.
+## vapoursynth (video processing framework)
+ A video processing framework with simplicity in mind.
+ Homepage: https://www.vapoursynth.com/
   
 
-- Category: audio
-- Version: 1.7.1
-- Homepage: http://www.parabola.me.uk/alsa/pmidi.html
+- Category: multimedia
+- Version: R71
+- Homepage: https://www.vapoursynth.com/
 - Code repository:
-## siren (Text-based audio player)
- Siren is a text-based audio player for UNIX-like operating systems.
- Various aspects of Siren have been inspired by cmus. Supported file
- formats include Ogg Vorbis, MP3, Opus, FLAC, AAC, WavPack, WAVE and
- AIFF. Playback is possible through sndio, PulseAudio, ALSA, OSS, Sun
- audio, PortAudio and libao.
- Homepage: https://www.kariliq.nl/siren/
+## vlc (VLC media player)
+ VLC media player is a free and open source media player and multi-
+ media framework written by the VideoLAN project. VLC is a portable
+ multimedia player, encoder, and streamer supporting many audio and
+ video codecs and file formats as well as DVDs, VCDs, and various
+ streaming protocols. It is able to stream over networks and to
+ transcode multimedia files and save them into various formats.
+ homepage: http://www.videolan.org/vlc
   
 
-- Category: audio
-- Version: 0.11
-- Homepage: https://www.kariliq.nl/siren/
+- Category: multimedia
+- Version: 3.0.23
+- Homepage: https://www.videolan.org/vlc/
 - Code repository:
-## musikcube (Terminal-based audio engine, library, player, and server)
- A cross-platform, terminal-based audio engine, library, player and
- server written in C++.
- Homepage: https://musikcube.com
+## ardour-harvid-bin (ardour video tools)
+ If Ardour is compiled from source, or installed from a 3rd party
+ repository, three additional tools will need to be installed
+ manually, which are used by Ardour to provide video features and
+ allow direct export your session to mp3.
   
 
-- Category: audio
-- Version: 3.0.5
-- Homepage: https://musikcube.com
+- Category: multimedia
+- Version: 0.9.1
+- Homepage: https://x42.github.io/harvid/
 - Code repository:
-## opera (A fast and secure web browser)
- Opera is a graphical Web browser available on several platforms.
- The desktop version runs on GNU/Linux and FreeBSD. Versions for
- Macintosh and Windows are also available.
+## vapoursynth-mvtools (motion estimation vapoursynth plugin)
+ MVTools is a set of filters for motion estimation and compensation.
+ Homepage: https://github.com/dubhater/vapoursynth-mvtools
   
 
-- Category: network
-- Version: 133.0.5932.85
-- Homepage: https://www.opera.com
-- Code repository: https://www.opera.com/opera
-- test playback: https://forums.opera.com/topic/30578/ffmpeg-installation-instructions
-
-## browsh (Private Web Browser)
- Browsh is a fully-modern text-based browser. It renders anything that
- a modern browser can; HTML5, CSS3, JS, video and even WebGL.
-  
-
-- Category: network
-- Version: 1.8.3
-- Homepage: https://github.com/browsh-org/browsh/
+- Category: multimedia
+- Version: 25
+- Homepage: https://github.com/dubhater/vapoursynth-mvtools
 - Code repository:
-## YT-DLP (download videos from youtube and other video sites)
- yt-dlp is a feature-rich command-line audio/video downloader with
- support for thousands of sites. The project is a fork of youtube-dl,
- based on the now-inactive youtube-dlc.
+## ffmpeg2theora (simple command line video transcoder)
+ ffmpeg2theora is a simple command line video transcoder
+ to convert files to Ogg Theora using ffmpeg.
+ Home Page http://v2v.cc/~j/ffmpeg2theora/
   
 
-- Category: network
-- Version: 2026.07.04
-- Homepage: https://github.com/yt-dlp/yt-dlp
+- Category: multimedia
+- Version: 0.30
+- Homepage: https://archive.flossmanuals.net/ogg-theora/encoding/ffmpeg2theora.html
 - Code repository:
-## ckermit (combined network and serial communication software package)
- C-Kermit is a combined network and serial communication software
- package offering a consistent, transport-independent, cross-platform
- approach to connection establishment, terminal sessions, file
- transfer, file management, character-set translation, numeric and
- alphanumeric paging, and automation of file transfer and management,
- dialogs, and communication tasks through its built-in scripting
- language.
+## dirac (free video compression format codec)
+ Dirac is an advanced royalty-free video compression format designed
+ for a wide range of uses, from delivering low-resolution web content
+ to broadcasting HD and beyond, to near-lossless studio editing.
+ Homepage: https://wiki.multimedia.cx/index.php/Dirac
   
 
-- Category: network
-- Version: 9.0.304.24
-- Homepage: http://www.kermitproject.org/ck90.html
+- Category: multimedia
+- Version: 1.0.2
+- Homepage: https://wiki.multimedia.cx/index.php/Dirac
 - Code repository:
-## librewolf (Private Web Browser)
- This project is a custom and independent version of Firefox, with the
- LibreWolf: primary goals of privacy, security and user freedom.
+## MuseScore-Legacy (WYSIWYG Music Score Typesetter version 3.6.2)
+ MuseScore is a free cross platform WYSIWYG music notation program,
+ licensed under GNU GPL.
+ This package builds the legacy version 3.6.2 the last one in the 3.x
+ series.
   
 
-- Category: network
-- Version: 153.0.1_1
-- Homepage: https://librewolf.net/
-- Code repository: https://codeberg.org/librewolf/source/releases
-- Binary repository: https://gitlab.com/librewolf-community/browser/source/-/releases
-
-## helium-browser (web browser)
- Best privacy and unbiased ad-blocking by default.
- Handy features like native !bangs and split view.
- No adware, no bloat, no noise. Made for people, by people.
- Fully open source.
-  
-
-- Category: network
-- Version: 0.15.1.1
-- Homepage: https://helium.computer/
+- Category: multimedia
+- Version: 3.6.2
+- Homepage: http://www.musescore.org/
 - Code repository:
-## librespeed-cli (LibreSpeed CLI)
- Command line program to test internet connection speed.
- Homepage: https://github.com/librespeed/speedtest-cli
+## opera-ffmpeg-codecs (Extra ffmpeg codec for Opera browser)
+ FFMpeg prebuilt binaries with proprietary codecs and build
+ instructions for window, linux and osx.
+ Home Page: https://github.com/iteufel/nwjs-ffmpeg-prebuilt
   
 
-- Category: network
-- Version: 1.0.13
-- Homepage: https://github.com/librespeed/speedtest-cli
+- Category: multimedia
+- Version: 0.102.1
+- Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
 - Code repository:
-## waterfox (a fast and private web browser)
- Waterfox is is built with privacy in mind. It does not track you,
- and it doesn't make money from your data.
- Waterfox has search partnerships. So it survives by making the
- default search on Waterfox monetized. If you search with it,
- Waterfox gets a share of the revenue.
- You are under no obligation to use the default search - but if you
- like what Waterfox does and want to support the project,
- please consider using it.
+## MuseScore (WYSIWYG Music Score Typesetter)
+ MuseScore aka "MuseScore Studio" is a free cross platform WYSIWYG
+ music notation program licensed under GNU GPL.
   
 
-- Category: network
-- Version: 6.6.17
-- Homepage: https://www.waterfox.net/
-- Code repository: https://github.com/BrowserWorks/Waterfox
-- Binary repository: https://www.waterfox.net/download/
-## whalebird (Mastondon, Pleroma and Misskey client)
- Whalebird is an Electron based Mastodon, Pleroma and Misskey client. 
+- Category: multimedia
+- Version: 4.7.3
+- Homepage: http://www.musescore.org/
+- Code repository: https://github.com/musescore/MuseScore
+## devedeng (create video CDs and DVDs)
+ DevedeNG is a program to create video DVDs and CDs (VCD, sVCD or CVD)
+ suitable for home players, from any number of video files, in any of
+ the formats supported by Mplayer.
+ Homepage: http://www.rastersoft.com/programas/devede.html
   
 
-- Category: network
-- Version: 6.3.0
-- Homepage: https://whalebird.social
-- Code repository: https://github.com/h3poteto/whalebird-desktop
-## mullvad-browser (web browser)
- The Mullvad Browser is a privacy-focused web browser developed in a
- collaboration between Mullvad VPN and the Tor Project. Its designed
- to minimize tracking and fingerprinting.
-  
-
-- Category: network
-- Version: 15.0.19
-- Homepage: https://mullvad.net/en/browser
-- Code repository:
-## abdownloadmanager-bin (Download Manager)
- https://github.com/amir1376/ab-download-manager
- https://abdownloadmanager.com
-  
-
-- Category: network
-- Version: 1.8.7
-- Homepage: https://abdownloadmanager.com/
-- Code repository:
-## zen-browser (web browser)
- Beautifully designed, privacy-focused, and packed with features.
- It cares about your experience, not your data.
-  
-
-- Category: network
-- Version: 1.21.10b
-- Homepage: https://zen-browser.app/
-- Code repository: https://github.com/zen-browser/desktop
-## aMule (multiplatform ed2k client)
- aMule is a multiplatform ed2k client, fork of the eMule client,
- using the wxWidgets class library, supporting Linux, *BSD platforms,
- Solaris, *MacOSX and *Win32 (*soon). It was originally forked from
- the xMule project, which in turn was forked from the lMule project.
-  
-
-- Category: network
-- Version: 3.0.0
-- Homepage: https://amule-org.github.io/
-- Code repository:
-## newsraft (Terminal feed reader)
- Newsraft is a feed reader with an ncurses user interface. It's
- greatly inspired by Newsboat and tries to be its lightweight
- counterpart.
- Homepage: https://newsraft.codeberg.page/
-  
-
-- Category: network
-- Version: 0.37
-- Homepage: https://newsraft.codeberg.page/
-- Code repository:
-## google-chrome (Web Browser)
- Google Chrome is a browser that combines a minimal design with
- sophisticated technology to make the web faster, safer, and easier.
-  
-
-- Category: network
-- Version: 151.0.7922.71
-- Homepage: http://www.google.com/chrome/
-- Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
-## gallery-dl (Command line image scraper)
- gallery-dl is a command-line program to download image galleries and
- collections from several image hosting sites. It is a cross-platform
- tool with many configuration options and powerful filenaming capabi-
- lities. 
- Homepage: https://github.com/mikf/gallery-dl
-  
-
-- Category: network
-- Version: 1.32.9
-- Homepage: https://github.com/mikf/gallery-dl
-- Code repository:
-## libkate (codec for karaoke and text support in Ogg)
- kate is a codec for karaoke and text encapsulation for Ogg.
- Most of the time, this would be multiplexed with audio/video
- to carry subtitles, song lyrics etc.
- Home Page https://wiki.xiph.org/OggKate
-  
-
-- Category: libraries
-- Version: 0.4.1
-- Homepage: https://wiki.xiph.org/OggKate
-- Code repository:
-## xapp (library to provide applications to users in multiple DEs)
- This project gathers the components which are common to multiple GTK 
- desktop environments (Cinnamon, MATE and Xfce) and required to
- implement cross-DE solutions.
-  
-
-- Category: libraries
-- Version: 3.2.2
-- Homepage: https://github.com/linuxmint/xapp
-- Code repository: https://github.com/linuxmint/xapp
-## Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt)
- Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software
- package for large-scale, nonlinear optimization. It is designed to
- find (local) solutions of mathematical optimization problems.
- Homepage: https://projects.coin-or.org/Ipopt
-  
-
-- Category: libraries
-- Version: 3.14.19
-- Homepage: https://github.com/coin-or/Ipopt
-- Code repository: 
-## notcurses (Blingful character graphics/TUI library)
- notcurses is a library facilitating complex TUIs on modern terminal
- emulators, supporting vivid colors, multimedia, threads, and Unicode
- to the maximum degree possible. Things can be done with Notcurses
- that simply can't be done with NCURSES. It is furthermore fast. It is
- not a source-compatible X/Open Curses implementation, nor a
- replacement for NCURSES on existing systems.
- Homepage: https://notcurses.com/
-  
-
-- Category: libraries
-- Version: 3.0.17
-- Homepage: https://notcurses.com/
-- Code repository:
-## vst3sdk (Software development kit for VST3 plug-ins)
- This allows plug-in developers to create plug-ins in VST 3 format and
- host developers to load VST 3 plug-ins into a DAW or audio editor. 
-  
-
-- Category: libraries
-- Version: 3.8.0
-- Homepage: https://www.steinberg.net/developers/
-- Code repository: https://github.com/steinbergmedia/vst3sdk
-## SDL3 (Simple DirectMedia Layer Version 3)
- Simple DirectMedia Layer is a cross-platform development library
- designed to provide low-level access to audio, keyboard, mouse,
- joystick, and graphics hardware ia via OpenGL. It is used by
- video playback software, emulators, and games.
-  
-
-- Category: libraries
-- Version: 3.4.14
-- Homepage: http://www.libsdl.org
-- Code repository: https://github.com/libsdl-org/SDL
-
-## libupnp (Portable SDK for UPnP Devices)
- The portable SDK for UPnP Devices (libupnp) provides developers with
- an API and open source code for building control points, devices, and
- bridges that are compliant with Version 1.0 of the Universal Plug and
- Play Device Architecture Specification and support several operating
- systems like Linux, *BSD, Solaris and others.
- libupnp is used in UPnP implentations in Open Source projects over the
- World. It is 100% compatible fork of original libupnp.
-  
-
-- Category: libraries
-- Version: 1.14.30
-- Homepage: http://pupnp.sourceforge.net/
-- Code repository:
-## libcuefile (CUE File library)
- Cue File library from Musepack project.
- Homepage: <http://www.musepack.net/>
-  
-
-- Category: libraries
-- Version: r475
-- Homepage: http://www.musepack.net/
-- Code repository:
-## libreplaygain (Musepack ReplayGain library)
- Musepack ReplayGain library.
- Homepage: <http://www.musepack.net/>
-  
-
-- Category: libraries
-- Version: r475
-- Homepage: http://www.musepack.net/
-- Code repository:
-## libmobi (Library for Mobipocket/Kindle ebook formats)
- C library for handling Mobipocket/Kindle (MOBI) ebook format
- documents. Supports PalmDOC (pdb), Mobipocket (prc, mobi), newer MOBI
- files including KF8 format (azw, azw3), and replica print files
- (azw4). Includes features such as reading/parsing documents,
- reacreating source files, editing metadata, handling encrypted
- documents, and much more.
- Homepage: https://www.fabiszewski.net/libmobi/
-  
-
-- Category: libraries
-- Version: 0.12
-- Homepage: https://www.fabiszewski.net/libmobi/
-- Code repository:
-## pam_usb (Hardware Auth via Memory Sticks)
- This is a PAM module for Linux authentication using USB memory sticks,
- SD cards, external SSD etc. Simply speaking, it lets you log onto
- your Linux user without typing password if the pre-configured memory
- stick is detected.
- See https://github.com/mcdope/pam_usb for configuration instruction.
-  
-
-- Category: libraries
-- Version: 0.9.3
-- Homepage: https://github.com/mcdope/pam_usb
-- Code repository: 
-## zimg (Scaling, colorspace conversion, and dithering library)
- The "z" library implements the commonly required image processing
- basics of scaling, colorspace conversion, and depth conversion.
- Homepage: https://github.com/sekrit-twc/zimg
-  
-
-- Category: libraries
-- Version: 3.0.6
-- Homepage: https://github.com/sekrit-twc/zimg
-- Code repository:
-## libupnp-legacy (Portable SDK for UPnP Devices)
- The portable SDK for UPnP Devices (libupnp-legacy) provides developers
- with an API and open source code for building control points, devices,
- and bridges that are compliant with Version 1.0 of the Universal Plug
- and Play Device Architecture Specification and support several
- operating systems like Linux, *BSD, Solaris and others.
- libupnp-legacy is the legacy old ABI version.
-  
-
-- Category: libraries
-- Version: 1.6.25
-- Homepage: http://pupnp.sourceforge.net/
-- Code repository:
-## qt6-prebuilt-environment (Clang and LLVM to build Qt the GUI toolkit)
- Qt is a cross-platform application and UI framework for developers
- using C++ or QML, a CSS/JavaScript-like language.
- This package contains the Clang and LLVM to build the Qt GUI toolkit.
-  
-
-- Category: libraries
-- Version: 20.1.0
-- Homepage: https://download.qt.io/development_releases/prebuilt/libclang/qt
-- Code repository:
-## libmodbus (a fast and portable Modbus library)
- libmodbus is a free software library to send/receive data according
- to the Modbus protocol. This library is written in C and supports
- RTU (serial) and TCP (Ethernet) communications.
- Homepage: http://www.libmodbus.org
-  
-
-- Category: libraries
-- Version: 3.2.0
-- Homepage: http://www.libmodbus.org
-- Code repository:
-## MuseScore-Libraries (libraries required by MuseScore)
- The minimum set of libraries required by MuseScore.
-  
-
-- Category: libraries
-- Version: 6.9.3
-- Homepage: https://download.qt.io/official_releases/qt/
-- Code repository: https://download.qt.io/official_releases/qt/
-## qt-installer-script (Deploy Qt Libraries in Slackware)
- qt-installer-script is an umbrella script to the standard Qt
- installer to simplify the installation of Qt Libraries in your
- Slackware system.
- It is provided to perform and unattended install, define a
- location (/opt/Qt) and setup a basic skeleton so you can add
- several Qt library versions in parallel.
-  
-
-- Category: libraries
-- Version: 4.11.0
-- Homepage: https://github.com/antonioleal/qt-installer-script
+- Category: multimedia
+- Version: 4.17.0
+- Homepage: http://www.rastersoft.com/programas/devede.html
 - Code repository:
