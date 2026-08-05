@@ -303,6 +303,15 @@
 - Version: 20260407_82541e7
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
+## antigravity-ide (Google Antigravity IDE)
+ Google Antigravity is an agentic development platform, evolving the
+ IDE into the agent-first era.
+  
+
+- Category: development
+- Version: 2.1.1
+- Homepage: https://antigravity.google/
+- Code repository:
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -1166,7 +1175,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 151.0.7922.71
+- Version: 151.0.7922.75
 - Homepage: http://www.google.com/chrome/
 - Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
 ## browsh (Private Web Browser)
