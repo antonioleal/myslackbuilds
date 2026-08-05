@@ -303,15 +303,6 @@
 - Version: 20260407_82541e7
 - Homepage: https://codeberg.org/pgimeno/JAForth
 - Code repository: https://codeberg.org/pgimeno/JAForth
-## antigravity-ide (Google Antigravity IDE)
- Google Antigravity is an agentic development platform, evolving the
- IDE into the agent-first era.
-  
-
-- Category: development
-- Version: 2.1.1
-- Homepage: https://antigravity.google/
-- Code repository:
 ## lazarus (rapid application development tool for freepascal)
  Lazarus is a Rapid Application Development Tool for FreePascal.
  It comes with the LCL - Lazarus component library, which contains
@@ -1214,7 +1205,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 133.0.5932.85
+- Version: 134.0.5954.31
 - Homepage: https://www.opera.com
 - Code repository: https://www.opera.com/opera
 - test playback: https://forums.opera.com/topic/30578/ffmpeg-installation-instructions
@@ -2127,7 +2118,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 0.102.1
+- Version: 0.103.0
 - Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
 - Code repository:
 ## MuseScore (WYSIWYG Music Score Typesetter)
