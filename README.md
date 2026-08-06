@@ -446,6 +446,19 @@
 - Version: 1.8.0
 - Homepage: https://github.com/mynenik/kForth-32
 - Code repository:
+## ecl (Embeddable Common-Lisp)
+ ECL (Embeddable Common-Lisp) is an interpreter of the Common-Lisp
+ language as described in the X3J13 Ansi specification,
+ featuring CLOS (Common-Lisp Object System), conditions, loops,
+ etc, plus a translator to C, which can produce standalone
+ executables
+ Homepage: https://common-lisp.net/project/ecl/
+  
+
+- Category: development
+- Version: 21.2.1
+- Homepage: https://common-lisp.net/project/ecl/
+- Code repository:
 ## notepad++ (A powerful text editor from the Windows universe)
  Notepad++ is a free (as in "free speech" and also as in "free beer")
  source code editor and Notepad replacement that supports several
