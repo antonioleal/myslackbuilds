@@ -1,0 +1,2 @@
+- Homepage: http://muse-sequencer.org/
+- Code repository:
