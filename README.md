@@ -2072,15 +2072,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0.11
 - Homepage: https://launchpad.net/schroedinger
 - Code repository:
-## vapoursynth (video processing framework)
- A video processing framework with simplicity in mind.
- Homepage: https://www.vapoursynth.com/
-  
-
-- Category: multimedia
-- Version: R71
-- Homepage: https://www.vapoursynth.com/
-- Code repository:
 ## vlc (VLC media player)
  VLC media player is a free and open source media player and multi-
  media framework written by the VideoLAN project. VLC is a portable
@@ -2105,15 +2096,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Category: multimedia
 - Version: 0.9.1
 - Homepage: https://x42.github.io/harvid/
-- Code repository:
-## vapoursynth-mvtools (motion estimation vapoursynth plugin)
- MVTools is a set of filters for motion estimation and compensation.
- Homepage: https://github.com/dubhater/vapoursynth-mvtools
-  
-
-- Category: multimedia
-- Version: 25
-- Homepage: https://github.com/dubhater/vapoursynth-mvtools
 - Code repository:
 ## ffmpeg2theora (simple command line video transcoder)
  ffmpeg2theora is a simple command line video transcoder

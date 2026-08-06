@@ -1,2 +1,0 @@
-- Homepage: https://github.com/dubhater/vapoursynth-mvtools
-- Code repository:
