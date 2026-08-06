@@ -1032,6 +1032,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.1
 - Homepage: https://github.com/antonioleal/firefox-standard-the-latest
 - Code repository:
+## backintime (simple backup tool)
+ Back In Time is a simple backup tool for Linux, inspired by
+ "flyback project". It provides a command line client 'backintime'
+ and a Qt5 GUI 'backintime-qt' both written in Python3.
+ You only need to specify 3 things: where to save snapshots, what
+ folders to back up and the backup frequency (manual, every hour,
+ every day, every month)
+ https://github.com/bit-team/backintime
+  
+
+- Category: system
+- Version: 1.4.3
+- Homepage: https://github.com/bit-team/backintime
+- Code repository:
 ## partclone (utility to clone various filesystems)
  Partclone is a program similar to the well-known backup utility
  "Partition Image" a.k.a partimage. Partclone provides utilities to
