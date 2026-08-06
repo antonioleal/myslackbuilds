@@ -752,19 +752,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 7.78
 - Homepage: https://www.reaper.fm
 - Code repository:
-## muse (MIDI/Audio Sequencer)
- MusE is a MIDI/Audio sequencer with recording and editing capabilities
- written originally by Werner Schweer now developed and maintained by
- the MusE development team. MusE aims to be a complete multitrack
- virtual studio for Linux, it is published under the GNU General Public
- License.
- Homepage: http://muse-sequencer.org/
-  
-
-- Category: audio
-- Version: 4.2.1
-- Homepage: http://muse-sequencer.org/
-- Code repository:
 ## musepack-tools (Musepack SV8 command line tools)
  This package contains the Musepack Stream Version 8 command line
  tools for Linux. SV8 supercedes SV7 and is preferable for any task.
