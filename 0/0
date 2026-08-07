@@ -167,28 +167,33 @@ do
                 read -p "Press [ENTER] to continue." op
                 ;;
             t)
-                (
-                    cd 0/tests
-                    flist=()
-                    for f in $(ls -I0 -1 *.sh)
-                    do
-                        echo $f
-                        flist+=( "$f" "" )
-                    done
-                    CHOICE=$(dialog --clear \
-                                    --backtitle "$BACKTITLE" \
-                                    --title "$TITLE" \
-                                    --menu "Choose the test file to run:" \
-                                    $HEIGHT $WIDTH $CHOICE_HEIGHT \
-                                    "${flist[@]}" \
-                                    2>&1 >/dev/tty)
-                    exit_flist=$?
-                    if ! [[ "$exit_flist" == "$DIALOG_CANCEL" ]]
-                    then
-                        # xterm -fa "Monospace" -fs 14 -hold -e "less ./$CHOICE && bash -c ./$CHOICE"
-                        xterm -fa "Monospace" -fs 14 -hold -e "bash -c ./$CHOICE"
-                    fi
-                )
+                if [ -d "0/tests" ]; then
+                    (
+                        cd 0/tests
+                        flist=()
+                        for f in $(ls -I0 -1 *.sh)
+                        do
+                            echo $f
+                            flist+=( "$f" "" )
+                        done
+                        CHOICE=$(dialog --clear \
+                                        --backtitle "$BACKTITLE" \
+                                        --title "$TITLE" \
+                                        --menu "Choose the test file to run:" \
+                                        $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                                        "${flist[@]}" \
+                                        2>&1 >/dev/tty)
+                        exit_flist=$?
+                        if ! [[ "$exit_flist" == "$DIALOG_CANCEL" ]]
+                        then
+                            # xterm -fa "Monospace" -fs 14 -hold -e "less ./$CHOICE && bash -c ./$CHOICE"
+                            xterm -fa "Monospace" -fs 14 -hold -e "bash -c ./$CHOICE"
+                        fi
+                    )
+                else
+                    echo "No tests defined."
+                    read -p "Press [ENTER] to continue." op
+                fi
                 ;;
             q)
                 exit 0
