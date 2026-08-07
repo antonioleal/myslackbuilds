@@ -1,0 +1,6 @@
+
+read version from:
+
+wget https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/linux_amd64.json | jq '.version'
+
+wget https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/linux_amd64.json | jq '.url'
