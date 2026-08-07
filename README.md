@@ -605,6 +605,15 @@
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
+## antigravity-cli (Google Antigravity CLI)
+ Google Antigravity is an agentic development platform. This
+ package installs the Antigravity CLI companion.
+  
+
+- Category: development
+- Version: 1.1.11
+- Homepage: https://antigravity.google/
+- Code repository:
 ## zxbasic (basic compiler for ZXSpectrum)
  ZX BASIC is a BASIC "cross compiler". It will compile BASIC
  programs (in your PC) for your ZX Spectrum. ZX BASIC is an
