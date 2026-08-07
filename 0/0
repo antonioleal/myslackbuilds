@@ -61,6 +61,7 @@ OPTIONS+=(1 "Run \"less $PKGNAME.info\"              - list the contents of $PKG
          e "Edit files                          - edit files in the $PKGNAME folder"
          d "Run \"git diff\"                      - Compare local changes"
          s "Run \"git status\"                    - Check which files are new or have changed"
+         t "Test                                - list, check and run the shell files in the 0/tests directory"
          q "Quit to DOS :)"
          )
 
@@ -164,6 +165,30 @@ do
             s)
                 git status
                 read -p "Press [ENTER] to continue." op
+                ;;
+            t)
+                (
+                    cd 0/tests
+                    flist=()
+                    for f in $(ls -I0 -1 *.sh)
+                    do
+                        echo $f
+                        flist+=( "$f" "" )
+                    done
+                    CHOICE=$(dialog --clear \
+                                    --backtitle "$BACKTITLE" \
+                                    --title "$TITLE" \
+                                    --menu "Choose the test file to run:" \
+                                    $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                                    "${flist[@]}" \
+                                    2>&1 >/dev/tty)
+                    exit_flist=$?
+                    if ! [[ "$exit_flist" == "$DIALOG_CANCEL" ]]
+                    then
+                        # xterm -fa "Monospace" -fs 14 -hold -e "less ./$CHOICE && bash -c ./$CHOICE"
+                        xterm -fa "Monospace" -fs 14 -hold -e "bash -c ./$CHOICE"
+                    fi
+                )
                 ;;
             q)
                 exit 0
