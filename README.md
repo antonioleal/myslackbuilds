@@ -1429,7 +1429,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 6.9.3
+- Version: 6.10.2
 - Homepage: https://download.qt.io/official_releases/qt/
 - Code repository: https://download.qt.io/official_releases/qt/
 ## pam_usb (Hardware Auth via Memory Sticks)

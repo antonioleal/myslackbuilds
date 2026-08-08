@@ -101,8 +101,6 @@ cd ..
 # sbopkglint complaint:
 mv $PKG/usr/share/icons/hicolor/128x128 $PKG/usr/share/icons/hicolor/150x150
 
-chmod +x $PKG/usr/bin/muse4
-
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
