@@ -500,15 +500,6 @@
 - Version: 2.1
 - Homepage: https://qb64.com
 - Code repository: https://github.com/QB64Official/qb64
-## antigravity2 (Google Antigravity 2.0 agent command center)
- Google Antigravity agent command center for orchestration and
- automation.
-  
-
-- Category: development
-- Version: 2.4.3
-- Homepage: https://antigravity.google/
-- Code repository:
 ## smartsvn (Desktop SVN Client)
  SmartSvn is a commercial desktop svn client.
  SmartSVN starts with free evaluation mode for 30 days,
@@ -533,13 +524,13 @@
 - Version: 3.4.8
 - Homepage: https://sourceforge.net/projects/minforth/
 - Code repository:
-## antigravity (Google Antigravity IDE)
- Google Antigravity is an agentic development platform, evolving the
- IDE into the agent-first era.
+## antigravity (Google Antigravity 2.0 agent command center)
+ Google Antigravity agent command center for orchestration and
+ automation.
   
 
 - Category: development
-- Version: 2.1.1
+- Version: 2.6.0
 - Homepage: https://antigravity.google/
 - Code repository:
 ## eisl (ISO ISLISP interpreter)
