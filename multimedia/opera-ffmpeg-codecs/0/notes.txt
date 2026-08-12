@@ -11,6 +11,6 @@ https://html5test.opensuse.org/
 
 
 
-
-see
-https://www.reddit.com/r/operabrowser/wiki/opera/linux_libffmpeg_config/
+--------------------------------------------------------------------------------------------------------
+LOG
+electron-v43.0.0-beta.8-linux-x64.zip libffmpeg.so funciona com o Opera One(version: 134.0.5954.56)
