@@ -1851,6 +1851,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.6.0
 - Homepage: https://github.com/neovim/pynvim
 - Code repository: 
+## python3-setuptools-gettext (Compile .po files into .mo files.)
+ Compile .po files into .mo files.
+ This plugin adds build_mo, clean_mo and install_mo subcommands for
+ setup.py as well as hooking those into standard commands.
+  
+
+- Category: python
+- Version: 0.1.18
+- Homepage: https://github.com/jdum/odfdo
+- Code repository: 
 ## python3-enlighten (Progress bar for Python console apps)
  Enlighten Progress Bar is a console progress bar library for Python.
  The main advantage of Enlighten is it allows writing to stdout and
