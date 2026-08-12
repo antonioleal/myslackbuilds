@@ -1,0 +1,16 @@
+
+releases available from:
+https://get.geo.opera.com/ftp/pub/opera/desktop/
+
+read:
+https://www.reddit.com/r/operabrowser/wiki/opera/linux_libffmpeg_config/
+
+
+test h.264 and aac at:
+https://html5test.opensuse.org/
+
+
+
+
+see
+https://www.reddit.com/r/operabrowser/wiki/opera/linux_libffmpeg_config/
