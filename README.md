@@ -456,7 +456,7 @@
   
 
 - Category: development
-- Version: 21.2.1
+- Version: 26.5.5
 - Homepage: https://common-lisp.net/project/ecl/
 - Code repository:
 ## notepad++ (A powerful text editor from the Windows universe)
