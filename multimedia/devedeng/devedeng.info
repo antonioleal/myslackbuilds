@@ -5,6 +5,6 @@ DOWNLOAD="https://gitlab.com/rastersoft/devedeng/-/archive/4.19.0/devedeng-4.19.
 MD5SUM="7f4aea5b892678fca87974d697ebf071"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="vcdimager python3-lxml python3-uv_build python3-setuptools-opt"
+REQUIRES="vcdimager python3-lxml python3-uv_build python3-setuptools-opt python3-setuptools-gettext"
 MAINTAINER="Antonio Leal"
 EMAIL="antonioleal@yahoo.com"
