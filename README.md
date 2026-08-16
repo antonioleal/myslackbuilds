@@ -2159,7 +2159,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 0.102.1
+- Version: 43.0.0_b8
 - Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
 - Code repository:
 ## MuseScore (WYSIWYG Music Score Typesetter)
