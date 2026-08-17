@@ -1558,6 +1558,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.5.22
 - Homepage: https://lutris.net/
 - Code repository:
+## openmsx-catapult (GUI for openMSX)
+ Catapult is an optional GUI frontend for the openMSX-emulator.
+ Catapult is a sub-project of openMSX, developed using the tools
+ SourceForge.net freely offers to open source projects.
+ Homepage: http://openmsx.sourceforge.net
+  
+
+- Category: games
+- Version: 19.0
+- Homepage: http://openmsx.org/
+- Code repository:
 ## space-invaders (arcade game)
  This game is a tribute to Space Invaders, the famous arcade game
  created by Tomohiro Nishikado in 1978.
