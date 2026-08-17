@@ -4,6 +4,15 @@
 
   
 
+## xpad (Sticky Notes)
+ Xpad is a virtual sticky pad system using GTK+ 3.
+ Homepage: https://launchpad.net/xpad
+  
+
+- Category: office
+- Version: 4.8.0
+- Homepage: https://launchpad.net/xpad
+- Code repository:
 ## smoffice2024 (office suite)
  SoftMaker Office 2024 includes
   * TextMaker 2024, a word processor

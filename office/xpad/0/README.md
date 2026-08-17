@@ -1,0 +1,2 @@
+- Homepage: https://launchpad.net/xpad
+- Code repository:
