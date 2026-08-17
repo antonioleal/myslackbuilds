@@ -1654,6 +1654,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.5
 - Homepage: https://wrightmatta.wixsite.com/zeldabom
 - Code repository:
+## openmsx (MSX Emulator)
+ openMSX is an emulator for the MSX home computer system.
+ Its goal is to emulate all aspects of the MSX with 100% accuracy:
+ perfection in emulation.
+ Homepage: http://openmsx.sourceforge.net
+  
+
+- Category: games
+- Version: 20.0
+- Homepage: http://openmsx.org/
+- Code repository:
 ## dhewm3 (Doom 3 GPL source port)
  The goal of dhewm 3 is bring DOOM 3 with the help of SDL to all
  suitable platforms.
