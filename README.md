@@ -1874,6 +1874,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 3.3.12
 - Homepage: http://thomasokken.com/free42/index.html
 - Code repository:
+## mathics (A free, light-weight alternative to Mathematica)
+ Mathics is a general-purpose computer algebra system (CAS). It is an
+ open-source alternative to Mathematica. It is free both as in "free
+ beer" and as in "freedom".
+ The home page of Mathics is https://mathics.org.
+ Installing and Running
+ See https://mathics-development-guide.readthedocs.io/en/latest/ for
+ instructions on installing and running.
+  
+
+- Category: academic
+- Version: 4.0.0
+- Homepage: http://www.mathics.org/
+- Code repository:
 ## x48ng (HP48 Calculator emulator)
  x48ng is a vintage emulator capable of providing a faithful
  replication of the HP48 Calculator. It requires a copy of the ROM
