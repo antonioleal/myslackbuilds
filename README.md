@@ -172,7 +172,7 @@
   
 
 - Category: desktop
-- Version: 1.4.1
+- Version: 1.4.4
 - Homepage: https://www.pling.com/p/1127892/
 - Code repository:https://github.com/wusel1007/clamav-gui
 ## standard-notes-bin (free, open-source encrypted notes app)
