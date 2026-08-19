@@ -402,7 +402,7 @@
   
 
 - Category: development
-- Version: 43.4.0
+- Version: 43.4.1
 - Homepage: https://www.electronjs.org/
 - Code repository:
 ## gn (Meta-build system)

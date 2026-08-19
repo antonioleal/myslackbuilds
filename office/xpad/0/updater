@@ -52,7 +52,7 @@ else
     ################################
     if [ "$ARG0" = "TESTONLY" ]
     then
-        echo -n "has a new version $NEWVERSION,\033[1;32m Chewing... :-)\e[0m"
+        echo -e -n "has a new version $NEWVERSION,\033[1;32m Chewing... :-)\e[0m"
         export RET0=$NEWVERSION
         return
     fi
