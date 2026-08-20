@@ -51,7 +51,7 @@ else
     ################################
     if [ "$ARG0" = "TESTONLY" ]
     then
-        echo -n "has a new version $NEWVERSION"
+        echo -n "has a new version $NEWVERSION, not in SBo"
         export RET0=$NEWVERSION
         return
     fi
