@@ -58,14 +58,19 @@ else
     ################################
     # download tarball             #
     ################################
+    wget https://sourceforge.net/projects/slackbuildsdirectlinks/files/Ardour/Ardour-$NEWVERSION.tar.bz2
     echo
-    echo "File must be downloaded manually and uploaded to github."
+    echo "Make sure you added $TARBALL to SourceForge!"
     echo
-    if [ ! -f ../$TARBALL ]
+    if [ ! -f ./$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."
         exit
     fi
+
+    # delete old tarball and place new one
+    rm -rf ../*.tar.bz2 2> /dev/null
+    mv *.tar.bz2 ..
 
     ################################
     # write templates              #
