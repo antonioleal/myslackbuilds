@@ -1792,7 +1792,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: misc
-- Version: 0.81
+- Version: 0.82
 - Homepage: https://github.com/ES40-Emu/es40
 - Code repository:
 ## open-simh (Historical Computer Simulation)
