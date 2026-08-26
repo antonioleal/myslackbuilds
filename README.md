@@ -10,7 +10,7 @@
   
 
 - Category: office
-- Version: 4.8.0
+- Version: 4.9.0
 - Homepage: https://launchpad.net/xpad
 - Code repository:
 ## smoffice2024 (office suite)
