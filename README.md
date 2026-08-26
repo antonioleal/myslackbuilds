@@ -2113,7 +2113,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: graphics
-- Version: 1.13
+- Version: 1.14
 - Homepage: https://renderdoc.org/
 - Code repository:
 ## kphotoalbum (a photo management application)
