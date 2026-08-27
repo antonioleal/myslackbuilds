@@ -1452,7 +1452,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 3.14.19
+- Version: 3.14.20
 - Homepage: https://github.com/coin-or/Ipopt
 - Code repository: 
 ## libmodbus (a fast and portable Modbus library)
