@@ -5,5 +5,5 @@ cd $SCRIPT_DIR
 
 gallery-dl "https://danbooru.donmai.us/posts?tags=bonocho"
 konqueror .
-sleep 30
+sleep 10
 rm -rf gallery-dl
