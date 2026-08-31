@@ -1558,6 +1558,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.5.22
 - Homepage: https://lutris.net/
 - Code repository:
+## oolite (an open-world space opera)
+ Oolite is inspired by the 8-bit classic Elite, and many aspects of
+ gameplay will be familiar to players of that game. In the tradition
+ of open-world games, there's no overall story: you can be a
+ millionaire trader, a veteran combateer, a feared pirate, a lonely
+ miner, a notorious smuggler, or all of them, or something else
+ entirely, based on your own actions.
+ http://www.oolite.org/
+  
+
+- Category: games
+- Version: 1.90
+- Homepage: http://www.oolite.org/
+- Code repository:
 ## openmsx-catapult (GUI for openMSX)
  Catapult is an optional GUI frontend for the openMSX-emulator.
  Catapult is a sub-project of openMSX, developed using the tools
