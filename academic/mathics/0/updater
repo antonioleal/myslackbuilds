@@ -26,5 +26,5 @@ set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
 source ../*.info
-echo -n -e "is at version $VERSION,\033[1;32m Chewing... :-)\e[0m"
+echo -n -e "is at version $VERSION, \033[1;32m See if we can use a venv to install it :-)\e[0m"
 export RET0=""
