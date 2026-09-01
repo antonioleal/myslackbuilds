@@ -357,7 +357,7 @@
   
 
 - Category: development
-- Version: 20260801_6c30298
+- Version: 20260901_bff9b79
 - Homepage: https://www.bbcbasic.co.uk/bbcsdl
 - Code repository: https://github.com/rtrussell/BBCSDL
 ## sourcegit (GUI client for GIT users)
