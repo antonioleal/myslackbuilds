@@ -952,6 +952,19 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.3.1
 - Homepage: https://github.com/antonioleal/google-chrome-the-latest
 - Code repository:
+## gksu (Gtk+ frontend to su and sudo)
+ GKSu is a library that provides a Gtk+ frontend to su and sudo.
+ It supports login shells and preserving environment when acting as
+ a su frontend. It is useful to menu items or other graphical
+ programs that need to ask a user's password to run another program
+ as another user.
+ Homepage: http://www.nongnu.org/gksu/
+  
+
+- Category: system
+- Version: 2.0.2
+- Homepage: http://www.nongnu.org/gksu/
+- Code repository:
 ## clamtk (A frontend for ClamAV)
  ClamTk is a frontend for ClamAV using perl-Gtk3.
  It is intended to be an easy to use, light-weight,
