@@ -80,7 +80,7 @@ find -L . \
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-qmake-qt5 PREFIX=/usr
+qmake6 PREFIX=/usr
 make
 make install INSTALL_ROOT=$PKG
 
@@ -92,6 +92,16 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
 
 mv $PKG/usr/share/man $PKG/usr/
+
+#mkdir -p $PKG/usr/share/applications
+install -D -m 0644 $CWD/ClamAV-GUI.desktop $PKG/usr/share/applications/ClamAV-GUI.desktop
+
+mkdir -p $PKG/usr/share/applications
+for i in 16 32 48 128 256; do
+  install -D -m 0644 extra/icon${i}/clamav-gui.png \
+    $PKG/usr/share/icons/hicolor/${i}x${i}/apps/clamav-gui.png
+done
+
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv $PKG/usr/share/doc/$PRGNAM/* $PKG/usr/doc/$PRGNAM-$VERSION
