@@ -1313,7 +1313,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 15.0.20
+- Version: 15.0.21
 - Homepage: https://mullvad.net/en/browser
 - Code repository:
 ## whalebird (Mastondon, Pleroma and Misskey client)
