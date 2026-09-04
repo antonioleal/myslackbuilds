@@ -601,7 +601,7 @@
   
 
 - Category: development
-- Version: 17.5.4
+- Version: 18.1
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
