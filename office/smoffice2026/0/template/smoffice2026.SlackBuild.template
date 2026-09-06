@@ -74,7 +74,7 @@ for s in 16 24 32 48 64 128 256 512 1024; do
   mkdir -p usr/share/icons/hicolor/${s}x${s}/apps
   for a in pml prl tml; do
     cp -a opt/smoffice2026/icons/${a}_${s}.png \
-      usr/share/icons/hicolor/${s}x${s}/apps/application-x-${a}24.png
+      usr/share/icons/hicolor/${s}x${s}/apps/application-x-${a}26.png
   done
 done
 for s in 16 24 32 48 64 128 256 512 1024; do
