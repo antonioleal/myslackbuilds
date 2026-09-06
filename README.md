@@ -2248,6 +2248,14 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.08_2
 - Homepage: https://github.com/dave-theunsub/thunar-sendto-clamtk
 - Code repository:
+## makc-wallpapers (A set of wallpapers by Mackenzie Criswell)
+ A collection of quality wallpapers organized by Mackenzie Criswell.
+  
+
+- Category: desktop
+- Version: 20260903_c678219
+- Homepage: https://github.com/makccr/wallpapers
+- Code repository:
 ## ClamAV-GUI (A Qt GUI for clamav)
  This application provides a graphical user interface for clamav and
  freshclam with an integrated service menu for Konqueror/Dolphin
