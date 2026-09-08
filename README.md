@@ -1276,7 +1276,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 1.21.16b
+- Version: 1.22b
 - Homepage: https://zen-browser.app/
 - Code repository: https://github.com/zen-browser/desktop
 ## aMule (multiplatform ed2k client)
