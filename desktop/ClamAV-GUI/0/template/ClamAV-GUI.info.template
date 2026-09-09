@@ -1,5 +1,5 @@
 PRGNAM="ClamAV-GUI"
-VERSION="_version_"
+VERSION="_slackversion_"
 HOMEPAGE="https://github.com/wusel1007/clamav-gui"
 DOWNLOAD="https://github.com/wusel1007/clamav-gui/archive/v_version_/clamav-gui-_version_.tar.gz"
 MD5SUM="_md5_"
