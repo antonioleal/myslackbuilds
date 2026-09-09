@@ -2035,6 +2035,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 4.1.0
 - Homepage: https://github.com/rspeer/ordered-set
 - Code repository: 
+## python-magic (uses ctypes to access the libmagic)
+ This module uses ctypes to access the libmagic file type
+ identification library. It makes use of the local magic database and
+ supports both textual and MIME-type output.
+  
+
+- Category: python
+- Version: 0.4.27
+- Homepage: https://github.com/ahupp/python-magic
+- Code repository:
 ## python3-xapp (Python3 Xapp Library)
  This package provides the Python3 Xapp Library.
  Homepage: https://github.com/linuxmint/python3-xapp

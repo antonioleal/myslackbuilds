@@ -1,0 +1,2 @@
+- Homepage: https://github.com/ahupp/python-magic
+- Code repository:
