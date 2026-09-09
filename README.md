@@ -1479,6 +1479,20 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 2.0.12
 - Homepage: http://www.nongnu.org/gksu/
 - Code repository:
+## libdca (free DTS Coherent Acoustics decoder)
+ libdca is a free library for decoding DTS Coherent Acoustics streams.
+ The code is written by Gildas Bazin and was based on the a52dec
+ project.  libdca: The DTS Coherent Acoustics standard is used in a
+ variety of applications, including DVD, DTS audio CD, and radio
+ broadcasting.  It includes libdts.
+ It is released under the terms of the GPL license.
+ Homepage: http://www.videolan.org/developers/libdca.html
+  
+
+- Category: libraries
+- Version: 0.0.7
+- Homepage: http://www.videolan.org/developers/libdca.html
+- Code repository:
 ## pam_usb (Hardware Auth via Memory Sticks)
  This is a PAM module for Linux authentication using USB memory sticks,
  SD cards, external SSD etc. Simply speaking, it lets you log onto
