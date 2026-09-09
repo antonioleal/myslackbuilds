@@ -1323,7 +1323,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 6.7.1.1
+- Version: 6.7.2
 - Homepage: https://www.waterfox.net/
 - Code repository: https://github.com/BrowserWorks/Waterfox
 - Binary repository: https://www.waterfox.net/download/
