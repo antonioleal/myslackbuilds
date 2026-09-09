@@ -1031,7 +1031,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 14.11
+- Version: 14.12
 - Homepage: https://freefilesync.org/
 - Code repository: https://freefilesync.org/
 ## b2 (BBC Microcomputer Emulator)
