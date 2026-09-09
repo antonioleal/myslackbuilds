@@ -2246,6 +2246,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 1.0.11
 - Homepage: https://launchpad.net/schroedinger
 - Code repository:
+## zvbi (Zapping VBI library)
+ ZVBI provides functions to capture and decode VBI data.
+ It is written in plain ANSI C with few dependencies on other tools
+ and libraries, licensed under GPL.
+  
+
+- Category: multimedia
+- Version: 0.2.35
+- Homepage: http://zapping.sourceforge.net/ZVBI/
+- Code repository:
 ## vlc (VLC media player)
  VLC media player is a free and open source media player and multi-
  media framework written by the VideoLAN project. VLC is a portable
