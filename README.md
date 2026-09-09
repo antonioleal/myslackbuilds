@@ -1406,6 +1406,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: r475
 - Homepage: http://www.musepack.net/
 - Code repository:
+## libshout (icecast server library)
+ Libshout is a library for communicating with and sending data to an
+ icecast server.  It handles the socket connection, the timing of the
+ data, and prevents bad data from getting to the icecast server.
+  
+
+- Category: libraries
+- Version: 2.4.5
+- Homepage: http://www.icecast.org
+- Code repository:
 ## libkate (codec for karaoke and text support in Ogg)
  kate is a codec for karaoke and text encapsulation for Ogg.
  Most of the time, this would be multiplexed with audio/video
