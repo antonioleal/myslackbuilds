@@ -1370,6 +1370,16 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.12
 - Homepage: https://www.fabiszewski.net/libmobi/
 - Code repository:
+## live555 (C++ libraries for multimedia streaming)
+ This code forms a set of C++ libraries for multimedia streaming,
+ using open standard protocols (RTP/RTCP, RTSP, SIP). These libraries
+ can be used to build streaming applications.
+  
+
+- Category: libraries
+- Version: 2020.08.19
+- Homepage: http://www.live555.com/
+- Code repository:
 ## qt-installer-script (Deploy Qt Libraries in Slackware)
  qt-installer-script is an umbrella script to the standard Qt
  installer to simplify the installation of Qt Libraries in your
