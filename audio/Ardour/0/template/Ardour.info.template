@@ -1,7 +1,7 @@
 PRGNAM="Ardour"
 VERSION="_version_"
 HOMEPAGE="http://ardour.org"
-DOWNLOAD="https://github.com/antonioleal/myslackbuilds/raw/main/audio/ardour/Ardour-_version_.tar.bz2"
+DOWNLOAD="https://sourceforge.net/projects/slackbuildsdirectlinks/files/Ardour/Ardour-_version_.tar.bz2"
 MD5SUM="_md5_"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
