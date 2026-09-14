@@ -2350,6 +2350,6 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 4.21.1
+- Version: 4.21.2
 - Homepage: http://www.rastersoft.com/programas/devede.html
 - Code repository:
