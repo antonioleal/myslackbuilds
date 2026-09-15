@@ -1711,6 +1711,17 @@ Instead of github go to Ardour.org and press download to get the source code tar
 - Version: 0.9.1
 - Homepage: https://arescentral.org/antares
 - Code repository:
+## moon-buggy (Simple character graphics game)
+ Moon-buggy is a simple character graphics game where you drive some
+ kind of car across the moon's surface. Unfortunately there are
+ dangerous craters there. Fortunately your car can jump over them!
+ Homepage: https://www.seehuhn.de/pages/moon-buggy
+  
+
+- Category: games
+- Version: 1.1.0
+- Homepage: https://www.seehuhn.de/pages/moon-buggy
+- Code repository:
 ## openmsx-debugger (gui for openMSX debugger)
  The openMSX debugger is a separate program that interfaces with
  openMSX and controls its debugger from within a graphical user
