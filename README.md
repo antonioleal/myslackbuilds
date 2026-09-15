@@ -911,7 +911,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 20260907_ccddf9f
+- Version: 20260915_a76c365
 - Homepage:  https://b-em.bbcmicro.com/
 - Code repository: https://github.com/stardot/b-em
 ## brave-origin-the-latest (Brave Origin updater script)
