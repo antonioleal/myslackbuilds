@@ -1423,7 +1423,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: libraries
-- Version: 2.4.5
+- Version: 2.4.6
 - Homepage: http://www.icecast.org
 - Code repository:
 ## libkate (codec for karaoke and text support in Ogg)
