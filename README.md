@@ -66,7 +66,7 @@
   
 
 - Category: office
-- Version: 26.8.0.3
+- Version: 26.8.1.1
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 ## smoffice2026 (office suite)
