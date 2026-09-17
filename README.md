@@ -507,7 +507,7 @@
   
 
 - Category: development
-- Version: 1.6.2603.14891
+- Version: 1.6.2609.34639
 - Homepage: http://www.ximple.cz
 - Code repository:
 ## pasdoc (documentation tool for ObjectPascal source code)
