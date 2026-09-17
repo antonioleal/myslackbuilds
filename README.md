@@ -1182,7 +1182,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 0.37.0
+- Version: 0.38.0
 - Homepage: https://oils.pub/
 - Code repository:
 ## gallery-dl (Command line image scraper)
