@@ -1876,7 +1876,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: misc
-- Version: 2.1.6
+- Version: 2.1.7
 - Homepage: https://www.balena.io/etcher/
 - Code repository:
 ## swege (Static WEbsite GEnerator)
