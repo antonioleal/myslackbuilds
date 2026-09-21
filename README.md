@@ -632,7 +632,7 @@
   
 
 - Category: development
-- Version: 1.2.2
+- Version: 1.2.7
 - Homepage: https://antigravity.google/
 - Code repository:
 ## zxbasic (basic compiler for ZXSpectrum)
