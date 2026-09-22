@@ -2288,7 +2288,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 3.0.23
+- Version: 3.0.24
 - Homepage: https://www.videolan.org/vlc/
 - Code repository:
 ## ardour-harvid-bin (ardour video tools)
