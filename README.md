@@ -1170,7 +1170,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 0.16
+- Version: 0.17
 - Homepage: https://tomscii.sig7.se/zutty/
 - Code repository:
 ## oils (Programming language and Bash-compatible Unix shell)
