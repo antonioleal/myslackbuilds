@@ -2020,7 +2020,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 0.1.18
+- Version: 0.1.19
 - Homepage: https://github.com/jdum/odfdo
 - Code repository: 
 ## python3-enlighten (Progress bar for Python console apps)
