@@ -2,7 +2,7 @@
 
 # Slackware updater script for vstudio
 
-# Copyright 2023-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2023-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -42,7 +42,8 @@ fi
 
 MAJOR=`echo $NEWVERSION | cut -d "." -f 1`
 TARBALL=vstudio_x64_${MAJOR}_lin.deb
-URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBALL}"
+#URL="http://valentina-db.com/download/prev_releases/${NEWVERSION}/lin_64/${TARBALL}"
+URL="https://sourceforge.net/projects/slackbuildsdirectlinks/files/vstudio/${NEWVERSION}/${TARBALL}"
 
 VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]; then

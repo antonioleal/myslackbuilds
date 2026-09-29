@@ -622,7 +622,7 @@
   
 
 - Category: development
-- Version: 18.2
+- Version: 18.2.1
 - Homepage: http://www.valentina-db.com/
 - Code repository: https://valentina-db.com/download/prev_releases/
 
