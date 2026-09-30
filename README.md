@@ -203,7 +203,7 @@
   
 
 - Category: desktop
-- Version: 3.202.0
+- Version: 3.202.7
 - Homepage: https://standardnotes.com/
 - Code repository: https://github.com/standardnotes/app
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
