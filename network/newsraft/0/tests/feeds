@@ -1,0 +1,41 @@
+# This is an example of valid feeds file for Newsraft.
+
+# Lines with # character at the beginning are comments - they are ignored.
+
+# To subscribe to a feed, you have to add a line with its URL:
+http://example.org/feed1.xml
+
+# If you want to assign a custom name to the feed,
+# put a double quoted string after its URL:
+http://example.org/feed2.xml "Faculty notifications"
+
+# Lines with @ character at the beginning are section declarations,
+# they are used to organize your feed entries and process them in groups.
+# All feed entries after this declaration will belong to this section.
+@ News Reports
+http://example.org/feed3.xml "Local news"
+
+# This feed entry belongs to the "News Reports" section:
+http://example.org/feed4.xml "Global news"
+
+# Another section declaration will cause next feed entries to be added to the
+# corresponding section. Thus, the following feed entries will not belong to
+# the "News Reports" section, but to the "Blog Posts" section.
+@ Blog Posts
+http://example.org/feed5.xml "John Johnson"
+http://example.org/feed6.xml "Peter Peterson"
+
+# As you might have noticed, feeds http://example.org/feed1.xml and
+# http://example.org/feed2.xml don't belong to any section; but actually they
+# do - all feed entries are de facto included in the "Global" section (even
+# those that have been assigned to section by a section declaration).
+# Therefore, to continue adding feed entries without being included in previous
+# section, you must declare the beginning of the "Global" section:
+@ Global
+http://example.org/feed7.xml "Weather warnings"
+
+# You can subscribe to any feed you can get through a command. For
+# example, if you can get a Gemini atom feed with the program
+# 'gemget', then you might do this (note the silencing flags, so you
+# don't spook the terminal while newsraft is running).
+$(gemget -sq gemini://example.org/feed8.xml) "Reasons to use Gemini"

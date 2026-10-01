@@ -1205,7 +1205,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 0.37
+- Version: 0.38
 - Homepage: https://newsraft.codeberg.page/
 - Code repository:
 ## ckermit (combined network and serial communication software package)
