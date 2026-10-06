@@ -2097,7 +2097,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 2.3.1
+- Version: 2.3.2
 - Homepage: https://pypi.org/project/gmpy2/
 - Code repository: https://github.com/aleaxit/gmpy
 ## python3-prefixed (prefixed alternative numeric library)
