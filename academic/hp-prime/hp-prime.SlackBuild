@@ -74,7 +74,6 @@ case "$ARCH" in
   ;;
  x86_64)
   SLKCFLAGS="-O2 -fPIC"
-  LIBDIRSUFFIX="64"
   WINE64="yes"
   TARBALL="HP_Prime_Virtual_Calculator_x64_2025_01_31.exe"
   ;;
