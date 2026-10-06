@@ -23,7 +23,7 @@
   
 
 - Category: office
-- Version: 2024_1234
+- Version: 2024_1238
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository: https://www.softmaker.com/en/softmaker-office-linux
 ## openoffice-langpack (for Apache OpenOffice Productivity Suite)
