@@ -91,7 +91,7 @@
   
 
 - Category: office
-- Version: 11.1.0.11723.XA
+- Version: 11.1.0.11733.XA
 - Homepage: https://linux.wps.com/
 - Code repository:
 ## pageEdit (Simple Single Page XHTML Visual Editor)
