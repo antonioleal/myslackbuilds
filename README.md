@@ -94,6 +94,16 @@
 - Version: 11.1.0.11733.XA
 - Homepage: https://linux.wps.com/
 - Code repository:
+## cups-pdf (PDF printer for cups)
+ This software is designed to produce PDF files by providing a PDF
+ printer.
+ Homepage: https://www.cups-pdf.de/
+  
+
+- Category: office
+- Version: 3.0.1
+- Homepage: https://www.cups-pdf.de/
+- Code repository:
 ## pageEdit (Simple Single Page XHTML Visual Editor)
  Simple Single Page XHTML Visual Editor, split from Sigil's BookView.
   
