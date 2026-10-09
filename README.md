@@ -120,7 +120,7 @@
   
 
 - Category: office
-- Version: 2024_1234
+- Version: 2024_1238
 - Homepage: https://www.freeoffice.com/
 - Code repository:
 ## openoffice.org (a full-featured open-source office suite)
