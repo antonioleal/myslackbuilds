@@ -2093,7 +2093,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 6.19.0
+- Version: 6.20.0
 - Homepage: https://github.com/py-pdf/pypdf
 - Code repository: 
 ## python3-gmpy2 (multi-precision arithmetic for python)
@@ -2351,7 +2351,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 43.0.0_b8
+- Version: 43.1.0
 - Homepage: https://github.com/nwjs-ffmpeg-prebuilt/nwjs-ffmpeg-prebuilt
 - Code repository:
 ## MuseScore (WYSIWYG Music Score Typesetter)
