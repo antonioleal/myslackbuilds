@@ -1,0 +1,115 @@
+#!/bin/bash
+
+# Slackware build script for 0scripts
+
+# Copyright 2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+cd $(dirname $0) ; CWD=$(pwd)
+
+PRGNAM=0scripts
+VERSION=${VERSION:-_version_}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
+
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  exit 0
+fi
+
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+set -e
+rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+cd $TMP
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
+chown -R root:root .
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+
+BIN=$PKG/usr/bin
+mkdir -p $BIN
+install -Dm755 0 $BIN/0
+install -Dm755 0auto-crawler $BIN/0auto-crawler
+install -Dm755 0build $BIN/0build
+install -Dm755 0build-package $BIN/0build-package
+install -Dm755 0clean-tree $BIN/0clean-tree
+install -Dm755 0commit-push $BIN/0commit-push
+install -Dm755 0delete-branches $BIN/0delete-branches
+install -Dm755 0download-source-tarballs $BIN/0download-source-tarballs
+install -Dm755 0lspkg $BIN/0lspkg
+install -Dm755 0make-missing-readmes $BIN/0make-missing-readmes
+install -Dm755 0make-readme $BIN/0make-readme
+install -Dm755 0make-updater $BIN/0make-updater
+install -Dm755 0meld $BIN/0meld
+install -Dm755 0patch $BIN/0patch
+install -Dm755 0pkginfo $BIN/0pkginfo
+install -Dm755 0pull-request $BIN/0pull-request
+install -Dm755 0replace-string $BIN/0replace-string
+install -Dm755 0reset $BIN/0reset
+install -Dm755 0setup $BIN/0setup
+install -Dm755 0slackware-binary-dependencies $BIN/0slackware-binary-dependencies
+install -Dm755 0takeover $BIN/0takeover
+install -Dm755 0tar $BIN/0tar
+install -Dm755 0update-md5-info $BIN/0update-md5-info
+install -Dm755 0whichpkg $BIN/0whichpkg
+
+SHARE=$PKG/usr/share/0scripts
+mkdir -p $SHARE
+install -Dm755 updater.template $SHARE/updater.template
+install -Dm644 0scriptsrc $SHARE/0scriptsrc
+install -Dm644 README.md $SHARE/README.md
+install -Dm644 example/plus42.tar.gz $SHARE/plus42.tar.gz
+cp -aux media $SHARE/
+
+PIXMAPS=$PKG/usr/share/pixmaps
+mkdir -p $PIXMAPS
+cp -aux media/zeroscripts.png $PIXMAPS
+
+# Install KDE5 context menu for dolphin (right-clicking)
+mkdir -p $PKG/usr/share/kservices5/ServiceMenus/
+cp -aux media/zeroscripts.desktop $PKG/usr/share/kservices5/ServiceMenus/
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
