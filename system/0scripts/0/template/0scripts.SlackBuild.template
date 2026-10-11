@@ -94,6 +94,7 @@ mkdir -p $SHARE
 install -Dm755 updater.template $SHARE/updater.template
 install -Dm644 0scriptsrc $SHARE/0scriptsrc
 install -Dm644 README.md $SHARE/README.md
+install -Dm644 CHANGELOG.md $SHARE/CHANGELOG.md
 install -Dm644 example/plus42.tar.gz $SHARE/plus42.tar.gz
 cp -aux media $SHARE/
 
