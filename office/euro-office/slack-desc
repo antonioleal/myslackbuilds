@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+           |-----handy-ruler------------------------------------------------------|
+euro-office: euro-office (office suite)
+euro-office:
+euro-office: Euro-Office is a free AGPL v3 licensed office suite that combines
+euro-office: text, spreadsheet and presentation editors. It is fully compatible
+euro-office: with Office Open XML formats: .docx, .xlsx, .pptx, which are
+euro-office: its native formats. It also supports DOC, ODT, RTF, TXT, PDF,
+euro-office: HTML, EPUB, XPS, DjVu, XLS, ODS, CSV, PPT, ODP.
+euro-office:
+euro-office:
+euro-office:
+euro-office:

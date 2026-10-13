@@ -44,7 +44,7 @@
   
 
 - Category: office
-- Version: 9.4.0
+- Version: 10.0.0
 - Homepage: https://www.onlyoffice.com/apps.aspx
 - Code repository: https://github.com/ONLYOFFICE/DesktopEditors
 ## smoffice2021 (office suite)
@@ -68,6 +68,18 @@
 - Category: office
 - Version: 26.8.1.1
 - Homepage: https://github.com/LibreOffice/dictionaries/
+- Code repository:
+## euro-office (office suite)
+ Euro-Office is a free AGPL v3 licensed office suite that combines
+ text, spreadsheet and presentation editors. It is fully compatible
+ with Office Open XML formats: .docx, .xlsx, .pptx, which are
+ its native formats. It also supports DOC, ODT, RTF, TXT, PDF,
+ HTML, EPUB, XPS, DjVu, XLS, ODS, CSV, PPT, ODP.
+  
+
+- Category: office
+- Version: 9.3.5_2
+- Homepage: https://github.com/euro-office
 - Code repository:
 ## smoffice2026 (office suite)
  SoftMaker Office 2026 includes
