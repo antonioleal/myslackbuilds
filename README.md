@@ -144,7 +144,7 @@
   
 
 - Category: office
-- Version: 4.1.16
+- Version: 4.1.17
 - Homepage: https://www.openoffice.org/
 - Code repository: https://sourceforge.net/projects/openofficeorg.mirror/files/
 ## ishmael (EBook dumper)
