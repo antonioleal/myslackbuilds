@@ -593,7 +593,7 @@
   
 
 - Category: development
-- Version: 5.68
+- Version: 5.69
 - Homepage: https://github.com/sasagawa888/eisl
 - Code repository: https://github.com/sasagawa888/eisl
 ## smartgit (Desktop Git Client)
