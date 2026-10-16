@@ -32,7 +32,7 @@
   
 
 - Category: office
-- Version: 4.1.16
+- Version: 4.1.17
 - Homepage: http://www.openoffice.org
 - Code repository:
 ## onlyoffice-desktopeditors (office suite)
