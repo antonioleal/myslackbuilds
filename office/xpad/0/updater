@@ -28,6 +28,7 @@ cd $SCRIPT_DIR
 source ../*.info
 echo -n "is at version $VERSION, bypass, cannot by updated with Slackware 15.0"
 export RET0=""
+return
 
 #############
 
