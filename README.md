@@ -2009,7 +2009,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: academic
-- Version: 3.3.12
+- Version: 3.4
 - Homepage: http://thomasokken.com/free42/index.html
 - Code repository:
 ## mathics (A free, light-weight alternative to Mathematica)
