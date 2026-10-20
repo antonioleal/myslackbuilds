@@ -74,6 +74,7 @@ find -L . \
 
 export CFLAGS="$SLKCFLAGS"
 export CXXFLAGS="$SLKCFLAGS"
+export PATH=/opt/rust/bin:$PATH
 
 cmake -E make_directory build
 cd build
