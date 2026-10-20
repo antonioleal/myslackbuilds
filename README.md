@@ -103,7 +103,7 @@
   
 
 - Category: office
-- Version: 11.1.0.11733.XA
+- Version: 12.1.2.29182
 - Homepage: https://linux.wps.com/
 - Code repository:
 ## cups-pdf (PDF printer for cups)
