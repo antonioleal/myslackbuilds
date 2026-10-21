@@ -95,8 +95,8 @@ mkdir -p $PKG/usr
 cp -a usr/bin $PKG/usr
 
 # use our desktop files
-mkdir -p $PKG/usr/share/{applications,pixmaps}
-cp --no-preserve=mode,ownership $CWD/desktop/*.desktop $PKG/usr/share/applications
+mkdir -p $PKG/usr/share/applications
+cp --no-preserve=mode,ownership usr/share/applications/*.desktop $PKG/usr/share/applications
 cp -a usr/share/icons $PKG/usr/share/
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
@@ -111,6 +111,11 @@ rm -r $PKG/opt/kingsoft/wps-office/office6/addons/pdfbatchcompression
     cd opt/kingsoft/wps-office/office6/qt
     ln -s .. lib
 )
+
+# make elf libs executable
+while IFS= read -r elf; do
+    chmod +x $PKG/$elf
+done < $CWD/elf.txt
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
