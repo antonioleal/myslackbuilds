@@ -66,7 +66,7 @@
   
 
 - Category: office
-- Version: 26.8.1.1
+- Version: 26.8.2.2
 - Homepage: https://github.com/LibreOffice/dictionaries/
 - Code repository:
 ## euro-office (office suite)
