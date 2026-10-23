@@ -750,7 +750,7 @@
   
 
 - Category: audio
-- Version: 2.1.0
+- Version: 2.1.1
 - Homepage: https://www.tuxguitar.app/
 - Code repository: https://github.com/helge17/tuxguitar
 ## Ardour (Professional Audio Editing)
