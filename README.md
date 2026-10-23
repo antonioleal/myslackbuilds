@@ -854,7 +854,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: audio
-- Version: 1.10.0
+- Version: 1.11.0
 - Homepage: https://sndio.org/
 - Code repository:
 ## zoom-edit-n-share (Control your Zoom G3/B3 guitar pedals)
