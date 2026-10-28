@@ -654,7 +654,7 @@
   
 
 - Category: development
-- Version: 1.4.2
+- Version: 1.4.9
 - Homepage: https://antigravity.google/
 - Code repository:
 ## zxbasic (basic compiler for ZXSpectrum)
