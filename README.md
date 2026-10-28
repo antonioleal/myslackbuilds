@@ -445,7 +445,7 @@
   
 
 - Category: development
-- Version: 44.9.0
+- Version: 45.1.0
 - Homepage: https://www.electronjs.org/
 - Code repository:
 ## gn (Meta-build system)
