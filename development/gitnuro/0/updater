@@ -33,7 +33,7 @@ cd $SCRIPT_DIR
 # TAG=$(curl -s -k https://api.github.com/repos/JetpackDuba/Gitnuro/releases/latest | jq -r '.tag_name')
 TITLE=$(gh release view -R JetpackDuba/Gitnuro  | grep "title" | awk '{print$2}')
 TAG=$(gh release view -R JetpackDuba/Gitnuro --json tagName --jq '.tagName')
-NEWVERSION=${TAG:1}
+NEWVERSION=${TAG}
 TARBALL=Gitnuro-linux-x86_64-${TITLE}-${NEWVERSION}.jar
 URL="https://github.com/JetpackDuba/Gitnuro/releases/download/${NEWVERSION}/${TARBALL}"
 
