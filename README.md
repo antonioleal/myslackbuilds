@@ -293,7 +293,7 @@
   
 
 - Category: development
-- Version: 2.0.0
+- Version: 2.1.0
 - Homepage: https://gitnuro.com/
 - Code repository: https://github.com/JetpackDuba/Gitnuro/
 ## recutils (tools and libraries to access recfiles)

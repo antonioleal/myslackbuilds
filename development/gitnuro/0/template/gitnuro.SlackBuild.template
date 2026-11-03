@@ -29,7 +29,7 @@ VERSION=${VERSION:-_version_}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-JAR=Gitnuro-linux-x86_64-2.0-$VERSION.jar
+JAR=Gitnuro-linux-x86_64-2.1-$VERSION.jar
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
