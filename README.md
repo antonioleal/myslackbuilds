@@ -259,16 +259,16 @@
 - Homepage: https://github.com/wxFormBuilder/wxFormBuilder
 - Code repository:
 ## letos (SQLite database manager written in C++ using Qt)
- Previously known as SQLiteStudio, letos is A free, open source,
+ Previously known as SQLiteStudio, letos is a free, open source,
  multi-platform SQLite database manager written in C++,
  with use of Qt framework.
  SQLiteStudio is a desktop application for browsing and editing SQLite
- database files. It is aimed for people, who know what SQLite is, or
+ database files. It is aimed at people who know what SQLite is, or
  what relational databases are in general.
   
 
 - Category: development
-- Version: 4.0.3
+- Version: 4.0.4
 - Homepage: https://letos.org
 - Code repository:
 
