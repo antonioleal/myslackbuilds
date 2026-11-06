@@ -801,7 +801,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: audio
-- Version: 7.84
+- Version: 7.85
 - Homepage: https://www.reaper.fm
 - Code repository:
 ## muse (MIDI/Audio Sequencer)
