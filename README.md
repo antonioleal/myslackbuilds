@@ -113,7 +113,7 @@
   
 
 - Category: office
-- Version: 3.0.1
+- Version: 3.0.3
 - Homepage: https://www.cups-pdf.de/
 - Code repository:
 ## pageEdit (Simple Single Page XHTML Visual Editor)
