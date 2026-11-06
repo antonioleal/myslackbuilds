@@ -36,6 +36,13 @@ URL="https://github.com/py-pdf/pypdf/archive/$NEWVERSION/pypdf-$NEWVERSION.tar.g
 TARBALL=pypdf-$NEWVERSION.tar.gz
 
 VERSION=`cat version`
+echo -n "is at version $VERSION, no longer feasible to update with Slackware15"
+export RET0=""
+return
+
+
+
+VERSION=`cat version`
 if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo -n "is at version $VERSION"
