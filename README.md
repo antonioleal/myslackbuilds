@@ -174,7 +174,7 @@
   
 
 - Category: office
-- Version: 2.8.1
+- Version: 2.8.5
 - Homepage: https://sigil-ebook.com/
 - Code repository:
 ## makc-wallpapers (A set of wallpapers by Mackenzie Criswell)
