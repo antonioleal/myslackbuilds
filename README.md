@@ -520,7 +520,7 @@
   
 
 - Category: development
-- Version: 8.9.8.1
+- Version: 8.9.9
 - Homepage: https://notepad-plus-plus.org/
 - Code repository:
 ## XiMpLe (tabular xml editor)
