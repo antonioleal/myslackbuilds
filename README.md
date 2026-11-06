@@ -1822,7 +1822,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: games
-- Version: 20.0
+- Version: 22.0
 - Homepage: http://openmsx.org/
 - Code repository:
 ## dhewm3 (Doom 3 GPL source port)
