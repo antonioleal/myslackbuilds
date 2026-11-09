@@ -412,7 +412,7 @@
   
 
 - Category: development
-- Version: 2026.23
+- Version: 2026.24
 - Homepage: https://github.com/sourcegit-scm/sourcegit
 - Code repository:
 ## zxbasicstudio (an ide for zxbasic)
