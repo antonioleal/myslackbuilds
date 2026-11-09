@@ -91,7 +91,7 @@
   
 
 - Category: office
-- Version: 2026_1504
+- Version: 2026_1506
 - Homepage: https://www.softmaker.com/en/softmaker-office-linux
 - Code repository: https://www.softmaker.com/en/softmaker-office-linux
 ## wps-office (an office productivity suite for Linux)
