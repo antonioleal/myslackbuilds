@@ -762,7 +762,7 @@
   
 
 - Category: audio
-- Version: 9.8.0
+- Version: 9.10.0
 - Homepage: http://ardour.org
 - Code repository: https://github.com/Ardour/ardour
 
