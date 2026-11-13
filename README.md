@@ -1678,13 +1678,13 @@ Instead of github go to Ardour.org and press download to get the source code tar
  millionaire trader, a veteran combateer, a feared pirate, a lonely
  miner, a notorious smuggler, or all of them, or something else
  entirely, based on your own actions.
- http://www.oolite.org/
+ https://oolite.space/
   
 
 - Category: games
-- Version: 1.90
+- Version: 1.92.1
 - Homepage: http://www.oolite.org/
-- Code repository:
+- Code repository: https://github.com/OoliteProject/oolite
 ## openmsx-catapult (GUI for openMSX)
  Catapult is an optional GUI frontend for the openMSX-emulator.
  Catapult is a sub-project of openMSX, developed using the tools

@@ -1,2 +1,2 @@
 - Homepage: http://www.oolite.org/
-- Code repository:
+- Code repository: https://github.com/OoliteProject/oolite
