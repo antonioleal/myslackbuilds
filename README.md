@@ -1118,7 +1118,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: system
-- Version: 26.09.0
+- Version: 26.11.0
 - Homepage: https://github.com/linuxmint/timeshift
 - Code repository: https://github.com/linuxmint/timeshift
 ## firefox-standard-the-latest (Firefox Standard Updater Script)
