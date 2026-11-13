@@ -2383,7 +2383,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: multimedia
-- Version: 4.7.6
+- Version: 4.7.7
 - Homepage: http://www.musescore.org/
 - Code repository: https://github.com/musescore/MuseScore
 ## devedeng (create video CDs and DVDs)
