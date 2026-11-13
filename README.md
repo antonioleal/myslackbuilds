@@ -1290,7 +1290,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: network
-- Version: 157.0.8103.38
+- Version: 157.0.8103.78
 - Homepage: http://www.google.com/chrome/
 - Code repository: https://www.whatismybrowser.com/guides/the-latest-version/chrome
 ## browsh (Private Web Browser)
