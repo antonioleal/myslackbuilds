@@ -2174,7 +2174,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: python
-- Version: 4.3.4
+- Version: 4.3.5
 - Homepage: https://nuitka.net
 - Code repository: https://github.com/Nuitka/Nuitka/tags
 ## python2-blessed (library for making terminal apps)
