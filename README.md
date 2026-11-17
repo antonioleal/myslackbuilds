@@ -596,6 +596,17 @@
 - Version: 5.69
 - Homepage: https://github.com/sasagawa888/eisl
 - Code repository: https://github.com/sasagawa888/eisl
+## openFPGALoader (universal utility for programming FPGAs)
+ openFPGALoader is a universal utility for programming FPGAs and
+ their attached SPI flash. It supports devices from Xilinx, Altera,
+ Lattice, Gowin, Efinix, Anlogic, Cologne Chip and others, using a
+ wide range of JTAG/SPI cables (FTDI, DirtyJTAG, USB-Blaster,
+ CMSIS-DAP, J-Link, CH347, DFU, XVC, ...).
+ Homepage: https://github.com/trabucayre/openFPGALoader
+  
+
+- Category: development
+- Version: 1.2.0
 ## smartgit (Desktop Git Client)
  SmartGit is a commercial desktop git client that provides a
  free non-commercial use license. You need to apply for this license
