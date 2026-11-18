@@ -225,7 +225,7 @@
   
 
 - Category: desktop
-- Version: 3.202.11
+- Version: 3.203.0
 - Homepage: https://standardnotes.com/
 - Code repository: https://github.com/standardnotes/app
 ## thunar-sendto-clamtk (A clamtk plugin for Thunar)
