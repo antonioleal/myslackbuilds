@@ -607,6 +607,8 @@
 
 - Category: development
 - Version: 1.2.0
+- Homepage: https://github.com/trabucayre/openFPGALoader
+- Code repository:
 ## smartgit (Desktop Git Client)
  SmartGit is a commercial desktop git client that provides a
  free non-commercial use license. You need to apply for this license
