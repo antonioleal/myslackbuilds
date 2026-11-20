@@ -615,7 +615,7 @@
   
 
 - Category: development
-- Version: 26.1.057
+- Version: 26.1.059
 - Homepage: https://www.syntevo.com/smartgit
 - Code repository: https://www.syntevo.com/smartgit/download/
 
