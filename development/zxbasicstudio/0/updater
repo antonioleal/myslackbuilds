@@ -2,7 +2,7 @@
 
 # Slackware updater script for zxbasicstudio
 
-# Copyright 2025-2025 Antonio Leal, Porto Salvo, Oeiras, Portugal
+# Copyright 2025-2026 Antonio Leal, Porto Salvo, Oeiras, Portugal
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,7 +22,13 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Checks for a new ZX Basic Studio release and, when there is one,
+# downloads the source tarball, works out the NuGet packages the build
+# needs (with an online restore) and regenerates the .info and .SlackBuild
+# from the templates. Needs gh, wget, python3 and the dotnet SDK.
+
 PRGNAM=zxbasicstudio
+REPO=boriel-basic/ZXBasicStudio
 set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 cd $SCRIPT_DIR
@@ -30,17 +36,31 @@ cd $SCRIPT_DIR
 ################################
 # check versions               #
 ################################
-# TAG=$(curl -s https://api.github.com/repos/boriel-basic/ZXBasicStudio/releases/latest | jq -r '.tag_name')
-TAG=$(gh release view -R boriel-basic/ZXBasicStudio --json tagName --jq '.tagName')
-NEWVERSION=${TAG:1}
-SLACKVERSION=${NEWVERSION/-/_}
-TARBALL=ZXBasicStudio-Linux-x64.v${NEWVERSION}.zip
-URL="https://github.com/boriel-basic/ZXBasicStudio/releases/download/${TAG}/${TARBALL}"
-
-AUX=$(echo $NEWVERSION | grep "XBSI")
+# Upstream mixes ZX Basic Studio and ZXBSInstaller releases, and the tag
+# prefix varies (v1.8.0-beta7, ZXBS.v1.8.0-beta6, ...). Pick the newest
+# release that ships a linux-x64 zip and take the version from its name.
+TAG=""
+ASSET=""
+for T in $(gh release list -R $REPO -L 20 --exclude-drafts --json tagName,publishedAt \
+           --jq 'sort_by(.publishedAt) | reverse | .[].tagName'); do
+    case "$T" in ZXBSInstaller*) continue ;; esac
+    ASSET=$(gh release view "$T" -R $REPO --json assets \
+            --jq '.assets[].name | select(test("^ZXBasicStudio-linux-x64\\.v.*\\.zip$"))' | head -n1)
+    if [ -n "$ASSET" ]; then TAG=$T; break; fi
+done
+if [ -z "$TAG" ]; then
+    echo "could not find a ZX Basic Studio release, aborting..."
+    return 1 2>/dev/null || exit 1
+fi
+NEWVERSION=${ASSET#ZXBasicStudio-linux-x64.v}
+NEWVERSION=${NEWVERSION%.zip}
+SLACKVERSION=${NEWVERSION//-/_}
+TARBALL=ZXBasicStudio-${NEWVERSION}.tar.gz
+# SBo canonical GitHub form (https://slackbuilds.org/GITHUB_URLs.txt)
+URL="https://github.com/${REPO}/archive/${TAG}/${TARBALL}"
 
 VERSION=`cat version`
-if [ "$VERSION" = "$NEWVERSION" ] || [ ! "$AUX" = "" ]
+if [ "$VERSION" = "$NEWVERSION" ]
 then
     echo -n "is at version $VERSION"
     export RET0=""
@@ -54,34 +74,98 @@ else
         export RET0=$NEWVERSION
         return
     fi
+
+    WORK=$SCRIPT_DIR/work
+    rm -rf $WORK
+    mkdir -p $WORK/src
+
     ################################
-    # download tarball             #
+    # download source tarball      #
     ################################
-    wget $URL
-    if [ ! -f ./$TARBALL ]
+    wget -O $WORK/$TARBALL $URL
+    if [ ! -s $WORK/$TARBALL ]
     then
         echo "File $TARBALL not found, aborting..."
-        exit
+        rm -rf $WORK
+        return 1 2>/dev/null || exit 1
     fi
-    # delete old tarball and place new one
-    rm -rf ../*.zip 2> /dev/null
-    mv *.zip ..
+    tar xf $WORK/$TARBALL -C $WORK/src --strip-components=1
+    CSPROJ=$WORK/src/ZXBStudio/ZXBasicStudio.csproj
+
+    ################################
+    # resolve NuGet packages       #
+    ################################
+    export DOTNET_CLI_HOME=$WORK/dotnet-home
+    export NUGET_PACKAGES=$WORK/nuget
+    export NUGET_HTTP_CACHE_PATH=$WORK/nuget-http
+    export DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_NOLOGO=1 AVALONIA_TELEMETRY_OPTOUT=1
+    export DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE=1
+    RESTORE="dotnet restore $CSPROJ -r linux-x64 -p:Configuration=Release -p:SelfContained=false --disable-build-servers"
+    ASSETS=$WORK/src/ZXBStudio/obj/project.assets.json
+
+    # .NET major version from the target framework (net10.0 -> 10.0)
+    DOTNETVERSION=$(sed -n 's|.*<TargetFramework>net\([0-9.]*\)</TargetFramework>.*|\1|p' $CSPROJ | head -n1)
+
+    # 1st restore: find the managed SkiaSharp version that gets resolved
+    $RESTORE
+    SKIAVERSION=$(python3 -I -c '
+import json, sys
+libs = json.load(open(sys.argv[1]))["libraries"]
+print(next(k.split("/")[1] for k in libs if k.split("/")[0] == "SkiaSharp"))
+' $ASSETS)
+
+    # 2nd restore: with the native assets pinned like the SlackBuild does
+    if ! grep -q 'SkiaSharp.NativeAssets.Linux' $CSPROJ; then
+        sed -i "s|^</Project>|  <ItemGroup>\n    <PackageReference Include=\"SkiaSharp.NativeAssets.Linux\" Version=\"$SKIAVERSION\" />\n  </ItemGroup>\n</Project>|" $CSPROJ
+    fi
+    $RESTORE
+
+    # every package in the restore graph, as "id/version" (lowercase)
+    PACKAGES=$(python3 -I -c '
+import json, sys
+libs = json.load(open(sys.argv[1]))["libraries"]
+for v in sorted(libs.values(), key=lambda v: v["path"]):
+    if v["type"] == "package":
+        print(v["path"])
+' $ASSETS)
+
+    ################################
+    # place the new sources        #
+    ################################
+    rm -f ../*.zip ../*.tar.gz ../*.nupkg
+    mv $WORK/$TARBALL ..
+    DOWNLOADS="$URL"
+    MD5SUMS=`md5sum ../$TARBALL | cut -d " " -f 1`
+    PAD="                 "
+    for P in $PACKAGES; do
+        ID=${P%/*}
+        VER=${P#*/}
+        NUPKG=$ID.$VER.nupkg
+        cp $NUGET_PACKAGES/$P/$NUPKG ..
+        DOWNLOADS="$DOWNLOADS \\
+${PAD}https://api.nuget.org/v3-flatcontainer/$ID/$VER/$NUPKG"
+        MD5SUMS="$MD5SUMS \\
+${PAD}`md5sum ../$NUPKG | cut -d " " -f 1`"
+    done
 
     ################################
     # write templates              #
     ################################
-    MD5=`md5sum ../$TARBALL | cut -d " " -f 1`
-    #DATEVERSION=`tar tvfz ../$TARBALL | head -n1 | awk '{ print $4 }' | awk 'BEGIN { FS = "-" } ; { print $1$2$3 }'`
+    INFO=$(sed -e "s/_slackversion_/${SLACKVERSION}/g" \
+               -e "s/_dotnetversion_/${DOTNETVERSION}/g" \
+               $SCRIPT_DIR/template/${PRGNAM}.info.template)
+    INFO=${INFO//_downloads_/$DOWNLOADS}
+    INFO=${INFO//_md5sums_/$MD5SUMS}
+    echo "$INFO" > ../${PRGNAM}.info
 
     sed -e "s/_version_/${NEWVERSION}/g" \
         -e "s/_slackversion_/${SLACKVERSION}/g" \
-        -e "s/_md5_/$MD5/g" \
-        $SCRIPT_DIR/template/${PRGNAM}.info.template > ../${PRGNAM}.info
-
-    sed -e "s/_slackversion_/${SLACKVERSION}/g" \
+        -e "s/_skiaversion_/${SKIAVERSION}/g" \
+        -e "s/_dotnetversion_/${DOTNETVERSION}/g" \
         $SCRIPT_DIR/template/${PRGNAM}.SlackBuild.template > ../${PRGNAM}.SlackBuild
-
     chmod 644 ../${PRGNAM}.SlackBuild
+
+    rm -rf $WORK
     echo "$NEWVERSION" > version
     echo -n "has a new version $NEWVERSION"
     export RET0=$NEWVERSION
