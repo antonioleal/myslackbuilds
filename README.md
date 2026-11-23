@@ -1881,7 +1881,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: games
-- Version: 3.8.1
+- Version: 3.8.2
 - Homepage: http://www.vassalengine.org/
 - Code repository:
 ## zsdx (Zelda fangame for the solarus engine)
