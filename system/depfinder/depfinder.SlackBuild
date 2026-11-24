@@ -97,6 +97,9 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
 
+# The man page is only installed if txt2tags was available at build time
+find "$PKG/usr/man" -type f -exec gzip -9 {} \; 2> /dev/null || true
+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
     AUTHORS COPYING ChangeLog README TODO \
