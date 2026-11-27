@@ -182,7 +182,7 @@
   
 
 - Category: desktop
-- Version: 3f10f99_20260907
+- Version: 8564f36_20261127
 - Homepage: https://github.com/makccr/wallpapers
 - Code repository:
 ## dapper (Desktop Applications Autostarter)
