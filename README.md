@@ -361,7 +361,7 @@
   
 
 - Category: development
-- Version: 2.7.0
+- Version: 2.8.0
 - Homepage: https://antigravity.google/
 - Code repository:
 ## lazarus (rapid application development tool for freepascal)
