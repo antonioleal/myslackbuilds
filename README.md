@@ -1645,7 +1645,7 @@ Instead of github go to Ardour.org and press download to get the source code tar
   
 
 - Category: games
-- Version: 20260104_bb7b488
+- Version: 20261127_5623f06
 - Homepage: https://github.com/pcrow/atari_8bit_utils
 - Code repository:
 ## exult (game engine for running Ultima7)
